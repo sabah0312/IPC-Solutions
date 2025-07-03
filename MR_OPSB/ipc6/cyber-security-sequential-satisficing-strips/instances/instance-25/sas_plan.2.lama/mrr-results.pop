@@ -1,0 +1,58 @@
+** Operators
+init()
+01_mandatory-bob()
+02_sit_at_host-greg-sherpa-gregs_office()
+03_enter_uname-greg-greg_uid-sherpa()
+04_enter_password-greg-greg_uid-sherpa-greg_pwd()
+05_launch_shell-greg_uid-sherpa-s_wexplore-proc_3()
+06_sit_at_host-bob-yeti-bobs_office()
+07_proc_fork-sherpa-greg_uid-proc_3-wexplorer()
+08_exec_file-sherpa-greg-greg_uid-everyone-proc_0-s_iexplore()
+09_dms_begin_session-dmss2()
+10_dms_client_find-sherpa-proc_0-iexplorer-greg-dmss2()
+11_dms_connect-proc_0-everest-nes-dmss2()
+12_dms_route-sherpa-everest-dmss2()
+13_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2()
+14_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2()
+15_dms_req_begin-dmss2-greg-sherpa()
+16_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid()
+17_dms_send-dmss2-sherpa-proc_0-e_secret_doc()
+18_enter_uname-bob-bob_uid-yeti()
+19_enter_password-bob-bob_uid-yeti-bob_pwd()
+20_launch_shell-bob_uid-yeti-y_wexplore-proc_2()
+21_proc_fork-yeti-bob_uid-proc_2-wexplorer()
+22_exec_file-yeti-bob-bob_uid-east_gid-proc_0-y_winbork()
+23_inject_code-yeti-proc_0-winbork-sherpa-proc_3-wexplorer-bob-fb_virus()
+24_proc_fork-yeti-bob_uid-proc_2-wexplorer()
+25_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_tmaster()
+26_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_0-proc_3-fb_virus-yeti-proc_3-troj_master()
+27_read_doc-bob-yeti-proc_3-e_secret_doc-bobs_office-secret_info()
+goal()
+** Ordering
+02_sit_at_host-greg-sherpa-gregs_office < 18_enter_uname-bob-bob_uid-yeti
+03_enter_uname-greg-greg_uid-sherpa < 04_enter_password-greg-greg_uid-sherpa-greg_pwd
+04_enter_password-greg-greg_uid-sherpa-greg_pwd < 05_launch_shell-greg_uid-sherpa-s_wexplore-proc_3
+05_launch_shell-greg_uid-sherpa-s_wexplore-proc_3 < 07_proc_fork-sherpa-greg_uid-proc_3-wexplorer
+06_sit_at_host-bob-yeti-bobs_office < 18_enter_uname-bob-bob_uid-yeti
+07_proc_fork-sherpa-greg_uid-proc_3-wexplorer < 08_exec_file-sherpa-greg-greg_uid-everyone-proc_0-s_iexplore
+08_exec_file-sherpa-greg-greg_uid-everyone-proc_0-s_iexplore < 09_dms_begin_session-dmss2
+09_dms_begin_session-dmss2 < 10_dms_client_find-sherpa-proc_0-iexplorer-greg-dmss2
+10_dms_client_find-sherpa-proc_0-iexplorer-greg-dmss2 < 11_dms_connect-proc_0-everest-nes-dmss2
+11_dms_connect-proc_0-everest-nes-dmss2 < 12_dms_route-sherpa-everest-dmss2
+12_dms_route-sherpa-everest-dmss2 < 13_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2
+13_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2 < 14_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2
+14_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2 < 15_dms_req_begin-dmss2-greg-sherpa
+15_dms_req_begin-dmss2-greg-sherpa < 16_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid
+16_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid < 17_dms_send-dmss2-sherpa-proc_0-e_secret_doc
+17_dms_send-dmss2-sherpa-proc_0-e_secret_doc < 01_mandatory-bob
+17_dms_send-dmss2-sherpa-proc_0-e_secret_doc < 23_inject_code-yeti-proc_0-winbork-sherpa-proc_3-wexplorer-bob-fb_virus
+18_enter_uname-bob-bob_uid-yeti < 19_enter_password-bob-bob_uid-yeti-bob_pwd
+19_enter_password-bob-bob_uid-yeti-bob_pwd < 20_launch_shell-bob_uid-yeti-y_wexplore-proc_2
+20_launch_shell-bob_uid-yeti-y_wexplore-proc_2 < 21_proc_fork-yeti-bob_uid-proc_2-wexplorer
+21_proc_fork-yeti-bob_uid-proc_2-wexplorer < 22_exec_file-yeti-bob-bob_uid-east_gid-proc_0-y_winbork
+22_exec_file-yeti-bob-bob_uid-east_gid-proc_0-y_winbork < 24_proc_fork-yeti-bob_uid-proc_2-wexplorer
+23_inject_code-yeti-proc_0-winbork-sherpa-proc_3-wexplorer-bob-fb_virus < 26_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_0-proc_3-fb_virus-yeti-proc_3-troj_master
+24_proc_fork-yeti-bob_uid-proc_2-wexplorer < 25_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_tmaster
+25_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_tmaster < 03_enter_uname-greg-greg_uid-sherpa
+26_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_0-proc_3-fb_virus-yeti-proc_3-troj_master < 27_read_doc-bob-yeti-proc_3-e_secret_doc-bobs_office-secret_info
+** Binding

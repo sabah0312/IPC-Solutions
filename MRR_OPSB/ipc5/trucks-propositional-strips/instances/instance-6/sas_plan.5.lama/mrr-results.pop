@@ -1,0 +1,64 @@
+** Operators
+init()
+01_load_package1_truck1_a2_l1()
+02_load_package2_truck1_a1_l1()
+03_drive_truck1_l1_l2_t0_t1()
+04_unload_package2_truck1_a1_l2()
+05_unload_package1_truck1_a2_l2()
+06_load_package5_truck1_a2_l2()
+07_load_package6_truck1_a1_l2()
+08_drive_truck1_l2_l3_t1_t2()
+09_unload_package6_truck1_a1_l3()
+10_unload_package5_truck1_a2_l3()
+11_load_package8_truck1_a2_l3()
+12_load_package3_truck1_a1_l3()
+13_drive_truck1_l3_l1_t2_t3()
+14_unload_package3_truck1_a1_l1()
+15_unload_package8_truck1_a2_l1()
+16_drive_truck1_l1_l3_t3_t4()
+17_load_package7_truck1_a2_l3()
+18_load_package4_truck1_a1_l3()
+19_drive_truck1_l3_l1_t4_t5()
+20_unload_package4_truck1_a1_l1()
+21_drive_truck1_l1_l2_t5_t6()
+22_unload_package7_truck1_a2_l2()
+23_deliver_package1_l2_t6_t10()
+24_deliver_package2_l2_t6_t10()
+25_deliver_package5_l3_t6_t9()
+26_deliver_package6_l3_t6_t10()
+27_deliver_package7_l2_t6_t12()
+28_deliver_package8_l1_t6_t12()
+29_deliver_package3_l1_t6_t10()
+30_deliver_package4_l1_t6_t10()
+goal()
+** Ordering
+01_load_package1_truck1_a2_l1 < 03_drive_truck1_l1_l2_t0_t1
+02_load_package2_truck1_a1_l1 < 21_drive_truck1_l1_l2_t5_t6
+03_drive_truck1_l1_l2_t0_t1 < 05_unload_package1_truck1_a2_l2
+04_unload_package2_truck1_a1_l2 < 22_unload_package7_truck1_a2_l2
+04_unload_package2_truck1_a1_l2 < 24_deliver_package2_l2_t6_t10
+05_unload_package1_truck1_a2_l2 < 06_load_package5_truck1_a2_l2
+06_load_package5_truck1_a2_l2 < 07_load_package6_truck1_a1_l2
+07_load_package6_truck1_a1_l2 < 08_drive_truck1_l2_l3_t1_t2
+08_drive_truck1_l2_l3_t1_t2 < 09_unload_package6_truck1_a1_l3
+09_unload_package6_truck1_a1_l3 < 10_unload_package5_truck1_a2_l3
+10_unload_package5_truck1_a2_l3 < 11_load_package8_truck1_a2_l3
+11_load_package8_truck1_a2_l3 < 18_load_package4_truck1_a1_l3
+12_load_package3_truck1_a1_l3 < 19_drive_truck1_l3_l1_t4_t5
+13_drive_truck1_l3_l1_t2_t3 < 20_unload_package4_truck1_a1_l1
+14_unload_package3_truck1_a1_l1 < 02_load_package2_truck1_a1_l1
+15_unload_package8_truck1_a2_l1 < 16_drive_truck1_l1_l3_t3_t4
+16_drive_truck1_l1_l3_t3_t4 < 17_load_package7_truck1_a2_l3
+17_load_package7_truck1_a2_l3 < 12_load_package3_truck1_a1_l3
+18_load_package4_truck1_a1_l3 < 13_drive_truck1_l3_l1_t2_t3
+19_drive_truck1_l3_l1_t4_t5 < 14_unload_package3_truck1_a1_l1
+20_unload_package4_truck1_a1_l1 < 15_unload_package8_truck1_a2_l1
+21_drive_truck1_l1_l2_t5_t6 < 04_unload_package2_truck1_a1_l2
+21_drive_truck1_l1_l2_t5_t6 < 23_deliver_package1_l2_t6_t10
+21_drive_truck1_l1_l2_t5_t6 < 25_deliver_package5_l3_t6_t9
+21_drive_truck1_l1_l2_t5_t6 < 26_deliver_package6_l3_t6_t10
+21_drive_truck1_l1_l2_t5_t6 < 28_deliver_package8_l1_t6_t12
+21_drive_truck1_l1_l2_t5_t6 < 29_deliver_package3_l1_t6_t10
+21_drive_truck1_l1_l2_t5_t6 < 30_deliver_package4_l1_t6_t10
+22_unload_package7_truck1_a2_l2 < 27_deliver_package7_l2_t6_t12
+** Binding

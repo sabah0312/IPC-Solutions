@@ -1,0 +1,30 @@
+** Operators
+init()
+01_choose_e2f13p1-dp12_l1_l0()
+02_initialize_e2f13p1-dp12()
+03_choose_e2f4-dp12p1_l2_l1()
+04_initialize_e2f4-dp12p1()
+05_choose_ge2_l3_l2()
+06_initialize_ge2()
+07_associate_e2f13p1-dp12_ge2_e2f13p1-dp12-ge2()
+08_synthesize_e2f13p1-dp12-ge2_cycdp1()
+09_synthesize_e2f13p1-dp12-ge2_p107()
+10_associate_p107_e2f4-dp12p1_p107-e2f4-dp12p1()
+11_dummy-action-1-1()
+12_dummy-action-2-2()
+goal()
+** Ordering
+01_choose_e2f13p1-dp12_l1_l0 < 02_initialize_e2f13p1-dp12
+01_choose_e2f13p1-dp12_l1_l0 < 03_choose_e2f4-dp12p1_l2_l1
+02_initialize_e2f13p1-dp12 < 07_associate_e2f13p1-dp12_ge2_e2f13p1-dp12-ge2
+03_choose_e2f4-dp12p1_l2_l1 < 04_initialize_e2f4-dp12p1
+03_choose_e2f4-dp12p1_l2_l1 < 05_choose_ge2_l3_l2
+04_initialize_e2f4-dp12p1 < 10_associate_p107_e2f4-dp12p1_p107-e2f4-dp12p1
+05_choose_ge2_l3_l2 < 06_initialize_ge2
+06_initialize_ge2 < 07_associate_e2f13p1-dp12_ge2_e2f13p1-dp12-ge2
+07_associate_e2f13p1-dp12_ge2_e2f13p1-dp12-ge2 < 08_synthesize_e2f13p1-dp12-ge2_cycdp1
+07_associate_e2f13p1-dp12_ge2_e2f13p1-dp12-ge2 < 09_synthesize_e2f13p1-dp12-ge2_p107
+08_synthesize_e2f13p1-dp12-ge2_cycdp1 < 12_dummy-action-2-2
+09_synthesize_e2f13p1-dp12-ge2_p107 < 10_associate_p107_e2f4-dp12p1_p107-e2f4-dp12p1
+10_associate_p107_e2f4-dp12p1_p107-e2f4-dp12p1 < 11_dummy-action-1-1
+** Binding

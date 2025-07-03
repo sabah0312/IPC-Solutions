@@ -1,0 +1,196 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+01_overcome(v_50 v_51 v_52 v_53 v_54)
+02_feast(v_55 v_56 v_57 v_58 v_59)
+03_feast(v_60 v_61 v_62 v_63 v_64)
+04_drink(v_65 v_66 v_67 v_68 v_69 v_70 v_71)
+05_overcome(v_72 v_73 v_74 v_75 v_76)
+06_feast(v_77 v_78 v_79 v_80 v_81)
+07_feast(v_82 v_83 v_84 v_85 v_86)
+08_feast(v_87 v_88 v_89 v_90 v_91)
+09_succumb(v_92 v_93 v_94 v_95 v_96)
+10_feast(v_97 v_98 v_99 v_100 v_101)
+11_overcome(v_102 v_103 v_104 v_105 v_106)
+12_feast(v_107 v_108 v_109 v_110 v_111)
+13_drink(v_112 v_113 v_114 v_115 v_116 v_117 v_118)
+14_feast(v_119 v_120 v_121 v_122 v_123)
+15_feast(v_124 v_125 v_126 v_127 v_128)
+16_feast(v_129 v_130 v_131 v_132 v_133)
+17_feast(v_134 v_135 v_136 v_137 v_138)
+18_feast(v_139 v_140 v_141 v_142 v_143)
+19_succumb(v_144 v_145 v_146 v_147 v_148)
+goal(v_149 v_150 v_151)
+** Ordering
+02_feast < 03_feast
+03_feast < 05_overcome
+03_feast < 15_feast
+04_drink < 10_feast
+05_overcome < 06_feast
+06_feast < 07_feast
+06_feast < 16_feast
+07_feast < 08_feast
+08_feast < 09_succumb
+08_feast < 18_feast
+10_feast < 11_overcome
+10_feast < 13_drink
+11_overcome < 12_feast
+12_feast < 14_feast
+13_drink < 14_feast
+14_feast < 15_feast
+15_feast < 16_feast
+16_feast < 17_feast
+17_feast < 18_feast
+18_feast < 19_succumb
+** Binding
+v_0=abrasion
+v_1=achievement
+v_2=aesthetics
+v_3=alsace
+v_4=anger
+v_5=angina
+v_6=arizona
+v_7=bacon
+v_8=beef
+v_9=boils
+v_10=bosnia
+v_11=cantelope
+v_12=chicken
+v_13=curiosity
+v_14=excitement
+v_15=goias
+v_16=grief
+v_17=hangover
+v_18=intoxication
+v_19=kentucky
+v_20=loneliness
+v_21=love
+v_22=lubricity
+v_23=mars
+v_24=marzipan
+v_25=muffin
+v_26=mutton
+v_27=neptune
+v_28=onion
+v_29=papaya
+v_30=pistachio
+v_31=popover
+v_32=potato
+v_33=prostatitis
+v_34=quebec
+v_35=rest
+v_36=rice
+v_37=satisfaction
+v_38=saturn
+v_39=scallop
+v_40=sciatica
+v_41=snickers
+v_42=surrey
+v_43=tomato
+v_44=triumph
+v_45=tuna
+v_46=turkey
+v_47=understanding
+v_48=venus
+v_49=wonderbread
+v_50=grief
+v_51=achievement
+v_52=chicken
+v_53=venus
+v_54=neptune
+v_55=love
+v_56=tomato
+v_57=tuna
+v_58=kentucky
+v_59=alsace
+v_60=love
+v_61=tuna
+v_62=beef
+v_63=kentucky
+v_64=alsace
+v_65=snickers
+v_66=rice
+v_67=goias
+v_68=alsace
+v_69=kentucky
+v_70=bosnia
+v_71=surrey
+v_72=abrasion
+v_73=love
+v_74=beef
+v_75=venus
+v_76=neptune
+v_77=love
+v_78=beef
+v_79=scallop
+v_80=surrey
+v_81=kentucky
+v_82=love
+v_83=scallop
+v_84=chicken
+v_85=bosnia
+v_86=surrey
+v_87=love
+v_88=chicken
+v_89=turkey
+v_90=surrey
+v_91=kentucky
+v_92=abrasion
+v_93=love
+v_94=turkey
+v_95=venus
+v_96=neptune
+v_97=intoxication
+v_98=rice
+v_99=popover
+v_100=bosnia
+v_101=surrey
+v_102=anger
+v_103=intoxication
+v_104=popover
+v_105=neptune
+v_106=mars
+v_107=intoxication
+v_108=popover
+v_109=rice
+v_110=bosnia
+v_111=surrey
+v_112=snickers
+v_113=rice
+v_114=alsace
+v_115=kentucky
+v_116=surrey
+v_117=bosnia
+v_118=surrey
+v_119=intoxication
+v_120=rice
+v_121=tuna
+v_122=bosnia
+v_123=surrey
+v_124=intoxication
+v_125=tuna
+v_126=beef
+v_127=surrey
+v_128=kentucky
+v_129=intoxication
+v_130=beef
+v_131=papaya
+v_132=bosnia
+v_133=surrey
+v_134=intoxication
+v_135=papaya
+v_136=chicken
+v_137=bosnia
+v_138=surrey
+v_139=intoxication
+v_140=chicken
+v_141=turkey
+v_142=bosnia
+v_143=surrey
+v_144=anger
+v_145=intoxication
+v_146=turkey
+v_147=neptune
+v_148=mars
+v_149=abrasion
+v_150=anger
+v_151=turkey

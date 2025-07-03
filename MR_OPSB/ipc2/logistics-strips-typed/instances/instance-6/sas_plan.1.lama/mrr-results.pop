@@ -1,0 +1,69 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14)
+1_load-truck(v_15 v_16 v_17)
+2_load-truck(v_18 v_19 v_20)
+3_drive-truck(v_21 v_22 v_23 v_24)
+4_unload-truck(v_25 v_26 v_27)
+5_unload-truck(v_28 v_29 v_30)
+6_load-truck(v_31 v_32 v_33)
+7_drive-truck(v_34 v_35 v_36 v_37)
+8_unload-truck(v_38 v_39 v_40)
+goal(v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+** Ordering
+1_load-truck < 3_drive-truck
+2_load-truck < 3_drive-truck
+3_drive-truck < 4_unload-truck
+3_drive-truck < 5_unload-truck
+6_load-truck < 7_drive-truck
+7_drive-truck < 8_unload-truck
+** Binding
+v_0=apn1
+v_1=apt1
+v_2=apt2
+v_3=cit1
+v_4=cit2
+v_5=obj11
+v_6=obj12
+v_7=obj13
+v_8=obj21
+v_9=obj22
+v_10=obj23
+v_11=pos1
+v_12=pos2
+v_13=tru1
+v_14=tru2
+v_15=obj23
+v_16=tru2
+v_17=pos2
+v_18=obj21
+v_19=tru2
+v_20=pos2
+v_21=tru2
+v_22=pos2
+v_23=apt2
+v_24=cit2
+v_25=obj23
+v_26=tru2
+v_27=apt2
+v_28=obj21
+v_29=tru2
+v_30=apt2
+v_31=obj12
+v_32=tru1
+v_33=pos1
+v_34=tru1
+v_35=pos1
+v_36=apt1
+v_37=cit1
+v_38=obj12
+v_39=tru1
+v_40=apt1
+v_41=apt1
+v_42=apt2
+v_43=obj12
+v_44=obj13
+v_45=obj21
+v_46=obj22
+v_47=obj23
+v_48=pos1
+v_49=pos2

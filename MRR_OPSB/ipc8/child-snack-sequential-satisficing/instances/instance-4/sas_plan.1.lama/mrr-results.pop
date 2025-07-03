@@ -1,0 +1,416 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58)
+01_make_sandwich_no_gluten(v_59 v_60 v_61)
+02_put_on_tray(v_62 v_63 v_64)
+03_move_tray(v_65 v_66 v_67)
+04_move_tray(v_68 v_69 v_70)
+05_move_tray(v_71 v_72 v_73)
+06_serve_sandwich_no_gluten(v_74 v_75 v_76 v_77)
+07_move_tray(v_78 v_79 v_80)
+08_make_sandwich_no_gluten(v_81 v_82 v_83)
+09_move_tray(v_84 v_85 v_86)
+10_put_on_tray(v_87 v_88 v_89)
+11_move_tray(v_90 v_91 v_92)
+12_serve_sandwich_no_gluten(v_93 v_94 v_95 v_96)
+13_make_sandwich_no_gluten(v_97 v_98 v_99)
+14_move_tray(v_100 v_101 v_102)
+15_put_on_tray(v_103 v_104 v_105)
+16_move_tray(v_106 v_107 v_108)
+17_serve_sandwich_no_gluten(v_109 v_110 v_111 v_112)
+18_make_sandwich_no_gluten(v_113 v_114 v_115)
+19_move_tray(v_116 v_117 v_118)
+20_put_on_tray(v_119 v_120 v_121)
+21_move_tray(v_122 v_123 v_124)
+22_move_tray(v_125 v_126 v_127)
+23_serve_sandwich_no_gluten(v_128 v_129 v_130 v_131)
+24_move_tray(v_132 v_133 v_134)
+25_make_sandwich(v_135 v_136 v_137)
+26_move_tray(v_138 v_139 v_140)
+27_put_on_tray(v_141 v_142 v_143)
+28_move_tray(v_144 v_145 v_146)
+29_move_tray(v_147 v_148 v_149)
+30_serve_sandwich(v_150 v_151 v_152 v_153)
+31_make_sandwich(v_154 v_155 v_156)
+32_move_tray(v_157 v_158 v_159)
+33_put_on_tray(v_160 v_161 v_162)
+34_move_tray(v_163 v_164 v_165)
+35_move_tray(v_166 v_167 v_168)
+36_serve_sandwich(v_169 v_170 v_171 v_172)
+37_make_sandwich(v_173 v_174 v_175)
+38_move_tray(v_176 v_177 v_178)
+39_put_on_tray(v_179 v_180 v_181)
+40_move_tray(v_182 v_183 v_184)
+41_serve_sandwich(v_185 v_186 v_187 v_188)
+42_make_sandwich(v_189 v_190 v_191)
+43_move_tray(v_192 v_193 v_194)
+44_put_on_tray(v_195 v_196 v_197)
+45_move_tray(v_198 v_199 v_200)
+46_serve_sandwich(v_201 v_202 v_203 v_204)
+47_make_sandwich(v_205 v_206 v_207)
+48_move_tray(v_208 v_209 v_210)
+49_put_on_tray(v_211 v_212 v_213)
+50_move_tray(v_214 v_215 v_216)
+51_serve_sandwich(v_217 v_218 v_219 v_220)
+52_make_sandwich(v_221 v_222 v_223)
+53_move_tray(v_224 v_225 v_226)
+54_put_on_tray(v_227 v_228 v_229)
+55_move_tray(v_230 v_231 v_232)
+56_serve_sandwich(v_233 v_234 v_235 v_236)
+57_make_sandwich(v_237 v_238 v_239)
+58_move_tray(v_240 v_241 v_242)
+59_put_on_tray(v_243 v_244 v_245)
+60_move_tray(v_246 v_247 v_248)
+61_serve_sandwich(v_249 v_250 v_251 v_252)
+62_make_sandwich(v_253 v_254 v_255)
+63_move_tray(v_256 v_257 v_258)
+64_put_on_tray(v_259 v_260 v_261)
+65_move_tray(v_262 v_263 v_264)
+66_serve_sandwich(v_265 v_266 v_267 v_268)
+goal(v_269 v_270 v_271 v_272 v_273 v_274 v_275 v_276 v_277 v_278 v_279 v_280)
+** Ordering
+01_make_sandwich_no_gluten < 33_put_on_tray
+02_put_on_tray < 04_move_tray
+03_move_tray < 58_move_tray
+04_move_tray < 06_serve_sandwich_no_gluten
+05_move_tray < 12_serve_sandwich_no_gluten
+05_move_tray < 17_serve_sandwich_no_gluten
+05_move_tray < 26_move_tray
+05_move_tray < 28_move_tray
+05_move_tray < 32_move_tray
+05_move_tray < 35_move_tray
+05_move_tray < 43_move_tray
+05_move_tray < 45_move_tray
+05_move_tray < 46_serve_sandwich
+05_move_tray < 48_move_tray
+05_move_tray < 61_serve_sandwich
+06_serve_sandwich_no_gluten < 11_move_tray
+07_move_tray < 58_move_tray
+08_make_sandwich_no_gluten < 59_put_on_tray
+09_move_tray < 58_move_tray
+10_put_on_tray < 05_move_tray
+11_move_tray < 16_move_tray
+11_move_tray < 23_serve_sandwich_no_gluten
+11_move_tray < 36_serve_sandwich
+11_move_tray < 41_serve_sandwich
+11_move_tray < 60_move_tray
+11_move_tray < 63_move_tray
+11_move_tray < 66_serve_sandwich
+13_make_sandwich_no_gluten < 39_put_on_tray
+14_move_tray < 58_move_tray
+15_put_on_tray < 05_move_tray
+18_make_sandwich_no_gluten < 10_put_on_tray
+19_move_tray < 58_move_tray
+20_put_on_tray < 05_move_tray
+21_move_tray < 58_move_tray
+22_move_tray < 58_move_tray
+24_move_tray < 58_move_tray
+25_make_sandwich < 20_put_on_tray
+27_put_on_tray < 58_move_tray
+29_move_tray < 58_move_tray
+30_serve_sandwich < 65_move_tray
+31_make_sandwich < 64_put_on_tray
+33_put_on_tray < 05_move_tray
+34_move_tray < 58_move_tray
+37_make_sandwich < 02_put_on_tray
+38_move_tray < 58_move_tray
+39_put_on_tray < 04_move_tray
+40_move_tray < 58_move_tray
+42_make_sandwich < 49_put_on_tray
+44_put_on_tray < 58_move_tray
+47_make_sandwich < 15_put_on_tray
+49_put_on_tray < 04_move_tray
+50_move_tray < 58_move_tray
+51_serve_sandwich < 65_move_tray
+52_make_sandwich < 27_put_on_tray
+53_move_tray < 58_move_tray
+54_put_on_tray < 58_move_tray
+55_move_tray < 58_move_tray
+57_make_sandwich < 54_put_on_tray
+58_move_tray < 30_serve_sandwich
+58_move_tray < 51_serve_sandwich
+59_put_on_tray < 04_move_tray
+62_make_sandwich < 44_put_on_tray
+64_put_on_tray < 04_move_tray
+65_move_tray < 56_serve_sandwich
+** Binding
+v_0=bread1
+v_1=bread10
+v_2=bread11
+v_3=bread12
+v_4=bread2
+v_5=bread3
+v_6=bread4
+v_7=bread5
+v_8=bread6
+v_9=bread7
+v_10=bread8
+v_11=bread9
+v_12=child1
+v_13=child10
+v_14=child11
+v_15=child12
+v_16=child2
+v_17=child3
+v_18=child4
+v_19=child5
+v_20=child6
+v_21=child7
+v_22=child8
+v_23=child9
+v_24=content1
+v_25=content10
+v_26=content11
+v_27=content12
+v_28=content2
+v_29=content3
+v_30=content4
+v_31=content5
+v_32=content6
+v_33=content7
+v_34=content8
+v_35=content9
+v_36=kitchen
+v_37=sandw1
+v_38=sandw10
+v_39=sandw11
+v_40=sandw12
+v_41=sandw13
+v_42=sandw14
+v_43=sandw15
+v_44=sandw16
+v_45=sandw2
+v_46=sandw3
+v_47=sandw4
+v_48=sandw5
+v_49=sandw6
+v_50=sandw7
+v_51=sandw8
+v_52=sandw9
+v_53=table1
+v_54=table2
+v_55=table3
+v_56=tray1
+v_57=tray2
+v_58=tray3
+v_59=sandw6
+v_60=bread4
+v_61=content12
+v_62=kitchen
+v_63=sandw3
+v_64=tray1
+v_65=tray3
+v_66=kitchen
+v_67=kitchen
+v_68=tray1
+v_69=kitchen
+v_70=table2
+v_71=tray2
+v_72=kitchen
+v_73=table1
+v_74=sandw12
+v_75=child1
+v_76=tray1
+v_77=table2
+v_78=tray3
+v_79=kitchen
+v_80=kitchen
+v_81=sandw4
+v_82=bread5
+v_83=content5
+v_84=tray3
+v_85=kitchen
+v_86=kitchen
+v_87=kitchen
+v_88=sandw9
+v_89=tray2
+v_90=tray1
+v_91=table2
+v_92=table3
+v_93=sandw6
+v_94=child3
+v_95=tray2
+v_96=table1
+v_97=sandw12
+v_98=bread3
+v_99=content2
+v_100=tray3
+v_101=kitchen
+v_102=kitchen
+v_103=kitchen
+v_104=sandw2
+v_105=tray2
+v_106=tray1
+v_107=table3
+v_108=table3
+v_109=sandw9
+v_110=child12
+v_111=tray2
+v_112=table1
+v_113=sandw9
+v_114=bread11
+v_115=content9
+v_116=tray3
+v_117=kitchen
+v_118=kitchen
+v_119=kitchen
+v_120=sandw10
+v_121=tray2
+v_122=tray3
+v_123=kitchen
+v_124=kitchen
+v_125=tray3
+v_126=kitchen
+v_127=kitchen
+v_128=sandw4
+v_129=child5
+v_130=tray1
+v_131=table3
+v_132=tray3
+v_133=kitchen
+v_134=kitchen
+v_135=sandw10
+v_136=bread1
+v_137=content8
+v_138=tray2
+v_139=table1
+v_140=table1
+v_141=kitchen
+v_142=sandw1
+v_143=tray3
+v_144=tray2
+v_145=table1
+v_146=table1
+v_147=tray3
+v_148=kitchen
+v_149=kitchen
+v_150=sandw5
+v_151=child4
+v_152=tray3
+v_153=table2
+v_154=sandw14
+v_155=bread12
+v_156=content1
+v_157=tray2
+v_158=table1
+v_159=table1
+v_160=kitchen
+v_161=sandw6
+v_162=tray2
+v_163=tray3
+v_164=kitchen
+v_165=kitchen
+v_166=tray2
+v_167=table1
+v_168=table1
+v_169=sandw16
+v_170=child10
+v_171=tray1
+v_172=table3
+v_173=sandw3
+v_174=bread6
+v_175=content4
+v_176=tray3
+v_177=kitchen
+v_178=kitchen
+v_179=kitchen
+v_180=sandw12
+v_181=tray1
+v_182=tray3
+v_183=kitchen
+v_184=kitchen
+v_185=sandw14
+v_186=child6
+v_187=tray1
+v_188=table3
+v_189=sandw16
+v_190=bread2
+v_191=content6
+v_192=tray2
+v_193=table1
+v_194=table1
+v_195=kitchen
+v_196=sandw5
+v_197=tray3
+v_198=tray2
+v_199=table1
+v_200=table1
+v_201=sandw10
+v_202=child11
+v_203=tray2
+v_204=table1
+v_205=sandw2
+v_206=bread10
+v_207=content7
+v_208=tray2
+v_209=table1
+v_210=table1
+v_211=kitchen
+v_212=sandw16
+v_213=tray1
+v_214=tray3
+v_215=kitchen
+v_216=kitchen
+v_217=sandw1
+v_218=child8
+v_219=tray3
+v_220=table2
+v_221=sandw1
+v_222=bread8
+v_223=content11
+v_224=tray3
+v_225=kitchen
+v_226=kitchen
+v_227=kitchen
+v_228=sandw15
+v_229=tray3
+v_230=tray3
+v_231=kitchen
+v_232=kitchen
+v_233=sandw15
+v_234=child9
+v_235=tray3
+v_236=table1
+v_237=sandw15
+v_238=bread7
+v_239=content10
+v_240=tray3
+v_241=kitchen
+v_242=table2
+v_243=kitchen
+v_244=sandw4
+v_245=tray1
+v_246=tray1
+v_247=table3
+v_248=table3
+v_249=sandw2
+v_250=child2
+v_251=tray2
+v_252=table1
+v_253=sandw5
+v_254=bread9
+v_255=content3
+v_256=tray1
+v_257=table3
+v_258=table3
+v_259=kitchen
+v_260=sandw14
+v_261=tray1
+v_262=tray3
+v_263=table2
+v_264=table1
+v_265=sandw3
+v_266=child7
+v_267=tray1
+v_268=table3
+v_269=child1
+v_270=child10
+v_271=child11
+v_272=child12
+v_273=child2
+v_274=child3
+v_275=child4
+v_276=child5
+v_277=child6
+v_278=child7
+v_279=child8
+v_280=child9

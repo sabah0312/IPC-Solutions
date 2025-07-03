@@ -1,0 +1,79 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12)
+01_lift(v_13 v_14 v_15 v_16)
+02_load(v_17 v_18 v_19 v_20)
+03_drive(v_21 v_22 v_23)
+04_lift(v_24 v_25 v_26 v_27)
+05_load(v_28 v_29 v_30 v_31)
+06_unload(v_32 v_33 v_34 v_35)
+07_drive(v_36 v_37 v_38)
+08_unload(v_39 v_40 v_41 v_42)
+09_drop(v_43 v_44 v_45 v_46)
+10_drop(v_47 v_48 v_49 v_50)
+goal(v_51 v_52 v_53 v_54)
+** Ordering
+01_lift < 02_load
+02_load < 03_drive
+03_drive < 05_load
+04_lift < 05_load
+05_load < 06_unload
+06_unload < 07_drive
+06_unload < 09_drop
+07_drive < 08_unload
+08_unload < 10_drop
+** Binding
+v_0=crate0
+v_1=crate1
+v_2=depot0
+v_3=distributor0
+v_4=distributor1
+v_5=hoist0
+v_6=hoist1
+v_7=hoist2
+v_8=pallet0
+v_9=pallet1
+v_10=pallet2
+v_11=truck0
+v_12=truck1
+v_13=hoist0
+v_14=crate1
+v_15=pallet0
+v_16=depot0
+v_17=hoist0
+v_18=crate1
+v_19=truck1
+v_20=depot0
+v_21=truck1
+v_22=depot0
+v_23=distributor0
+v_24=hoist1
+v_25=crate0
+v_26=pallet1
+v_27=distributor0
+v_28=hoist1
+v_29=crate0
+v_30=truck1
+v_31=distributor0
+v_32=hoist1
+v_33=crate1
+v_34=truck1
+v_35=distributor0
+v_36=truck1
+v_37=distributor0
+v_38=distributor1
+v_39=hoist2
+v_40=crate0
+v_41=truck1
+v_42=distributor1
+v_43=hoist1
+v_44=crate1
+v_45=pallet1
+v_46=distributor0
+v_47=hoist2
+v_48=crate0
+v_49=pallet2
+v_50=distributor1
+v_51=crate0
+v_52=crate1
+v_53=pallet1
+v_54=pallet2

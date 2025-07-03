@@ -1,0 +1,133 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14)
+01_load-truck(v_15 v_16 v_17)
+02_load-truck(v_18 v_19 v_20)
+03_drive-truck(v_21 v_22 v_23 v_24)
+04_unload-truck(v_25 v_26 v_27)
+05_unload-truck(v_28 v_29 v_30)
+06_load-truck(v_31 v_32 v_33)
+07_load-truck(v_34 v_35 v_36)
+08_load-airplane(v_37 v_38 v_39)
+09_load-airplane(v_40 v_41 v_42)
+10_fly-airplane(v_43 v_44 v_45)
+11_unload-airplane(v_46 v_47 v_48)
+12_unload-airplane(v_49 v_50 v_51)
+13_drive-truck(v_52 v_53 v_54 v_55)
+14_load-truck(v_56 v_57 v_58)
+15_load-truck(v_59 v_60 v_61)
+16_unload-truck(v_62 v_63 v_64)
+17_unload-truck(v_65 v_66 v_67)
+18_drive-truck(v_68 v_69 v_70 v_71)
+19_unload-truck(v_72 v_73 v_74)
+20_unload-truck(v_75 v_76 v_77)
+goal(v_78 v_79 v_80 v_81 v_82 v_83)
+** Ordering
+01_load-truck < 13_drive-truck
+02_load-truck < 03_drive-truck
+03_drive-truck < 04_unload-truck
+03_drive-truck < 17_unload-truck
+04_unload-truck < 08_load-airplane
+05_unload-truck < 18_drive-truck
+06_load-truck < 13_drive-truck
+07_load-truck < 03_drive-truck
+08_load-airplane < 10_fly-airplane
+09_load-airplane < 10_fly-airplane
+10_fly-airplane < 11_unload-airplane
+10_fly-airplane < 12_unload-airplane
+11_unload-airplane < 14_load-truck
+12_unload-airplane < 15_load-truck
+13_drive-truck < 05_unload-truck
+13_drive-truck < 14_load-truck
+13_drive-truck < 15_load-truck
+13_drive-truck < 16_unload-truck
+14_load-truck < 18_drive-truck
+15_load-truck < 18_drive-truck
+16_unload-truck < 18_drive-truck
+17_unload-truck < 09_load-airplane
+18_drive-truck < 19_unload-truck
+18_drive-truck < 20_unload-truck
+** Binding
+v_0=apn1
+v_1=apt1
+v_2=apt2
+v_3=cit1
+v_4=cit2
+v_5=obj11
+v_6=obj12
+v_7=obj13
+v_8=obj21
+v_9=obj22
+v_10=obj23
+v_11=pos1
+v_12=pos2
+v_13=tru1
+v_14=tru2
+v_15=obj13
+v_16=tru1
+v_17=pos1
+v_18=obj23
+v_19=tru2
+v_20=pos2
+v_21=tru2
+v_22=pos2
+v_23=apt2
+v_24=cit2
+v_25=obj23
+v_26=tru2
+v_27=apt2
+v_28=obj11
+v_29=tru1
+v_30=apt1
+v_31=obj11
+v_32=tru1
+v_33=pos1
+v_34=obj21
+v_35=tru2
+v_36=pos2
+v_37=obj23
+v_38=apn1
+v_39=apt2
+v_40=obj21
+v_41=apn1
+v_42=apt2
+v_43=apn1
+v_44=apt2
+v_45=apt1
+v_46=obj21
+v_47=apn1
+v_48=apt1
+v_49=obj23
+v_50=apn1
+v_51=apt1
+v_52=tru1
+v_53=pos1
+v_54=apt1
+v_55=cit1
+v_56=obj21
+v_57=tru1
+v_58=apt1
+v_59=obj23
+v_60=tru1
+v_61=apt1
+v_62=obj13
+v_63=tru1
+v_64=apt1
+v_65=obj21
+v_66=tru2
+v_67=apt2
+v_68=tru1
+v_69=apt1
+v_70=pos1
+v_71=cit1
+v_72=obj21
+v_73=tru1
+v_74=pos1
+v_75=obj23
+v_76=tru1
+v_77=pos1
+v_78=apt1
+v_79=obj11
+v_80=obj13
+v_81=obj21
+v_82=obj23
+v_83=pos1

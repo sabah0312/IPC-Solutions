@@ -1,0 +1,223 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+01_feast(v_50 v_51 v_52 v_53 v_54)
+02_feast(v_55 v_56 v_57 v_58 v_59)
+03_drink(v_60 v_61 v_62 v_63 v_64 v_65 v_66)
+04_overcome(v_67 v_68 v_69 v_70 v_71)
+05_feast(v_72 v_73 v_74 v_75 v_76)
+06_feast(v_77 v_78 v_79 v_80 v_81)
+07_drink(v_82 v_83 v_84 v_85 v_86 v_87 v_88)
+08_feast(v_89 v_90 v_91 v_92 v_93)
+09_succumb(v_94 v_95 v_96 v_97 v_98)
+10_drink(v_99 v_100 v_101 v_102 v_103 v_104 v_105)
+11_feast(v_106 v_107 v_108 v_109 v_110)
+12_feast(v_111 v_112 v_113 v_114 v_115)
+13_feast(v_116 v_117 v_118 v_119 v_120)
+14_overcome(v_121 v_122 v_123 v_124 v_125)
+15_feast(v_126 v_127 v_128 v_129 v_130)
+16_drink(v_131 v_132 v_133 v_134 v_135 v_136 v_137)
+17_feast(v_138 v_139 v_140 v_141 v_142)
+18_feast(v_143 v_144 v_145 v_146 v_147)
+19_feast(v_148 v_149 v_150 v_151 v_152)
+20_feast(v_153 v_154 v_155 v_156 v_157)
+21_feast(v_158 v_159 v_160 v_161 v_162)
+22_succumb(v_163 v_164 v_165 v_166 v_167)
+goal(v_168 v_169 v_170)
+** Ordering
+01_feast < 02_feast
+02_feast < 04_overcome
+03_drink < 07_drink
+03_drink < 17_feast
+04_overcome < 05_feast
+05_feast < 06_feast
+05_feast < 19_feast
+06_feast < 07_drink
+06_feast < 08_feast
+07_drink < 16_drink
+07_drink < 20_feast
+08_feast < 09_succumb
+08_feast < 10_drink
+10_drink < 21_feast
+12_feast < 13_feast
+13_feast < 14_overcome
+14_overcome < 15_feast
+15_feast < 17_feast
+16_drink < 11_feast
+17_feast < 16_drink
+17_feast < 18_feast
+18_feast < 19_feast
+19_feast < 20_feast
+20_feast < 21_feast
+21_feast < 22_succumb
+** Binding
+v_0=abrasion
+v_1=achievement
+v_2=aesthetics
+v_3=alsace
+v_4=anger
+v_5=angina
+v_6=arizona
+v_7=bacon
+v_8=beef
+v_9=boils
+v_10=bosnia
+v_11=cantelope
+v_12=chicken
+v_13=curiosity
+v_14=excitement
+v_15=goias
+v_16=grief
+v_17=hangover
+v_18=intoxication
+v_19=kentucky
+v_20=loneliness
+v_21=love
+v_22=lubricity
+v_23=mars
+v_24=marzipan
+v_25=muffin
+v_26=mutton
+v_27=neptune
+v_28=onion
+v_29=papaya
+v_30=pistachio
+v_31=popover
+v_32=potato
+v_33=prostatitis
+v_34=quebec
+v_35=rest
+v_36=rice
+v_37=satisfaction
+v_38=saturn
+v_39=scallop
+v_40=sciatica
+v_41=snickers
+v_42=surrey
+v_43=tomato
+v_44=triumph
+v_45=tuna
+v_46=turkey
+v_47=understanding
+v_48=venus
+v_49=wonderbread
+v_50=achievement
+v_51=chicken
+v_52=papaya
+v_53=surrey
+v_54=kentucky
+v_55=achievement
+v_56=papaya
+v_57=beef
+v_58=bosnia
+v_59=surrey
+v_60=snickers
+v_61=rice
+v_62=goias
+v_63=alsace
+v_64=kentucky
+v_65=bosnia
+v_66=surrey
+v_67=abrasion
+v_68=achievement
+v_69=beef
+v_70=venus
+v_71=neptune
+v_72=achievement
+v_73=beef
+v_74=scallop
+v_75=surrey
+v_76=kentucky
+v_77=achievement
+v_78=scallop
+v_79=chicken
+v_80=bosnia
+v_81=surrey
+v_82=snickers
+v_83=scallop
+v_84=alsace
+v_85=kentucky
+v_86=surrey
+v_87=bosnia
+v_88=surrey
+v_89=achievement
+v_90=chicken
+v_91=turkey
+v_92=bosnia
+v_93=surrey
+v_94=abrasion
+v_95=achievement
+v_96=turkey
+v_97=venus
+v_98=neptune
+v_99=muffin
+v_100=chicken
+v_101=alsace
+v_102=kentucky
+v_103=surrey
+v_104=bosnia
+v_105=surrey
+v_106=intoxication
+v_107=rice
+v_108=popover
+v_109=bosnia
+v_110=surrey
+v_111=love
+v_112=tomato
+v_113=cantelope
+v_114=kentucky
+v_115=alsace
+v_116=love
+v_117=cantelope
+v_118=popover
+v_119=alsace
+v_120=goias
+v_121=anger
+v_122=love
+v_123=popover
+v_124=venus
+v_125=neptune
+v_126=love
+v_127=popover
+v_128=rice
+v_129=bosnia
+v_130=surrey
+v_131=snickers
+v_132=rice
+v_133=kentucky
+v_134=surrey
+v_135=bosnia
+v_136=bosnia
+v_137=surrey
+v_138=love
+v_139=rice
+v_140=tuna
+v_141=bosnia
+v_142=surrey
+v_143=love
+v_144=tuna
+v_145=beef
+v_146=kentucky
+v_147=alsace
+v_148=love
+v_149=beef
+v_150=scallop
+v_151=bosnia
+v_152=surrey
+v_153=love
+v_154=scallop
+v_155=chicken
+v_156=bosnia
+v_157=surrey
+v_158=love
+v_159=chicken
+v_160=turkey
+v_161=bosnia
+v_162=surrey
+v_163=anger
+v_164=love
+v_165=turkey
+v_166=venus
+v_167=neptune
+v_168=abrasion
+v_169=anger
+v_170=turkey

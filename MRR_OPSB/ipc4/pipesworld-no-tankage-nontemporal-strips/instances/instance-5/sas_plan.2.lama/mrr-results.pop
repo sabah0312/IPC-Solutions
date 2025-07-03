@@ -1,0 +1,113 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19)
+01_pop-unitarypipe(v_20 v_21 v_22 v_23 v_24 v_25 v_26)
+02_pop-unitarypipe(v_27 v_28 v_29 v_30 v_31 v_32 v_33)
+03_push-unitarypipe(v_34 v_35 v_36 v_37 v_38 v_39 v_40)
+04_push-unitarypipe(v_41 v_42 v_43 v_44 v_45 v_46 v_47)
+05_push-unitarypipe(v_48 v_49 v_50 v_51 v_52 v_53 v_54)
+06_push-unitarypipe(v_55 v_56 v_57 v_58 v_59 v_60 v_61)
+07_pop-unitarypipe(v_62 v_63 v_64 v_65 v_66 v_67 v_68)
+08_pop-unitarypipe(v_69 v_70 v_71 v_72 v_73 v_74 v_75)
+09_push-unitarypipe(v_76 v_77 v_78 v_79 v_80 v_81 v_82)
+goal(v_83 v_84 v_85 v_86 v_87 v_88 v_89)
+** Ordering
+01_pop-unitarypipe < 03_push-unitarypipe
+01_pop-unitarypipe < 06_push-unitarypipe
+02_pop-unitarypipe < 07_pop-unitarypipe
+02_pop-unitarypipe < 09_push-unitarypipe
+03_push-unitarypipe < 04_push-unitarypipe
+04_push-unitarypipe < 02_pop-unitarypipe
+05_push-unitarypipe < 06_push-unitarypipe
+06_push-unitarypipe < 09_push-unitarypipe
+07_pop-unitarypipe < 08_pop-unitarypipe
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b2
+v_6=b3
+v_7=b4
+v_8=b5
+v_9=b6
+v_10=b7
+v_11=b8
+v_12=b9
+v_13=gasoleo
+v_14=lco
+v_15=oc1b
+v_16=oca1
+v_17=rat-a
+v_18=s12
+v_19=s13
+v_20=s12
+v_21=b5
+v_22=a1
+v_23=a2
+v_24=b6
+v_25=gasoleo
+v_26=rat-a
+v_27=s12
+v_28=b9
+v_29=a1
+v_30=a2
+v_31=b8
+v_32=oc1b
+v_33=lco
+v_34=s12
+v_35=b7
+v_36=a1
+v_37=a2
+v_38=b5
+v_39=gasoleo
+v_40=gasoleo
+v_41=s12
+v_42=b8
+v_43=a1
+v_44=a2
+v_45=b7
+v_46=lco
+v_47=gasoleo
+v_48=s13
+v_49=b4
+v_50=a1
+v_51=a3
+v_52=b2
+v_53=lco
+v_54=gasoleo
+v_55=s13
+v_56=b6
+v_57=a1
+v_58=a3
+v_59=b4
+v_60=rat-a
+v_61=lco
+v_62=s12
+v_63=b5
+v_64=a1
+v_65=a2
+v_66=b9
+v_67=gasoleo
+v_68=oc1b
+v_69=s12
+v_70=b0
+v_71=a1
+v_72=a2
+v_73=b5
+v_74=rat-a
+v_75=gasoleo
+v_76=s13
+v_77=b8
+v_78=a1
+v_79=a3
+v_80=b6
+v_81=lco
+v_82=rat-a
+v_83=a1
+v_84=a2
+v_85=a3
+v_86=b5
+v_87=b6
+v_88=b7
+v_89=b9

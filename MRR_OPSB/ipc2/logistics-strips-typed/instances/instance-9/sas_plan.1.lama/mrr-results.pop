@@ -1,0 +1,161 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14)
+01_load-truck(v_15 v_16 v_17)
+02_load-truck(v_18 v_19 v_20)
+03_load-truck(v_21 v_22 v_23)
+04_load-truck(v_24 v_25 v_26)
+05_load-truck(v_27 v_28 v_29)
+06_drive-truck(v_30 v_31 v_32 v_33)
+07_unload-truck(v_34 v_35 v_36)
+08_unload-truck(v_37 v_38 v_39)
+09_unload-truck(v_40 v_41 v_42)
+10_drive-truck(v_43 v_44 v_45 v_46)
+11_unload-truck(v_47 v_48 v_49)
+12_unload-truck(v_50 v_51 v_52)
+13_load-airplane(v_53 v_54 v_55)
+14_load-airplane(v_56 v_57 v_58)
+15_fly-airplane(v_59 v_60 v_61)
+16_unload-airplane(v_62 v_63 v_64)
+17_unload-airplane(v_65 v_66 v_67)
+18_load-airplane(v_68 v_69 v_70)
+19_load-airplane(v_71 v_72 v_73)
+20_fly-airplane(v_74 v_75 v_76)
+21_unload-airplane(v_77 v_78 v_79)
+22_unload-airplane(v_80 v_81 v_82)
+23_load-truck(v_83 v_84 v_85)
+24_drive-truck(v_86 v_87 v_88 v_89)
+25_unload-truck(v_90 v_91 v_92)
+goal(v_93 v_94 v_95 v_96 v_97 v_98 v_99 v_100 v_101)
+** Ordering
+01_load-truck < 06_drive-truck
+02_load-truck < 06_drive-truck
+03_load-truck < 10_drive-truck
+04_load-truck < 10_drive-truck
+05_load-truck < 06_drive-truck
+06_drive-truck < 09_unload-truck
+06_drive-truck < 11_unload-truck
+06_drive-truck < 12_unload-truck
+07_unload-truck < 13_load-airplane
+08_unload-truck < 14_load-airplane
+09_unload-truck < 19_load-airplane
+10_drive-truck < 07_unload-truck
+10_drive-truck < 08_unload-truck
+11_unload-truck < 18_load-airplane
+13_load-airplane < 15_fly-airplane
+14_load-airplane < 15_fly-airplane
+15_fly-airplane < 16_unload-airplane
+15_fly-airplane < 17_unload-airplane
+15_fly-airplane < 18_load-airplane
+15_fly-airplane < 19_load-airplane
+16_unload-airplane < 20_fly-airplane
+17_unload-airplane < 20_fly-airplane
+18_load-airplane < 20_fly-airplane
+19_load-airplane < 20_fly-airplane
+20_fly-airplane < 21_unload-airplane
+20_fly-airplane < 22_unload-airplane
+21_unload-airplane < 23_load-truck
+23_load-truck < 24_drive-truck
+24_drive-truck < 25_unload-truck
+** Binding
+v_0=apn1
+v_1=apt1
+v_2=apt2
+v_3=cit1
+v_4=cit2
+v_5=obj11
+v_6=obj12
+v_7=obj13
+v_8=obj21
+v_9=obj22
+v_10=obj23
+v_11=pos1
+v_12=pos2
+v_13=tru1
+v_14=tru2
+v_15=obj11
+v_16=tru1
+v_17=pos1
+v_18=obj12
+v_19=tru1
+v_20=pos1
+v_21=obj22
+v_22=tru2
+v_23=pos2
+v_24=obj23
+v_25=tru2
+v_26=pos2
+v_27=obj13
+v_28=tru1
+v_29=pos1
+v_30=tru1
+v_31=pos1
+v_32=apt1
+v_33=cit1
+v_34=obj23
+v_35=tru2
+v_36=apt2
+v_37=obj22
+v_38=tru2
+v_39=apt2
+v_40=obj11
+v_41=tru1
+v_42=apt1
+v_43=tru2
+v_44=pos2
+v_45=apt2
+v_46=cit2
+v_47=obj12
+v_48=tru1
+v_49=apt1
+v_50=obj13
+v_51=tru1
+v_52=apt1
+v_53=obj23
+v_54=apn1
+v_55=apt2
+v_56=obj22
+v_57=apn1
+v_58=apt2
+v_59=apn1
+v_60=apt2
+v_61=apt1
+v_62=obj22
+v_63=apn1
+v_64=apt1
+v_65=obj23
+v_66=apn1
+v_67=apt1
+v_68=obj12
+v_69=apn1
+v_70=apt1
+v_71=obj11
+v_72=apn1
+v_73=apt1
+v_74=apn1
+v_75=apt1
+v_76=apt2
+v_77=obj11
+v_78=apn1
+v_79=apt2
+v_80=obj12
+v_81=apn1
+v_82=apt2
+v_83=obj11
+v_84=tru2
+v_85=apt2
+v_86=tru2
+v_87=apt2
+v_88=pos2
+v_89=cit2
+v_90=obj11
+v_91=tru2
+v_92=pos2
+v_93=apt1
+v_94=apt2
+v_95=obj11
+v_96=obj12
+v_97=obj13
+v_98=obj21
+v_99=obj22
+v_100=obj23
+v_101=pos2

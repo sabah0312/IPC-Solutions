@@ -1,0 +1,236 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35)
+01_switch_on(v_36 v_37)
+02_switch_on(v_38 v_39)
+03_switch_on(v_40 v_41)
+04_turn_to(v_42 v_43 v_44)
+05_turn_to(v_45 v_46 v_47)
+06_turn_to(v_48 v_49 v_50)
+07_turn_to(v_51 v_52 v_53)
+08_turn_to(v_54 v_55 v_56)
+09_turn_to(v_57 v_58 v_59)
+10_calibrate(v_60 v_61 v_62)
+11_turn_to(v_63 v_64 v_65)
+12_take_image(v_66 v_67 v_68 v_69)
+13_turn_to(v_70 v_71 v_72)
+14_take_image(v_73 v_74 v_75 v_76)
+15_turn_to(v_77 v_78 v_79)
+16_take_image(v_80 v_81 v_82 v_83)
+17_turn_to(v_84 v_85 v_86)
+18_take_image(v_87 v_88 v_89 v_90)
+19_turn_to(v_91 v_92 v_93)
+20_take_image(v_94 v_95 v_96 v_97)
+21_turn_to(v_98 v_99 v_100)
+22_turn_to(v_101 v_102 v_103)
+23_calibrate(v_104 v_105 v_106)
+24_turn_to(v_107 v_108 v_109)
+25_take_image(v_110 v_111 v_112 v_113)
+26_turn_to(v_114 v_115 v_116)
+27_take_image(v_117 v_118 v_119 v_120)
+28_turn_to(v_121 v_122 v_123)
+29_take_image(v_124 v_125 v_126 v_127)
+30_turn_to(v_128 v_129 v_130)
+31_calibrate(v_131 v_132 v_133)
+32_turn_to(v_134 v_135 v_136)
+33_take_image(v_137 v_138 v_139 v_140)
+34_turn_to(v_141 v_142 v_143)
+35_take_image(v_144 v_145 v_146 v_147)
+36_turn_to(v_148 v_149 v_150)
+goal(v_151 v_152 v_153 v_154 v_155 v_156 v_157 v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165 v_166 v_167 v_168)
+** Ordering
+01_switch_on < 10_calibrate
+02_switch_on < 23_calibrate
+03_switch_on < 31_calibrate
+04_turn_to < 31_calibrate
+05_turn_to < 14_take_image
+06_turn_to < 27_take_image
+08_turn_to < 10_calibrate
+10_calibrate < 13_turn_to
+12_take_image < 26_turn_to
+13_turn_to < 18_take_image
+14_take_image < 06_turn_to
+16_take_image < 28_turn_to
+18_take_image < 19_turn_to
+19_turn_to < 33_take_image
+20_take_image < 34_turn_to
+21_turn_to < 23_calibrate
+22_turn_to < 35_take_image
+23_calibrate < 24_turn_to
+24_turn_to < 12_take_image
+26_turn_to < 16_take_image
+27_take_image < 36_turn_to
+28_turn_to < 20_take_image
+31_calibrate < 05_turn_to
+33_take_image < 22_turn_to
+34_turn_to < 25_take_image
+36_turn_to < 29_take_image
+** Binding
+v_0=groundstation1
+v_1=image2
+v_2=image3
+v_3=image4
+v_4=infrared1
+v_5=instrument0
+v_6=instrument1
+v_7=instrument10
+v_8=instrument2
+v_9=instrument3
+v_10=instrument4
+v_11=instrument5
+v_12=instrument6
+v_13=instrument7
+v_14=instrument8
+v_15=instrument9
+v_16=phenomenon12
+v_17=phenomenon13
+v_18=phenomenon6
+v_19=phenomenon7
+v_20=phenomenon8
+v_21=planet10
+v_22=planet11
+v_23=planet5
+v_24=satellite0
+v_25=satellite1
+v_26=satellite2
+v_27=satellite3
+v_28=satellite4
+v_29=spectrograph0
+v_30=star0
+v_31=star14
+v_32=star2
+v_33=star3
+v_34=star4
+v_35=star9
+v_36=instrument6
+v_37=satellite2
+v_38=instrument7
+v_39=satellite3
+v_40=instrument0
+v_41=satellite0
+v_42=satellite0
+v_43=star3
+v_44=star0
+v_45=satellite0
+v_46=planet10
+v_47=star3
+v_48=satellite0
+v_49=star14
+v_50=planet10
+v_51=satellite1
+v_52=planet11
+v_53=planet11
+v_54=satellite2
+v_55=star2
+v_56=phenomenon6
+v_57=satellite4
+v_58=planet5
+v_59=star9
+v_60=satellite2
+v_61=instrument6
+v_62=star2
+v_63=satellite1
+v_64=planet11
+v_65=planet11
+v_66=satellite3
+v_67=planet11
+v_68=instrument7
+v_69=spectrograph0
+v_70=satellite2
+v_71=phenomenon8
+v_72=star2
+v_73=satellite0
+v_74=planet10
+v_75=instrument0
+v_76=image4
+v_77=satellite1
+v_78=planet11
+v_79=planet11
+v_80=satellite3
+v_81=phenomenon12
+v_82=instrument7
+v_83=image3
+v_84=satellite1
+v_85=planet11
+v_86=planet11
+v_87=satellite2
+v_88=phenomenon8
+v_89=instrument6
+v_90=image2
+v_91=satellite2
+v_92=phenomenon13
+v_93=phenomenon8
+v_94=satellite3
+v_95=phenomenon6
+v_96=instrument7
+v_97=image3
+v_98=satellite3
+v_99=star0
+v_100=planet10
+v_101=satellite2
+v_102=planet5
+v_103=phenomenon13
+v_104=satellite3
+v_105=instrument7
+v_106=star0
+v_107=satellite3
+v_108=planet11
+v_109=star0
+v_110=satellite3
+v_111=star9
+v_112=instrument7
+v_113=image3
+v_114=satellite3
+v_115=phenomenon12
+v_116=planet11
+v_117=satellite0
+v_118=star14
+v_119=instrument0
+v_120=image4
+v_121=satellite3
+v_122=phenomenon6
+v_123=phenomenon12
+v_124=satellite0
+v_125=phenomenon7
+v_126=instrument0
+v_127=infrared1
+v_128=satellite1
+v_129=planet11
+v_130=planet11
+v_131=satellite0
+v_132=instrument0
+v_133=star3
+v_134=satellite1
+v_135=planet11
+v_136=planet11
+v_137=satellite2
+v_138=phenomenon13
+v_139=instrument6
+v_140=spectrograph0
+v_141=satellite3
+v_142=star9
+v_143=phenomenon6
+v_144=satellite2
+v_145=planet5
+v_146=instrument6
+v_147=image2
+v_148=satellite0
+v_149=phenomenon7
+v_150=star14
+v_151=image2
+v_152=image3
+v_153=image4
+v_154=infrared1
+v_155=phenomenon12
+v_156=phenomenon13
+v_157=phenomenon6
+v_158=phenomenon7
+v_159=phenomenon8
+v_160=planet10
+v_161=planet11
+v_162=planet5
+v_163=satellite0
+v_164=satellite3
+v_165=satellite4
+v_166=spectrograph0
+v_167=star14
+v_168=star9

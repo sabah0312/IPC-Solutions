@@ -1,0 +1,151 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25)
+01_sendtohome(v_26 v_27 v_28 v_29 v_30 v_31)
+02_sendtohome-b(v_32 v_33 v_34 v_35 v_36 v_37 v_38)
+03_sendtohome(v_39 v_40 v_41 v_42 v_43 v_44)
+04_sendtofree(v_45 v_46 v_47 v_48)
+05_sendtohome-b(v_49 v_50 v_51 v_52 v_53 v_54 v_55)
+06_sendtohome(v_56 v_57 v_58 v_59 v_60 v_61)
+07_sendtohome-b(v_62 v_63 v_64 v_65 v_66 v_67 v_68)
+08_sendtohome(v_69 v_70 v_71 v_72 v_73 v_74)
+09_sendtofree(v_75 v_76 v_77 v_78)
+10_sendtohome-b(v_79 v_80 v_81 v_82 v_83 v_84 v_85)
+11_homefromfreecell(v_86 v_87 v_88 v_89 v_90 v_91 v_92)
+12_sendtohome(v_93 v_94 v_95 v_96 v_97 v_98)
+13_sendtohome-b(v_99 v_100 v_101 v_102 v_103 v_104 v_105)
+14_homefromfreecell(v_106 v_107 v_108 v_109 v_110 v_111 v_112)
+goal(v_113 v_114 v_115 v_116)
+** Ordering
+01_sendtohome < 02_sendtohome-b
+01_sendtohome < 03_sendtohome
+02_sendtohome-b < 05_sendtohome-b
+03_sendtohome < 04_sendtofree
+04_sendtofree < 05_sendtohome-b
+05_sendtohome-b < 06_sendtohome
+06_sendtohome < 07_sendtohome-b
+06_sendtohome < 08_sendtohome
+07_sendtohome-b < 10_sendtohome-b
+08_sendtohome < 09_sendtofree
+09_sendtofree < 10_sendtohome-b
+10_sendtohome-b < 11_homefromfreecell
+11_homefromfreecell < 12_sendtohome
+12_sendtohome < 13_sendtohome-b
+13_sendtohome-b < 14_homefromfreecell
+** Binding
+v_0=club
+v_1=club0
+v_2=club2
+v_3=club3
+v_4=cluba
+v_5=diamond
+v_6=diamond0
+v_7=diamond2
+v_8=diamond3
+v_9=diamonda
+v_10=heart
+v_11=heart0
+v_12=heart2
+v_13=heart3
+v_14=hearta
+v_15=n0
+v_16=n1
+v_17=n2
+v_18=n3
+v_19=n4
+v_20=n5
+v_21=spade
+v_22=spade0
+v_23=spade2
+v_24=spade3
+v_25=spadea
+v_26=cluba
+v_27=diamonda
+v_28=club
+v_29=n1
+v_30=club0
+v_31=n0
+v_32=diamonda
+v_33=diamond
+v_34=n1
+v_35=diamond0
+v_36=n0
+v_37=n0
+v_38=n1
+v_39=club2
+v_40=diamond3
+v_41=club
+v_42=n2
+v_43=cluba
+v_44=n1
+v_45=diamond3
+v_46=spadea
+v_47=n2
+v_48=n1
+v_49=spadea
+v_50=spade
+v_51=n1
+v_52=spade0
+v_53=n0
+v_54=n1
+v_55=n2
+v_56=spade2
+v_57=club3
+v_58=spade
+v_59=n2
+v_60=spadea
+v_61=n1
+v_62=club3
+v_63=club
+v_64=n3
+v_65=club2
+v_66=n2
+v_67=n2
+v_68=n3
+v_69=spade3
+v_70=heart2
+v_71=spade
+v_72=n3
+v_73=spade2
+v_74=n2
+v_75=heart2
+v_76=hearta
+v_77=n1
+v_78=n0
+v_79=hearta
+v_80=heart
+v_81=n1
+v_82=heart0
+v_83=n0
+v_84=n3
+v_85=n4
+v_86=heart2
+v_87=heart
+v_88=n2
+v_89=hearta
+v_90=n1
+v_91=n0
+v_92=n1
+v_93=heart3
+v_94=diamond2
+v_95=heart
+v_96=n3
+v_97=heart2
+v_98=n2
+v_99=diamond2
+v_100=diamond
+v_101=n2
+v_102=diamonda
+v_103=n1
+v_104=n4
+v_105=n5
+v_106=diamond3
+v_107=diamond
+v_108=n3
+v_109=diamond2
+v_110=n2
+v_111=n1
+v_112=n2
+v_113=club3
+v_114=diamond3
+v_115=heart3
+v_116=spade3

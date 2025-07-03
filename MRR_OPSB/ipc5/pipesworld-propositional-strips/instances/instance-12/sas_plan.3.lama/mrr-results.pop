@@ -1,0 +1,75 @@
+** Operators
+init()
+01_pop-start-s13-b3-a1-a3-b6-lco-gasoleo-ta3-1-lco()
+02_pop-end-s13-a1-a3-b7-b6-lco-ta1-1-lco()
+03_pop-start-s13-b8-a1-a3-b3-gasoleo-lco-ta3-1-gasoleo()
+04_pop-end-s13-a1-a3-b6-b3-gasoleo-ta1-3-gasoleo()
+05_push-start-s12-b6-a1-a2-b9-gasoleo-lco-ta1-1-gasoleo()
+06_push-end-s12-a1-a2-b1-b9-rat-a-ta2-1-rat-a()
+07_push-start-s12-b0-a1-a2-b6-gasoleo-gasoleo-ta1-2-gasoleo()
+08_push-end-s12-a1-a2-b9-b6-lco-ta2-1-lco()
+09_push-start-s12-b5-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo()
+10_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a()
+11_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-2-gasoleo()
+12_pop-end-s13-a1-a3-b3-b8-gasoleo-ta1-1-gasoleo()
+13_push-start-s12-b7-a1-a2-b5-gasoleo-gasoleo-ta1-1-gasoleo()
+14_push-end-s12-a1-a2-b0-b5-gasoleo-ta2-3-gasoleo()
+15_pop-start-s12-b9-a1-a2-b5-lco-gasoleo-ta2-1-lco()
+16_pop-end-s12-a1-a2-b7-b5-gasoleo-ta1-1-gasoleo()
+17_pop-start-s12-b0-a1-a2-b9-gasoleo-lco-ta2-1-gasoleo()
+18_pop-end-s12-a1-a2-b5-b9-gasoleo-ta1-2-gasoleo()
+19_pop-start-s12-b6-a1-a2-b0-gasoleo-gasoleo-ta2-3-gasoleo()
+20_pop-end-s12-a1-a2-b9-b0-gasoleo-ta1-3-gasoleo()
+21_push-start-s13-b9-a1-a3-b8-lco-gasoleo-ta1-1-lco()
+22_push-end-s13-a1-a3-b2-b8-rat-a-ta3-1-rat-a()
+23_push-start-s13-b5-a1-a3-b9-gasoleo-lco-ta1-1-gasoleo()
+24_push-end-s13-a1-a3-b8-b9-gasoleo-ta3-1-gasoleo()
+25_push-start-s13-b7-a1-a3-b5-gasoleo-gasoleo-ta1-2-gasoleo()
+26_push-end-s13-a1-a3-b9-b5-lco-ta3-1-lco()
+27_pop-start-s13-b8-a1-a3-b5-gasoleo-gasoleo-ta3-1-gasoleo()
+28_pop-end-s13-a1-a3-b7-b5-rat-a-ta1-1-rat-a()
+29_push-start-s12-b7-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo()
+30_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a()
+31_pop-end-s13-a1-a3-b5-b8-lco-ta1-1-lco()
+32_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-1-gasoleo()
+33_push-start-s12-b3-a1-a2-b7-lco-gasoleo-ta1-1-lco()
+34_push-end-s12-a1-a2-b0-b7-gasoleo-ta2-3-gasoleo()
+goal()
+** Ordering
+01_pop-start-s13-b3-a1-a3-b6-lco-gasoleo-ta3-1-lco < 02_pop-end-s13-a1-a3-b7-b6-lco-ta1-1-lco
+02_pop-end-s13-a1-a3-b7-b6-lco-ta1-1-lco < 03_pop-start-s13-b8-a1-a3-b3-gasoleo-lco-ta3-1-gasoleo
+03_pop-start-s13-b8-a1-a3-b3-gasoleo-lco-ta3-1-gasoleo < 04_pop-end-s13-a1-a3-b6-b3-gasoleo-ta1-3-gasoleo
+04_pop-end-s13-a1-a3-b6-b3-gasoleo-ta1-3-gasoleo < 05_push-start-s12-b6-a1-a2-b9-gasoleo-lco-ta1-1-gasoleo
+04_pop-end-s13-a1-a3-b6-b3-gasoleo-ta1-3-gasoleo < 10_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a
+05_push-start-s12-b6-a1-a2-b9-gasoleo-lco-ta1-1-gasoleo < 06_push-end-s12-a1-a2-b1-b9-rat-a-ta2-1-rat-a
+05_push-start-s12-b6-a1-a2-b9-gasoleo-lco-ta1-1-gasoleo < 12_pop-end-s13-a1-a3-b3-b8-gasoleo-ta1-1-gasoleo
+06_push-end-s12-a1-a2-b1-b9-rat-a-ta2-1-rat-a < 07_push-start-s12-b0-a1-a2-b6-gasoleo-gasoleo-ta1-2-gasoleo
+07_push-start-s12-b0-a1-a2-b6-gasoleo-gasoleo-ta1-2-gasoleo < 08_push-end-s12-a1-a2-b9-b6-lco-ta2-1-lco
+08_push-end-s12-a1-a2-b9-b6-lco-ta2-1-lco < 09_push-start-s12-b5-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo
+09_push-start-s12-b5-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo < 11_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-2-gasoleo
+10_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a < 12_pop-end-s13-a1-a3-b3-b8-gasoleo-ta1-1-gasoleo
+11_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-2-gasoleo < 13_push-start-s12-b7-a1-a2-b5-gasoleo-gasoleo-ta1-1-gasoleo
+12_pop-end-s13-a1-a3-b3-b8-gasoleo-ta1-1-gasoleo < 13_push-start-s12-b7-a1-a2-b5-gasoleo-gasoleo-ta1-1-gasoleo
+13_push-start-s12-b7-a1-a2-b5-gasoleo-gasoleo-ta1-1-gasoleo < 14_push-end-s12-a1-a2-b0-b5-gasoleo-ta2-3-gasoleo
+14_push-end-s12-a1-a2-b0-b5-gasoleo-ta2-3-gasoleo < 15_pop-start-s12-b9-a1-a2-b5-lco-gasoleo-ta2-1-lco
+15_pop-start-s12-b9-a1-a2-b5-lco-gasoleo-ta2-1-lco < 16_pop-end-s12-a1-a2-b7-b5-gasoleo-ta1-1-gasoleo
+16_pop-end-s12-a1-a2-b7-b5-gasoleo-ta1-1-gasoleo < 17_pop-start-s12-b0-a1-a2-b9-gasoleo-lco-ta2-1-gasoleo
+17_pop-start-s12-b0-a1-a2-b9-gasoleo-lco-ta2-1-gasoleo < 18_pop-end-s12-a1-a2-b5-b9-gasoleo-ta1-2-gasoleo
+18_pop-end-s12-a1-a2-b5-b9-gasoleo-ta1-2-gasoleo < 19_pop-start-s12-b6-a1-a2-b0-gasoleo-gasoleo-ta2-3-gasoleo
+19_pop-start-s12-b6-a1-a2-b0-gasoleo-gasoleo-ta2-3-gasoleo < 20_pop-end-s12-a1-a2-b9-b0-gasoleo-ta1-3-gasoleo
+20_pop-end-s12-a1-a2-b9-b0-gasoleo-ta1-3-gasoleo < 21_push-start-s13-b9-a1-a3-b8-lco-gasoleo-ta1-1-lco
+21_push-start-s13-b9-a1-a3-b8-lco-gasoleo-ta1-1-lco < 22_push-end-s13-a1-a3-b2-b8-rat-a-ta3-1-rat-a
+22_push-end-s13-a1-a3-b2-b8-rat-a-ta3-1-rat-a < 23_push-start-s13-b5-a1-a3-b9-gasoleo-lco-ta1-1-gasoleo
+23_push-start-s13-b5-a1-a3-b9-gasoleo-lco-ta1-1-gasoleo < 24_push-end-s13-a1-a3-b8-b9-gasoleo-ta3-1-gasoleo
+24_push-end-s13-a1-a3-b8-b9-gasoleo-ta3-1-gasoleo < 25_push-start-s13-b7-a1-a3-b5-gasoleo-gasoleo-ta1-2-gasoleo
+25_push-start-s13-b7-a1-a3-b5-gasoleo-gasoleo-ta1-2-gasoleo < 26_push-end-s13-a1-a3-b9-b5-lco-ta3-1-lco
+26_push-end-s13-a1-a3-b9-b5-lco-ta3-1-lco < 27_pop-start-s13-b8-a1-a3-b5-gasoleo-gasoleo-ta3-1-gasoleo
+27_pop-start-s13-b8-a1-a3-b5-gasoleo-gasoleo-ta3-1-gasoleo < 28_pop-end-s13-a1-a3-b7-b5-rat-a-ta1-1-rat-a
+28_pop-end-s13-a1-a3-b7-b5-rat-a-ta1-1-rat-a < 29_push-start-s12-b7-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo
+28_pop-end-s13-a1-a3-b7-b5-rat-a-ta1-1-rat-a < 30_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a
+29_push-start-s12-b7-a1-a2-b0-gasoleo-gasoleo-ta1-3-gasoleo < 32_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-1-gasoleo
+30_pop-start-s13-b2-a1-a3-b8-rat-a-gasoleo-ta3-1-rat-a < 31_pop-end-s13-a1-a3-b5-b8-lco-ta1-1-lco
+31_pop-end-s13-a1-a3-b5-b8-lco-ta1-1-lco < 33_push-start-s12-b3-a1-a2-b7-lco-gasoleo-ta1-1-lco
+32_push-end-s12-a1-a2-b6-b0-gasoleo-ta2-1-gasoleo < 33_push-start-s12-b3-a1-a2-b7-lco-gasoleo-ta1-1-lco
+33_push-start-s12-b3-a1-a2-b7-lco-gasoleo-ta1-1-lco < 34_push-end-s12-a1-a2-b0-b7-gasoleo-ta2-3-gasoleo
+** Binding

@@ -1,0 +1,303 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20)
+01_drive_tent(v_21 v_22 v_23 v_24 v_25)
+02_drive_tent(v_26 v_27 v_28 v_29 v_30)
+03_put_up(v_31 v_32 v_33)
+04_walk_together(v_34 v_35 v_36 v_37 v_38 v_39)
+05_walk_together(v_40 v_41 v_42 v_43 v_44 v_45)
+06_drive(v_46 v_47 v_48 v_49)
+07_put_up(v_50 v_51 v_52)
+08_walk_together(v_53 v_54 v_55 v_56 v_57 v_58)
+09_walk_together(v_59 v_60 v_61 v_62 v_63 v_64)
+10_put_down(v_65 v_66 v_67)
+11_drive_tent_passenger(v_68 v_69 v_70 v_71 v_72 v_73)
+12_put_up(v_74 v_75 v_76)
+13_walk_together(v_77 v_78 v_79 v_80 v_81 v_82)
+14_drive(v_83 v_84 v_85 v_86)
+15_drive(v_87 v_88 v_89 v_90)
+16_put_down(v_91 v_92 v_93)
+17_drive_tent(v_94 v_95 v_96 v_97 v_98)
+18_drive(v_99 v_100 v_101 v_102)
+19_drive(v_103 v_104 v_105 v_106)
+20_drive(v_107 v_108 v_109 v_110)
+21_walk_together(v_111 v_112 v_113 v_114 v_115 v_116)
+22_drive(v_117 v_118 v_119 v_120)
+23_drive_tent(v_121 v_122 v_123 v_124 v_125)
+24_put_up(v_126 v_127 v_128)
+25_walk_together(v_129 v_130 v_131 v_132 v_133 v_134)
+26_walk_together(v_135 v_136 v_137 v_138 v_139 v_140)
+27_put_down(v_141 v_142 v_143)
+28_drive_tent(v_144 v_145 v_146 v_147 v_148)
+29_put_up(v_149 v_150 v_151)
+30_drive(v_152 v_153 v_154 v_155)
+31_drive_passenger(v_156 v_157 v_158 v_159 v_160)
+32_walk_together(v_161 v_162 v_163 v_164 v_165 v_166)
+33_walk_together(v_167 v_168 v_169 v_170 v_171 v_172)
+34_put_down(v_173 v_174 v_175)
+35_drive_tent(v_176 v_177 v_178 v_179 v_180)
+36_drive(v_181 v_182 v_183 v_184)
+37_drive(v_185 v_186 v_187 v_188)
+38_walk_together(v_189 v_190 v_191 v_192 v_193 v_194)
+39_put_up(v_195 v_196 v_197)
+40_walk_together(v_198 v_199 v_200 v_201 v_202 v_203)
+goal(v_204 v_205 v_206 v_207)
+** Ordering
+01_drive_tent < 03_put_up
+02_drive_tent < 07_put_up
+03_put_up < 04_walk_together
+03_put_up < 05_walk_together
+03_put_up < 06_drive
+04_walk_together < 08_walk_together
+05_walk_together < 09_walk_together
+06_drive < 12_put_up
+06_drive < 20_drive
+07_put_up < 08_walk_together
+07_put_up < 09_walk_together
+08_walk_together < 10_put_down
+09_walk_together < 10_put_down
+10_put_down < 11_drive_tent_passenger
+11_drive_tent_passenger < 12_put_up
+11_drive_tent_passenger < 15_drive
+11_drive_tent_passenger < 20_drive
+12_put_up < 13_walk_together
+12_put_up < 14_drive
+12_put_up < 21_walk_together
+13_walk_together < 26_walk_together
+14_drive < 23_drive_tent
+15_drive < 16_put_down
+16_put_down < 17_drive_tent
+17_drive_tent < 19_drive
+18_drive < 22_drive
+19_drive < 14_drive
+20_drive < 19_drive
+20_drive < 21_walk_together
+21_walk_together < 25_walk_together
+22_drive < 30_drive
+23_drive_tent < 28_drive_tent
+24_put_up < 25_walk_together
+24_put_up < 26_walk_together
+24_put_up < 36_drive
+25_walk_together < 27_put_down
+26_walk_together < 27_put_down
+27_put_down < 39_put_up
+28_drive_tent < 29_put_up
+29_put_up < 18_drive
+30_drive < 31_drive_passenger
+31_drive_passenger < 32_walk_together
+32_walk_together < 33_walk_together
+33_walk_together < 34_put_down
+34_put_down < 35_drive_tent
+35_drive_tent < 24_put_up
+36_drive < 37_drive
+37_drive < 38_walk_together
+38_walk_together < 40_walk_together
+40_walk_together < 27_put_down
+** Binding
+v_0=car0
+v_1=car1
+v_2=car2
+v_3=car3
+v_4=couple0
+v_5=couple1
+v_6=couple2
+v_7=girl0
+v_8=girl1
+v_9=girl2
+v_10=guy0
+v_11=guy1
+v_12=guy2
+v_13=place0
+v_14=place1
+v_15=place2
+v_16=place3
+v_17=place4
+v_18=tent0
+v_19=tent1
+v_20=tent2
+v_21=girl0
+v_22=place0
+v_23=place1
+v_24=car0
+v_25=tent0
+v_26=guy0
+v_27=place0
+v_28=place2
+v_29=car1
+v_30=tent1
+v_31=girl0
+v_32=place1
+v_33=tent0
+v_34=tent0
+v_35=place1
+v_36=guy1
+v_37=place0
+v_38=girl1
+v_39=couple1
+v_40=tent0
+v_41=place1
+v_42=guy2
+v_43=place0
+v_44=girl2
+v_45=couple2
+v_46=girl0
+v_47=place1
+v_48=place3
+v_49=car0
+v_50=guy0
+v_51=place2
+v_52=tent1
+v_53=tent1
+v_54=place2
+v_55=guy1
+v_56=place1
+v_57=girl1
+v_58=couple1
+v_59=tent1
+v_60=place2
+v_61=guy2
+v_62=place1
+v_63=girl2
+v_64=couple2
+v_65=girl1
+v_66=place2
+v_67=tent1
+v_68=girl1
+v_69=place2
+v_70=place3
+v_71=car1
+v_72=tent1
+v_73=guy0
+v_74=girl0
+v_75=place3
+v_76=tent1
+v_77=tent1
+v_78=place3
+v_79=guy2
+v_80=place2
+v_81=girl2
+v_82=couple2
+v_83=girl0
+v_84=place3
+v_85=place2
+v_86=car0
+v_87=guy0
+v_88=place3
+v_89=place0
+v_90=car1
+v_91=guy0
+v_92=place0
+v_93=tent2
+v_94=guy0
+v_95=place0
+v_96=place2
+v_97=car1
+v_98=tent2
+v_99=girl0
+v_100=place2
+v_101=place0
+v_102=car1
+v_103=guy0
+v_104=place2
+v_105=place3
+v_106=car0
+v_107=girl1
+v_108=place3
+v_109=place2
+v_110=car0
+v_111=tent1
+v_112=place3
+v_113=guy1
+v_114=place2
+v_115=girl1
+v_116=couple1
+v_117=girl0
+v_118=place0
+v_119=place2
+v_120=car2
+v_121=girl0
+v_122=place2
+v_123=place4
+v_124=car0
+v_125=tent2
+v_126=girl0
+v_127=place4
+v_128=tent2
+v_129=tent2
+v_130=place4
+v_131=guy1
+v_132=place3
+v_133=girl1
+v_134=couple1
+v_135=tent2
+v_136=place4
+v_137=guy2
+v_138=place3
+v_139=girl2
+v_140=couple2
+v_141=girl0
+v_142=place4
+v_143=tent2
+v_144=girl0
+v_145=place4
+v_146=place2
+v_147=car0
+v_148=tent2
+v_149=girl0
+v_150=place2
+v_151=tent2
+v_152=girl0
+v_153=place2
+v_154=place3
+v_155=car0
+v_156=girl0
+v_157=place3
+v_158=place0
+v_159=car0
+v_160=guy0
+v_161=tent0
+v_162=place1
+v_163=guy0
+v_164=place0
+v_165=girl0
+v_166=couple0
+v_167=tent2
+v_168=place2
+v_169=guy0
+v_170=place1
+v_171=girl0
+v_172=couple0
+v_173=girl0
+v_174=place2
+v_175=tent2
+v_176=girl0
+v_177=place2
+v_178=place4
+v_179=car2
+v_180=tent2
+v_181=girl0
+v_182=place4
+v_183=place3
+v_184=car2
+v_185=girl0
+v_186=place3
+v_187=place2
+v_188=car2
+v_189=tent1
+v_190=place3
+v_191=guy0
+v_192=place2
+v_193=girl0
+v_194=couple0
+v_195=girl1
+v_196=place4
+v_197=tent2
+v_198=tent2
+v_199=place4
+v_200=guy0
+v_201=place3
+v_202=girl0
+v_203=couple0
+v_204=couple0
+v_205=couple1
+v_206=couple2
+v_207=place4

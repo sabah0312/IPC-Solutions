@@ -1,0 +1,388 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17)
+01_invert-single-gene-a(v_18)
+02_invert-single-gene-a(v_19)
+03_invert-single-gene-a(v_20)
+04_invert-single-gene-a(v_21)
+05_invert-single-gene-a(v_22)
+06_begin-cut(v_23 v_24)
+07_end-cut-1(v_25 v_26)
+08_end-cut-2(v_27 v_28)
+09_begin-transpose-splice(v_29 v_30)
+10_end-splice-1(v_31 v_32)
+11_end-splice-2(v_33 v_34)
+12_reset-1(v_35)
+13_begin-cut(v_36 v_37)
+14_end-cut-1(v_38 v_39)
+15_end-cut-2(v_40 v_41)
+16_begin-transpose-splice(v_42 v_43)
+17_end-splice-1(v_44 v_45)
+18_end-splice-2(v_46 v_47)
+19_reset-1(v_48)
+20_begin-cut(v_49 v_50)
+21_end-cut-1(v_51 v_52)
+22_end-cut-2(v_53 v_54)
+23_begin-transpose-splice(v_55 v_56)
+24_end-splice-1(v_57 v_58)
+25_end-splice-2(v_59 v_60)
+26_reset-1(v_61)
+27_begin-cut(v_62 v_63)
+28_end-cut-1(v_64 v_65)
+29_end-cut-2(v_66 v_67)
+30_begin-transpose-splice(v_68 v_69)
+31_end-splice-1(v_70 v_71)
+32_end-splice-2(v_72 v_73)
+33_reset-1(v_74)
+34_begin-cut(v_75 v_76)
+35_end-cut-1(v_77 v_78)
+36_end-cut-2(v_79 v_80)
+37_begin-transpose-splice(v_81 v_82)
+38_end-splice-1(v_83 v_84)
+39_end-splice-2(v_85 v_86)
+40_reset-1(v_87)
+41_begin-cut(v_88 v_89)
+42_end-cut-1(v_90 v_91)
+43_end-cut-2(v_92 v_93)
+44_begin-transpose-splice(v_94 v_95)
+45_end-splice-1(v_96 v_97)
+46_end-splice-2(v_98 v_99)
+47_reset-1(v_100)
+48_begin-cut(v_101 v_102)
+49_end-cut-1(v_103 v_104)
+50_end-cut-2(v_105 v_106)
+51_begin-transpose-splice(v_107 v_108)
+52_end-splice-1(v_109 v_110)
+53_end-splice-2(v_111 v_112)
+54_reset-1(v_113)
+55_begin-cut(v_114 v_115)
+56_end-cut-1(v_116 v_117)
+57_end-cut-2(v_118 v_119)
+58_begin-transpose-splice(v_120 v_121)
+59_end-splice-1(v_122 v_123)
+60_end-splice-2(v_124 v_125)
+61_reset-1(v_126)
+62_begin-cut(v_127 v_128)
+63_end-cut-1(v_129 v_130)
+64_end-cut-2(v_131 v_132)
+65_begin-transpose-splice(v_133 v_134)
+66_end-splice-1(v_135 v_136)
+67_end-splice-2(v_137 v_138)
+68_reset-1(v_139)
+69_begin-cut(v_140 v_141)
+70_end-cut-1(v_142 v_143)
+71_end-cut-2(v_144 v_145)
+72_begin-transpose-splice(v_146 v_147)
+73_end-splice-1(v_148 v_149)
+74_end-splice-2(v_150 v_151)
+75_reset-1(v_152)
+76_begin-cut(v_153 v_154)
+77_end-cut-1(v_155 v_156)
+78_end-cut-2(v_157 v_158)
+79_begin-transpose-splice(v_159 v_160)
+80_end-splice-1(v_161 v_162)
+81_end-splice-2(v_163 v_164)
+82_reset-1(v_165)
+83_begin-cut(v_166 v_167)
+84_continue-cut(v_168 v_169)
+85_end-cut-1(v_170 v_171)
+86_end-cut-2(v_172 v_173)
+87_begin-transpose-splice(v_174 v_175)
+88_continue-splice-1(v_176 v_177)
+89_continue-splice-2(v_178 v_179)
+90_end-splice-1(v_180 v_181)
+91_end-splice-2(v_182 v_183)
+goal(v_184 v_185 v_186 v_187 v_188 v_189 v_190 v_191 v_192 v_193 v_194 v_195 v_196 v_197 v_198 v_199 v_200 v_201)
+** Ordering
+01_invert-single-gene-a < 13_begin-cut
+02_invert-single-gene-a < 13_begin-cut
+03_invert-single-gene-a < 13_begin-cut
+04_invert-single-gene-a < 13_begin-cut
+05_invert-single-gene-a < 13_begin-cut
+06_begin-cut < 07_end-cut-1
+07_end-cut-1 < 08_end-cut-2
+08_end-cut-2 < 09_begin-transpose-splice
+09_begin-transpose-splice < 10_end-splice-1
+10_end-splice-1 < 11_end-splice-2
+11_end-splice-2 < 12_reset-1
+12_reset-1 < 20_begin-cut
+13_begin-cut < 14_end-cut-1
+14_end-cut-1 < 15_end-cut-2
+15_end-cut-2 < 16_begin-transpose-splice
+16_begin-transpose-splice < 17_end-splice-1
+17_end-splice-1 < 18_end-splice-2
+18_end-splice-2 < 19_reset-1
+19_reset-1 < 06_begin-cut
+20_begin-cut < 21_end-cut-1
+21_end-cut-1 < 22_end-cut-2
+22_end-cut-2 < 23_begin-transpose-splice
+23_begin-transpose-splice < 24_end-splice-1
+24_end-splice-1 < 25_end-splice-2
+25_end-splice-2 < 26_reset-1
+26_reset-1 < 34_begin-cut
+27_begin-cut < 28_end-cut-1
+28_end-cut-1 < 29_end-cut-2
+29_end-cut-2 < 30_begin-transpose-splice
+30_begin-transpose-splice < 31_end-splice-1
+31_end-splice-1 < 32_end-splice-2
+32_end-splice-2 < 33_reset-1
+33_reset-1 < 41_begin-cut
+34_begin-cut < 35_end-cut-1
+35_end-cut-1 < 36_end-cut-2
+36_end-cut-2 < 37_begin-transpose-splice
+37_begin-transpose-splice < 38_end-splice-1
+38_end-splice-1 < 39_end-splice-2
+39_end-splice-2 < 40_reset-1
+40_reset-1 < 27_begin-cut
+41_begin-cut < 42_end-cut-1
+42_end-cut-1 < 43_end-cut-2
+43_end-cut-2 < 44_begin-transpose-splice
+44_begin-transpose-splice < 45_end-splice-1
+45_end-splice-1 < 46_end-splice-2
+46_end-splice-2 < 47_reset-1
+47_reset-1 < 48_begin-cut
+48_begin-cut < 49_end-cut-1
+49_end-cut-1 < 50_end-cut-2
+50_end-cut-2 < 51_begin-transpose-splice
+51_begin-transpose-splice < 52_end-splice-1
+52_end-splice-1 < 53_end-splice-2
+53_end-splice-2 < 54_reset-1
+54_reset-1 < 55_begin-cut
+55_begin-cut < 56_end-cut-1
+56_end-cut-1 < 57_end-cut-2
+57_end-cut-2 < 58_begin-transpose-splice
+58_begin-transpose-splice < 59_end-splice-1
+59_end-splice-1 < 60_end-splice-2
+60_end-splice-2 < 61_reset-1
+61_reset-1 < 62_begin-cut
+62_begin-cut < 63_end-cut-1
+63_end-cut-1 < 64_end-cut-2
+64_end-cut-2 < 65_begin-transpose-splice
+65_begin-transpose-splice < 66_end-splice-1
+66_end-splice-1 < 67_end-splice-2
+67_end-splice-2 < 68_reset-1
+68_reset-1 < 69_begin-cut
+69_begin-cut < 70_end-cut-1
+70_end-cut-1 < 71_end-cut-2
+71_end-cut-2 < 72_begin-transpose-splice
+72_begin-transpose-splice < 73_end-splice-1
+73_end-splice-1 < 74_end-splice-2
+74_end-splice-2 < 75_reset-1
+75_reset-1 < 76_begin-cut
+76_begin-cut < 77_end-cut-1
+77_end-cut-1 < 78_end-cut-2
+78_end-cut-2 < 79_begin-transpose-splice
+79_begin-transpose-splice < 80_end-splice-1
+80_end-splice-1 < 81_end-splice-2
+81_end-splice-2 < 82_reset-1
+82_reset-1 < 83_begin-cut
+83_begin-cut < 84_continue-cut
+84_continue-cut < 85_end-cut-1
+85_end-cut-1 < 86_end-cut-2
+86_end-cut-2 < 87_begin-transpose-splice
+87_begin-transpose-splice < 88_continue-splice-1
+88_continue-splice-1 < 89_continue-splice-2
+89_continue-splice-2 < 90_end-splice-1
+90_end-splice-1 < 91_end-splice-2
+** Binding
+v_0=g28
+v_1=g36
+v_2=g40
+v_3=sub1
+v_4=sub10
+v_5=sub11
+v_6=sub12
+v_7=sub13
+v_8=sub14
+v_9=sub15
+v_10=sub2
+v_11=sub3
+v_12=sub4
+v_13=sub5
+v_14=sub6
+v_15=sub7
+v_16=sub8
+v_17=sub9
+v_18=g28
+v_19=sub1
+v_20=sub12
+v_21=sub8
+v_22=sub9
+v_23=sub6
+v_24=sub8
+v_25=sub8
+v_26=sub10
+v_27=sub6
+v_28=sub10
+v_29=sub1
+v_30=sub6
+v_31=sub8
+v_32=sub1
+v_33=sub8
+v_34=sub6
+v_35=sub6
+v_36=sub5
+v_37=g28
+v_38=g28
+v_39=g36
+v_40=sub5
+v_41=g36
+v_42=sub7
+v_43=sub15
+v_44=g28
+v_45=sub7
+v_46=g28
+v_47=sub15
+v_48=sub5
+v_49=sub5
+v_50=g36
+v_51=g36
+v_52=sub7
+v_53=sub5
+v_54=sub7
+v_55=sub4
+v_56=sub14
+v_57=g36
+v_58=sub4
+v_59=g36
+v_60=sub14
+v_61=sub5
+v_62=sub15
+v_63=g40
+v_64=g40
+v_65=sub12
+v_66=sub15
+v_67=sub12
+v_68=sub13
+v_69=sub2
+v_70=g40
+v_71=sub13
+v_72=g40
+v_73=sub2
+v_74=sub15
+v_75=sub11
+v_76=sub1
+v_77=sub1
+v_78=sub8
+v_79=sub11
+v_80=sub8
+v_81=sub9
+v_82=sub4
+v_83=sub1
+v_84=sub9
+v_85=sub1
+v_86=sub4
+v_87=sub11
+v_88=sub14
+v_89=sub11
+v_90=sub11
+v_91=sub8
+v_92=sub14
+v_93=sub8
+v_94=sub12
+v_95=sub13
+v_96=sub11
+v_97=sub12
+v_98=sub11
+v_99=sub13
+v_100=sub14
+v_101=g36
+v_102=sub14
+v_103=sub14
+v_104=sub8
+v_105=g36
+v_106=sub8
+v_107=sub10
+v_108=sub3
+v_109=sub14
+v_110=sub10
+v_111=sub14
+v_112=sub3
+v_113=g36
+v_114=g40
+v_115=sub2
+v_116=sub2
+v_117=sub9
+v_118=g40
+v_119=sub9
+v_120=g36
+v_121=sub8
+v_122=sub2
+v_123=g36
+v_124=sub2
+v_125=sub8
+v_126=g40
+v_127=g40
+v_128=sub9
+v_129=sub9
+v_130=sub1
+v_131=g40
+v_132=sub1
+v_133=sub5
+v_134=sub7
+v_135=sub9
+v_136=sub5
+v_137=sub9
+v_138=sub7
+v_139=g40
+v_140=g40
+v_141=sub1
+v_142=sub1
+v_143=sub4
+v_144=g40
+v_145=sub4
+v_146=sub9
+v_147=sub7
+v_148=sub1
+v_149=sub9
+v_150=sub1
+v_151=sub7
+v_152=g40
+v_153=sub1
+v_154=sub7
+v_155=sub7
+v_156=g28
+v_157=sub1
+v_158=g28
+v_159=g40
+v_160=sub4
+v_161=sub7
+v_162=g40
+v_163=sub7
+v_164=sub4
+v_165=sub1
+v_166=sub1
+v_167=g28
+v_168=g28
+v_169=sub15
+v_170=sub15
+v_171=sub12
+v_172=sub1
+v_173=sub12
+v_174=sub7
+v_175=sub4
+v_176=g28
+v_177=sub15
+v_178=g28
+v_179=sub7
+v_180=sub15
+v_181=g28
+v_182=sub15
+v_183=sub4
+v_184=g28
+v_185=g36
+v_186=g40
+v_187=sub1
+v_188=sub10
+v_189=sub11
+v_190=sub12
+v_191=sub13
+v_192=sub14
+v_193=sub15
+v_194=sub2
+v_195=sub3
+v_196=sub4
+v_197=sub5
+v_198=sub6
+v_199=sub7
+v_200=sub8
+v_201=sub9

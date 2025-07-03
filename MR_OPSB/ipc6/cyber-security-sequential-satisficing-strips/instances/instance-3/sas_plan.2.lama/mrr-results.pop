@@ -1,0 +1,81 @@
+** Operators
+init()
+01_sit_at_host-bob-yeti-bobs_office()
+02_sit_at_host-greg-sherpa-gregs_office()
+03_enter_uname-greg-greg_uid-sherpa()
+04_enter_password-greg-greg_uid-sherpa-greg_pwd()
+05_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0()
+06_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs()
+07_launch_shell-greg_uid-sherpa-s_wexplore-proc_0()
+08_mandatory-bob()
+09_proc_fork-sherpa-greg_uid-proc_0-wexplorer()
+10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore()
+11_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0()
+12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0()
+13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs()
+14_dms_begin_session-dmss2()
+15_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2()
+16_dms_connect-proc_0-everest-nes-dmss2()
+17_dms_route-sherpa-everest-dmss2()
+18_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2()
+19_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0()
+20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs()
+21_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2()
+22_dms_req_begin-dmss2-greg-sherpa()
+23_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid()
+24_dms_send-dmss2-sherpa-proc_1-e_secret_doc()
+25_enter_uname-bob-bob_uid-yeti()
+26_enter_password-bob-bob_uid-yeti-bob_pwd()
+27_enter_password-bob-bob_uid-yeti-bob_pwd-condeff0-no-0()
+28_enter_password-bob-bob_uid-yeti-bob_pwd-endof-condeffs()
+29_launch_shell-bob_uid-yeti-y_wexplore-proc_0()
+30_proc_fork-yeti-bob_uid-proc_0-wexplorer()
+31_exec_file-yeti-bob-bob_uid-east_gid-proc_2-y_tmaster()
+32_proc_fork-yeti-bob_uid-proc_0-wexplorer()
+33_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_winbork()
+34_inject_code-yeti-proc_1-winbork-sherpa-proc_0-wexplorer-bob-fb_virus()
+35_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_1-proc_0-fb_virus-yeti-proc_2-troj_master()
+36_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info()
+37_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info-condeff0-no-0()
+38_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info-endof-condeffs()
+goal()
+** Ordering
+01_sit_at_host-bob-yeti-bobs_office < 03_enter_uname-greg-greg_uid-sherpa
+02_sit_at_host-greg-sherpa-gregs_office < 03_enter_uname-greg-greg_uid-sherpa
+03_enter_uname-greg-greg_uid-sherpa < 04_enter_password-greg-greg_uid-sherpa-greg_pwd
+04_enter_password-greg-greg_uid-sherpa-greg_pwd < 05_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0
+05_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0 < 06_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs
+06_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs < 07_launch_shell-greg_uid-sherpa-s_wexplore-proc_0
+07_launch_shell-greg_uid-sherpa-s_wexplore-proc_0 < 09_proc_fork-sherpa-greg_uid-proc_0-wexplorer
+08_mandatory-bob < 03_enter_uname-greg-greg_uid-sherpa
+09_proc_fork-sherpa-greg_uid-proc_0-wexplorer < 10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore
+10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore < 11_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0
+10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore < 12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0
+11_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0 < 13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs
+12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0 < 13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs
+13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs < 14_dms_begin_session-dmss2
+14_dms_begin_session-dmss2 < 15_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2
+15_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2 < 16_dms_connect-proc_0-everest-nes-dmss2
+16_dms_connect-proc_0-everest-nes-dmss2 < 17_dms_route-sherpa-everest-dmss2
+17_dms_route-sherpa-everest-dmss2 < 18_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2
+18_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2 < 19_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0
+19_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0 < 20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs
+20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs < 21_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2
+21_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2 < 22_dms_req_begin-dmss2-greg-sherpa
+22_dms_req_begin-dmss2-greg-sherpa < 23_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid
+23_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid < 24_dms_send-dmss2-sherpa-proc_1-e_secret_doc
+24_dms_send-dmss2-sherpa-proc_1-e_secret_doc < 25_enter_uname-bob-bob_uid-yeti
+25_enter_uname-bob-bob_uid-yeti < 26_enter_password-bob-bob_uid-yeti-bob_pwd
+26_enter_password-bob-bob_uid-yeti-bob_pwd < 27_enter_password-bob-bob_uid-yeti-bob_pwd-condeff0-no-0
+27_enter_password-bob-bob_uid-yeti-bob_pwd-condeff0-no-0 < 28_enter_password-bob-bob_uid-yeti-bob_pwd-endof-condeffs
+28_enter_password-bob-bob_uid-yeti-bob_pwd-endof-condeffs < 29_launch_shell-bob_uid-yeti-y_wexplore-proc_0
+29_launch_shell-bob_uid-yeti-y_wexplore-proc_0 < 30_proc_fork-yeti-bob_uid-proc_0-wexplorer
+30_proc_fork-yeti-bob_uid-proc_0-wexplorer < 33_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_winbork
+31_exec_file-yeti-bob-bob_uid-east_gid-proc_2-y_tmaster < 35_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_1-proc_0-fb_virus-yeti-proc_2-troj_master
+32_proc_fork-yeti-bob_uid-proc_0-wexplorer < 31_exec_file-yeti-bob-bob_uid-east_gid-proc_2-y_tmaster
+33_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_winbork < 34_inject_code-yeti-proc_1-winbork-sherpa-proc_0-wexplorer-bob-fb_virus
+34_inject_code-yeti-proc_1-winbork-sherpa-proc_0-wexplorer-bob-fb_virus < 32_proc_fork-yeti-bob_uid-proc_0-wexplorer
+35_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_1-proc_0-fb_virus-yeti-proc_2-troj_master < 36_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info
+36_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info < 37_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info-condeff0-no-0
+37_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info-condeff0-no-0 < 38_read_doc-bob-yeti-proc_2-e_secret_doc-bobs_office-secret_info-endof-condeffs
+** Binding

@@ -1,0 +1,266 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18)
+01_left(v_19 v_20 v_21)
+02_up(v_22 v_23 v_24)
+03_paint-up(v_25 v_26 v_27 v_28)
+04_right(v_29 v_30 v_31)
+05_change-color(v_32 v_33 v_34)
+06_paint-up(v_35 v_36 v_37 v_38)
+07_down(v_39 v_40 v_41)
+08_left(v_42 v_43 v_44)
+09_paint-up(v_45 v_46 v_47 v_48)
+10_right(v_49 v_50 v_51)
+11_right(v_52 v_53 v_54)
+12_right(v_55 v_56 v_57)
+13_right(v_58 v_59 v_60)
+14_up(v_61 v_62 v_63)
+15_change-color(v_64 v_65 v_66)
+16_paint-up(v_67 v_68 v_69 v_70)
+17_down(v_71 v_72 v_73)
+18_change-color(v_74 v_75 v_76)
+19_paint-up(v_77 v_78 v_79 v_80)
+20_change-color(v_81 v_82 v_83)
+21_left(v_84 v_85 v_86)
+22_down(v_87 v_88 v_89)
+23_paint-up(v_90 v_91 v_92 v_93)
+24_left(v_94 v_95 v_96)
+25_left(v_97 v_98 v_99)
+26_paint-up(v_100 v_101 v_102 v_103)
+27_right(v_104 v_105 v_106)
+28_up(v_107 v_108 v_109)
+29_paint-up(v_110 v_111 v_112 v_113)
+30_left(v_114 v_115 v_116)
+31_paint-up(v_117 v_118 v_119 v_120)
+32_right(v_121 v_122 v_123)
+33_right(v_124 v_125 v_126)
+34_down(v_127 v_128 v_129)
+35_down(v_130 v_131 v_132)
+36_up(v_133 v_134 v_135)
+37_left(v_136 v_137 v_138)
+38_paint-up(v_139 v_140 v_141 v_142)
+39_right(v_143 v_144 v_145)
+40_paint-up(v_146 v_147 v_148 v_149)
+41_down(v_150 v_151 v_152)
+42_paint-up(v_153 v_154 v_155 v_156)
+goal(v_157 v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165 v_166 v_167 v_168 v_169 v_170)
+** Ordering
+01_left < 02_up
+02_up < 03_paint-up
+03_paint-up < 04_right
+03_paint-up < 05_change-color
+04_right < 06_paint-up
+05_change-color < 06_paint-up
+06_paint-up < 07_down
+07_down < 08_left
+08_left < 09_paint-up
+09_paint-up < 12_right
+09_paint-up < 15_change-color
+10_right < 11_right
+11_right < 21_left
+12_right < 34_down
+13_right < 14_up
+13_right < 38_paint-up
+14_up < 16_paint-up
+15_change-color < 26_paint-up
+16_paint-up < 17_down
+16_paint-up < 18_change-color
+17_down < 19_paint-up
+18_change-color < 19_paint-up
+19_paint-up < 20_change-color
+19_paint-up < 22_down
+20_change-color < 23_paint-up
+21_left < 30_left
+22_down < 23_paint-up
+23_paint-up < 24_left
+24_left < 35_down
+24_left < 42_paint-up
+25_left < 26_paint-up
+26_paint-up < 27_right
+27_right < 28_up
+27_right < 31_paint-up
+28_up < 29_paint-up
+28_up < 37_left
+29_paint-up < 13_right
+30_left < 31_paint-up
+31_paint-up < 32_right
+32_right < 33_right
+33_right < 36_up
+34_down < 25_left
+35_down < 40_paint-up
+36_up < 37_left
+37_left < 38_paint-up
+38_paint-up < 39_right
+39_right < 41_down
+41_down < 22_down
+** Binding
+v_0=black
+v_1=robot1
+v_2=robot2
+v_3=tile_0-1
+v_4=tile_0-2
+v_5=tile_0-3
+v_6=tile_1-1
+v_7=tile_1-2
+v_8=tile_1-3
+v_9=tile_2-1
+v_10=tile_2-2
+v_11=tile_2-3
+v_12=tile_3-1
+v_13=tile_3-2
+v_14=tile_3-3
+v_15=tile_4-1
+v_16=tile_4-2
+v_17=tile_4-3
+v_18=white
+v_19=robot2
+v_20=tile_2-2
+v_21=tile_2-1
+v_22=robot2
+v_23=tile_2-1
+v_24=tile_3-1
+v_25=robot2
+v_26=tile_4-1
+v_27=tile_3-1
+v_28=black
+v_29=robot2
+v_30=tile_3-1
+v_31=tile_3-2
+v_32=robot2
+v_33=black
+v_34=white
+v_35=robot2
+v_36=tile_4-2
+v_37=tile_3-2
+v_38=white
+v_39=robot2
+v_40=tile_3-2
+v_41=tile_2-2
+v_42=robot2
+v_43=tile_2-2
+v_44=tile_2-1
+v_45=robot2
+v_46=tile_3-1
+v_47=tile_2-1
+v_48=white
+v_49=robot1
+v_50=tile_0-1
+v_51=tile_0-2
+v_52=robot1
+v_53=tile_0-2
+v_54=tile_0-3
+v_55=robot2
+v_56=tile_2-1
+v_57=tile_2-2
+v_58=robot2
+v_59=tile_2-2
+v_60=tile_2-3
+v_61=robot2
+v_62=tile_2-3
+v_63=tile_3-3
+v_64=robot2
+v_65=white
+v_66=black
+v_67=robot2
+v_68=tile_4-3
+v_69=tile_3-3
+v_70=black
+v_71=robot2
+v_72=tile_3-3
+v_73=tile_2-3
+v_74=robot2
+v_75=black
+v_76=white
+v_77=robot2
+v_78=tile_3-3
+v_79=tile_2-3
+v_80=white
+v_81=robot2
+v_82=white
+v_83=black
+v_84=robot1
+v_85=tile_0-3
+v_86=tile_0-2
+v_87=robot2
+v_88=tile_2-3
+v_89=tile_1-3
+v_90=robot2
+v_91=tile_2-3
+v_92=tile_1-3
+v_93=black
+v_94=robot2
+v_95=tile_1-3
+v_96=tile_1-2
+v_97=robot2
+v_98=tile_1-2
+v_99=tile_1-1
+v_100=robot2
+v_101=tile_2-1
+v_102=tile_1-1
+v_103=black
+v_104=robot2
+v_105=tile_1-1
+v_106=tile_1-2
+v_107=robot2
+v_108=tile_1-2
+v_109=tile_2-2
+v_110=robot2
+v_111=tile_3-2
+v_112=tile_2-2
+v_113=black
+v_114=robot1
+v_115=tile_0-2
+v_116=tile_0-1
+v_117=robot1
+v_118=tile_1-1
+v_119=tile_0-1
+v_120=white
+v_121=robot1
+v_122=tile_0-1
+v_123=tile_0-2
+v_124=robot1
+v_125=tile_0-2
+v_126=tile_0-3
+v_127=robot2
+v_128=tile_2-2
+v_129=tile_1-2
+v_130=robot2
+v_131=tile_1-2
+v_132=tile_0-2
+v_133=robot1
+v_134=tile_0-3
+v_135=tile_1-3
+v_136=robot1
+v_137=tile_1-3
+v_138=tile_1-2
+v_139=robot1
+v_140=tile_2-2
+v_141=tile_1-2
+v_142=white
+v_143=robot1
+v_144=tile_1-2
+v_145=tile_1-3
+v_146=robot2
+v_147=tile_1-2
+v_148=tile_0-2
+v_149=black
+v_150=robot1
+v_151=tile_1-3
+v_152=tile_0-3
+v_153=robot1
+v_154=tile_1-3
+v_155=tile_0-3
+v_156=white
+v_157=black
+v_158=tile_1-1
+v_159=tile_1-2
+v_160=tile_1-3
+v_161=tile_2-1
+v_162=tile_2-2
+v_163=tile_2-3
+v_164=tile_3-1
+v_165=tile_3-2
+v_166=tile_3-3
+v_167=tile_4-1
+v_168=tile_4-2
+v_169=tile_4-3
+v_170=white

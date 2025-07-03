@@ -1,0 +1,589 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57)
+01_sendtohome(v_58 v_59 v_60 v_61 v_62 v_63)
+02_sendtohome(v_64 v_65 v_66 v_67 v_68 v_69)
+03_sendtofree(v_70 v_71 v_72 v_73)
+04_sendtofree(v_74 v_75 v_76 v_77)
+05_sendtofree(v_78 v_79 v_80 v_81)
+06_sendtofree(v_82 v_83 v_84 v_85)
+07_move(v_86 v_87 v_88)
+08_move(v_89 v_90 v_91)
+09_sendtohome(v_92 v_93 v_94 v_95 v_96 v_97)
+10_sendtohome(v_98 v_99 v_100 v_101 v_102 v_103)
+11_move(v_104 v_105 v_106)
+12_move(v_107 v_108 v_109)
+13_colfromfreecell(v_110 v_111 v_112 v_113)
+14_move(v_114 v_115 v_116)
+15_sendtofree(v_117 v_118 v_119 v_120)
+16_sendtohome-b(v_121 v_122 v_123 v_124 v_125 v_126 v_127)
+17_homefromfreecell(v_128 v_129 v_130 v_131 v_132 v_133 v_134)
+18_sendtofree(v_135 v_136 v_137 v_138)
+19_sendtonewcol(v_139 v_140 v_141 v_142)
+20_colfromfreecell(v_143 v_144 v_145 v_146)
+21_sendtofree(v_147 v_148 v_149 v_150)
+22_move(v_151 v_152 v_153)
+23_colfromfreecell(v_154 v_155 v_156 v_157)
+24_move(v_158 v_159 v_160)
+25_sendtohome-b(v_161 v_162 v_163 v_164 v_165 v_166 v_167)
+26_sendtofree(v_168 v_169 v_170 v_171)
+27_sendtonewcol(v_172 v_173 v_174 v_175)
+28_sendtohome-b(v_176 v_177 v_178 v_179 v_180 v_181 v_182)
+29_sendtonewcol(v_183 v_184 v_185 v_186)
+30_move(v_187 v_188 v_189)
+31_sendtohome(v_190 v_191 v_192 v_193 v_194 v_195)
+32_sendtohome(v_196 v_197 v_198 v_199 v_200 v_201)
+33_colfromfreecell(v_202 v_203 v_204 v_205)
+34_sendtofree(v_206 v_207 v_208 v_209)
+35_move-b(v_210 v_211 v_212 v_213)
+36_sendtonewcol(v_214 v_215 v_216 v_217)
+37_move-b(v_218 v_219 v_220 v_221)
+38_sendtonewcol(v_222 v_223 v_224 v_225)
+39_move(v_226 v_227 v_228)
+40_sendtohome(v_229 v_230 v_231 v_232 v_233 v_234)
+41_sendtohome(v_235 v_236 v_237 v_238 v_239 v_240)
+42_move-b(v_241 v_242 v_243 v_244)
+43_sendtonewcol(v_245 v_246 v_247 v_248)
+44_sendtohome(v_249 v_250 v_251 v_252 v_253 v_254)
+45_sendtohome(v_255 v_256 v_257 v_258 v_259 v_260)
+46_sendtohome(v_261 v_262 v_263 v_264 v_265 v_266)
+47_sendtohome-b(v_267 v_268 v_269 v_270 v_271 v_272 v_273)
+48_sendtohome(v_274 v_275 v_276 v_277 v_278 v_279)
+49_sendtonewcol(v_280 v_281 v_282 v_283)
+50_sendtohome(v_284 v_285 v_286 v_287 v_288 v_289)
+51_move(v_290 v_291 v_292)
+52_sendtohome(v_293 v_294 v_295 v_296 v_297 v_298)
+53_sendtohome-b(v_299 v_300 v_301 v_302 v_303 v_304 v_305)
+54_homefromfreecell(v_306 v_307 v_308 v_309 v_310 v_311 v_312)
+55_sendtohome-b(v_313 v_314 v_315 v_316 v_317 v_318 v_319)
+56_sendtofree(v_320 v_321 v_322 v_323)
+57_sendtonewcol(v_324 v_325 v_326 v_327)
+58_sendtohome(v_328 v_329 v_330 v_331 v_332 v_333)
+59_sendtohome(v_334 v_335 v_336 v_337 v_338 v_339)
+60_sendtohome-b(v_340 v_341 v_342 v_343 v_344 v_345 v_346)
+61_sendtohome-b(v_347 v_348 v_349 v_350 v_351 v_352 v_353)
+62_sendtohome-b(v_354 v_355 v_356 v_357 v_358 v_359 v_360)
+63_sendtohome(v_361 v_362 v_363 v_364 v_365 v_366)
+64_homefromfreecell(v_367 v_368 v_369 v_370 v_371 v_372 v_373)
+65_sendtohome-b(v_374 v_375 v_376 v_377 v_378 v_379 v_380)
+66_sendtohome-b(v_381 v_382 v_383 v_384 v_385 v_386 v_387)
+67_homefromfreecell(v_388 v_389 v_390 v_391 v_392 v_393 v_394)
+68_sendtohome-b(v_395 v_396 v_397 v_398 v_399 v_400 v_401)
+69_sendtohome-b(v_402 v_403 v_404 v_405 v_406 v_407 v_408)
+70_homefromfreecell(v_409 v_410 v_411 v_412 v_413 v_414 v_415)
+71_homefromfreecell(v_416 v_417 v_418 v_419 v_420 v_421 v_422)
+goal(v_423 v_424 v_425 v_426)
+** Ordering
+01_sendtohome < 07_move
+02_sendtohome < 11_move
+03_sendtofree < 04_sendtofree
+04_sendtofree < 05_sendtofree
+04_sendtofree < 12_move
+05_sendtofree < 21_sendtofree
+06_sendtofree < 10_sendtohome
+06_sendtofree < 33_colfromfreecell
+07_move < 08_move
+08_move < 09_sendtohome
+08_move < 18_sendtofree
+09_sendtohome < 10_sendtohome
+10_sendtohome < 25_sendtohome-b
+11_move < 12_move
+11_move < 21_sendtofree
+12_move < 13_colfromfreecell
+13_colfromfreecell < 14_move
+14_move < 15_sendtofree
+14_move < 30_move
+15_sendtofree < 16_sendtohome-b
+16_sendtohome-b < 17_homefromfreecell
+17_homefromfreecell < 26_sendtofree
+18_sendtofree < 20_colfromfreecell
+19_sendtonewcol < 35_move-b
+20_colfromfreecell < 06_sendtofree
+20_colfromfreecell < 32_sendtohome
+21_sendtofree < 13_colfromfreecell
+22_move < 26_sendtofree
+23_colfromfreecell < 18_sendtofree
+23_colfromfreecell < 24_move
+24_move < 39_move
+25_sendtohome-b < 40_sendtohome
+26_sendtofree < 23_colfromfreecell
+26_sendtofree < 27_sendtonewcol
+27_sendtonewcol < 28_sendtohome-b
+28_sendtohome-b < 31_sendtohome
+28_sendtohome-b < 38_sendtonewcol
+29_sendtonewcol < 25_sendtohome-b
+29_sendtonewcol < 33_colfromfreecell
+30_move < 31_sendtohome
+30_move < 38_sendtonewcol
+31_sendtohome < 32_sendtohome
+31_sendtohome < 39_move
+32_sendtohome < 19_sendtonewcol
+33_colfromfreecell < 34_sendtofree
+34_sendtofree < 36_sendtonewcol
+35_move-b < 29_sendtonewcol
+36_sendtonewcol < 37_move-b
+37_move-b < 48_sendtohome
+37_move-b < 49_sendtonewcol
+38_sendtonewcol < 24_move
+39_move < 42_move-b
+40_sendtohome < 41_sendtohome
+40_sendtohome < 43_sendtonewcol
+41_sendtohome < 44_sendtohome
+42_move-b < 19_sendtonewcol
+43_sendtonewcol < 44_sendtohome
+44_sendtohome < 45_sendtohome
+45_sendtohome < 46_sendtohome
+46_sendtohome < 47_sendtohome-b
+47_sendtohome-b < 36_sendtonewcol
+48_sendtohome < 50_sendtohome
+49_sendtonewcol < 50_sendtohome
+50_sendtohome < 51_move
+51_move < 52_sendtohome
+52_sendtohome < 53_sendtohome-b
+53_sendtohome-b < 54_homefromfreecell
+54_homefromfreecell < 55_sendtohome-b
+54_homefromfreecell < 56_sendtofree
+55_sendtohome-b < 57_sendtonewcol
+56_sendtofree < 64_homefromfreecell
+57_sendtonewcol < 58_sendtohome
+58_sendtohome < 59_sendtohome
+59_sendtohome < 60_sendtohome-b
+60_sendtohome-b < 61_sendtohome-b
+61_sendtohome-b < 62_sendtohome-b
+62_sendtohome-b < 63_sendtohome
+63_sendtohome < 64_homefromfreecell
+64_homefromfreecell < 65_sendtohome-b
+65_sendtohome-b < 66_sendtohome-b
+66_sendtohome-b < 67_homefromfreecell
+66_sendtohome-b < 68_sendtohome-b
+67_homefromfreecell < 70_homefromfreecell
+68_sendtohome-b < 69_sendtohome-b
+69_sendtohome-b < 70_homefromfreecell
+70_homefromfreecell < 71_homefromfreecell
+** Binding
+v_0=c
+v_1=c0
+v_2=c2
+v_3=c3
+v_4=c4
+v_5=c5
+v_6=c6
+v_7=c7
+v_8=c8
+v_9=c9
+v_10=ca
+v_11=d
+v_12=d0
+v_13=d2
+v_14=d3
+v_15=d4
+v_16=d5
+v_17=d6
+v_18=d7
+v_19=d8
+v_20=d9
+v_21=da
+v_22=h
+v_23=h0
+v_24=h2
+v_25=h3
+v_26=h4
+v_27=h5
+v_28=h6
+v_29=h7
+v_30=h8
+v_31=h9
+v_32=ha
+v_33=n0
+v_34=n1
+v_35=n10
+v_36=n11
+v_37=n12
+v_38=n13
+v_39=n2
+v_40=n3
+v_41=n4
+v_42=n5
+v_43=n6
+v_44=n7
+v_45=n8
+v_46=n9
+v_47=s
+v_48=s0
+v_49=s2
+v_50=s3
+v_51=s4
+v_52=s5
+v_53=s6
+v_54=s7
+v_55=s8
+v_56=s9
+v_57=sa
+v_58=ca
+v_59=d7
+v_60=c
+v_61=n1
+v_62=c0
+v_63=n0
+v_64=da
+v_65=s7
+v_66=d
+v_67=n1
+v_68=d0
+v_69=n0
+v_70=s9
+v_71=h2
+v_72=n4
+v_73=n3
+v_74=h2
+v_75=s5
+v_76=n3
+v_77=n2
+v_78=h4
+v_79=s6
+v_80=n2
+v_81=n1
+v_82=s6
+v_83=c3
+v_84=n1
+v_85=n0
+v_86=c6
+v_87=h5
+v_88=d7
+v_89=h5
+v_90=c2
+v_91=c6
+v_92=c2
+v_93=h9
+v_94=c
+v_95=n2
+v_96=ca
+v_97=n1
+v_98=c3
+v_99=s2
+v_100=c
+v_101=n3
+v_102=c2
+v_103=n2
+v_104=h6
+v_105=h8
+v_106=s7
+v_107=s5
+v_108=s3
+v_109=h6
+v_110=h4
+v_111=s5
+v_112=n0
+v_113=n1
+v_114=s3
+v_115=c5
+v_116=h4
+v_117=c5
+v_118=ha
+v_119=n1
+v_120=n0
+v_121=ha
+v_122=h
+v_123=n1
+v_124=h0
+v_125=n0
+v_126=n0
+v_127=n1
+v_128=h2
+v_129=h
+v_130=n2
+v_131=ha
+v_132=n1
+v_133=n0
+v_134=n1
+v_135=h5
+v_136=c6
+v_137=n1
+v_138=n0
+v_139=c6
+v_140=d7
+v_141=n1
+v_142=n0
+v_143=h5
+v_144=c6
+v_145=n0
+v_146=n1
+v_147=h8
+v_148=d4
+v_149=n1
+v_150=n0
+v_151=d6
+v_152=d9
+v_153=c7
+v_154=c5
+v_155=d6
+v_156=n0
+v_157=n1
+v_158=d4
+v_159=c4
+v_160=c5
+v_161=c4
+v_162=c
+v_163=n4
+v_164=c3
+v_165=n3
+v_166=n0
+v_167=n1
+v_168=d9
+v_169=h7
+v_170=n1
+v_171=n0
+v_172=h7
+v_173=h3
+v_174=n1
+v_175=n0
+v_176=h3
+v_177=h
+v_178=n3
+v_179=h2
+v_180=n2
+v_181=n0
+v_182=n1
+v_183=d7
+v_184=d8
+v_185=n1
+v_186=n0
+v_187=s3
+v_188=h4
+v_189=d4
+v_190=h4
+v_191=s5
+v_192=h
+v_193=n4
+v_194=h3
+v_195=n3
+v_196=h5
+v_197=c6
+v_198=h
+v_199=n5
+v_200=h4
+v_201=n4
+v_202=s6
+v_203=d7
+v_204=n0
+v_205=n1
+v_206=d8
+v_207=s4
+v_208=n1
+v_209=n0
+v_210=c6
+v_211=h7
+v_212=n0
+v_213=n1
+v_214=s4
+v_215=d3
+v_216=n1
+v_217=n0
+v_218=d3
+v_219=s4
+v_220=n0
+v_221=n1
+v_222=s3
+v_223=d4
+v_224=n1
+v_225=n0
+v_226=d4
+v_227=c5
+v_228=s5
+v_229=c5
+v_230=d6
+v_231=c
+v_232=n5
+v_233=c4
+v_234=n4
+v_235=c6
+v_236=h7
+v_237=c
+v_238=n6
+v_239=c5
+v_240=n5
+v_241=s3
+v_242=d4
+v_243=n0
+v_244=n1
+v_245=d6
+v_246=c7
+v_247=n1
+v_248=n0
+v_249=c7
+v_250=c8
+v_251=c
+v_252=n7
+v_253=c6
+v_254=n6
+v_255=c8
+v_256=c9
+v_257=c
+v_258=n8
+v_259=c7
+v_260=n7
+v_261=c9
+v_262=d2
+v_263=c
+v_264=n9
+v_265=c8
+v_266=n8
+v_267=d2
+v_268=d
+v_269=n2
+v_270=da
+v_271=n1
+v_272=n0
+v_273=n1
+v_274=d3
+v_275=s4
+v_276=d
+v_277=n3
+v_278=d2
+v_279=n2
+v_280=s3
+v_281=d4
+v_282=n1
+v_283=n0
+v_284=d4
+v_285=s5
+v_286=d
+v_287=n4
+v_288=d3
+v_289=n3
+v_290=s5
+v_291=h6
+v_292=d6
+v_293=h6
+v_294=s7
+v_295=h
+v_296=n6
+v_297=h5
+v_298=n5
+v_299=h7
+v_300=h
+v_301=n7
+v_302=h6
+v_303=n6
+v_304=n0
+v_305=n1
+v_306=h8
+v_307=h
+v_308=n8
+v_309=h7
+v_310=n7
+v_311=n0
+v_312=n1
+v_313=h9
+v_314=h
+v_315=n9
+v_316=h8
+v_317=n8
+v_318=n1
+v_319=n2
+v_320=s6
+v_321=d7
+v_322=n1
+v_323=n0
+v_324=s7
+v_325=d5
+v_326=n2
+v_327=n1
+v_328=d5
+v_329=sa
+v_330=d
+v_331=n5
+v_332=d4
+v_333=n4
+v_334=sa
+v_335=s8
+v_336=s
+v_337=n1
+v_338=s0
+v_339=n0
+v_340=s2
+v_341=s
+v_342=n2
+v_343=sa
+v_344=n1
+v_345=n1
+v_346=n2
+v_347=s3
+v_348=s
+v_349=n3
+v_350=s2
+v_351=n2
+v_352=n2
+v_353=n3
+v_354=s4
+v_355=s
+v_356=n4
+v_357=s3
+v_358=n3
+v_359=n3
+v_360=n4
+v_361=s5
+v_362=d6
+v_363=s
+v_364=n5
+v_365=s4
+v_366=n4
+v_367=s6
+v_368=s
+v_369=n6
+v_370=s5
+v_371=n5
+v_372=n0
+v_373=n1
+v_374=s7
+v_375=s
+v_376=n7
+v_377=s6
+v_378=n6
+v_379=n4
+v_380=n5
+v_381=s8
+v_382=s
+v_383=n8
+v_384=s7
+v_385=n7
+v_386=n5
+v_387=n6
+v_388=s9
+v_389=s
+v_390=n9
+v_391=s8
+v_392=n8
+v_393=n1
+v_394=n2
+v_395=d6
+v_396=d
+v_397=n6
+v_398=d5
+v_399=n5
+v_400=n6
+v_401=n7
+v_402=d7
+v_403=d
+v_404=n7
+v_405=d6
+v_406=n6
+v_407=n7
+v_408=n8
+v_409=d8
+v_410=d
+v_411=n8
+v_412=d7
+v_413=n7
+v_414=n2
+v_415=n3
+v_416=d9
+v_417=d
+v_418=n9
+v_419=d8
+v_420=n8
+v_421=n3
+v_422=n4
+v_423=c9
+v_424=d9
+v_425=h9
+v_426=s9

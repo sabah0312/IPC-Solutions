@@ -1,0 +1,67 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11)
+01_switch_on(v_12 v_13)
+02_turn_to(v_14 v_15 v_16)
+03_calibrate(v_17 v_18 v_19)
+04_turn_to(v_20 v_21 v_22)
+05_take_image(v_23 v_24 v_25 v_26)
+06_turn_to(v_27 v_28 v_29)
+07_take_image(v_30 v_31 v_32 v_33)
+08_turn_to(v_34 v_35 v_36)
+09_take_image(v_37 v_38 v_39 v_40)
+goal(v_41 v_42 v_43 v_44)
+** Ordering
+01_switch_on < 03_calibrate
+02_turn_to < 03_calibrate
+03_calibrate < 04_turn_to
+04_turn_to < 05_take_image
+05_take_image < 06_turn_to
+06_turn_to < 07_take_image
+07_take_image < 08_turn_to
+08_turn_to < 09_take_image
+** Binding
+v_0=groundstation1
+v_1=groundstation2
+v_2=image1
+v_3=instrument0
+v_4=phenomenon3
+v_5=phenomenon4
+v_6=phenomenon6
+v_7=satellite0
+v_8=spectrograph2
+v_9=star0
+v_10=star5
+v_11=thermograph0
+v_12=instrument0
+v_13=satellite0
+v_14=satellite0
+v_15=groundstation2
+v_16=phenomenon6
+v_17=satellite0
+v_18=instrument0
+v_19=groundstation2
+v_20=satellite0
+v_21=star5
+v_22=groundstation2
+v_23=satellite0
+v_24=star5
+v_25=instrument0
+v_26=thermograph0
+v_27=satellite0
+v_28=phenomenon4
+v_29=star5
+v_30=satellite0
+v_31=phenomenon4
+v_32=instrument0
+v_33=thermograph0
+v_34=satellite0
+v_35=phenomenon6
+v_36=phenomenon4
+v_37=satellite0
+v_38=phenomenon6
+v_39=instrument0
+v_40=thermograph0
+v_41=phenomenon4
+v_42=phenomenon6
+v_43=star5
+v_44=thermograph0

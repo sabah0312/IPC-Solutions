@@ -1,0 +1,103 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+01_move(v_38 v_39)
+02_move(v_40 v_41)
+03_move(v_42 v_43)
+04_move(v_44 v_45)
+05_pickup(v_46 v_47)
+06_move(v_48 v_49)
+07_move(v_50 v_51)
+08_unlock(v_52 v_53 v_54 v_55)
+09_move(v_56 v_57)
+10_pickup-and-loose(v_58 v_59 v_60)
+11_move(v_61 v_62)
+12_move(v_63 v_64)
+13_move(v_65 v_66)
+14_putdown(v_67 v_68)
+goal(v_69 v_70)
+** Ordering
+01_move < 02_move
+02_move < 03_move
+03_move < 04_move
+04_move < 05_pickup
+05_pickup < 06_move
+06_move < 07_move
+07_move < 08_unlock
+08_unlock < 09_move
+09_move < 10_pickup-and-loose
+10_pickup-and-loose < 11_move
+11_move < 12_move
+12_move < 13_move
+13_move < 14_putdown
+** Binding
+v_0=circle
+v_1=diamond
+v_2=key0
+v_3=key1
+v_4=key2
+v_5=key3
+v_6=key4
+v_7=key5
+v_8=key6
+v_9=key7
+v_10=key8
+v_11=node0-0
+v_12=node0-1
+v_13=node0-2
+v_14=node0-3
+v_15=node0-4
+v_16=node1-0
+v_17=node1-1
+v_18=node1-2
+v_19=node1-3
+v_20=node1-4
+v_21=node2-0
+v_22=node2-1
+v_23=node2-2
+v_24=node2-3
+v_25=node2-4
+v_26=node3-0
+v_27=node3-1
+v_28=node3-2
+v_29=node3-3
+v_30=node3-4
+v_31=node4-0
+v_32=node4-1
+v_33=node4-2
+v_34=node4-3
+v_35=node4-4
+v_36=square
+v_37=triangle
+v_38=node2-4
+v_39=node1-4
+v_40=node1-4
+v_41=node1-3
+v_42=node1-3
+v_43=node1-2
+v_44=node1-2
+v_45=node0-2
+v_46=node0-2
+v_47=key3
+v_48=node0-2
+v_49=node0-3
+v_50=node0-3
+v_51=node1-3
+v_52=node1-3
+v_53=node2-3
+v_54=key3
+v_55=square
+v_56=node1-3
+v_57=node2-3
+v_58=node2-3
+v_59=key0
+v_60=key3
+v_61=node2-3
+v_62=node1-3
+v_63=node1-3
+v_64=node1-2
+v_65=node1-2
+v_66=node1-1
+v_67=node1-1
+v_68=key0
+v_69=key0
+v_70=node1-1

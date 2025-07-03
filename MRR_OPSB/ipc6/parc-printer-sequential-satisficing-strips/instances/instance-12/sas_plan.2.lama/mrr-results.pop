@@ -1,0 +1,208 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+01_initialize(v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63)
+02_fe1-feed-letter(v_64 v_65 v_66 v_67 v_68 v_69)
+03_im1-movelower-letter(v_70 v_71 v_72 v_73 v_74)
+04_lc1-fmove-letter(v_75 v_76 v_77 v_78 v_79)
+05_lc2-divert-letter(v_80 v_81 v_82 v_83 v_84 v_85 v_86)
+06_lre-simplex-letter(v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94)
+07_lc2-mergeinvert-letter(v_95 v_96 v_97 v_98 v_99)
+08_om-lowerout-letter(v_100 v_101 v_102 v_103 v_104)
+09_sys-stack-letter(v_105 v_106 v_107 v_108 v_109 v_110 v_111)
+10_fe1-feed-letter(v_112 v_113 v_114 v_115 v_116 v_117)
+11_im1-movelower-letter(v_118 v_119 v_120 v_121 v_122)
+12_lc1-divert-letter(v_123 v_124 v_125 v_126 v_127 v_128 v_129)
+13_lbe-simplex-letter(v_130 v_131 v_132 v_133 v_134 v_135 v_136 v_137)
+14_lc1-merge-letter(v_138 v_139 v_140 v_141 v_142)
+15_lc2-fmove-letter(v_143 v_144 v_145 v_146 v_147)
+16_om-lowerout-letter(v_148 v_149 v_150 v_151 v_152)
+17_sys-stack-letter(v_153 v_154 v_155 v_156 v_157 v_158 v_159)
+goal(v_160 v_161 v_162 v_163 v_164 v_165 v_166 v_167 v_168)
+** Ordering
+01_initialize < 02_fe1-feed-letter
+01_initialize < 10_fe1-feed-letter
+02_fe1-feed-letter < 11_im1-movelower-letter
+03_im1-movelower-letter < 12_lc1-divert-letter
+04_lc1-fmove-letter < 05_lc2-divert-letter
+05_lc2-divert-letter < 06_lre-simplex-letter
+06_lre-simplex-letter < 07_lc2-mergeinvert-letter
+07_lc2-mergeinvert-letter < 16_om-lowerout-letter
+08_om-lowerout-letter < 17_sys-stack-letter
+09_sys-stack-letter < 17_sys-stack-letter
+10_fe1-feed-letter < 03_im1-movelower-letter
+11_im1-movelower-letter < 04_lc1-fmove-letter
+12_lc1-divert-letter < 13_lbe-simplex-letter
+13_lbe-simplex-letter < 14_lc1-merge-letter
+14_lc1-merge-letter < 15_lc2-fmove-letter
+15_lc2-fmove-letter < 08_om-lowerout-letter
+16_om-lowerout-letter < 09_sys-stack-letter
+** Binding
+v_0=back
+v_1=black
+v_2=color
+v_3=dummy-sheet
+v_4=fe1-rsrc
+v_5=fe1_exit-im1_feedentry
+v_6=front
+v_7=im1-rsrc
+v_8=im1_bottomexit-lc1_entry
+v_9=image-1
+v_10=image-2
+v_11=lbe-rsrc
+v_12=lbe_entry-lc1_offramp
+v_13=lc1-rsrc
+v_14=lc1_exit-lc2_entry
+v_15=lc1_onramp-lbe_exit
+v_16=lc2-rsrc
+v_17=lc2_onramp-lre_exit
+v_18=letter
+v_19=lre-rsrc
+v_20=lre_entry-lc2_offramp
+v_21=lre_rodantray1
+v_22=lre_rodantray2
+v_23=om-rsrc
+v_24=om_bottomentry-lc2_exit
+v_25=om_outputexit-sys_entry
+v_26=om_returnexit-rh2_entry
+v_27=rh1-rsrc
+v_28=rh1_entry-rh2_exit
+v_29=rh1_exit-im1_returnentry
+v_30=rh2-rsrc
+v_31=sheet1
+v_32=sheet2
+v_33=some_feeder_tray
+v_34=some_finisher_tray
+v_35=sys-rsrc
+v_36=sys_outputtray
+v_37=ube-rsrc
+v_38=ube_entry-uc1_offramp
+v_39=uc1-rsrc
+v_40=uc1_entry-im1_topexit
+v_41=uc1_onramp-ube_exit
+v_42=uc2-rsrc
+v_43=uc2_entry-uc1_exit
+v_44=uc2_exit-om_topentry
+v_45=ure-rsrc
+v_46=ure_entry-uc2_offramp
+v_47=ure_exit-uc2_onramp
+v_48=ure_rodantray1
+v_49=ure_rodantray2
+v_50=rh1-rsrc
+v_51=lc1-rsrc
+v_52=uc1-rsrc
+v_53=sys-rsrc
+v_54=uc2-rsrc
+v_55=rh2-rsrc
+v_56=im1-rsrc
+v_57=ure-rsrc
+v_58=fe1-rsrc
+v_59=om-rsrc
+v_60=lbe-rsrc
+v_61=ube-rsrc
+v_62=lre-rsrc
+v_63=lc2-rsrc
+v_64=fe1-rsrc
+v_65=some_feeder_tray
+v_66=letter
+v_67=fe1_exit-im1_feedentry
+v_68=back
+v_69=sheet1
+v_70=letter
+v_71=fe1_exit-im1_feedentry
+v_72=im1_bottomexit-lc1_entry
+v_73=im1-rsrc
+v_74=sheet2
+v_75=lc1-rsrc
+v_76=letter
+v_77=lc1_exit-lc2_entry
+v_78=im1_bottomexit-lc1_entry
+v_79=sheet1
+v_80=letter
+v_81=lc2-rsrc
+v_82=lc1_exit-lc2_entry
+v_83=lre_entry-lc2_offramp
+v_84=sheet1
+v_85=back
+v_86=front
+v_87=color
+v_88=lre-rsrc
+v_89=letter
+v_90=lc2_onramp-lre_exit
+v_91=lre_entry-lc2_offramp
+v_92=sheet1
+v_93=front
+v_94=image-1
+v_95=letter
+v_96=lc2_onramp-lre_exit
+v_97=lc2-rsrc
+v_98=om_bottomentry-lc2_exit
+v_99=sheet1
+v_100=om-rsrc
+v_101=letter
+v_102=om_bottomentry-lc2_exit
+v_103=om_outputexit-sys_entry
+v_104=sheet2
+v_105=sys-rsrc
+v_106=sys_outputtray
+v_107=letter
+v_108=some_finisher_tray
+v_109=om_outputexit-sys_entry
+v_110=sheet1
+v_111=dummy-sheet
+v_112=fe1-rsrc
+v_113=some_feeder_tray
+v_114=letter
+v_115=fe1_exit-im1_feedentry
+v_116=back
+v_117=sheet2
+v_118=letter
+v_119=fe1_exit-im1_feedentry
+v_120=im1_bottomexit-lc1_entry
+v_121=im1-rsrc
+v_122=sheet1
+v_123=lc1-rsrc
+v_124=lbe_entry-lc1_offramp
+v_125=letter
+v_126=im1_bottomexit-lc1_entry
+v_127=sheet2
+v_128=back
+v_129=front
+v_130=lbe-rsrc
+v_131=lbe_entry-lc1_offramp
+v_132=black
+v_133=letter
+v_134=lc1_onramp-lbe_exit
+v_135=sheet2
+v_136=front
+v_137=image-2
+v_138=lc1-rsrc
+v_139=letter
+v_140=lc1_exit-lc2_entry
+v_141=lc1_onramp-lbe_exit
+v_142=sheet2
+v_143=letter
+v_144=lc2-rsrc
+v_145=lc1_exit-lc2_entry
+v_146=om_bottomentry-lc2_exit
+v_147=sheet2
+v_148=om-rsrc
+v_149=letter
+v_150=om_bottomentry-lc2_exit
+v_151=om_outputexit-sys_entry
+v_152=sheet1
+v_153=sys-rsrc
+v_154=sys_outputtray
+v_155=letter
+v_156=some_finisher_tray
+v_157=om_outputexit-sys_entry
+v_158=sheet2
+v_159=sheet1
+v_160=back
+v_161=black
+v_162=color
+v_163=front
+v_164=image-1
+v_165=image-2
+v_166=sheet1
+v_167=sheet2
+v_168=sys_outputtray

@@ -1,0 +1,205 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+01_drink(v_50 v_51 v_52 v_53 v_54 v_55 v_56)
+02_drink(v_57 v_58 v_59 v_60 v_61 v_62 v_63)
+03_feast(v_64 v_65 v_66 v_67 v_68)
+04_drink(v_69 v_70 v_71 v_72 v_73 v_74 v_75)
+05_feast(v_76 v_77 v_78 v_79 v_80)
+06_feast(v_81 v_82 v_83 v_84 v_85)
+07_feast(v_86 v_87 v_88 v_89 v_90)
+08_overcome(v_91 v_92 v_93 v_94 v_95)
+09_feast(v_96 v_97 v_98 v_99 v_100)
+10_drink(v_101 v_102 v_103 v_104 v_105 v_106 v_107)
+11_feast(v_108 v_109 v_110 v_111 v_112)
+12_feast(v_113 v_114 v_115 v_116 v_117)
+13_feast(v_118 v_119 v_120 v_121 v_122)
+14_feast(v_123 v_124 v_125 v_126 v_127)
+15_feast(v_128 v_129 v_130 v_131 v_132)
+16_feast(v_133 v_134 v_135 v_136 v_137)
+17_feast(v_138 v_139 v_140 v_141 v_142)
+18_feast(v_143 v_144 v_145 v_146 v_147)
+19_feast(v_148 v_149 v_150 v_151 v_152)
+20_succumb(v_153 v_154 v_155 v_156 v_157)
+goal(v_158 v_159)
+** Ordering
+01_drink < 07_feast
+02_drink < 03_feast
+03_feast < 04_drink
+03_feast < 05_feast
+04_drink < 14_feast
+06_feast < 07_feast
+07_feast < 08_overcome
+07_feast < 10_drink
+08_overcome < 09_feast
+09_feast < 11_feast
+10_drink < 11_feast
+11_feast < 12_feast
+12_feast < 13_feast
+13_feast < 14_feast
+14_feast < 15_feast
+15_feast < 16_feast
+16_feast < 17_feast
+17_feast < 18_feast
+18_feast < 19_feast
+19_feast < 20_succumb
+** Binding
+v_0=alsace
+v_1=anger
+v_2=angina
+v_3=arizona
+v_4=bacon
+v_5=boils
+v_6=bosnia
+v_7=broccoli
+v_8=cantelope
+v_9=chicken
+v_10=chocolate
+v_11=cucumber
+v_12=curiosity
+v_13=depression
+v_14=endive
+v_15=entertainment
+v_16=expectation
+v_17=grief
+v_18=guanabara
+v_19=guava
+v_20=hangover
+v_21=haroset
+v_22=hotdog
+v_23=jealousy
+v_24=jupiter
+v_25=learning
+v_26=lemon
+v_27=manitoba
+v_28=marzipan
+v_29=moravia
+v_30=neptune
+v_31=orange
+v_32=oregon
+v_33=pea
+v_34=pepper
+v_35=pluto
+v_36=potato
+v_37=prostatitis
+v_38=rest
+v_39=rice
+v_40=satisfaction
+v_41=scallop
+v_42=sciatica
+v_43=surrey
+v_44=tofu
+v_45=triumph
+v_46=turkey
+v_47=vulcan
+v_48=wonderbread
+v_49=wurst
+v_50=pea
+v_51=orange
+v_52=surrey
+v_53=manitoba
+v_54=guanabara
+v_55=guanabara
+v_56=manitoba
+v_57=tofu
+v_58=scallop
+v_59=moravia
+v_60=oregon
+v_61=bosnia
+v_62=guanabara
+v_63=manitoba
+v_64=rest
+v_65=scallop
+v_66=chicken
+v_67=guanabara
+v_68=manitoba
+v_69=tofu
+v_70=scallop
+v_71=oregon
+v_72=bosnia
+v_73=alsace
+v_74=guanabara
+v_75=manitoba
+v_76=rest
+v_77=chicken
+v_78=rice
+v_79=guanabara
+v_80=manitoba
+v_81=satisfaction
+v_82=turkey
+v_83=orange
+v_84=manitoba
+v_85=surrey
+v_86=satisfaction
+v_87=orange
+v_88=marzipan
+v_89=guanabara
+v_90=manitoba
+v_91=angina
+v_92=satisfaction
+v_93=marzipan
+v_94=vulcan
+v_95=pluto
+v_96=satisfaction
+v_97=marzipan
+v_98=orange
+v_99=bosnia
+v_100=oregon
+v_101=pepper
+v_102=orange
+v_103=oregon
+v_104=bosnia
+v_105=alsace
+v_106=guanabara
+v_107=manitoba
+v_108=satisfaction
+v_109=orange
+v_110=turkey
+v_111=guanabara
+v_112=manitoba
+v_113=satisfaction
+v_114=turkey
+v_115=potato
+v_116=guanabara
+v_117=manitoba
+v_118=satisfaction
+v_119=potato
+v_120=scallop
+v_121=guanabara
+v_122=manitoba
+v_123=satisfaction
+v_124=scallop
+v_125=lemon
+v_126=guanabara
+v_127=manitoba
+v_128=satisfaction
+v_129=lemon
+v_130=cucumber
+v_131=alsace
+v_132=bosnia
+v_133=satisfaction
+v_134=cucumber
+v_135=pea
+v_136=moravia
+v_137=arizona
+v_138=satisfaction
+v_139=pea
+v_140=wonderbread
+v_141=guanabara
+v_142=manitoba
+v_143=satisfaction
+v_144=wonderbread
+v_145=tofu
+v_146=surrey
+v_147=alsace
+v_148=satisfaction
+v_149=tofu
+v_150=chocolate
+v_151=alsace
+v_152=bosnia
+v_153=angina
+v_154=satisfaction
+v_155=chocolate
+v_156=vulcan
+v_157=pluto
+v_158=angina
+v_159=chocolate

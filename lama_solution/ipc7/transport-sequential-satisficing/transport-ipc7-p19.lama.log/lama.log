@@ -1,0 +1,915 @@
+1. Running translator
+Second argument is a file name: use two translator arguments.
+Parsing... [0.050s CPU, 0.079s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Generating Datalog program... [0.010s CPU, 0.011s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.010s wall-clock]
+Preparing model... [0.030s CPU, 0.030s wall-clock]
+Generated 26 rules.
+Computing model... [9.260s CPU, 9.264s wall-clock]
+142379 relevant atoms
+104064 auxiliary atoms
+246443 final queue length
+510451 total queue pushes
+Completing instantiation... [30.740s CPU, 30.763s wall-clock]
+Instantiating: [40.210s CPU, 40.236s wall-clock]
+Computing fact groups...
+Finding invariants...
+9 initial candidates
+Finding invariants: [0.220s CPU, 0.225s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.003s wall-clock]
+Instantiating groups... [0.080s CPU, 0.081s wall-clock]
+Collecting mutex groups... [0.020s CPU, 0.017s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.040s CPU, 0.049s wall-clock]
+Building translation key... [0.020s CPU, 0.019s wall-clock]
+Computing fact groups: [0.550s CPU, 0.556s wall-clock]
+Building STRIPS to SAS dictionary... [0.020s CPU, 0.015s wall-clock]
+Building dictionary for full mutex groups... [0.010s CPU, 0.013s wall-clock]
+Building mutex information...
+Building mutex information: [0.020s CPU, 0.016s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [1.120s CPU, 1.123s wall-clock]
+Translating task: [18.350s CPU, 18.373s wall-clock]
+0 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+30 propositions removed
+Detecting unreachable propositions: [2.180s CPU, 2.180s wall-clock]
+Translator variables: 30
+Translator derived variables: 0
+Translator facts: 5022
+Translator mutex groups: 30
+Translator total mutex groups size: 5022
+Translator operators: 135944
+Translator task size: 817096
+Translator peak memory: 923124 KB
+Writing output... [2.670s CPU, 3.003s wall-clock]
+Done! [64.990s CPU, 65.396s wall-clock]
+
+2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+30 variables of 30 necessary
+0 of 30 mutex groups necessary.
+135944 of 135944 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 5022
+Preprocessor derived variables: 0
+Preprocessor task size: 812074
+Writing output...
+done
+
+
+3. Running search
+Dispatcher selected state size 1.
+This is a nonunit task.
+Simplifying transitions... done!
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 4.72143s
+Discovered 104 landmarks, of which 60 are disjunctive and 0 are conjunctive 
+131 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+22 initial landmarks, 22 goal landmarks
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+Switch from bucket-based to heap-based queue at key = 138, num_pushes = 46
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 4.60612s
+Discovered 104 landmarks, of which 60 are disjunctive and 0 are conjunctive 
+131 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+22 initial landmarks, 22 goal landmarks
+Starting search: lazy_greedy(list(hff1, hlm1), preferred = list(hff1, hlm1), cost_type = 1, reopen_closed = false)
+Conducting lazy best first search, (real) bound = 2147483647
+Best heuristic value: 82/165 [g=0, 1 evaluated, 0 expanded, t=17.59s]
+Best heuristic value: 81/158 [g=1, 2 evaluated, 1 expanded, t=17.61s]
+Best heuristic value: 81/156 [g=2, 5 evaluated, 4 expanded, t=17.67s]
+Best heuristic value: 80/156 [g=2, 6 evaluated, 5 expanded, t=17.69s]
+Best heuristic value: 80/155 [g=3, 11 evaluated, 10 expanded, t=17.79s]
+Best heuristic value: 79/155 [g=3, 12 evaluated, 11 expanded, t=17.81s]
+Best heuristic value: 79/154 [g=4, 18 evaluated, 17 expanded, t=17.92s]
+Best heuristic value: 79/152 [g=5, 45 evaluated, 44 expanded, t=18.46s]
+Best heuristic value: 79/151 [g=6, 50 evaluated, 49 expanded, t=18.56s]
+Best heuristic value: 78/151 [g=6, 68 evaluated, 67 expanded, t=18.92s]
+Best heuristic value: 77/151 [g=7, 79 evaluated, 78 expanded, t=19.13s]
+Best heuristic value: 76/151 [g=8, 85 evaluated, 84 expanded, t=19.25s]
+Best heuristic value: 76/150 [g=9, 94 evaluated, 93 expanded, t=19.43s]
+Best heuristic value: 75/150 [g=10, 145 evaluated, 144 expanded, t=20.44s]
+Best heuristic value: 74/150 [g=11, 151 evaluated, 150 expanded, t=20.56s]
+Best heuristic value: 73/150 [g=16, 286 evaluated, 285 expanded, t=23.23s]
+Best heuristic value: 72/150 [g=17, 311 evaluated, 310 expanded, t=23.73s]
+Best heuristic value: 71/150 [g=18, 327 evaluated, 326 expanded, t=24.05s]
+Best heuristic value: 70/150 [g=19, 365 evaluated, 364 expanded, t=24.8s]
+Best heuristic value: 69/150 [g=21, 444 evaluated, 443 expanded, t=26.35s]
+Best heuristic value: 69/149 [g=15, 458 evaluated, 457 expanded, t=26.62s]
+Best heuristic value: 69/148 [g=16, 471 evaluated, 470 expanded, t=26.87s]
+Best heuristic value: 68/148 [g=23, 626 evaluated, 625 expanded, t=29.91s]
+Best heuristic value: 67/148 [g=27, 770 evaluated, 769 expanded, t=32.73s]
+Best heuristic value: 66/148 [g=31, 964 evaluated, 963 expanded, t=36.53s]
+Best heuristic value: 65/148 [g=32, 966 evaluated, 965 expanded, t=36.57s]
+Best heuristic value: 64/148 [g=33, 1033 evaluated, 1032 expanded, t=37.88s]
+Best heuristic value: 63/148 [g=35, 1053 evaluated, 1052 expanded, t=38.27s]
+Best heuristic value: 62/148 [g=36, 1147 evaluated, 1146 expanded, t=40.11s]
+Best heuristic value: 61/148 [g=39, 1237 evaluated, 1236 expanded, t=41.9s]
+Best heuristic value: 61/147 [g=45, 1468 evaluated, 1467 expanded, t=46.47s]
+Best heuristic value: 61/146 [g=46, 1486 evaluated, 1485 expanded, t=46.83s]
+Best heuristic value: 61/145 [g=47, 1505 evaluated, 1504 expanded, t=47.22s]
+Best heuristic value: 61/143 [g=49, 1550 evaluated, 1549 expanded, t=48.12s]
+Best heuristic value: 61/142 [g=51, 1596 evaluated, 1595 expanded, t=49.04s]
+Best heuristic value: 60/142 [g=45, 2131 evaluated, 2130 expanded, t=59.68s]
+Best heuristic value: 59/142 [g=46, 2133 evaluated, 2132 expanded, t=59.72s]
+Best heuristic value: 58/142 [g=49, 2246 evaluated, 2245 expanded, t=61.97s]
+Best heuristic value: 57/142 [g=51, 2268 evaluated, 2267 expanded, t=62.41s]
+Best heuristic value: 57/141 [g=62, 2981 evaluated, 2980 expanded, t=76.67s]
+Best heuristic value: 56/141 [g=55, 3070 evaluated, 3069 expanded, t=78.44s]
+Best heuristic value: 55/141 [g=61, 4970 evaluated, 4969 expanded, t=116.21s]
+Best heuristic value: 54/141 [g=64, 6039 evaluated, 6038 expanded, t=137.54s]
+Best heuristic value: 53/141 [g=66, 6060 evaluated, 6059 expanded, t=137.96s]
+Best heuristic value: 52/141 [g=67, 6069 evaluated, 6068 expanded, t=138.14s]
+Best heuristic value: 51/141 [g=71, 6945 evaluated, 6944 expanded, t=155.52s]
+Best heuristic value: 50/141 [g=72, 6968 evaluated, 6967 expanded, t=155.98s]
+Best heuristic value: 49/141 [g=75, 7124 evaluated, 7123 expanded, t=159.08s]
+Best heuristic value: 49/140 [g=66, 7419 evaluated, 7418 expanded, t=164.97s]
+Best heuristic value: 49/138 [g=85, 8255 evaluated, 8254 expanded, t=181.41s]
+Best heuristic value: 49/137 [g=87, 8321 evaluated, 8320 expanded, t=182.71s]
+Best heuristic value: 49/136 [g=89, 8353 evaluated, 8352 expanded, t=183.34s]
+Best heuristic value: 49/135 [g=90, 8369 evaluated, 8368 expanded, t=183.65s]
+Best heuristic value: 49/134 [g=92, 8413 evaluated, 8412 expanded, t=184.51s]
+Best heuristic value: 49/133 [g=94, 8444 evaluated, 8443 expanded, t=185.12s]
+Best heuristic value: 49/132 [g=96, 8481 evaluated, 8480 expanded, t=185.85s]
+Best heuristic value: 49/131 [g=98, 8519 evaluated, 8518 expanded, t=186.6s]
+Best heuristic value: 49/130 [g=100, 8568 evaluated, 8567 expanded, t=187.57s]
+Best heuristic value: 49/129 [g=101, 8585 evaluated, 8584 expanded, t=187.91s]
+Best heuristic value: 49/128 [g=102, 8604 evaluated, 8603 expanded, t=188.29s]
+Best heuristic value: 49/127 [g=103, 8622 evaluated, 8621 expanded, t=188.65s]
+Best heuristic value: 49/126 [g=104, 8640 evaluated, 8639 expanded, t=189s]
+Best heuristic value: 49/125 [g=107, 8703 evaluated, 8702 expanded, t=190.25s]
+Best heuristic value: 49/124 [g=110, 8777 evaluated, 8776 expanded, t=191.73s]
+Best heuristic value: 49/123 [g=111, 8789 evaluated, 8788 expanded, t=191.97s]
+Best heuristic value: 49/122 [g=113, 8823 evaluated, 8822 expanded, t=192.67s]
+Best heuristic value: 48/122 [g=115, 8849 evaluated, 8848 expanded, t=193.24s]
+Best heuristic value: 48/121 [g=116, 8852 evaluated, 8851 expanded, t=193.3s]
+Best heuristic value: 48/120 [g=117, 8865 evaluated, 8864 expanded, t=193.56s]
+Best heuristic value: 47/120 [g=116, 8866 evaluated, 8865 expanded, t=193.58s]
+Best heuristic value: 46/120 [g=119, 8936 evaluated, 8935 expanded, t=195.03s]
+Best heuristic value: 45/120 [g=120, 8943 evaluated, 8942 expanded, t=195.17s]
+Best heuristic value: 45/119 [g=121, 9005 evaluated, 9004 expanded, t=196.46s]
+Best heuristic value: 45/118 [g=123, 9023 evaluated, 9022 expanded, t=196.82s]
+Best heuristic value: 44/118 [g=124, 9035 evaluated, 9034 expanded, t=197.08s]
+Best heuristic value: 44/114 [g=124, 9247 evaluated, 9246 expanded, t=201.76s]
+Best heuristic value: 43/114 [g=129, 9418 evaluated, 9417 expanded, t=205.83s]
+Best heuristic value: 42/114 [g=135, 10472 evaluated, 10471 expanded, t=229.8s]
+Best heuristic value: 41/114 [g=138, 10562 evaluated, 10561 expanded, t=231.78s]
+Best heuristic value: 41/113 [g=142, 10862 evaluated, 10861 expanded, t=238.35s]
+Best heuristic value: 41/111 [g=143, 10872 evaluated, 10871 expanded, t=238.56s]
+Best heuristic value: 40/111 [g=142, 10895 evaluated, 10894 expanded, t=239.07s]
+Best heuristic value: 39/111 [g=145, 11169 evaluated, 11168 expanded, t=245.65s]
+Best heuristic value: 38/111 [g=150, 11392 evaluated, 11391 expanded, t=250.71s]
+Best heuristic value: 37/111 [g=154, 11782 evaluated, 11781 expanded, t=259.59s]
+Best heuristic value: 36/111 [g=158, 12124 evaluated, 12123 expanded, t=267.73s]
+Best heuristic value: 35/111 [g=162, 12272 evaluated, 12271 expanded, t=271.18s]
+Best heuristic value: 35/110 [g=156, 12659 evaluated, 12658 expanded, t=279.63s]
+Best heuristic value: 34/110 [g=166, 13444 evaluated, 13443 expanded, t=296.29s]
+Best heuristic value: 33/110 [g=167, 13459 evaluated, 13458 expanded, t=296.61s]
+Best heuristic value: 32/110 [g=172, 13694 evaluated, 13693 expanded, t=301.52s]
+Best heuristic value: 31/110 [g=178, 13847 evaluated, 13846 expanded, t=304.7s]
+Best heuristic value: 31/109 [g=178, 13849 evaluated, 13848 expanded, t=304.74s]
+Best heuristic value: 31/108 [g=179, 13858 evaluated, 13857 expanded, t=304.94s]
+Best heuristic value: 31/107 [g=180, 13866 evaluated, 13865 expanded, t=305.11s]
+Best heuristic value: 31/106 [g=183, 13957 evaluated, 13956 expanded, t=307.05s]
+Best heuristic value: 31/99 [g=185, 13984 evaluated, 13983 expanded, t=307.62s]
+Best heuristic value: 31/98 [g=186, 13992 evaluated, 13991 expanded, t=307.78s]
+Best heuristic value: 31/97 [g=187, 13998 evaluated, 13997 expanded, t=307.91s]
+Best heuristic value: 31/96 [g=188, 14005 evaluated, 14004 expanded, t=308.06s]
+Best heuristic value: 30/96 [g=184, 14125 evaluated, 14124 expanded, t=310.62s]
+Best heuristic value: 29/96 [g=185, 14130 evaluated, 14129 expanded, t=310.72s]
+Best heuristic value: 28/96 [g=188, 14181 evaluated, 14180 expanded, t=311.8s]
+Best heuristic value: 28/94 [g=191, 14197 evaluated, 14196 expanded, t=312.14s]
+Best heuristic value: 27/94 [g=192, 14456 evaluated, 14455 expanded, t=317.66s]
+Best heuristic value: 27/93 [g=196, 14660 evaluated, 14659 expanded, t=322.04s]
+Best heuristic value: 27/91 [g=207, 15841 evaluated, 15840 expanded, t=347.11s]
+Best heuristic value: 27/90 [g=216, 15907 evaluated, 15906 expanded, t=348.51s]
+Best heuristic value: 26/90 [g=217, 15916 evaluated, 15915 expanded, t=348.7s]
+Best heuristic value: 25/88 [g=221, 16052 evaluated, 16051 expanded, t=351.61s]
+Best heuristic value: 24/88 [g=225, 16100 evaluated, 16099 expanded, t=352.63s]
+Best heuristic value: 23/87 [g=226, 16105 evaluated, 16104 expanded, t=352.74s]
+Best heuristic value: 22/86 [g=229, 16150 evaluated, 16149 expanded, t=353.69s]
+Best heuristic value: 21/86 [g=230, 16156 evaluated, 16155 expanded, t=353.82s]
+Best heuristic value: 21/85 [g=234, 16301 evaluated, 16300 expanded, t=356.88s]
+Best heuristic value: 21/84 [g=235, 16306 evaluated, 16305 expanded, t=356.98s]
+Best heuristic value: 21/83 [g=236, 16311 evaluated, 16310 expanded, t=357.09s]
+Best heuristic value: 21/82 [g=237, 16316 evaluated, 16315 expanded, t=357.19s]
+Best heuristic value: 20/82 [g=237, 16318 evaluated, 16317 expanded, t=357.23s]
+Best heuristic value: 19/81 [g=238, 16328 evaluated, 16327 expanded, t=357.44s]
+Best heuristic value: 19/80 [g=239, 16333 evaluated, 16332 expanded, t=357.55s]
+Best heuristic value: 19/79 [g=240, 16338 evaluated, 16337 expanded, t=357.65s]
+Best heuristic value: 19/78 [g=241, 16343 evaluated, 16342 expanded, t=357.76s]
+Best heuristic value: 19/77 [g=242, 16348 evaluated, 16347 expanded, t=357.86s]
+Best heuristic value: 19/76 [g=243, 16353 evaluated, 16352 expanded, t=357.96s]
+Best heuristic value: 19/75 [g=244, 16358 evaluated, 16357 expanded, t=358.07s]
+Best heuristic value: 19/74 [g=245, 16363 evaluated, 16362 expanded, t=358.17s]
+Best heuristic value: 19/73 [g=246, 16368 evaluated, 16367 expanded, t=358.28s]
+Best heuristic value: 19/72 [g=247, 16373 evaluated, 16372 expanded, t=358.38s]
+Best heuristic value: 19/71 [g=248, 16378 evaluated, 16377 expanded, t=358.49s]
+Best heuristic value: 19/70 [g=249, 16383 evaluated, 16382 expanded, t=358.6s]
+Best heuristic value: 18/70 [g=250, 16388 evaluated, 16387 expanded, t=358.7s]
+Best heuristic value: 17/70 [g=251, 16398 evaluated, 16397 expanded, t=358.91s]
+Best heuristic value: 16/70 [g=253, 16425 evaluated, 16424 expanded, t=359.48s]
+Best heuristic value: 16/69 [g=254, 16430 evaluated, 16429 expanded, t=359.58s]
+Best heuristic value: 15/69 [g=254, 16432 evaluated, 16431 expanded, t=359.63s]
+Best heuristic value: 15/68 [g=255, 16440 evaluated, 16439 expanded, t=359.79s]
+Best heuristic value: 15/67 [g=266, 16537 evaluated, 16536 expanded, t=361.83s]
+Best heuristic value: 15/66 [g=267, 16542 evaluated, 16541 expanded, t=361.94s]
+Best heuristic value: 15/65 [g=268, 16547 evaluated, 16546 expanded, t=362.04s]
+Best heuristic value: 14/64 [g=269, 16551 evaluated, 16550 expanded, t=362.13s]
+Best heuristic value: 14/63 [g=270, 16555 evaluated, 16554 expanded, t=362.21s]
+Best heuristic value: 14/62 [g=271, 16559 evaluated, 16558 expanded, t=362.29s]
+Best heuristic value: 14/61 [g=272, 16563 evaluated, 16562 expanded, t=362.37s]
+Best heuristic value: 14/60 [g=273, 16567 evaluated, 16566 expanded, t=362.46s]
+Best heuristic value: 14/59 [g=274, 16571 evaluated, 16570 expanded, t=362.54s]
+Best heuristic value: 14/58 [g=275, 16575 evaluated, 16574 expanded, t=362.63s]
+Best heuristic value: 14/55 [g=279, 16594 evaluated, 16593 expanded, t=363.04s]
+Best heuristic value: 14/54 [g=280, 16599 evaluated, 16598 expanded, t=363.14s]
+Best heuristic value: 14/53 [g=280, 16611 evaluated, 16610 expanded, t=363.4s]
+Best heuristic value: 14/52 [g=281, 16614 evaluated, 16613 expanded, t=363.46s]
+Best heuristic value: 14/51 [g=282, 16620 evaluated, 16619 expanded, t=363.59s]
+Best heuristic value: 14/50 [g=283, 16626 evaluated, 16625 expanded, t=363.72s]
+Best heuristic value: 14/49 [g=284, 16634 evaluated, 16633 expanded, t=363.89s]
+Best heuristic value: 13/48 [g=285, 16640 evaluated, 16639 expanded, t=364.02s]
+Best heuristic value: 12/47 [g=286, 16644 evaluated, 16643 expanded, t=364.1s]
+Best heuristic value: 12/46 [g=290, 16681 evaluated, 16680 expanded, t=364.89s]
+Best heuristic value: 11/45 [g=292, 16691 evaluated, 16690 expanded, t=365.11s]
+Best heuristic value: 11/44 [g=293, 16693 evaluated, 16692 expanded, t=365.15s]
+Best heuristic value: 11/43 [g=294, 16696 evaluated, 16695 expanded, t=365.21s]
+Best heuristic value: 11/42 [g=295, 16699 evaluated, 16698 expanded, t=365.28s]
+Best heuristic value: 11/41 [g=296, 16701 evaluated, 16700 expanded, t=365.32s]
+Best heuristic value: 11/40 [g=297, 16703 evaluated, 16702 expanded, t=365.36s]
+Best heuristic value: 11/39 [g=298, 16706 evaluated, 16705 expanded, t=365.42s]
+Best heuristic value: 10/38 [g=299, 16709 evaluated, 16708 expanded, t=365.49s]
+Best heuristic value: 9/37 [g=300, 16711 evaluated, 16710 expanded, t=365.53s]
+Best heuristic value: 9/35 [g=305, 16722 evaluated, 16721 expanded, t=365.76s]
+Best heuristic value: 9/33 [g=312, 16820 evaluated, 16819 expanded, t=367.83s]
+Best heuristic value: 9/32 [g=313, 16821 evaluated, 16820 expanded, t=367.85s]
+Best heuristic value: 8/32 [g=316, 16830 evaluated, 16829 expanded, t=368.04s]
+Best heuristic value: 7/31 [g=318, 16833 evaluated, 16832 expanded, t=368.11s]
+Best heuristic value: 7/30 [g=319, 16834 evaluated, 16833 expanded, t=368.13s]
+Best heuristic value: 6/30 [g=319, 16836 evaluated, 16835 expanded, t=368.17s]
+Best heuristic value: 6/26 [g=324, 16844 evaluated, 16843 expanded, t=368.34s]
+Best heuristic value: 6/25 [g=324, 16849 evaluated, 16848 expanded, t=368.45s]
+Best heuristic value: 5/24 [g=330, 16857 evaluated, 16856 expanded, t=368.62s]
+Best heuristic value: 5/23 [g=331, 16858 evaluated, 16857 expanded, t=368.64s]
+Best heuristic value: 4/23 [g=333, 16861 evaluated, 16860 expanded, t=368.7s]
+Best heuristic value: 3/22 [g=342, 16882 evaluated, 16881 expanded, t=369.15s]
+Best heuristic value: 2/21 [g=351, 16902 evaluated, 16901 expanded, t=369.57s]
+Best heuristic value: 2/20 [g=352, 16903 evaluated, 16902 expanded, t=369.59s]
+Best heuristic value: 2/19 [g=353, 16904 evaluated, 16903 expanded, t=369.61s]
+Best heuristic value: 2/18 [g=354, 16905 evaluated, 16904 expanded, t=369.63s]
+Best heuristic value: 2/17 [g=355, 16906 evaluated, 16905 expanded, t=369.65s]
+Best heuristic value: 2/16 [g=356, 16907 evaluated, 16906 expanded, t=369.66s]
+Best heuristic value: 2/15 [g=357, 16908 evaluated, 16907 expanded, t=369.68s]
+Best heuristic value: 2/14 [g=358, 16909 evaluated, 16908 expanded, t=369.7s]
+Best heuristic value: 2/13 [g=359, 16910 evaluated, 16909 expanded, t=369.71s]
+Best heuristic value: 2/12 [g=360, 16911 evaluated, 16910 expanded, t=369.73s]
+Best heuristic value: 2/11 [g=361, 16912 evaluated, 16911 expanded, t=369.74s]
+Best heuristic value: 2/10 [g=362, 16913 evaluated, 16912 expanded, t=369.75s]
+Best heuristic value: 2/9 [g=363, 16914 evaluated, 16913 expanded, t=369.76s]
+Best heuristic value: 2/8 [g=364, 16915 evaluated, 16914 expanded, t=369.77s]
+Best heuristic value: 2/7 [g=365, 16916 evaluated, 16915 expanded, t=369.78s]
+Best heuristic value: 2/6 [g=366, 16917 evaluated, 16916 expanded, t=369.79s]
+Best heuristic value: 2/5 [g=367, 16918 evaluated, 16917 expanded, t=369.8s]
+Best heuristic value: 2/4 [g=368, 16919 evaluated, 16918 expanded, t=369.81s]
+Best heuristic value: 2/3 [g=369, 16920 evaluated, 16919 expanded, t=369.82s]
+Best heuristic value: 2/2 [g=370, 16921 evaluated, 16920 expanded, t=369.82s]
+Best heuristic value: 1/1 [g=371, 16922 evaluated, 16921 expanded, t=369.83s]
+Solution found!
+Actual search time: 352.26s [t=369.83s]
+drive truck-4 city-1-loc-25 city-1-loc-57 (11)
+pick-up truck-4 city-1-loc-57 package-15 capacity-1 capacity-2 (1)
+drive truck-3 city-3-loc-1 city-3-loc-41 (14)
+drive truck-1 city-1-loc-8 city-1-loc-63 (14)
+drive truck-1 city-1-loc-63 city-1-loc-42 (12)
+drive truck-1 city-1-loc-42 city-1-loc-14 (10)
+pick-up truck-1 city-1-loc-14 package-14 capacity-1 capacity-2 (1)
+drive truck-1 city-1-loc-14 city-1-loc-45 (15)
+drive truck-1 city-1-loc-45 city-1-loc-2 (14)
+pick-up truck-1 city-1-loc-2 package-11 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-2 city-1-loc-45 (14)
+drive truck-2 city-2-loc-26 city-2-loc-11 (16)
+drive truck-2 city-2-loc-11 city-2-loc-40 (13)
+drive truck-2 city-2-loc-40 city-2-loc-49 (16)
+drive truck-2 city-2-loc-49 city-3-loc-37 (124)
+drive truck-2 city-3-loc-37 city-3-loc-23 (15)
+pick-up truck-2 city-3-loc-23 package-13 capacity-2 capacity-3 (1)
+drive truck-2 city-3-loc-23 city-3-loc-47 (16)
+pick-up truck-2 city-3-loc-47 package-19 capacity-1 capacity-2 (1)
+drive truck-2 city-3-loc-47 city-3-loc-21 (13)
+drive truck-2 city-3-loc-21 city-3-loc-10 (17)
+drive truck-2 city-3-loc-10 city-3-loc-29 (12)
+pick-up truck-2 city-3-loc-29 package-3 capacity-0 capacity-1 (1)
+drive truck-2 city-3-loc-29 city-3-loc-53 (16)
+drive truck-2 city-3-loc-53 city-3-loc-60 (15)
+drive truck-2 city-3-loc-60 city-3-loc-62 (14)
+drive truck-2 city-3-loc-62 city-3-loc-49 (14)
+drive truck-4 city-1-loc-57 city-3-loc-12 (125)
+drive truck-4 city-3-loc-12 city-3-loc-38 (14)
+drive truck-4 city-3-loc-38 city-3-loc-32 (17)
+drop truck-4 city-3-loc-32 package-15 capacity-1 capacity-2 (1)
+drive truck-4 city-3-loc-32 city-3-loc-26 (17)
+pick-up truck-4 city-3-loc-26 package-20 capacity-1 capacity-2 (1)
+drive truck-4 city-3-loc-26 city-3-loc-36 (13)
+drive truck-4 city-3-loc-36 city-3-loc-35 (16)
+pick-up truck-4 city-3-loc-35 package-8 capacity-0 capacity-1 (1)
+drive truck-4 city-3-loc-35 city-3-loc-36 (16)
+drive truck-4 city-3-loc-36 city-3-loc-26 (13)
+drive truck-4 city-3-loc-26 city-3-loc-32 (17)
+drive truck-4 city-3-loc-32 city-3-loc-25 (14)
+drive truck-4 city-3-loc-25 city-3-loc-38 (13)
+drive truck-4 city-3-loc-38 city-3-loc-12 (14)
+drive truck-4 city-3-loc-12 city-3-loc-55 (11)
+drive truck-4 city-3-loc-55 city-3-loc-6 (12)
+drop truck-4 city-3-loc-6 package-20 capacity-0 capacity-1 (1)
+drive truck-4 city-3-loc-6 city-3-loc-55 (12)
+drive truck-4 city-3-loc-55 city-3-loc-33 (16)
+drive truck-4 city-3-loc-33 city-3-loc-24 (13)
+pick-up truck-4 city-3-loc-24 package-22 capacity-0 capacity-1 (1)
+drive truck-4 city-3-loc-24 city-3-loc-33 (13)
+drive truck-4 city-3-loc-33 city-3-loc-31 (17)
+drop truck-4 city-3-loc-31 package-22 capacity-0 capacity-1 (1)
+pick-up truck-4 city-3-loc-31 package-4 capacity-0 capacity-1 (1)
+drive truck-4 city-3-loc-31 city-3-loc-33 (17)
+drive truck-4 city-3-loc-33 city-3-loc-38 (15)
+drive truck-1 city-1-loc-45 city-1-loc-19 (11)
+drive truck-1 city-1-loc-19 city-1-loc-59 (17)
+drive truck-1 city-1-loc-59 city-1-loc-15 (12)
+drop truck-1 city-1-loc-15 package-11 capacity-0 capacity-1 (1)
+pick-up truck-1 city-1-loc-15 package-17 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-15 city-1-loc-9 (12)
+drive truck-1 city-1-loc-9 city-1-loc-12 (14)
+drive truck-1 city-1-loc-12 city-1-loc-57 (13)
+drop truck-1 city-1-loc-57 package-14 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-57 city-3-loc-12 (125)
+drive truck-1 city-3-loc-12 city-3-loc-16 (16)
+pick-up truck-1 city-3-loc-16 package-12 capacity-0 capacity-1 (1)
+drive truck-3 city-3-loc-41 city-3-loc-13 (12)
+drive truck-3 city-3-loc-13 city-3-loc-3 (14)
+drive truck-3 city-3-loc-3 city-3-loc-54 (16)
+pick-up truck-3 city-3-loc-54 package-21 capacity-1 capacity-2 (1)
+pick-up truck-3 city-3-loc-54 package-7 capacity-0 capacity-1 (1)
+drive truck-3 city-3-loc-54 city-3-loc-3 (16)
+drive truck-3 city-3-loc-3 city-3-loc-13 (14)
+drive truck-3 city-3-loc-13 city-3-loc-41 (12)
+drive truck-4 city-3-loc-38 city-3-loc-12 (14)
+drive truck-4 city-3-loc-12 city-3-loc-55 (11)
+drive truck-1 city-3-loc-16 city-3-loc-17 (11)
+drive truck-1 city-3-loc-17 city-3-loc-38 (17)
+drop truck-1 city-3-loc-38 package-12 capacity-0 capacity-1 (1)
+drive truck-2 city-3-loc-49 city-3-loc-45 (11)
+drive truck-2 city-3-loc-45 city-3-loc-17 (11)
+drive truck-2 city-3-loc-17 city-3-loc-38 (17)
+drive truck-4 city-3-loc-55 city-3-loc-6 (12)
+drive truck-1 city-3-loc-38 city-3-loc-17 (17)
+drive truck-4 city-3-loc-6 city-3-loc-19 (15)
+drive truck-4 city-3-loc-19 city-3-loc-43 (13)
+drive truck-3 city-3-loc-41 city-3-loc-9 (13)
+drive truck-4 city-3-loc-43 city-3-loc-41 (16)
+drive truck-4 city-3-loc-41 city-3-loc-1 (14)
+drive truck-3 city-3-loc-9 city-3-loc-30 (16)
+drop truck-4 city-3-loc-1 package-4 capacity-0 capacity-1 (1)
+drive truck-3 city-3-loc-30 city-3-loc-11 (12)
+drive truck-4 city-3-loc-1 city-3-loc-61 (11)
+drive truck-3 city-3-loc-11 city-3-loc-53 (12)
+drive truck-4 city-3-loc-61 city-3-loc-52 (11)
+drop truck-3 city-3-loc-53 package-21 capacity-0 capacity-1 (1)
+drive truck-3 city-3-loc-53 city-3-loc-11 (12)
+drive truck-3 city-3-loc-11 city-3-loc-30 (12)
+drive truck-4 city-3-loc-52 city-3-loc-11 (14)
+drive truck-3 city-3-loc-30 city-3-loc-9 (16)
+drive truck-3 city-3-loc-9 city-3-loc-43 (14)
+drive truck-3 city-3-loc-43 city-3-loc-19 (13)
+drive truck-3 city-3-loc-19 city-3-loc-6 (15)
+drive truck-4 city-3-loc-11 city-3-loc-53 (12)
+drive truck-4 city-3-loc-53 city-3-loc-60 (15)
+drive truck-4 city-3-loc-60 city-3-loc-28 (11)
+drive truck-4 city-3-loc-28 city-3-loc-49 (11)
+drop truck-4 city-3-loc-49 package-8 capacity-1 capacity-2 (1)
+drive truck-4 city-3-loc-49 city-3-loc-62 (14)
+drive truck-4 city-3-loc-62 city-3-loc-60 (14)
+drive truck-4 city-3-loc-60 city-3-loc-53 (15)
+pick-up truck-4 city-3-loc-53 package-21 capacity-1 capacity-2 (1)
+drive truck-1 city-3-loc-17 city-3-loc-16 (11)
+drive truck-3 city-3-loc-6 city-3-loc-55 (12)
+drop truck-3 city-3-loc-55 package-7 capacity-1 capacity-2 (1)
+drive truck-2 city-3-loc-38 city-3-loc-25 (13)
+drive truck-3 city-3-loc-55 city-3-loc-12 (11)
+drive truck-3 city-3-loc-12 city-3-loc-38 (14)
+pick-up truck-3 city-3-loc-38 package-12 capacity-1 capacity-2 (1)
+drive truck-4 city-3-loc-53 city-3-loc-11 (12)
+drive truck-4 city-3-loc-11 city-3-loc-30 (12)
+drive truck-4 city-3-loc-30 city-3-loc-9 (16)
+drive truck-4 city-3-loc-9 city-3-loc-41 (13)
+drive truck-3 city-3-loc-38 city-3-loc-33 (15)
+drive truck-3 city-3-loc-33 city-3-loc-31 (17)
+pick-up truck-3 city-3-loc-31 package-22 capacity-0 capacity-1 (1)
+drive truck-3 city-3-loc-31 city-3-loc-33 (17)
+drive truck-3 city-3-loc-33 city-3-loc-38 (15)
+drive truck-1 city-3-loc-16 city-3-loc-12 (16)
+drive truck-1 city-3-loc-12 city-1-loc-57 (125)
+drive truck-1 city-1-loc-57 city-1-loc-58 (11)
+drive truck-1 city-1-loc-58 city-1-loc-49 (13)
+drive truck-1 city-1-loc-49 city-1-loc-35 (13)
+pick-up truck-1 city-1-loc-35 package-1 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-35 city-1-loc-27 (11)
+drive truck-1 city-1-loc-27 city-1-loc-22 (14)
+drive truck-1 city-1-loc-22 city-1-loc-44 (14)
+drop truck-1 city-1-loc-44 package-1 capacity-0 capacity-1 (1)
+pick-up truck-1 city-1-loc-44 package-5 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-44 city-1-loc-18 (17)
+drive truck-1 city-1-loc-18 city-1-loc-52 (14)
+drop truck-1 city-1-loc-52 package-17 capacity-0 capacity-1 (1)
+pick-up truck-1 city-1-loc-52 package-6 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-52 city-1-loc-11 (11)
+drop truck-1 city-1-loc-11 package-5 capacity-0 capacity-1 (1)
+pick-up truck-1 city-1-loc-11 package-18 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-11 city-1-loc-24 (12)
+drive truck-1 city-1-loc-24 city-1-loc-37 (17)
+drive truck-1 city-1-loc-37 city-1-loc-26 (15)
+drive truck-1 city-1-loc-26 city-1-loc-40 (15)
+drop truck-1 city-1-loc-40 package-18 capacity-0 capacity-1 (1)
+pick-up truck-1 city-1-loc-40 package-2 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-40 city-1-loc-14 (17)
+drive truck-1 city-1-loc-14 city-1-loc-45 (15)
+drive truck-1 city-1-loc-45 city-1-loc-19 (11)
+drive truck-1 city-1-loc-19 city-1-loc-59 (17)
+drop truck-1 city-1-loc-59 package-2 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-59 city-1-loc-15 (12)
+pick-up truck-1 city-1-loc-15 package-11 capacity-0 capacity-1 (1)
+drive truck-1 city-1-loc-15 city-1-loc-9 (12)
+drive truck-1 city-1-loc-9 city-1-loc-12 (14)
+drive truck-1 city-1-loc-12 city-1-loc-57 (13)
+drive truck-1 city-1-loc-57 city-3-loc-12 (125)
+drive truck-1 city-3-loc-12 city-3-loc-16 (16)
+drop truck-1 city-3-loc-16 package-11 capacity-0 capacity-1 (1)
+drop truck-1 city-3-loc-16 package-6 capacity-1 capacity-2 (1)
+drive truck-1 city-3-loc-16 city-3-loc-12 (16)
+drive truck-1 city-3-loc-12 city-3-loc-38 (14)
+drive truck-1 city-3-loc-38 city-3-loc-25 (13)
+drive truck-2 city-3-loc-25 city-3-loc-32 (14)
+drop truck-3 city-3-loc-38 package-12 capacity-0 capacity-1 (1)
+drive truck-2 city-3-loc-32 city-3-loc-26 (17)
+drive truck-2 city-3-loc-26 city-3-loc-36 (13)
+drive truck-2 city-3-loc-36 city-3-loc-23 (16)
+drive truck-2 city-3-loc-23 city-3-loc-2 (12)
+drop truck-2 city-3-loc-2 package-3 capacity-0 capacity-1 (1)
+drive truck-2 city-3-loc-2 city-3-loc-23 (12)
+drive truck-2 city-3-loc-23 city-3-loc-36 (16)
+drive truck-2 city-3-loc-36 city-3-loc-26 (13)
+pick-up truck-3 city-3-loc-38 package-12 capacity-0 capacity-1 (1)
+drive truck-2 city-3-loc-26 city-3-loc-32 (17)
+drive truck-2 city-3-loc-32 city-3-loc-38 (17)
+drive truck-3 city-3-loc-38 city-3-loc-32 (17)
+drive truck-3 city-3-loc-32 city-3-loc-59 (12)
+drive truck-3 city-3-loc-59 city-3-loc-46 (11)
+drive truck-3 city-3-loc-46 city-3-loc-37 (12)
+drive truck-3 city-3-loc-37 city-2-loc-49 (124)
+drive truck-3 city-2-loc-49 city-2-loc-8 (16)
+drive truck-3 city-2-loc-8 city-2-loc-13 (14)
+drive truck-3 city-2-loc-13 city-2-loc-36 (14)
+drive truck-3 city-2-loc-36 city-2-loc-43 (12)
+drive truck-3 city-2-loc-43 city-2-loc-25 (17)
+drive truck-3 city-2-loc-25 city-2-loc-41 (12)
+drive truck-3 city-2-loc-41 city-2-loc-56 (12)
+drop truck-3 city-2-loc-56 package-22 capacity-0 capacity-1 (1)
+drive truck-3 city-2-loc-56 city-2-loc-46 (11)
+drive truck-4 city-3-loc-41 city-3-loc-9 (13)
+drive truck-4 city-3-loc-9 city-3-loc-30 (16)
+drive truck-4 city-3-loc-30 city-3-loc-11 (12)
+drive truck-4 city-3-loc-11 city-3-loc-53 (12)
+drive truck-3 city-2-loc-46 city-2-loc-2 (16)
+drive truck-4 city-3-loc-53 city-3-loc-60 (15)
+drive truck-4 city-3-loc-60 city-3-loc-28 (11)
+drive truck-3 city-2-loc-2 city-2-loc-13 (14)
+drive truck-3 city-2-loc-13 city-2-loc-36 (14)
+pick-up truck-3 city-2-loc-36 package-10 capacity-0 capacity-1 (1)
+drive truck-4 city-3-loc-28 city-3-loc-60 (11)
+drive truck-4 city-3-loc-60 city-3-loc-53 (15)
+drive truck-4 city-3-loc-53 city-3-loc-11 (12)
+drive truck-4 city-3-loc-11 city-3-loc-30 (12)
+drive truck-4 city-3-loc-30 city-3-loc-9 (16)
+drive truck-4 city-3-loc-9 city-3-loc-41 (13)
+drive truck-3 city-2-loc-36 city-2-loc-43 (12)
+drive truck-3 city-2-loc-43 city-2-loc-25 (17)
+drive truck-3 city-2-loc-25 city-2-loc-41 (12)
+drive truck-3 city-2-loc-41 city-2-loc-56 (12)
+drive truck-3 city-2-loc-56 city-2-loc-18 (14)
+drive truck-3 city-2-loc-18 city-2-loc-37 (11)
+drive truck-3 city-2-loc-37 city-1-loc-36 (102)
+drop truck-3 city-1-loc-36 package-12 capacity-0 capacity-1 (1)
+drive truck-3 city-1-loc-36 city-1-loc-54 (16)
+drive truck-3 city-1-loc-54 city-1-loc-46 (16)
+drive truck-3 city-1-loc-46 city-1-loc-28 (13)
+drive truck-3 city-1-loc-28 city-1-loc-45 (14)
+drop truck-3 city-1-loc-45 package-10 capacity-1 capacity-2 (1)
+drive truck-3 city-1-loc-45 city-1-loc-14 (15)
+drive truck-3 city-1-loc-14 city-1-loc-40 (17)
+pick-up truck-3 city-1-loc-40 package-18 capacity-1 capacity-2 (1)
+drive truck-3 city-1-loc-40 city-1-loc-26 (15)
+drive truck-3 city-1-loc-26 city-1-loc-37 (15)
+drive truck-3 city-1-loc-37 city-1-loc-24 (17)
+drive truck-3 city-1-loc-24 city-1-loc-11 (12)
+pick-up truck-3 city-1-loc-11 package-5 capacity-0 capacity-1 (1)
+drive truck-3 city-1-loc-11 city-1-loc-24 (12)
+drive truck-3 city-1-loc-24 city-1-loc-37 (17)
+drive truck-3 city-1-loc-37 city-1-loc-26 (15)
+drop truck-3 city-1-loc-26 package-5 capacity-0 capacity-1 (1)
+drive truck-3 city-1-loc-26 city-1-loc-40 (15)
+drive truck-3 city-1-loc-40 city-1-loc-14 (17)
+drive truck-3 city-1-loc-14 city-1-loc-62 (16)
+drive truck-3 city-1-loc-62 city-1-loc-19 (17)
+drive truck-3 city-1-loc-19 city-1-loc-6 (15)
+drive truck-3 city-1-loc-6 city-1-loc-54 (12)
+drive truck-3 city-1-loc-54 city-1-loc-36 (16)
+drive truck-3 city-1-loc-36 city-2-loc-37 (102)
+drive truck-3 city-2-loc-37 city-2-loc-18 (11)
+drive truck-3 city-2-loc-18 city-2-loc-56 (14)
+drive truck-3 city-2-loc-56 city-2-loc-46 (11)
+drive truck-3 city-2-loc-46 city-2-loc-34 (13)
+drop truck-3 city-2-loc-34 package-18 capacity-1 capacity-2 (1)
+drive truck-3 city-2-loc-34 city-2-loc-25 (13)
+drive truck-3 city-2-loc-25 city-2-loc-6 (12)
+pick-up truck-3 city-2-loc-6 package-16 capacity-1 capacity-2 (1)
+drive truck-3 city-2-loc-6 city-2-loc-25 (12)
+drive truck-3 city-2-loc-25 city-2-loc-34 (13)
+drive truck-3 city-2-loc-34 city-2-loc-2 (13)
+drive truck-3 city-2-loc-2 city-2-loc-13 (14)
+drive truck-3 city-2-loc-13 city-2-loc-8 (14)
+drive truck-3 city-2-loc-8 city-2-loc-49 (16)
+drive truck-3 city-2-loc-49 city-3-loc-37 (124)
+drive truck-3 city-3-loc-37 city-3-loc-21 (15)
+drive truck-3 city-3-loc-21 city-3-loc-60 (15)
+drive truck-3 city-3-loc-60 city-3-loc-53 (15)
+drive truck-3 city-3-loc-53 city-3-loc-11 (12)
+drive truck-3 city-3-loc-11 city-3-loc-30 (12)
+drive truck-3 city-3-loc-30 city-3-loc-9 (16)
+drive truck-3 city-3-loc-9 city-3-loc-41 (13)
+drop truck-3 city-3-loc-41 package-16 capacity-1 capacity-2 (1)
+drive truck-4 city-3-loc-41 city-3-loc-9 (13)
+drive truck-4 city-3-loc-9 city-3-loc-30 (16)
+drive truck-4 city-3-loc-30 city-3-loc-11 (12)
+drive truck-4 city-3-loc-11 city-3-loc-53 (12)
+drive truck-4 city-3-loc-53 city-3-loc-60 (15)
+drive truck-4 city-3-loc-60 city-3-loc-28 (11)
+drive truck-4 city-3-loc-28 city-3-loc-37 (17)
+drive truck-4 city-3-loc-37 city-2-loc-49 (124)
+drive truck-4 city-2-loc-49 city-2-loc-10 (11)
+drive truck-4 city-2-loc-10 city-2-loc-14 (10)
+drive truck-4 city-2-loc-14 city-2-loc-36 (17)
+drive truck-4 city-2-loc-36 city-2-loc-43 (12)
+drive truck-4 city-2-loc-43 city-2-loc-16 (15)
+drive truck-4 city-2-loc-16 city-2-loc-5 (11)
+drive truck-4 city-2-loc-5 city-2-loc-51 (12)
+drive truck-4 city-2-loc-51 city-2-loc-31 (11)
+drop truck-4 city-2-loc-31 package-21 capacity-1 capacity-2 (1)
+drive truck-2 city-3-loc-38 city-3-loc-12 (14)
+drive truck-2 city-3-loc-12 city-1-loc-57 (125)
+drive truck-2 city-1-loc-57 city-1-loc-12 (13)
+drive truck-2 city-1-loc-12 city-1-loc-9 (14)
+drive truck-2 city-1-loc-9 city-1-loc-59 (17)
+drop truck-2 city-1-loc-59 package-19 capacity-1 capacity-2 (1)
+drive truck-2 city-1-loc-59 city-1-loc-9 (17)
+drive truck-2 city-1-loc-9 city-1-loc-5 (15)
+drive truck-2 city-1-loc-5 city-1-loc-4 (17)
+drive truck-2 city-1-loc-4 city-1-loc-37 (11)
+drive truck-2 city-1-loc-37 city-1-loc-32 (17)
+drive truck-2 city-1-loc-32 city-1-loc-55 (15)
+drive truck-2 city-1-loc-55 city-1-loc-7 (12)
+drop truck-2 city-1-loc-7 package-13 capacity-2 capacity-3 (1)
+drive truck-1 city-3-loc-25 city-3-loc-38 (13)
+drive truck-1 city-3-loc-38 city-3-loc-12 (14)
+drive truck-1 city-3-loc-12 city-1-loc-57 (125)
+drive truck-1 city-1-loc-57 city-1-loc-58 (11)
+drive truck-1 city-1-loc-58 city-1-loc-49 (13)
+drive truck-1 city-1-loc-49 city-1-loc-27 (14)
+drive truck-1 city-1-loc-27 city-1-loc-22 (14)
+drive truck-1 city-1-loc-22 city-1-loc-44 (14)
+pick-up truck-1 city-1-loc-44 package-1 capacity-1 capacity-2 (1)
+drive truck-1 city-1-loc-44 city-1-loc-22 (14)
+drive truck-1 city-1-loc-22 city-1-loc-27 (14)
+drive truck-1 city-1-loc-27 city-1-loc-49 (14)
+drive truck-1 city-1-loc-49 city-1-loc-58 (13)
+drive truck-1 city-1-loc-58 city-1-loc-57 (11)
+drive truck-1 city-1-loc-57 city-3-loc-12 (125)
+drive truck-1 city-3-loc-12 city-3-loc-38 (14)
+drive truck-1 city-3-loc-38 city-3-loc-25 (13)
+drop truck-1 city-3-loc-25 package-1 capacity-1 capacity-2 (1)
+drive truck-1 city-3-loc-25 city-3-loc-32 (14)
+drive truck-1 city-3-loc-32 city-3-loc-59 (12)
+drive truck-1 city-3-loc-59 city-3-loc-46 (11)
+drive truck-1 city-3-loc-46 city-3-loc-37 (12)
+drive truck-1 city-3-loc-37 city-2-loc-49 (124)
+drive truck-1 city-2-loc-49 city-2-loc-10 (11)
+drive truck-1 city-2-loc-10 city-2-loc-28 (16)
+drive truck-1 city-2-loc-28 city-2-loc-39 (12)
+drive truck-1 city-2-loc-39 city-2-loc-27 (14)
+drive truck-1 city-2-loc-27 city-2-loc-1 (11)
+drive truck-1 city-2-loc-1 city-2-loc-29 (13)
+pick-up truck-1 city-2-loc-29 package-9 capacity-1 capacity-2 (1)
+drive truck-1 city-2-loc-29 city-2-loc-1 (13)
+drive truck-1 city-2-loc-1 city-2-loc-27 (11)
+drive truck-1 city-2-loc-27 city-2-loc-39 (14)
+drive truck-1 city-2-loc-39 city-2-loc-28 (12)
+drive truck-1 city-2-loc-28 city-2-loc-10 (16)
+drive truck-1 city-2-loc-10 city-2-loc-49 (11)
+drive truck-1 city-2-loc-49 city-3-loc-37 (124)
+drive truck-1 city-3-loc-37 city-3-loc-46 (12)
+drive truck-1 city-3-loc-46 city-3-loc-45 (16)
+drive truck-1 city-3-loc-45 city-3-loc-17 (11)
+drive truck-1 city-3-loc-17 city-3-loc-38 (17)
+drop truck-1 city-3-loc-38 package-9 capacity-1 capacity-2 (1)
+drive truck-1 city-3-loc-38 city-3-loc-12 (14)
+drive truck-1 city-3-loc-12 city-1-loc-57 (125)
+drive truck-1 city-1-loc-57 city-1-loc-58 (11)
+drive truck-1 city-1-loc-58 city-1-loc-3 (16)
+drive truck-1 city-1-loc-3 city-1-loc-61 (14)
+drive truck-1 city-1-loc-61 city-1-loc-48 (13)
+drive truck-1 city-1-loc-48 city-1-loc-18 (13)
+drive truck-1 city-1-loc-18 city-1-loc-52 (14)
+pick-up truck-1 city-1-loc-52 package-17 capacity-1 capacity-2 (1)
+drive truck-1 city-1-loc-52 city-1-loc-18 (14)
+drive truck-1 city-1-loc-18 city-1-loc-48 (13)
+drive truck-1 city-1-loc-48 city-1-loc-61 (13)
+drive truck-1 city-1-loc-61 city-1-loc-3 (14)
+drive truck-1 city-1-loc-3 city-1-loc-58 (16)
+drive truck-1 city-1-loc-58 city-1-loc-57 (11)
+drive truck-1 city-1-loc-57 city-3-loc-12 (125)
+drive truck-1 city-3-loc-12 city-3-loc-38 (14)
+drive truck-1 city-3-loc-38 city-3-loc-32 (17)
+drive truck-1 city-3-loc-32 city-3-loc-59 (12)
+drive truck-1 city-3-loc-59 city-3-loc-46 (11)
+drive truck-1 city-3-loc-46 city-3-loc-37 (12)
+drive truck-1 city-3-loc-37 city-2-loc-49 (124)
+drive truck-1 city-2-loc-49 city-2-loc-40 (16)
+drive truck-1 city-2-loc-40 city-2-loc-54 (15)
+drive truck-1 city-2-loc-54 city-2-loc-7 (12)
+drive truck-1 city-2-loc-7 city-2-loc-44 (14)
+drive truck-1 city-2-loc-44 city-2-loc-19 (11)
+drive truck-1 city-2-loc-19 city-2-loc-57 (16)
+drive truck-1 city-2-loc-57 city-2-loc-9 (15)
+drop truck-1 city-2-loc-9 package-17 capacity-1 capacity-2 (1)
+Plan length: 372 step(s).
+Plan cost: 6278
+Initial state h value: 82/165.
+Expanded 16922 state(s).
+Reopened 0 state(s).
+Evaluated 16923 state(s).
+Evaluations: 33846
+Generated 402937 state(s).
+Dead ends: 0 state(s).
+Best solution cost so far: 6278
+Solution found - keep searching
+Starting search: lazy_greedy(list(hff2, hlm2), preferred = list(hff2, hlm2), reopen_closed = false)
+Conducting lazy best first search, (real) bound = 6278
+Best heuristic value: 571/2728 [g=0, 1 evaluated, 0 expanded, t=369.85s]
+Best heuristic value: 559/2706 [g=11, 2 evaluated, 1 expanded, t=369.87s]
+Best heuristic value: 559/2671 [g=136, 3 evaluated, 2 expanded, t=369.9s]
+Best heuristic value: 557/2664 [g=150, 4 evaluated, 3 expanded, t=369.92s]
+Best heuristic value: 557/2657 [g=163, 5 evaluated, 4 expanded, t=369.94s]
+Best heuristic value: 557/2649 [g=164, 7 evaluated, 6 expanded, t=369.98s]
+Best heuristic value: 557/2644 [g=178, 9 evaluated, 8 expanded, t=370.02s]
+Best heuristic value: 544/2644 [g=164, 11 evaluated, 10 expanded, t=370.07s]
+Best heuristic value: 544/2319 [g=190, 14 evaluated, 13 expanded, t=370.13s]
+Best heuristic value: 544/2311 [g=201, 43 evaluated, 42 expanded, t=370.76s]
+Best heuristic value: 532/2311 [g=230, 77 evaluated, 76 expanded, t=371.48s]
+Best heuristic value: 519/2311 [g=244, 88 evaluated, 87 expanded, t=371.71s]
+Best heuristic value: 517/2311 [g=259, 131 evaluated, 130 expanded, t=372.62s]
+Best heuristic value: 505/2311 [g=273, 137 evaluated, 136 expanded, t=372.75s]
+Best heuristic value: 505/2296 [g=310, 171 evaluated, 170 expanded, t=373.47s]
+Best heuristic value: 504/2296 [g=322, 175 evaluated, 174 expanded, t=373.56s]
+Best heuristic value: 504/2293 [g=322, 186 evaluated, 185 expanded, t=373.79s]
+Best heuristic value: 504/2291 [g=337, 214 evaluated, 213 expanded, t=374.38s]
+Best heuristic value: 504/2281 [g=354, 222 evaluated, 221 expanded, t=374.55s]
+Best heuristic value: 502/2281 [g=354, 263 evaluated, 262 expanded, t=375.42s]
+Best heuristic value: 489/2281 [g=371, 267 evaluated, 266 expanded, t=375.51s]
+Best heuristic value: 488/2281 [g=385, 269 evaluated, 268 expanded, t=375.55s]
+Best heuristic value: 488/2273 [g=379, 272 evaluated, 271 expanded, t=375.61s]
+Best heuristic value: 488/2269 [g=402, 300 evaluated, 299 expanded, t=376.2s]
+Best heuristic value: 476/2269 [g=411, 484 evaluated, 483 expanded, t=380.14s]
+Best heuristic value: 476/2261 [g=466, 729 evaluated, 728 expanded, t=385.34s]
+Best heuristic value: 461/2261 [g=485, 785 evaluated, 784 expanded, t=386.53s]
+Best heuristic value: 461/2178 [g=514, 1033 evaluated, 1032 expanded, t=391.78s]
+Best heuristic value: 461/2147 [g=546, 1084 evaluated, 1083 expanded, t=392.85s]
+Best heuristic value: 461/2146 [g=618, 2563 evaluated, 2562 expanded, t=424.38s]
+Best heuristic value: 461/2117 [g=630, 2569 evaluated, 2568 expanded, t=424.5s]
+Best heuristic value: 450/2117 [g=738, 2984 evaluated, 2983 expanded, t=433.5s]
+Best heuristic value: 449/2117 [g=750, 2995 evaluated, 2994 expanded, t=433.73s]
+Best heuristic value: 449/2089 [g=764, 3003 evaluated, 3002 expanded, t=433.91s]
+Best heuristic value: 448/2089 [g=759, 3075 evaluated, 3074 expanded, t=435.48s]
+Best heuristic value: 447/2089 [g=855, 3126 evaluated, 3125 expanded, t=436.59s]
+Best heuristic value: 445/2089 [g=866, 3446 evaluated, 3445 expanded, t=443.52s]
+Best heuristic value: 444/2089 [g=903, 3805 evaluated, 3804 expanded, t=451.22s]
+Best heuristic value: 444/2081 [g=836, 3862 evaluated, 3861 expanded, t=452.44s]
+Best heuristic value: 444/2075 [g=916, 3958 evaluated, 3957 expanded, t=454.51s]
+Best heuristic value: 444/2069 [g=934, 3982 evaluated, 3981 expanded, t=455.03s]
+Best heuristic value: 444/2064 [g=1002, 4074 evaluated, 4073 expanded, t=457.03s]
+Best heuristic value: 434/2064 [g=996, 4079 evaluated, 4078 expanded, t=457.14s]
+Best heuristic value: 434/2052 [g=1003, 4080 evaluated, 4079 expanded, t=457.16s]
+Best heuristic value: 432/2052 [g=1012, 4092 evaluated, 4091 expanded, t=457.42s]
+Best heuristic value: 432/2050 [g=1016, 4095 evaluated, 4094 expanded, t=457.49s]
+Best heuristic value: 432/2049 [g=1031, 4118 evaluated, 4117 expanded, t=457.99s]
+Best heuristic value: 432/2038 [g=1046, 4139 evaluated, 4138 expanded, t=458.44s]
+Best heuristic value: 432/2035 [g=1056, 4197 evaluated, 4196 expanded, t=459.71s]
+Best heuristic value: 421/2035 [g=1046, 4283 evaluated, 4282 expanded, t=461.57s]
+Best heuristic value: 420/2035 [g=1058, 4299 evaluated, 4298 expanded, t=461.91s]
+Best heuristic value: 420/2033 [g=1073, 4398 evaluated, 4397 expanded, t=464.06s]
+Best heuristic value: 409/2033 [g=1060, 4512 evaluated, 4511 expanded, t=466.55s]
+Best heuristic value: 409/2013 [g=1141, 4652 evaluated, 4651 expanded, t=469.59s]
+Best heuristic value: 409/2010 [g=1313, 4733 evaluated, 4732 expanded, t=471.32s]
+Best heuristic value: 409/2001 [g=1354, 4798 evaluated, 4797 expanded, t=472.7s]
+Best heuristic value: 409/1999 [g=1367, 4828 evaluated, 4827 expanded, t=473.33s]
+Best heuristic value: 408/1999 [g=1094, 4831 evaluated, 4830 expanded, t=473.4s]
+Best heuristic value: 407/1999 [g=1111, 4840 evaluated, 4839 expanded, t=473.59s]
+Best heuristic value: 407/1997 [g=1401, 4955 evaluated, 4954 expanded, t=476.04s]
+Best heuristic value: 407/1995 [g=1401, 5144 evaluated, 5143 expanded, t=480.09s]
+Best heuristic value: 405/1995 [g=1431, 5348 evaluated, 5347 expanded, t=484.43s]
+Best heuristic value: 405/1993 [g=1464, 5534 evaluated, 5533 expanded, t=488.42s]
+Best heuristic value: 405/1981 [g=1471, 5717 evaluated, 5716 expanded, t=492.39s]
+Best heuristic value: 405/1976 [g=1632, 5854 evaluated, 5853 expanded, t=495.35s]
+Best heuristic value: 405/1966 [g=1516, 5929 evaluated, 5928 expanded, t=496.97s]
+Best heuristic value: 404/1966 [g=1579, 6446 evaluated, 6445 expanded, t=508.15s]
+Best heuristic value: 402/1966 [g=1580, 6462 evaluated, 6461 expanded, t=508.49s]
+Best heuristic value: 390/1966 [g=1592, 6475 evaluated, 6474 expanded, t=508.77s]
+Best heuristic value: 390/1964 [g=1770, 6655 evaluated, 6654 expanded, t=512.69s]
+Best heuristic value: 388/1964 [g=1620, 6697 evaluated, 6696 expanded, t=513.6s]
+Best heuristic value: 388/1959 [g=1818, 6723 evaluated, 6722 expanded, t=514.17s]
+Best heuristic value: 388/1949 [g=1815, 6987 evaluated, 6986 expanded, t=519.93s]
+Best heuristic value: 388/1943 [g=1813, 7185 evaluated, 7184 expanded, t=524.27s]
+Best heuristic value: 388/1941 [g=1802, 7197 evaluated, 7196 expanded, t=524.53s]
+Best heuristic value: 388/1935 [g=1841, 7344 evaluated, 7343 expanded, t=527.71s]
+Best heuristic value: 388/1921 [g=1852, 7362 evaluated, 7361 expanded, t=528.1s]
+Best heuristic value: 388/1907 [g=1863, 7379 evaluated, 7378 expanded, t=528.47s]
+Best heuristic value: 386/1907 [g=1663, 7868 evaluated, 7867 expanded, t=539.06s]
+Best heuristic value: 385/1907 [g=1681, 7897 evaluated, 7896 expanded, t=539.68s]
+Best heuristic value: 371/1907 [g=1698, 7906 evaluated, 7905 expanded, t=539.88s]
+Best heuristic value: 369/1907 [g=1757, 8174 evaluated, 8173 expanded, t=545.71s]
+Best heuristic value: 368/1907 [g=1786, 8216 evaluated, 8215 expanded, t=546.62s]
+Best heuristic value: 367/1907 [g=1814, 8272 evaluated, 8271 expanded, t=547.84s]
+Best heuristic value: 365/1907 [g=1833, 8486 evaluated, 8485 expanded, t=552.5s]
+Best heuristic value: 353/1907 [g=1891, 8845 evaluated, 8844 expanded, t=560.3s]
+Best heuristic value: 351/1907 [g=1890, 8957 evaluated, 8956 expanded, t=562.73s]
+Best heuristic value: 341/1907 [g=2547, 10611 evaluated, 10610 expanded, t=598.47s]
+Best heuristic value: 339/1907 [g=2548, 10623 evaluated, 10622 expanded, t=598.73s]
+Best heuristic value: 327/1907 [g=2560, 10645 evaluated, 10644 expanded, t=599.2s]
+Best heuristic value: 325/1907 [g=2561, 10664 evaluated, 10663 expanded, t=599.62s]
+Best heuristic value: 325/1897 [g=2486, 10872 evaluated, 10871 expanded, t=604.09s]
+Best heuristic value: 325/1895 [g=2471, 10892 evaluated, 10891 expanded, t=604.52s]
+Best heuristic value: 325/1892 [g=2482, 10894 evaluated, 10893 expanded, t=604.56s]
+Best heuristic value: 325/1890 [g=2483, 10902 evaluated, 10901 expanded, t=604.73s]
+Best heuristic value: 325/1878 [g=2511, 10921 evaluated, 10920 expanded, t=605.14s]
+Best heuristic value: 325/1854 [g=2547, 10979 evaluated, 10978 expanded, t=606.4s]
+Best heuristic value: 325/1842 [g=2559, 10986 evaluated, 10985 expanded, t=606.55s]
+Best heuristic value: 325/1836 [g=2592, 11007 evaluated, 11006 expanded, t=607s]
+Best heuristic value: 312/1836 [g=2700, 11155 evaluated, 11154 expanded, t=610.18s]
+Best heuristic value: 310/1836 [g=2701, 11171 evaluated, 11170 expanded, t=610.52s]
+Best heuristic value: 308/1836 [g=2702, 11182 evaluated, 11181 expanded, t=610.76s]
+Best heuristic value: 296/1836 [g=2749, 11301 evaluated, 11300 expanded, t=613.35s]
+Best heuristic value: 294/1836 [g=2777, 11452 evaluated, 11451 expanded, t=616.64s]
+Best heuristic value: 283/1836 [g=2959, 11598 evaluated, 11597 expanded, t=619.8s]
+Best heuristic value: 281/1836 [g=2960, 11610 evaluated, 11609 expanded, t=620.06s]
+Best heuristic value: 269/1836 [g=2972, 11626 evaluated, 11625 expanded, t=620.41s]
+Best heuristic value: 267/1836 [g=2973, 11638 evaluated, 11637 expanded, t=620.67s]
+Best heuristic value: 265/1836 [g=3038, 13108 evaluated, 13107 expanded, t=652.59s]
+Best heuristic value: 251/1836 [g=3177, 13129 evaluated, 13128 expanded, t=653.05s]
+Best heuristic value: 249/1836 [g=3248, 13427 evaluated, 13426 expanded, t=659.46s]
+Best heuristic value: 237/1836 [g=3319, 13784 evaluated, 13783 expanded, t=667.17s]
+Best heuristic value: 235/1836 [g=3320, 13799 evaluated, 13798 expanded, t=667.5s]
+Best heuristic value: 223/1836 [g=3397, 14170 evaluated, 14169 expanded, t=675.57s]
+Best heuristic value: 223/1749 [g=3414, 14194 evaluated, 14193 expanded, t=676.1s]
+Best heuristic value: 223/1648 [g=3539, 14195 evaluated, 14194 expanded, t=676.12s]
+Best heuristic value: 223/1641 [g=3556, 14200 evaluated, 14199 expanded, t=676.23s]
+Best heuristic value: 223/1623 [g=3567, 14205 evaluated, 14204 expanded, t=676.34s]
+Best heuristic value: 223/1622 [g=3578, 14209 evaluated, 14208 expanded, t=676.43s]
+Best heuristic value: 222/1622 [g=3515, 14251 evaluated, 14250 expanded, t=677.34s]
+Best heuristic value: 220/1622 [g=3516, 14257 evaluated, 14256 expanded, t=677.47s]
+Best heuristic value: 220/1614 [g=3629, 14315 evaluated, 14314 expanded, t=678.75s]
+Best heuristic value: 208/1614 [g=3557, 14337 evaluated, 14336 expanded, t=679.22s]
+Best heuristic value: 194/1614 [g=3584, 14435 evaluated, 14434 expanded, t=681.35s]
+Best heuristic value: 193/1614 [g=3762, 14791 evaluated, 14790 expanded, t=689.09s]
+Best heuristic value: 191/1614 [g=3941, 15331 evaluated, 15330 expanded, t=700.87s]
+Best heuristic value: 179/1614 [g=4119, 15506 evaluated, 15505 expanded, t=704.66s]
+Best heuristic value: 178/1614 [g=4002, 15624 evaluated, 15623 expanded, t=707.21s]
+Best heuristic value: 166/1614 [g=4094, 15940 evaluated, 15939 expanded, t=714.02s]
+Best heuristic value: 165/1614 [g=4227, 16349 evaluated, 16348 expanded, t=722.92s]
+Best heuristic value: 153/1614 [g=4330, 16563 evaluated, 16562 expanded, t=727.55s]
+Best heuristic value: 151/1614 [g=4477, 16822 evaluated, 16821 expanded, t=733.17s]
+Best heuristic value: 151/1608 [g=4513, 16838 evaluated, 16837 expanded, t=733.51s]
+Best heuristic value: 149/1608 [g=4478, 16841 evaluated, 16840 expanded, t=733.57s]
+Best heuristic value: 149/1606 [g=4514, 16850 evaluated, 16849 expanded, t=733.76s]
+Best heuristic value: 148/1606 [g=4531, 16864 evaluated, 16863 expanded, t=734.06s]
+Best heuristic value: 134/1606 [g=4523, 16900 evaluated, 16899 expanded, t=734.83s]
+Best heuristic value: 132/1606 [g=4524, 16913 evaluated, 16912 expanded, t=735.11s]
+Best heuristic value: 132/1595 [g=4552, 16914 evaluated, 16913 expanded, t=735.13s]
+Best heuristic value: 132/1591 [g=4566, 16916 evaluated, 16915 expanded, t=735.17s]
+Best heuristic value: 132/1589 [g=4606, 16983 evaluated, 16982 expanded, t=736.58s]
+Best heuristic value: 132/1573 [g=4617, 17000 evaluated, 16999 expanded, t=736.94s]
+Best heuristic value: 120/1573 [g=4676, 17167 evaluated, 17166 expanded, t=740.46s]
+Best heuristic value: 120/1535 [g=4783, 17236 evaluated, 17235 expanded, t=741.92s]
+Best heuristic value: 120/1522 [g=4795, 17247 evaluated, 17246 expanded, t=742.16s]
+Best heuristic value: 120/1509 [g=4807, 17260 evaluated, 17259 expanded, t=742.44s]
+Best heuristic value: 120/1506 [g=4837, 17289 evaluated, 17288 expanded, t=743.07s]
+Best heuristic value: 120/1505 [g=4850, 17291 evaluated, 17290 expanded, t=743.11s]
+Best heuristic value: 120/1479 [g=4875, 17319 evaluated, 17318 expanded, t=743.72s]
+Best heuristic value: 120/1477 [g=4889, 17348 evaluated, 17347 expanded, t=744.35s]
+Best heuristic value: 118/1477 [g=4902, 17350 evaluated, 17349 expanded, t=744.4s]
+Best heuristic value: 118/1309 [g=5091, 17489 evaluated, 17488 expanded, t=747.42s]
+Best heuristic value: 118/1296 [g=5079, 17491 evaluated, 17490 expanded, t=747.47s]
+Best heuristic value: 118/1280 [g=5093, 17496 evaluated, 17495 expanded, t=747.58s]
+Best heuristic value: 106/1280 [g=5116, 17549 evaluated, 17548 expanded, t=748.74s]
+Best heuristic value: 104/1280 [g=5117, 17563 evaluated, 17562 expanded, t=749.05s]
+Best heuristic value: 104/1278 [g=5133, 17601 evaluated, 17600 expanded, t=749.89s]
+Best heuristic value: 104/1262 [g=5144, 17617 evaluated, 17616 expanded, t=750.24s]
+Best heuristic value: 102/1262 [g=5154, 17702 evaluated, 17701 expanded, t=752.11s]
+Best heuristic value: 90/1262 [g=5193, 17789 evaluated, 17788 expanded, t=754s]
+Best heuristic value: 89/1262 [g=5249, 17965 evaluated, 17964 expanded, t=757.84s]
+Best heuristic value: 89/1236 [g=5512, 18506 evaluated, 18505 expanded, t=769.58s]
+Best heuristic value: 89/1220 [g=5527, 18511 evaluated, 18510 expanded, t=769.69s]
+Best heuristic value: 89/1202 [g=5544, 18516 evaluated, 18515 expanded, t=769.8s]
+Best heuristic value: 89/1188 [g=5557, 18522 evaluated, 18521 expanded, t=769.94s]
+Best heuristic value: 89/1171 [g=5573, 18527 evaluated, 18526 expanded, t=770.05s]
+Best heuristic value: 89/1158 [g=5585, 18533 evaluated, 18532 expanded, t=770.18s]
+Best heuristic value: 89/1156 [g=5586, 18539 evaluated, 18538 expanded, t=770.31s]
+Best heuristic value: 86/1156 [g=5602, 18545 evaluated, 18544 expanded, t=770.44s]
+Best heuristic value: 86/1140 [g=5597, 18549 evaluated, 18548 expanded, t=770.53s]
+Best heuristic value: 84/1140 [g=5631, 18626 evaluated, 18625 expanded, t=772.2s]
+Best heuristic value: 84/1122 [g=5647, 18638 evaluated, 18637 expanded, t=772.46s]
+Best heuristic value: 84/1110 [g=5660, 18648 evaluated, 18647 expanded, t=772.67s]
+Best heuristic value: 82/1110 [g=5651, 18680 evaluated, 18679 expanded, t=773.36s]
+Best heuristic value: 80/1110 [g=5652, 18691 evaluated, 18690 expanded, t=773.59s]
+Best heuristic value: 67/1110 [g=5699, 18718 evaluated, 18717 expanded, t=774.16s]
+Best heuristic value: 66/1110 [g=5756, 18825 evaluated, 18824 expanded, t=776.42s]
+Best heuristic value: 53/1110 [g=5928, 18932 evaluated, 18931 expanded, t=778.62s]
+Best heuristic value: 53/1106 [g=5833, 18971 evaluated, 18970 expanded, t=779.42s]
+Best heuristic value: 53/981 [g=5957, 18979 evaluated, 18978 expanded, t=779.58s]
+Best heuristic value: 53/969 [g=5968, 18989 evaluated, 18988 expanded, t=779.78s]
+Best heuristic value: 53/958 [g=5978, 18998 evaluated, 18997 expanded, t=779.96s]
+Best heuristic value: 53/940 [g=5995, 19006 evaluated, 19005 expanded, t=780.12s]
+Best heuristic value: 53/927 [g=6007, 19012 evaluated, 19011 expanded, t=780.23s]
+Best heuristic value: 53/911 [g=6022, 19020 evaluated, 19019 expanded, t=780.39s]
+Best heuristic value: 53/899 [g=6033, 19026 evaluated, 19025 expanded, t=780.51s]
+Best heuristic value: 53/886 [g=6045, 19034 evaluated, 19033 expanded, t=780.66s]
+Best heuristic value: 53/874 [g=6056, 19040 evaluated, 19039 expanded, t=780.78s]
+Best heuristic value: 52/872 [g=6057, 19045 evaluated, 19044 expanded, t=780.87s]
+Best heuristic value: 51/872 [g=6064, 19237 evaluated, 19236 expanded, t=784.56s]
+Best heuristic value: 51/860 [g=6257, 19351 evaluated, 19350 expanded, t=786.79s]
+Best heuristic value: 51/859 [g=6246, 19718 evaluated, 19717 expanded, t=793.87s]
+Best heuristic value: 51/856 [g=6241, 19723 evaluated, 19722 expanded, t=793.96s]
+Best heuristic value: 51/843 [g=6254, 19726 evaluated, 19725 expanded, t=794.02s]
+Best heuristic value: 51/835 [g=6266, 19730 evaluated, 19729 expanded, t=794.09s]
+Best heuristic value: 51/829 [g=6267, 19731 evaluated, 19730 expanded, t=794.11s]
+Best heuristic value: 51/827 [g=6268, 19733 evaluated, 19732 expanded, t=794.15s]
+Best heuristic value: 51/826 [g=6268, 19745 evaluated, 19744 expanded, t=794.36s]
+Best heuristic value: 51/822 [g=6208, 20336 evaluated, 20335 expanded, t=806.19s]
+Best heuristic value: 51/811 [g=6268, 20397 evaluated, 20396 expanded, t=807.36s]
+Best heuristic value: 51/807 [g=6269, 20399 evaluated, 20398 expanded, t=807.39s]
+Best heuristic value: 51/806 [g=6274, 20404 evaluated, 20403 expanded, t=807.49s]
+Best heuristic value: 51/728 [g=6200, 20967 evaluated, 20966 expanded, t=818.83s]
+Best heuristic value: 51/713 [g=6214, 20969 evaluated, 20968 expanded, t=818.87s]
+Best heuristic value: 51/699 [g=6227, 20971 evaluated, 20970 expanded, t=818.91s]
+Best heuristic value: 51/697 [g=6228, 20973 evaluated, 20972 expanded, t=818.95s]
+Best heuristic value: 49/697 [g=6167, 23457 evaluated, 23456 expanded, t=869.5s]
+Best heuristic value: 48/697 [g=6256, 28767 evaluated, 28766 expanded, t=977.52s]
+Best heuristic value: 42/697 [g=6265, 47661 evaluated, 47660 expanded, t=1354.87s]
+Best heuristic value: 42/696 [g=6275, 61923 evaluated, 61922 expanded, t=1642.65s]
+Best heuristic value: 42/688 [g=6276, 149969 evaluated, 149968 expanded, t=3458.29s]
+Best heuristic value: 42/675 [g=6262, 178093 evaluated, 178092 expanded, t=4081.06s]
+Best heuristic value: 42/660 [g=6276, 178094 evaluated, 178093 expanded, t=4081.08s]
+Best heuristic value: 37/660 [g=6240, 188631 evaluated, 188630 expanded, t=4310.74s]
+../../downward/src/search/downward: line 184: 65514 Killed                  "$PLANNER" --heuristic "hlm1,hff1=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=1,cost_type=1))" --heuristic "hlm2,hff2=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=2,cost_type=2))" --search "iterated([
+                    lazy_greedy([hff1,hlm1],preferred=[hff1,hlm1],
+                                cost_type=1,reopen_closed=false),
+                    lazy_greedy([hff2,hlm2],preferred=[hff2,hlm2],
+                                reopen_closed=false),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=5),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=3),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=2),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=1)],
+                    repeat_last=true,continue_on_fail=true)" "$@" < $TEMPFILE

@@ -1,0 +1,107 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14)
+01_load-truck(v_15 v_16 v_17)
+02_load-truck(v_18 v_19 v_20)
+03_drive-truck(v_21 v_22 v_23 v_24)
+04_unload-truck(v_25 v_26 v_27)
+05_load-airplane(v_28 v_29 v_30)
+06_drive-truck(v_31 v_32 v_33 v_34)
+07_unload-truck(v_35 v_36 v_37)
+08_fly-airplane(v_38 v_39 v_40)
+09_load-airplane(v_41 v_42 v_43)
+10_unload-airplane(v_44 v_45 v_46)
+11_load-truck(v_47 v_48 v_49)
+12_drive-truck(v_50 v_51 v_52 v_53)
+13_unload-truck(v_54 v_55 v_56)
+14_fly-airplane(v_57 v_58 v_59)
+15_unload-airplane(v_60 v_61 v_62)
+goal(v_63 v_64 v_65 v_66 v_67 v_68 v_69)
+** Ordering
+01_load-truck < 06_drive-truck
+02_load-truck < 03_drive-truck
+03_drive-truck < 04_unload-truck
+04_unload-truck < 05_load-airplane
+05_load-airplane < 08_fly-airplane
+06_drive-truck < 07_unload-truck
+06_drive-truck < 11_load-truck
+07_unload-truck < 09_load-airplane
+07_unload-truck < 12_drive-truck
+08_fly-airplane < 09_load-airplane
+08_fly-airplane < 10_unload-airplane
+09_load-airplane < 14_fly-airplane
+10_unload-airplane < 11_load-truck
+10_unload-airplane < 14_fly-airplane
+11_load-truck < 12_drive-truck
+12_drive-truck < 13_unload-truck
+14_fly-airplane < 15_unload-airplane
+** Binding
+v_0=apn1
+v_1=apt1
+v_2=apt2
+v_3=cit1
+v_4=cit2
+v_5=obj11
+v_6=obj12
+v_7=obj13
+v_8=obj21
+v_9=obj22
+v_10=obj23
+v_11=pos1
+v_12=pos2
+v_13=tru1
+v_14=tru2
+v_15=obj21
+v_16=tru2
+v_17=pos2
+v_18=obj11
+v_19=tru1
+v_20=pos1
+v_21=tru1
+v_22=pos1
+v_23=apt1
+v_24=cit1
+v_25=obj11
+v_26=tru1
+v_27=apt1
+v_28=obj11
+v_29=apn1
+v_30=apt1
+v_31=tru2
+v_32=pos2
+v_33=apt2
+v_34=cit2
+v_35=obj21
+v_36=tru2
+v_37=apt2
+v_38=apn1
+v_39=apt1
+v_40=apt2
+v_41=obj21
+v_42=apn1
+v_43=apt2
+v_44=obj11
+v_45=apn1
+v_46=apt2
+v_47=obj11
+v_48=tru2
+v_49=apt2
+v_50=tru2
+v_51=apt2
+v_52=pos2
+v_53=cit2
+v_54=obj11
+v_55=tru2
+v_56=pos2
+v_57=apn1
+v_58=apt2
+v_59=apt1
+v_60=obj21
+v_61=apn1
+v_62=apt1
+v_63=apt1
+v_64=obj11
+v_65=obj12
+v_66=obj21
+v_67=obj23
+v_68=pos1
+v_69=pos2

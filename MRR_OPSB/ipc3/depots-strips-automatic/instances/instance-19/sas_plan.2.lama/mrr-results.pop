@@ -1,0 +1,291 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+01_drive(v_38 v_39 v_40)
+02_lift(v_41 v_42 v_43 v_44)
+03_load(v_45 v_46 v_47 v_48)
+04_lift(v_49 v_50 v_51 v_52)
+05_drive(v_53 v_54 v_55)
+06_load(v_56 v_57 v_58 v_59)
+07_drive(v_60 v_61 v_62)
+08_lift(v_63 v_64 v_65 v_66)
+09_load(v_67 v_68 v_69 v_70)
+10_drive(v_71 v_72 v_73)
+11_lift(v_74 v_75 v_76 v_77)
+12_load(v_78 v_79 v_80 v_81)
+13_unload(v_82 v_83 v_84 v_85)
+14_drop(v_86 v_87 v_88 v_89)
+15_lift(v_90 v_91 v_92 v_93)
+16_load(v_94 v_95 v_96 v_97)
+17_lift(v_98 v_99 v_100 v_101)
+18_load(v_102 v_103 v_104 v_105)
+19_drive(v_106 v_107 v_108)
+20_unload(v_109 v_110 v_111 v_112)
+21_drive(v_113 v_114 v_115)
+22_unload(v_116 v_117 v_118 v_119)
+23_drop(v_120 v_121 v_122 v_123)
+24_drop(v_124 v_125 v_126 v_127)
+25_unload(v_128 v_129 v_130 v_131)
+26_drop(v_132 v_133 v_134 v_135)
+27_drive(v_136 v_137 v_138)
+28_unload(v_139 v_140 v_141 v_142)
+29_drive(v_143 v_144 v_145)
+30_lift(v_146 v_147 v_148 v_149)
+31_load(v_150 v_151 v_152 v_153)
+32_drive(v_154 v_155 v_156)
+33_unload(v_157 v_158 v_159 v_160)
+34_drop(v_161 v_162 v_163 v_164)
+35_unload(v_165 v_166 v_167 v_168)
+36_drop(v_169 v_170 v_171 v_172)
+37_load(v_173 v_174 v_175 v_176)
+38_lift(v_177 v_178 v_179 v_180)
+39_load(v_181 v_182 v_183 v_184)
+40_unload(v_185 v_186 v_187 v_188)
+41_drop(v_189 v_190 v_191 v_192)
+goal(v_193 v_194 v_195 v_196 v_197 v_198 v_199 v_200 v_201 v_202 v_203)
+** Ordering
+01_drive < 03_load
+02_lift < 16_load
+03_load < 10_drive
+04_lift < 39_load
+05_drive < 12_load
+06_load < 17_lift
+06_load < 27_drive
+07_drive < 37_load
+08_lift < 06_load
+09_load < 21_drive
+10_drive < 09_load
+11_lift < 31_load
+12_load < 07_drive
+12_load < 22_unload
+13_unload < 18_load
+14_drop < 25_unload
+15_lift < 12_load
+16_load < 13_unload
+17_lift < 09_load
+18_load < 32_drive
+19_drive < 06_load
+20_unload < 14_drop
+20_unload < 29_drive
+21_drive < 22_unload
+22_unload < 34_drop
+24_drop < 35_unload
+25_unload < 24_drop
+27_drive < 31_load
+28_unload < 23_drop
+29_drive < 40_unload
+30_lift < 03_load
+31_load < 38_lift
+32_drive < 39_load
+33_unload < 36_drop
+34_drop < 33_unload
+35_unload < 26_drop
+36_drop < 40_unload
+37_load < 20_unload
+38_lift < 37_load
+39_load < 28_unload
+40_unload < 41_drop
+** Binding
+v_0=crate0
+v_1=crate1
+v_2=crate2
+v_3=crate3
+v_4=crate4
+v_5=crate5
+v_6=crate6
+v_7=crate7
+v_8=depot0
+v_9=depot1
+v_10=depot2
+v_11=depot3
+v_12=distributor0
+v_13=distributor1
+v_14=distributor2
+v_15=distributor3
+v_16=hoist0
+v_17=hoist1
+v_18=hoist2
+v_19=hoist3
+v_20=hoist4
+v_21=hoist5
+v_22=hoist6
+v_23=hoist7
+v_24=pallet0
+v_25=pallet1
+v_26=pallet2
+v_27=pallet3
+v_28=pallet4
+v_29=pallet5
+v_30=pallet6
+v_31=pallet7
+v_32=pallet8
+v_33=pallet9
+v_34=truck0
+v_35=truck1
+v_36=truck2
+v_37=truck3
+v_38=truck3
+v_39=distributor3
+v_40=depot1
+v_41=hoist0
+v_42=crate6
+v_43=pallet0
+v_44=depot0
+v_45=hoist1
+v_46=crate1
+v_47=truck3
+v_48=depot1
+v_49=hoist4
+v_50=crate2
+v_51=pallet4
+v_52=distributor0
+v_53=truck2
+v_54=depot2
+v_55=distributor2
+v_56=hoist3
+v_57=crate7
+v_58=truck1
+v_59=depot3
+v_60=truck2
+v_61=distributor2
+v_62=distributor1
+v_63=hoist3
+v_64=crate7
+v_65=pallet3
+v_66=depot3
+v_67=hoist3
+v_68=crate0
+v_69=truck3
+v_70=depot3
+v_71=truck3
+v_72=depot1
+v_73=depot3
+v_74=hoist5
+v_75=crate5
+v_76=crate3
+v_77=distributor1
+v_78=hoist6
+v_79=crate4
+v_80=truck2
+v_81=distributor2
+v_82=hoist0
+v_83=crate6
+v_84=truck0
+v_85=depot0
+v_86=hoist5
+v_87=crate4
+v_88=pallet5
+v_89=distributor1
+v_90=hoist6
+v_91=crate4
+v_92=pallet8
+v_93=distributor2
+v_94=hoist0
+v_95=crate6
+v_96=truck0
+v_97=depot0
+v_98=hoist3
+v_99=crate0
+v_100=pallet9
+v_101=depot3
+v_102=hoist0
+v_103=crate6
+v_104=truck0
+v_105=depot0
+v_106=truck1
+v_107=distributor0
+v_108=depot3
+v_109=hoist5
+v_110=crate4
+v_111=truck2
+v_112=distributor1
+v_113=truck3
+v_114=depot3
+v_115=distributor2
+v_116=hoist6
+v_117=crate1
+v_118=truck3
+v_119=distributor2
+v_120=hoist4
+v_121=crate6
+v_122=pallet4
+v_123=distributor0
+v_124=hoist5
+v_125=crate7
+v_126=crate4
+v_127=distributor1
+v_128=hoist5
+v_129=crate7
+v_130=truck1
+v_131=distributor1
+v_132=hoist5
+v_133=crate5
+v_134=crate7
+v_135=distributor1
+v_136=truck1
+v_137=depot3
+v_138=distributor1
+v_139=hoist4
+v_140=crate6
+v_141=truck0
+v_142=distributor0
+v_143=truck2
+v_144=distributor1
+v_145=distributor2
+v_146=hoist1
+v_147=crate1
+v_148=pallet1
+v_149=depot1
+v_150=hoist5
+v_151=crate5
+v_152=truck1
+v_153=distributor1
+v_154=truck0
+v_155=depot0
+v_156=distributor0
+v_157=hoist6
+v_158=crate0
+v_159=truck3
+v_160=distributor2
+v_161=hoist6
+v_162=crate1
+v_163=pallet8
+v_164=distributor2
+v_165=hoist5
+v_166=crate5
+v_167=truck1
+v_168=distributor1
+v_169=hoist6
+v_170=crate0
+v_171=pallet6
+v_172=distributor2
+v_173=hoist5
+v_174=crate3
+v_175=truck2
+v_176=distributor1
+v_177=hoist5
+v_178=crate3
+v_179=pallet5
+v_180=distributor1
+v_181=hoist4
+v_182=crate2
+v_183=truck0
+v_184=distributor0
+v_185=hoist6
+v_186=crate3
+v_187=truck2
+v_188=distributor2
+v_189=hoist6
+v_190=crate3
+v_191=crate1
+v_192=distributor2
+v_193=crate0
+v_194=crate1
+v_195=crate3
+v_196=crate4
+v_197=crate5
+v_198=crate6
+v_199=crate7
+v_200=pallet4
+v_201=pallet5
+v_202=pallet6
+v_203=pallet8

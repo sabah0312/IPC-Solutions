@@ -1,0 +1,89 @@
+** Operators
+init()
+01_sit_at_host-greg-sherpa-gregs_office()
+02_enter_uname-greg-greg_uid-sherpa()
+03_enter_password-greg-greg_uid-sherpa-greg_pwd()
+04_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0()
+05_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs()
+06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0()
+07_grab_key-bob-key_0-bobs_office()
+08_unlock_lock-bob-bobs_office-door_0-lock_0-key_0()
+09_open_door-greg-gregs_office-door_0()
+10_mandatory-bob()
+11_proc_fork-sherpa-greg_uid-proc_0-wexplorer()
+12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore()
+13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0()
+14_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0()
+15_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs()
+16_dms_begin_session-dmss2()
+17_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2()
+18_dms_connect-proc_0-everest-nes-dmss2()
+19_dms_route-sherpa-everest-dmss2()
+20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2()
+21_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0()
+22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs()
+23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2()
+24_dms_req_begin-dmss2-greg-sherpa()
+25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid()
+26_dms_send-dmss2-sherpa-proc_1-e_secret_doc()
+27_transit_via_door-bob-bobs_office-gregs_office-door_0()
+28_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff0-no-0()
+29_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff2-yes()
+30_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff4-no-1()
+31_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff1-no-0()
+32_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff3-yes()
+33_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff5-no-0()
+34_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff7-no-0()
+35_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff6-no-0()
+36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs()
+37_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info()
+38_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info-condeff0-yes()
+39_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info-endof-condeffs()
+goal()
+** Ordering
+01_sit_at_host-greg-sherpa-gregs_office < 02_enter_uname-greg-greg_uid-sherpa
+02_enter_uname-greg-greg_uid-sherpa < 03_enter_password-greg-greg_uid-sherpa-greg_pwd
+03_enter_password-greg-greg_uid-sherpa-greg_pwd < 04_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0
+04_enter_password-greg-greg_uid-sherpa-greg_pwd-condeff0-no-0 < 05_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs
+05_enter_password-greg-greg_uid-sherpa-greg_pwd-endof-condeffs < 06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0
+06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0 < 11_proc_fork-sherpa-greg_uid-proc_0-wexplorer
+07_grab_key-bob-key_0-bobs_office < 08_unlock_lock-bob-bobs_office-door_0-lock_0-key_0
+08_unlock_lock-bob-bobs_office-door_0-lock_0-key_0 < 09_open_door-greg-gregs_office-door_0
+09_open_door-greg-gregs_office-door_0 < 02_enter_uname-greg-greg_uid-sherpa
+10_mandatory-bob < 02_enter_uname-greg-greg_uid-sherpa
+11_proc_fork-sherpa-greg_uid-proc_0-wexplorer < 12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore
+12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore < 13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0
+12_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore < 14_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0
+13_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff0-no-0 < 15_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs
+14_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-condeff1-no-0 < 15_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs
+15_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_iexplore-endof-condeffs < 27_transit_via_door-bob-bobs_office-gregs_office-door_0
+16_dms_begin_session-dmss2 < 17_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2
+17_dms_client_find-sherpa-proc_1-iexplorer-greg-dmss2 < 18_dms_connect-proc_0-everest-nes-dmss2
+18_dms_connect-proc_0-everest-nes-dmss2 < 19_dms_route-sherpa-everest-dmss2
+19_dms_route-sherpa-everest-dmss2 < 20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2
+20_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2 < 21_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0
+21_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-condeff0-no-0 < 22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs
+22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2-endof-condeffs < 23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2
+23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2 < 24_dms_req_begin-dmss2-greg-sherpa
+24_dms_req_begin-dmss2-greg-sherpa < 25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid
+25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid < 26_dms_send-dmss2-sherpa-proc_1-e_secret_doc
+26_dms_send-dmss2-sherpa-proc_1-e_secret_doc < 37_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 28_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff0-no-0
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 29_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff2-yes
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 30_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff4-no-1
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 31_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff1-no-0
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 32_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff3-yes
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 33_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff5-no-0
+27_transit_via_door-bob-bobs_office-gregs_office-door_0 < 34_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff7-no-0
+28_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff0-no-0 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+29_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff2-yes < 35_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff6-no-0
+30_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff4-no-1 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+31_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff1-no-0 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+32_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff3-yes < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+33_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff5-no-0 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+34_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff7-no-0 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+35_transit_via_door-bob-bobs_office-gregs_office-door_0-condeff6-no-0 < 36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs
+36_transit_via_door-bob-bobs_office-gregs_office-door_0-endof-condeffs < 16_dms_begin_session-dmss2
+37_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info < 38_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info-condeff0-yes
+38_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info-condeff0-yes < 39_read_doc-bob-sherpa-proc_1-e_secret_doc-gregs_office-secret_info-endof-condeffs
+** Binding

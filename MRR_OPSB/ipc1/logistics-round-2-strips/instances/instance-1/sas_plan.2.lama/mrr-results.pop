@@ -1,0 +1,103 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24)
+01_load-truck(v_25 v_26 v_27)
+02_drive-truck(v_28 v_29 v_30 v_31)
+03_unload-truck(v_32 v_33 v_34)
+04_load-truck(v_35 v_36 v_37)
+05_drive-truck(v_38 v_39 v_40 v_41)
+06_unload-truck(v_42 v_43 v_44)
+07_load-truck(v_45 v_46 v_47)
+08_drive-truck(v_48 v_49 v_50 v_51)
+09_unload-truck(v_52 v_53 v_54)
+10_fly-airplane(v_55 v_56 v_57)
+11_load-airplane(v_58 v_59 v_60)
+12_fly-airplane(v_61 v_62 v_63)
+13_unload-airplane(v_64 v_65 v_66)
+goal(v_67 v_68 v_69 v_70 v_71 v_72)
+** Ordering
+01_load-truck < 05_drive-truck
+02_drive-truck < 03_unload-truck
+03_unload-truck < 11_load-airplane
+04_load-truck < 08_drive-truck
+05_drive-truck < 04_load-truck
+05_drive-truck < 06_unload-truck
+06_unload-truck < 08_drive-truck
+07_load-truck < 02_drive-truck
+08_drive-truck < 09_unload-truck
+10_fly-airplane < 11_load-airplane
+11_load-airplane < 12_fly-airplane
+12_fly-airplane < 13_unload-airplane
+** Binding
+v_0=city1
+v_1=city1-1
+v_2=city1-2
+v_3=city2
+v_4=city2-1
+v_5=city2-2
+v_6=city3
+v_7=city3-1
+v_8=city3-2
+v_9=city4
+v_10=city4-1
+v_11=city4-2
+v_12=city5
+v_13=city5-1
+v_14=city5-2
+v_15=package1
+v_16=package2
+v_17=package3
+v_18=plane1
+v_19=plane2
+v_20=truck1
+v_21=truck2
+v_22=truck3
+v_23=truck4
+v_24=truck5
+v_25=package3
+v_26=truck1
+v_27=city1-1
+v_28=truck4
+v_29=city4-1
+v_30=city4-2
+v_31=city4
+v_32=package1
+v_33=truck4
+v_34=city4-2
+v_35=package2
+v_36=truck1
+v_37=city1-2
+v_38=truck1
+v_39=city1-1
+v_40=city1-2
+v_41=city1
+v_42=package3
+v_43=truck1
+v_44=city1-2
+v_45=package1
+v_46=truck4
+v_47=city4-1
+v_48=truck1
+v_49=city1-2
+v_50=city1-1
+v_51=city1
+v_52=package2
+v_53=truck1
+v_54=city1-1
+v_55=plane1
+v_56=city2-2
+v_57=city4-2
+v_58=package1
+v_59=plane1
+v_60=city4-2
+v_61=plane1
+v_62=city4-2
+v_63=city3-2
+v_64=package1
+v_65=plane1
+v_66=city3-2
+v_67=city1-1
+v_68=city1-2
+v_69=city3-2
+v_70=package1
+v_71=package2
+v_72=package3

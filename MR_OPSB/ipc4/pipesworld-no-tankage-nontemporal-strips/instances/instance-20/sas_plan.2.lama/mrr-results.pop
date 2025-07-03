@@ -1,0 +1,461 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27)
+01_pop-start(v_28 v_29 v_30 v_31 v_32 v_33 v_34)
+02_push-start(v_35 v_36 v_37 v_38 v_39 v_40 v_41)
+03_push-end(v_42 v_43 v_44 v_45 v_46)
+04_push-start(v_47 v_48 v_49 v_50 v_51 v_52 v_53)
+05_push-end(v_54 v_55 v_56 v_57 v_58)
+06_push-start(v_59 v_60 v_61 v_62 v_63 v_64 v_65)
+07_push-end(v_66 v_67 v_68 v_69 v_70)
+08_push-start(v_71 v_72 v_73 v_74 v_75 v_76 v_77)
+09_push-end(v_78 v_79 v_80 v_81 v_82)
+10_push-start(v_83 v_84 v_85 v_86 v_87 v_88 v_89)
+11_push-end(v_90 v_91 v_92 v_93 v_94)
+12_pop-start(v_95 v_96 v_97 v_98 v_99 v_100 v_101)
+13_pop-end(v_102 v_103 v_104 v_105 v_106)
+14_pop-start(v_107 v_108 v_109 v_110 v_111 v_112 v_113)
+15_pop-end(v_114 v_115 v_116 v_117 v_118)
+16_pop-start(v_119 v_120 v_121 v_122 v_123 v_124 v_125)
+17_pop-end(v_126 v_127 v_128 v_129 v_130)
+18_pop-start(v_131 v_132 v_133 v_134 v_135 v_136 v_137)
+19_pop-end(v_138 v_139 v_140 v_141 v_142)
+20_push-start(v_143 v_144 v_145 v_146 v_147 v_148 v_149)
+21_push-end(v_150 v_151 v_152 v_153 v_154)
+22_push-start(v_155 v_156 v_157 v_158 v_159 v_160 v_161)
+23_push-end(v_162 v_163 v_164 v_165 v_166)
+24_pop-start(v_167 v_168 v_169 v_170 v_171 v_172 v_173)
+25_pop-end(v_174 v_175 v_176 v_177 v_178)
+26_pop-start(v_179 v_180 v_181 v_182 v_183 v_184 v_185)
+27_pop-end(v_186 v_187 v_188 v_189 v_190)
+28_pop-start(v_191 v_192 v_193 v_194 v_195 v_196 v_197)
+29_pop-end(v_198 v_199 v_200 v_201 v_202)
+30_pop-start(v_203 v_204 v_205 v_206 v_207 v_208 v_209)
+31_pop-end(v_210 v_211 v_212 v_213 v_214)
+32_push-start(v_215 v_216 v_217 v_218 v_219 v_220 v_221)
+33_push-end(v_222 v_223 v_224 v_225 v_226)
+34_push-start(v_227 v_228 v_229 v_230 v_231 v_232 v_233)
+35_push-end(v_234 v_235 v_236 v_237 v_238)
+36_push-start(v_239 v_240 v_241 v_242 v_243 v_244 v_245)
+37_push-end(v_246 v_247 v_248 v_249 v_250)
+38_pop-start(v_251 v_252 v_253 v_254 v_255 v_256 v_257)
+39_pop-end(v_258 v_259 v_260 v_261 v_262)
+40_pop-start(v_263 v_264 v_265 v_266 v_267 v_268 v_269)
+41_pop-end(v_270 v_271 v_272 v_273 v_274)
+42_pop-start(v_275 v_276 v_277 v_278 v_279 v_280 v_281)
+43_pop-end(v_282 v_283 v_284 v_285 v_286)
+44_pop-end(v_287 v_288 v_289 v_290 v_291)
+45_pop-start(v_292 v_293 v_294 v_295 v_296 v_297 v_298)
+46_pop-end(v_299 v_300 v_301 v_302 v_303)
+47_push-start(v_304 v_305 v_306 v_307 v_308 v_309 v_310)
+48_push-end(v_311 v_312 v_313 v_314 v_315)
+49_push-start(v_316 v_317 v_318 v_319 v_320 v_321 v_322)
+50_push-end(v_323 v_324 v_325 v_326 v_327)
+51_push-start(v_328 v_329 v_330 v_331 v_332 v_333 v_334)
+52_push-end(v_335 v_336 v_337 v_338 v_339)
+goal(v_340 v_341 v_342 v_343 v_344 v_345 v_346 v_347 v_348 v_349)
+** Ordering
+01_pop-start < 19_pop-end
+02_push-start < 33_push-end
+03_push-end < 10_push-start
+04_push-start < 05_push-end
+05_push-end < 06_push-start
+06_push-start < 07_push-end
+07_push-end < 08_push-start
+08_push-start < 09_push-end
+09_push-end < 34_push-start
+10_push-start < 35_push-end
+11_push-end < 36_push-start
+12_pop-start < 13_pop-end
+13_pop-end < 14_pop-start
+14_pop-start < 15_pop-end
+15_pop-end < 16_pop-start
+15_pop-end < 20_push-start
+16_pop-start < 17_pop-end
+17_pop-end < 18_pop-start
+18_pop-start < 31_pop-end
+19_pop-end < 20_push-start
+20_push-start < 21_push-end
+21_push-end < 22_push-start
+22_push-start < 23_push-end
+23_push-end < 24_pop-start
+24_pop-start < 25_pop-end
+25_pop-end < 26_pop-start
+26_pop-start < 27_pop-end
+27_pop-end < 08_push-start
+27_pop-end < 28_pop-start
+28_pop-start < 29_pop-end
+29_pop-end < 30_pop-start
+29_pop-end < 36_push-start
+30_pop-start < 44_pop-end
+31_pop-end < 02_push-start
+32_push-start < 03_push-end
+33_push-end < 04_push-start
+34_push-start < 11_push-end
+35_push-end < 12_pop-start
+36_push-start < 37_push-end
+37_push-end < 38_pop-start
+38_pop-start < 39_pop-end
+39_pop-end < 40_pop-start
+40_pop-start < 41_pop-end
+41_pop-end < 42_pop-start
+42_pop-start < 43_pop-end
+43_pop-end < 47_push-start
+44_pop-end < 45_pop-start
+45_pop-start < 46_pop-end
+46_pop-end < 47_push-start
+47_push-start < 48_push-end
+48_push-end < 49_push-start
+49_push-start < 50_push-end
+50_push-end < 51_push-start
+51_push-start < 52_push-end
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b10
+v_6=b11
+v_7=b12
+v_8=b13
+v_9=b14
+v_10=b15
+v_11=b16
+v_12=b17
+v_13=b2
+v_14=b3
+v_15=b4
+v_16=b5
+v_17=b6
+v_18=b7
+v_19=b8
+v_20=b9
+v_21=gasoleo
+v_22=lco
+v_23=oc1b
+v_24=oca1
+v_25=rat-a
+v_26=s12
+v_27=s13
+v_28=s13
+v_29=b1
+v_30=a1
+v_31=a3
+v_32=b8
+v_33=rat-a
+v_34=rat-a
+v_35=s12
+v_36=b3
+v_37=a1
+v_38=a2
+v_39=b2
+v_40=oca1
+v_41=oca1
+v_42=s12
+v_43=a1
+v_44=a2
+v_45=b13
+v_46=b2
+v_47=s12
+v_48=b12
+v_49=a1
+v_50=a2
+v_51=b3
+v_52=gasoleo
+v_53=oca1
+v_54=s12
+v_55=a1
+v_56=a2
+v_57=b2
+v_58=b3
+v_59=s12
+v_60=b17
+v_61=a1
+v_62=a2
+v_63=b12
+v_64=rat-a
+v_65=gasoleo
+v_66=s12
+v_67=a1
+v_68=a2
+v_69=b3
+v_70=b12
+v_71=s12
+v_72=b7
+v_73=a1
+v_74=a2
+v_75=b17
+v_76=lco
+v_77=rat-a
+v_78=s12
+v_79=a1
+v_80=a2
+v_81=b12
+v_82=b17
+v_83=s12
+v_84=b9
+v_85=a1
+v_86=a2
+v_87=b7
+v_88=oca1
+v_89=lco
+v_90=s12
+v_91=a1
+v_92=a2
+v_93=b17
+v_94=b7
+v_95=s12
+v_96=b5
+v_97=a1
+v_98=a2
+v_99=b7
+v_100=gasoleo
+v_101=lco
+v_102=s12
+v_103=a1
+v_104=a2
+v_105=b9
+v_106=b7
+v_107=s12
+v_108=b0
+v_109=a1
+v_110=a2
+v_111=b5
+v_112=oc1b
+v_113=gasoleo
+v_114=s12
+v_115=a1
+v_116=a2
+v_117=b7
+v_118=b5
+v_119=s12
+v_120=b2
+v_121=a1
+v_122=a2
+v_123=b0
+v_124=oca1
+v_125=oc1b
+v_126=s12
+v_127=a1
+v_128=a2
+v_129=b5
+v_130=b0
+v_131=s12
+v_132=b11
+v_133=a1
+v_134=a2
+v_135=b2
+v_136=oca1
+v_137=oca1
+v_138=s13
+v_139=a1
+v_140=a3
+v_141=b14
+v_142=b8
+v_143=s13
+v_144=b7
+v_145=a1
+v_146=a3
+v_147=b8
+v_148=lco
+v_149=rat-a
+v_150=s13
+v_151=a1
+v_152=a3
+v_153=b1
+v_154=b8
+v_155=s13
+v_156=b14
+v_157=a1
+v_158=a3
+v_159=b7
+v_160=rat-a
+v_161=lco
+v_162=s13
+v_163=a1
+v_164=a3
+v_165=b8
+v_166=b7
+v_167=s13
+v_168=b15
+v_169=a1
+v_170=a3
+v_171=b7
+v_172=oc1b
+v_173=lco
+v_174=s13
+v_175=a1
+v_176=a3
+v_177=b14
+v_178=b7
+v_179=s13
+v_180=b10
+v_181=a1
+v_182=a3
+v_183=b15
+v_184=gasoleo
+v_185=oc1b
+v_186=s13
+v_187=a1
+v_188=a3
+v_189=b7
+v_190=b15
+v_191=s13
+v_192=b6
+v_193=a1
+v_194=a3
+v_195=b10
+v_196=lco
+v_197=gasoleo
+v_198=s13
+v_199=a1
+v_200=a3
+v_201=b15
+v_202=b10
+v_203=s13
+v_204=b1
+v_205=a1
+v_206=a3
+v_207=b6
+v_208=rat-a
+v_209=lco
+v_210=s12
+v_211=a1
+v_212=a2
+v_213=b0
+v_214=b2
+v_215=s12
+v_216=b7
+v_217=a1
+v_218=a2
+v_219=b2
+v_220=lco
+v_221=oca1
+v_222=s12
+v_223=a1
+v_224=a2
+v_225=b11
+v_226=b2
+v_227=s12
+v_228=b0
+v_229=a1
+v_230=a2
+v_231=b7
+v_232=oc1b
+v_233=lco
+v_234=s12
+v_235=a1
+v_236=a2
+v_237=b2
+v_238=b7
+v_239=s12
+v_240=b15
+v_241=a1
+v_242=a2
+v_243=b0
+v_244=oc1b
+v_245=oc1b
+v_246=s12
+v_247=a1
+v_248=a2
+v_249=b7
+v_250=b0
+v_251=s12
+v_252=b2
+v_253=a1
+v_254=a2
+v_255=b0
+v_256=oca1
+v_257=oc1b
+v_258=s12
+v_259=a1
+v_260=a2
+v_261=b15
+v_262=b0
+v_263=s12
+v_264=b11
+v_265=a1
+v_266=a2
+v_267=b2
+v_268=oca1
+v_269=oca1
+v_270=s12
+v_271=a1
+v_272=a2
+v_273=b0
+v_274=b2
+v_275=s12
+v_276=b12
+v_277=a1
+v_278=a2
+v_279=b11
+v_280=gasoleo
+v_281=oca1
+v_282=s12
+v_283=a1
+v_284=a2
+v_285=b2
+v_286=b11
+v_287=s13
+v_288=a1
+v_289=a3
+v_290=b10
+v_291=b6
+v_292=s13
+v_293=b8
+v_294=a1
+v_295=a3
+v_296=b1
+v_297=rat-a
+v_298=rat-a
+v_299=s13
+v_300=a1
+v_301=a3
+v_302=b6
+v_303=b1
+v_304=s12
+v_305=b6
+v_306=a1
+v_307=a2
+v_308=b11
+v_309=lco
+v_310=oca1
+v_311=s12
+v_312=a1
+v_313=a2
+v_314=b12
+v_315=b11
+v_316=s12
+v_317=b0
+v_318=a1
+v_319=a2
+v_320=b6
+v_321=oc1b
+v_322=lco
+v_323=s12
+v_324=a1
+v_325=a2
+v_326=b11
+v_327=b6
+v_328=s12
+v_329=b10
+v_330=a1
+v_331=a2
+v_332=b0
+v_333=gasoleo
+v_334=oc1b
+v_335=s12
+v_336=a1
+v_337=a2
+v_338=b6
+v_339=b0
+v_340=a1
+v_341=a2
+v_342=b12
+v_343=b15
+v_344=b17
+v_345=b2
+v_346=b3
+v_347=b5
+v_348=b6
+v_349=b7

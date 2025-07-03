@@ -1,0 +1,129 @@
+** Operators
+init()
+01_choose_cdk2p1_l1_l0()
+02_initialize_cdk2p1()
+03_choose_cdk46p1_l2_l1()
+04_initialize_cdk46p1()
+05_choose_dp12_l3_l2()
+06_initialize_dp12()
+07_choose_e2f4_l4_l3()
+08_initialize_e2f4()
+09_choose_gp_l5_l4()
+10_choose_hdac1_l6_l5()
+11_initialize_hdac1()
+12_choose_p57_l7_l6()
+13_initialize_gp()
+14_initialize_p57()
+15_choose_sp1_l8_l7()
+16_initialize_sp1()
+17_associate_e2f4_dp12_e2f4-dp12()
+18_associate_sp1_gp_sp1-gp()
+19_initialize_gp()
+20_initialize_sp1()
+21_synthesize_sp1-gp_cyca()
+22_choose_rpa_l9_l8()
+23_initialize_rpa()
+24_synthesize_sp1-gp_cycd()
+25_synthesize_sp1-gp_cyce()
+26_synthesize_sp1-gp_p107()
+27_synthesize_sp1-gp_p107p1()
+28_associate_cdk46p1_cycd_cdk46p1-cycd()
+29_associate_sp1_p107p1_sp1-p107p1()
+30_initialize_sp1()
+31_associate_sp1_p107_sp1-p107()
+32_synthesize_sp1-gp_p107()
+33_associate_p107_e2f4-dp12_p107-e2f4-dp12()
+34_associate_hdac1_p107-e2f4-dp12_hdac1-p107-e2f4-dp12()
+35_dummy-action-4-2()
+36_associate_sp1-p107_gp_sp1-p107-gp()
+37_initialize_gp()
+38_associate_sp1-p107p1_gp_sp1-p107p1-gp()
+39_dummy-action-2-2()
+40_dummy-action-7-2()
+41_associate_cdk2p1_cyce_cdk2p1-cyce()
+42_initialize_cdk2p1()
+43_dummy-action-6-2()
+44_associate_rpa_cyca_rpa-cyca()
+45_synthesize_sp1-gp_cyca()
+46_associate_cdk2p1_cyca_cdk2p1-cyca()
+47_dummy-action-8-2()
+48_associate_p57_cdk2p1-cyce_p57-cdk2p1-cyce()
+49_dummy-action-1-1()
+50_initialize_p57()
+51_associate_p57_cdk2p1-cyca_p57-cdk2p1-cyca()
+52_initialize_p57()
+53_associate_p57_cdk46p1-cycd_p57-cdk46p1-cycd()
+54_dummy-action-3-2()
+55_dummy-action-5-2()
+goal()
+** Ordering
+01_choose_cdk2p1_l1_l0 < 02_initialize_cdk2p1
+01_choose_cdk2p1_l1_l0 < 03_choose_cdk46p1_l2_l1
+02_initialize_cdk2p1 < 46_associate_cdk2p1_cyca_cdk2p1-cyca
+03_choose_cdk46p1_l2_l1 < 04_initialize_cdk46p1
+03_choose_cdk46p1_l2_l1 < 05_choose_dp12_l3_l2
+04_initialize_cdk46p1 < 28_associate_cdk46p1_cycd_cdk46p1-cycd
+05_choose_dp12_l3_l2 < 06_initialize_dp12
+05_choose_dp12_l3_l2 < 07_choose_e2f4_l4_l3
+06_initialize_dp12 < 17_associate_e2f4_dp12_e2f4-dp12
+07_choose_e2f4_l4_l3 < 08_initialize_e2f4
+07_choose_e2f4_l4_l3 < 09_choose_gp_l5_l4
+08_initialize_e2f4 < 17_associate_e2f4_dp12_e2f4-dp12
+09_choose_gp_l5_l4 < 10_choose_hdac1_l6_l5
+09_choose_gp_l5_l4 < 13_initialize_gp
+10_choose_hdac1_l6_l5 < 11_initialize_hdac1
+10_choose_hdac1_l6_l5 < 12_choose_p57_l7_l6
+11_initialize_hdac1 < 34_associate_hdac1_p107-e2f4-dp12_hdac1-p107-e2f4-dp12
+12_choose_p57_l7_l6 < 14_initialize_p57
+12_choose_p57_l7_l6 < 15_choose_sp1_l8_l7
+13_initialize_gp < 18_associate_sp1_gp_sp1-gp
+14_initialize_p57 < 53_associate_p57_cdk46p1-cycd_p57-cdk46p1-cycd
+15_choose_sp1_l8_l7 < 16_initialize_sp1
+15_choose_sp1_l8_l7 < 22_choose_rpa_l9_l8
+16_initialize_sp1 < 18_associate_sp1_gp_sp1-gp
+17_associate_e2f4_dp12_e2f4-dp12 < 33_associate_p107_e2f4-dp12_p107-e2f4-dp12
+18_associate_sp1_gp_sp1-gp < 19_initialize_gp
+18_associate_sp1_gp_sp1-gp < 20_initialize_sp1
+18_associate_sp1_gp_sp1-gp < 21_synthesize_sp1-gp_cyca
+18_associate_sp1_gp_sp1-gp < 24_synthesize_sp1-gp_cycd
+18_associate_sp1_gp_sp1-gp < 25_synthesize_sp1-gp_cyce
+18_associate_sp1_gp_sp1-gp < 26_synthesize_sp1-gp_p107
+18_associate_sp1_gp_sp1-gp < 27_synthesize_sp1-gp_p107p1
+19_initialize_gp < 36_associate_sp1-p107_gp_sp1-p107-gp
+20_initialize_sp1 < 31_associate_sp1_p107_sp1-p107
+21_synthesize_sp1-gp_cyca < 46_associate_cdk2p1_cyca_cdk2p1-cyca
+22_choose_rpa_l9_l8 < 23_initialize_rpa
+23_initialize_rpa < 44_associate_rpa_cyca_rpa-cyca
+24_synthesize_sp1-gp_cycd < 28_associate_cdk46p1_cycd_cdk46p1-cycd
+25_synthesize_sp1-gp_cyce < 41_associate_cdk2p1_cyce_cdk2p1-cyce
+26_synthesize_sp1-gp_p107 < 31_associate_sp1_p107_sp1-p107
+27_synthesize_sp1-gp_p107p1 < 29_associate_sp1_p107p1_sp1-p107p1
+28_associate_cdk46p1_cycd_cdk46p1-cycd < 53_associate_p57_cdk46p1-cycd_p57-cdk46p1-cycd
+29_associate_sp1_p107p1_sp1-p107p1 < 38_associate_sp1-p107p1_gp_sp1-p107p1-gp
+30_initialize_sp1 < 29_associate_sp1_p107p1_sp1-p107p1
+31_associate_sp1_p107_sp1-p107 < 30_initialize_sp1
+31_associate_sp1_p107_sp1-p107 < 32_synthesize_sp1-gp_p107
+31_associate_sp1_p107_sp1-p107 < 36_associate_sp1-p107_gp_sp1-p107-gp
+32_synthesize_sp1-gp_p107 < 33_associate_p107_e2f4-dp12_p107-e2f4-dp12
+33_associate_p107_e2f4-dp12_p107-e2f4-dp12 < 34_associate_hdac1_p107-e2f4-dp12_hdac1-p107-e2f4-dp12
+34_associate_hdac1_p107-e2f4-dp12_hdac1-p107-e2f4-dp12 < 35_dummy-action-4-2
+36_associate_sp1-p107_gp_sp1-p107-gp < 37_initialize_gp
+36_associate_sp1-p107_gp_sp1-p107-gp < 39_dummy-action-2-2
+37_initialize_gp < 38_associate_sp1-p107p1_gp_sp1-p107p1-gp
+38_associate_sp1-p107p1_gp_sp1-p107p1-gp < 40_dummy-action-7-2
+41_associate_cdk2p1_cyce_cdk2p1-cyce < 43_dummy-action-6-2
+42_initialize_cdk2p1 < 41_associate_cdk2p1_cyce_cdk2p1-cyce
+43_dummy-action-6-2 < 48_associate_p57_cdk2p1-cyce_p57-cdk2p1-cyce
+44_associate_rpa_cyca_rpa-cyca < 47_dummy-action-8-2
+45_synthesize_sp1-gp_cyca < 44_associate_rpa_cyca_rpa-cyca
+46_associate_cdk2p1_cyca_cdk2p1-cyca < 42_initialize_cdk2p1
+46_associate_cdk2p1_cyca_cdk2p1-cyca < 45_synthesize_sp1-gp_cyca
+46_associate_cdk2p1_cyca_cdk2p1-cyca < 51_associate_p57_cdk2p1-cyca_p57-cdk2p1-cyca
+48_associate_p57_cdk2p1-cyce_p57-cdk2p1-cyce < 49_dummy-action-1-1
+50_initialize_p57 < 51_associate_p57_cdk2p1-cyca_p57-cdk2p1-cyca
+51_associate_p57_cdk2p1-cyca_p57-cdk2p1-cyca < 52_initialize_p57
+51_associate_p57_cdk2p1-cyca_p57-cdk2p1-cyca < 54_dummy-action-3-2
+52_initialize_p57 < 48_associate_p57_cdk2p1-cyce_p57-cdk2p1-cyce
+53_associate_p57_cdk46p1-cycd_p57-cdk46p1-cycd < 50_initialize_p57
+53_associate_p57_cdk46p1-cycd_p57-cdk46p1-cycd < 55_dummy-action-5-2
+** Binding

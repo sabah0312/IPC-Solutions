@@ -1,0 +1,662 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82 v_83 v_84 v_85 v_86 v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94 v_95 v_96 v_97 v_98 v_99 v_100 v_101 v_102 v_103 v_104 v_105 v_106 v_107 v_108 v_109 v_110 v_111 v_112 v_113 v_114 v_115 v_116)
+01_load-truck(v_117 v_118 v_119)
+02_load-truck(v_120 v_121 v_122)
+03_load-truck(v_123 v_124 v_125)
+04_load-truck(v_126 v_127 v_128)
+05_load-truck(v_129 v_130 v_131)
+06_drive-truck(v_132 v_133 v_134 v_135)
+07_unload-truck(v_136 v_137 v_138)
+08_unload-truck(v_139 v_140 v_141)
+09_unload-truck(v_142 v_143 v_144)
+10_load-truck(v_145 v_146 v_147)
+11_drive-truck(v_148 v_149 v_150 v_151)
+12_unload-truck(v_152 v_153 v_154)
+13_load-truck(v_155 v_156 v_157)
+14_drive-truck(v_158 v_159 v_160 v_161)
+15_unload-truck(v_162 v_163 v_164)
+16_load-truck(v_165 v_166 v_167)
+17_drive-truck(v_168 v_169 v_170 v_171)
+18_unload-truck(v_172 v_173 v_174)
+19_load-truck(v_175 v_176 v_177)
+20_fly-airplane(v_178 v_179 v_180)
+21_load-airplane(v_181 v_182 v_183)
+22_fly-airplane(v_184 v_185 v_186)
+23_drive-truck(v_187 v_188 v_189 v_190)
+24_unload-truck(v_191 v_192 v_193)
+25_drive-truck(v_194 v_195 v_196 v_197)
+26_unload-truck(v_198 v_199 v_200)
+27_load-airplane(v_201 v_202 v_203)
+28_unload-airplane(v_204 v_205 v_206)
+29_load-airplane(v_207 v_208 v_209)
+30_fly-airplane(v_210 v_211 v_212)
+31_unload-airplane(v_213 v_214 v_215)
+32_load-airplane(v_216 v_217 v_218)
+33_fly-airplane(v_219 v_220 v_221)
+34_load-airplane(v_222 v_223 v_224)
+35_load-airplane(v_225 v_226 v_227)
+36_unload-airplane(v_228 v_229 v_230)
+37_fly-airplane(v_231 v_232 v_233)
+38_unload-airplane(v_234 v_235 v_236)
+39_drive-truck(v_237 v_238 v_239 v_240)
+40_load-truck(v_241 v_242 v_243)
+41_drive-truck(v_244 v_245 v_246 v_247)
+42_unload-truck(v_248 v_249 v_250)
+43_drive-truck(v_251 v_252 v_253 v_254)
+44_unload-truck(v_255 v_256 v_257)
+45_fly-airplane(v_258 v_259 v_260)
+46_unload-airplane(v_261 v_262 v_263)
+47_fly-airplane(v_264 v_265 v_266)
+48_unload-airplane(v_267 v_268 v_269)
+49_load-truck(v_270 v_271 v_272)
+50_drive-truck(v_273 v_274 v_275 v_276)
+51_unload-truck(v_277 v_278 v_279)
+52_fly-airplane(v_280 v_281 v_282)
+53_load-airplane(v_283 v_284 v_285)
+54_load-airplane(v_286 v_287 v_288)
+55_load-airplane(v_289 v_290 v_291)
+56_load-airplane(v_292 v_293 v_294)
+57_load-airplane(v_295 v_296 v_297)
+58_fly-airplane(v_298 v_299 v_300)
+59_load-airplane(v_301 v_302 v_303)
+60_load-airplane(v_304 v_305 v_306)
+61_load-airplane(v_307 v_308 v_309)
+62_unload-airplane(v_310 v_311 v_312)
+63_load-truck(v_313 v_314 v_315)
+64_drive-truck(v_316 v_317 v_318 v_319)
+65_unload-truck(v_320 v_321 v_322)
+66_fly-airplane(v_323 v_324 v_325)
+67_unload-airplane(v_326 v_327 v_328)
+68_unload-airplane(v_329 v_330 v_331)
+69_load-truck(v_332 v_333 v_334)
+70_drive-truck(v_335 v_336 v_337 v_338)
+71_unload-truck(v_339 v_340 v_341)
+72_fly-airplane(v_342 v_343 v_344)
+73_unload-airplane(v_345 v_346 v_347)
+74_fly-airplane(v_348 v_349 v_350)
+75_unload-airplane(v_351 v_352 v_353)
+76_load-truck(v_354 v_355 v_356)
+77_unload-airplane(v_357 v_358 v_359)
+78_load-truck(v_360 v_361 v_362)
+79_drive-truck(v_363 v_364 v_365 v_366)
+80_unload-truck(v_367 v_368 v_369)
+81_unload-truck(v_370 v_371 v_372)
+82_fly-airplane(v_373 v_374 v_375)
+83_unload-airplane(v_376 v_377 v_378)
+84_fly-airplane(v_379 v_380 v_381)
+85_unload-airplane(v_382 v_383 v_384)
+86_load-truck(v_385 v_386 v_387)
+87_drive-truck(v_388 v_389 v_390 v_391)
+88_unload-truck(v_392 v_393 v_394)
+89_fly-airplane(v_395 v_396 v_397)
+90_load-airplane(v_398 v_399 v_400)
+91_fly-airplane(v_401 v_402 v_403)
+92_unload-airplane(v_404 v_405 v_406)
+93_fly-airplane(v_407 v_408 v_409)
+94_load-airplane(v_410 v_411 v_412)
+95_fly-airplane(v_413 v_414 v_415)
+96_unload-airplane(v_416 v_417 v_418)
+goal(v_419 v_420 v_421 v_422 v_423 v_424 v_425 v_426 v_427 v_428 v_429 v_430 v_431 v_432 v_433 v_434 v_435 v_436 v_437 v_438 v_439 v_440 v_441 v_442 v_443 v_444 v_445 v_446 v_447 v_448 v_449)
+** Ordering
+01_load-truck < 23_drive-truck
+02_load-truck < 25_drive-truck
+03_load-truck < 06_drive-truck
+04_load-truck < 06_drive-truck
+05_load-truck < 06_drive-truck
+06_drive-truck < 07_unload-truck
+06_drive-truck < 08_unload-truck
+06_drive-truck < 09_unload-truck
+06_drive-truck < 49_load-truck
+07_unload-truck < 50_drive-truck
+07_unload-truck < 53_load-airplane
+08_unload-truck < 50_drive-truck
+08_unload-truck < 55_load-airplane
+09_unload-truck < 50_drive-truck
+09_unload-truck < 56_load-airplane
+10_load-truck < 11_drive-truck
+11_drive-truck < 12_unload-truck
+11_drive-truck < 63_load-truck
+12_unload-truck < 59_load-airplane
+12_unload-truck < 64_drive-truck
+13_load-truck < 14_drive-truck
+14_drive-truck < 15_unload-truck
+15_unload-truck < 21_load-airplane
+16_load-truck < 17_drive-truck
+17_drive-truck < 18_unload-truck
+19_load-truck < 43_drive-truck
+20_fly-airplane < 21_load-airplane
+21_load-airplane < 22_fly-airplane
+22_fly-airplane < 27_load-airplane
+22_fly-airplane < 28_unload-airplane
+23_drive-truck < 24_unload-truck
+24_unload-truck < 94_load-airplane
+25_drive-truck < 26_unload-truck
+26_unload-truck < 27_load-airplane
+27_load-airplane < 45_fly-airplane
+28_unload-airplane < 45_fly-airplane
+29_load-airplane < 30_fly-airplane
+30_fly-airplane < 31_unload-airplane
+32_load-airplane < 33_fly-airplane
+33_fly-airplane < 34_load-airplane
+33_fly-airplane < 35_load-airplane
+33_fly-airplane < 36_unload-airplane
+34_load-airplane < 37_fly-airplane
+35_load-airplane < 37_fly-airplane
+36_unload-airplane < 37_fly-airplane
+37_fly-airplane < 38_unload-airplane
+38_unload-airplane < 40_load-truck
+38_unload-airplane < 47_fly-airplane
+39_drive-truck < 40_load-truck
+40_load-truck < 41_drive-truck
+41_drive-truck < 42_unload-truck
+43_drive-truck < 44_unload-truck
+45_fly-airplane < 46_unload-airplane
+47_fly-airplane < 48_unload-airplane
+47_fly-airplane < 53_load-airplane
+47_fly-airplane < 54_load-airplane
+47_fly-airplane < 55_load-airplane
+47_fly-airplane < 56_load-airplane
+47_fly-airplane < 57_load-airplane
+48_unload-airplane < 49_load-truck
+48_unload-airplane < 58_fly-airplane
+49_load-truck < 50_drive-truck
+50_drive-truck < 51_unload-truck
+52_fly-airplane < 93_fly-airplane
+53_load-airplane < 58_fly-airplane
+54_load-airplane < 58_fly-airplane
+55_load-airplane < 58_fly-airplane
+56_load-airplane < 58_fly-airplane
+57_load-airplane < 58_fly-airplane
+58_fly-airplane < 59_load-airplane
+58_fly-airplane < 60_load-airplane
+58_fly-airplane < 61_load-airplane
+58_fly-airplane < 62_unload-airplane
+59_load-airplane < 66_fly-airplane
+60_load-airplane < 66_fly-airplane
+61_load-airplane < 66_fly-airplane
+62_unload-airplane < 63_load-truck
+62_unload-airplane < 66_fly-airplane
+63_load-truck < 64_drive-truck
+64_drive-truck < 65_unload-truck
+66_fly-airplane < 67_unload-airplane
+66_fly-airplane < 68_unload-airplane
+67_unload-airplane < 72_fly-airplane
+68_unload-airplane < 69_load-truck
+68_unload-airplane < 72_fly-airplane
+69_load-truck < 70_drive-truck
+70_drive-truck < 71_unload-truck
+72_fly-airplane < 73_unload-airplane
+73_unload-airplane < 74_fly-airplane
+74_fly-airplane < 75_unload-airplane
+74_fly-airplane < 77_unload-airplane
+75_unload-airplane < 76_load-truck
+75_unload-airplane < 82_fly-airplane
+76_load-truck < 79_drive-truck
+77_unload-airplane < 78_load-truck
+77_unload-airplane < 82_fly-airplane
+78_load-truck < 79_drive-truck
+79_drive-truck < 80_unload-truck
+79_drive-truck < 81_unload-truck
+82_fly-airplane < 83_unload-airplane
+83_unload-airplane < 84_fly-airplane
+84_fly-airplane < 85_unload-airplane
+85_unload-airplane < 86_load-truck
+86_load-truck < 87_drive-truck
+87_drive-truck < 88_unload-truck
+89_fly-airplane < 90_load-airplane
+90_load-airplane < 91_fly-airplane
+91_fly-airplane < 92_unload-airplane
+93_fly-airplane < 94_load-airplane
+94_load-airplane < 95_fly-airplane
+95_fly-airplane < 96_unload-airplane
+** Binding
+v_0=city1
+v_1=city1-1
+v_2=city1-2
+v_3=city10
+v_4=city10-1
+v_5=city10-2
+v_6=city11
+v_7=city11-1
+v_8=city11-2
+v_9=city2
+v_10=city2-1
+v_11=city2-2
+v_12=city3
+v_13=city3-1
+v_14=city3-2
+v_15=city4
+v_16=city4-1
+v_17=city4-2
+v_18=city5
+v_19=city5-1
+v_20=city5-2
+v_21=city6
+v_22=city6-1
+v_23=city6-2
+v_24=city7
+v_25=city7-1
+v_26=city7-2
+v_27=city8
+v_28=city8-1
+v_29=city8-2
+v_30=city9
+v_31=city9-1
+v_32=city9-2
+v_33=package1
+v_34=package10
+v_35=package11
+v_36=package12
+v_37=package13
+v_38=package14
+v_39=package15
+v_40=package16
+v_41=package17
+v_42=package18
+v_43=package19
+v_44=package2
+v_45=package20
+v_46=package21
+v_47=package22
+v_48=package23
+v_49=package24
+v_50=package25
+v_51=package26
+v_52=package27
+v_53=package28
+v_54=package29
+v_55=package3
+v_56=package4
+v_57=package5
+v_58=package6
+v_59=package7
+v_60=package8
+v_61=package9
+v_62=plane1
+v_63=plane2
+v_64=plane3
+v_65=plane4
+v_66=plane5
+v_67=plane6
+v_68=plane7
+v_69=plane8
+v_70=truck1
+v_71=truck10
+v_72=truck11
+v_73=truck12
+v_74=truck13
+v_75=truck14
+v_76=truck15
+v_77=truck16
+v_78=truck17
+v_79=truck18
+v_80=truck19
+v_81=truck2
+v_82=truck20
+v_83=truck21
+v_84=truck22
+v_85=truck23
+v_86=truck24
+v_87=truck25
+v_88=truck26
+v_89=truck27
+v_90=truck28
+v_91=truck29
+v_92=truck3
+v_93=truck30
+v_94=truck31
+v_95=truck32
+v_96=truck33
+v_97=truck34
+v_98=truck35
+v_99=truck36
+v_100=truck37
+v_101=truck38
+v_102=truck39
+v_103=truck4
+v_104=truck40
+v_105=truck41
+v_106=truck42
+v_107=truck43
+v_108=truck44
+v_109=truck45
+v_110=truck46
+v_111=truck47
+v_112=truck5
+v_113=truck6
+v_114=truck7
+v_115=truck8
+v_116=truck9
+v_117=package13
+v_118=truck5
+v_119=city7-1
+v_120=package29
+v_121=truck46
+v_122=city10-1
+v_123=package22
+v_124=truck45
+v_125=city9-1
+v_126=package19
+v_127=truck45
+v_128=city9-1
+v_129=package14
+v_130=truck45
+v_131=city9-1
+v_132=truck45
+v_133=city9-1
+v_134=city9-2
+v_135=city9
+v_136=package22
+v_137=truck45
+v_138=city9-2
+v_139=package19
+v_140=truck45
+v_141=city9-2
+v_142=package14
+v_143=truck45
+v_144=city9-2
+v_145=package26
+v_146=truck42
+v_147=city6-1
+v_148=truck42
+v_149=city6-1
+v_150=city6-2
+v_151=city6
+v_152=package26
+v_153=truck42
+v_154=city6-2
+v_155=package23
+v_156=truck37
+v_157=city1-1
+v_158=truck37
+v_159=city1-1
+v_160=city1-2
+v_161=city1
+v_162=package23
+v_163=truck37
+v_164=city1-2
+v_165=package27
+v_166=truck32
+v_167=city10-2
+v_168=truck32
+v_169=city10-2
+v_170=city10-1
+v_171=city10
+v_172=package27
+v_173=truck32
+v_174=city10-1
+v_175=package17
+v_176=truck21
+v_177=city4-2
+v_178=plane8
+v_179=city9-2
+v_180=city1-2
+v_181=package23
+v_182=plane8
+v_183=city1-2
+v_184=plane8
+v_185=city1-2
+v_186=city10-2
+v_187=truck5
+v_188=city7-1
+v_189=city7-2
+v_190=city7
+v_191=package13
+v_192=truck5
+v_193=city7-2
+v_194=truck46
+v_195=city10-1
+v_196=city10-2
+v_197=city10
+v_198=package29
+v_199=truck46
+v_200=city10-2
+v_201=package29
+v_202=plane8
+v_203=city10-2
+v_204=package23
+v_205=plane8
+v_206=city10-2
+v_207=package28
+v_208=plane7
+v_209=city4-2
+v_210=plane7
+v_211=city4-2
+v_212=city11-2
+v_213=package28
+v_214=plane7
+v_215=city11-2
+v_216=package15
+v_217=plane6
+v_218=city1-2
+v_219=plane6
+v_220=city1-2
+v_221=city2-2
+v_222=package18
+v_223=plane6
+v_224=city2-2
+v_225=package16
+v_226=plane6
+v_227=city2-2
+v_228=package15
+v_229=plane6
+v_230=city2-2
+v_231=plane6
+v_232=city2-2
+v_233=city11-2
+v_234=package16
+v_235=plane6
+v_236=city11-2
+v_237=truck47
+v_238=city11-1
+v_239=city11-2
+v_240=city11
+v_241=package16
+v_242=truck47
+v_243=city11-2
+v_244=truck47
+v_245=city11-2
+v_246=city11-1
+v_247=city11
+v_248=package16
+v_249=truck47
+v_250=city11-1
+v_251=truck21
+v_252=city4-2
+v_253=city4-1
+v_254=city4
+v_255=package17
+v_256=truck21
+v_257=city4-1
+v_258=plane8
+v_259=city10-2
+v_260=city5-2
+v_261=package29
+v_262=plane8
+v_263=city5-2
+v_264=plane6
+v_265=city11-2
+v_266=city9-2
+v_267=package18
+v_268=plane6
+v_269=city9-2
+v_270=package18
+v_271=truck45
+v_272=city9-2
+v_273=truck45
+v_274=city9-2
+v_275=city9-1
+v_276=city9
+v_277=package18
+v_278=truck45
+v_279=city9-1
+v_280=plane1
+v_281=city6-2
+v_282=city10-2
+v_283=package22
+v_284=plane6
+v_285=city9-2
+v_286=package21
+v_287=plane6
+v_288=city9-2
+v_289=package19
+v_290=plane6
+v_291=city9-2
+v_292=package14
+v_293=plane6
+v_294=city9-2
+v_295=package12
+v_296=plane6
+v_297=city9-2
+v_298=plane6
+v_299=city9-2
+v_300=city6-2
+v_301=package26
+v_302=plane6
+v_303=city6-2
+v_304=package25
+v_305=plane6
+v_306=city6-2
+v_307=package20
+v_308=plane6
+v_309=city6-2
+v_310=package19
+v_311=plane6
+v_312=city6-2
+v_313=package19
+v_314=truck42
+v_315=city6-2
+v_316=truck42
+v_317=city6-2
+v_318=city6-1
+v_319=city6
+v_320=package19
+v_321=truck42
+v_322=city6-1
+v_323=plane6
+v_324=city6-2
+v_325=city1-2
+v_326=package22
+v_327=plane6
+v_328=city1-2
+v_329=package21
+v_330=plane6
+v_331=city1-2
+v_332=package21
+v_333=truck8
+v_334=city1-2
+v_335=truck8
+v_336=city1-2
+v_337=city1-1
+v_338=city1
+v_339=package21
+v_340=truck8
+v_341=city1-1
+v_342=plane6
+v_343=city1-2
+v_344=city11-2
+v_345=package12
+v_346=plane6
+v_347=city11-2
+v_348=plane6
+v_349=city11-2
+v_350=city4-2
+v_351=package25
+v_352=plane6
+v_353=city4-2
+v_354=package25
+v_355=truck18
+v_356=city4-2
+v_357=package20
+v_358=plane6
+v_359=city4-2
+v_360=package20
+v_361=truck18
+v_362=city4-2
+v_363=truck18
+v_364=city4-2
+v_365=city4-1
+v_366=city4
+v_367=package25
+v_368=truck18
+v_369=city4-1
+v_370=package20
+v_371=truck18
+v_372=city4-1
+v_373=plane6
+v_374=city4-2
+v_375=city8-2
+v_376=package14
+v_377=plane6
+v_378=city8-2
+v_379=plane6
+v_380=city8-2
+v_381=city9-2
+v_382=package26
+v_383=plane6
+v_384=city9-2
+v_385=package26
+v_386=truck22
+v_387=city9-2
+v_388=truck22
+v_389=city9-2
+v_390=city9-1
+v_391=city9
+v_392=package26
+v_393=truck22
+v_394=city9-1
+v_395=plane2
+v_396=city2-2
+v_397=city6-2
+v_398=package11
+v_399=plane2
+v_400=city6-2
+v_401=plane2
+v_402=city6-2
+v_403=city2-2
+v_404=package11
+v_405=plane2
+v_406=city2-2
+v_407=plane1
+v_408=city10-2
+v_409=city7-2
+v_410=package13
+v_411=plane1
+v_412=city7-2
+v_413=plane1
+v_414=city7-2
+v_415=city10-2
+v_416=package13
+v_417=plane1
+v_418=city10-2
+v_419=city1-1
+v_420=city1-2
+v_421=city10-1
+v_422=city10-2
+v_423=city11-1
+v_424=city11-2
+v_425=city2-2
+v_426=city4-1
+v_427=city5-2
+v_428=city6-1
+v_429=city8-2
+v_430=city9-1
+v_431=package11
+v_432=package12
+v_433=package13
+v_434=package14
+v_435=package15
+v_436=package16
+v_437=package17
+v_438=package18
+v_439=package19
+v_440=package20
+v_441=package21
+v_442=package22
+v_443=package23
+v_444=package24
+v_445=package25
+v_446=package26
+v_447=package27
+v_448=package28
+v_449=package29

@@ -1,0 +1,177 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67)
+01_drink(v_68 v_69 v_70 v_71 v_72 v_73 v_74)
+02_feast(v_75 v_76 v_77 v_78 v_79)
+03_drink(v_80 v_81 v_82 v_83 v_84 v_85 v_86)
+04_feast(v_87 v_88 v_89 v_90 v_91)
+05_drink(v_92 v_93 v_94 v_95 v_96 v_97 v_98)
+06_feast(v_99 v_100 v_101 v_102 v_103)
+07_feast(v_104 v_105 v_106 v_107 v_108)
+08_overcome(v_109 v_110 v_111 v_112 v_113)
+09_feast(v_114 v_115 v_116 v_117 v_118)
+10_feast(v_119 v_120 v_121 v_122 v_123)
+11_feast(v_124 v_125 v_126 v_127 v_128)
+12_feast(v_129 v_130 v_131 v_132 v_133)
+13_feast(v_134 v_135 v_136 v_137 v_138)
+14_succumb(v_139 v_140 v_141 v_142 v_143)
+goal(v_144 v_145)
+** Ordering
+01_drink < 06_feast
+04_feast < 06_feast
+05_drink < 11_feast
+06_feast < 05_drink
+06_feast < 07_feast
+07_feast < 08_overcome
+08_overcome < 09_feast
+09_feast < 10_feast
+10_feast < 11_feast
+11_feast < 12_feast
+12_feast < 13_feast
+13_feast < 14_succumb
+** Binding
+v_0=abrasion
+v_1=abrasion-14
+v_2=abrasion-29
+v_3=achievement
+v_4=aesthetics
+v_5=alsace
+v_6=anger
+v_7=anger-10
+v_8=anger-6
+v_9=angina
+v_10=angina-12
+v_11=angina-31
+v_12=anxiety
+v_13=anxiety-16
+v_14=anxiety-23
+v_15=apple
+v_16=bavaria
+v_17=boils
+v_18=boils-15
+v_19=bosnia
+v_20=chicken
+v_21=depression
+v_22=depression-27
+v_23=depression-7
+v_24=dread
+v_25=dread-26
+v_26=dread-4
+v_27=excitement
+v_28=goias
+v_29=grief
+v_30=grief-28
+v_31=grief-5
+v_32=hamburger
+v_33=hangover
+v_34=hangover-3
+v_35=hangover-30
+v_36=haroset
+v_37=intoxication
+v_38=jealousy
+v_39=jealousy-11
+v_40=jealousy-25
+v_41=kentucky
+v_42=laceration
+v_43=laceration-1
+v_44=loneliness
+v_45=loneliness-32
+v_46=loneliness-8
+v_47=mars
+v_48=mercury
+v_49=muffin
+v_50=neptune
+v_51=onion
+v_52=oregon
+v_53=popover
+v_54=potato
+v_55=prostatitis
+v_56=prostatitis-2
+v_57=prostatitis-24
+v_58=satisfaction
+v_59=sciatica
+v_60=sciatica-13
+v_61=sciatica-9
+v_62=shrimp
+v_63=sweetroll
+v_64=tofu
+v_65=turkey
+v_66=uranus
+v_67=yogurt
+v_68=chicken
+v_69=popover
+v_70=alsace
+v_71=oregon
+v_72=kentucky
+v_73=goias
+v_74=kentucky
+v_75=aesthetics
+v_76=apple
+v_77=haroset
+v_78=bosnia
+v_79=bavaria
+v_80=yogurt
+v_81=potato
+v_82=alsace
+v_83=oregon
+v_84=kentucky
+v_85=alsace
+v_86=bosnia
+v_87=intoxication
+v_88=onion
+v_89=popover
+v_90=goias
+v_91=kentucky
+v_92=haroset
+v_93=popover
+v_94=oregon
+v_95=kentucky
+v_96=goias
+v_97=goias
+v_98=kentucky
+v_99=intoxication
+v_100=popover
+v_101=chicken
+v_102=goias
+v_103=kentucky
+v_104=intoxication
+v_105=chicken
+v_106=sweetroll
+v_107=kentucky
+v_108=oregon
+v_109=anxiety
+v_110=intoxication
+v_111=sweetroll
+v_112=mercury
+v_113=neptune
+v_114=intoxication
+v_115=sweetroll
+v_116=chicken
+v_117=oregon
+v_118=alsace
+v_119=intoxication
+v_120=chicken
+v_121=popover
+v_122=goias
+v_123=kentucky
+v_124=intoxication
+v_125=popover
+v_126=hamburger
+v_127=goias
+v_128=kentucky
+v_129=intoxication
+v_130=hamburger
+v_131=muffin
+v_132=goias
+v_133=kentucky
+v_134=intoxication
+v_135=muffin
+v_136=haroset
+v_137=oregon
+v_138=alsace
+v_139=anxiety
+v_140=intoxication
+v_141=haroset
+v_142=mercury
+v_143=neptune
+v_144=anxiety
+v_145=haroset

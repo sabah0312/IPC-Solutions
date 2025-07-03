@@ -1,0 +1,171 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27)
+01_navigate(v_28 v_29 v_30)
+02_calibrate(v_31 v_32 v_33 v_34)
+03_calibrate(v_35 v_36 v_37 v_38)
+04_take_image(v_39 v_40 v_41 v_42 v_43)
+05_calibrate(v_44 v_45 v_46 v_47)
+06_take_image(v_48 v_49 v_50 v_51 v_52)
+07_calibrate(v_53 v_54 v_55 v_56)
+08_take_image(v_57 v_58 v_59 v_60 v_61)
+09_communicate_image_data(v_62 v_63 v_64 v_65 v_66 v_67)
+10_communicate_image_data(v_68 v_69 v_70 v_71 v_72 v_73)
+11_communicate_image_data(v_74 v_75 v_76 v_77 v_78 v_79)
+12_sample_soil(v_80 v_81 v_82)
+13_communicate_soil_data(v_83 v_84 v_85 v_86 v_87)
+14_navigate(v_88 v_89 v_90)
+15_navigate(v_91 v_92 v_93)
+16_navigate(v_94 v_95 v_96)
+17_sample_rock(v_97 v_98 v_99)
+18_communicate_rock_data(v_100 v_101 v_102 v_103 v_104)
+19_drop(v_105 v_106)
+20_sample_rock(v_107 v_108 v_109)
+21_navigate(v_110 v_111 v_112)
+22_communicate_rock_data(v_113 v_114 v_115 v_116 v_117)
+goal(v_118 v_119 v_120 v_121 v_122 v_123 v_124 v_125)
+** Ordering
+01_navigate < 12_sample_soil
+02_calibrate < 06_take_image
+04_take_image < 10_communicate_image_data
+05_calibrate < 08_take_image
+06_take_image < 05_calibrate
+06_take_image < 11_communicate_image_data
+07_calibrate < 04_take_image
+08_take_image < 09_communicate_image_data
+12_sample_soil < 13_communicate_soil_data
+12_sample_soil < 19_drop
+14_navigate < 02_calibrate
+14_navigate < 03_calibrate
+14_navigate < 07_calibrate
+14_navigate < 20_sample_rock
+16_navigate < 17_sample_rock
+17_sample_rock < 21_navigate
+20_sample_rock < 22_communicate_rock_data
+21_navigate < 18_communicate_rock_data
+** Binding
+v_0=camera0
+v_1=camera1
+v_2=camera2
+v_3=camera3
+v_4=colour
+v_5=general
+v_6=high_res
+v_7=low_res
+v_8=objective0
+v_9=objective1
+v_10=objective2
+v_11=objective3
+v_12=rover0
+v_13=rover0store
+v_14=rover1
+v_15=rover1store
+v_16=rover2
+v_17=rover2store
+v_18=rover3
+v_19=rover3store
+v_20=waypoint0
+v_21=waypoint1
+v_22=waypoint2
+v_23=waypoint3
+v_24=waypoint4
+v_25=waypoint5
+v_26=waypoint6
+v_27=waypoint7
+v_28=rover2
+v_29=waypoint7
+v_30=waypoint0
+v_31=rover3
+v_32=camera3
+v_33=objective3
+v_34=waypoint3
+v_35=rover3
+v_36=camera3
+v_37=objective3
+v_38=waypoint3
+v_39=rover3
+v_40=waypoint3
+v_41=objective1
+v_42=camera0
+v_43=high_res
+v_44=rover3
+v_45=camera3
+v_46=objective3
+v_47=waypoint3
+v_48=rover3
+v_49=waypoint3
+v_50=objective2
+v_51=camera3
+v_52=low_res
+v_53=rover3
+v_54=camera0
+v_55=objective2
+v_56=waypoint3
+v_57=rover3
+v_58=waypoint3
+v_59=objective3
+v_60=camera3
+v_61=low_res
+v_62=rover3
+v_63=general
+v_64=objective3
+v_65=low_res
+v_66=waypoint3
+v_67=waypoint2
+v_68=rover3
+v_69=general
+v_70=objective1
+v_71=high_res
+v_72=waypoint3
+v_73=waypoint2
+v_74=rover3
+v_75=general
+v_76=objective2
+v_77=low_res
+v_78=waypoint3
+v_79=waypoint2
+v_80=rover2
+v_81=rover2store
+v_82=waypoint0
+v_83=rover2
+v_84=general
+v_85=waypoint0
+v_86=waypoint0
+v_87=waypoint2
+v_88=rover3
+v_89=waypoint7
+v_90=waypoint3
+v_91=rover0
+v_92=waypoint4
+v_93=waypoint5
+v_94=rover1
+v_95=waypoint4
+v_96=waypoint6
+v_97=rover1
+v_98=rover1store
+v_99=waypoint6
+v_100=rover1
+v_101=general
+v_102=waypoint6
+v_103=waypoint4
+v_104=waypoint2
+v_105=rover2
+v_106=rover2store
+v_107=rover3
+v_108=rover3store
+v_109=waypoint3
+v_110=rover1
+v_111=waypoint6
+v_112=waypoint4
+v_113=rover3
+v_114=general
+v_115=waypoint3
+v_116=waypoint3
+v_117=waypoint2
+v_118=high_res
+v_119=low_res
+v_120=objective1
+v_121=objective2
+v_122=objective3
+v_123=waypoint0
+v_124=waypoint3
+v_125=waypoint6

@@ -1,0 +1,121 @@
+** Operators
+init()
+01_navigate-rover7-waypoint29-waypoint28()
+02_sample_soil-rover8-rover8store-waypoint3()
+03_communicate_soil_data-rover8-general-waypoint3-waypoint3-waypoint27()
+04_calibrate-rover3-camera1-objective3-waypoint3()
+05_navigate-rover0-waypoint14-waypoint6()
+06_sample_rock-rover0-rover0store-waypoint6()
+07_navigate-rover0-waypoint6-waypoint28()
+08_communicate_rock_data-rover0-general-waypoint6-waypoint28-waypoint27()
+09_sample_rock-rover7-rover7store-waypoint28()
+10_communicate_rock_data-rover7-general-waypoint28-waypoint28-waypoint27()
+11_navigate-rover2-waypoint16-waypoint2()
+12_navigate-rover6-waypoint3-waypoint10()
+13_navigate-rover9-waypoint9-waypoint12()
+14_sample_soil-rover9-rover9store-waypoint12()
+15_navigate-rover9-waypoint12-waypoint9()
+16_navigate-rover9-waypoint9-waypoint24()
+17_communicate_soil_data-rover9-general-waypoint12-waypoint24-waypoint27()
+18_drop-rover9-rover9store()
+19_sample_soil-rover9-rover9store-waypoint24()
+20_communicate_soil_data-rover9-general-waypoint24-waypoint24-waypoint27()
+21_navigate-rover4-waypoint18-waypoint16()
+22_calibrate-rover4-camera2-objective0-waypoint16()
+23_navigate-rover4-waypoint16-waypoint18()
+24_take_image-rover4-waypoint18-objective1-camera2-low_res()
+25_communicate_image_data-rover4-general-objective1-low_res-waypoint18-waypoint27()
+26_take_image-rover3-waypoint3-objective0-camera1-high_res()
+27_calibrate-rover3-camera1-objective3-waypoint3()
+28_take_image-rover3-waypoint3-objective5-camera1-high_res()
+29_communicate_image_data-rover3-general-objective5-high_res-waypoint3-waypoint27()
+30_communicate_image_data-rover3-general-objective0-high_res-waypoint3-waypoint27()
+31_navigate-rover2-waypoint2-waypoint21()
+32_drop-rover7-rover7store()
+33_navigate-rover7-waypoint28-waypoint25()
+34_sample_soil-rover7-rover7store-waypoint25()
+35_navigate-rover7-waypoint25-waypoint28()
+36_communicate_soil_data-rover7-general-waypoint25-waypoint28-waypoint27()
+37_sample_soil-rover2-rover2store-waypoint21()
+38_navigate-rover2-waypoint21-waypoint2()
+39_drop-rover2-rover2store()
+40_navigate-rover6-waypoint10-waypoint15()
+41_navigate-rover6-waypoint15-waypoint1()
+42_sample_soil-rover6-rover6store-waypoint1()
+43_navigate-rover6-waypoint1-waypoint15()
+44_communicate_soil_data-rover6-general-waypoint1-waypoint15-waypoint27()
+45_sample_soil-rover2-rover2store-waypoint2()
+46_navigate-rover2-waypoint2-waypoint16()
+47_drop-rover2-rover2store()
+48_navigate-rover2-waypoint16-waypoint11()
+49_sample_soil-rover2-rover2store-waypoint11()
+50_navigate-rover2-waypoint11-waypoint16()
+51_navigate-rover2-waypoint16-waypoint18()
+52_communicate_soil_data-rover2-general-waypoint2-waypoint18-waypoint27()
+53_communicate_soil_data-rover2-general-waypoint11-waypoint18-waypoint27()
+54_navigate-rover4-waypoint18-waypoint10()
+55_navigate-rover4-waypoint10-waypoint20()
+56_sample_rock-rover4-rover4store-waypoint20()
+57_navigate-rover4-waypoint20-waypoint10()
+58_navigate-rover4-waypoint10-waypoint8()
+59_communicate_rock_data-rover4-general-waypoint20-waypoint8-waypoint27()
+60_communicate_soil_data-rover2-general-waypoint21-waypoint18-waypoint27()
+goal()
+** Ordering
+01_navigate-rover7-waypoint29-waypoint28 < 33_navigate-rover7-waypoint28-waypoint25
+02_sample_soil-rover8-rover8store-waypoint3 < 03_communicate_soil_data-rover8-general-waypoint3-waypoint3-waypoint27
+04_calibrate-rover3-camera1-objective3-waypoint3 < 26_take_image-rover3-waypoint3-objective0-camera1-high_res
+05_navigate-rover0-waypoint14-waypoint6 < 06_sample_rock-rover0-rover0store-waypoint6
+06_sample_rock-rover0-rover0store-waypoint6 < 07_navigate-rover0-waypoint6-waypoint28
+07_navigate-rover0-waypoint6-waypoint28 < 08_communicate_rock_data-rover0-general-waypoint6-waypoint28-waypoint27
+09_sample_rock-rover7-rover7store-waypoint28 < 10_communicate_rock_data-rover7-general-waypoint28-waypoint28-waypoint27
+11_navigate-rover2-waypoint16-waypoint2 < 45_sample_soil-rover2-rover2store-waypoint2
+12_navigate-rover6-waypoint3-waypoint10 < 40_navigate-rover6-waypoint10-waypoint15
+13_navigate-rover9-waypoint9-waypoint12 < 14_sample_soil-rover9-rover9store-waypoint12
+14_sample_soil-rover9-rover9store-waypoint12 < 15_navigate-rover9-waypoint12-waypoint9
+14_sample_soil-rover9-rover9store-waypoint12 < 18_drop-rover9-rover9store
+15_navigate-rover9-waypoint12-waypoint9 < 16_navigate-rover9-waypoint9-waypoint24
+16_navigate-rover9-waypoint9-waypoint24 < 17_communicate_soil_data-rover9-general-waypoint12-waypoint24-waypoint27
+16_navigate-rover9-waypoint9-waypoint24 < 19_sample_soil-rover9-rover9store-waypoint24
+18_drop-rover9-rover9store < 19_sample_soil-rover9-rover9store-waypoint24
+19_sample_soil-rover9-rover9store-waypoint24 < 20_communicate_soil_data-rover9-general-waypoint24-waypoint24-waypoint27
+21_navigate-rover4-waypoint18-waypoint16 < 22_calibrate-rover4-camera2-objective0-waypoint16
+22_calibrate-rover4-camera2-objective0-waypoint16 < 23_navigate-rover4-waypoint16-waypoint18
+23_navigate-rover4-waypoint16-waypoint18 < 24_take_image-rover4-waypoint18-objective1-camera2-low_res
+24_take_image-rover4-waypoint18-objective1-camera2-low_res < 25_communicate_image_data-rover4-general-objective1-low_res-waypoint18-waypoint27
+25_communicate_image_data-rover4-general-objective1-low_res-waypoint18-waypoint27 < 54_navigate-rover4-waypoint18-waypoint10
+26_take_image-rover3-waypoint3-objective0-camera1-high_res < 27_calibrate-rover3-camera1-objective3-waypoint3
+26_take_image-rover3-waypoint3-objective0-camera1-high_res < 30_communicate_image_data-rover3-general-objective0-high_res-waypoint3-waypoint27
+27_calibrate-rover3-camera1-objective3-waypoint3 < 28_take_image-rover3-waypoint3-objective5-camera1-high_res
+28_take_image-rover3-waypoint3-objective5-camera1-high_res < 29_communicate_image_data-rover3-general-objective5-high_res-waypoint3-waypoint27
+31_navigate-rover2-waypoint2-waypoint21 < 37_sample_soil-rover2-rover2store-waypoint21
+32_drop-rover7-rover7store < 09_sample_rock-rover7-rover7store-waypoint28
+33_navigate-rover7-waypoint28-waypoint25 < 34_sample_soil-rover7-rover7store-waypoint25
+34_sample_soil-rover7-rover7store-waypoint25 < 32_drop-rover7-rover7store
+34_sample_soil-rover7-rover7store-waypoint25 < 35_navigate-rover7-waypoint25-waypoint28
+35_navigate-rover7-waypoint25-waypoint28 < 09_sample_rock-rover7-rover7store-waypoint28
+35_navigate-rover7-waypoint25-waypoint28 < 36_communicate_soil_data-rover7-general-waypoint25-waypoint28-waypoint27
+37_sample_soil-rover2-rover2store-waypoint21 < 38_navigate-rover2-waypoint21-waypoint2
+37_sample_soil-rover2-rover2store-waypoint21 < 47_drop-rover2-rover2store
+38_navigate-rover2-waypoint21-waypoint2 < 46_navigate-rover2-waypoint2-waypoint16
+39_drop-rover2-rover2store < 37_sample_soil-rover2-rover2store-waypoint21
+40_navigate-rover6-waypoint10-waypoint15 < 41_navigate-rover6-waypoint15-waypoint1
+41_navigate-rover6-waypoint15-waypoint1 < 42_sample_soil-rover6-rover6store-waypoint1
+42_sample_soil-rover6-rover6store-waypoint1 < 43_navigate-rover6-waypoint1-waypoint15
+43_navigate-rover6-waypoint1-waypoint15 < 44_communicate_soil_data-rover6-general-waypoint1-waypoint15-waypoint27
+45_sample_soil-rover2-rover2store-waypoint2 < 31_navigate-rover2-waypoint2-waypoint21
+45_sample_soil-rover2-rover2store-waypoint2 < 39_drop-rover2-rover2store
+46_navigate-rover2-waypoint2-waypoint16 < 48_navigate-rover2-waypoint16-waypoint11
+47_drop-rover2-rover2store < 49_sample_soil-rover2-rover2store-waypoint11
+48_navigate-rover2-waypoint16-waypoint11 < 49_sample_soil-rover2-rover2store-waypoint11
+49_sample_soil-rover2-rover2store-waypoint11 < 50_navigate-rover2-waypoint11-waypoint16
+50_navigate-rover2-waypoint11-waypoint16 < 51_navigate-rover2-waypoint16-waypoint18
+51_navigate-rover2-waypoint16-waypoint18 < 52_communicate_soil_data-rover2-general-waypoint2-waypoint18-waypoint27
+51_navigate-rover2-waypoint16-waypoint18 < 53_communicate_soil_data-rover2-general-waypoint11-waypoint18-waypoint27
+51_navigate-rover2-waypoint16-waypoint18 < 60_communicate_soil_data-rover2-general-waypoint21-waypoint18-waypoint27
+54_navigate-rover4-waypoint18-waypoint10 < 55_navigate-rover4-waypoint10-waypoint20
+55_navigate-rover4-waypoint10-waypoint20 < 56_sample_rock-rover4-rover4store-waypoint20
+56_sample_rock-rover4-rover4store-waypoint20 < 57_navigate-rover4-waypoint20-waypoint10
+57_navigate-rover4-waypoint20-waypoint10 < 58_navigate-rover4-waypoint10-waypoint8
+58_navigate-rover4-waypoint10-waypoint8 < 59_communicate_rock_data-rover4-general-waypoint20-waypoint8-waypoint27
+** Binding

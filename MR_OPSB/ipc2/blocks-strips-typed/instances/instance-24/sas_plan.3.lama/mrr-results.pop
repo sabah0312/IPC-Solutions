@@ -1,0 +1,155 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10)
+01_unstack(v_11 v_12)
+02_put-down(v_13)
+03_unstack(v_14 v_15)
+04_put-down(v_16)
+05_unstack(v_17 v_18)
+06_put-down(v_19)
+07_unstack(v_20 v_21)
+08_stack(v_22 v_23)
+09_unstack(v_24 v_25)
+10_put-down(v_26)
+11_unstack(v_27 v_28)
+12_put-down(v_29)
+13_unstack(v_30 v_31)
+14_put-down(v_32)
+15_pick-up(v_33)
+16_stack(v_34 v_35)
+17_pick-up(v_36)
+18_stack(v_37 v_38)
+19_pick-up(v_39)
+20_stack(v_40 v_41)
+21_pick-up(v_42)
+22_stack(v_43 v_44)
+23_unstack(v_45 v_46)
+24_stack(v_47 v_48)
+25_unstack(v_49 v_50)
+26_stack(v_51 v_52)
+27_pick-up(v_53)
+28_stack(v_54 v_55)
+29_unstack(v_56 v_57)
+30_put-down(v_58)
+31_pick-up(v_59)
+32_stack(v_60 v_61)
+33_pick-up(v_62)
+34_stack(v_63 v_64)
+35_pick-up(v_65)
+36_stack(v_66 v_67)
+goal(v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78)
+** Ordering
+01_unstack < 02_put-down
+02_put-down < 03_unstack
+03_unstack < 04_put-down
+04_put-down < 05_unstack
+05_unstack < 06_put-down
+06_put-down < 07_unstack
+07_unstack < 08_stack
+08_stack < 23_unstack
+09_unstack < 10_put-down
+10_put-down < 11_unstack
+11_unstack < 12_put-down
+12_put-down < 13_unstack
+13_unstack < 14_put-down
+14_put-down < 15_pick-up
+15_pick-up < 16_stack
+16_stack < 17_pick-up
+17_pick-up < 18_stack
+18_stack < 19_pick-up
+19_pick-up < 20_stack
+20_stack < 21_pick-up
+21_pick-up < 22_stack
+22_stack < 25_unstack
+23_unstack < 24_stack
+24_stack < 29_unstack
+25_unstack < 26_stack
+26_stack < 27_pick-up
+27_pick-up < 28_stack
+28_stack < 31_pick-up
+29_unstack < 30_put-down
+30_put-down < 09_unstack
+31_pick-up < 32_stack
+32_stack < 33_pick-up
+33_pick-up < 34_stack
+34_stack < 35_pick-up
+35_pick-up < 36_stack
+** Binding
+v_0=a
+v_1=b
+v_2=c
+v_3=d
+v_4=e
+v_5=f
+v_6=g
+v_7=h
+v_8=i
+v_9=j
+v_10=k
+v_11=b
+v_12=h
+v_13=b
+v_14=h
+v_15=k
+v_16=h
+v_17=k
+v_18=f
+v_19=k
+v_20=f
+v_21=c
+v_22=f
+v_23=k
+v_24=c
+v_25=d
+v_26=c
+v_27=d
+v_28=j
+v_29=d
+v_30=j
+v_31=a
+v_32=j
+v_33=a
+v_34=a
+v_35=f
+v_36=h
+v_37=h
+v_38=a
+v_39=b
+v_40=b
+v_41=h
+v_42=j
+v_43=j
+v_44=b
+v_45=i
+v_46=e
+v_47=i
+v_48=c
+v_49=e
+v_50=g
+v_51=e
+v_52=j
+v_53=d
+v_54=d
+v_55=e
+v_56=i
+v_57=c
+v_58=i
+v_59=c
+v_60=c
+v_61=d
+v_62=g
+v_63=g
+v_64=c
+v_65=i
+v_66=i
+v_67=g
+v_68=a
+v_69=b
+v_70=c
+v_71=d
+v_72=e
+v_73=f
+v_74=g
+v_75=h
+v_76=i
+v_77=j
+v_78=k

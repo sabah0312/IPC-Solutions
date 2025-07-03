@@ -1,0 +1,95 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6)
+01_unstack(v_7 v_8)
+02_put-down(v_9)
+03_unstack(v_10 v_11)
+04_put-down(v_12)
+05_pick-up(v_13)
+06_stack(v_14 v_15)
+07_unstack(v_16 v_17)
+08_put-down(v_18)
+09_pick-up(v_19)
+10_stack(v_20 v_21)
+11_unstack(v_22 v_23)
+12_put-down(v_24)
+13_unstack(v_25 v_26)
+14_put-down(v_27)
+15_pick-up(v_28)
+16_stack(v_29 v_30)
+17_pick-up(v_31)
+18_stack(v_32 v_33)
+19_pick-up(v_34)
+20_stack(v_35 v_36)
+21_pick-up(v_37)
+22_stack(v_38 v_39)
+goal(v_40 v_41 v_42 v_43 v_44 v_45 v_46)
+** Ordering
+01_unstack < 02_put-down
+02_put-down < 03_unstack
+03_unstack < 04_put-down
+04_put-down < 07_unstack
+05_pick-up < 06_stack
+06_stack < 09_pick-up
+07_unstack < 08_put-down
+08_put-down < 11_unstack
+09_pick-up < 10_stack
+10_stack < 15_pick-up
+11_unstack < 12_put-down
+12_put-down < 13_unstack
+13_unstack < 14_put-down
+14_put-down < 05_pick-up
+15_pick-up < 16_stack
+16_stack < 17_pick-up
+17_pick-up < 18_stack
+18_stack < 19_pick-up
+19_pick-up < 20_stack
+20_stack < 21_pick-up
+21_pick-up < 22_stack
+** Binding
+v_0=a
+v_1=b
+v_2=c
+v_3=d
+v_4=e
+v_5=f
+v_6=g
+v_7=c
+v_8=d
+v_9=c
+v_10=d
+v_11=b
+v_12=d
+v_13=c
+v_14=c
+v_15=d
+v_16=b
+v_17=e
+v_18=b
+v_19=g
+v_20=g
+v_21=c
+v_22=e
+v_23=f
+v_24=e
+v_25=a
+v_26=g
+v_27=a
+v_28=f
+v_29=f
+v_30=g
+v_31=b
+v_32=b
+v_33=f
+v_34=e
+v_35=e
+v_36=b
+v_37=a
+v_38=a
+v_39=e
+v_40=a
+v_41=b
+v_42=c
+v_43=d
+v_44=e
+v_45=f
+v_46=g

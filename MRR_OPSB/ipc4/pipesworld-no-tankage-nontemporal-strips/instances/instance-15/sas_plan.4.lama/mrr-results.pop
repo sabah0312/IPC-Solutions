@@ -1,0 +1,246 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23)
+01_pop-start(v_24 v_25 v_26 v_27 v_28 v_29 v_30)
+02_pop-end(v_31 v_32 v_33 v_34 v_35)
+03_pop-start(v_36 v_37 v_38 v_39 v_40 v_41 v_42)
+04_pop-end(v_43 v_44 v_45 v_46 v_47)
+05_push-start(v_48 v_49 v_50 v_51 v_52 v_53 v_54)
+06_push-end(v_55 v_56 v_57 v_58 v_59)
+07_push-start(v_60 v_61 v_62 v_63 v_64 v_65 v_66)
+08_push-end(v_67 v_68 v_69 v_70 v_71)
+09_push-start(v_72 v_73 v_74 v_75 v_76 v_77 v_78)
+10_push-end(v_79 v_80 v_81 v_82 v_83)
+11_pop-start(v_84 v_85 v_86 v_87 v_88 v_89 v_90)
+12_pop-end(v_91 v_92 v_93 v_94 v_95)
+13_pop-start(v_96 v_97 v_98 v_99 v_100 v_101 v_102)
+14_pop-end(v_103 v_104 v_105 v_106 v_107)
+15_pop-start(v_108 v_109 v_110 v_111 v_112 v_113 v_114)
+16_pop-end(v_115 v_116 v_117 v_118 v_119)
+17_push-start(v_120 v_121 v_122 v_123 v_124 v_125 v_126)
+18_push-end(v_127 v_128 v_129 v_130 v_131)
+19_pop-start(v_132 v_133 v_134 v_135 v_136 v_137 v_138)
+20_pop-end(v_139 v_140 v_141 v_142 v_143)
+21_push-start(v_144 v_145 v_146 v_147 v_148 v_149 v_150)
+22_push-end(v_151 v_152 v_153 v_154 v_155)
+23_push-start(v_156 v_157 v_158 v_159 v_160 v_161 v_162)
+24_push-end(v_163 v_164 v_165 v_166 v_167)
+25_pop-start(v_168 v_169 v_170 v_171 v_172 v_173 v_174)
+26_pop-end(v_175 v_176 v_177 v_178 v_179)
+goal(v_180 v_181 v_182 v_183 v_184 v_185 v_186)
+** Ordering
+01_pop-start < 02_pop-end
+02_pop-end < 03_pop-start
+02_pop-end < 07_push-start
+03_pop-start < 04_pop-end
+04_pop-end < 09_push-start
+04_pop-end < 19_pop-start
+05_push-start < 06_push-end
+06_push-end < 07_push-start
+07_push-start < 08_push-end
+08_push-end < 09_push-start
+09_push-start < 10_push-end
+10_push-end < 11_pop-start
+11_pop-start < 12_pop-end
+12_pop-end < 13_pop-start
+13_pop-start < 14_pop-end
+14_pop-end < 15_pop-start
+15_pop-start < 16_pop-end
+16_pop-end < 17_push-start
+16_pop-end < 25_pop-start
+17_push-start < 18_push-end
+18_push-end < 21_push-start
+19_pop-start < 20_pop-end
+20_pop-end < 17_push-start
+21_push-start < 22_push-end
+22_push-end < 23_push-start
+23_push-start < 24_push-end
+25_pop-start < 26_pop-end
+26_pop-end < 23_push-start
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b10
+v_6=b11
+v_7=b12
+v_8=b13
+v_9=b2
+v_10=b3
+v_11=b4
+v_12=b5
+v_13=b6
+v_14=b7
+v_15=b8
+v_16=b9
+v_17=gasoleo
+v_18=lco
+v_19=oc1b
+v_20=oca1
+v_21=rat-a
+v_22=s12
+v_23=s13
+v_24=s13
+v_25=b13
+v_26=a1
+v_27=a3
+v_28=b7
+v_29=rat-a
+v_30=lco
+v_31=s13
+v_32=a1
+v_33=a3
+v_34=b12
+v_35=b7
+v_36=s13
+v_37=b6
+v_38=a1
+v_39=a3
+v_40=b13
+v_41=lco
+v_42=rat-a
+v_43=s13
+v_44=a1
+v_45=a3
+v_46=b7
+v_47=b13
+v_48=s12
+v_49=b8
+v_50=a1
+v_51=a2
+v_52=b10
+v_53=rat-a
+v_54=rat-a
+v_55=s12
+v_56=a1
+v_57=a2
+v_58=b1
+v_59=b10
+v_60=s12
+v_61=b12
+v_62=a1
+v_63=a2
+v_64=b8
+v_65=rat-a
+v_66=rat-a
+v_67=s12
+v_68=a1
+v_69=a2
+v_70=b10
+v_71=b8
+v_72=s12
+v_73=b7
+v_74=a1
+v_75=a2
+v_76=b12
+v_77=lco
+v_78=rat-a
+v_79=s12
+v_80=a1
+v_81=a2
+v_82=b8
+v_83=b12
+v_84=s12
+v_85=b3
+v_86=a1
+v_87=a2
+v_88=b12
+v_89=rat-a
+v_90=rat-a
+v_91=s12
+v_92=a1
+v_93=a2
+v_94=b7
+v_95=b12
+v_96=s12
+v_97=b10
+v_98=a1
+v_99=a2
+v_100=b3
+v_101=rat-a
+v_102=rat-a
+v_103=s12
+v_104=a1
+v_105=a2
+v_106=b12
+v_107=b3
+v_108=s12
+v_109=b0
+v_110=a1
+v_111=a2
+v_112=b10
+v_113=rat-a
+v_114=rat-a
+v_115=s12
+v_116=a1
+v_117=a2
+v_118=b3
+v_119=b10
+v_120=s13
+v_121=b3
+v_122=a1
+v_123=a3
+v_124=b6
+v_125=rat-a
+v_126=lco
+v_127=s13
+v_128=a1
+v_129=a3
+v_130=b4
+v_131=b6
+v_132=s13
+v_133=b4
+v_134=a1
+v_135=a3
+v_136=b6
+v_137=oca1
+v_138=lco
+v_139=s13
+v_140=a1
+v_141=a3
+v_142=b13
+v_143=b6
+v_144=s13
+v_145=b13
+v_146=a1
+v_147=a3
+v_148=b3
+v_149=rat-a
+v_150=rat-a
+v_151=s13
+v_152=a1
+v_153=a3
+v_154=b6
+v_155=b3
+v_156=s13
+v_157=b10
+v_158=a1
+v_159=a3
+v_160=b13
+v_161=rat-a
+v_162=rat-a
+v_163=s13
+v_164=a1
+v_165=a3
+v_166=b3
+v_167=b13
+v_168=s12
+v_169=b5
+v_170=a1
+v_171=a2
+v_172=b0
+v_173=rat-a
+v_174=rat-a
+v_175=s12
+v_176=a1
+v_177=a2
+v_178=b10
+v_179=b0
+v_180=a1
+v_181=a2
+v_182=a3
+v_183=b12
+v_184=b3
+v_185=b7
+v_186=b8

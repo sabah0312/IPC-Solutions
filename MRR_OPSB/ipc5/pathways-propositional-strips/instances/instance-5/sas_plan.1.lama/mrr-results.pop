@@ -1,0 +1,69 @@
+** Operators
+init()
+01_choose_cdk1p1p2_l1_l0()
+02_initialize_cdk1p1p2()
+03_choose_e2f13-dp12_l2_l1()
+04_initialize_e2f13-dp12()
+05_choose_ge2_l3_l2()
+06_choose_p53_l4_l3()
+07_initialize_ge2()
+08_initialize_p53()
+09_choose_pcna_l5_l4()
+10_initialize_pcna()
+11_choose_sp1_l6_l5()
+12_initialize_sp1()
+13_synthesize_p53_gadd45()
+14_synthesize_p53_p21()
+15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2()
+16_synthesize_e2f13-dp12-ge2_c-myc()
+17_synthesize_e2f13-dp12-ge2_cyce()
+18_synthesize_e2f13-dp12-ge2_p107()
+19_synthesize_e2f13-dp12-ge2_p107p1()
+20_associate_cdk1p1p2_gadd45_cdk1p1p2-gadd45()
+21_dummy-action-1-2()
+22_associate_pcna_p21_pcna-p21()
+23_dummy-action-4-1()
+24_dummy-action-3-2()
+25_dummy-action-6-2()
+26_associate_sp1_p107_sp1-p107()
+27_initialize_sp1()
+28_associate_sp1_p107p1_sp1-p107p1()
+29_dummy-action-2-2()
+30_dummy-action-5-2()
+goal()
+** Ordering
+01_choose_cdk1p1p2_l1_l0 < 02_initialize_cdk1p1p2
+01_choose_cdk1p1p2_l1_l0 < 03_choose_e2f13-dp12_l2_l1
+02_initialize_cdk1p1p2 < 20_associate_cdk1p1p2_gadd45_cdk1p1p2-gadd45
+03_choose_e2f13-dp12_l2_l1 < 04_initialize_e2f13-dp12
+03_choose_e2f13-dp12_l2_l1 < 05_choose_ge2_l3_l2
+04_initialize_e2f13-dp12 < 15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2
+05_choose_ge2_l3_l2 < 06_choose_p53_l4_l3
+05_choose_ge2_l3_l2 < 07_initialize_ge2
+06_choose_p53_l4_l3 < 08_initialize_p53
+06_choose_p53_l4_l3 < 09_choose_pcna_l5_l4
+07_initialize_ge2 < 15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2
+08_initialize_p53 < 13_synthesize_p53_gadd45
+08_initialize_p53 < 14_synthesize_p53_p21
+09_choose_pcna_l5_l4 < 10_initialize_pcna
+09_choose_pcna_l5_l4 < 11_choose_sp1_l6_l5
+10_initialize_pcna < 22_associate_pcna_p21_pcna-p21
+11_choose_sp1_l6_l5 < 12_initialize_sp1
+12_initialize_sp1 < 28_associate_sp1_p107p1_sp1-p107p1
+13_synthesize_p53_gadd45 < 20_associate_cdk1p1p2_gadd45_cdk1p1p2-gadd45
+14_synthesize_p53_p21 < 22_associate_pcna_p21_pcna-p21
+15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2 < 16_synthesize_e2f13-dp12-ge2_c-myc
+15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2 < 17_synthesize_e2f13-dp12-ge2_cyce
+15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2 < 18_synthesize_e2f13-dp12-ge2_p107
+15_associate_e2f13-dp12_ge2_e2f13-dp12-ge2 < 19_synthesize_e2f13-dp12-ge2_p107p1
+16_synthesize_e2f13-dp12-ge2_c-myc < 25_dummy-action-6-2
+17_synthesize_e2f13-dp12-ge2_cyce < 21_dummy-action-1-2
+18_synthesize_e2f13-dp12-ge2_p107 < 26_associate_sp1_p107_sp1-p107
+19_synthesize_e2f13-dp12-ge2_p107p1 < 28_associate_sp1_p107p1_sp1-p107p1
+20_associate_cdk1p1p2_gadd45_cdk1p1p2-gadd45 < 24_dummy-action-3-2
+22_associate_pcna_p21_pcna-p21 < 23_dummy-action-4-1
+26_associate_sp1_p107_sp1-p107 < 29_dummy-action-2-2
+27_initialize_sp1 < 26_associate_sp1_p107_sp1-p107
+28_associate_sp1_p107p1_sp1-p107p1 < 27_initialize_sp1
+28_associate_sp1_p107p1_sp1-p107p1 < 30_dummy-action-5-2
+** Binding

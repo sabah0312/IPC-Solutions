@@ -1,0 +1,195 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36)
+01_do-grind(v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44)
+02_do-plane(v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52)
+03_do-immersion-varnish(v_53 v_54 v_55 v_56 v_57 v_58 v_59)
+04_do-plane(v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67)
+05_do-immersion-varnish(v_68 v_69 v_70 v_71 v_72 v_73 v_74)
+06_do-saw-medium(v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82 v_83 v_84 v_85)
+07_do-saw-small(v_86 v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94 v_95)
+08_do-saw-small(v_96 v_97 v_98 v_99 v_100 v_101 v_102 v_103 v_104 v_105)
+09_do-saw-large(v_106 v_107 v_108 v_109 v_110 v_111 v_112 v_113 v_114 v_115 v_116 v_117)
+10_do-glaze(v_118 v_119 v_120 v_121 v_122 v_123)
+11_do-plane(v_124 v_125 v_126 v_127 v_128 v_129 v_130 v_131)
+12_do-glaze(v_132 v_133 v_134 v_135 v_136 v_137)
+13_do-glaze(v_138 v_139 v_140 v_141 v_142 v_143)
+14_do-glaze(v_144 v_145 v_146 v_147 v_148 v_149)
+goal(v_150 v_151 v_152 v_153 v_154 v_155 v_156 v_157 v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165)
+** Ordering
+01_do-grind < 02_do-plane
+02_do-plane < 03_do-immersion-varnish
+04_do-plane < 05_do-immersion-varnish
+06_do-saw-medium < 07_do-saw-small
+06_do-saw-medium < 08_do-saw-small
+06_do-saw-medium < 10_do-glaze
+07_do-saw-small < 13_do-glaze
+08_do-saw-small < 11_do-plane
+09_do-saw-large < 12_do-glaze
+11_do-plane < 14_do-glaze
+** Binding
+v_0=b0
+v_1=b1
+v_2=black
+v_3=blue
+v_4=colourfragments
+v_5=glazed
+v_6=glazer0
+v_7=green
+v_8=grinder0
+v_9=highspeed-saw0
+v_10=immersion-varnisher0
+v_11=large
+v_12=mauve
+v_13=medium
+v_14=natural
+v_15=p0
+v_16=p1
+v_17=p2
+v_18=p3
+v_19=p4
+v_20=p5
+v_21=planer0
+v_22=rough
+v_23=s0
+v_24=s1
+v_25=s2
+v_26=s3
+v_27=s4
+v_28=saw0
+v_29=small
+v_30=smooth
+v_31=spray-varnisher0
+v_32=teak
+v_33=untreated
+v_34=varnished
+v_35=verysmooth
+v_36=walnut
+v_37=verysmooth
+v_38=natural
+v_39=p3
+v_40=grinder0
+v_41=verysmooth
+v_42=blue
+v_43=glazed
+v_44=untreated
+v_45=smooth
+v_46=untreated
+v_47=natural
+v_48=p3
+v_49=planer0
+v_50=verysmooth
+v_51=natural
+v_52=untreated
+v_53=untreated
+v_54=varnished
+v_55=natural
+v_56=p3
+v_57=immersion-varnisher0
+v_58=mauve
+v_59=smooth
+v_60=smooth
+v_61=untreated
+v_62=natural
+v_63=p0
+v_64=planer0
+v_65=smooth
+v_66=green
+v_67=colourfragments
+v_68=untreated
+v_69=varnished
+v_70=natural
+v_71=p0
+v_72=immersion-varnisher0
+v_73=black
+v_74=smooth
+v_75=untreated
+v_76=medium
+v_77=natural
+v_78=b0
+v_79=p4
+v_80=saw0
+v_81=teak
+v_82=rough
+v_83=s3
+v_84=s2
+v_85=s1
+v_86=untreated
+v_87=small
+v_88=natural
+v_89=b0
+v_90=p1
+v_91=saw0
+v_92=teak
+v_93=rough
+v_94=s1
+v_95=s0
+v_96=untreated
+v_97=small
+v_98=natural
+v_99=b0
+v_100=p5
+v_101=saw0
+v_102=teak
+v_103=rough
+v_104=s1
+v_105=s0
+v_106=untreated
+v_107=large
+v_108=natural
+v_109=b0
+v_110=p2
+v_111=saw0
+v_112=teak
+v_113=rough
+v_114=s3
+v_115=s1
+v_116=s2
+v_117=s0
+v_118=glazed
+v_119=untreated
+v_120=natural
+v_121=p4
+v_122=glazer0
+v_123=blue
+v_124=smooth
+v_125=untreated
+v_126=natural
+v_127=p5
+v_128=planer0
+v_129=rough
+v_130=natural
+v_131=untreated
+v_132=glazed
+v_133=untreated
+v_134=natural
+v_135=p2
+v_136=glazer0
+v_137=natural
+v_138=glazed
+v_139=untreated
+v_140=natural
+v_141=p1
+v_142=glazer0
+v_143=green
+v_144=glazed
+v_145=untreated
+v_146=natural
+v_147=p5
+v_148=glazer0
+v_149=blue
+v_150=black
+v_151=blue
+v_152=glazed
+v_153=green
+v_154=mauve
+v_155=natural
+v_156=p0
+v_157=p1
+v_158=p2
+v_159=p3
+v_160=p4
+v_161=p5
+v_162=smooth
+v_163=teak
+v_164=varnished
+v_165=walnut

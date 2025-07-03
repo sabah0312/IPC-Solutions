@@ -1,0 +1,161 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21)
+01_push-start(v_22 v_23 v_24 v_25 v_26 v_27 v_28)
+02_push-end(v_29 v_30 v_31 v_32 v_33)
+03_push-start(v_34 v_35 v_36 v_37 v_38 v_39 v_40)
+04_push-end(v_41 v_42 v_43 v_44 v_45)
+05_push-start(v_46 v_47 v_48 v_49 v_50 v_51 v_52)
+06_push-end(v_53 v_54 v_55 v_56 v_57)
+07_pop-start(v_58 v_59 v_60 v_61 v_62 v_63 v_64)
+08_pop-end(v_65 v_66 v_67 v_68 v_69)
+09_push-start(v_70 v_71 v_72 v_73 v_74 v_75 v_76)
+10_pop-start(v_77 v_78 v_79 v_80 v_81 v_82 v_83)
+11_pop-end(v_84 v_85 v_86 v_87 v_88)
+12_push-end(v_89 v_90 v_91 v_92 v_93)
+13_push-start(v_94 v_95 v_96 v_97 v_98 v_99 v_100)
+14_push-end(v_101 v_102 v_103 v_104 v_105)
+15_pop-start(v_106 v_107 v_108 v_109 v_110 v_111 v_112)
+16_pop-end(v_113 v_114 v_115 v_116 v_117)
+goal(v_118 v_119 v_120 v_121 v_122 v_123)
+** Ordering
+01_push-start < 02_push-end
+02_push-end < 03_push-start
+03_push-start < 04_push-end
+04_push-end < 05_push-start
+05_push-start < 06_push-end
+06_push-end < 07_pop-start
+07_pop-start < 08_pop-end
+08_pop-end < 09_push-start
+08_pop-end < 10_pop-start
+09_push-start < 12_push-end
+10_pop-start < 11_pop-end
+11_pop-end < 13_push-start
+11_pop-end < 15_pop-start
+12_push-end < 13_push-start
+13_push-start < 14_push-end
+15_pop-start < 16_pop-end
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b10
+v_6=b11
+v_7=b2
+v_8=b3
+v_9=b4
+v_10=b5
+v_11=b6
+v_12=b7
+v_13=b8
+v_14=b9
+v_15=gasoleo
+v_16=lco
+v_17=oc1b
+v_18=oca1
+v_19=rat-a
+v_20=s12
+v_21=s13
+v_22=s12
+v_23=b1
+v_24=a1
+v_25=a2
+v_26=b6
+v_27=oc1b
+v_28=oca1
+v_29=s12
+v_30=a1
+v_31=a2
+v_32=b11
+v_33=b6
+v_34=s12
+v_35=b7
+v_36=a1
+v_37=a2
+v_38=b1
+v_39=oca1
+v_40=oc1b
+v_41=s12
+v_42=a1
+v_43=a2
+v_44=b6
+v_45=b1
+v_46=s12
+v_47=b4
+v_48=a1
+v_49=a2
+v_50=b7
+v_51=oca1
+v_52=oca1
+v_53=s12
+v_54=a1
+v_55=a2
+v_56=b1
+v_57=b7
+v_58=s12
+v_59=b5
+v_60=a1
+v_61=a2
+v_62=b7
+v_63=gasoleo
+v_64=oca1
+v_65=s12
+v_66=a1
+v_67=a2
+v_68=b4
+v_69=b7
+v_70=s13
+v_71=b4
+v_72=a1
+v_73=a3
+v_74=b9
+v_75=oca1
+v_76=lco
+v_77=s12
+v_78=b11
+v_79=a1
+v_80=a2
+v_81=b5
+v_82=lco
+v_83=gasoleo
+v_84=s12
+v_85=a1
+v_86=a2
+v_87=b7
+v_88=b5
+v_89=s13
+v_90=a1
+v_91=a3
+v_92=b3
+v_93=b9
+v_94=s13
+v_95=b7
+v_96=a1
+v_97=a3
+v_98=b4
+v_99=oca1
+v_100=oca1
+v_101=s13
+v_102=a1
+v_103=a3
+v_104=b9
+v_105=b4
+v_106=s12
+v_107=b6
+v_108=a1
+v_109=a2
+v_110=b11
+v_111=oca1
+v_112=lco
+v_113=s12
+v_114=a1
+v_115=a2
+v_116=b5
+v_117=b11
+v_118=a1
+v_119=a2
+v_120=a3
+v_121=b1
+v_122=b5
+v_123=b9

@@ -1,0 +1,34 @@
+** Operators
+init(v_0 v_1 v_2 v_3)
+1_unstack(v_4 v_5)
+2_stack(v_6 v_7)
+3_pick-up(v_8)
+4_stack(v_9 v_10)
+5_pick-up(v_11)
+6_stack(v_12 v_13)
+goal(v_14 v_15 v_16 v_17)
+** Ordering
+1_unstack < 2_stack
+2_stack < 3_pick-up
+3_pick-up < 4_stack
+4_stack < 5_pick-up
+5_pick-up < 6_stack
+** Binding
+v_0=a
+v_1=b
+v_2=c
+v_3=d
+v_4=c
+v_5=b
+v_6=c
+v_7=d
+v_8=b
+v_9=b
+v_10=c
+v_11=a
+v_12=a
+v_13=b
+v_14=a
+v_15=b
+v_16=c
+v_17=d

@@ -1,0 +1,581 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+001_pick(v_38 v_39 v_40)
+002_pick(v_41 v_42 v_43)
+003_move(v_44 v_45)
+004_drop(v_46 v_47 v_48)
+005_drop(v_49 v_50 v_51)
+006_move(v_52 v_53)
+007_pick(v_54 v_55 v_56)
+008_pick(v_57 v_58 v_59)
+009_move(v_60 v_61)
+010_drop(v_62 v_63 v_64)
+011_drop(v_65 v_66 v_67)
+012_move(v_68 v_69)
+013_pick(v_70 v_71 v_72)
+014_pick(v_73 v_74 v_75)
+015_move(v_76 v_77)
+016_drop(v_78 v_79 v_80)
+017_drop(v_81 v_82 v_83)
+018_move(v_84 v_85)
+019_pick(v_86 v_87 v_88)
+020_pick(v_89 v_90 v_91)
+021_move(v_92 v_93)
+022_drop(v_94 v_95 v_96)
+023_drop(v_97 v_98 v_99)
+024_move(v_100 v_101)
+025_pick(v_102 v_103 v_104)
+026_pick(v_105 v_106 v_107)
+027_move(v_108 v_109)
+028_drop(v_110 v_111 v_112)
+029_drop(v_113 v_114 v_115)
+030_move(v_116 v_117)
+031_pick(v_118 v_119 v_120)
+032_pick(v_121 v_122 v_123)
+033_move(v_124 v_125)
+034_drop(v_126 v_127 v_128)
+035_drop(v_129 v_130 v_131)
+036_move(v_132 v_133)
+037_pick(v_134 v_135 v_136)
+038_pick(v_137 v_138 v_139)
+039_move(v_140 v_141)
+040_drop(v_142 v_143 v_144)
+041_drop(v_145 v_146 v_147)
+042_move(v_148 v_149)
+043_pick(v_150 v_151 v_152)
+044_pick(v_153 v_154 v_155)
+045_move(v_156 v_157)
+046_drop(v_158 v_159 v_160)
+047_drop(v_161 v_162 v_163)
+048_move(v_164 v_165)
+049_pick(v_166 v_167 v_168)
+050_pick(v_169 v_170 v_171)
+051_move(v_172 v_173)
+052_drop(v_174 v_175 v_176)
+053_drop(v_177 v_178 v_179)
+054_move(v_180 v_181)
+055_pick(v_182 v_183 v_184)
+056_pick(v_185 v_186 v_187)
+057_move(v_188 v_189)
+058_drop(v_190 v_191 v_192)
+059_drop(v_193 v_194 v_195)
+060_move(v_196 v_197)
+061_pick(v_198 v_199 v_200)
+062_pick(v_201 v_202 v_203)
+063_move(v_204 v_205)
+064_drop(v_206 v_207 v_208)
+065_drop(v_209 v_210 v_211)
+066_move(v_212 v_213)
+067_pick(v_214 v_215 v_216)
+068_pick(v_217 v_218 v_219)
+069_move(v_220 v_221)
+070_drop(v_222 v_223 v_224)
+071_drop(v_225 v_226 v_227)
+072_move(v_228 v_229)
+073_pick(v_230 v_231 v_232)
+074_pick(v_233 v_234 v_235)
+075_move(v_236 v_237)
+076_drop(v_238 v_239 v_240)
+077_drop(v_241 v_242 v_243)
+078_move(v_244 v_245)
+079_pick(v_246 v_247 v_248)
+080_pick(v_249 v_250 v_251)
+081_move(v_252 v_253)
+082_drop(v_254 v_255 v_256)
+083_drop(v_257 v_258 v_259)
+084_move(v_260 v_261)
+085_pick(v_262 v_263 v_264)
+086_pick(v_265 v_266 v_267)
+087_move(v_268 v_269)
+088_drop(v_270 v_271 v_272)
+089_drop(v_273 v_274 v_275)
+090_move(v_276 v_277)
+091_pick(v_278 v_279 v_280)
+092_pick(v_281 v_282 v_283)
+093_move(v_284 v_285)
+094_drop(v_286 v_287 v_288)
+095_drop(v_289 v_290 v_291)
+096_move(v_292 v_293)
+097_pick(v_294 v_295 v_296)
+098_pick(v_297 v_298 v_299)
+099_move(v_300 v_301)
+100_drop(v_302 v_303 v_304)
+101_drop(v_305 v_306 v_307)
+goal(v_308 v_309 v_310 v_311 v_312 v_313 v_314 v_315 v_316 v_317 v_318 v_319 v_320 v_321 v_322 v_323 v_324 v_325 v_326 v_327 v_328 v_329 v_330 v_331 v_332 v_333 v_334 v_335 v_336 v_337 v_338 v_339 v_340 v_341 v_342)
+** Ordering
+001_pick < 057_move
+002_pick < 063_move
+003_move < 047_drop
+003_move < 094_drop
+004_drop < 060_move
+005_drop < 066_move
+006_move < 013_pick
+006_move < 062_pick
+007_pick < 027_move
+008_pick < 057_move
+009_move < 016_drop
+009_move < 065_drop
+010_drop < 030_move
+011_drop < 060_move
+012_move < 067_pick
+012_move < 086_pick
+013_pick < 009_move
+014_pick < 033_move
+015_move < 070_drop
+015_move < 089_drop
+016_drop < 012_move
+017_drop < 036_move
+018_move < 038_pick
+018_move < 073_pick
+019_pick < 045_move
+020_pick < 045_move
+021_move < 041_drop
+021_move < 076_drop
+022_drop < 048_move
+023_drop < 048_move
+024_move < 007_pick
+024_move < 068_pick
+025_pick < 099_move
+026_pick < 081_move
+027_move < 010_drop
+027_move < 071_drop
+029_drop < 084_move
+030_move < 014_pick
+030_move < 037_pick
+031_pick < 075_move
+032_pick < 051_move
+033_move < 017_drop
+033_move < 040_drop
+034_drop < 078_move
+035_drop < 054_move
+036_move < 055_pick
+036_move < 080_pick
+037_pick < 033_move
+038_pick < 021_move
+039_move < 058_drop
+039_move < 083_drop
+040_drop < 036_move
+041_drop < 024_move
+042_move < 019_pick
+042_move < 020_pick
+043_pick < 093_move
+044_pick < 003_move
+045_move < 022_drop
+045_move < 023_drop
+046_drop < 096_move
+047_drop < 006_move
+048_move < 032_pick
+048_move < 085_pick
+049_pick < 081_move
+050_pick < 093_move
+051_move < 035_drop
+051_move < 088_drop
+052_drop < 084_move
+053_drop < 096_move
+054_move < 001_pick
+054_move < 008_pick
+055_pick < 039_move
+056_pick < 075_move
+057_move < 004_drop
+057_move < 011_drop
+058_drop < 042_move
+059_drop < 078_move
+060_move < 002_pick
+060_move < 079_pick
+061_pick < 087_move
+062_pick < 009_move
+063_move < 005_drop
+063_move < 082_drop
+064_drop < 090_move
+065_drop < 012_move
+066_move < 074_pick
+066_move < 097_pick
+067_pick < 015_move
+068_pick < 027_move
+069_move < 077_drop
+069_move < 100_drop
+070_drop < 018_move
+071_drop < 030_move
+072_move < 031_pick
+072_move < 056_pick
+073_pick < 021_move
+074_pick < 069_move
+075_move < 034_drop
+075_move < 059_drop
+076_drop < 024_move
+077_drop < 072_move
+078_move < 026_pick
+078_move < 049_pick
+079_pick < 063_move
+080_pick < 039_move
+081_move < 029_drop
+081_move < 052_drop
+082_drop < 066_move
+083_drop < 042_move
+084_move < 061_pick
+084_move < 092_pick
+085_pick < 051_move
+086_pick < 015_move
+087_move < 064_drop
+087_move < 095_drop
+088_drop < 054_move
+089_drop < 018_move
+090_move < 043_pick
+090_move < 050_pick
+091_pick < 003_move
+092_pick < 087_move
+093_move < 046_drop
+093_move < 053_drop
+094_drop < 006_move
+095_drop < 090_move
+096_move < 025_pick
+096_move < 098_pick
+097_pick < 069_move
+098_pick < 099_move
+099_move < 028_drop
+099_move < 101_drop
+100_drop < 072_move
+** Binding
+v_0=ball1
+v_1=ball10
+v_2=ball11
+v_3=ball12
+v_4=ball13
+v_5=ball14
+v_6=ball15
+v_7=ball16
+v_8=ball17
+v_9=ball18
+v_10=ball19
+v_11=ball2
+v_12=ball20
+v_13=ball21
+v_14=ball22
+v_15=ball23
+v_16=ball24
+v_17=ball25
+v_18=ball26
+v_19=ball27
+v_20=ball28
+v_21=ball29
+v_22=ball3
+v_23=ball30
+v_24=ball31
+v_25=ball32
+v_26=ball33
+v_27=ball34
+v_28=ball4
+v_29=ball5
+v_30=ball6
+v_31=ball7
+v_32=ball8
+v_33=ball9
+v_34=left
+v_35=right
+v_36=rooma
+v_37=roomb
+v_38=ball1
+v_39=rooma
+v_40=left
+v_41=ball10
+v_42=rooma
+v_43=right
+v_44=rooma
+v_45=roomb
+v_46=ball1
+v_47=roomb
+v_48=left
+v_49=ball10
+v_50=roomb
+v_51=right
+v_52=roomb
+v_53=rooma
+v_54=ball11
+v_55=rooma
+v_56=left
+v_57=ball12
+v_58=rooma
+v_59=right
+v_60=rooma
+v_61=roomb
+v_62=ball11
+v_63=roomb
+v_64=left
+v_65=ball12
+v_66=roomb
+v_67=right
+v_68=roomb
+v_69=rooma
+v_70=ball13
+v_71=rooma
+v_72=left
+v_73=ball14
+v_74=rooma
+v_75=right
+v_76=rooma
+v_77=roomb
+v_78=ball13
+v_79=roomb
+v_80=left
+v_81=ball14
+v_82=roomb
+v_83=right
+v_84=roomb
+v_85=rooma
+v_86=ball15
+v_87=rooma
+v_88=left
+v_89=ball16
+v_90=rooma
+v_91=right
+v_92=rooma
+v_93=roomb
+v_94=ball15
+v_95=roomb
+v_96=left
+v_97=ball16
+v_98=roomb
+v_99=right
+v_100=roomb
+v_101=rooma
+v_102=ball17
+v_103=rooma
+v_104=left
+v_105=ball18
+v_106=rooma
+v_107=right
+v_108=rooma
+v_109=roomb
+v_110=ball17
+v_111=roomb
+v_112=left
+v_113=ball18
+v_114=roomb
+v_115=right
+v_116=roomb
+v_117=rooma
+v_118=ball19
+v_119=rooma
+v_120=left
+v_121=ball2
+v_122=rooma
+v_123=right
+v_124=rooma
+v_125=roomb
+v_126=ball19
+v_127=roomb
+v_128=left
+v_129=ball2
+v_130=roomb
+v_131=right
+v_132=roomb
+v_133=rooma
+v_134=ball20
+v_135=rooma
+v_136=left
+v_137=ball21
+v_138=rooma
+v_139=right
+v_140=rooma
+v_141=roomb
+v_142=ball20
+v_143=roomb
+v_144=left
+v_145=ball21
+v_146=roomb
+v_147=right
+v_148=roomb
+v_149=rooma
+v_150=ball22
+v_151=rooma
+v_152=left
+v_153=ball23
+v_154=rooma
+v_155=right
+v_156=rooma
+v_157=roomb
+v_158=ball22
+v_159=roomb
+v_160=left
+v_161=ball23
+v_162=roomb
+v_163=right
+v_164=roomb
+v_165=rooma
+v_166=ball24
+v_167=rooma
+v_168=left
+v_169=ball25
+v_170=rooma
+v_171=right
+v_172=rooma
+v_173=roomb
+v_174=ball24
+v_175=roomb
+v_176=left
+v_177=ball25
+v_178=roomb
+v_179=right
+v_180=roomb
+v_181=rooma
+v_182=ball26
+v_183=rooma
+v_184=left
+v_185=ball27
+v_186=rooma
+v_187=right
+v_188=rooma
+v_189=roomb
+v_190=ball26
+v_191=roomb
+v_192=left
+v_193=ball27
+v_194=roomb
+v_195=right
+v_196=roomb
+v_197=rooma
+v_198=ball28
+v_199=rooma
+v_200=left
+v_201=ball29
+v_202=rooma
+v_203=right
+v_204=rooma
+v_205=roomb
+v_206=ball28
+v_207=roomb
+v_208=left
+v_209=ball29
+v_210=roomb
+v_211=right
+v_212=roomb
+v_213=rooma
+v_214=ball3
+v_215=rooma
+v_216=left
+v_217=ball30
+v_218=rooma
+v_219=right
+v_220=rooma
+v_221=roomb
+v_222=ball3
+v_223=roomb
+v_224=left
+v_225=ball30
+v_226=roomb
+v_227=right
+v_228=roomb
+v_229=rooma
+v_230=ball31
+v_231=rooma
+v_232=left
+v_233=ball32
+v_234=rooma
+v_235=right
+v_236=rooma
+v_237=roomb
+v_238=ball31
+v_239=roomb
+v_240=left
+v_241=ball32
+v_242=roomb
+v_243=right
+v_244=roomb
+v_245=rooma
+v_246=ball33
+v_247=rooma
+v_248=left
+v_249=ball34
+v_250=rooma
+v_251=right
+v_252=rooma
+v_253=roomb
+v_254=ball33
+v_255=roomb
+v_256=left
+v_257=ball34
+v_258=roomb
+v_259=right
+v_260=roomb
+v_261=rooma
+v_262=ball4
+v_263=rooma
+v_264=left
+v_265=ball5
+v_266=rooma
+v_267=right
+v_268=rooma
+v_269=roomb
+v_270=ball4
+v_271=roomb
+v_272=left
+v_273=ball5
+v_274=roomb
+v_275=right
+v_276=roomb
+v_277=rooma
+v_278=ball6
+v_279=rooma
+v_280=left
+v_281=ball7
+v_282=rooma
+v_283=right
+v_284=rooma
+v_285=roomb
+v_286=ball6
+v_287=roomb
+v_288=left
+v_289=ball7
+v_290=roomb
+v_291=right
+v_292=roomb
+v_293=rooma
+v_294=ball8
+v_295=rooma
+v_296=left
+v_297=ball9
+v_298=rooma
+v_299=right
+v_300=rooma
+v_301=roomb
+v_302=ball8
+v_303=roomb
+v_304=left
+v_305=ball9
+v_306=roomb
+v_307=right
+v_308=ball1
+v_309=ball10
+v_310=ball11
+v_311=ball12
+v_312=ball13
+v_313=ball14
+v_314=ball15
+v_315=ball16
+v_316=ball17
+v_317=ball18
+v_318=ball19
+v_319=ball2
+v_320=ball20
+v_321=ball21
+v_322=ball22
+v_323=ball23
+v_324=ball24
+v_325=ball25
+v_326=ball26
+v_327=ball27
+v_328=ball28
+v_329=ball29
+v_330=ball3
+v_331=ball30
+v_332=ball31
+v_333=ball32
+v_334=ball33
+v_335=ball34
+v_336=ball4
+v_337=ball5
+v_338=ball6
+v_339=ball7
+v_340=ball8
+v_341=ball9
+v_342=roomb

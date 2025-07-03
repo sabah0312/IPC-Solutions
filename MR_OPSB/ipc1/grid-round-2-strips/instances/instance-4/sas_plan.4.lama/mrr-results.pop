@@ -1,0 +1,239 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79)
+01_move(v_80 v_81)
+02_move(v_82 v_83)
+03_move(v_84 v_85)
+04_move(v_86 v_87)
+05_move(v_88 v_89)
+06_pickup(v_90 v_91)
+07_move(v_92 v_93)
+08_move(v_94 v_95)
+09_move(v_96 v_97)
+10_move(v_98 v_99)
+11_move(v_100 v_101)
+12_pickup-and-loose(v_102 v_103 v_104)
+13_move(v_105 v_106)
+14_move(v_107 v_108)
+15_move(v_109 v_110)
+16_pickup-and-loose(v_111 v_112 v_113)
+17_move(v_114 v_115)
+18_move(v_116 v_117)
+19_move(v_118 v_119)
+20_move(v_120 v_121)
+21_move(v_122 v_123)
+22_move(v_124 v_125)
+23_putdown(v_126 v_127)
+24_move(v_128 v_129)
+25_move(v_130 v_131)
+26_pickup(v_132 v_133)
+27_unlock(v_134 v_135 v_136 v_137)
+28_move(v_138 v_139)
+29_pickup-and-loose(v_140 v_141 v_142)
+30_move(v_143 v_144)
+31_move(v_145 v_146)
+32_move(v_147 v_148)
+33_move(v_149 v_150)
+34_move(v_151 v_152)
+35_move(v_153 v_154)
+36_putdown(v_155 v_156)
+goal(v_157 v_158 v_159 v_160 v_161 v_162)
+** Ordering
+01_move < 02_move
+02_move < 03_move
+03_move < 04_move
+04_move < 05_move
+05_move < 06_pickup
+06_pickup < 07_move
+07_move < 08_move
+08_move < 09_move
+09_move < 10_move
+10_move < 11_move
+11_move < 12_pickup-and-loose
+12_pickup-and-loose < 13_move
+13_move < 14_move
+14_move < 15_move
+15_move < 16_pickup-and-loose
+16_pickup-and-loose < 17_move
+17_move < 18_move
+18_move < 19_move
+19_move < 20_move
+20_move < 21_move
+21_move < 22_move
+22_move < 23_putdown
+23_putdown < 24_move
+24_move < 25_move
+25_move < 26_pickup
+26_pickup < 27_unlock
+27_unlock < 28_move
+28_move < 29_pickup-and-loose
+29_pickup-and-loose < 30_move
+30_move < 31_move
+31_move < 32_move
+32_move < 33_move
+33_move < 34_move
+34_move < 35_move
+35_move < 36_putdown
+** Binding
+v_0=circle
+v_1=diamond
+v_2=key0
+v_3=key1
+v_4=key10
+v_5=key11
+v_6=key2
+v_7=key3
+v_8=key4
+v_9=key5
+v_10=key6
+v_11=key7
+v_12=key8
+v_13=key9
+v_14=node0-0
+v_15=node0-1
+v_16=node0-2
+v_17=node0-3
+v_18=node0-4
+v_19=node0-5
+v_20=node0-6
+v_21=node0-7
+v_22=node1-0
+v_23=node1-1
+v_24=node1-2
+v_25=node1-3
+v_26=node1-4
+v_27=node1-5
+v_28=node1-6
+v_29=node1-7
+v_30=node2-0
+v_31=node2-1
+v_32=node2-2
+v_33=node2-3
+v_34=node2-4
+v_35=node2-5
+v_36=node2-6
+v_37=node2-7
+v_38=node3-0
+v_39=node3-1
+v_40=node3-2
+v_41=node3-3
+v_42=node3-4
+v_43=node3-5
+v_44=node3-6
+v_45=node3-7
+v_46=node4-0
+v_47=node4-1
+v_48=node4-2
+v_49=node4-3
+v_50=node4-4
+v_51=node4-5
+v_52=node4-6
+v_53=node4-7
+v_54=node5-0
+v_55=node5-1
+v_56=node5-2
+v_57=node5-3
+v_58=node5-4
+v_59=node5-5
+v_60=node5-6
+v_61=node5-7
+v_62=node6-0
+v_63=node6-1
+v_64=node6-2
+v_65=node6-3
+v_66=node6-4
+v_67=node6-5
+v_68=node6-6
+v_69=node6-7
+v_70=node7-0
+v_71=node7-1
+v_72=node7-2
+v_73=node7-3
+v_74=node7-4
+v_75=node7-5
+v_76=node7-6
+v_77=node7-7
+v_78=square
+v_79=triangle
+v_80=node4-4
+v_81=node3-4
+v_82=node3-4
+v_83=node2-4
+v_84=node2-4
+v_85=node1-4
+v_86=node1-4
+v_87=node1-5
+v_88=node1-5
+v_89=node1-6
+v_90=node1-6
+v_91=key0
+v_92=node1-6
+v_93=node1-5
+v_94=node1-5
+v_95=node1-4
+v_96=node1-4
+v_97=node1-3
+v_98=node1-3
+v_99=node1-2
+v_100=node1-2
+v_101=node1-1
+v_102=node1-1
+v_103=key9
+v_104=key0
+v_105=node1-1
+v_106=node1-2
+v_107=node1-2
+v_108=node1-3
+v_109=node1-3
+v_110=node0-3
+v_111=node0-3
+v_112=key3
+v_113=key9
+v_114=node0-3
+v_115=node1-3
+v_116=node1-3
+v_117=node1-2
+v_118=node1-2
+v_119=node2-2
+v_120=node2-2
+v_121=node3-2
+v_122=node3-2
+v_123=node3-1
+v_124=node3-1
+v_125=node3-0
+v_126=node3-0
+v_127=key3
+v_128=node3-0
+v_129=node4-0
+v_130=node4-0
+v_131=node5-0
+v_132=node5-0
+v_133=key11
+v_134=node5-0
+v_135=node5-1
+v_136=key11
+v_137=square
+v_138=node5-0
+v_139=node5-1
+v_140=node5-1
+v_141=key4
+v_142=key11
+v_143=node5-1
+v_144=node4-1
+v_145=node4-1
+v_146=node4-2
+v_147=node4-2
+v_148=node4-3
+v_149=node4-3
+v_150=node4-4
+v_151=node4-4
+v_152=node5-4
+v_153=node5-4
+v_154=node6-4
+v_155=node6-4
+v_156=key4
+v_157=key0
+v_158=key3
+v_159=key4
+v_160=node1-1
+v_161=node3-0
+v_162=node6-4

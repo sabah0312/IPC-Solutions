@@ -1,0 +1,972 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82 v_83 v_84 v_85 v_86)
+01_do-grind(v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94)
+02_do-grind(v_95 v_96 v_97 v_98 v_99 v_100 v_101 v_102)
+03_do-glaze(v_103 v_104 v_105 v_106 v_107 v_108)
+04_do-grind(v_109 v_110 v_111 v_112 v_113 v_114 v_115 v_116)
+05_do-immersion-varnish(v_117 v_118 v_119 v_120 v_121 v_122 v_123)
+06_do-grind(v_124 v_125 v_126 v_127 v_128 v_129 v_130 v_131)
+07_do-grind(v_132 v_133 v_134 v_135 v_136 v_137 v_138 v_139)
+08_do-glaze(v_140 v_141 v_142 v_143 v_144 v_145)
+09_do-grind(v_146 v_147 v_148 v_149 v_150 v_151 v_152 v_153)
+10_do-glaze(v_154 v_155 v_156 v_157 v_158 v_159)
+11_do-plane(v_160 v_161 v_162 v_163 v_164 v_165 v_166 v_167)
+12_do-glaze(v_168 v_169 v_170 v_171 v_172 v_173)
+13_do-plane(v_174 v_175 v_176 v_177 v_178 v_179 v_180 v_181)
+14_do-grind(v_182 v_183 v_184 v_185 v_186 v_187 v_188 v_189)
+15_do-immersion-varnish(v_190 v_191 v_192 v_193 v_194 v_195 v_196)
+16_do-grind(v_197 v_198 v_199 v_200 v_201 v_202 v_203 v_204)
+17_do-immersion-varnish(v_205 v_206 v_207 v_208 v_209 v_210 v_211)
+18_do-grind(v_212 v_213 v_214 v_215 v_216 v_217 v_218 v_219)
+19_do-glaze(v_220 v_221 v_222 v_223 v_224 v_225)
+20_do-plane(v_226 v_227 v_228 v_229 v_230 v_231 v_232 v_233)
+21_do-immersion-varnish(v_234 v_235 v_236 v_237 v_238 v_239 v_240)
+22_do-saw-large(v_241 v_242 v_243 v_244 v_245 v_246 v_247 v_248 v_249 v_250 v_251 v_252)
+23_do-saw-large(v_253 v_254 v_255 v_256 v_257 v_258 v_259 v_260 v_261 v_262 v_263 v_264)
+24_do-saw-large(v_265 v_266 v_267 v_268 v_269 v_270 v_271 v_272 v_273 v_274 v_275 v_276)
+25_do-saw-large(v_277 v_278 v_279 v_280 v_281 v_282 v_283 v_284 v_285 v_286 v_287 v_288)
+26_do-saw-large(v_289 v_290 v_291 v_292 v_293 v_294 v_295 v_296 v_297 v_298 v_299 v_300)
+27_do-saw-medium(v_301 v_302 v_303 v_304 v_305 v_306 v_307 v_308 v_309 v_310 v_311)
+28_do-saw-medium(v_312 v_313 v_314 v_315 v_316 v_317 v_318 v_319 v_320 v_321 v_322)
+29_do-saw-medium(v_323 v_324 v_325 v_326 v_327 v_328 v_329 v_330 v_331 v_332 v_333)
+30_do-saw-small(v_334 v_335 v_336 v_337 v_338 v_339 v_340 v_341 v_342 v_343)
+31_do-saw-small(v_344 v_345 v_346 v_347 v_348 v_349 v_350 v_351 v_352 v_353)
+32_do-saw-medium(v_354 v_355 v_356 v_357 v_358 v_359 v_360 v_361 v_362 v_363 v_364)
+33_do-saw-small(v_365 v_366 v_367 v_368 v_369 v_370 v_371 v_372 v_373 v_374)
+34_do-saw-small(v_375 v_376 v_377 v_378 v_379 v_380 v_381 v_382 v_383 v_384)
+35_do-saw-small(v_385 v_386 v_387 v_388 v_389 v_390 v_391 v_392 v_393 v_394)
+36_do-saw-medium(v_395 v_396 v_397 v_398 v_399 v_400 v_401 v_402 v_403 v_404 v_405)
+37_do-saw-small(v_406 v_407 v_408 v_409 v_410 v_411 v_412 v_413 v_414 v_415)
+38_do-saw-small(v_416 v_417 v_418 v_419 v_420 v_421 v_422 v_423 v_424 v_425)
+39_do-saw-medium(v_426 v_427 v_428 v_429 v_430 v_431 v_432 v_433 v_434 v_435 v_436)
+40_do-saw-small(v_437 v_438 v_439 v_440 v_441 v_442 v_443 v_444 v_445 v_446)
+41_do-saw-small(v_447 v_448 v_449 v_450 v_451 v_452 v_453 v_454 v_455 v_456)
+42_do-saw-medium(v_457 v_458 v_459 v_460 v_461 v_462 v_463 v_464 v_465 v_466 v_467)
+43_do-saw-small(v_468 v_469 v_470 v_471 v_472 v_473 v_474 v_475 v_476 v_477)
+44_do-plane(v_478 v_479 v_480 v_481 v_482 v_483 v_484 v_485)
+45_do-immersion-varnish(v_486 v_487 v_488 v_489 v_490 v_491 v_492)
+46_do-glaze(v_493 v_494 v_495 v_496 v_497 v_498)
+47_do-plane(v_499 v_500 v_501 v_502 v_503 v_504 v_505 v_506)
+48_do-glaze(v_507 v_508 v_509 v_510 v_511 v_512)
+49_do-immersion-varnish(v_513 v_514 v_515 v_516 v_517 v_518 v_519)
+50_do-immersion-varnish(v_520 v_521 v_522 v_523 v_524 v_525 v_526)
+51_do-plane(v_527 v_528 v_529 v_530 v_531 v_532 v_533 v_534)
+52_do-glaze(v_535 v_536 v_537 v_538 v_539 v_540)
+53_do-plane(v_541 v_542 v_543 v_544 v_545 v_546 v_547 v_548)
+54_do-plane(v_549 v_550 v_551 v_552 v_553 v_554 v_555 v_556)
+55_do-immersion-varnish(v_557 v_558 v_559 v_560 v_561 v_562 v_563)
+56_do-glaze(v_564 v_565 v_566 v_567 v_568 v_569)
+57_do-plane(v_570 v_571 v_572 v_573 v_574 v_575 v_576 v_577)
+58_do-grind(v_578 v_579 v_580 v_581 v_582 v_583 v_584 v_585)
+59_do-glaze(v_586 v_587 v_588 v_589 v_590 v_591)
+60_do-plane(v_592 v_593 v_594 v_595 v_596 v_597 v_598 v_599)
+61_do-glaze(v_600 v_601 v_602 v_603 v_604 v_605)
+62_do-glaze(v_606 v_607 v_608 v_609 v_610 v_611)
+63_do-plane(v_612 v_613 v_614 v_615 v_616 v_617 v_618 v_619)
+64_do-immersion-varnish(v_620 v_621 v_622 v_623 v_624 v_625 v_626)
+65_do-glaze(v_627 v_628 v_629 v_630 v_631 v_632)
+66_do-plane(v_633 v_634 v_635 v_636 v_637 v_638 v_639 v_640)
+67_do-glaze(v_641 v_642 v_643 v_644 v_645 v_646)
+68_do-immersion-varnish(v_647 v_648 v_649 v_650 v_651 v_652 v_653)
+69_do-plane(v_654 v_655 v_656 v_657 v_658 v_659 v_660 v_661)
+70_do-immersion-varnish(v_662 v_663 v_664 v_665 v_666 v_667 v_668)
+71_do-plane(v_669 v_670 v_671 v_672 v_673 v_674 v_675 v_676)
+72_do-immersion-varnish(v_677 v_678 v_679 v_680 v_681 v_682 v_683)
+73_do-plane(v_684 v_685 v_686 v_687 v_688 v_689 v_690 v_691)
+74_do-immersion-varnish(v_692 v_693 v_694 v_695 v_696 v_697 v_698)
+75_do-plane(v_699 v_700 v_701 v_702 v_703 v_704 v_705 v_706)
+76_do-immersion-varnish(v_707 v_708 v_709 v_710 v_711 v_712 v_713)
+77_do-plane(v_714 v_715 v_716 v_717 v_718 v_719 v_720 v_721)
+78_do-glaze(v_722 v_723 v_724 v_725 v_726 v_727)
+79_do-plane(v_728 v_729 v_730 v_731 v_732 v_733 v_734 v_735)
+80_do-glaze(v_736 v_737 v_738 v_739 v_740 v_741)
+81_do-plane(v_742 v_743 v_744 v_745 v_746 v_747 v_748 v_749)
+82_do-glaze(v_750 v_751 v_752 v_753 v_754 v_755)
+83_do-grind(v_756 v_757 v_758 v_759 v_760 v_761 v_762 v_763)
+84_do-glaze(v_764 v_765 v_766 v_767 v_768 v_769)
+goal(v_770 v_771 v_772 v_773 v_774 v_775 v_776 v_777 v_778 v_779 v_780 v_781 v_782 v_783 v_784 v_785 v_786 v_787 v_788 v_789 v_790 v_791 v_792 v_793 v_794 v_795 v_796 v_797 v_798 v_799 v_800 v_801 v_802 v_803 v_804 v_805 v_806 v_807 v_808 v_809 v_810 v_811 v_812 v_813 v_814 v_815 v_816 v_817 v_818 v_819 v_820 v_821 v_822 v_823)
+** Ordering
+02_do-grind < 03_do-glaze
+04_do-grind < 05_do-immersion-varnish
+07_do-grind < 08_do-glaze
+09_do-grind < 10_do-glaze
+11_do-plane < 12_do-glaze
+14_do-grind < 15_do-immersion-varnish
+16_do-grind < 17_do-immersion-varnish
+18_do-grind < 19_do-glaze
+20_do-plane < 21_do-immersion-varnish
+22_do-saw-large < 69_do-plane
+23_do-saw-large < 63_do-plane
+24_do-saw-large < 57_do-plane
+25_do-saw-large < 27_do-saw-medium
+25_do-saw-large < 28_do-saw-medium
+25_do-saw-large < 29_do-saw-medium
+25_do-saw-large < 30_do-saw-small
+25_do-saw-large < 31_do-saw-small
+25_do-saw-large < 32_do-saw-medium
+25_do-saw-large < 33_do-saw-small
+25_do-saw-large < 52_do-glaze
+26_do-saw-large < 47_do-plane
+27_do-saw-medium < 71_do-plane
+28_do-saw-medium < 56_do-glaze
+29_do-saw-medium < 54_do-plane
+30_do-saw-small < 65_do-glaze
+31_do-saw-small < 51_do-plane
+33_do-saw-small < 73_do-plane
+34_do-saw-small < 66_do-plane
+35_do-saw-small < 50_do-immersion-varnish
+36_do-saw-medium < 37_do-saw-small
+36_do-saw-medium < 38_do-saw-small
+36_do-saw-medium < 62_do-glaze
+37_do-saw-small < 53_do-plane
+38_do-saw-small < 46_do-glaze
+39_do-saw-medium < 40_do-saw-small
+39_do-saw-medium < 44_do-plane
+40_do-saw-small < 60_do-plane
+42_do-saw-medium < 43_do-saw-small
+42_do-saw-medium < 49_do-immersion-varnish
+43_do-saw-small < 68_do-immersion-varnish
+44_do-plane < 45_do-immersion-varnish
+47_do-plane < 48_do-glaze
+52_do-glaze < 79_do-plane
+54_do-plane < 55_do-immersion-varnish
+56_do-glaze < 81_do-plane
+57_do-plane < 58_do-grind
+58_do-grind < 59_do-glaze
+60_do-plane < 61_do-glaze
+63_do-plane < 64_do-immersion-varnish
+66_do-plane < 67_do-glaze
+69_do-plane < 70_do-immersion-varnish
+71_do-plane < 72_do-immersion-varnish
+73_do-plane < 74_do-immersion-varnish
+75_do-plane < 76_do-immersion-varnish
+77_do-plane < 78_do-glaze
+79_do-plane < 80_do-glaze
+81_do-plane < 82_do-glaze
+82_do-glaze < 83_do-grind
+83_do-grind < 84_do-glaze
+** Binding
+v_0=b0
+v_1=b1
+v_2=b2
+v_3=b3
+v_4=b4
+v_5=b5
+v_6=b6
+v_7=b7
+v_8=b8
+v_9=b9
+v_10=beech
+v_11=black
+v_12=blue
+v_13=cherry
+v_14=colourfragments
+v_15=glazed
+v_16=glazer0
+v_17=green
+v_18=grinder0
+v_19=highspeed-saw0
+v_20=immersion-varnisher0
+v_21=large
+v_22=mahogany
+v_23=mauve
+v_24=medium
+v_25=natural
+v_26=oak
+v_27=p0
+v_28=p1
+v_29=p10
+v_30=p11
+v_31=p12
+v_32=p13
+v_33=p14
+v_34=p15
+v_35=p16
+v_36=p17
+v_37=p18
+v_38=p19
+v_39=p2
+v_40=p20
+v_41=p21
+v_42=p22
+v_43=p23
+v_44=p24
+v_45=p25
+v_46=p26
+v_47=p27
+v_48=p28
+v_49=p29
+v_50=p3
+v_51=p30
+v_52=p31
+v_53=p32
+v_54=p33
+v_55=p34
+v_56=p35
+v_57=p4
+v_58=p5
+v_59=p6
+v_60=p7
+v_61=p8
+v_62=p9
+v_63=pine
+v_64=planer0
+v_65=red
+v_66=rough
+v_67=s0
+v_68=s1
+v_69=s2
+v_70=s3
+v_71=s4
+v_72=s5
+v_73=s6
+v_74=s7
+v_75=s8
+v_76=s9
+v_77=saw0
+v_78=small
+v_79=smooth
+v_80=spray-varnisher0
+v_81=teak
+v_82=untreated
+v_83=varnished
+v_84=verysmooth
+v_85=walnut
+v_86=white
+v_87=verysmooth
+v_88=natural
+v_89=p9
+v_90=grinder0
+v_91=verysmooth
+v_92=black
+v_93=glazed
+v_94=untreated
+v_95=verysmooth
+v_96=natural
+v_97=p7
+v_98=grinder0
+v_99=verysmooth
+v_100=blue
+v_101=glazed
+v_102=untreated
+v_103=glazed
+v_104=untreated
+v_105=natural
+v_106=p7
+v_107=glazer0
+v_108=green
+v_109=verysmooth
+v_110=natural
+v_111=p5
+v_112=grinder0
+v_113=smooth
+v_114=white
+v_115=glazed
+v_116=untreated
+v_117=untreated
+v_118=varnished
+v_119=natural
+v_120=p5
+v_121=immersion-varnisher0
+v_122=mauve
+v_123=verysmooth
+v_124=verysmooth
+v_125=natural
+v_126=p35
+v_127=grinder0
+v_128=smooth
+v_129=red
+v_130=varnished
+v_131=colourfragments
+v_132=verysmooth
+v_133=natural
+v_134=p34
+v_135=grinder0
+v_136=verysmooth
+v_137=green
+v_138=colourfragments
+v_139=untreated
+v_140=glazed
+v_141=untreated
+v_142=natural
+v_143=p34
+v_144=glazer0
+v_145=white
+v_146=verysmooth
+v_147=natural
+v_148=p27
+v_149=grinder0
+v_150=verysmooth
+v_151=mauve
+v_152=colourfragments
+v_153=untreated
+v_154=glazed
+v_155=untreated
+v_156=natural
+v_157=p27
+v_158=glazer0
+v_159=black
+v_160=smooth
+v_161=untreated
+v_162=natural
+v_163=p26
+v_164=planer0
+v_165=rough
+v_166=green
+v_167=varnished
+v_168=glazed
+v_169=untreated
+v_170=natural
+v_171=p26
+v_172=glazer0
+v_173=black
+v_174=smooth
+v_175=untreated
+v_176=natural
+v_177=p24
+v_178=planer0
+v_179=verysmooth
+v_180=red
+v_181=glazed
+v_182=verysmooth
+v_183=natural
+v_184=p23
+v_185=grinder0
+v_186=verysmooth
+v_187=black
+v_188=glazed
+v_189=untreated
+v_190=untreated
+v_191=varnished
+v_192=natural
+v_193=p23
+v_194=immersion-varnisher0
+v_195=red
+v_196=verysmooth
+v_197=verysmooth
+v_198=natural
+v_199=p20
+v_200=grinder0
+v_201=smooth
+v_202=red
+v_203=colourfragments
+v_204=untreated
+v_205=untreated
+v_206=varnished
+v_207=natural
+v_208=p20
+v_209=immersion-varnisher0
+v_210=mauve
+v_211=verysmooth
+v_212=verysmooth
+v_213=natural
+v_214=p19
+v_215=grinder0
+v_216=smooth
+v_217=mauve
+v_218=colourfragments
+v_219=untreated
+v_220=glazed
+v_221=untreated
+v_222=natural
+v_223=p19
+v_224=glazer0
+v_225=black
+v_226=smooth
+v_227=untreated
+v_228=natural
+v_229=p12
+v_230=planer0
+v_231=rough
+v_232=natural
+v_233=colourfragments
+v_234=untreated
+v_235=varnished
+v_236=natural
+v_237=p12
+v_238=immersion-varnisher0
+v_239=mauve
+v_240=smooth
+v_241=untreated
+v_242=large
+v_243=natural
+v_244=b0
+v_245=p10
+v_246=saw0
+v_247=cherry
+v_248=rough
+v_249=s9
+v_250=s7
+v_251=s8
+v_252=s6
+v_253=untreated
+v_254=large
+v_255=natural
+v_256=b0
+v_257=p16
+v_258=saw0
+v_259=cherry
+v_260=rough
+v_261=s9
+v_262=s7
+v_263=s8
+v_264=s6
+v_265=untreated
+v_266=large
+v_267=natural
+v_268=b0
+v_269=p2
+v_270=saw0
+v_271=cherry
+v_272=rough
+v_273=s9
+v_274=s7
+v_275=s8
+v_276=s6
+v_277=untreated
+v_278=large
+v_279=natural
+v_280=b0
+v_281=p29
+v_282=saw0
+v_283=cherry
+v_284=rough
+v_285=s9
+v_286=s7
+v_287=s8
+v_288=s6
+v_289=untreated
+v_290=large
+v_291=natural
+v_292=b0
+v_293=p4
+v_294=saw0
+v_295=cherry
+v_296=rough
+v_297=s9
+v_298=s7
+v_299=s8
+v_300=s6
+v_301=untreated
+v_302=medium
+v_303=natural
+v_304=b0
+v_305=p1
+v_306=saw0
+v_307=cherry
+v_308=rough
+v_309=s6
+v_310=s5
+v_311=s4
+v_312=untreated
+v_313=medium
+v_314=natural
+v_315=b0
+v_316=p21
+v_317=saw0
+v_318=cherry
+v_319=rough
+v_320=s6
+v_321=s5
+v_322=s4
+v_323=untreated
+v_324=medium
+v_325=natural
+v_326=b0
+v_327=p22
+v_328=saw0
+v_329=cherry
+v_330=rough
+v_331=s6
+v_332=s5
+v_333=s4
+v_334=untreated
+v_335=small
+v_336=natural
+v_337=b0
+v_338=p15
+v_339=saw0
+v_340=cherry
+v_341=rough
+v_342=s6
+v_343=s5
+v_344=untreated
+v_345=small
+v_346=natural
+v_347=b0
+v_348=p30
+v_349=saw0
+v_350=cherry
+v_351=rough
+v_352=s6
+v_353=s5
+v_354=untreated
+v_355=medium
+v_356=natural
+v_357=b0
+v_358=p11
+v_359=saw0
+v_360=cherry
+v_361=rough
+v_362=s6
+v_363=s5
+v_364=s4
+v_365=untreated
+v_366=small
+v_367=natural
+v_368=b0
+v_369=p0
+v_370=saw0
+v_371=cherry
+v_372=rough
+v_373=s6
+v_374=s5
+v_375=untreated
+v_376=small
+v_377=natural
+v_378=b2
+v_379=p14
+v_380=saw0
+v_381=mahogany
+v_382=rough
+v_383=s2
+v_384=s1
+v_385=untreated
+v_386=small
+v_387=natural
+v_388=b3
+v_389=p32
+v_390=saw0
+v_391=oak
+v_392=smooth
+v_393=s5
+v_394=s4
+v_395=untreated
+v_396=medium
+v_397=natural
+v_398=b4
+v_399=p17
+v_400=saw0
+v_401=pine
+v_402=rough
+v_403=s5
+v_404=s4
+v_405=s3
+v_406=untreated
+v_407=small
+v_408=natural
+v_409=b4
+v_410=p25
+v_411=saw0
+v_412=pine
+v_413=rough
+v_414=s3
+v_415=s2
+v_416=untreated
+v_417=small
+v_418=natural
+v_419=b4
+v_420=p6
+v_421=saw0
+v_422=pine
+v_423=rough
+v_424=s3
+v_425=s2
+v_426=untreated
+v_427=medium
+v_428=natural
+v_429=b6
+v_430=p8
+v_431=saw0
+v_432=walnut
+v_433=rough
+v_434=s8
+v_435=s7
+v_436=s6
+v_437=untreated
+v_438=small
+v_439=natural
+v_440=b6
+v_441=p18
+v_442=saw0
+v_443=walnut
+v_444=rough
+v_445=s6
+v_446=s5
+v_447=untreated
+v_448=small
+v_449=natural
+v_450=b8
+v_451=p28
+v_452=saw0
+v_453=teak
+v_454=rough
+v_455=s6
+v_456=s5
+v_457=untreated
+v_458=medium
+v_459=natural
+v_460=b9
+v_461=p33
+v_462=saw0
+v_463=beech
+v_464=smooth
+v_465=s9
+v_466=s8
+v_467=s7
+v_468=untreated
+v_469=small
+v_470=natural
+v_471=b9
+v_472=p13
+v_473=saw0
+v_474=beech
+v_475=smooth
+v_476=s7
+v_477=s6
+v_478=smooth
+v_479=untreated
+v_480=natural
+v_481=p8
+v_482=planer0
+v_483=rough
+v_484=natural
+v_485=untreated
+v_486=untreated
+v_487=varnished
+v_488=natural
+v_489=p8
+v_490=immersion-varnisher0
+v_491=natural
+v_492=smooth
+v_493=glazed
+v_494=untreated
+v_495=natural
+v_496=p6
+v_497=glazer0
+v_498=black
+v_499=smooth
+v_500=untreated
+v_501=natural
+v_502=p4
+v_503=planer0
+v_504=rough
+v_505=natural
+v_506=untreated
+v_507=glazed
+v_508=untreated
+v_509=natural
+v_510=p4
+v_511=glazer0
+v_512=black
+v_513=untreated
+v_514=varnished
+v_515=natural
+v_516=p33
+v_517=immersion-varnisher0
+v_518=black
+v_519=smooth
+v_520=untreated
+v_521=varnished
+v_522=natural
+v_523=p32
+v_524=immersion-varnisher0
+v_525=black
+v_526=smooth
+v_527=smooth
+v_528=untreated
+v_529=natural
+v_530=p30
+v_531=planer0
+v_532=rough
+v_533=natural
+v_534=untreated
+v_535=glazed
+v_536=untreated
+v_537=natural
+v_538=p29
+v_539=glazer0
+v_540=white
+v_541=smooth
+v_542=untreated
+v_543=natural
+v_544=p25
+v_545=planer0
+v_546=rough
+v_547=natural
+v_548=untreated
+v_549=smooth
+v_550=untreated
+v_551=natural
+v_552=p22
+v_553=planer0
+v_554=rough
+v_555=natural
+v_556=untreated
+v_557=untreated
+v_558=varnished
+v_559=natural
+v_560=p22
+v_561=immersion-varnisher0
+v_562=mauve
+v_563=smooth
+v_564=glazed
+v_565=untreated
+v_566=natural
+v_567=p21
+v_568=glazer0
+v_569=mauve
+v_570=smooth
+v_571=untreated
+v_572=natural
+v_573=p2
+v_574=planer0
+v_575=rough
+v_576=natural
+v_577=untreated
+v_578=verysmooth
+v_579=natural
+v_580=p2
+v_581=grinder0
+v_582=smooth
+v_583=natural
+v_584=untreated
+v_585=untreated
+v_586=glazed
+v_587=untreated
+v_588=natural
+v_589=p2
+v_590=glazer0
+v_591=black
+v_592=smooth
+v_593=untreated
+v_594=natural
+v_595=p18
+v_596=planer0
+v_597=rough
+v_598=natural
+v_599=untreated
+v_600=glazed
+v_601=untreated
+v_602=natural
+v_603=p18
+v_604=glazer0
+v_605=white
+v_606=glazed
+v_607=untreated
+v_608=natural
+v_609=p17
+v_610=glazer0
+v_611=black
+v_612=smooth
+v_613=untreated
+v_614=natural
+v_615=p16
+v_616=planer0
+v_617=rough
+v_618=natural
+v_619=untreated
+v_620=untreated
+v_621=varnished
+v_622=natural
+v_623=p16
+v_624=immersion-varnisher0
+v_625=black
+v_626=smooth
+v_627=glazed
+v_628=untreated
+v_629=natural
+v_630=p15
+v_631=glazer0
+v_632=red
+v_633=smooth
+v_634=untreated
+v_635=natural
+v_636=p14
+v_637=planer0
+v_638=rough
+v_639=natural
+v_640=untreated
+v_641=glazed
+v_642=untreated
+v_643=natural
+v_644=p14
+v_645=glazer0
+v_646=black
+v_647=untreated
+v_648=varnished
+v_649=natural
+v_650=p13
+v_651=immersion-varnisher0
+v_652=green
+v_653=smooth
+v_654=smooth
+v_655=untreated
+v_656=natural
+v_657=p10
+v_658=planer0
+v_659=rough
+v_660=natural
+v_661=untreated
+v_662=untreated
+v_663=varnished
+v_664=natural
+v_665=p10
+v_666=immersion-varnisher0
+v_667=blue
+v_668=smooth
+v_669=smooth
+v_670=untreated
+v_671=natural
+v_672=p1
+v_673=planer0
+v_674=rough
+v_675=natural
+v_676=untreated
+v_677=untreated
+v_678=varnished
+v_679=natural
+v_680=p1
+v_681=immersion-varnisher0
+v_682=mauve
+v_683=smooth
+v_684=smooth
+v_685=untreated
+v_686=natural
+v_687=p0
+v_688=planer0
+v_689=rough
+v_690=natural
+v_691=untreated
+v_692=untreated
+v_693=varnished
+v_694=natural
+v_695=p0
+v_696=immersion-varnisher0
+v_697=black
+v_698=smooth
+v_699=smooth
+v_700=untreated
+v_701=natural
+v_702=p31
+v_703=planer0
+v_704=verysmooth
+v_705=mauve
+v_706=varnished
+v_707=untreated
+v_708=varnished
+v_709=natural
+v_710=p31
+v_711=immersion-varnisher0
+v_712=white
+v_713=smooth
+v_714=smooth
+v_715=untreated
+v_716=natural
+v_717=p3
+v_718=planer0
+v_719=verysmooth
+v_720=green
+v_721=glazed
+v_722=glazed
+v_723=untreated
+v_724=natural
+v_725=p3
+v_726=glazer0
+v_727=black
+v_728=smooth
+v_729=untreated
+v_730=natural
+v_731=p29
+v_732=planer0
+v_733=rough
+v_734=white
+v_735=glazed
+v_736=glazed
+v_737=untreated
+v_738=natural
+v_739=p29
+v_740=glazer0
+v_741=white
+v_742=smooth
+v_743=untreated
+v_744=natural
+v_745=p21
+v_746=planer0
+v_747=rough
+v_748=mauve
+v_749=glazed
+v_750=glazed
+v_751=untreated
+v_752=natural
+v_753=p21
+v_754=glazer0
+v_755=mauve
+v_756=verysmooth
+v_757=natural
+v_758=p21
+v_759=grinder0
+v_760=smooth
+v_761=mauve
+v_762=glazed
+v_763=untreated
+v_764=glazed
+v_765=untreated
+v_766=natural
+v_767=p21
+v_768=glazer0
+v_769=mauve
+v_770=beech
+v_771=black
+v_772=blue
+v_773=cherry
+v_774=glazed
+v_775=green
+v_776=mahogany
+v_777=mauve
+v_778=natural
+v_779=oak
+v_780=p0
+v_781=p1
+v_782=p10
+v_783=p11
+v_784=p12
+v_785=p13
+v_786=p14
+v_787=p15
+v_788=p16
+v_789=p17
+v_790=p18
+v_791=p19
+v_792=p2
+v_793=p20
+v_794=p21
+v_795=p22
+v_796=p23
+v_797=p24
+v_798=p25
+v_799=p26
+v_800=p27
+v_801=p28
+v_802=p29
+v_803=p3
+v_804=p30
+v_805=p31
+v_806=p32
+v_807=p33
+v_808=p34
+v_809=p35
+v_810=p4
+v_811=p5
+v_812=p6
+v_813=p7
+v_814=p8
+v_815=p9
+v_816=pine
+v_817=red
+v_818=smooth
+v_819=teak
+v_820=varnished
+v_821=verysmooth
+v_822=walnut
+v_823=white

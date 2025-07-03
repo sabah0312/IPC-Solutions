@@ -1,0 +1,343 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31)
+01_drive(v_32 v_33 v_34)
+02_drive(v_35 v_36 v_37)
+03_drive(v_38 v_39 v_40)
+04_drive(v_41 v_42 v_43)
+05_pick-up(v_44 v_45 v_46 v_47 v_48)
+06_drive(v_49 v_50 v_51)
+07_pick-up(v_52 v_53 v_54 v_55 v_56)
+08_pick-up(v_57 v_58 v_59 v_60 v_61)
+09_drive(v_62 v_63 v_64)
+10_drive(v_65 v_66 v_67)
+11_drive(v_68 v_69 v_70)
+12_drop(v_71 v_72 v_73 v_74 v_75)
+13_drive(v_76 v_77 v_78)
+14_drive(v_79 v_80 v_81)
+15_drive(v_82 v_83 v_84)
+16_drive(v_85 v_86 v_87)
+17_pick-up(v_88 v_89 v_90 v_91 v_92)
+18_drive(v_93 v_94 v_95)
+19_pick-up(v_96 v_97 v_98 v_99 v_100)
+20_drive(v_101 v_102 v_103)
+21_drop(v_104 v_105 v_106 v_107 v_108)
+22_pick-up(v_109 v_110 v_111 v_112 v_113)
+23_drive(v_114 v_115 v_116)
+24_drive(v_117 v_118 v_119)
+25_drive(v_120 v_121 v_122)
+26_drive(v_123 v_124 v_125)
+27_drive(v_126 v_127 v_128)
+28_drive(v_129 v_130 v_131)
+29_drive(v_132 v_133 v_134)
+30_drop(v_135 v_136 v_137 v_138 v_139)
+31_drop(v_140 v_141 v_142 v_143 v_144)
+32_drive(v_145 v_146 v_147)
+33_drop(v_148 v_149 v_150 v_151 v_152)
+34_drive(v_153 v_154 v_155)
+35_drive(v_156 v_157 v_158)
+36_drive(v_159 v_160 v_161)
+37_drive(v_162 v_163 v_164)
+38_drive(v_165 v_166 v_167)
+39_drive(v_168 v_169 v_170)
+40_drive(v_171 v_172 v_173)
+41_drive(v_174 v_175 v_176)
+42_pick-up(v_177 v_178 v_179 v_180 v_181)
+43_drive(v_182 v_183 v_184)
+44_drive(v_185 v_186 v_187)
+45_drive(v_188 v_189 v_190)
+46_drive(v_191 v_192 v_193)
+47_drive(v_194 v_195 v_196)
+48_drive(v_197 v_198 v_199)
+49_drive(v_200 v_201 v_202)
+50_drive(v_203 v_204 v_205)
+51_drive(v_206 v_207 v_208)
+52_drop(v_209 v_210 v_211 v_212 v_213)
+53_drive(v_214 v_215 v_216)
+54_drop(v_217 v_218 v_219 v_220 v_221)
+goal(v_222 v_223 v_224 v_225 v_226 v_227 v_228 v_229 v_230 v_231 v_232)
+** Ordering
+01_drive < 02_drive
+02_drive < 11_drive
+03_drive < 04_drive
+04_drive < 09_drive
+05_pick-up < 23_drive
+06_drive < 10_drive
+07_pick-up < 12_drop
+08_pick-up < 28_drive
+09_drive < 16_drive
+10_drive < 13_drive
+11_drive < 14_drive
+12_drop < 08_pick-up
+13_drive < 15_drive
+14_drive < 25_drive
+15_drive < 18_drive
+16_drive < 07_pick-up
+17_pick-up < 39_drive
+18_drive < 20_drive
+19_pick-up < 24_drive
+20_drive < 05_pick-up
+21_drop < 51_drive
+22_pick-up < 34_drive
+23_drive < 19_pick-up
+24_drive < 29_drive
+25_drive < 26_drive
+26_drive < 27_drive
+27_drive < 17_pick-up
+28_drive < 32_drive
+29_drive < 35_drive
+30_drop < 41_drive
+31_drop < 53_drive
+32_drive < 22_pick-up
+34_drive < 45_drive
+35_drive < 36_drive
+36_drive < 37_drive
+37_drive < 38_drive
+38_drive < 30_drop
+39_drive < 40_drive
+40_drive < 42_pick-up
+41_drive < 44_drive
+42_pick-up < 43_drive
+43_drive < 46_drive
+44_drive < 54_drop
+45_drive < 47_drive
+46_drive < 48_drive
+47_drive < 49_drive
+48_drive < 50_drive
+49_drive < 21_drop
+50_drive < 31_drop
+51_drive < 52_drop
+53_drive < 33_drop
+** Binding
+v_0=capacity-0
+v_1=capacity-1
+v_2=capacity-2
+v_3=capacity-3
+v_4=capacity-4
+v_5=city-1-loc-1
+v_6=city-1-loc-2
+v_7=city-1-loc-3
+v_8=city-1-loc-4
+v_9=city-1-loc-5
+v_10=city-1-loc-6
+v_11=city-1-loc-7
+v_12=city-1-loc-8
+v_13=city-1-loc-9
+v_14=city-2-loc-1
+v_15=city-2-loc-2
+v_16=city-2-loc-3
+v_17=city-2-loc-4
+v_18=city-2-loc-5
+v_19=city-2-loc-6
+v_20=city-2-loc-7
+v_21=city-2-loc-8
+v_22=city-2-loc-9
+v_23=package-1
+v_24=package-2
+v_25=package-3
+v_26=package-4
+v_27=package-5
+v_28=package-6
+v_29=truck-1
+v_30=truck-2
+v_31=truck-3
+v_32=truck-2
+v_33=city-2-loc-6
+v_34=city-2-loc-2
+v_35=truck-2
+v_36=city-2-loc-2
+v_37=city-2-loc-5
+v_38=truck-3
+v_39=city-2-loc-3
+v_40=city-2-loc-4
+v_41=truck-3
+v_42=city-2-loc-4
+v_43=city-2-loc-9
+v_44=truck-1
+v_45=city-1-loc-2
+v_46=package-3
+v_47=capacity-3
+v_48=capacity-4
+v_49=truck-1
+v_50=city-2-loc-4
+v_51=city-2-loc-9
+v_52=truck-3
+v_53=city-1-loc-4
+v_54=package-1
+v_55=capacity-2
+v_56=capacity-3
+v_57=truck-3
+v_58=city-1-loc-4
+v_59=package-1
+v_60=capacity-2
+v_61=capacity-3
+v_62=truck-3
+v_63=city-2-loc-9
+v_64=city-1-loc-5
+v_65=truck-1
+v_66=city-2-loc-9
+v_67=city-1-loc-5
+v_68=truck-2
+v_69=city-2-loc-5
+v_70=city-2-loc-3
+v_71=truck-3
+v_72=city-1-loc-4
+v_73=package-1
+v_74=capacity-2
+v_75=capacity-3
+v_76=truck-1
+v_77=city-1-loc-5
+v_78=city-1-loc-1
+v_79=truck-2
+v_80=city-2-loc-3
+v_81=city-2-loc-4
+v_82=truck-1
+v_83=city-1-loc-1
+v_84=city-1-loc-3
+v_85=truck-3
+v_86=city-1-loc-5
+v_87=city-1-loc-4
+v_88=truck-2
+v_89=city-1-loc-4
+v_90=package-5
+v_91=capacity-3
+v_92=capacity-4
+v_93=truck-1
+v_94=city-1-loc-3
+v_95=city-1-loc-6
+v_96=truck-1
+v_97=city-1-loc-6
+v_98=package-6
+v_99=capacity-2
+v_100=capacity-3
+v_101=truck-1
+v_102=city-1-loc-6
+v_103=city-1-loc-2
+v_104=truck-3
+v_105=city-2-loc-4
+v_106=package-1
+v_107=capacity-1
+v_108=capacity-2
+v_109=truck-3
+v_110=city-1-loc-3
+v_111=package-2
+v_112=capacity-1
+v_113=capacity-2
+v_114=truck-1
+v_115=city-1-loc-2
+v_116=city-1-loc-6
+v_117=truck-1
+v_118=city-1-loc-6
+v_119=city-1-loc-3
+v_120=truck-2
+v_121=city-2-loc-4
+v_122=city-2-loc-9
+v_123=truck-2
+v_124=city-2-loc-9
+v_125=city-1-loc-5
+v_126=truck-2
+v_127=city-1-loc-5
+v_128=city-1-loc-4
+v_129=truck-3
+v_130=city-1-loc-4
+v_131=city-1-loc-7
+v_132=truck-1
+v_133=city-1-loc-3
+v_134=city-1-loc-1
+v_135=truck-1
+v_136=city-2-loc-3
+v_137=package-6
+v_138=capacity-2
+v_139=capacity-3
+v_140=truck-2
+v_141=city-2-loc-1
+v_142=package-5
+v_143=capacity-2
+v_144=capacity-3
+v_145=truck-3
+v_146=city-1-loc-7
+v_147=city-1-loc-3
+v_148=truck-2
+v_149=city-2-loc-7
+v_150=package-4
+v_151=capacity-3
+v_152=capacity-4
+v_153=truck-3
+v_154=city-1-loc-3
+v_155=city-1-loc-1
+v_156=truck-1
+v_157=city-1-loc-1
+v_158=city-1-loc-5
+v_159=truck-1
+v_160=city-1-loc-5
+v_161=city-2-loc-9
+v_162=truck-1
+v_163=city-2-loc-9
+v_164=city-2-loc-4
+v_165=truck-1
+v_166=city-2-loc-4
+v_167=city-2-loc-3
+v_168=truck-2
+v_169=city-1-loc-4
+v_170=city-1-loc-1
+v_171=truck-2
+v_172=city-1-loc-1
+v_173=city-1-loc-5
+v_174=truck-1
+v_175=city-2-loc-3
+v_176=city-2-loc-2
+v_177=truck-2
+v_178=city-1-loc-5
+v_179=package-4
+v_180=capacity-2
+v_181=capacity-3
+v_182=truck-2
+v_183=city-1-loc-5
+v_184=city-2-loc-9
+v_185=truck-1
+v_186=city-2-loc-2
+v_187=city-2-loc-6
+v_188=truck-3
+v_189=city-1-loc-1
+v_190=city-1-loc-5
+v_191=truck-2
+v_192=city-2-loc-9
+v_193=city-2-loc-4
+v_194=truck-3
+v_195=city-1-loc-5
+v_196=city-2-loc-9
+v_197=truck-2
+v_198=city-2-loc-4
+v_199=city-2-loc-3
+v_200=truck-3
+v_201=city-2-loc-9
+v_202=city-2-loc-4
+v_203=truck-2
+v_204=city-2-loc-3
+v_205=city-2-loc-1
+v_206=truck-3
+v_207=city-2-loc-4
+v_208=city-2-loc-3
+v_209=truck-3
+v_210=city-2-loc-3
+v_211=package-2
+v_212=capacity-2
+v_213=capacity-3
+v_214=truck-2
+v_215=city-2-loc-1
+v_216=city-2-loc-7
+v_217=truck-1
+v_218=city-2-loc-6
+v_219=package-3
+v_220=capacity-3
+v_221=capacity-4
+v_222=city-2-loc-1
+v_223=city-2-loc-3
+v_224=city-2-loc-4
+v_225=city-2-loc-6
+v_226=city-2-loc-7
+v_227=package-1
+v_228=package-2
+v_229=package-3
+v_230=package-4
+v_231=package-5
+v_232=package-6

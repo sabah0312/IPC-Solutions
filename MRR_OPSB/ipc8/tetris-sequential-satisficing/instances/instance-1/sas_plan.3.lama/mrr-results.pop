@@ -1,0 +1,260 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44)
+01_move_two(v_45 v_46 v_47 v_48)
+02_move_two(v_49 v_50 v_51 v_52)
+03_move_two(v_53 v_54 v_55 v_56)
+04_move_two(v_57 v_58 v_59 v_60)
+05_move_two(v_61 v_62 v_63 v_64)
+06_move_l_right(v_65 v_66 v_67 v_68 v_69 v_70 v_71)
+07_move_l_down(v_72 v_73 v_74 v_75 v_76 v_77)
+08_move_l_down(v_78 v_79 v_80 v_81 v_82 v_83)
+09_move_l_down(v_84 v_85 v_86 v_87 v_88 v_89)
+10_move_l_down(v_90 v_91 v_92 v_93 v_94 v_95)
+11_move_square(v_96 v_97 v_98)
+12_move_two(v_99 v_100 v_101 v_102)
+13_move_two(v_103 v_104 v_105 v_106)
+14_move_two(v_107 v_108 v_109 v_110)
+15_move_two(v_111 v_112 v_113 v_114)
+16_move_two(v_115 v_116 v_117 v_118)
+17_move_two(v_119 v_120 v_121 v_122)
+18_move_two(v_123 v_124 v_125 v_126)
+19_move_two(v_127 v_128 v_129 v_130)
+20_move_two(v_131 v_132 v_133 v_134)
+21_move_two(v_135 v_136 v_137 v_138)
+22_move_two(v_139 v_140 v_141 v_142)
+23_move_l_down(v_143 v_144 v_145 v_146 v_147 v_148)
+24_move_two(v_149 v_150 v_151 v_152)
+25_move_two(v_153 v_154 v_155 v_156)
+26_move_two(v_157 v_158 v_159 v_160)
+27_move_two(v_161 v_162 v_163 v_164)
+28_move_two(v_165 v_166 v_167 v_168)
+29_move_square(v_169 v_170 v_171)
+goal(v_172 v_173 v_174 v_175 v_176 v_177 v_178 v_179 v_180 v_181 v_182 v_183 v_184 v_185 v_186 v_187 v_188 v_189 v_190 v_191)
+** Ordering
+01_move_two < 03_move_two
+01_move_two < 07_move_l_down
+02_move_two < 05_move_two
+03_move_two < 04_move_two
+03_move_two < 13_move_two
+04_move_two < 16_move_two
+04_move_two < 19_move_two
+05_move_two < 12_move_two
+06_move_l_right < 08_move_l_down
+07_move_l_down < 06_move_l_right
+08_move_l_down < 09_move_l_down
+08_move_l_down < 17_move_two
+09_move_l_down < 10_move_l_down
+09_move_l_down < 18_move_two
+10_move_l_down < 23_move_l_down
+10_move_l_down < 24_move_two
+11_move_square < 05_move_two
+11_move_square < 29_move_square
+12_move_two < 13_move_two
+13_move_two < 16_move_two
+14_move_two < 15_move_two
+15_move_two < 17_move_two
+16_move_two < 20_move_two
+17_move_two < 18_move_two
+18_move_two < 24_move_two
+19_move_two < 20_move_two
+19_move_two < 21_move_two
+21_move_two < 22_move_two
+22_move_two < 26_move_two
+23_move_l_down < 25_move_two
+24_move_two < 25_move_two
+26_move_two < 27_move_two
+27_move_two < 28_move_two
+29_move_square < 12_move_two
+** Binding
+v_0=f0-0f
+v_1=f0-1f
+v_2=f0-2f
+v_3=f0-3f
+v_4=f1-0f
+v_5=f1-1f
+v_6=f1-2f
+v_7=f1-3f
+v_8=f2-0f
+v_9=f2-1f
+v_10=f2-2f
+v_11=f2-3f
+v_12=f3-0f
+v_13=f3-1f
+v_14=f3-2f
+v_15=f3-3f
+v_16=f4-0f
+v_17=f4-1f
+v_18=f4-2f
+v_19=f4-3f
+v_20=f5-0f
+v_21=f5-1f
+v_22=f5-2f
+v_23=f5-3f
+v_24=f6-0f
+v_25=f6-1f
+v_26=f6-2f
+v_27=f6-3f
+v_28=f7-0f
+v_29=f7-1f
+v_30=f7-2f
+v_31=f7-3f
+v_32=f8-0f
+v_33=f8-1f
+v_34=f8-2f
+v_35=f8-3f
+v_36=f9-0f
+v_37=f9-1f
+v_38=f9-2f
+v_39=f9-3f
+v_40=rightl0
+v_41=square0
+v_42=straight0
+v_43=straight1
+v_44=straight2
+v_45=f3-1f
+v_46=f4-1f
+v_47=f5-1f
+v_48=straight2
+v_49=f0-0f
+v_50=f1-0f
+v_51=f2-0f
+v_52=straight0
+v_53=f4-1f
+v_54=f5-1f
+v_55=f6-1f
+v_56=straight2
+v_57=f5-1f
+v_58=f6-1f
+v_59=f6-0f
+v_60=straight2
+v_61=f1-0f
+v_62=f2-0f
+v_63=f3-0f
+v_64=straight0
+v_65=f2-1f
+v_66=f3-1f
+v_67=f3-2f
+v_68=f2-2f
+v_69=f3-3f
+v_70=f2-3f
+v_71=rightl0
+v_72=f1-1f
+v_73=f2-1f
+v_74=f2-2f
+v_75=f3-1f
+v_76=f3-2f
+v_77=rightl0
+v_78=f2-2f
+v_79=f3-2f
+v_80=f3-3f
+v_81=f4-2f
+v_82=f4-3f
+v_83=rightl0
+v_84=f3-2f
+v_85=f4-2f
+v_86=f4-3f
+v_87=f5-2f
+v_88=f5-3f
+v_89=rightl0
+v_90=f4-2f
+v_91=f5-2f
+v_92=f5-3f
+v_93=f6-2f
+v_94=f6-3f
+v_95=rightl0
+v_96=f3-0f
+v_97=f4-0f
+v_98=square0
+v_99=f2-0f
+v_100=f3-0f
+v_101=f4-0f
+v_102=straight0
+v_103=f3-0f
+v_104=f4-0f
+v_105=f4-1f
+v_106=straight0
+v_107=f0-2f
+v_108=f1-2f
+v_109=f1-3f
+v_110=straight1
+v_111=f1-2f
+v_112=f1-3f
+v_113=f2-3f
+v_114=straight1
+v_115=f4-0f
+v_116=f4-1f
+v_117=f5-1f
+v_118=straight0
+v_119=f1-3f
+v_120=f2-3f
+v_121=f3-3f
+v_122=straight1
+v_123=f2-3f
+v_124=f3-3f
+v_125=f4-3f
+v_126=straight1
+v_127=f6-1f
+v_128=f6-0f
+v_129=f7-0f
+v_130=straight2
+v_131=f4-1f
+v_132=f5-1f
+v_133=f6-1f
+v_134=straight0
+v_135=f6-0f
+v_136=f7-0f
+v_137=f7-1f
+v_138=straight2
+v_139=f7-0f
+v_140=f7-1f
+v_141=f8-1f
+v_142=straight2
+v_143=f5-2f
+v_144=f6-2f
+v_145=f6-3f
+v_146=f7-2f
+v_147=f7-3f
+v_148=rightl0
+v_149=f3-3f
+v_150=f4-3f
+v_151=f5-3f
+v_152=straight1
+v_153=f4-3f
+v_154=f5-3f
+v_155=f6-3f
+v_156=straight1
+v_157=f7-1f
+v_158=f8-1f
+v_159=f9-1f
+v_160=straight2
+v_161=f8-1f
+v_162=f9-1f
+v_163=f9-0f
+v_164=straight2
+v_165=f9-1f
+v_166=f9-0f
+v_167=f8-0f
+v_168=straight2
+v_169=f4-0f
+v_170=f5-0f
+v_171=square0
+v_172=f0-0f
+v_173=f0-1f
+v_174=f0-2f
+v_175=f0-3f
+v_176=f1-0f
+v_177=f1-1f
+v_178=f1-2f
+v_179=f1-3f
+v_180=f2-0f
+v_181=f2-1f
+v_182=f2-2f
+v_183=f2-3f
+v_184=f3-0f
+v_185=f3-1f
+v_186=f3-2f
+v_187=f3-3f
+v_188=f4-0f
+v_189=f4-1f
+v_190=f4-2f
+v_191=f4-3f

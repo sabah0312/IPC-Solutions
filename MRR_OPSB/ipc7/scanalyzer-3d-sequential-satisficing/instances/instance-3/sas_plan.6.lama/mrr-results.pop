@@ -1,0 +1,176 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15)
+01_analyze-2(v_16 v_17 v_18 v_19)
+02_analyze-2(v_20 v_21 v_22 v_23)
+03_rotate-2(v_24 v_25 v_26 v_27)
+04_analyze-2(v_28 v_29 v_30 v_31)
+05_rotate-2(v_32 v_33 v_34 v_35)
+06_rotate-2(v_36 v_37 v_38 v_39)
+07_rotate-2(v_40 v_41 v_42 v_43)
+08_analyze-2(v_44 v_45 v_46 v_47)
+09_rotate-2(v_48 v_49 v_50 v_51)
+10_rotate-2(v_52 v_53 v_54 v_55)
+11_rotate-2(v_56 v_57 v_58 v_59)
+12_analyze-2(v_60 v_61 v_62 v_63)
+13_rotate-2(v_64 v_65 v_66 v_67)
+14_rotate-2(v_68 v_69 v_70 v_71)
+15_analyze-2(v_72 v_73 v_74 v_75)
+16_rotate-2(v_76 v_77 v_78 v_79)
+17_analyze-2(v_80 v_81 v_82 v_83)
+18_rotate-2(v_84 v_85 v_86 v_87)
+19_rotate-2(v_88 v_89 v_90 v_91)
+20_analyze-2(v_92 v_93 v_94 v_95)
+21_rotate-2(v_96 v_97 v_98 v_99)
+22_rotate-2(v_100 v_101 v_102 v_103)
+goal(v_104 v_105 v_106 v_107 v_108 v_109 v_110 v_111 v_112 v_113 v_114 v_115 v_116 v_117 v_118 v_119)
+** Ordering
+01_analyze-2 < 02_analyze-2
+02_analyze-2 < 03_rotate-2
+02_analyze-2 < 05_rotate-2
+03_rotate-2 < 04_analyze-2
+03_rotate-2 < 16_rotate-2
+04_analyze-2 < 06_rotate-2
+05_rotate-2 < 04_analyze-2
+05_rotate-2 < 16_rotate-2
+06_rotate-2 < 08_analyze-2
+06_rotate-2 < 18_rotate-2
+07_rotate-2 < 09_rotate-2
+08_analyze-2 < 12_analyze-2
+09_rotate-2 < 10_rotate-2
+09_rotate-2 < 11_rotate-2
+10_rotate-2 < 15_analyze-2
+11_rotate-2 < 15_analyze-2
+11_rotate-2 < 19_rotate-2
+12_analyze-2 < 10_rotate-2
+12_analyze-2 < 11_rotate-2
+13_rotate-2 < 20_analyze-2
+14_rotate-2 < 22_rotate-2
+15_analyze-2 < 17_analyze-2
+16_rotate-2 < 18_rotate-2
+16_rotate-2 < 19_rotate-2
+17_analyze-2 < 13_rotate-2
+18_rotate-2 < 22_rotate-2
+19_rotate-2 < 21_rotate-2
+20_analyze-2 < 14_rotate-2
+20_analyze-2 < 21_rotate-2
+** Binding
+v_0=car-in-1
+v_1=car-in-2
+v_2=car-in-3
+v_3=car-in-4
+v_4=car-out-1
+v_5=car-out-2
+v_6=car-out-3
+v_7=car-out-4
+v_8=seg-in-1
+v_9=seg-in-2
+v_10=seg-in-3
+v_11=seg-in-4
+v_12=seg-out-1
+v_13=seg-out-2
+v_14=seg-out-3
+v_15=seg-out-4
+v_16=seg-in-1
+v_17=seg-out-1
+v_18=car-in-1
+v_19=car-out-1
+v_20=seg-in-1
+v_21=seg-out-1
+v_22=car-out-1
+v_23=car-in-1
+v_24=seg-in-4
+v_25=seg-out-1
+v_26=car-in-4
+v_27=car-out-1
+v_28=seg-in-1
+v_29=seg-out-1
+v_30=car-out-3
+v_31=car-in-4
+v_32=seg-in-1
+v_33=seg-out-3
+v_34=car-in-1
+v_35=car-out-3
+v_36=seg-in-3
+v_37=seg-out-1
+v_38=car-in-3
+v_39=car-out-3
+v_40=seg-in-2
+v_41=seg-out-2
+v_42=car-in-2
+v_43=car-out-2
+v_44=seg-in-1
+v_45=seg-out-1
+v_46=car-in-4
+v_47=car-in-3
+v_48=seg-in-2
+v_49=seg-out-4
+v_50=car-out-2
+v_51=car-out-4
+v_52=seg-in-2
+v_53=seg-out-1
+v_54=car-out-4
+v_55=car-in-3
+v_56=seg-in-1
+v_57=seg-out-4
+v_58=car-in-4
+v_59=car-out-2
+v_60=seg-in-1
+v_61=seg-out-1
+v_62=car-in-3
+v_63=car-in-4
+v_64=seg-in-1
+v_65=seg-out-2
+v_66=car-out-2
+v_67=car-in-2
+v_68=seg-in-2
+v_69=seg-out-1
+v_70=car-in-3
+v_71=car-in-2
+v_72=seg-in-1
+v_73=seg-out-1
+v_74=car-out-2
+v_75=car-out-4
+v_76=seg-in-4
+v_77=seg-out-3
+v_78=car-out-1
+v_79=car-in-1
+v_80=seg-in-1
+v_81=seg-out-1
+v_82=car-out-4
+v_83=car-out-2
+v_84=seg-in-3
+v_85=seg-out-3
+v_86=car-out-3
+v_87=car-out-1
+v_88=seg-in-4
+v_89=seg-out-4
+v_90=car-in-1
+v_91=car-in-4
+v_92=seg-in-1
+v_93=seg-out-1
+v_94=car-in-2
+v_95=car-out-4
+v_96=seg-in-1
+v_97=seg-out-4
+v_98=car-out-4
+v_99=car-in-1
+v_100=seg-in-3
+v_101=seg-out-1
+v_102=car-out-1
+v_103=car-in-3
+v_104=car-in-1
+v_105=car-in-2
+v_106=car-in-3
+v_107=car-in-4
+v_108=car-out-1
+v_109=car-out-2
+v_110=car-out-3
+v_111=car-out-4
+v_112=seg-in-1
+v_113=seg-in-2
+v_114=seg-in-3
+v_115=seg-in-4
+v_116=seg-out-1
+v_117=seg-out-2
+v_118=seg-out-3
+v_119=seg-out-4

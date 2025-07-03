@@ -1,0 +1,245 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41)
+01_sendtohome(v_42 v_43 v_44 v_45 v_46 v_47)
+02_sendtohome(v_48 v_49 v_50 v_51 v_52 v_53)
+03_sendtofree(v_54 v_55 v_56 v_57)
+04_sendtohome-b(v_58 v_59 v_60 v_61 v_62 v_63 v_64)
+05_sendtofree(v_65 v_66 v_67 v_68)
+06_sendtohome(v_69 v_70 v_71 v_72 v_73 v_74)
+07_sendtohome(v_75 v_76 v_77 v_78 v_79 v_80)
+08_sendtofree(v_81 v_82 v_83 v_84)
+09_sendtohome-b(v_85 v_86 v_87 v_88 v_89 v_90 v_91)
+10_sendtohome(v_92 v_93 v_94 v_95 v_96 v_97)
+11_sendtohome(v_98 v_99 v_100 v_101 v_102 v_103)
+12_homefromfreecell(v_104 v_105 v_106 v_107 v_108 v_109 v_110)
+13_sendtohome(v_111 v_112 v_113 v_114 v_115 v_116)
+14_sendtohome-b(v_117 v_118 v_119 v_120 v_121 v_122 v_123)
+15_homefromfreecell(v_124 v_125 v_126 v_127 v_128 v_129 v_130)
+16_sendtohome(v_131 v_132 v_133 v_134 v_135 v_136)
+17_sendtohome(v_137 v_138 v_139 v_140 v_141 v_142)
+18_sendtohome(v_143 v_144 v_145 v_146 v_147 v_148)
+19_sendtohome-b(v_149 v_150 v_151 v_152 v_153 v_154 v_155)
+20_sendtohome-b(v_156 v_157 v_158 v_159 v_160 v_161 v_162)
+21_sendtohome-b(v_163 v_164 v_165 v_166 v_167 v_168 v_169)
+22_sendtohome-b(v_170 v_171 v_172 v_173 v_174 v_175 v_176)
+23_homefromfreecell(v_177 v_178 v_179 v_180 v_181 v_182 v_183)
+goal(v_184 v_185 v_186 v_187)
+** Ordering
+01_sendtohome < 08_sendtofree
+01_sendtohome < 11_sendtohome
+02_sendtohome < 05_sendtofree
+03_sendtofree < 04_sendtohome-b
+03_sendtofree < 05_sendtofree
+04_sendtohome-b < 09_sendtohome-b
+05_sendtofree < 08_sendtofree
+05_sendtofree < 09_sendtohome-b
+06_sendtohome < 07_sendtohome
+06_sendtohome < 14_sendtohome-b
+07_sendtohome < 12_homefromfreecell
+08_sendtofree < 06_sendtohome
+09_sendtohome-b < 10_sendtohome
+10_sendtohome < 11_sendtohome
+10_sendtohome < 14_sendtohome-b
+11_sendtohome < 17_sendtohome
+12_homefromfreecell < 13_sendtohome
+12_homefromfreecell < 15_homefromfreecell
+13_sendtohome < 16_sendtohome
+14_sendtohome-b < 15_homefromfreecell
+14_sendtohome-b < 19_sendtohome-b
+15_homefromfreecell < 23_homefromfreecell
+16_sendtohome < 17_sendtohome
+17_sendtohome < 18_sendtohome
+18_sendtohome < 19_sendtohome-b
+18_sendtohome < 23_homefromfreecell
+19_sendtohome-b < 20_sendtohome-b
+20_sendtohome-b < 21_sendtohome-b
+21_sendtohome-b < 22_sendtohome-b
+** Binding
+v_0=c
+v_1=c0
+v_2=c2
+v_3=c3
+v_4=c4
+v_5=c5
+v_6=ca
+v_7=d
+v_8=d0
+v_9=d2
+v_10=d3
+v_11=d4
+v_12=d5
+v_13=da
+v_14=h
+v_15=h0
+v_16=h2
+v_17=h3
+v_18=h4
+v_19=h5
+v_20=ha
+v_21=n0
+v_22=n1
+v_23=n10
+v_24=n11
+v_25=n12
+v_26=n13
+v_27=n2
+v_28=n3
+v_29=n4
+v_30=n5
+v_31=n6
+v_32=n7
+v_33=n8
+v_34=n9
+v_35=s
+v_36=s0
+v_37=s2
+v_38=s3
+v_39=s4
+v_40=s5
+v_41=sa
+v_42=sa
+v_43=h3
+v_44=s
+v_45=n1
+v_46=s0
+v_47=n0
+v_48=ca
+v_49=d5
+v_50=c
+v_51=n1
+v_52=c0
+v_53=n0
+v_54=s5
+v_55=da
+v_56=n4
+v_57=n3
+v_58=da
+v_59=d
+v_60=n1
+v_61=d0
+v_62=n0
+v_63=n1
+v_64=n2
+v_65=d5
+v_66=d2
+v_67=n3
+v_68=n2
+v_69=ha
+v_70=d4
+v_71=h
+v_72=n1
+v_73=h0
+v_74=n0
+v_75=h2
+v_76=c5
+v_77=h
+v_78=n2
+v_79=ha
+v_80=n1
+v_81=h3
+v_82=ha
+v_83=n2
+v_84=n1
+v_85=d2
+v_86=d
+v_87=n2
+v_88=da
+v_89=n1
+v_90=n2
+v_91=n3
+v_92=d3
+v_93=s2
+v_94=d
+v_95=n3
+v_96=d2
+v_97=n2
+v_98=s2
+v_99=c3
+v_100=s
+v_101=n2
+v_102=sa
+v_103=n1
+v_104=h3
+v_105=h
+v_106=n3
+v_107=h2
+v_108=n2
+v_109=n1
+v_110=n2
+v_111=h4
+v_112=s4
+v_113=h
+v_114=n4
+v_115=h3
+v_116=n3
+v_117=d4
+v_118=d
+v_119=n4
+v_120=d3
+v_121=n3
+v_122=n3
+v_123=n4
+v_124=d5
+v_125=d
+v_126=n5
+v_127=d4
+v_128=n4
+v_129=n2
+v_130=n3
+v_131=h5
+v_132=s3
+v_133=h
+v_134=n5
+v_135=h4
+v_136=n4
+v_137=s3
+v_138=c4
+v_139=s
+v_140=n3
+v_141=s2
+v_142=n2
+v_143=s4
+v_144=c2
+v_145=s
+v_146=n4
+v_147=s3
+v_148=n3
+v_149=c2
+v_150=c
+v_151=n2
+v_152=ca
+v_153=n1
+v_154=n4
+v_155=n5
+v_156=c3
+v_157=c
+v_158=n3
+v_159=c2
+v_160=n2
+v_161=n5
+v_162=n6
+v_163=c4
+v_164=c
+v_165=n4
+v_166=c3
+v_167=n3
+v_168=n6
+v_169=n7
+v_170=c5
+v_171=c
+v_172=n5
+v_173=c4
+v_174=n4
+v_175=n7
+v_176=n8
+v_177=s5
+v_178=s
+v_179=n5
+v_180=s4
+v_181=n4
+v_182=n3
+v_183=n4
+v_184=c5
+v_185=d5
+v_186=h5
+v_187=s5

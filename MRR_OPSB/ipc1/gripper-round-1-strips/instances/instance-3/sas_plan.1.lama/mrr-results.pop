@@ -1,0 +1,139 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11)
+01_pick(v_12 v_13 v_14)
+02_pick(v_15 v_16 v_17)
+03_move(v_18 v_19)
+04_drop(v_20 v_21 v_22)
+05_drop(v_23 v_24 v_25)
+06_move(v_26 v_27)
+07_pick(v_28 v_29 v_30)
+08_pick(v_31 v_32 v_33)
+09_move(v_34 v_35)
+10_drop(v_36 v_37 v_38)
+11_drop(v_39 v_40 v_41)
+12_move(v_42 v_43)
+13_pick(v_44 v_45 v_46)
+14_pick(v_47 v_48 v_49)
+15_move(v_50 v_51)
+16_drop(v_52 v_53 v_54)
+17_drop(v_55 v_56 v_57)
+18_move(v_58 v_59)
+19_pick(v_60 v_61 v_62)
+20_pick(v_63 v_64 v_65)
+21_move(v_66 v_67)
+22_drop(v_68 v_69 v_70)
+23_drop(v_71 v_72 v_73)
+goal(v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82)
+** Ordering
+01_pick < 03_move
+02_pick < 03_move
+03_move < 04_drop
+03_move < 05_drop
+04_drop < 06_move
+05_drop < 06_move
+06_move < 07_pick
+06_move < 08_pick
+07_pick < 09_move
+08_pick < 09_move
+09_move < 10_drop
+09_move < 11_drop
+10_drop < 12_move
+11_drop < 12_move
+12_move < 13_pick
+12_move < 14_pick
+13_pick < 15_move
+14_pick < 15_move
+15_move < 16_drop
+15_move < 17_drop
+16_drop < 18_move
+17_drop < 18_move
+18_move < 19_pick
+18_move < 20_pick
+19_pick < 21_move
+20_pick < 21_move
+21_move < 22_drop
+21_move < 23_drop
+** Binding
+v_0=ball1
+v_1=ball2
+v_2=ball3
+v_3=ball4
+v_4=ball5
+v_5=ball6
+v_6=ball7
+v_7=ball8
+v_8=left
+v_9=right
+v_10=rooma
+v_11=roomb
+v_12=ball5
+v_13=rooma
+v_14=right
+v_15=ball1
+v_16=rooma
+v_17=left
+v_18=rooma
+v_19=roomb
+v_20=ball5
+v_21=roomb
+v_22=right
+v_23=ball1
+v_24=roomb
+v_25=left
+v_26=roomb
+v_27=rooma
+v_28=ball8
+v_29=rooma
+v_30=right
+v_31=ball3
+v_32=rooma
+v_33=left
+v_34=rooma
+v_35=roomb
+v_36=ball3
+v_37=roomb
+v_38=left
+v_39=ball8
+v_40=roomb
+v_41=right
+v_42=roomb
+v_43=rooma
+v_44=ball4
+v_45=rooma
+v_46=left
+v_47=ball6
+v_48=rooma
+v_49=right
+v_50=rooma
+v_51=roomb
+v_52=ball6
+v_53=roomb
+v_54=right
+v_55=ball4
+v_56=roomb
+v_57=left
+v_58=roomb
+v_59=rooma
+v_60=ball7
+v_61=rooma
+v_62=left
+v_63=ball2
+v_64=rooma
+v_65=right
+v_66=rooma
+v_67=roomb
+v_68=ball2
+v_69=roomb
+v_70=right
+v_71=ball7
+v_72=roomb
+v_73=left
+v_74=ball1
+v_75=ball2
+v_76=ball3
+v_77=ball4
+v_78=ball5
+v_79=ball6
+v_80=ball7
+v_81=ball8
+v_82=roomb

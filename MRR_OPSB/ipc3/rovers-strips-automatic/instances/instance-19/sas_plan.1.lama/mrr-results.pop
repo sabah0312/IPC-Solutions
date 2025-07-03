@@ -1,0 +1,537 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50)
+01_navigate(v_51 v_52 v_53)
+02_calibrate(v_54 v_55 v_56 v_57)
+03_navigate(v_58 v_59 v_60)
+04_sample_soil(v_61 v_62 v_63)
+05_navigate(v_64 v_65 v_66)
+06_navigate(v_67 v_68 v_69)
+07_navigate(v_70 v_71 v_72)
+08_navigate(v_73 v_74 v_75)
+09_communicate_soil_data(v_76 v_77 v_78 v_79 v_80)
+10_sample_soil(v_81 v_82 v_83)
+11_navigate(v_84 v_85 v_86)
+12_communicate_soil_data(v_87 v_88 v_89 v_90 v_91)
+13_calibrate(v_92 v_93 v_94 v_95)
+14_take_image(v_96 v_97 v_98 v_99 v_100)
+15_communicate_image_data(v_101 v_102 v_103 v_104 v_105 v_106)
+16_take_image(v_107 v_108 v_109 v_110 v_111)
+17_calibrate(v_112 v_113 v_114 v_115)
+18_calibrate(v_116 v_117 v_118 v_119)
+19_take_image(v_120 v_121 v_122 v_123 v_124)
+20_communicate_image_data(v_125 v_126 v_127 v_128 v_129 v_130)
+21_communicate_image_data(v_131 v_132 v_133 v_134 v_135 v_136)
+22_take_image(v_137 v_138 v_139 v_140 v_141)
+23_calibrate(v_142 v_143 v_144 v_145)
+24_communicate_image_data(v_146 v_147 v_148 v_149 v_150 v_151)
+25_take_image(v_152 v_153 v_154 v_155 v_156)
+26_communicate_image_data(v_157 v_158 v_159 v_160 v_161 v_162)
+27_calibrate(v_163 v_164 v_165 v_166)
+28_take_image(v_167 v_168 v_169 v_170 v_171)
+29_calibrate(v_172 v_173 v_174 v_175)
+30_communicate_image_data(v_176 v_177 v_178 v_179 v_180 v_181)
+31_take_image(v_182 v_183 v_184 v_185 v_186)
+32_calibrate(v_187 v_188 v_189 v_190)
+33_take_image(v_191 v_192 v_193 v_194 v_195)
+34_communicate_image_data(v_196 v_197 v_198 v_199 v_200 v_201)
+35_navigate(v_202 v_203 v_204)
+36_sample_rock(v_205 v_206 v_207)
+37_communicate_image_data(v_208 v_209 v_210 v_211 v_212 v_213)
+38_navigate(v_214 v_215 v_216)
+39_navigate(v_217 v_218 v_219)
+40_communicate_rock_data(v_220 v_221 v_222 v_223 v_224)
+41_navigate(v_225 v_226 v_227)
+42_drop(v_228 v_229)
+43_navigate(v_230 v_231 v_232)
+44_navigate(v_233 v_234 v_235)
+45_sample_rock(v_236 v_237 v_238)
+46_communicate_rock_data(v_239 v_240 v_241 v_242 v_243)
+47_drop(v_244 v_245)
+48_navigate(v_246 v_247 v_248)
+49_sample_soil(v_249 v_250 v_251)
+50_navigate(v_252 v_253 v_254)
+51_drop(v_255 v_256)
+52_navigate(v_257 v_258 v_259)
+53_communicate_soil_data(v_260 v_261 v_262 v_263 v_264)
+54_navigate(v_265 v_266 v_267)
+55_navigate(v_268 v_269 v_270)
+56_sample_rock(v_271 v_272 v_273)
+57_navigate(v_274 v_275 v_276)
+58_drop(v_277 v_278)
+59_navigate(v_279 v_280 v_281)
+60_communicate_rock_data(v_282 v_283 v_284 v_285 v_286)
+61_navigate(v_287 v_288 v_289)
+62_navigate(v_290 v_291 v_292)
+63_sample_rock(v_293 v_294 v_295)
+64_navigate(v_296 v_297 v_298)
+65_drop(v_299 v_300)
+66_navigate(v_301 v_302 v_303)
+67_communicate_rock_data(v_304 v_305 v_306 v_307 v_308)
+68_navigate(v_309 v_310 v_311)
+69_navigate(v_312 v_313 v_314)
+70_navigate(v_315 v_316 v_317)
+71_sample_rock(v_318 v_319 v_320)
+72_navigate(v_321 v_322 v_323)
+73_navigate(v_324 v_325 v_326)
+74_drop(v_327 v_328)
+75_sample_rock(v_329 v_330 v_331)
+76_navigate(v_332 v_333 v_334)
+77_navigate(v_335 v_336 v_337)
+78_navigate(v_338 v_339 v_340)
+79_communicate_rock_data(v_341 v_342 v_343 v_344 v_345)
+80_communicate_rock_data(v_346 v_347 v_348 v_349 v_350)
+goal(v_351 v_352 v_353 v_354 v_355 v_356 v_357 v_358 v_359 v_360 v_361 v_362 v_363 v_364 v_365 v_366 v_367 v_368)
+** Ordering
+01_navigate < 04_sample_soil
+02_calibrate < 14_take_image
+03_navigate < 41_navigate
+04_sample_soil < 06_navigate
+04_sample_soil < 51_drop
+05_navigate < 36_sample_rock
+06_navigate < 08_navigate
+07_navigate < 35_navigate
+08_navigate < 11_navigate
+10_sample_soil < 57_navigate
+10_sample_soil < 65_drop
+11_navigate < 71_sample_rock
+13_calibrate < 52_navigate
+14_take_image < 15_communicate_image_data
+14_take_image < 29_calibrate
+16_take_image < 20_communicate_image_data
+16_take_image < 23_calibrate
+17_calibrate < 22_take_image
+18_calibrate < 25_take_image
+19_take_image < 30_communicate_image_data
+21_communicate_image_data < 59_navigate
+22_take_image < 27_calibrate
+22_take_image < 34_communicate_image_data
+23_calibrate < 19_take_image
+25_take_image < 26_communicate_image_data
+25_take_image < 32_calibrate
+26_communicate_image_data < 59_navigate
+27_calibrate < 31_take_image
+28_take_image < 24_communicate_image_data
+29_calibrate < 28_take_image
+31_take_image < 21_communicate_image_data
+32_calibrate < 33_take_image
+33_take_image < 37_communicate_image_data
+34_communicate_image_data < 59_navigate
+35_navigate < 44_navigate
+36_sample_rock < 07_navigate
+36_sample_rock < 42_drop
+37_communicate_image_data < 59_navigate
+38_navigate < 54_navigate
+39_navigate < 43_navigate
+41_navigate < 49_sample_soil
+42_drop < 56_sample_rock
+43_navigate < 48_navigate
+44_navigate < 56_sample_rock
+45_sample_rock < 52_navigate
+45_sample_rock < 74_drop
+48_navigate < 64_navigate
+49_sample_soil < 47_drop
+49_sample_soil < 78_navigate
+50_navigate < 13_calibrate
+50_navigate < 45_sample_rock
+51_drop < 71_sample_rock
+52_navigate < 62_navigate
+54_navigate < 10_sample_soil
+55_navigate < 17_calibrate
+55_navigate < 18_calibrate
+56_sample_rock < 61_navigate
+57_navigate < 77_navigate
+58_drop < 10_sample_soil
+61_navigate < 40_communicate_rock_data
+61_navigate < 80_communicate_rock_data
+62_navigate < 66_navigate
+63_sample_rock < 68_navigate
+64_navigate < 69_navigate
+65_drop < 75_sample_rock
+66_navigate < 63_sample_rock
+68_navigate < 16_take_image
+68_navigate < 67_communicate_rock_data
+68_navigate < 79_communicate_rock_data
+69_navigate < 70_navigate
+70_navigate < 72_navigate
+71_sample_rock < 38_navigate
+71_sample_rock < 58_drop
+72_navigate < 73_navigate
+73_navigate < 76_navigate
+74_drop < 63_sample_rock
+75_sample_rock < 60_communicate_rock_data
+77_navigate < 09_communicate_soil_data
+77_navigate < 46_communicate_rock_data
+77_navigate < 53_communicate_soil_data
+77_navigate < 75_sample_rock
+78_navigate < 02_calibrate
+78_navigate < 12_communicate_soil_data
+** Binding
+v_0=camera0
+v_1=camera1
+v_2=camera2
+v_3=camera3
+v_4=camera4
+v_5=camera5
+v_6=camera6
+v_7=colour
+v_8=general
+v_9=high_res
+v_10=low_res
+v_11=objective0
+v_12=objective1
+v_13=objective2
+v_14=objective3
+v_15=objective4
+v_16=objective5
+v_17=objective6
+v_18=objective7
+v_19=rover0
+v_20=rover0store
+v_21=rover1
+v_22=rover1store
+v_23=rover2
+v_24=rover2store
+v_25=rover3
+v_26=rover3store
+v_27=rover4
+v_28=rover4store
+v_29=rover5
+v_30=rover5store
+v_31=waypoint0
+v_32=waypoint1
+v_33=waypoint10
+v_34=waypoint11
+v_35=waypoint12
+v_36=waypoint13
+v_37=waypoint14
+v_38=waypoint15
+v_39=waypoint16
+v_40=waypoint17
+v_41=waypoint18
+v_42=waypoint19
+v_43=waypoint2
+v_44=waypoint3
+v_45=waypoint4
+v_46=waypoint5
+v_47=waypoint6
+v_48=waypoint7
+v_49=waypoint8
+v_50=waypoint9
+v_51=rover4
+v_52=waypoint0
+v_53=waypoint18
+v_54=rover2
+v_55=camera0
+v_56=objective0
+v_57=waypoint0
+v_58=rover2
+v_59=waypoint13
+v_60=waypoint0
+v_61=rover4
+v_62=rover4store
+v_63=waypoint18
+v_64=rover3
+v_65=waypoint11
+v_66=waypoint17
+v_67=rover4
+v_68=waypoint18
+v_69=waypoint0
+v_70=rover3
+v_71=waypoint17
+v_72=waypoint11
+v_73=rover4
+v_74=waypoint0
+v_75=waypoint2
+v_76=rover4
+v_77=general
+v_78=waypoint18
+v_79=waypoint19
+v_80=waypoint6
+v_81=rover4
+v_82=rover4store
+v_83=waypoint8
+v_84=rover4
+v_85=waypoint2
+v_86=waypoint3
+v_87=rover2
+v_88=general
+v_89=waypoint5
+v_90=waypoint0
+v_91=waypoint6
+v_92=rover5
+v_93=camera6
+v_94=objective6
+v_95=waypoint9
+v_96=rover2
+v_97=waypoint0
+v_98=objective7
+v_99=camera0
+v_100=colour
+v_101=rover2
+v_102=general
+v_103=objective7
+v_104=colour
+v_105=waypoint0
+v_106=waypoint6
+v_107=rover5
+v_108=waypoint1
+v_109=objective0
+v_110=camera6
+v_111=colour
+v_112=rover1
+v_113=camera1
+v_114=objective1
+v_115=waypoint0
+v_116=rover1
+v_117=camera2
+v_118=objective0
+v_119=waypoint0
+v_120=rover5
+v_121=waypoint1
+v_122=objective5
+v_123=camera6
+v_124=colour
+v_125=rover5
+v_126=general
+v_127=objective0
+v_128=colour
+v_129=waypoint1
+v_130=waypoint6
+v_131=rover1
+v_132=general
+v_133=objective4
+v_134=high_res
+v_135=waypoint0
+v_136=waypoint6
+v_137=rover1
+v_138=waypoint0
+v_139=objective0
+v_140=camera1
+v_141=high_res
+v_142=rover5
+v_143=camera6
+v_144=objective6
+v_145=waypoint1
+v_146=rover2
+v_147=general
+v_148=objective6
+v_149=low_res
+v_150=waypoint0
+v_151=waypoint6
+v_152=rover1
+v_153=waypoint0
+v_154=objective7
+v_155=camera2
+v_156=low_res
+v_157=rover1
+v_158=general
+v_159=objective7
+v_160=low_res
+v_161=waypoint0
+v_162=waypoint6
+v_163=rover1
+v_164=camera1
+v_165=objective1
+v_166=waypoint0
+v_167=rover2
+v_168=waypoint0
+v_169=objective6
+v_170=camera0
+v_171=low_res
+v_172=rover2
+v_173=camera0
+v_174=objective0
+v_175=waypoint0
+v_176=rover5
+v_177=general
+v_178=objective5
+v_179=colour
+v_180=waypoint1
+v_181=waypoint6
+v_182=rover1
+v_183=waypoint0
+v_184=objective4
+v_185=camera1
+v_186=high_res
+v_187=rover1
+v_188=camera2
+v_189=objective0
+v_190=waypoint0
+v_191=rover1
+v_192=waypoint0
+v_193=objective2
+v_194=camera2
+v_195=low_res
+v_196=rover1
+v_197=general
+v_198=objective0
+v_199=high_res
+v_200=waypoint0
+v_201=waypoint6
+v_202=rover3
+v_203=waypoint11
+v_204=waypoint1
+v_205=rover3
+v_206=rover3store
+v_207=waypoint17
+v_208=rover1
+v_209=general
+v_210=objective2
+v_211=low_res
+v_212=waypoint0
+v_213=waypoint6
+v_214=rover4
+v_215=waypoint3
+v_216=waypoint2
+v_217=rover0
+v_218=waypoint2
+v_219=waypoint4
+v_220=rover3
+v_221=general
+v_222=waypoint4
+v_223=waypoint1
+v_224=waypoint6
+v_225=rover2
+v_226=waypoint0
+v_227=waypoint5
+v_228=rover3
+v_229=rover3store
+v_230=rover0
+v_231=waypoint4
+v_232=waypoint2
+v_233=rover3
+v_234=waypoint1
+v_235=waypoint4
+v_236=rover5
+v_237=rover5store
+v_238=waypoint9
+v_239=rover4
+v_240=general
+v_241=waypoint3
+v_242=waypoint19
+v_243=waypoint6
+v_244=rover2
+v_245=rover2store
+v_246=rover0
+v_247=waypoint2
+v_248=waypoint4
+v_249=rover2
+v_250=rover2store
+v_251=waypoint5
+v_252=rover5
+v_253=waypoint12
+v_254=waypoint9
+v_255=rover4
+v_256=rover4store
+v_257=rover5
+v_258=waypoint9
+v_259=waypoint12
+v_260=rover4
+v_261=general
+v_262=waypoint8
+v_263=waypoint19
+v_264=waypoint6
+v_265=rover4
+v_266=waypoint2
+v_267=waypoint8
+v_268=rover1
+v_269=waypoint6
+v_270=waypoint0
+v_271=rover3
+v_272=rover3store
+v_273=waypoint4
+v_274=rover4
+v_275=waypoint8
+v_276=waypoint2
+v_277=rover4
+v_278=rover4store
+v_279=rover1
+v_280=waypoint0
+v_281=waypoint2
+v_282=rover4
+v_283=general
+v_284=waypoint19
+v_285=waypoint19
+v_286=waypoint6
+v_287=rover3
+v_288=waypoint4
+v_289=waypoint1
+v_290=rover5
+v_291=waypoint12
+v_292=waypoint1
+v_293=rover5
+v_294=rover5store
+v_295=waypoint6
+v_296=rover0
+v_297=waypoint4
+v_298=waypoint2
+v_299=rover4
+v_300=rover4store
+v_301=rover5
+v_302=waypoint1
+v_303=waypoint6
+v_304=rover5
+v_305=general
+v_306=waypoint9
+v_307=waypoint1
+v_308=waypoint6
+v_309=rover5
+v_310=waypoint6
+v_311=waypoint1
+v_312=rover0
+v_313=waypoint2
+v_314=waypoint0
+v_315=rover0
+v_316=waypoint0
+v_317=waypoint19
+v_318=rover4
+v_319=rover4store
+v_320=waypoint3
+v_321=rover0
+v_322=waypoint19
+v_323=waypoint0
+v_324=rover0
+v_325=waypoint0
+v_326=waypoint13
+v_327=rover5
+v_328=rover5store
+v_329=rover4
+v_330=rover4store
+v_331=waypoint19
+v_332=rover0
+v_333=waypoint13
+v_334=waypoint0
+v_335=rover4
+v_336=waypoint2
+v_337=waypoint19
+v_338=rover2
+v_339=waypoint5
+v_340=waypoint0
+v_341=rover5
+v_342=general
+v_343=waypoint6
+v_344=waypoint1
+v_345=waypoint6
+v_346=rover3
+v_347=general
+v_348=waypoint17
+v_349=waypoint1
+v_350=waypoint6
+v_351=colour
+v_352=high_res
+v_353=low_res
+v_354=objective0
+v_355=objective2
+v_356=objective4
+v_357=objective5
+v_358=objective6
+v_359=objective7
+v_360=waypoint17
+v_361=waypoint18
+v_362=waypoint19
+v_363=waypoint3
+v_364=waypoint4
+v_365=waypoint5
+v_366=waypoint6
+v_367=waypoint8
+v_368=waypoint9

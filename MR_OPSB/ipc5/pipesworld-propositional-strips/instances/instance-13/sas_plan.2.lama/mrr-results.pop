@@ -1,0 +1,41 @@
+** Operators
+init()
+01_push-start-s13-b2-a1-a3-b9-rat-a-lco-ta1-1-rat-a()
+02_push-end-s13-a1-a3-b3-b9-lco-ta3-2-lco()
+03_push-start-s12-b1-a1-a2-b6-oc1b-oca1-ta1-1-oc1b()
+04_push-end-s12-a1-a2-b11-b6-lco-ta2-1-lco()
+05_push-start-s12-b4-a1-a2-b1-oca1-oc1b-ta1-1-oca1()
+06_push-end-s12-a1-a2-b6-b1-oca1-ta2-1-oca1()
+07_push-start-s12-b7-a1-a2-b4-oca1-oca1-ta1-2-oca1()
+08_push-end-s12-a1-a2-b1-b4-oc1b-ta2-1-oc1b()
+09_pop-start-s12-b5-a1-a2-b4-gasoleo-oca1-ta2-1-gasoleo()
+10_pop-end-s12-a1-a2-b7-b4-rat-a-ta1-1-rat-a()
+11_pop-start-s12-b11-a1-a2-b5-lco-gasoleo-ta2-1-lco()
+12_pop-end-s12-a1-a2-b4-b5-gasoleo-ta1-1-gasoleo()
+13_pop-start-s12-b6-a1-a2-b11-oca1-lco-ta2-1-oca1()
+14_pop-end-s12-a1-a2-b5-b11-oc1b-ta1-1-oc1b()
+15_push-start-s13-b5-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo()
+16_push-end-s13-a1-a3-b9-b2-lco-ta3-3-lco()
+17_pop-start-s13-b3-a1-a3-b2-lco-rat-a-ta3-1-lco()
+18_pop-end-s13-a1-a3-b5-b2-gasoleo-ta1-1-gasoleo()
+goal()
+** Ordering
+01_push-start-s13-b2-a1-a3-b9-rat-a-lco-ta1-1-rat-a < 02_push-end-s13-a1-a3-b3-b9-lco-ta3-2-lco
+01_push-start-s13-b2-a1-a3-b9-rat-a-lco-ta1-1-rat-a < 10_pop-end-s12-a1-a2-b7-b4-rat-a-ta1-1-rat-a
+02_push-end-s13-a1-a3-b3-b9-lco-ta3-2-lco < 15_push-start-s13-b5-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo
+03_push-start-s12-b1-a1-a2-b6-oc1b-oca1-ta1-1-oc1b < 04_push-end-s12-a1-a2-b11-b6-lco-ta2-1-lco
+04_push-end-s12-a1-a2-b11-b6-lco-ta2-1-lco < 05_push-start-s12-b4-a1-a2-b1-oca1-oc1b-ta1-1-oca1
+05_push-start-s12-b4-a1-a2-b1-oca1-oc1b-ta1-1-oca1 < 06_push-end-s12-a1-a2-b6-b1-oca1-ta2-1-oca1
+06_push-end-s12-a1-a2-b6-b1-oca1-ta2-1-oca1 < 07_push-start-s12-b7-a1-a2-b4-oca1-oca1-ta1-2-oca1
+07_push-start-s12-b7-a1-a2-b4-oca1-oca1-ta1-2-oca1 < 08_push-end-s12-a1-a2-b1-b4-oc1b-ta2-1-oc1b
+08_push-end-s12-a1-a2-b1-b4-oc1b-ta2-1-oc1b < 09_pop-start-s12-b5-a1-a2-b4-gasoleo-oca1-ta2-1-gasoleo
+09_pop-start-s12-b5-a1-a2-b4-gasoleo-oca1-ta2-1-gasoleo < 10_pop-end-s12-a1-a2-b7-b4-rat-a-ta1-1-rat-a
+10_pop-end-s12-a1-a2-b7-b4-rat-a-ta1-1-rat-a < 11_pop-start-s12-b11-a1-a2-b5-lco-gasoleo-ta2-1-lco
+11_pop-start-s12-b11-a1-a2-b5-lco-gasoleo-ta2-1-lco < 12_pop-end-s12-a1-a2-b4-b5-gasoleo-ta1-1-gasoleo
+12_pop-end-s12-a1-a2-b4-b5-gasoleo-ta1-1-gasoleo < 13_pop-start-s12-b6-a1-a2-b11-oca1-lco-ta2-1-oca1
+13_pop-start-s12-b6-a1-a2-b11-oca1-lco-ta2-1-oca1 < 14_pop-end-s12-a1-a2-b5-b11-oc1b-ta1-1-oc1b
+14_pop-end-s12-a1-a2-b5-b11-oc1b-ta1-1-oc1b < 15_push-start-s13-b5-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo
+15_push-start-s13-b5-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo < 16_push-end-s13-a1-a3-b9-b2-lco-ta3-3-lco
+16_push-end-s13-a1-a3-b9-b2-lco-ta3-3-lco < 17_pop-start-s13-b3-a1-a3-b2-lco-rat-a-ta3-1-lco
+17_pop-start-s13-b3-a1-a3-b2-lco-rat-a-ta3-1-lco < 18_pop-end-s13-a1-a3-b5-b2-gasoleo-ta1-1-gasoleo
+** Binding

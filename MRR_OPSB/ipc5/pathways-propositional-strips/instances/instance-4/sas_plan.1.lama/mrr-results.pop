@@ -1,0 +1,41 @@
+** Operators
+init()
+01_choose_gp_l1_l0()
+02_initialize_gp()
+03_choose_sp1_l2_l1()
+04_initialize_sp1()
+05_associate_sp1_gp_sp1-gp()
+06_initialize_gp()
+07_initialize_sp1()
+08_synthesize_sp1-gp_cycep1()
+09_synthesize_sp1-gp_p107()
+10_synthesize_sp1-gp_p107p1()
+11_synthesize_sp1-gp_pol()
+12_dummy-action-2-2()
+13_associate_sp1_p107p1_sp1-p107p1()
+14_dummy-action-4-2()
+15_associate_sp1-p107p1_gp_sp1-p107p1-gp()
+16_dummy-action-1-2()
+17_dummy-action-3-2()
+goal()
+** Ordering
+01_choose_gp_l1_l0 < 02_initialize_gp
+01_choose_gp_l1_l0 < 03_choose_sp1_l2_l1
+02_initialize_gp < 05_associate_sp1_gp_sp1-gp
+03_choose_sp1_l2_l1 < 04_initialize_sp1
+04_initialize_sp1 < 05_associate_sp1_gp_sp1-gp
+05_associate_sp1_gp_sp1-gp < 06_initialize_gp
+05_associate_sp1_gp_sp1-gp < 07_initialize_sp1
+05_associate_sp1_gp_sp1-gp < 08_synthesize_sp1-gp_cycep1
+05_associate_sp1_gp_sp1-gp < 09_synthesize_sp1-gp_p107
+05_associate_sp1_gp_sp1-gp < 10_synthesize_sp1-gp_p107p1
+05_associate_sp1_gp_sp1-gp < 11_synthesize_sp1-gp_pol
+06_initialize_gp < 15_associate_sp1-p107p1_gp_sp1-p107p1-gp
+07_initialize_sp1 < 13_associate_sp1_p107p1_sp1-p107p1
+08_synthesize_sp1-gp_cycep1 < 14_dummy-action-4-2
+09_synthesize_sp1-gp_p107 < 12_dummy-action-2-2
+10_synthesize_sp1-gp_p107p1 < 13_associate_sp1_p107p1_sp1-p107p1
+11_synthesize_sp1-gp_pol < 16_dummy-action-1-2
+13_associate_sp1_p107p1_sp1-p107p1 < 15_associate_sp1-p107p1_gp_sp1-p107p1-gp
+15_associate_sp1-p107p1_gp_sp1-p107p1-gp < 17_dummy-action-3-2
+** Binding

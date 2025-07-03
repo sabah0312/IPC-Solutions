@@ -1,0 +1,127 @@
+** Operators
+init()
+01_mandatory-bob()
+02_sit_at_host-greg-sherpa-gregs_office()
+03_instruct_file_update-bob-adam-sherpa-s_iemalupdate-greg_inst()
+04_enter_uname-greg-greg_uid-sherpa()
+05_enter_password-greg-greg_uid-sherpa-greg_pwd()
+06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0()
+07_sit_at_host-adam-bigfoot-adams_office()
+08_sit_at_host-bob-yeti-bobs_office()
+09_proc_fork-sherpa-greg_uid-proc_0-wexplorer()
+10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_outlook()
+11_enter_uname-bob-bob_uid-yeti()
+12_enter_password-bob-bob_uid-yeti-bob_pwd()
+13_launch_shell-bob_uid-yeti-y_wexplore-proc_0()
+14_proc_fork-sherpa-greg_uid-proc_0-wexplorer()
+15_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore()
+16_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-condeff0-no-0()
+17_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-endof-condeffs()
+18_dms_begin_session-dmss2()
+19_dms_client_find-sherpa-proc_2-iexplorer-greg-dmss2()
+20_dms_connect-proc_0-everest-nes-dmss2()
+21_dms_route-sherpa-everest-dmss2()
+22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2()
+23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2()
+24_dms_req_begin-dmss2-greg-sherpa()
+25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid()
+26_dms_send-dmss2-sherpa-proc_2-e_secret_doc()
+27_proc_fork-yeti-bob_uid-proc_0-wexplorer()
+28_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_outlook()
+29_start_email-bob-yeti-bob_uid-proc_3-ms_outlook-email_1()
+30_change_sender-bob-email_1-adam()
+31_add_recip-bob-email_1-greg_uid-greg()
+32_done_recip-email_1-greg_uid()
+33_write_email_instruction-bob-email_1-greg_inst()
+34_done_write-bob-email_1()
+35_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest()
+36_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff2-yes()
+37_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff1-no-0()
+38_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff0-no-0()
+39_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-endof-condeffs()
+40_proc_fork-yeti-bob_uid-proc_0-wexplorer()
+41_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_tmaster()
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1()
+43_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff3-no-0()
+44_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff4-no-0()
+45_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff2-no-0()
+46_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff1-yes()
+47_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff9-no-0()
+48_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff5-no-0()
+49_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff6-no-0()
+50_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff7-no-0()
+51_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff8-no-0()
+52_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff0-no-0()
+53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs()
+54_do_file_update-greg-greg_uid-everyone-greg_inst-sherpa-proc_3-s_iemalupdate()
+55_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_2-proc_3-fb_virus-yeti-proc_1-troj_master()
+56_read_doc-bob-yeti-proc_1-e_secret_doc-bobs_office-secret_info()
+goal()
+** Ordering
+01_mandatory-bob < 11_enter_uname-bob-bob_uid-yeti
+02_sit_at_host-greg-sherpa-gregs_office < 11_enter_uname-bob-bob_uid-yeti
+03_instruct_file_update-bob-adam-sherpa-s_iemalupdate-greg_inst < 11_enter_uname-bob-bob_uid-yeti
+04_enter_uname-greg-greg_uid-sherpa < 05_enter_password-greg-greg_uid-sherpa-greg_pwd
+05_enter_password-greg-greg_uid-sherpa-greg_pwd < 06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0
+06_launch_shell-greg_uid-sherpa-s_wexplore-proc_0 < 09_proc_fork-sherpa-greg_uid-proc_0-wexplorer
+07_sit_at_host-adam-bigfoot-adams_office < 11_enter_uname-bob-bob_uid-yeti
+08_sit_at_host-bob-yeti-bobs_office < 11_enter_uname-bob-bob_uid-yeti
+09_proc_fork-sherpa-greg_uid-proc_0-wexplorer < 15_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore
+10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_outlook < 18_dms_begin_session-dmss2
+11_enter_uname-bob-bob_uid-yeti < 12_enter_password-bob-bob_uid-yeti-bob_pwd
+12_enter_password-bob-bob_uid-yeti-bob_pwd < 13_launch_shell-bob_uid-yeti-y_wexplore-proc_0
+13_launch_shell-bob_uid-yeti-y_wexplore-proc_0 < 27_proc_fork-yeti-bob_uid-proc_0-wexplorer
+14_proc_fork-sherpa-greg_uid-proc_0-wexplorer < 10_exec_file-sherpa-greg-greg_uid-everyone-proc_1-s_outlook
+15_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore < 16_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-condeff0-no-0
+16_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-condeff0-no-0 < 17_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-endof-condeffs
+17_exec_file-sherpa-greg-greg_uid-everyone-proc_2-s_iexplore-endof-condeffs < 40_proc_fork-yeti-bob_uid-proc_0-wexplorer
+18_dms_begin_session-dmss2 < 19_dms_client_find-sherpa-proc_2-iexplorer-greg-dmss2
+19_dms_client_find-sherpa-proc_2-iexplorer-greg-dmss2 < 20_dms_connect-proc_0-everest-nes-dmss2
+20_dms_connect-proc_0-everest-nes-dmss2 < 21_dms_route-sherpa-everest-dmss2
+21_dms_route-sherpa-everest-dmss2 < 22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2
+22_dms_enter_password-greg-sherpa-greg_dms_pwd-dmss2 < 23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2
+23_auth_to_dms-everest-greg_dms_pwd-greg_uid-dmss2 < 29_start_email-bob-yeti-bob_uid-proc_3-ms_outlook-email_1
+24_dms_req_begin-dmss2-greg-sherpa < 25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid
+25_dms_request-dmss2-e_secret_doc-everest-greg_uid-admin_gid < 26_dms_send-dmss2-sherpa-proc_2-e_secret_doc
+26_dms_send-dmss2-sherpa-proc_2-e_secret_doc < 54_do_file_update-greg-greg_uid-everyone-greg_inst-sherpa-proc_3-s_iemalupdate
+27_proc_fork-yeti-bob_uid-proc_0-wexplorer < 41_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_tmaster
+28_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_outlook < 14_proc_fork-sherpa-greg_uid-proc_0-wexplorer
+29_start_email-bob-yeti-bob_uid-proc_3-ms_outlook-email_1 < 30_change_sender-bob-email_1-adam
+30_change_sender-bob-email_1-adam < 31_add_recip-bob-email_1-greg_uid-greg
+31_add_recip-bob-email_1-greg_uid-greg < 32_done_recip-email_1-greg_uid
+32_done_recip-email_1-greg_uid < 33_write_email_instruction-bob-email_1-greg_inst
+33_write_email_instruction-bob-email_1-greg_inst < 34_done_write-bob-email_1
+34_done_write-bob-email_1 < 35_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest
+35_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest < 36_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff2-yes
+35_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest < 37_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff1-no-0
+35_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest < 38_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff0-no-0
+36_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff2-yes < 39_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-endof-condeffs
+37_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff1-no-0 < 39_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-endof-condeffs
+38_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-condeff0-no-0 < 39_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-endof-condeffs
+39_send_email-yeti-bob-hub1-ms_exchange-proc_2-email_1-everest-endof-condeffs < 42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1
+40_proc_fork-yeti-bob_uid-proc_0-wexplorer < 28_exec_file-yeti-bob-bob_uid-east_gid-proc_3-y_outlook
+41_exec_file-yeti-bob-bob_uid-east_gid-proc_1-y_tmaster < 04_enter_uname-greg-greg_uid-sherpa
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 43_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff3-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 44_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff4-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 45_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff2-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 46_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff1-yes
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 47_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff9-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 48_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff5-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 49_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff6-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 50_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff7-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 51_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff8-no-0
+42_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1 < 52_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff0-no-0
+43_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff3-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+44_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff4-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+45_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff2-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+46_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff1-yes < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+47_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff9-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+48_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff5-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+49_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff6-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+50_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff7-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+51_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff8-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+52_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-condeff0-no-0 < 53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs
+53_view_email-greg_uid-greg-adam-sherpa-email_1-ms_outlook-proc_1-endof-condeffs < 24_dms_req_begin-dmss2-greg-sherpa
+54_do_file_update-greg-greg_uid-everyone-greg_inst-sherpa-proc_3-s_iemalupdate < 55_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_2-proc_3-fb_virus-yeti-proc_1-troj_master
+55_relay_viewed_doc-e_secret_doc-bob-sherpa-proc_2-proc_3-fb_virus-yeti-proc_1-troj_master < 56_read_doc-bob-yeti-proc_1-e_secret_doc-bobs_office-secret_info
+** Binding

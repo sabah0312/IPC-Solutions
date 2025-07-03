@@ -1,0 +1,14 @@
+** Operators
+init()
+1_drive-truck1-depot1-market1()
+2_buy-truck1-goods1-market1-level0-level1-level0-level1()
+3_load-goods1-truck1-market1-level0-level1-level0-level1()
+4_drive-truck1-market1-depot1()
+5_unload-goods1-truck1-depot1-level0-level1-level0-level1()
+goal()
+** Ordering
+1_drive-truck1-depot1-market1 < 2_buy-truck1-goods1-market1-level0-level1-level0-level1
+2_buy-truck1-goods1-market1-level0-level1-level0-level1 < 3_load-goods1-truck1-market1-level0-level1-level0-level1
+3_load-goods1-truck1-market1-level0-level1-level0-level1 < 4_drive-truck1-market1-depot1
+4_drive-truck1-market1-depot1 < 5_unload-goods1-truck1-depot1-level0-level1-level0-level1
+** Binding

@@ -1,0 +1,641 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58)
+01_move_l_down(v_59 v_60 v_61 v_62 v_63 v_64)
+02_move_l_down(v_65 v_66 v_67 v_68 v_69 v_70)
+03_move_square(v_71 v_72 v_73)
+04_move_two(v_74 v_75 v_76 v_77)
+05_move_two(v_78 v_79 v_80 v_81)
+06_move_two(v_82 v_83 v_84 v_85)
+07_move_square(v_86 v_87 v_88)
+08_move_two(v_89 v_90 v_91 v_92)
+09_move_l_down(v_93 v_94 v_95 v_96 v_97 v_98)
+10_move_two(v_99 v_100 v_101 v_102)
+11_move_l_down(v_103 v_104 v_105 v_106 v_107 v_108)
+12_move_square(v_109 v_110 v_111)
+13_move_l_down(v_112 v_113 v_114 v_115 v_116 v_117)
+14_move_square(v_118 v_119 v_120)
+15_move_l_down(v_121 v_122 v_123 v_124 v_125 v_126)
+16_move_square(v_127 v_128 v_129)
+17_move_l_down(v_130 v_131 v_132 v_133 v_134 v_135)
+18_move_l_down(v_136 v_137 v_138 v_139 v_140 v_141)
+19_move_square(v_142 v_143 v_144)
+20_move_l_down(v_145 v_146 v_147 v_148 v_149 v_150)
+21_move_l_down(v_151 v_152 v_153 v_154 v_155 v_156)
+22_move_l_right(v_157 v_158 v_159 v_160 v_161 v_162 v_163)
+23_move_l_right(v_164 v_165 v_166 v_167 v_168 v_169 v_170)
+24_move_square(v_171 v_172 v_173)
+25_move_square(v_174 v_175 v_176)
+26_move_square(v_177 v_178 v_179)
+27_move_square(v_180 v_181 v_182)
+28_move_square(v_183 v_184 v_185)
+29_move_square(v_186 v_187 v_188)
+30_move_l_down(v_189 v_190 v_191 v_192 v_193 v_194)
+31_move_two(v_195 v_196 v_197 v_198)
+32_move_square(v_199 v_200 v_201)
+33_move_square(v_202 v_203 v_204)
+34_move_square(v_205 v_206 v_207)
+35_move_square(v_208 v_209 v_210)
+36_move_square(v_211 v_212 v_213)
+37_move_square(v_214 v_215 v_216)
+38_move_two(v_217 v_218 v_219 v_220)
+39_move_square(v_221 v_222 v_223)
+40_move_square(v_224 v_225 v_226)
+41_move_l_left(v_227 v_228 v_229 v_230 v_231 v_232)
+42_move_l_down(v_233 v_234 v_235 v_236 v_237 v_238)
+43_move_square(v_239 v_240 v_241)
+44_move_square(v_242 v_243 v_244)
+45_move_square(v_245 v_246 v_247)
+46_move_square(v_248 v_249 v_250)
+47_move_two(v_251 v_252 v_253 v_254)
+48_move_square(v_255 v_256 v_257)
+49_move_square(v_258 v_259 v_260)
+50_move_square(v_261 v_262 v_263)
+51_move_square(v_264 v_265 v_266)
+52_move_l_down(v_267 v_268 v_269 v_270 v_271 v_272)
+53_move_l_down(v_273 v_274 v_275 v_276 v_277 v_278)
+54_move_square(v_279 v_280 v_281)
+55_move_l_down(v_282 v_283 v_284 v_285 v_286 v_287)
+56_move_square(v_288 v_289 v_290)
+57_move_l_down(v_291 v_292 v_293 v_294 v_295 v_296)
+58_move_l_down(v_297 v_298 v_299 v_300 v_301 v_302)
+59_move_l_down(v_303 v_304 v_305 v_306 v_307 v_308)
+60_move_l_down(v_309 v_310 v_311 v_312 v_313 v_314)
+61_move_l_down(v_315 v_316 v_317 v_318 v_319 v_320)
+62_move_l_left(v_321 v_322 v_323 v_324 v_325 v_326)
+63_move_square(v_327 v_328 v_329)
+64_move_square(v_330 v_331 v_332)
+65_move_two(v_333 v_334 v_335 v_336)
+66_move_l_right(v_337 v_338 v_339 v_340 v_341 v_342 v_343)
+67_move_square(v_344 v_345 v_346)
+68_move_l_down(v_347 v_348 v_349 v_350 v_351 v_352)
+69_move_l_down(v_353 v_354 v_355 v_356 v_357 v_358)
+70_move_square(v_359 v_360 v_361)
+71_move_l_down(v_362 v_363 v_364 v_365 v_366 v_367)
+72_move_square(v_368 v_369 v_370)
+73_move_l_down(v_371 v_372 v_373 v_374 v_375 v_376)
+74_move_l_down(v_377 v_378 v_379 v_380 v_381 v_382)
+75_move_two(v_383 v_384 v_385 v_386)
+76_move_square(v_387 v_388 v_389)
+77_move_square(v_390 v_391 v_392)
+78_move_square(v_393 v_394 v_395)
+79_move_l_down(v_396 v_397 v_398 v_399 v_400 v_401)
+goal(v_402 v_403 v_404 v_405 v_406 v_407 v_408 v_409 v_410 v_411 v_412 v_413 v_414 v_415 v_416 v_417 v_418 v_419 v_420 v_421 v_422 v_423 v_424 v_425)
+** Ordering
+01_move_l_down < 03_move_square
+01_move_l_down < 15_move_l_down
+02_move_l_down < 07_move_square
+02_move_l_down < 08_move_two
+02_move_l_down < 09_move_l_down
+03_move_square < 11_move_l_down
+03_move_square < 16_move_square
+04_move_two < 05_move_two
+04_move_two < 21_move_l_down
+05_move_two < 06_move_two
+05_move_two < 23_move_l_right
+06_move_two < 08_move_two
+07_move_square < 14_move_square
+08_move_two < 10_move_two
+08_move_two < 28_move_square
+09_move_l_down < 10_move_two
+09_move_l_down < 30_move_l_down
+10_move_two < 29_move_square
+10_move_two < 31_move_two
+11_move_l_down < 12_move_square
+11_move_l_down < 17_move_l_down
+12_move_square < 13_move_l_down
+12_move_square < 26_move_square
+13_move_l_down < 21_move_l_down
+13_move_l_down < 24_move_square
+14_move_square < 28_move_square
+14_move_square < 39_move_square
+15_move_l_down < 16_move_square
+15_move_l_down < 18_move_l_down
+16_move_square < 17_move_l_down
+16_move_square < 19_move_square
+17_move_l_down < 20_move_l_down
+17_move_l_down < 26_move_square
+17_move_l_down < 35_move_square
+18_move_l_down < 19_move_square
+18_move_l_down < 52_move_l_down
+19_move_square < 20_move_l_down
+19_move_square < 54_move_square
+20_move_l_down < 27_move_square
+20_move_l_down < 36_move_square
+20_move_l_down < 55_move_l_down
+21_move_l_down < 22_move_l_right
+21_move_l_down < 25_move_square
+22_move_l_right < 23_move_l_right
+22_move_l_right < 43_move_square
+23_move_l_right < 33_move_square
+24_move_square < 33_move_square
+25_move_square < 43_move_square
+26_move_square < 27_move_square
+26_move_square < 42_move_l_down
+27_move_square < 37_move_square
+27_move_square < 56_move_square
+28_move_square < 29_move_square
+28_move_square < 49_move_square
+29_move_square < 32_move_square
+29_move_square < 59_move_l_down
+30_move_l_down < 31_move_two
+30_move_l_down < 60_move_l_down
+31_move_two < 32_move_square
+31_move_two < 38_move_two
+32_move_square < 61_move_l_down
+32_move_square < 67_move_square
+33_move_square < 34_move_square
+34_move_square < 35_move_square
+35_move_square < 36_move_square
+35_move_square < 41_move_l_left
+36_move_square < 37_move_square
+36_move_square < 42_move_l_down
+37_move_square < 39_move_square
+38_move_two < 40_move_square
+38_move_two < 47_move_two
+39_move_square < 40_move_square
+39_move_square < 53_move_l_down
+40_move_square < 48_move_square
+40_move_square < 50_move_square
+41_move_l_left < 42_move_l_down
+41_move_l_left < 44_move_square
+42_move_l_down < 45_move_square
+42_move_l_down < 53_move_l_down
+43_move_square < 44_move_square
+44_move_square < 45_move_square
+45_move_square < 46_move_square
+46_move_square < 49_move_square
+47_move_two < 48_move_square
+47_move_two < 65_move_two
+48_move_square < 51_move_square
+48_move_square < 63_move_square
+49_move_square < 50_move_square
+49_move_square < 58_move_l_down
+50_move_square < 51_move_square
+50_move_square < 59_move_l_down
+51_move_square < 61_move_l_down
+51_move_square < 64_move_square
+52_move_l_down < 54_move_square
+52_move_l_down < 69_move_l_down
+53_move_l_down < 57_move_l_down
+54_move_square < 55_move_l_down
+54_move_square < 70_move_square
+55_move_l_down < 56_move_square
+55_move_l_down < 71_move_l_down
+56_move_square < 57_move_l_down
+56_move_square < 72_move_square
+57_move_l_down < 62_move_l_left
+57_move_l_down < 73_move_l_down
+58_move_l_down < 59_move_l_down
+59_move_l_down < 61_move_l_down
+60_move_l_down < 63_move_square
+60_move_l_down < 65_move_two
+60_move_l_down < 74_move_l_down
+61_move_l_down < 62_move_l_left
+62_move_l_left < 66_move_l_right
+63_move_square < 64_move_square
+63_move_square < 76_move_square
+64_move_square < 68_move_l_down
+64_move_square < 77_move_square
+65_move_two < 67_move_square
+65_move_two < 75_move_two
+66_move_l_right < 68_move_l_down
+67_move_square < 68_move_l_down
+67_move_square < 78_move_square
+68_move_l_down < 79_move_l_down
+69_move_l_down < 70_move_square
+70_move_square < 71_move_l_down
+71_move_l_down < 72_move_square
+72_move_square < 73_move_l_down
+74_move_l_down < 75_move_two
+74_move_l_down < 76_move_square
+75_move_two < 78_move_square
+76_move_square < 77_move_square
+77_move_square < 79_move_l_down
+78_move_square < 79_move_l_down
+** Binding
+v_0=f0-0f
+v_1=f0-1f
+v_2=f0-2f
+v_3=f0-3f
+v_4=f1-0f
+v_5=f1-1f
+v_6=f1-2f
+v_7=f1-3f
+v_8=f10-0f
+v_9=f10-1f
+v_10=f10-2f
+v_11=f10-3f
+v_12=f11-0f
+v_13=f11-1f
+v_14=f11-2f
+v_15=f11-3f
+v_16=f2-0f
+v_17=f2-1f
+v_18=f2-2f
+v_19=f2-3f
+v_20=f3-0f
+v_21=f3-1f
+v_22=f3-2f
+v_23=f3-3f
+v_24=f4-0f
+v_25=f4-1f
+v_26=f4-2f
+v_27=f4-3f
+v_28=f5-0f
+v_29=f5-1f
+v_30=f5-2f
+v_31=f5-3f
+v_32=f6-0f
+v_33=f6-1f
+v_34=f6-2f
+v_35=f6-3f
+v_36=f7-0f
+v_37=f7-1f
+v_38=f7-2f
+v_39=f7-3f
+v_40=f8-0f
+v_41=f8-1f
+v_42=f8-2f
+v_43=f8-3f
+v_44=f9-0f
+v_45=f9-1f
+v_46=f9-2f
+v_47=f9-3f
+v_48=rightl0
+v_49=rightl1
+v_50=rightl2
+v_51=rightl3
+v_52=rightl4
+v_53=square0
+v_54=square1
+v_55=square2
+v_56=square3
+v_57=square4
+v_58=straight0
+v_59=f5-0f
+v_60=f6-0f
+v_61=f6-1f
+v_62=f7-0f
+v_63=f7-1f
+v_64=rightl1
+v_65=f5-2f
+v_66=f6-2f
+v_67=f6-3f
+v_68=f7-2f
+v_69=f7-3f
+v_70=rightl3
+v_71=f5-1f
+v_72=f6-1f
+v_73=square4
+v_74=f2-2f
+v_75=f3-2f
+v_76=f3-3f
+v_77=straight0
+v_78=f3-2f
+v_79=f3-3f
+v_80=f4-3f
+v_81=straight0
+v_82=f3-3f
+v_83=f4-3f
+v_84=f5-3f
+v_85=straight0
+v_86=f4-2f
+v_87=f5-2f
+v_88=square3
+v_89=f4-3f
+v_90=f5-3f
+v_91=f6-3f
+v_92=straight0
+v_93=f6-2f
+v_94=f7-2f
+v_95=f7-3f
+v_96=f8-2f
+v_97=f8-3f
+v_98=rightl3
+v_99=f5-3f
+v_100=f6-3f
+v_101=f6-2f
+v_102=straight0
+v_103=f3-0f
+v_104=f4-0f
+v_105=f4-1f
+v_106=f5-0f
+v_107=f5-1f
+v_108=rightl2
+v_109=f3-1f
+v_110=f4-1f
+v_111=square2
+v_112=f1-0f
+v_113=f2-0f
+v_114=f2-1f
+v_115=f3-0f
+v_116=f3-1f
+v_117=rightl4
+v_118=f5-2f
+v_119=f4-2f
+v_120=square3
+v_121=f6-0f
+v_122=f7-0f
+v_123=f7-1f
+v_124=f8-0f
+v_125=f8-1f
+v_126=rightl1
+v_127=f6-1f
+v_128=f7-1f
+v_129=square4
+v_130=f4-0f
+v_131=f5-0f
+v_132=f5-1f
+v_133=f6-0f
+v_134=f6-1f
+v_135=rightl2
+v_136=f7-0f
+v_137=f8-0f
+v_138=f8-1f
+v_139=f9-0f
+v_140=f9-1f
+v_141=rightl1
+v_142=f7-1f
+v_143=f8-1f
+v_144=square4
+v_145=f5-0f
+v_146=f6-0f
+v_147=f6-1f
+v_148=f7-0f
+v_149=f7-1f
+v_150=rightl2
+v_151=f0-1f
+v_152=f1-1f
+v_153=f1-2f
+v_154=f2-1f
+v_155=f2-2f
+v_156=rightl0
+v_157=f1-1f
+v_158=f2-1f
+v_159=f2-2f
+v_160=f1-2f
+v_161=f2-3f
+v_162=f1-3f
+v_163=rightl0
+v_164=f2-0f
+v_165=f3-0f
+v_166=f3-1f
+v_167=f2-1f
+v_168=f3-2f
+v_169=f2-2f
+v_170=rightl4
+v_171=f0-0f
+v_172=f1-0f
+v_173=square0
+v_174=f0-2f
+v_175=f0-1f
+v_176=square1
+v_177=f4-1f
+v_178=f5-1f
+v_179=square2
+v_180=f5-1f
+v_181=f6-1f
+v_182=square2
+v_183=f4-2f
+v_184=f4-3f
+v_185=square3
+v_186=f4-3f
+v_187=f5-3f
+v_188=square3
+v_189=f7-2f
+v_190=f8-2f
+v_191=f8-3f
+v_192=f9-2f
+v_193=f9-3f
+v_194=rightl3
+v_195=f6-3f
+v_196=f6-2f
+v_197=f7-2f
+v_198=straight0
+v_199=f5-3f
+v_200=f6-3f
+v_201=square3
+v_202=f1-0f
+v_203=f2-0f
+v_204=square0
+v_205=f2-0f
+v_206=f3-0f
+v_207=square0
+v_208=f3-0f
+v_209=f4-0f
+v_210=square0
+v_211=f4-0f
+v_212=f5-0f
+v_213=square0
+v_214=f5-0f
+v_215=f5-1f
+v_216=square0
+v_217=f6-2f
+v_218=f7-2f
+v_219=f7-3f
+v_220=straight0
+v_221=f5-1f
+v_222=f5-2f
+v_223=square0
+v_224=f5-2f
+v_225=f6-2f
+v_226=square0
+v_227=f2-1f
+v_228=f3-1f
+v_229=f3-2f
+v_230=f2-0f
+v_231=f3-0f
+v_232=rightl4
+v_233=f2-0f
+v_234=f3-0f
+v_235=f3-1f
+v_236=f4-0f
+v_237=f4-1f
+v_238=rightl4
+v_239=f0-1f
+v_240=f1-1f
+v_241=square1
+v_242=f1-1f
+v_243=f2-1f
+v_244=square1
+v_245=f2-1f
+v_246=f3-1f
+v_247=square1
+v_248=f3-1f
+v_249=f3-2f
+v_250=square1
+v_251=f7-2f
+v_252=f7-3f
+v_253=f8-3f
+v_254=straight0
+v_255=f6-2f
+v_256=f7-2f
+v_257=square0
+v_258=f3-2f
+v_259=f4-2f
+v_260=square1
+v_261=f4-2f
+v_262=f5-2f
+v_263=square1
+v_264=f5-2f
+v_265=f6-2f
+v_266=square1
+v_267=f8-0f
+v_268=f9-0f
+v_269=f9-1f
+v_270=f10-0f
+v_271=f10-1f
+v_272=rightl1
+v_273=f3-0f
+v_274=f4-0f
+v_275=f4-1f
+v_276=f5-0f
+v_277=f5-1f
+v_278=rightl4
+v_279=f8-1f
+v_280=f9-1f
+v_281=square4
+v_282=f6-0f
+v_283=f7-0f
+v_284=f7-1f
+v_285=f8-0f
+v_286=f8-1f
+v_287=rightl2
+v_288=f6-1f
+v_289=f7-1f
+v_290=square2
+v_291=f4-0f
+v_292=f5-0f
+v_293=f5-1f
+v_294=f6-0f
+v_295=f6-1f
+v_296=rightl4
+v_297=f1-2f
+v_298=f2-2f
+v_299=f2-3f
+v_300=f3-2f
+v_301=f3-3f
+v_302=rightl0
+v_303=f2-2f
+v_304=f3-2f
+v_305=f3-3f
+v_306=f4-2f
+v_307=f4-3f
+v_308=rightl0
+v_309=f8-2f
+v_310=f9-2f
+v_311=f9-3f
+v_312=f10-2f
+v_313=f10-3f
+v_314=rightl3
+v_315=f3-2f
+v_316=f4-2f
+v_317=f4-3f
+v_318=f5-2f
+v_319=f5-3f
+v_320=rightl0
+v_321=f4-2f
+v_322=f5-2f
+v_323=f5-3f
+v_324=f4-1f
+v_325=f5-1f
+v_326=rightl0
+v_327=f7-2f
+v_328=f8-2f
+v_329=square0
+v_330=f6-2f
+v_331=f7-2f
+v_332=square1
+v_333=f7-3f
+v_334=f8-3f
+v_335=f9-3f
+v_336=straight0
+v_337=f4-1f
+v_338=f5-1f
+v_339=f5-2f
+v_340=f4-2f
+v_341=f5-3f
+v_342=f4-3f
+v_343=rightl0
+v_344=f6-3f
+v_345=f7-3f
+v_346=square3
+v_347=f4-2f
+v_348=f5-2f
+v_349=f5-3f
+v_350=f6-2f
+v_351=f6-3f
+v_352=rightl0
+v_353=f9-0f
+v_354=f10-0f
+v_355=f10-1f
+v_356=f11-0f
+v_357=f11-1f
+v_358=rightl1
+v_359=f9-1f
+v_360=f10-1f
+v_361=square4
+v_362=f7-0f
+v_363=f8-0f
+v_364=f8-1f
+v_365=f9-0f
+v_366=f9-1f
+v_367=rightl2
+v_368=f7-1f
+v_369=f8-1f
+v_370=square2
+v_371=f5-0f
+v_372=f6-0f
+v_373=f6-1f
+v_374=f7-0f
+v_375=f7-1f
+v_376=rightl4
+v_377=f9-2f
+v_378=f10-2f
+v_379=f10-3f
+v_380=f11-2f
+v_381=f11-3f
+v_382=rightl3
+v_383=f8-3f
+v_384=f9-3f
+v_385=f10-3f
+v_386=straight0
+v_387=f8-2f
+v_388=f9-2f
+v_389=square0
+v_390=f7-2f
+v_391=f8-2f
+v_392=square1
+v_393=f7-3f
+v_394=f8-3f
+v_395=square3
+v_396=f5-2f
+v_397=f6-2f
+v_398=f6-3f
+v_399=f7-2f
+v_400=f7-3f
+v_401=rightl0
+v_402=f0-0f
+v_403=f0-1f
+v_404=f0-2f
+v_405=f0-3f
+v_406=f1-0f
+v_407=f1-1f
+v_408=f1-2f
+v_409=f1-3f
+v_410=f2-0f
+v_411=f2-1f
+v_412=f2-2f
+v_413=f2-3f
+v_414=f3-0f
+v_415=f3-1f
+v_416=f3-2f
+v_417=f3-3f
+v_418=f4-0f
+v_419=f4-1f
+v_420=f4-2f
+v_421=f4-3f
+v_422=f5-0f
+v_423=f5-1f
+v_424=f5-2f
+v_425=f5-3f

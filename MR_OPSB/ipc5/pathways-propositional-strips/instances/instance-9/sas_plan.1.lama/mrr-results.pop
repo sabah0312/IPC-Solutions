@@ -1,0 +1,161 @@
+** Operators
+init()
+01_choose_cdc25c_l1_l0()
+02_initialize_cdc25c()
+03_choose_cdk1p1p2_l2_l1()
+04_initialize_cdk1p1p2()
+05_choose_cdk2_l3_l2()
+06_initialize_cdk2()
+07_choose_cdk7_l4_l3()
+08_initialize_cdk7()
+09_choose_cks1_l5_l4()
+10_initialize_cks1()
+11_choose_cycb_l6_l5()
+12_choose_cych_l7_l6()
+13_initialize_cych()
+14_choose_p16_l8_l7()
+15_initialize_p16()
+16_choose_p53_l9_l8()
+17_initialize_cycb()
+18_initialize_p53()
+19_choose_plk1_l10_l9()
+20_initialize_plk1()
+21_associate-with-catalyze_cdc25c_plk1_cdc25cp1()
+22_associate-with-catalyze_cdk1p1p2_cdc25cp1_cdk1p2()
+23_initialize_cdk1p1p2()
+24_synthesize_p53_gadd45()
+25_associate_cdk7_cych_cdk7-cych()
+26_initialize_cdk7()
+27_associate-with-catalyze_cdk7_cdk7-cych_cdk7p1()
+28_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3()
+29_associate_p16_cdk7p1_p16-cdk7p1()
+30_dummy-action-13-1()
+31_associate-with-catalyze_cdk1p2_cdc25cp1_cdk1()
+32_dummy-action-12-2()
+33_associate_cdk1_gadd45_cdk1-gadd45()
+34_synthesize_p53_gadd45()
+35_dummy-action-11-1()
+36_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3()
+37_dummy-action-7-1()
+38_associate-with-catalyze_cdk1p2p3_cdc25cp1_cdk1p3()
+39_dummy-action-8-2()
+40_associate_cdk1p3_cks1_cdk1p3-cks1()
+41_dummy-action-3-2()
+42_initialize_cdk1p1p2()
+43_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3()
+44_initialize_cks1()
+45_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p1p3()
+46_initialize_cdk1p1p2()
+47_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3()
+48_associate_cdk1p1p3_cks1_cdk1p1p3-cks1()
+49_dummy-action-4-1()
+50_associate_cdk1p1p2p3_cycb_cdk1p1p2p3-cycb()
+51_dummy-action-6-2()
+52_initialize_cdk1p1p2()
+53_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3()
+54_associate-with-catalyze_cdk1p1p2p3-cycb_cdc25cp1_cdk1p1p3-cycb()
+55_dummy-action-5-2()
+56_associate-with-catalyze_cdk1p1p3-cycb_cdc25cp1_cdk1p3-cycb()
+57_choose_wee1_l11_l10()
+58_initialize_wee1()
+59_associate-with-catalyze_wee1_cdk1p3-cycb_wee1p1()
+60_dummy-action-1-2()
+61_dummy-action-2-2()
+62_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3()
+63_initialize_cdk1p1p2()
+64_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3()
+65_associate_cdk1p1p2p3_gadd45_cdk1p1p2p3-gadd45()
+66_synthesize_p53_gadd45()
+67_associate_cdk1p2p3_gadd45_cdk1p2p3-gadd45()
+68_dummy-action-9-2()
+69_dummy-action-10-1()
+goal()
+** Ordering
+01_choose_cdc25c_l1_l0 < 02_initialize_cdc25c
+01_choose_cdc25c_l1_l0 < 03_choose_cdk1p1p2_l2_l1
+02_initialize_cdc25c < 21_associate-with-catalyze_cdc25c_plk1_cdc25cp1
+03_choose_cdk1p1p2_l2_l1 < 04_initialize_cdk1p1p2
+03_choose_cdk1p1p2_l2_l1 < 05_choose_cdk2_l3_l2
+04_initialize_cdk1p1p2 < 28_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+05_choose_cdk2_l3_l2 < 06_initialize_cdk2
+05_choose_cdk2_l3_l2 < 07_choose_cdk7_l4_l3
+07_choose_cdk7_l4_l3 < 08_initialize_cdk7
+07_choose_cdk7_l4_l3 < 09_choose_cks1_l5_l4
+08_initialize_cdk7 < 25_associate_cdk7_cych_cdk7-cych
+09_choose_cks1_l5_l4 < 10_initialize_cks1
+09_choose_cks1_l5_l4 < 11_choose_cycb_l6_l5
+10_initialize_cks1 < 40_associate_cdk1p3_cks1_cdk1p3-cks1
+11_choose_cycb_l6_l5 < 12_choose_cych_l7_l6
+11_choose_cycb_l6_l5 < 17_initialize_cycb
+12_choose_cych_l7_l6 < 13_initialize_cych
+12_choose_cych_l7_l6 < 14_choose_p16_l8_l7
+13_initialize_cych < 25_associate_cdk7_cych_cdk7-cych
+14_choose_p16_l8_l7 < 15_initialize_p16
+14_choose_p16_l8_l7 < 16_choose_p53_l9_l8
+15_initialize_p16 < 29_associate_p16_cdk7p1_p16-cdk7p1
+16_choose_p53_l9_l8 < 18_initialize_p53
+16_choose_p53_l9_l8 < 19_choose_plk1_l10_l9
+17_initialize_cycb < 50_associate_cdk1p1p2p3_cycb_cdk1p1p2p3-cycb
+18_initialize_p53 < 24_synthesize_p53_gadd45
+19_choose_plk1_l10_l9 < 20_initialize_plk1
+19_choose_plk1_l10_l9 < 57_choose_wee1_l11_l10
+20_initialize_plk1 < 21_associate-with-catalyze_cdc25c_plk1_cdc25cp1
+21_associate-with-catalyze_cdc25c_plk1_cdc25cp1 < 22_associate-with-catalyze_cdk1p1p2_cdc25cp1_cdk1p2
+21_associate-with-catalyze_cdc25c_plk1_cdc25cp1 < 36_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3
+21_associate-with-catalyze_cdc25c_plk1_cdc25cp1 < 54_associate-with-catalyze_cdk1p1p2p3-cycb_cdc25cp1_cdk1p1p3-cycb
+22_associate-with-catalyze_cdk1p1p2_cdc25cp1_cdk1p2 < 31_associate-with-catalyze_cdk1p2_cdc25cp1_cdk1
+22_associate-with-catalyze_cdk1p1p2_cdc25cp1_cdk1p2 < 46_initialize_cdk1p1p2
+23_initialize_cdk1p1p2 < 43_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+24_synthesize_p53_gadd45 < 33_associate_cdk1_gadd45_cdk1-gadd45
+25_associate_cdk7_cych_cdk7-cych < 26_initialize_cdk7
+25_associate_cdk7_cych_cdk7-cych < 28_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+26_initialize_cdk7 < 27_associate-with-catalyze_cdk7_cdk7-cych_cdk7p1
+27_associate-with-catalyze_cdk7_cdk7-cych_cdk7p1 < 29_associate_p16_cdk7p1_p16-cdk7p1
+28_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 23_initialize_cdk1p1p2
+28_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 50_associate_cdk1p1p2p3_cycb_cdk1p1p2p3-cycb
+29_associate_p16_cdk7p1_p16-cdk7p1 < 30_dummy-action-13-1
+31_associate-with-catalyze_cdk1p2_cdc25cp1_cdk1 < 32_dummy-action-12-2
+32_dummy-action-12-2 < 33_associate_cdk1_gadd45_cdk1-gadd45
+33_associate_cdk1_gadd45_cdk1-gadd45 < 34_synthesize_p53_gadd45
+33_associate_cdk1_gadd45_cdk1-gadd45 < 35_dummy-action-11-1
+34_synthesize_p53_gadd45 < 67_associate_cdk1p2p3_gadd45_cdk1p2p3-gadd45
+36_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3 < 38_associate-with-catalyze_cdk1p2p3_cdc25cp1_cdk1p3
+36_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3 < 47_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+37_dummy-action-7-1 < 67_associate_cdk1p2p3_gadd45_cdk1p2p3-gadd45
+38_associate-with-catalyze_cdk1p2p3_cdc25cp1_cdk1p3 < 39_dummy-action-8-2
+38_associate-with-catalyze_cdk1p2p3_cdc25cp1_cdk1p3 < 62_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3
+39_dummy-action-8-2 < 40_associate_cdk1p3_cks1_cdk1p3-cks1
+40_associate_cdk1p3_cks1_cdk1p3-cks1 < 41_dummy-action-3-2
+40_associate_cdk1p3_cks1_cdk1p3-cks1 < 44_initialize_cks1
+42_initialize_cdk1p1p2 < 22_associate-with-catalyze_cdk1p1p2_cdc25cp1_cdk1p2
+43_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 36_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3
+43_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 42_initialize_cdk1p1p2
+44_initialize_cks1 < 48_associate_cdk1p1p3_cks1_cdk1p1p3-cks1
+45_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p1p3 < 48_associate_cdk1p1p3_cks1_cdk1p1p3-cks1
+45_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p1p3 < 64_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+46_initialize_cdk1p1p2 < 47_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+47_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 52_initialize_cdk1p1p2
+47_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 62_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3
+48_associate_cdk1p1p3_cks1_cdk1p1p3-cks1 < 49_dummy-action-4-1
+50_associate_cdk1p1p2p3_cycb_cdk1p1p2p3-cycb < 43_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+50_associate_cdk1p1p2p3_cycb_cdk1p1p2p3-cycb < 51_dummy-action-6-2
+51_dummy-action-6-2 < 54_associate-with-catalyze_cdk1p1p2p3-cycb_cdc25cp1_cdk1p1p3-cycb
+52_initialize_cdk1p1p2 < 53_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+53_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 45_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p1p3
+53_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 63_initialize_cdk1p1p2
+54_associate-with-catalyze_cdk1p1p2p3-cycb_cdc25cp1_cdk1p1p3-cycb < 55_dummy-action-5-2
+55_dummy-action-5-2 < 56_associate-with-catalyze_cdk1p1p3-cycb_cdc25cp1_cdk1p3-cycb
+56_associate-with-catalyze_cdk1p1p3-cycb_cdc25cp1_cdk1p3-cycb < 59_associate-with-catalyze_wee1_cdk1p3-cycb_wee1p1
+56_associate-with-catalyze_cdk1p1p3-cycb_cdc25cp1_cdk1p3-cycb < 60_dummy-action-1-2
+57_choose_wee1_l11_l10 < 58_initialize_wee1
+58_initialize_wee1 < 59_associate-with-catalyze_wee1_cdk1p3-cycb_wee1p1
+59_associate-with-catalyze_wee1_cdk1p3-cycb_wee1p1 < 61_dummy-action-2-2
+62_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3 < 37_dummy-action-7-1
+62_associate-with-catalyze_cdk1p1p2p3_cdc25cp1_cdk1p2p3 < 53_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+63_initialize_cdk1p1p2 < 64_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3
+64_associate-with-catalyze_cdk1p1p2_cdk7-cych_cdk1p1p2p3 < 65_associate_cdk1p1p2p3_gadd45_cdk1p1p2p3-gadd45
+65_associate_cdk1p1p2p3_gadd45_cdk1p1p2p3-gadd45 < 68_dummy-action-9-2
+66_synthesize_p53_gadd45 < 65_associate_cdk1p1p2p3_gadd45_cdk1p1p2p3-gadd45
+67_associate_cdk1p2p3_gadd45_cdk1p2p3-gadd45 < 66_synthesize_p53_gadd45
+67_associate_cdk1p2p3_gadd45_cdk1p2p3-gadd45 < 69_dummy-action-10-1
+** Binding

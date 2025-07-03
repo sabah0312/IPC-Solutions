@@ -1,0 +1,796 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57)
+001_load-truck(v_58 v_59 v_60)
+002_load-truck(v_61 v_62 v_63)
+003_drive-truck(v_64 v_65 v_66 v_67)
+004_unload-truck(v_68 v_69 v_70)
+005_unload-truck(v_71 v_72 v_73)
+006_load-truck(v_74 v_75 v_76)
+007_load-truck(v_77 v_78 v_79)
+008_load-truck(v_80 v_81 v_82)
+009_load-truck(v_83 v_84 v_85)
+010_load-truck(v_86 v_87 v_88)
+011_load-truck(v_89 v_90 v_91)
+012_drive-truck(v_92 v_93 v_94 v_95)
+013_unload-truck(v_96 v_97 v_98)
+014_unload-truck(v_99 v_100 v_101)
+015_unload-truck(v_102 v_103 v_104)
+016_load-truck(v_105 v_106 v_107)
+017_load-truck(v_108 v_109 v_110)
+018_load-truck(v_111 v_112 v_113)
+019_drive-truck(v_114 v_115 v_116 v_117)
+020_unload-truck(v_118 v_119 v_120)
+021_unload-truck(v_121 v_122 v_123)
+022_unload-truck(v_124 v_125 v_126)
+023_load-truck(v_127 v_128 v_129)
+024_load-truck(v_130 v_131 v_132)
+025_load-truck(v_133 v_134 v_135)
+026_load-truck(v_136 v_137 v_138)
+027_load-truck(v_139 v_140 v_141)
+028_load-truck(v_142 v_143 v_144)
+029_load-truck(v_145 v_146 v_147)
+030_load-truck(v_148 v_149 v_150)
+031_load-truck(v_151 v_152 v_153)
+032_load-truck(v_154 v_155 v_156)
+033_drive-truck(v_157 v_158 v_159 v_160)
+034_unload-truck(v_161 v_162 v_163)
+035_unload-truck(v_164 v_165 v_166)
+036_unload-truck(v_167 v_168 v_169)
+037_fly-airplane(v_170 v_171 v_172)
+038_drive-truck(v_173 v_174 v_175 v_176)
+039_unload-truck(v_177 v_178 v_179)
+040_unload-truck(v_180 v_181 v_182)
+041_unload-truck(v_183 v_184 v_185)
+042_fly-airplane(v_186 v_187 v_188)
+043_drive-truck(v_189 v_190 v_191 v_192)
+044_unload-truck(v_193 v_194 v_195)
+045_unload-truck(v_196 v_197 v_198)
+046_unload-truck(v_199 v_200 v_201)
+047_load-airplane(v_202 v_203 v_204)
+048_load-airplane(v_205 v_206 v_207)
+049_fly-airplane(v_208 v_209 v_210)
+050_load-airplane(v_211 v_212 v_213)
+051_load-airplane(v_214 v_215 v_216)
+052_fly-airplane(v_217 v_218 v_219)
+053_unload-airplane(v_220 v_221 v_222)
+054_load-truck(v_223 v_224 v_225)
+055_load-airplane(v_226 v_227 v_228)
+056_load-airplane(v_229 v_230 v_231)
+057_load-airplane(v_232 v_233 v_234)
+058_fly-airplane(v_235 v_236 v_237)
+059_load-airplane(v_238 v_239 v_240)
+060_load-airplane(v_241 v_242 v_243)
+061_load-airplane(v_244 v_245 v_246)
+062_unload-airplane(v_247 v_248 v_249)
+063_unload-airplane(v_250 v_251 v_252)
+064_drive-truck(v_253 v_254 v_255 v_256)
+065_unload-truck(v_257 v_258 v_259)
+066_unload-truck(v_260 v_261 v_262)
+067_load-airplane(v_263 v_264 v_265)
+068_load-airplane(v_266 v_267 v_268)
+069_drive-truck(v_269 v_270 v_271 v_272)
+070_unload-truck(v_273 v_274 v_275)
+071_drive-truck(v_276 v_277 v_278 v_279)
+072_unload-truck(v_280 v_281 v_282)
+073_unload-truck(v_283 v_284 v_285)
+074_fly-airplane(v_286 v_287 v_288)
+075_unload-airplane(v_289 v_290 v_291)
+076_fly-airplane(v_292 v_293 v_294)
+077_unload-airplane(v_295 v_296 v_297)
+078_load-airplane(v_298 v_299 v_300)
+079_load-airplane(v_301 v_302 v_303)
+080_fly-airplane(v_304 v_305 v_306)
+081_unload-airplane(v_307 v_308 v_309)
+082_load-truck(v_310 v_311 v_312)
+083_drive-truck(v_313 v_314 v_315 v_316)
+084_unload-truck(v_317 v_318 v_319)
+085_unload-airplane(v_320 v_321 v_322)
+086_drive-truck(v_323 v_324 v_325 v_326)
+087_load-truck(v_327 v_328 v_329)
+088_drive-truck(v_330 v_331 v_332 v_333)
+089_unload-truck(v_334 v_335 v_336)
+090_fly-airplane(v_337 v_338 v_339)
+091_load-airplane(v_340 v_341 v_342)
+092_fly-airplane(v_343 v_344 v_345)
+093_unload-airplane(v_346 v_347 v_348)
+094_fly-airplane(v_349 v_350 v_351)
+095_unload-airplane(v_352 v_353 v_354)
+096_fly-airplane(v_355 v_356 v_357)
+097_unload-airplane(v_358 v_359 v_360)
+098_fly-airplane(v_361 v_362 v_363)
+099_fly-airplane(v_364 v_365 v_366)
+100_load-airplane(v_367 v_368 v_369)
+101_fly-airplane(v_370 v_371 v_372)
+102_unload-airplane(v_373 v_374 v_375)
+103_load-truck(v_376 v_377 v_378)
+104_drive-truck(v_379 v_380 v_381 v_382)
+105_unload-truck(v_383 v_384 v_385)
+106_fly-airplane(v_386 v_387 v_388)
+107_load-airplane(v_389 v_390 v_391)
+108_load-airplane(v_392 v_393 v_394)
+109_load-airplane(v_395 v_396 v_397)
+110_fly-airplane(v_398 v_399 v_400)
+111_unload-airplane(v_401 v_402 v_403)
+112_unload-airplane(v_404 v_405 v_406)
+113_fly-airplane(v_407 v_408 v_409)
+114_unload-airplane(v_410 v_411 v_412)
+115_fly-airplane(v_413 v_414 v_415)
+116_unload-airplane(v_416 v_417 v_418)
+117_unload-airplane(v_419 v_420 v_421)
+118_unload-airplane(v_422 v_423 v_424)
+119_load-truck(v_425 v_426 v_427)
+120_drive-truck(v_428 v_429 v_430 v_431)
+121_unload-truck(v_432 v_433 v_434)
+122_unload-airplane(v_435 v_436 v_437)
+123_fly-airplane(v_438 v_439 v_440)
+124_unload-airplane(v_441 v_442 v_443)
+125_drive-truck(v_444 v_445 v_446 v_447)
+126_load-truck(v_448 v_449 v_450)
+127_drive-truck(v_451 v_452 v_453 v_454)
+128_unload-truck(v_455 v_456 v_457)
+goal(v_458 v_459 v_460 v_461 v_462 v_463 v_464 v_465 v_466 v_467 v_468 v_469 v_470 v_471 v_472 v_473 v_474 v_475 v_476 v_477 v_478 v_479 v_480 v_481 v_482 v_483 v_484 v_485 v_486 v_487 v_488 v_489 v_490 v_491 v_492)
+** Ordering
+001_load-truck < 003_drive-truck
+002_load-truck < 003_drive-truck
+003_drive-truck < 004_unload-truck
+003_drive-truck < 005_unload-truck
+004_unload-truck < 047_load-airplane
+005_unload-truck < 048_load-airplane
+006_load-truck < 038_drive-truck
+007_load-truck < 038_drive-truck
+008_load-truck < 038_drive-truck
+009_load-truck < 012_drive-truck
+010_load-truck < 012_drive-truck
+011_load-truck < 012_drive-truck
+012_drive-truck < 013_unload-truck
+012_drive-truck < 014_unload-truck
+012_drive-truck < 015_unload-truck
+013_unload-truck < 091_load-airplane
+015_unload-truck < 100_load-airplane
+016_load-truck < 019_drive-truck
+017_load-truck < 019_drive-truck
+018_load-truck < 019_drive-truck
+019_drive-truck < 020_unload-truck
+019_drive-truck < 021_unload-truck
+019_drive-truck < 022_unload-truck
+020_unload-truck < 059_load-airplane
+021_unload-truck < 060_load-airplane
+022_unload-truck < 061_load-airplane
+023_load-truck < 064_drive-truck
+024_load-truck < 064_drive-truck
+025_load-truck < 043_drive-truck
+026_load-truck < 043_drive-truck
+027_load-truck < 043_drive-truck
+028_load-truck < 071_drive-truck
+029_load-truck < 071_drive-truck
+030_load-truck < 033_drive-truck
+031_load-truck < 033_drive-truck
+032_load-truck < 033_drive-truck
+033_drive-truck < 034_unload-truck
+033_drive-truck < 035_unload-truck
+033_drive-truck < 036_unload-truck
+035_unload-truck < 050_load-airplane
+036_unload-truck < 051_load-airplane
+037_fly-airplane < 042_fly-airplane
+038_drive-truck < 039_unload-truck
+038_drive-truck < 040_unload-truck
+038_drive-truck < 041_unload-truck
+038_drive-truck < 119_load-truck
+039_unload-truck < 107_load-airplane
+039_unload-truck < 120_drive-truck
+040_unload-truck < 108_load-airplane
+040_unload-truck < 120_drive-truck
+041_unload-truck < 109_load-airplane
+041_unload-truck < 120_drive-truck
+042_fly-airplane < 067_load-airplane
+042_fly-airplane < 068_load-airplane
+043_drive-truck < 044_unload-truck
+043_drive-truck < 045_unload-truck
+043_drive-truck < 046_unload-truck
+044_unload-truck < 055_load-airplane
+044_unload-truck < 069_drive-truck
+045_unload-truck < 056_load-airplane
+045_unload-truck < 069_drive-truck
+046_unload-truck < 057_load-airplane
+046_unload-truck < 069_drive-truck
+047_load-airplane < 049_fly-airplane
+048_load-airplane < 049_fly-airplane
+049_fly-airplane < 050_load-airplane
+049_fly-airplane < 051_load-airplane
+050_load-airplane < 052_fly-airplane
+051_load-airplane < 052_fly-airplane
+052_fly-airplane < 053_unload-airplane
+052_fly-airplane < 055_load-airplane
+052_fly-airplane < 056_load-airplane
+052_fly-airplane < 057_load-airplane
+053_unload-airplane < 054_load-truck
+053_unload-airplane < 058_fly-airplane
+054_load-truck < 088_drive-truck
+055_load-airplane < 058_fly-airplane
+056_load-airplane < 058_fly-airplane
+057_load-airplane < 058_fly-airplane
+058_fly-airplane < 059_load-airplane
+058_fly-airplane < 060_load-airplane
+058_fly-airplane < 061_load-airplane
+058_fly-airplane < 062_unload-airplane
+058_fly-airplane < 063_unload-airplane
+059_load-airplane < 094_fly-airplane
+060_load-airplane < 094_fly-airplane
+061_load-airplane < 094_fly-airplane
+062_unload-airplane < 094_fly-airplane
+063_unload-airplane < 094_fly-airplane
+064_drive-truck < 065_unload-truck
+064_drive-truck < 066_unload-truck
+065_unload-truck < 067_load-airplane
+066_unload-truck < 068_load-airplane
+067_load-airplane < 074_fly-airplane
+068_load-airplane < 074_fly-airplane
+069_drive-truck < 086_drive-truck
+071_drive-truck < 072_unload-truck
+071_drive-truck < 073_unload-truck
+072_unload-truck < 078_load-airplane
+072_unload-truck < 104_drive-truck
+073_unload-truck < 079_load-airplane
+073_unload-truck < 104_drive-truck
+074_fly-airplane < 075_unload-airplane
+075_unload-airplane < 076_fly-airplane
+075_unload-airplane < 087_load-truck
+076_fly-airplane < 077_unload-airplane
+076_fly-airplane < 078_load-airplane
+076_fly-airplane < 079_load-airplane
+077_unload-airplane < 080_fly-airplane
+078_load-airplane < 080_fly-airplane
+079_load-airplane < 080_fly-airplane
+080_fly-airplane < 081_unload-airplane
+080_fly-airplane < 085_unload-airplane
+081_unload-airplane < 082_load-truck
+081_unload-airplane < 090_fly-airplane
+082_load-truck < 083_drive-truck
+083_drive-truck < 084_unload-truck
+085_unload-airplane < 090_fly-airplane
+086_drive-truck < 054_load-truck
+086_drive-truck < 087_load-truck
+087_load-truck < 088_drive-truck
+088_drive-truck < 070_unload-truck
+088_drive-truck < 089_unload-truck
+090_fly-airplane < 091_load-airplane
+091_load-airplane < 092_fly-airplane
+092_fly-airplane < 093_unload-airplane
+094_fly-airplane < 096_fly-airplane
+095_unload-airplane < 099_fly-airplane
+096_fly-airplane < 097_unload-airplane
+097_unload-airplane < 098_fly-airplane
+098_fly-airplane < 095_unload-airplane
+099_fly-airplane < 115_fly-airplane
+100_load-airplane < 101_fly-airplane
+101_fly-airplane < 102_unload-airplane
+102_unload-airplane < 103_load-truck
+102_unload-airplane < 106_fly-airplane
+103_load-truck < 127_drive-truck
+104_drive-truck < 125_drive-truck
+106_fly-airplane < 123_fly-airplane
+107_load-airplane < 110_fly-airplane
+108_load-airplane < 110_fly-airplane
+109_load-airplane < 110_fly-airplane
+110_fly-airplane < 111_unload-airplane
+110_fly-airplane < 112_unload-airplane
+111_unload-airplane < 113_fly-airplane
+111_unload-airplane < 126_load-truck
+112_unload-airplane < 113_fly-airplane
+113_fly-airplane < 100_load-airplane
+113_fly-airplane < 114_unload-airplane
+114_unload-airplane < 101_fly-airplane
+115_fly-airplane < 107_load-airplane
+115_fly-airplane < 108_load-airplane
+115_fly-airplane < 109_load-airplane
+115_fly-airplane < 116_unload-airplane
+115_fly-airplane < 117_unload-airplane
+115_fly-airplane < 118_unload-airplane
+115_fly-airplane < 122_unload-airplane
+116_unload-airplane < 110_fly-airplane
+117_unload-airplane < 110_fly-airplane
+118_unload-airplane < 110_fly-airplane
+118_unload-airplane < 119_load-truck
+119_load-truck < 120_drive-truck
+120_drive-truck < 121_unload-truck
+122_unload-airplane < 110_fly-airplane
+123_fly-airplane < 124_unload-airplane
+125_drive-truck < 103_load-truck
+125_drive-truck < 126_load-truck
+126_load-truck < 127_drive-truck
+127_drive-truck < 105_unload-truck
+127_drive-truck < 128_unload-truck
+** Binding
+v_0=apn1
+v_1=apn2
+v_2=apt1
+v_3=apt2
+v_4=apt3
+v_5=apt4
+v_6=apt5
+v_7=apt6
+v_8=apt7
+v_9=apt8
+v_10=cit1
+v_11=cit2
+v_12=cit3
+v_13=cit4
+v_14=cit5
+v_15=cit6
+v_16=cit7
+v_17=cit8
+v_18=obj11
+v_19=obj12
+v_20=obj13
+v_21=obj21
+v_22=obj22
+v_23=obj23
+v_24=obj31
+v_25=obj32
+v_26=obj33
+v_27=obj41
+v_28=obj42
+v_29=obj43
+v_30=obj51
+v_31=obj52
+v_32=obj53
+v_33=obj61
+v_34=obj62
+v_35=obj63
+v_36=obj71
+v_37=obj72
+v_38=obj73
+v_39=obj81
+v_40=obj82
+v_41=obj83
+v_42=pos1
+v_43=pos2
+v_44=pos3
+v_45=pos4
+v_46=pos5
+v_47=pos6
+v_48=pos7
+v_49=pos8
+v_50=tru1
+v_51=tru2
+v_52=tru3
+v_53=tru4
+v_54=tru5
+v_55=tru6
+v_56=tru7
+v_57=tru8
+v_58=obj83
+v_59=tru8
+v_60=pos8
+v_61=obj81
+v_62=tru8
+v_63=pos8
+v_64=tru8
+v_65=pos8
+v_66=apt8
+v_67=cit8
+v_68=obj83
+v_69=tru8
+v_70=apt8
+v_71=obj81
+v_72=tru8
+v_73=apt8
+v_74=obj73
+v_75=tru7
+v_76=pos7
+v_77=obj72
+v_78=tru7
+v_79=pos7
+v_80=obj71
+v_81=tru7
+v_82=pos7
+v_83=obj63
+v_84=tru6
+v_85=pos6
+v_86=obj62
+v_87=tru6
+v_88=pos6
+v_89=obj61
+v_90=tru6
+v_91=pos6
+v_92=tru6
+v_93=pos6
+v_94=apt6
+v_95=cit6
+v_96=obj63
+v_97=tru6
+v_98=apt6
+v_99=obj62
+v_100=tru6
+v_101=apt6
+v_102=obj61
+v_103=tru6
+v_104=apt6
+v_105=obj53
+v_106=tru5
+v_107=pos5
+v_108=obj52
+v_109=tru5
+v_110=pos5
+v_111=obj51
+v_112=tru5
+v_113=pos5
+v_114=tru5
+v_115=pos5
+v_116=apt5
+v_117=cit5
+v_118=obj53
+v_119=tru5
+v_120=apt5
+v_121=obj52
+v_122=tru5
+v_123=apt5
+v_124=obj51
+v_125=tru5
+v_126=apt5
+v_127=obj43
+v_128=tru4
+v_129=pos4
+v_130=obj41
+v_131=tru4
+v_132=pos4
+v_133=obj33
+v_134=tru3
+v_135=pos3
+v_136=obj32
+v_137=tru3
+v_138=pos3
+v_139=obj31
+v_140=tru3
+v_141=pos3
+v_142=obj23
+v_143=tru2
+v_144=pos2
+v_145=obj21
+v_146=tru2
+v_147=pos2
+v_148=obj13
+v_149=tru1
+v_150=pos1
+v_151=obj12
+v_152=tru1
+v_153=pos1
+v_154=obj11
+v_155=tru1
+v_156=pos1
+v_157=tru1
+v_158=pos1
+v_159=apt1
+v_160=cit1
+v_161=obj13
+v_162=tru1
+v_163=apt1
+v_164=obj12
+v_165=tru1
+v_166=apt1
+v_167=obj11
+v_168=tru1
+v_169=apt1
+v_170=apn2
+v_171=apt7
+v_172=apt1
+v_173=tru7
+v_174=pos7
+v_175=apt7
+v_176=cit7
+v_177=obj73
+v_178=tru7
+v_179=apt7
+v_180=obj72
+v_181=tru7
+v_182=apt7
+v_183=obj71
+v_184=tru7
+v_185=apt7
+v_186=apn2
+v_187=apt1
+v_188=apt4
+v_189=tru3
+v_190=pos3
+v_191=apt3
+v_192=cit3
+v_193=obj33
+v_194=tru3
+v_195=apt3
+v_196=obj32
+v_197=tru3
+v_198=apt3
+v_199=obj31
+v_200=tru3
+v_201=apt3
+v_202=obj83
+v_203=apn1
+v_204=apt8
+v_205=obj81
+v_206=apn1
+v_207=apt8
+v_208=apn1
+v_209=apt8
+v_210=apt1
+v_211=obj12
+v_212=apn1
+v_213=apt1
+v_214=obj11
+v_215=apn1
+v_216=apt1
+v_217=apn1
+v_218=apt1
+v_219=apt3
+v_220=obj83
+v_221=apn1
+v_222=apt3
+v_223=obj83
+v_224=tru3
+v_225=apt3
+v_226=obj33
+v_227=apn1
+v_228=apt3
+v_229=obj32
+v_230=apn1
+v_231=apt3
+v_232=obj31
+v_233=apn1
+v_234=apt3
+v_235=apn1
+v_236=apt3
+v_237=apt5
+v_238=obj53
+v_239=apn1
+v_240=apt5
+v_241=obj52
+v_242=apn1
+v_243=apt5
+v_244=obj51
+v_245=apn1
+v_246=apt5
+v_247=obj31
+v_248=apn1
+v_249=apt5
+v_250=obj11
+v_251=apn1
+v_252=apt5
+v_253=tru4
+v_254=pos4
+v_255=apt4
+v_256=cit4
+v_257=obj43
+v_258=tru4
+v_259=apt4
+v_260=obj41
+v_261=tru4
+v_262=apt4
+v_263=obj43
+v_264=apn2
+v_265=apt4
+v_266=obj41
+v_267=apn2
+v_268=apt4
+v_269=tru3
+v_270=apt3
+v_271=pos3
+v_272=cit3
+v_273=obj83
+v_274=tru3
+v_275=pos3
+v_276=tru2
+v_277=pos2
+v_278=apt2
+v_279=cit2
+v_280=obj23
+v_281=tru2
+v_282=apt2
+v_283=obj21
+v_284=tru2
+v_285=apt2
+v_286=apn2
+v_287=apt4
+v_288=apt3
+v_289=obj41
+v_290=apn2
+v_291=apt3
+v_292=apn2
+v_293=apt3
+v_294=apt2
+v_295=obj43
+v_296=apn2
+v_297=apt2
+v_298=obj23
+v_299=apn2
+v_300=apt2
+v_301=obj21
+v_302=apn2
+v_303=apt2
+v_304=apn2
+v_305=apt2
+v_306=apt4
+v_307=obj23
+v_308=apn2
+v_309=apt4
+v_310=obj23
+v_311=tru4
+v_312=apt4
+v_313=tru4
+v_314=apt4
+v_315=pos4
+v_316=cit4
+v_317=obj23
+v_318=tru4
+v_319=pos4
+v_320=obj21
+v_321=apn2
+v_322=apt4
+v_323=tru3
+v_324=pos3
+v_325=apt3
+v_326=cit3
+v_327=obj41
+v_328=tru3
+v_329=apt3
+v_330=tru3
+v_331=apt3
+v_332=pos3
+v_333=cit3
+v_334=obj41
+v_335=tru3
+v_336=pos3
+v_337=apn2
+v_338=apt4
+v_339=apt6
+v_340=obj63
+v_341=apn2
+v_342=apt6
+v_343=apn2
+v_344=apt6
+v_345=apt5
+v_346=obj63
+v_347=apn2
+v_348=apt5
+v_349=apn1
+v_350=apt5
+v_351=apt2
+v_352=obj81
+v_353=apn1
+v_354=apt2
+v_355=apn1
+v_356=apt2
+v_357=apt4
+v_358=obj51
+v_359=apn1
+v_360=apt4
+v_361=apn1
+v_362=apt4
+v_363=apt2
+v_364=apn1
+v_365=apt2
+v_366=apt6
+v_367=obj61
+v_368=apn1
+v_369=apt6
+v_370=apn1
+v_371=apt6
+v_372=apt2
+v_373=obj61
+v_374=apn1
+v_375=apt2
+v_376=obj61
+v_377=tru2
+v_378=apt2
+v_379=tru2
+v_380=apt2
+v_381=pos2
+v_382=cit2
+v_383=obj61
+v_384=tru2
+v_385=pos2
+v_386=apn1
+v_387=apt2
+v_388=apt7
+v_389=obj73
+v_390=apn1
+v_391=apt7
+v_392=obj72
+v_393=apn1
+v_394=apt7
+v_395=obj71
+v_396=apn1
+v_397=apt7
+v_398=apn1
+v_399=apt7
+v_400=apt2
+v_401=obj73
+v_402=apn1
+v_403=apt2
+v_404=obj72
+v_405=apn1
+v_406=apt2
+v_407=apn1
+v_408=apt2
+v_409=apt6
+v_410=obj71
+v_411=apn1
+v_412=apt6
+v_413=apn1
+v_414=apt6
+v_415=apt7
+v_416=obj53
+v_417=apn1
+v_418=apt7
+v_419=obj52
+v_420=apn1
+v_421=apt7
+v_422=obj32
+v_423=apn1
+v_424=apt7
+v_425=obj32
+v_426=tru7
+v_427=apt7
+v_428=tru7
+v_429=apt7
+v_430=pos7
+v_431=cit7
+v_432=obj32
+v_433=tru7
+v_434=pos7
+v_435=obj12
+v_436=apn1
+v_437=apt7
+v_438=apn1
+v_439=apt7
+v_440=apt8
+v_441=obj33
+v_442=apn1
+v_443=apt8
+v_444=tru2
+v_445=pos2
+v_446=apt2
+v_447=cit2
+v_448=obj73
+v_449=tru2
+v_450=apt2
+v_451=tru2
+v_452=apt2
+v_453=pos2
+v_454=cit2
+v_455=obj73
+v_456=tru2
+v_457=pos2
+v_458=apt1
+v_459=apt2
+v_460=apt4
+v_461=apt5
+v_462=apt6
+v_463=apt7
+v_464=apt8
+v_465=obj11
+v_466=obj12
+v_467=obj13
+v_468=obj21
+v_469=obj22
+v_470=obj23
+v_471=obj31
+v_472=obj32
+v_473=obj33
+v_474=obj41
+v_475=obj43
+v_476=obj51
+v_477=obj52
+v_478=obj53
+v_479=obj61
+v_480=obj62
+v_481=obj63
+v_482=obj71
+v_483=obj72
+v_484=obj73
+v_485=obj81
+v_486=obj82
+v_487=obj83
+v_488=pos2
+v_489=pos3
+v_490=pos4
+v_491=pos7
+v_492=pos8

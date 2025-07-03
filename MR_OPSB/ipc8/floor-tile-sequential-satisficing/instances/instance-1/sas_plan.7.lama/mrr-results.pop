@@ -1,0 +1,240 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18)
+01_left(v_19 v_20 v_21)
+02_up(v_22 v_23 v_24)
+03_paint-up(v_25 v_26 v_27 v_28)
+04_right(v_29 v_30 v_31)
+05_right(v_32 v_33 v_34)
+06_paint-up(v_35 v_36 v_37 v_38)
+07_down(v_39 v_40 v_41)
+08_up(v_42 v_43 v_44)
+09_up(v_45 v_46 v_47)
+10_paint-up(v_48 v_49 v_50 v_51)
+11_right(v_52 v_53 v_54)
+12_up(v_55 v_56 v_57)
+13_paint-up(v_58 v_59 v_60 v_61)
+14_right(v_62 v_63 v_64)
+15_left(v_65 v_66 v_67)
+16_down(v_68 v_69 v_70)
+17_paint-up(v_71 v_72 v_73 v_74)
+18_paint-up(v_75 v_76 v_77 v_78)
+19_down(v_79 v_80 v_81)
+20_down(v_82 v_83 v_84)
+21_left(v_85 v_86 v_87)
+22_paint-up(v_88 v_89 v_90 v_91)
+23_left(v_92 v_93 v_94)
+24_paint-up(v_95 v_96 v_97 v_98)
+25_down(v_99 v_100 v_101)
+26_left(v_102 v_103 v_104)
+27_right(v_105 v_106 v_107)
+28_paint-up(v_108 v_109 v_110 v_111)
+29_right(v_112 v_113 v_114)
+30_right(v_115 v_116 v_117)
+31_right(v_118 v_119 v_120)
+32_paint-up(v_121 v_122 v_123 v_124)
+33_left(v_125 v_126 v_127)
+34_paint-up(v_128 v_129 v_130 v_131)
+35_down(v_132 v_133 v_134)
+36_paint-up(v_135 v_136 v_137 v_138)
+goal(v_139 v_140 v_141 v_142 v_143 v_144 v_145 v_146 v_147 v_148 v_149 v_150 v_151 v_152)
+** Ordering
+01_left < 02_up
+02_up < 03_paint-up
+02_up < 09_up
+03_paint-up < 04_right
+04_right < 05_right
+04_right < 10_paint-up
+05_right < 06_paint-up
+05_right < 12_up
+06_paint-up < 07_down
+07_down < 14_right
+07_down < 15_left
+08_up < 09_up
+09_up < 10_paint-up
+10_paint-up < 11_right
+11_right < 12_up
+12_up < 13_paint-up
+12_up < 15_left
+13_paint-up < 14_right
+14_right < 16_down
+14_right < 17_paint-up
+15_left < 16_down
+15_left < 17_paint-up
+16_down < 18_paint-up
+17_paint-up < 19_down
+18_paint-up < 20_down
+19_down < 21_left
+20_down < 23_left
+21_left < 22_paint-up
+21_left < 23_left
+22_paint-up < 27_right
+23_left < 24_paint-up
+24_paint-up < 25_down
+25_down < 26_left
+25_down < 27_right
+26_left < 28_paint-up
+27_right < 28_paint-up
+27_right < 31_right
+28_paint-up < 29_right
+29_right < 30_right
+30_right < 34_paint-up
+30_right < 35_down
+31_right < 32_paint-up
+32_paint-up < 33_left
+33_left < 34_paint-up
+33_left < 35_down
+35_down < 36_paint-up
+** Binding
+v_0=black
+v_1=robot1
+v_2=robot2
+v_3=tile_0-1
+v_4=tile_0-2
+v_5=tile_0-3
+v_6=tile_1-1
+v_7=tile_1-2
+v_8=tile_1-3
+v_9=tile_2-1
+v_10=tile_2-2
+v_11=tile_2-3
+v_12=tile_3-1
+v_13=tile_3-2
+v_14=tile_3-3
+v_15=tile_4-1
+v_16=tile_4-2
+v_17=tile_4-3
+v_18=white
+v_19=robot2
+v_20=tile_2-2
+v_21=tile_2-1
+v_22=robot2
+v_23=tile_2-1
+v_24=tile_3-1
+v_25=robot2
+v_26=tile_4-1
+v_27=tile_3-1
+v_28=black
+v_29=robot2
+v_30=tile_3-1
+v_31=tile_3-2
+v_32=robot2
+v_33=tile_3-2
+v_34=tile_3-3
+v_35=robot2
+v_36=tile_4-3
+v_37=tile_3-3
+v_38=black
+v_39=robot2
+v_40=tile_3-3
+v_41=tile_2-3
+v_42=robot1
+v_43=tile_0-1
+v_44=tile_1-1
+v_45=robot1
+v_46=tile_1-1
+v_47=tile_2-1
+v_48=robot1
+v_49=tile_3-1
+v_50=tile_2-1
+v_51=white
+v_52=robot1
+v_53=tile_2-1
+v_54=tile_2-2
+v_55=robot1
+v_56=tile_2-2
+v_57=tile_3-2
+v_58=robot1
+v_59=tile_4-2
+v_60=tile_3-2
+v_61=white
+v_62=robot1
+v_63=tile_3-2
+v_64=tile_3-3
+v_65=robot2
+v_66=tile_2-3
+v_67=tile_2-2
+v_68=robot1
+v_69=tile_3-3
+v_70=tile_2-3
+v_71=robot2
+v_72=tile_3-2
+v_73=tile_2-2
+v_74=black
+v_75=robot1
+v_76=tile_3-3
+v_77=tile_2-3
+v_78=white
+v_79=robot2
+v_80=tile_2-2
+v_81=tile_1-2
+v_82=robot1
+v_83=tile_2-3
+v_84=tile_1-3
+v_85=robot2
+v_86=tile_1-2
+v_87=tile_1-1
+v_88=robot2
+v_89=tile_2-1
+v_90=tile_1-1
+v_91=black
+v_92=robot1
+v_93=tile_1-3
+v_94=tile_1-2
+v_95=robot1
+v_96=tile_2-2
+v_97=tile_1-2
+v_98=white
+v_99=robot1
+v_100=tile_1-2
+v_101=tile_0-2
+v_102=robot1
+v_103=tile_0-2
+v_104=tile_0-1
+v_105=robot2
+v_106=tile_1-1
+v_107=tile_1-2
+v_108=robot1
+v_109=tile_1-1
+v_110=tile_0-1
+v_111=white
+v_112=robot1
+v_113=tile_0-1
+v_114=tile_0-2
+v_115=robot1
+v_116=tile_0-2
+v_117=tile_0-3
+v_118=robot2
+v_119=tile_1-2
+v_120=tile_1-3
+v_121=robot2
+v_122=tile_2-3
+v_123=tile_1-3
+v_124=black
+v_125=robot2
+v_126=tile_1-3
+v_127=tile_1-2
+v_128=robot1
+v_129=tile_1-3
+v_130=tile_0-3
+v_131=white
+v_132=robot2
+v_133=tile_1-2
+v_134=tile_0-2
+v_135=robot2
+v_136=tile_1-2
+v_137=tile_0-2
+v_138=black
+v_139=black
+v_140=tile_1-1
+v_141=tile_1-2
+v_142=tile_1-3
+v_143=tile_2-1
+v_144=tile_2-2
+v_145=tile_2-3
+v_146=tile_3-1
+v_147=tile_3-2
+v_148=tile_3-3
+v_149=tile_4-1
+v_150=tile_4-2
+v_151=tile_4-3
+v_152=white

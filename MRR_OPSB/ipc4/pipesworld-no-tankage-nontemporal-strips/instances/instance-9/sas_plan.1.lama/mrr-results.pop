@@ -1,0 +1,210 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23)
+01_pop-unitarypipe(v_24 v_25 v_26 v_27 v_28 v_29 v_30)
+02_pop-unitarypipe(v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+03_pop-unitarypipe(v_38 v_39 v_40 v_41 v_42 v_43 v_44)
+04_pop-unitarypipe(v_45 v_46 v_47 v_48 v_49 v_50 v_51)
+05_pop-unitarypipe(v_52 v_53 v_54 v_55 v_56 v_57 v_58)
+06_pop-unitarypipe(v_59 v_60 v_61 v_62 v_63 v_64 v_65)
+07_pop-unitarypipe(v_66 v_67 v_68 v_69 v_70 v_71 v_72)
+08_pop-unitarypipe(v_73 v_74 v_75 v_76 v_77 v_78 v_79)
+09_pop-unitarypipe(v_80 v_81 v_82 v_83 v_84 v_85 v_86)
+10_pop-unitarypipe(v_87 v_88 v_89 v_90 v_91 v_92 v_93)
+11_push-unitarypipe(v_94 v_95 v_96 v_97 v_98 v_99 v_100)
+12_push-unitarypipe(v_101 v_102 v_103 v_104 v_105 v_106 v_107)
+13_push-unitarypipe(v_108 v_109 v_110 v_111 v_112 v_113 v_114)
+14_push-unitarypipe(v_115 v_116 v_117 v_118 v_119 v_120 v_121)
+15_push-unitarypipe(v_122 v_123 v_124 v_125 v_126 v_127 v_128)
+16_pop-unitarypipe(v_129 v_130 v_131 v_132 v_133 v_134 v_135)
+17_pop-unitarypipe(v_136 v_137 v_138 v_139 v_140 v_141 v_142)
+18_push-unitarypipe(v_143 v_144 v_145 v_146 v_147 v_148 v_149)
+19_push-unitarypipe(v_150 v_151 v_152 v_153 v_154 v_155 v_156)
+goal(v_157 v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165)
+** Ordering
+01_pop-unitarypipe < 02_pop-unitarypipe
+02_pop-unitarypipe < 03_pop-unitarypipe
+02_pop-unitarypipe < 13_push-unitarypipe
+03_pop-unitarypipe < 04_pop-unitarypipe
+04_pop-unitarypipe < 06_pop-unitarypipe
+05_pop-unitarypipe < 07_pop-unitarypipe
+06_pop-unitarypipe < 09_pop-unitarypipe
+07_pop-unitarypipe < 08_pop-unitarypipe
+07_pop-unitarypipe < 15_push-unitarypipe
+08_pop-unitarypipe < 10_pop-unitarypipe
+08_pop-unitarypipe < 18_push-unitarypipe
+09_pop-unitarypipe < 16_pop-unitarypipe
+10_pop-unitarypipe < 12_push-unitarypipe
+11_push-unitarypipe < 05_pop-unitarypipe
+12_push-unitarypipe < 17_pop-unitarypipe
+13_push-unitarypipe < 14_push-unitarypipe
+15_push-unitarypipe < 18_push-unitarypipe
+16_pop-unitarypipe < 15_push-unitarypipe
+17_pop-unitarypipe < 13_push-unitarypipe
+18_push-unitarypipe < 19_push-unitarypipe
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b10
+v_6=b11
+v_7=b12
+v_8=b13
+v_9=b2
+v_10=b3
+v_11=b4
+v_12=b5
+v_13=b6
+v_14=b7
+v_15=b8
+v_16=b9
+v_17=gasoleo
+v_18=lco
+v_19=oc1b
+v_20=oca1
+v_21=rat-a
+v_22=s12
+v_23=s13
+v_24=s12
+v_25=b10
+v_26=a1
+v_27=a2
+v_28=b2
+v_29=oca1
+v_30=gasoleo
+v_31=s12
+v_32=b1
+v_33=a1
+v_34=a2
+v_35=b10
+v_36=lco
+v_37=oca1
+v_38=s12
+v_39=b11
+v_40=a1
+v_41=a2
+v_42=b1
+v_43=gasoleo
+v_44=lco
+v_45=s12
+v_46=b5
+v_47=a1
+v_48=a2
+v_49=b11
+v_50=oca1
+v_51=gasoleo
+v_52=s13
+v_53=b8
+v_54=a1
+v_55=a3
+v_56=b0
+v_57=rat-a
+v_58=lco
+v_59=s12
+v_60=b4
+v_61=a1
+v_62=a2
+v_63=b5
+v_64=lco
+v_65=oca1
+v_66=s13
+v_67=b12
+v_68=a1
+v_69=a3
+v_70=b8
+v_71=rat-a
+v_72=rat-a
+v_73=s13
+v_74=b3
+v_75=a1
+v_76=a3
+v_77=b12
+v_78=lco
+v_79=rat-a
+v_80=s12
+v_81=b6
+v_82=a1
+v_83=a2
+v_84=b4
+v_85=lco
+v_86=lco
+v_87=s13
+v_88=b7
+v_89=a1
+v_90=a3
+v_91=b3
+v_92=oca1
+v_93=lco
+v_94=s13
+v_95=b0
+v_96=a1
+v_97=a3
+v_98=b7
+v_99=lco
+v_100=oca1
+v_101=s13
+v_102=b0
+v_103=a1
+v_104=a3
+v_105=b7
+v_106=lco
+v_107=oca1
+v_108=s13
+v_109=b10
+v_110=a1
+v_111=a3
+v_112=b7
+v_113=oca1
+v_114=oca1
+v_115=s13
+v_116=b3
+v_117=a1
+v_118=a3
+v_119=b10
+v_120=lco
+v_121=oca1
+v_122=s12
+v_123=b8
+v_124=a1
+v_125=a2
+v_126=b9
+v_127=rat-a
+v_128=rat-a
+v_129=s12
+v_130=b9
+v_131=a1
+v_132=a2
+v_133=b6
+v_134=rat-a
+v_135=lco
+v_136=s13
+v_137=b7
+v_138=a1
+v_139=a3
+v_140=b0
+v_141=oca1
+v_142=lco
+v_143=s12
+v_144=b12
+v_145=a1
+v_146=a2
+v_147=b8
+v_148=rat-a
+v_149=rat-a
+v_150=s12
+v_151=b11
+v_152=a1
+v_153=a2
+v_154=b12
+v_155=gasoleo
+v_156=rat-a
+v_157=a1
+v_158=a2
+v_159=a3
+v_160=b10
+v_161=b12
+v_162=b4
+v_163=b5
+v_164=b6
+v_165=b8

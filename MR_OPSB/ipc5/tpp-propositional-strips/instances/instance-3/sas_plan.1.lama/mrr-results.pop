@@ -1,0 +1,28 @@
+** Operators
+init()
+01_drive-truck1-depot1-market1()
+02_buy-truck1-goods3-market1-level0-level1-level0-level1()
+03_load-goods3-truck1-market1-level0-level1-level0-level1()
+04_buy-truck1-goods2-market1-level0-level1-level0-level1()
+05_load-goods2-truck1-market1-level0-level1-level0-level1()
+06_buy-truck1-goods1-market1-level0-level1-level0-level1()
+07_load-goods1-truck1-market1-level0-level1-level0-level1()
+08_drive-truck1-market1-depot1()
+09_unload-goods3-truck1-depot1-level0-level1-level0-level1()
+10_unload-goods2-truck1-depot1-level0-level1-level0-level1()
+11_unload-goods1-truck1-depot1-level0-level1-level0-level1()
+goal()
+** Ordering
+01_drive-truck1-depot1-market1 < 02_buy-truck1-goods3-market1-level0-level1-level0-level1
+01_drive-truck1-depot1-market1 < 04_buy-truck1-goods2-market1-level0-level1-level0-level1
+01_drive-truck1-depot1-market1 < 06_buy-truck1-goods1-market1-level0-level1-level0-level1
+02_buy-truck1-goods3-market1-level0-level1-level0-level1 < 03_load-goods3-truck1-market1-level0-level1-level0-level1
+03_load-goods3-truck1-market1-level0-level1-level0-level1 < 08_drive-truck1-market1-depot1
+04_buy-truck1-goods2-market1-level0-level1-level0-level1 < 05_load-goods2-truck1-market1-level0-level1-level0-level1
+05_load-goods2-truck1-market1-level0-level1-level0-level1 < 08_drive-truck1-market1-depot1
+06_buy-truck1-goods1-market1-level0-level1-level0-level1 < 07_load-goods1-truck1-market1-level0-level1-level0-level1
+07_load-goods1-truck1-market1-level0-level1-level0-level1 < 08_drive-truck1-market1-depot1
+08_drive-truck1-market1-depot1 < 09_unload-goods3-truck1-depot1-level0-level1-level0-level1
+08_drive-truck1-market1-depot1 < 10_unload-goods2-truck1-depot1-level0-level1-level0-level1
+08_drive-truck1-market1-depot1 < 11_unload-goods1-truck1-depot1-level0-level1-level0-level1
+** Binding

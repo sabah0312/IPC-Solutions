@@ -1,0 +1,85 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16)
+01_switch_on(v_17 v_18)
+02_calibrate(v_19 v_20 v_21)
+03_turn_to(v_22 v_23 v_24)
+04_take_image(v_25 v_26 v_27 v_28)
+05_turn_to(v_29 v_30 v_31)
+06_take_image(v_32 v_33 v_34 v_35)
+07_turn_to(v_36 v_37 v_38)
+08_take_image(v_39 v_40 v_41 v_42)
+09_turn_to(v_43 v_44 v_45)
+10_take_image(v_46 v_47 v_48 v_49)
+11_turn_to(v_50 v_51 v_52)
+goal(v_53 v_54 v_55 v_56 v_57 v_58 v_59)
+** Ordering
+01_switch_on < 02_calibrate
+02_calibrate < 05_turn_to
+04_take_image < 07_turn_to
+05_turn_to < 04_take_image
+06_take_image < 09_turn_to
+07_turn_to < 06_take_image
+08_take_image < 11_turn_to
+09_turn_to < 08_take_image
+11_turn_to < 10_take_image
+** Binding
+v_0=image1
+v_1=infrared0
+v_2=instrument0
+v_3=instrument1
+v_4=instrument2
+v_5=instrument3
+v_6=phenomenon5
+v_7=phenomenon6
+v_8=phenomenon7
+v_9=satellite0
+v_10=satellite1
+v_11=spectrograph2
+v_12=star0
+v_13=star1
+v_14=star2
+v_15=star3
+v_16=star4
+v_17=instrument3
+v_18=satellite1
+v_19=satellite1
+v_20=instrument3
+v_21=star0
+v_22=satellite0
+v_23=phenomenon5
+v_24=star4
+v_25=satellite1
+v_26=star4
+v_27=instrument3
+v_28=spectrograph2
+v_29=satellite1
+v_30=star4
+v_31=star0
+v_32=satellite1
+v_33=star3
+v_34=instrument3
+v_35=infrared0
+v_36=satellite1
+v_37=star3
+v_38=star4
+v_39=satellite1
+v_40=phenomenon7
+v_41=instrument3
+v_42=spectrograph2
+v_43=satellite1
+v_44=phenomenon7
+v_45=star3
+v_46=satellite1
+v_47=phenomenon5
+v_48=instrument3
+v_49=spectrograph2
+v_50=satellite1
+v_51=phenomenon5
+v_52=phenomenon7
+v_53=infrared0
+v_54=phenomenon5
+v_55=phenomenon7
+v_56=satellite0
+v_57=spectrograph2
+v_58=star3
+v_59=star4

@@ -1,0 +1,230 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32)
+01_initialize(v_33 v_34 v_35 v_36 v_37 v_38 v_39)
+02_fe1-feedmsi-letter(v_40 v_41 v_42 v_43 v_44 v_45)
+03_hw1-leftentrytobottomleftexit-letter(v_46 v_47 v_48 v_49 v_50)
+04_lc1-inverttoime-letter(v_51 v_52 v_53 v_54 v_55 v_56 v_57)
+05_lime-simplex-letter(v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65)
+06_fe1-feedmsi-letter(v_66 v_67 v_68 v_69 v_70 v_71)
+07_fe1-feedmsi-letter(v_72 v_73 v_74 v_75 v_76 v_77)
+08_hw1-leftentrytotopleftexit-letter(v_78 v_79 v_80 v_81 v_82)
+09_uc1-inverttoime-letter(v_83 v_84 v_85 v_86 v_87 v_88 v_89)
+10_uime-simplex-letter(v_90 v_91 v_92 v_93 v_94 v_95 v_96 v_97)
+11_uc1-fromime-letter(v_98 v_99 v_100 v_101 v_102)
+12_hw1-toprightentrytorightexit-letter(v_103 v_104 v_105 v_106 v_107)
+13_lc1-fromime-letter(v_108 v_109 v_110 v_111 v_112)
+14_hw1-bottomrightentrytorightexit-letter(v_113 v_114 v_115 v_116 v_117)
+15_sys-stack-letter(v_118 v_119 v_120 v_121 v_122 v_123 v_124)
+16_sys-stack-letter(v_125 v_126 v_127 v_128 v_129 v_130 v_131)
+17_hw1-leftentrytotopleftexit-letter(v_132 v_133 v_134 v_135 v_136)
+18_uc1-inverttoime-letter(v_137 v_138 v_139 v_140 v_141 v_142 v_143)
+19_uime-simplex-letter(v_144 v_145 v_146 v_147 v_148 v_149 v_150 v_151)
+20_uc1-fromime-letter(v_152 v_153 v_154 v_155 v_156)
+21_hw1-toprightentrytorightexit-letter(v_157 v_158 v_159 v_160 v_161)
+22_sys-stack-letter(v_162 v_163 v_164 v_165 v_166 v_167 v_168)
+goal(v_169 v_170 v_171 v_172 v_173 v_174 v_175 v_176 v_177 v_178 v_179)
+** Ordering
+01_initialize < 02_fe1-feedmsi-letter
+01_initialize < 06_fe1-feedmsi-letter
+01_initialize < 07_fe1-feedmsi-letter
+02_fe1-feedmsi-letter < 03_hw1-leftentrytobottomleftexit-letter
+03_hw1-leftentrytobottomleftexit-letter < 04_lc1-inverttoime-letter
+04_lc1-inverttoime-letter < 05_lime-simplex-letter
+05_lime-simplex-letter < 13_lc1-fromime-letter
+06_fe1-feedmsi-letter < 08_hw1-leftentrytotopleftexit-letter
+07_fe1-feedmsi-letter < 17_hw1-leftentrytotopleftexit-letter
+08_hw1-leftentrytotopleftexit-letter < 09_uc1-inverttoime-letter
+09_uc1-inverttoime-letter < 10_uime-simplex-letter
+10_uime-simplex-letter < 11_uc1-fromime-letter
+11_uc1-fromime-letter < 12_hw1-toprightentrytorightexit-letter
+12_hw1-toprightentrytorightexit-letter < 16_sys-stack-letter
+13_lc1-fromime-letter < 14_hw1-bottomrightentrytorightexit-letter
+14_hw1-bottomrightentrytorightexit-letter < 15_sys-stack-letter
+15_sys-stack-letter < 16_sys-stack-letter
+16_sys-stack-letter < 22_sys-stack-letter
+17_hw1-leftentrytotopleftexit-letter < 18_uc1-inverttoime-letter
+18_uc1-inverttoime-letter < 19_uime-simplex-letter
+19_uime-simplex-letter < 20_uc1-fromime-letter
+20_uc1-fromime-letter < 21_hw1-toprightentrytorightexit-letter
+21_hw1-toprightentrytorightexit-letter < 22_sys-stack-letter
+** Binding
+v_0=back
+v_1=black
+v_2=color
+v_3=dummy-sheet
+v_4=fe1-rsrc
+v_5=fe1_exit-hw1_leftentry
+v_6=front
+v_7=hw1-rsrc
+v_8=hw1_rightexit-sys_entry
+v_9=hw1_toprightentry-uc1_exit
+v_10=image-1
+v_11=image-2
+v_12=image-3
+v_13=lc1-rsrc
+v_14=lc1_entry-hw1_bottomleftexit
+v_15=lc1_entryfromime-lime_exit
+v_16=lc1_exit-hw1_bottomrightentry
+v_17=letter
+v_18=lime-rsrc
+v_19=lime_entry-lc1_exittoime
+v_20=sheet1
+v_21=sheet2
+v_22=sheet3
+v_23=some_feeder_tray
+v_24=some_finisher_tray
+v_25=some_purge_tray
+v_26=sys-rsrc
+v_27=sys_outputtray
+v_28=uc1-rsrc
+v_29=uc1_entry-hw1_topleftexit
+v_30=uc1_exittoime-uime_entry
+v_31=uime-rsrc
+v_32=uime_exit-uc1_entryfromime
+v_33=fe1-rsrc
+v_34=lc1-rsrc
+v_35=uc1-rsrc
+v_36=sys-rsrc
+v_37=hw1-rsrc
+v_38=lime-rsrc
+v_39=uime-rsrc
+v_40=fe1_exit-hw1_leftentry
+v_41=fe1-rsrc
+v_42=some_feeder_tray
+v_43=letter
+v_44=back
+v_45=sheet1
+v_46=fe1_exit-hw1_leftentry
+v_47=hw1-rsrc
+v_48=letter
+v_49=lc1_entry-hw1_bottomleftexit
+v_50=sheet1
+v_51=lc1-rsrc
+v_52=letter
+v_53=lime_entry-lc1_exittoime
+v_54=lc1_entry-hw1_bottomleftexit
+v_55=sheet1
+v_56=back
+v_57=front
+v_58=lc1_entryfromime-lime_exit
+v_59=lime-rsrc
+v_60=color
+v_61=letter
+v_62=lime_entry-lc1_exittoime
+v_63=sheet1
+v_64=front
+v_65=image-1
+v_66=fe1_exit-hw1_leftentry
+v_67=fe1-rsrc
+v_68=some_feeder_tray
+v_69=letter
+v_70=back
+v_71=sheet2
+v_72=fe1_exit-hw1_leftentry
+v_73=fe1-rsrc
+v_74=some_feeder_tray
+v_75=letter
+v_76=back
+v_77=sheet3
+v_78=fe1_exit-hw1_leftentry
+v_79=hw1-rsrc
+v_80=letter
+v_81=uc1_entry-hw1_topleftexit
+v_82=sheet2
+v_83=uc1_exittoime-uime_entry
+v_84=uc1-rsrc
+v_85=letter
+v_86=uc1_entry-hw1_topleftexit
+v_87=sheet2
+v_88=back
+v_89=front
+v_90=uime_exit-uc1_entryfromime
+v_91=uc1_exittoime-uime_entry
+v_92=black
+v_93=letter
+v_94=uime-rsrc
+v_95=sheet2
+v_96=front
+v_97=image-2
+v_98=uime_exit-uc1_entryfromime
+v_99=uc1-rsrc
+v_100=hw1_toprightentry-uc1_exit
+v_101=letter
+v_102=sheet2
+v_103=hw1_toprightentry-uc1_exit
+v_104=hw1-rsrc
+v_105=hw1_rightexit-sys_entry
+v_106=letter
+v_107=sheet2
+v_108=lc1_entryfromime-lime_exit
+v_109=lc1-rsrc
+v_110=letter
+v_111=lc1_exit-hw1_bottomrightentry
+v_112=sheet1
+v_113=hw1-rsrc
+v_114=hw1_rightexit-sys_entry
+v_115=letter
+v_116=lc1_exit-hw1_bottomrightentry
+v_117=sheet1
+v_118=sys-rsrc
+v_119=hw1_rightexit-sys_entry
+v_120=sys_outputtray
+v_121=letter
+v_122=some_finisher_tray
+v_123=sheet1
+v_124=dummy-sheet
+v_125=sys-rsrc
+v_126=hw1_rightexit-sys_entry
+v_127=sys_outputtray
+v_128=letter
+v_129=some_finisher_tray
+v_130=sheet2
+v_131=sheet1
+v_132=fe1_exit-hw1_leftentry
+v_133=hw1-rsrc
+v_134=letter
+v_135=uc1_entry-hw1_topleftexit
+v_136=sheet3
+v_137=uc1_exittoime-uime_entry
+v_138=uc1-rsrc
+v_139=letter
+v_140=uc1_entry-hw1_topleftexit
+v_141=sheet3
+v_142=back
+v_143=front
+v_144=uime_exit-uc1_entryfromime
+v_145=uc1_exittoime-uime_entry
+v_146=black
+v_147=letter
+v_148=uime-rsrc
+v_149=sheet3
+v_150=front
+v_151=image-3
+v_152=uime_exit-uc1_entryfromime
+v_153=uc1-rsrc
+v_154=hw1_toprightentry-uc1_exit
+v_155=letter
+v_156=sheet3
+v_157=hw1_toprightentry-uc1_exit
+v_158=hw1-rsrc
+v_159=hw1_rightexit-sys_entry
+v_160=letter
+v_161=sheet3
+v_162=sys-rsrc
+v_163=hw1_rightexit-sys_entry
+v_164=sys_outputtray
+v_165=letter
+v_166=some_finisher_tray
+v_167=sheet3
+v_168=sheet2
+v_169=back
+v_170=black
+v_171=color
+v_172=front
+v_173=image-1
+v_174=image-2
+v_175=image-3
+v_176=sheet1
+v_177=sheet2
+v_178=sheet3
+v_179=sys_outputtray

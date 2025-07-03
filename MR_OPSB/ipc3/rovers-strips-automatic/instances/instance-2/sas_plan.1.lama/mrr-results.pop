@@ -1,0 +1,69 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13)
+1_calibrate(v_14 v_15 v_16 v_17)
+2_take_image(v_18 v_19 v_20 v_21 v_22)
+3_communicate_image_data(v_23 v_24 v_25 v_26 v_27 v_28)
+4_sample_rock(v_29 v_30 v_31)
+5_communicate_rock_data(v_32 v_33 v_34 v_35 v_36)
+6_drop(v_37 v_38)
+7_sample_soil(v_39 v_40 v_41)
+8_communicate_soil_data(v_42 v_43 v_44 v_45 v_46)
+goal(v_47 v_48 v_49)
+** Ordering
+1_calibrate < 2_take_image
+2_take_image < 3_communicate_image_data
+4_sample_rock < 5_communicate_rock_data
+6_drop < 4_sample_rock
+7_sample_soil < 6_drop
+7_sample_soil < 8_communicate_soil_data
+** Binding
+v_0=camera0
+v_1=camera1
+v_2=colour
+v_3=general
+v_4=high_res
+v_5=low_res
+v_6=objective0
+v_7=objective1
+v_8=rover0
+v_9=rover0store
+v_10=waypoint0
+v_11=waypoint1
+v_12=waypoint2
+v_13=waypoint3
+v_14=rover0
+v_15=camera0
+v_16=objective0
+v_17=waypoint0
+v_18=rover0
+v_19=waypoint0
+v_20=objective1
+v_21=camera0
+v_22=low_res
+v_23=rover0
+v_24=general
+v_25=objective1
+v_26=low_res
+v_27=waypoint0
+v_28=waypoint1
+v_29=rover0
+v_30=rover0store
+v_31=waypoint0
+v_32=rover0
+v_33=general
+v_34=waypoint0
+v_35=waypoint0
+v_36=waypoint1
+v_37=rover0
+v_38=rover0store
+v_39=rover0
+v_40=rover0store
+v_41=waypoint0
+v_42=rover0
+v_43=general
+v_44=waypoint0
+v_45=waypoint0
+v_46=waypoint1
+v_47=low_res
+v_48=objective1
+v_49=waypoint0

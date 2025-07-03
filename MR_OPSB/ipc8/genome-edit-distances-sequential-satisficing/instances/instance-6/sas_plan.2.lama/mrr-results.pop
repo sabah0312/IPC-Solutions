@@ -1,0 +1,284 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16)
+01_invert-single-gene-a(v_17)
+02_invert-single-gene-a(v_18)
+03_invert-single-gene-a(v_19)
+04_invert-single-gene-a(v_20)
+05_invert-single-gene-a(v_21)
+06_invert-single-gene-a(v_22)
+07_invert-single-gene-a(v_23)
+08_invert-single-gene-a(v_24)
+09_begin-cut(v_25 v_26)
+10_end-cut-1(v_27 v_28)
+11_end-cut-2(v_29 v_30)
+12_begin-transpose-splice(v_31 v_32)
+13_end-splice-1(v_33 v_34)
+14_end-splice-2(v_35 v_36)
+15_reset-1(v_37)
+16_begin-cut(v_38 v_39)
+17_end-cut-1(v_40 v_41)
+18_end-cut-2(v_42 v_43)
+19_begin-transpose-splice(v_44 v_45)
+20_end-splice-1(v_46 v_47)
+21_end-splice-2(v_48 v_49)
+22_reset-1(v_50)
+23_begin-cut(v_51 v_52)
+24_end-cut-1(v_53 v_54)
+25_end-cut-2(v_55 v_56)
+26_begin-transpose-splice(v_57 v_58)
+27_end-splice-1(v_59 v_60)
+28_end-splice-2(v_61 v_62)
+29_reset-1(v_63)
+30_begin-cut(v_64 v_65)
+31_end-cut-1(v_66 v_67)
+32_end-cut-2(v_68 v_69)
+33_begin-transpose-splice(v_70 v_71)
+34_end-splice-1(v_72 v_73)
+35_end-splice-2(v_74 v_75)
+36_reset-1(v_76)
+37_begin-cut(v_77 v_78)
+38_end-cut-1(v_79 v_80)
+39_end-cut-2(v_81 v_82)
+40_begin-transpose-splice(v_83 v_84)
+41_end-splice-1(v_85 v_86)
+42_end-splice-2(v_87 v_88)
+43_reset-1(v_89)
+44_begin-cut(v_90 v_91)
+45_continue-cut(v_92 v_93)
+46_end-cut-1(v_94 v_95)
+47_end-cut-2(v_96 v_97)
+48_begin-transpose-splice(v_98 v_99)
+49_continue-splice-1(v_100 v_101)
+50_continue-splice-2(v_102 v_103)
+51_end-splice-1(v_104 v_105)
+52_end-splice-2(v_106 v_107)
+53_reset-1(v_108)
+54_begin-cut(v_109 v_110)
+55_continue-cut(v_111 v_112)
+56_continue-cut(v_113 v_114)
+57_end-cut-1(v_115 v_116)
+58_end-cut-2(v_117 v_118)
+59_begin-transpose-splice(v_119 v_120)
+60_continue-splice-1(v_121 v_122)
+61_continue-splice-2(v_123 v_124)
+62_continue-splice-1(v_125 v_126)
+63_continue-splice-2(v_127 v_128)
+64_end-splice-1(v_129 v_130)
+65_end-splice-2(v_131 v_132)
+goal(v_133 v_134 v_135 v_136 v_137 v_138 v_139 v_140 v_141 v_142 v_143 v_144 v_145 v_146 v_147 v_148 v_149)
+** Ordering
+01_invert-single-gene-a < 23_begin-cut
+02_invert-single-gene-a < 23_begin-cut
+03_invert-single-gene-a < 23_begin-cut
+04_invert-single-gene-a < 23_begin-cut
+05_invert-single-gene-a < 23_begin-cut
+06_invert-single-gene-a < 23_begin-cut
+07_invert-single-gene-a < 23_begin-cut
+08_invert-single-gene-a < 23_begin-cut
+09_begin-cut < 10_end-cut-1
+10_end-cut-1 < 11_end-cut-2
+11_end-cut-2 < 12_begin-transpose-splice
+12_begin-transpose-splice < 13_end-splice-1
+13_end-splice-1 < 14_end-splice-2
+14_end-splice-2 < 15_reset-1
+15_reset-1 < 16_begin-cut
+16_begin-cut < 17_end-cut-1
+17_end-cut-1 < 18_end-cut-2
+18_end-cut-2 < 19_begin-transpose-splice
+19_begin-transpose-splice < 20_end-splice-1
+20_end-splice-1 < 21_end-splice-2
+21_end-splice-2 < 22_reset-1
+22_reset-1 < 44_begin-cut
+23_begin-cut < 24_end-cut-1
+24_end-cut-1 < 25_end-cut-2
+25_end-cut-2 < 26_begin-transpose-splice
+26_begin-transpose-splice < 27_end-splice-1
+27_end-splice-1 < 28_end-splice-2
+28_end-splice-2 < 29_reset-1
+29_reset-1 < 30_begin-cut
+30_begin-cut < 31_end-cut-1
+31_end-cut-1 < 32_end-cut-2
+32_end-cut-2 < 33_begin-transpose-splice
+33_begin-transpose-splice < 34_end-splice-1
+34_end-splice-1 < 35_end-splice-2
+35_end-splice-2 < 36_reset-1
+36_reset-1 < 37_begin-cut
+37_begin-cut < 38_end-cut-1
+38_end-cut-1 < 39_end-cut-2
+39_end-cut-2 < 40_begin-transpose-splice
+40_begin-transpose-splice < 41_end-splice-1
+41_end-splice-1 < 42_end-splice-2
+42_end-splice-2 < 43_reset-1
+43_reset-1 < 09_begin-cut
+44_begin-cut < 45_continue-cut
+45_continue-cut < 46_end-cut-1
+46_end-cut-1 < 47_end-cut-2
+47_end-cut-2 < 48_begin-transpose-splice
+48_begin-transpose-splice < 49_continue-splice-1
+49_continue-splice-1 < 50_continue-splice-2
+50_continue-splice-2 < 51_end-splice-1
+51_end-splice-1 < 52_end-splice-2
+52_end-splice-2 < 53_reset-1
+53_reset-1 < 54_begin-cut
+54_begin-cut < 55_continue-cut
+55_continue-cut < 56_continue-cut
+56_continue-cut < 57_end-cut-1
+57_end-cut-1 < 58_end-cut-2
+58_end-cut-2 < 59_begin-transpose-splice
+59_begin-transpose-splice < 60_continue-splice-1
+60_continue-splice-1 < 61_continue-splice-2
+61_continue-splice-2 < 62_continue-splice-1
+62_continue-splice-1 < 63_continue-splice-2
+63_continue-splice-2 < 64_end-splice-1
+64_end-splice-1 < 65_end-splice-2
+** Binding
+v_0=g36
+v_1=g40
+v_2=sub1
+v_3=sub10
+v_4=sub11
+v_5=sub12
+v_6=sub13
+v_7=sub14
+v_8=sub15
+v_9=sub2
+v_10=sub3
+v_11=sub4
+v_12=sub5
+v_13=sub6
+v_14=sub7
+v_15=sub8
+v_16=sub9
+v_17=sub1
+v_18=sub10
+v_19=sub12
+v_20=sub13
+v_21=sub14
+v_22=sub15
+v_23=sub8
+v_24=sub9
+v_25=g36
+v_26=sub2
+v_27=sub2
+v_28=sub5
+v_29=g36
+v_30=sub5
+v_31=g40
+v_32=sub12
+v_33=sub2
+v_34=g40
+v_35=sub2
+v_36=sub12
+v_37=g36
+v_38=sub13
+v_39=sub4
+v_40=sub4
+v_41=sub11
+v_42=sub13
+v_43=sub11
+v_44=sub2
+v_45=sub12
+v_46=sub4
+v_47=sub2
+v_48=sub4
+v_49=sub12
+v_50=sub13
+v_51=sub14
+v_52=sub1
+v_53=sub1
+v_54=sub10
+v_55=sub14
+v_56=sub10
+v_57=sub9
+v_58=g40
+v_59=sub1
+v_60=sub9
+v_61=sub1
+v_62=g40
+v_63=sub14
+v_64=sub14
+v_65=sub10
+v_66=sub10
+v_67=sub7
+v_68=sub14
+v_69=sub7
+v_70=sub8
+v_71=sub3
+v_72=sub10
+v_73=sub8
+v_74=sub10
+v_75=sub3
+v_76=sub14
+v_77=sub15
+v_78=sub14
+v_79=sub14
+v_80=sub7
+v_81=sub15
+v_82=sub7
+v_83=sub10
+v_84=sub3
+v_85=sub14
+v_86=sub10
+v_87=sub14
+v_88=sub3
+v_89=sub15
+v_90=sub6
+v_91=g36
+v_92=g36
+v_93=sub5
+v_94=sub5
+v_95=sub9
+v_96=sub6
+v_97=sub9
+v_98=sub11
+v_99=sub15
+v_100=g36
+v_101=sub5
+v_102=g36
+v_103=sub11
+v_104=sub5
+v_105=g36
+v_106=sub5
+v_107=sub15
+v_108=sub6
+v_109=sub1
+v_110=g40
+v_111=g40
+v_112=sub2
+v_113=sub2
+v_114=sub4
+v_115=sub4
+v_116=sub12
+v_117=sub1
+v_118=sub12
+v_119=sub11
+v_120=g36
+v_121=g40
+v_122=sub2
+v_123=g40
+v_124=sub11
+v_125=sub2
+v_126=sub4
+v_127=sub2
+v_128=g40
+v_129=sub4
+v_130=sub2
+v_131=sub4
+v_132=g36
+v_133=g36
+v_134=g40
+v_135=sub1
+v_136=sub10
+v_137=sub11
+v_138=sub12
+v_139=sub13
+v_140=sub14
+v_141=sub15
+v_142=sub2
+v_143=sub3
+v_144=sub4
+v_145=sub5
+v_146=sub6
+v_147=sub7
+v_148=sub8
+v_149=sub9

@@ -1,0 +1,677 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82 v_83 v_84 v_85 v_86 v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94 v_95 v_96 v_97)
+001_move(v_98 v_99)
+002_move(v_100 v_101)
+003_move(v_102 v_103)
+004_move(v_104 v_105)
+005_pickup(v_106 v_107)
+006_move(v_108 v_109)
+007_move(v_110 v_111)
+008_move(v_112 v_113)
+009_pickup-and-loose(v_114 v_115 v_116)
+010_move(v_117 v_118)
+011_move(v_119 v_120)
+012_move(v_121 v_122)
+013_move(v_123 v_124)
+014_move(v_125 v_126)
+015_move(v_127 v_128)
+016_pickup-and-loose(v_129 v_130 v_131)
+017_move(v_132 v_133)
+018_move(v_134 v_135)
+019_unlock(v_136 v_137 v_138 v_139)
+020_move(v_140 v_141)
+021_unlock(v_142 v_143 v_144 v_145)
+022_pickup-and-loose(v_146 v_147 v_148)
+023_move(v_149 v_150)
+024_unlock(v_151 v_152 v_153 v_154)
+025_pickup-and-loose(v_155 v_156 v_157)
+026_move(v_158 v_159)
+027_move(v_160 v_161)
+028_move(v_162 v_163)
+029_move(v_164 v_165)
+030_putdown(v_166 v_167)
+031_move(v_168 v_169)
+032_move(v_170 v_171)
+033_move(v_172 v_173)
+034_move(v_174 v_175)
+035_pickup(v_176 v_177)
+036_move(v_178 v_179)
+037_move(v_180 v_181)
+038_move(v_182 v_183)
+039_move(v_184 v_185)
+040_putdown(v_186 v_187)
+041_move(v_188 v_189)
+042_move(v_190 v_191)
+043_pickup(v_192 v_193)
+044_move(v_194 v_195)
+045_move(v_196 v_197)
+046_move(v_198 v_199)
+047_move(v_200 v_201)
+048_unlock(v_202 v_203 v_204 v_205)
+049_move(v_206 v_207)
+050_unlock(v_208 v_209 v_210 v_211)
+051_move(v_212 v_213)
+052_unlock(v_214 v_215 v_216 v_217)
+053_move(v_218 v_219)
+054_unlock(v_220 v_221 v_222 v_223)
+055_move(v_224 v_225)
+056_unlock(v_226 v_227 v_228 v_229)
+057_putdown(v_230 v_231)
+058_move(v_232 v_233)
+059_move(v_234 v_235)
+060_pickup(v_236 v_237)
+061_move(v_238 v_239)
+062_move(v_240 v_241)
+063_move(v_242 v_243)
+064_move(v_244 v_245)
+065_move(v_246 v_247)
+066_move(v_248 v_249)
+067_move(v_250 v_251)
+068_move(v_252 v_253)
+069_move(v_254 v_255)
+070_move(v_256 v_257)
+071_move(v_258 v_259)
+072_move(v_260 v_261)
+073_move(v_262 v_263)
+074_putdown(v_264 v_265)
+075_move(v_266 v_267)
+076_move(v_268 v_269)
+077_move(v_270 v_271)
+078_move(v_272 v_273)
+079_move(v_274 v_275)
+080_pickup(v_276 v_277)
+081_move(v_278 v_279)
+082_move(v_280 v_281)
+083_move(v_282 v_283)
+084_move(v_284 v_285)
+085_move(v_286 v_287)
+086_move(v_288 v_289)
+087_pickup-and-loose(v_290 v_291 v_292)
+088_move(v_293 v_294)
+089_move(v_295 v_296)
+090_move(v_297 v_298)
+091_move(v_299 v_300)
+092_move(v_301 v_302)
+093_move(v_303 v_304)
+094_move(v_305 v_306)
+095_move(v_307 v_308)
+096_move(v_309 v_310)
+097_move(v_311 v_312)
+098_move(v_313 v_314)
+099_move(v_315 v_316)
+100_putdown(v_317 v_318)
+101_move(v_319 v_320)
+102_move(v_321 v_322)
+103_move(v_323 v_324)
+104_move(v_325 v_326)
+105_move(v_327 v_328)
+106_move(v_329 v_330)
+107_move(v_331 v_332)
+108_move(v_333 v_334)
+109_move(v_335 v_336)
+110_move(v_337 v_338)
+111_move(v_339 v_340)
+112_move(v_341 v_342)
+113_pickup(v_343 v_344)
+114_move(v_345 v_346)
+115_move(v_347 v_348)
+116_move(v_349 v_350)
+117_move(v_351 v_352)
+118_move(v_353 v_354)
+119_move(v_355 v_356)
+120_move(v_357 v_358)
+121_putdown(v_359 v_360)
+122_move(v_361 v_362)
+123_move(v_363 v_364)
+124_move(v_365 v_366)
+125_move(v_367 v_368)
+126_move(v_369 v_370)
+127_move(v_371 v_372)
+128_pickup(v_373 v_374)
+129_move(v_375 v_376)
+130_move(v_377 v_378)
+131_move(v_379 v_380)
+132_move(v_381 v_382)
+133_move(v_383 v_384)
+134_move(v_385 v_386)
+135_putdown(v_387 v_388)
+goal(v_389 v_390 v_391 v_392 v_393 v_394 v_395 v_396 v_397 v_398 v_399 v_400 v_401)
+** Ordering
+001_move < 002_move
+002_move < 003_move
+003_move < 004_move
+004_move < 005_pickup
+005_pickup < 006_move
+006_move < 007_move
+007_move < 008_move
+008_move < 009_pickup-and-loose
+009_pickup-and-loose < 010_move
+010_move < 011_move
+011_move < 012_move
+012_move < 013_move
+013_move < 014_move
+014_move < 015_move
+015_move < 016_pickup-and-loose
+016_pickup-and-loose < 017_move
+017_move < 018_move
+018_move < 019_unlock
+019_unlock < 020_move
+020_move < 021_unlock
+021_unlock < 022_pickup-and-loose
+022_pickup-and-loose < 023_move
+023_move < 024_unlock
+024_unlock < 025_pickup-and-loose
+025_pickup-and-loose < 026_move
+026_move < 027_move
+027_move < 028_move
+028_move < 029_move
+029_move < 030_putdown
+030_putdown < 031_move
+031_move < 032_move
+032_move < 033_move
+033_move < 034_move
+034_move < 035_pickup
+035_pickup < 036_move
+036_move < 037_move
+037_move < 038_move
+038_move < 039_move
+039_move < 040_putdown
+040_putdown < 041_move
+041_move < 042_move
+042_move < 043_pickup
+043_pickup < 044_move
+044_move < 045_move
+045_move < 046_move
+046_move < 047_move
+047_move < 048_unlock
+048_unlock < 049_move
+049_move < 050_unlock
+049_move < 054_unlock
+050_unlock < 051_move
+051_move < 052_unlock
+052_unlock < 053_move
+053_move < 055_move
+054_unlock < 051_move
+055_move < 056_unlock
+056_unlock < 057_putdown
+057_putdown < 058_move
+058_move < 059_move
+059_move < 060_pickup
+060_pickup < 061_move
+061_move < 062_move
+062_move < 063_move
+063_move < 064_move
+064_move < 065_move
+065_move < 066_move
+066_move < 067_move
+067_move < 068_move
+068_move < 069_move
+069_move < 070_move
+070_move < 071_move
+071_move < 072_move
+072_move < 073_move
+073_move < 074_putdown
+074_putdown < 075_move
+075_move < 076_move
+076_move < 077_move
+077_move < 078_move
+078_move < 079_move
+079_move < 080_pickup
+080_pickup < 081_move
+081_move < 082_move
+082_move < 083_move
+083_move < 084_move
+084_move < 085_move
+085_move < 086_move
+086_move < 087_pickup-and-loose
+087_pickup-and-loose < 088_move
+088_move < 089_move
+089_move < 090_move
+090_move < 091_move
+091_move < 092_move
+092_move < 093_move
+093_move < 094_move
+094_move < 095_move
+095_move < 096_move
+096_move < 097_move
+097_move < 098_move
+098_move < 099_move
+099_move < 100_putdown
+100_putdown < 101_move
+101_move < 102_move
+102_move < 103_move
+103_move < 104_move
+104_move < 105_move
+105_move < 106_move
+106_move < 107_move
+107_move < 108_move
+108_move < 109_move
+109_move < 110_move
+110_move < 111_move
+111_move < 112_move
+112_move < 113_pickup
+113_pickup < 114_move
+114_move < 115_move
+115_move < 116_move
+116_move < 117_move
+117_move < 118_move
+118_move < 119_move
+119_move < 120_move
+120_move < 121_putdown
+121_putdown < 122_move
+122_move < 123_move
+123_move < 124_move
+124_move < 125_move
+125_move < 126_move
+126_move < 127_move
+127_move < 128_pickup
+128_pickup < 129_move
+129_move < 130_move
+130_move < 131_move
+131_move < 132_move
+132_move < 133_move
+133_move < 134_move
+134_move < 135_putdown
+** Binding
+v_0=circle
+v_1=diamond
+v_2=key0
+v_3=key1
+v_4=key10
+v_5=key11
+v_6=key12
+v_7=key2
+v_8=key3
+v_9=key4
+v_10=key5
+v_11=key6
+v_12=key7
+v_13=key8
+v_14=key9
+v_15=node0-0
+v_16=node0-1
+v_17=node0-2
+v_18=node0-3
+v_19=node0-4
+v_20=node0-5
+v_21=node0-6
+v_22=node0-7
+v_23=node0-8
+v_24=node1-0
+v_25=node1-1
+v_26=node1-2
+v_27=node1-3
+v_28=node1-4
+v_29=node1-5
+v_30=node1-6
+v_31=node1-7
+v_32=node1-8
+v_33=node2-0
+v_34=node2-1
+v_35=node2-2
+v_36=node2-3
+v_37=node2-4
+v_38=node2-5
+v_39=node2-6
+v_40=node2-7
+v_41=node2-8
+v_42=node3-0
+v_43=node3-1
+v_44=node3-2
+v_45=node3-3
+v_46=node3-4
+v_47=node3-5
+v_48=node3-6
+v_49=node3-7
+v_50=node3-8
+v_51=node4-0
+v_52=node4-1
+v_53=node4-2
+v_54=node4-3
+v_55=node4-4
+v_56=node4-5
+v_57=node4-6
+v_58=node4-7
+v_59=node4-8
+v_60=node5-0
+v_61=node5-1
+v_62=node5-2
+v_63=node5-3
+v_64=node5-4
+v_65=node5-5
+v_66=node5-6
+v_67=node5-7
+v_68=node5-8
+v_69=node6-0
+v_70=node6-1
+v_71=node6-2
+v_72=node6-3
+v_73=node6-4
+v_74=node6-5
+v_75=node6-6
+v_76=node6-7
+v_77=node6-8
+v_78=node7-0
+v_79=node7-1
+v_80=node7-2
+v_81=node7-3
+v_82=node7-4
+v_83=node7-5
+v_84=node7-6
+v_85=node7-7
+v_86=node7-8
+v_87=node8-0
+v_88=node8-1
+v_89=node8-2
+v_90=node8-3
+v_91=node8-4
+v_92=node8-5
+v_93=node8-6
+v_94=node8-7
+v_95=node8-8
+v_96=square
+v_97=triangle
+v_98=node0-6
+v_99=node1-6
+v_100=node1-6
+v_101=node2-6
+v_102=node2-6
+v_103=node2-5
+v_104=node2-5
+v_105=node2-4
+v_106=node2-4
+v_107=key10
+v_108=node2-4
+v_109=node2-3
+v_110=node2-3
+v_111=node3-3
+v_112=node3-3
+v_113=node4-3
+v_114=node4-3
+v_115=key11
+v_116=key10
+v_117=node4-3
+v_118=node4-2
+v_119=node4-2
+v_120=node4-1
+v_121=node4-1
+v_122=node5-1
+v_123=node5-1
+v_124=node6-1
+v_125=node6-1
+v_126=node7-1
+v_127=node7-1
+v_128=node8-1
+v_129=node8-1
+v_130=key3
+v_131=key11
+v_132=node8-1
+v_133=node8-2
+v_134=node8-2
+v_135=node8-3
+v_136=node8-3
+v_137=node7-3
+v_138=key3
+v_139=circle
+v_140=node8-3
+v_141=node7-3
+v_142=node7-3
+v_143=node6-3
+v_144=key3
+v_145=circle
+v_146=node7-3
+v_147=key4
+v_148=key3
+v_149=node7-3
+v_150=node6-3
+v_151=node6-3
+v_152=node6-2
+v_153=key4
+v_154=circle
+v_155=node6-3
+v_156=key2
+v_157=key4
+v_158=node6-3
+v_159=node6-2
+v_160=node6-2
+v_161=node6-1
+v_162=node6-1
+v_163=node5-1
+v_164=node5-1
+v_165=node5-0
+v_166=node5-0
+v_167=key2
+v_168=node5-0
+v_169=node5-1
+v_170=node5-1
+v_171=node4-1
+v_172=node4-1
+v_173=node4-2
+v_174=node4-2
+v_175=node4-3
+v_176=node4-3
+v_177=key10
+v_178=node4-3
+v_179=node4-2
+v_180=node4-2
+v_181=node4-1
+v_182=node4-1
+v_183=node5-1
+v_184=node5-1
+v_185=node6-1
+v_186=node6-1
+v_187=key10
+v_188=node6-1
+v_189=node6-2
+v_190=node6-2
+v_191=node6-3
+v_192=node6-3
+v_193=key4
+v_194=node6-3
+v_195=node6-2
+v_196=node6-2
+v_197=node6-1
+v_198=node6-1
+v_199=node5-1
+v_200=node5-1
+v_201=node4-1
+v_202=node4-1
+v_203=node3-1
+v_204=key4
+v_205=circle
+v_206=node4-1
+v_207=node3-1
+v_208=node3-1
+v_209=node2-1
+v_210=key4
+v_211=circle
+v_212=node3-1
+v_213=node2-1
+v_214=node2-1
+v_215=node2-2
+v_216=key4
+v_217=circle
+v_218=node2-1
+v_219=node3-1
+v_220=node3-1
+v_221=node3-0
+v_222=key4
+v_223=circle
+v_224=node3-1
+v_225=node3-0
+v_226=node3-0
+v_227=node2-0
+v_228=key4
+v_229=circle
+v_230=node3-0
+v_231=key4
+v_232=node3-0
+v_233=node2-0
+v_234=node2-0
+v_235=node1-0
+v_236=node1-0
+v_237=key9
+v_238=node1-0
+v_239=node2-0
+v_240=node2-0
+v_241=node3-0
+v_242=node3-0
+v_243=node3-1
+v_244=node3-1
+v_245=node4-1
+v_246=node4-1
+v_247=node5-1
+v_248=node5-1
+v_249=node6-1
+v_250=node6-1
+v_251=node6-2
+v_252=node6-2
+v_253=node7-2
+v_254=node7-2
+v_255=node8-2
+v_256=node8-2
+v_257=node8-3
+v_258=node8-3
+v_259=node8-4
+v_260=node8-4
+v_261=node8-5
+v_262=node8-5
+v_263=node8-6
+v_264=node8-6
+v_265=key9
+v_266=node8-6
+v_267=node8-5
+v_268=node8-5
+v_269=node8-4
+v_270=node8-4
+v_271=node8-3
+v_272=node8-3
+v_273=node8-2
+v_274=node8-2
+v_275=node8-1
+v_276=node8-1
+v_277=key11
+v_278=node8-1
+v_279=node8-2
+v_280=node8-2
+v_281=node8-3
+v_282=node8-3
+v_283=node8-4
+v_284=node8-4
+v_285=node8-5
+v_286=node8-5
+v_287=node8-6
+v_288=node8-6
+v_289=node8-7
+v_290=node8-7
+v_291=key0
+v_292=key11
+v_293=node8-7
+v_294=node7-7
+v_295=node7-7
+v_296=node6-7
+v_297=node6-7
+v_298=node5-7
+v_299=node5-7
+v_300=node4-7
+v_301=node4-7
+v_302=node3-7
+v_303=node3-7
+v_304=node2-7
+v_305=node2-7
+v_306=node2-6
+v_307=node2-6
+v_308=node2-5
+v_309=node2-5
+v_310=node2-4
+v_311=node2-4
+v_312=node2-3
+v_313=node2-3
+v_314=node2-2
+v_315=node2-2
+v_316=node2-1
+v_317=node2-1
+v_318=key0
+v_319=node2-1
+v_320=node2-2
+v_321=node2-2
+v_322=node2-3
+v_323=node2-3
+v_324=node2-4
+v_325=node2-4
+v_326=node2-5
+v_327=node2-5
+v_328=node2-6
+v_329=node2-6
+v_330=node2-7
+v_331=node2-7
+v_332=node3-7
+v_333=node3-7
+v_334=node4-7
+v_335=node4-7
+v_336=node5-7
+v_337=node5-7
+v_338=node6-7
+v_339=node6-7
+v_340=node7-7
+v_341=node7-7
+v_342=node8-7
+v_343=node8-7
+v_344=key11
+v_345=node8-7
+v_346=node8-8
+v_347=node8-8
+v_348=node7-8
+v_349=node7-8
+v_350=node6-8
+v_351=node6-8
+v_352=node5-8
+v_353=node5-8
+v_354=node4-8
+v_355=node4-8
+v_356=node3-8
+v_357=node3-8
+v_358=node2-8
+v_359=node2-8
+v_360=key11
+v_361=node2-8
+v_362=node3-8
+v_363=node3-8
+v_364=node4-8
+v_365=node4-8
+v_366=node5-8
+v_367=node5-8
+v_368=node6-8
+v_369=node6-8
+v_370=node7-8
+v_371=node7-8
+v_372=node8-8
+v_373=node8-8
+v_374=key5
+v_375=node8-8
+v_376=node7-8
+v_377=node7-8
+v_378=node6-8
+v_379=node6-8
+v_380=node5-8
+v_381=node5-8
+v_382=node4-8
+v_383=node4-8
+v_384=node3-8
+v_385=node3-8
+v_386=node2-8
+v_387=node2-8
+v_388=key5
+v_389=key0
+v_390=key10
+v_391=key11
+v_392=key2
+v_393=key4
+v_394=key5
+v_395=key9
+v_396=node2-1
+v_397=node2-8
+v_398=node3-0
+v_399=node5-0
+v_400=node6-1
+v_401=node8-6

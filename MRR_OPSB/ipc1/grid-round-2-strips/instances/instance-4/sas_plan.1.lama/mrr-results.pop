@@ -1,0 +1,292 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79)
+01_move(v_80 v_81)
+02_move(v_82 v_83)
+03_move(v_84 v_85)
+04_move(v_86 v_87)
+05_move(v_88 v_89)
+06_pickup(v_90 v_91)
+07_move(v_92 v_93)
+08_move(v_94 v_95)
+09_move(v_96 v_97)
+10_move(v_98 v_99)
+11_move(v_100 v_101)
+12_move(v_102 v_103)
+13_putdown(v_104 v_105)
+14_move(v_106 v_107)
+15_move(v_108 v_109)
+16_pickup(v_110 v_111)
+17_unlock(v_112 v_113 v_114 v_115)
+18_move(v_116 v_117)
+19_pickup-and-loose(v_118 v_119 v_120)
+20_move(v_121 v_122)
+21_move(v_123 v_124)
+22_move(v_125 v_126)
+23_move(v_127 v_128)
+24_move(v_129 v_130)
+25_move(v_131 v_132)
+26_move(v_133 v_134)
+27_move(v_135 v_136)
+28_move(v_137 v_138)
+29_pickup-and-loose(v_139 v_140 v_141)
+30_move(v_142 v_143)
+31_move(v_144 v_145)
+32_move(v_146 v_147)
+33_move(v_148 v_149)
+34_move(v_150 v_151)
+35_pickup-and-loose(v_152 v_153 v_154)
+36_move(v_155 v_156)
+37_move(v_157 v_158)
+38_move(v_159 v_160)
+39_move(v_161 v_162)
+40_move(v_163 v_164)
+41_pickup-and-loose(v_165 v_166 v_167)
+42_move(v_168 v_169)
+43_move(v_170 v_171)
+44_move(v_172 v_173)
+45_move(v_174 v_175)
+46_move(v_176 v_177)
+47_move(v_178 v_179)
+48_move(v_180 v_181)
+49_putdown(v_182 v_183)
+goal(v_184 v_185 v_186 v_187 v_188 v_189)
+** Ordering
+01_move < 02_move
+02_move < 03_move
+03_move < 04_move
+04_move < 05_move
+05_move < 06_pickup
+06_pickup < 07_move
+07_move < 08_move
+08_move < 09_move
+09_move < 19_pickup-and-loose
+10_move < 11_move
+11_move < 12_move
+12_move < 14_move
+13_putdown < 39_move
+14_move < 15_move
+15_move < 18_move
+16_pickup < 17_unlock
+17_unlock < 42_move
+18_move < 20_move
+19_pickup-and-loose < 10_move
+20_move < 21_move
+21_move < 22_move
+22_move < 23_move
+23_move < 24_move
+24_move < 25_move
+25_move < 26_move
+26_move < 27_move
+27_move < 28_move
+28_move < 29_pickup-and-loose
+29_pickup-and-loose < 30_move
+30_move < 31_move
+31_move < 32_move
+32_move < 33_move
+33_move < 34_move
+34_move < 35_pickup-and-loose
+35_pickup-and-loose < 36_move
+36_move < 37_move
+37_move < 38_move
+38_move < 13_putdown
+39_move < 40_move
+40_move < 16_pickup
+41_pickup-and-loose < 43_move
+42_move < 41_pickup-and-loose
+43_move < 44_move
+44_move < 45_move
+45_move < 46_move
+46_move < 47_move
+47_move < 48_move
+48_move < 49_putdown
+** Binding
+v_0=circle
+v_1=diamond
+v_2=key0
+v_3=key1
+v_4=key10
+v_5=key11
+v_6=key2
+v_7=key3
+v_8=key4
+v_9=key5
+v_10=key6
+v_11=key7
+v_12=key8
+v_13=key9
+v_14=node0-0
+v_15=node0-1
+v_16=node0-2
+v_17=node0-3
+v_18=node0-4
+v_19=node0-5
+v_20=node0-6
+v_21=node0-7
+v_22=node1-0
+v_23=node1-1
+v_24=node1-2
+v_25=node1-3
+v_26=node1-4
+v_27=node1-5
+v_28=node1-6
+v_29=node1-7
+v_30=node2-0
+v_31=node2-1
+v_32=node2-2
+v_33=node2-3
+v_34=node2-4
+v_35=node2-5
+v_36=node2-6
+v_37=node2-7
+v_38=node3-0
+v_39=node3-1
+v_40=node3-2
+v_41=node3-3
+v_42=node3-4
+v_43=node3-5
+v_44=node3-6
+v_45=node3-7
+v_46=node4-0
+v_47=node4-1
+v_48=node4-2
+v_49=node4-3
+v_50=node4-4
+v_51=node4-5
+v_52=node4-6
+v_53=node4-7
+v_54=node5-0
+v_55=node5-1
+v_56=node5-2
+v_57=node5-3
+v_58=node5-4
+v_59=node5-5
+v_60=node5-6
+v_61=node5-7
+v_62=node6-0
+v_63=node6-1
+v_64=node6-2
+v_65=node6-3
+v_66=node6-4
+v_67=node6-5
+v_68=node6-6
+v_69=node6-7
+v_70=node7-0
+v_71=node7-1
+v_72=node7-2
+v_73=node7-3
+v_74=node7-4
+v_75=node7-5
+v_76=node7-6
+v_77=node7-7
+v_78=square
+v_79=triangle
+v_80=node4-4
+v_81=node3-4
+v_82=node3-4
+v_83=node2-4
+v_84=node2-4
+v_85=node2-3
+v_86=node2-3
+v_87=node1-3
+v_88=node1-3
+v_89=node0-3
+v_90=node0-3
+v_91=key3
+v_92=node0-3
+v_93=node0-2
+v_94=node0-2
+v_95=node1-2
+v_96=node1-2
+v_97=node1-1
+v_98=node1-1
+v_99=node0-1
+v_100=node0-1
+v_101=node1-1
+v_102=node1-1
+v_103=node0-1
+v_104=node3-0
+v_105=key3
+v_106=node0-1
+v_107=node0-2
+v_108=node0-2
+v_109=node0-3
+v_110=node5-0
+v_111=key11
+v_112=node5-0
+v_113=node5-1
+v_114=key11
+v_115=square
+v_116=node0-3
+v_117=node1-3
+v_118=node1-1
+v_119=key9
+v_120=key3
+v_121=node1-3
+v_122=node2-3
+v_123=node2-3
+v_124=node2-4
+v_125=node2-4
+v_126=node2-5
+v_127=node2-5
+v_128=node2-4
+v_129=node2-4
+v_130=node2-3
+v_131=node2-3
+v_132=node2-4
+v_133=node2-4
+v_134=node1-4
+v_135=node1-4
+v_136=node1-5
+v_137=node1-5
+v_138=node1-6
+v_139=node1-6
+v_140=key0
+v_141=key9
+v_142=node1-6
+v_143=node1-5
+v_144=node1-5
+v_145=node1-4
+v_146=node1-4
+v_147=node1-3
+v_148=node1-3
+v_149=node1-2
+v_150=node1-2
+v_151=node1-1
+v_152=node1-1
+v_153=key3
+v_154=key0
+v_155=node1-1
+v_156=node1-0
+v_157=node1-0
+v_158=node2-0
+v_159=node2-0
+v_160=node3-0
+v_161=node3-0
+v_162=node4-0
+v_163=node4-0
+v_164=node5-0
+v_165=node5-1
+v_166=key4
+v_167=key11
+v_168=node5-0
+v_169=node5-1
+v_170=node5-1
+v_171=node4-1
+v_172=node4-1
+v_173=node4-2
+v_174=node4-2
+v_175=node4-3
+v_176=node4-3
+v_177=node4-4
+v_178=node4-4
+v_179=node5-4
+v_180=node5-4
+v_181=node6-4
+v_182=node6-4
+v_183=key4
+v_184=key0
+v_185=key3
+v_186=key4
+v_187=node1-1
+v_188=node3-0
+v_189=node6-4

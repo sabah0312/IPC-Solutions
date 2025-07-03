@@ -1,0 +1,426 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39)
+01_move-car-to-curb(v_40 v_41 v_42)
+02_move-curb-to-car(v_43 v_44 v_45)
+03_move-car-to-curb(v_46 v_47 v_48)
+04_move-car-to-car(v_49 v_50 v_51)
+05_move-car-to-car(v_52 v_53 v_54)
+06_move-car-to-car(v_55 v_56 v_57)
+07_move-curb-to-car(v_58 v_59 v_60)
+08_move-car-to-curb(v_61 v_62 v_63)
+09_move-curb-to-car(v_64 v_65 v_66)
+10_move-car-to-curb(v_67 v_68 v_69)
+11_move-car-to-car(v_70 v_71 v_72)
+12_move-car-to-car(v_73 v_74 v_75)
+13_move-car-to-car(v_76 v_77 v_78)
+14_move-car-to-car(v_79 v_80 v_81)
+15_move-car-to-car(v_82 v_83 v_84)
+16_move-car-to-car(v_85 v_86 v_87)
+17_move-car-to-car(v_88 v_89 v_90)
+18_move-curb-to-car(v_91 v_92 v_93)
+19_move-car-to-curb(v_94 v_95 v_96)
+20_move-car-to-car(v_97 v_98 v_99)
+21_move-car-to-car(v_100 v_101 v_102)
+22_move-car-to-car(v_103 v_104 v_105)
+23_move-curb-to-car(v_106 v_107 v_108)
+24_move-car-to-curb(v_109 v_110 v_111)
+25_move-curb-to-car(v_112 v_113 v_114)
+26_move-car-to-curb(v_115 v_116 v_117)
+27_move-car-to-car(v_118 v_119 v_120)
+28_move-curb-to-car(v_121 v_122 v_123)
+29_move-car-to-curb(v_124 v_125 v_126)
+30_move-curb-to-car(v_127 v_128 v_129)
+31_move-car-to-curb(v_130 v_131 v_132)
+32_move-curb-to-car(v_133 v_134 v_135)
+33_move-car-to-curb(v_136 v_137 v_138)
+34_move-car-to-car(v_139 v_140 v_141)
+35_move-car-to-car(v_142 v_143 v_144)
+36_move-curb-to-car(v_145 v_146 v_147)
+37_move-car-to-curb(v_148 v_149 v_150)
+38_move-curb-to-car(v_151 v_152 v_153)
+39_move-car-to-curb(v_154 v_155 v_156)
+40_move-curb-to-car(v_157 v_158 v_159)
+41_move-car-to-curb(v_160 v_161 v_162)
+42_move-car-to-car(v_163 v_164 v_165)
+43_move-car-to-car(v_166 v_167 v_168)
+44_move-curb-to-car(v_169 v_170 v_171)
+45_move-car-to-curb(v_172 v_173 v_174)
+46_move-curb-to-car(v_175 v_176 v_177)
+47_move-car-to-curb(v_178 v_179 v_180)
+48_move-curb-to-car(v_181 v_182 v_183)
+49_move-car-to-curb(v_184 v_185 v_186)
+50_move-car-to-car(v_187 v_188 v_189)
+51_move-car-to-car(v_190 v_191 v_192)
+52_move-curb-to-car(v_193 v_194 v_195)
+53_move-car-to-curb(v_196 v_197 v_198)
+54_move-curb-to-car(v_199 v_200 v_201)
+55_move-car-to-curb(v_202 v_203 v_204)
+56_move-car-to-car(v_205 v_206 v_207)
+57_move-car-to-car(v_208 v_209 v_210)
+58_move-curb-to-car(v_211 v_212 v_213)
+59_move-car-to-curb(v_214 v_215 v_216)
+60_move-curb-to-car(v_217 v_218 v_219)
+61_move-car-to-curb(v_220 v_221 v_222)
+62_move-car-to-car(v_223 v_224 v_225)
+63_move-car-to-car(v_226 v_227 v_228)
+64_move-curb-to-car(v_229 v_230 v_231)
+65_move-car-to-curb(v_232 v_233 v_234)
+66_move-curb-to-car(v_235 v_236 v_237)
+67_move-car-to-curb(v_238 v_239 v_240)
+68_move-car-to-car(v_241 v_242 v_243)
+goal(v_244 v_245 v_246 v_247 v_248 v_249 v_250 v_251 v_252 v_253 v_254 v_255 v_256 v_257 v_258 v_259 v_260 v_261 v_262 v_263 v_264 v_265 v_266 v_267 v_268 v_269 v_270 v_271 v_272 v_273 v_274 v_275 v_276 v_277 v_278 v_279 v_280 v_281 v_282 v_283)
+** Ordering
+01_move-car-to-curb < 02_move-curb-to-car
+02_move-curb-to-car < 03_move-car-to-curb
+03_move-car-to-curb < 04_move-car-to-car
+03_move-car-to-curb < 05_move-car-to-car
+04_move-car-to-car < 07_move-curb-to-car
+05_move-car-to-car < 06_move-car-to-car
+06_move-car-to-car < 07_move-curb-to-car
+07_move-curb-to-car < 08_move-car-to-curb
+08_move-car-to-curb < 09_move-curb-to-car
+09_move-curb-to-car < 10_move-car-to-curb
+10_move-car-to-curb < 11_move-car-to-car
+10_move-car-to-curb < 13_move-car-to-car
+11_move-car-to-car < 12_move-car-to-car
+12_move-car-to-car < 15_move-car-to-car
+13_move-car-to-car < 14_move-car-to-car
+14_move-car-to-car < 18_move-curb-to-car
+15_move-car-to-car < 16_move-car-to-car
+16_move-car-to-car < 17_move-car-to-car
+17_move-car-to-car < 18_move-curb-to-car
+18_move-curb-to-car < 19_move-car-to-curb
+19_move-car-to-curb < 20_move-car-to-car
+20_move-car-to-car < 21_move-car-to-car
+21_move-car-to-car < 22_move-car-to-car
+22_move-car-to-car < 23_move-curb-to-car
+23_move-curb-to-car < 24_move-car-to-curb
+24_move-car-to-curb < 25_move-curb-to-car
+25_move-curb-to-car < 26_move-car-to-curb
+26_move-car-to-curb < 57_move-car-to-car
+27_move-car-to-car < 28_move-curb-to-car
+28_move-curb-to-car < 29_move-car-to-curb
+29_move-car-to-curb < 30_move-curb-to-car
+30_move-curb-to-car < 31_move-car-to-curb
+31_move-car-to-curb < 32_move-curb-to-car
+32_move-curb-to-car < 33_move-car-to-curb
+33_move-car-to-curb < 34_move-car-to-car
+34_move-car-to-car < 35_move-car-to-car
+35_move-car-to-car < 36_move-curb-to-car
+36_move-curb-to-car < 37_move-car-to-curb
+37_move-car-to-curb < 38_move-curb-to-car
+38_move-curb-to-car < 39_move-car-to-curb
+39_move-car-to-curb < 40_move-curb-to-car
+40_move-curb-to-car < 41_move-car-to-curb
+41_move-car-to-curb < 42_move-car-to-car
+42_move-car-to-car < 43_move-car-to-car
+43_move-car-to-car < 44_move-curb-to-car
+44_move-curb-to-car < 45_move-car-to-curb
+45_move-car-to-curb < 46_move-curb-to-car
+46_move-curb-to-car < 47_move-car-to-curb
+47_move-car-to-curb < 48_move-curb-to-car
+48_move-curb-to-car < 49_move-car-to-curb
+49_move-car-to-curb < 50_move-car-to-car
+50_move-car-to-car < 51_move-car-to-car
+51_move-car-to-car < 52_move-curb-to-car
+52_move-curb-to-car < 53_move-car-to-curb
+53_move-car-to-curb < 54_move-curb-to-car
+54_move-curb-to-car < 55_move-car-to-curb
+55_move-car-to-curb < 56_move-car-to-car
+57_move-car-to-car < 58_move-curb-to-car
+58_move-curb-to-car < 59_move-car-to-curb
+59_move-car-to-curb < 60_move-curb-to-car
+60_move-curb-to-car < 61_move-car-to-curb
+61_move-car-to-curb < 62_move-car-to-car
+62_move-car-to-car < 63_move-car-to-car
+63_move-car-to-car < 64_move-curb-to-car
+64_move-curb-to-car < 65_move-car-to-curb
+65_move-car-to-curb < 66_move-curb-to-car
+66_move-curb-to-car < 67_move-car-to-curb
+67_move-car-to-curb < 68_move-car-to-car
+68_move-car-to-car < 27_move-car-to-car
+** Binding
+v_0=car_00
+v_1=car_01
+v_2=car_02
+v_3=car_03
+v_4=car_04
+v_5=car_05
+v_6=car_06
+v_7=car_07
+v_8=car_08
+v_9=car_09
+v_10=car_10
+v_11=car_11
+v_12=car_12
+v_13=car_13
+v_14=car_14
+v_15=car_15
+v_16=car_16
+v_17=car_17
+v_18=car_18
+v_19=car_19
+v_20=car_20
+v_21=car_21
+v_22=car_22
+v_23=car_23
+v_24=car_24
+v_25=car_25
+v_26=curb_00
+v_27=curb_01
+v_28=curb_02
+v_29=curb_03
+v_30=curb_04
+v_31=curb_05
+v_32=curb_06
+v_33=curb_07
+v_34=curb_08
+v_35=curb_09
+v_36=curb_10
+v_37=curb_11
+v_38=curb_12
+v_39=curb_13
+v_40=car_03
+v_41=car_15
+v_42=curb_13
+v_43=car_15
+v_44=curb_02
+v_45=car_03
+v_46=car_06
+v_47=car_04
+v_48=curb_02
+v_49=car_18
+v_50=car_21
+v_51=car_04
+v_52=car_20
+v_53=car_00
+v_54=car_06
+v_55=car_14
+v_56=car_17
+v_57=car_00
+v_58=car_21
+v_59=curb_00
+v_60=car_17
+v_61=car_08
+v_62=car_13
+v_63=curb_00
+v_64=car_13
+v_65=curb_12
+v_66=car_08
+v_67=car_12
+v_68=car_02
+v_69=curb_12
+v_70=car_16
+v_71=car_11
+v_72=car_02
+v_73=car_22
+v_74=car_24
+v_75=car_11
+v_76=car_10
+v_77=car_01
+v_78=car_12
+v_79=car_15
+v_80=car_03
+v_81=car_01
+v_82=car_25
+v_83=car_09
+v_84=car_24
+v_85=car_23
+v_86=car_07
+v_87=car_09
+v_88=car_21
+v_89=car_17
+v_90=car_07
+v_91=car_17
+v_92=curb_01
+v_93=car_03
+v_94=car_10
+v_95=car_12
+v_96=curb_01
+v_97=car_13
+v_98=car_08
+v_99=car_12
+v_100=car_22
+v_101=car_11
+v_102=car_08
+v_103=car_25
+v_104=car_24
+v_105=car_11
+v_106=car_24
+v_107=curb_11
+v_108=car_10
+v_109=car_17
+v_110=car_03
+v_111=curb_11
+v_112=car_03
+v_113=curb_13
+v_114=car_17
+v_115=car_13
+v_116=car_12
+v_117=curb_13
+v_118=car_15
+v_119=car_01
+v_120=car_13
+v_121=car_01
+v_122=curb_03
+v_123=car_12
+v_124=car_03
+v_125=car_17
+v_126=curb_03
+v_127=car_17
+v_128=curb_11
+v_129=car_03
+v_130=car_24
+v_131=car_10
+v_132=curb_11
+v_133=car_10
+v_134=curb_01
+v_135=car_24
+v_136=car_01
+v_137=car_12
+v_138=curb_01
+v_139=car_15
+v_140=car_13
+v_141=car_01
+v_142=car_23
+v_143=car_09
+v_144=car_13
+v_145=car_09
+v_146=curb_10
+v_147=car_12
+v_148=car_10
+v_149=car_24
+v_150=curb_10
+v_151=car_24
+v_152=curb_11
+v_153=car_10
+v_154=car_16
+v_155=car_02
+v_156=curb_11
+v_157=car_02
+v_158=curb_09
+v_159=car_16
+v_160=car_09
+v_161=car_12
+v_162=curb_09
+v_163=car_23
+v_164=car_13
+v_165=car_09
+v_166=car_20
+v_167=car_06
+v_168=car_13
+v_169=car_06
+v_170=curb_02
+v_171=car_12
+v_172=car_02
+v_173=car_16
+v_174=curb_02
+v_175=car_16
+v_176=curb_11
+v_177=car_02
+v_178=car_18
+v_179=car_04
+v_180=curb_11
+v_181=car_04
+v_182=curb_06
+v_183=car_18
+v_184=car_06
+v_185=car_12
+v_186=curb_06
+v_187=car_20
+v_188=car_13
+v_189=car_06
+v_190=car_25
+v_191=car_11
+v_192=car_13
+v_193=car_11
+v_194=curb_04
+v_195=car_12
+v_196=car_04
+v_197=car_18
+v_198=curb_04
+v_199=car_18
+v_200=curb_11
+v_201=car_04
+v_202=car_11
+v_203=car_12
+v_204=curb_11
+v_205=car_25
+v_206=car_13
+v_207=car_11
+v_208=car_14
+v_209=car_00
+v_210=car_13
+v_211=car_00
+v_212=curb_07
+v_213=car_12
+v_214=car_22
+v_215=car_08
+v_216=curb_07
+v_217=car_08
+v_218=curb_00
+v_219=car_22
+v_220=car_00
+v_221=car_12
+v_222=curb_00
+v_223=car_14
+v_224=car_13
+v_225=car_00
+v_226=car_21
+v_227=car_07
+v_228=car_13
+v_229=car_07
+v_230=curb_08
+v_231=car_12
+v_232=car_08
+v_233=car_22
+v_234=curb_08
+v_235=car_22
+v_236=curb_07
+v_237=car_08
+v_238=car_07
+v_239=car_12
+v_240=curb_07
+v_241=car_21
+v_242=car_13
+v_243=car_07
+v_244=car_00
+v_245=car_01
+v_246=car_02
+v_247=car_03
+v_248=car_04
+v_249=car_05
+v_250=car_06
+v_251=car_07
+v_252=car_08
+v_253=car_09
+v_254=car_10
+v_255=car_11
+v_256=car_12
+v_257=car_13
+v_258=car_14
+v_259=car_15
+v_260=car_16
+v_261=car_17
+v_262=car_18
+v_263=car_19
+v_264=car_20
+v_265=car_21
+v_266=car_22
+v_267=car_23
+v_268=car_24
+v_269=car_25
+v_270=curb_00
+v_271=curb_01
+v_272=curb_02
+v_273=curb_03
+v_274=curb_04
+v_275=curb_05
+v_276=curb_06
+v_277=curb_07
+v_278=curb_08
+v_279=curb_09
+v_280=curb_10
+v_281=curb_11
+v_282=curb_12
+v_283=curb_13

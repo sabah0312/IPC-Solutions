@@ -1,0 +1,116 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14)
+01_load-truck(v_15 v_16 v_17)
+02_load-truck(v_18 v_19 v_20)
+03_load-truck(v_21 v_22 v_23)
+04_drive-truck(v_24 v_25 v_26 v_27)
+05_unload-truck(v_28 v_29 v_30)
+06_unload-truck(v_31 v_32 v_33)
+07_unload-truck(v_34 v_35 v_36)
+08_load-truck(v_37 v_38 v_39)
+09_drive-truck(v_40 v_41 v_42 v_43)
+10_unload-truck(v_44 v_45 v_46)
+11_fly-airplane(v_47 v_48 v_49)
+12_load-airplane(v_50 v_51 v_52)
+13_fly-airplane(v_53 v_54 v_55)
+14_unload-airplane(v_56 v_57 v_58)
+15_load-truck(v_59 v_60 v_61)
+16_drive-truck(v_62 v_63 v_64 v_65)
+17_unload-truck(v_66 v_67 v_68)
+goal(v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76)
+** Ordering
+01_load-truck < 09_drive-truck
+02_load-truck < 04_drive-truck
+03_load-truck < 09_drive-truck
+04_drive-truck < 10_unload-truck
+04_drive-truck < 15_load-truck
+07_unload-truck < 12_load-airplane
+08_load-truck < 09_drive-truck
+09_drive-truck < 05_unload-truck
+09_drive-truck < 06_unload-truck
+09_drive-truck < 07_unload-truck
+10_unload-truck < 16_drive-truck
+11_fly-airplane < 12_load-airplane
+12_load-airplane < 13_fly-airplane
+13_fly-airplane < 14_unload-airplane
+14_unload-airplane < 15_load-truck
+15_load-truck < 16_drive-truck
+16_drive-truck < 17_unload-truck
+** Binding
+v_0=apn1
+v_1=apt1
+v_2=apt2
+v_3=cit1
+v_4=cit2
+v_5=obj11
+v_6=obj12
+v_7=obj13
+v_8=obj21
+v_9=obj22
+v_10=obj23
+v_11=pos1
+v_12=pos2
+v_13=tru1
+v_14=tru2
+v_15=obj23
+v_16=tru2
+v_17=pos2
+v_18=obj12
+v_19=tru1
+v_20=pos1
+v_21=obj21
+v_22=tru2
+v_23=pos2
+v_24=tru1
+v_25=pos1
+v_26=apt1
+v_27=cit1
+v_28=obj21
+v_29=tru2
+v_30=apt2
+v_31=obj22
+v_32=tru2
+v_33=apt2
+v_34=obj23
+v_35=tru2
+v_36=apt2
+v_37=obj22
+v_38=tru2
+v_39=pos2
+v_40=tru2
+v_41=pos2
+v_42=apt2
+v_43=cit2
+v_44=obj12
+v_45=tru1
+v_46=apt1
+v_47=apn1
+v_48=apt1
+v_49=apt2
+v_50=obj23
+v_51=apn1
+v_52=apt2
+v_53=apn1
+v_54=apt2
+v_55=apt1
+v_56=obj23
+v_57=apn1
+v_58=apt1
+v_59=obj23
+v_60=tru1
+v_61=apt1
+v_62=tru1
+v_63=apt1
+v_64=pos1
+v_65=cit1
+v_66=obj23
+v_67=tru1
+v_68=pos1
+v_69=apt1
+v_70=apt2
+v_71=obj11
+v_72=obj12
+v_73=obj21
+v_74=obj22
+v_75=obj23
+v_76=pos1

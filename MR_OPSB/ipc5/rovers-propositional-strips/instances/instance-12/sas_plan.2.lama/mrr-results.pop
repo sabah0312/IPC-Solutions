@@ -1,0 +1,40 @@
+** Operators
+init()
+01_navigate-rover3-waypoint7-waypoint3()
+02_calibrate-rover3-camera3-objective3-waypoint3()
+03_sample_rock-rover3-rover3store-waypoint3()
+04_communicate_rock_data-rover3-general-waypoint3-waypoint3-waypoint2()
+05_navigate-rover2-waypoint7-waypoint0()
+06_sample_soil-rover2-rover2store-waypoint0()
+07_communicate_soil_data-rover2-general-waypoint0-waypoint0-waypoint2()
+08_take_image-rover3-waypoint3-objective1-camera3-high_res()
+09_calibrate-rover3-camera3-objective3-waypoint3()
+10_communicate_image_data-rover3-general-objective1-high_res-waypoint3-waypoint2()
+11_take_image-rover3-waypoint3-objective2-camera3-low_res()
+12_calibrate-rover3-camera3-objective3-waypoint3()
+13_take_image-rover3-waypoint3-objective3-camera3-low_res()
+14_communicate_image_data-rover3-general-objective3-low_res-waypoint3-waypoint2()
+15_communicate_image_data-rover3-general-objective2-low_res-waypoint3-waypoint2()
+16_navigate-rover1-waypoint4-waypoint6()
+17_sample_rock-rover1-rover1store-waypoint6()
+18_navigate-rover1-waypoint6-waypoint4()
+19_communicate_rock_data-rover1-general-waypoint6-waypoint4-waypoint2()
+goal()
+** Ordering
+01_navigate-rover3-waypoint7-waypoint3 < 02_calibrate-rover3-camera3-objective3-waypoint3
+01_navigate-rover3-waypoint7-waypoint3 < 03_sample_rock-rover3-rover3store-waypoint3
+02_calibrate-rover3-camera3-objective3-waypoint3 < 08_take_image-rover3-waypoint3-objective1-camera3-high_res
+03_sample_rock-rover3-rover3store-waypoint3 < 04_communicate_rock_data-rover3-general-waypoint3-waypoint3-waypoint2
+05_navigate-rover2-waypoint7-waypoint0 < 06_sample_soil-rover2-rover2store-waypoint0
+06_sample_soil-rover2-rover2store-waypoint0 < 07_communicate_soil_data-rover2-general-waypoint0-waypoint0-waypoint2
+08_take_image-rover3-waypoint3-objective1-camera3-high_res < 09_calibrate-rover3-camera3-objective3-waypoint3
+08_take_image-rover3-waypoint3-objective1-camera3-high_res < 10_communicate_image_data-rover3-general-objective1-high_res-waypoint3-waypoint2
+09_calibrate-rover3-camera3-objective3-waypoint3 < 11_take_image-rover3-waypoint3-objective2-camera3-low_res
+11_take_image-rover3-waypoint3-objective2-camera3-low_res < 12_calibrate-rover3-camera3-objective3-waypoint3
+11_take_image-rover3-waypoint3-objective2-camera3-low_res < 15_communicate_image_data-rover3-general-objective2-low_res-waypoint3-waypoint2
+12_calibrate-rover3-camera3-objective3-waypoint3 < 13_take_image-rover3-waypoint3-objective3-camera3-low_res
+13_take_image-rover3-waypoint3-objective3-camera3-low_res < 14_communicate_image_data-rover3-general-objective3-low_res-waypoint3-waypoint2
+16_navigate-rover1-waypoint4-waypoint6 < 17_sample_rock-rover1-rover1store-waypoint6
+17_sample_rock-rover1-rover1store-waypoint6 < 18_navigate-rover1-waypoint6-waypoint4
+18_navigate-rover1-waypoint6-waypoint4 < 19_communicate_rock_data-rover1-general-waypoint6-waypoint4-waypoint2
+** Binding

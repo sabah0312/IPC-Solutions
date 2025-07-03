@@ -1,0 +1,584 @@
+1. Running translator
+Second argument is a file name: use two translator arguments.
+Parsing... [0.020s CPU, 0.053s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Generating Datalog program... [0.010s CPU, 0.004s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.060s CPU, 0.071s wall-clock]
+Preparing model... [0.030s CPU, 0.026s wall-clock]
+Generated 400 rules.
+Computing model... [3.940s CPU, 3.944s wall-clock]
+44910 relevant atoms
+39548 auxiliary atoms
+84458 final queue length
+234020 total queue pushes
+Completing instantiation... [13.820s CPU, 13.841s wall-clock]
+Instantiating: [17.910s CPU, 17.949s wall-clock]
+Computing fact groups...
+Finding invariants...
+41 initial candidates
+Finding invariants: [0.230s CPU, 0.227s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+459 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.003s wall-clock]
+Computing fact groups: [0.240s CPU, 0.242s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.002s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.002s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.002s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.670s CPU, 0.676s wall-clock]
+Translating task: [11.400s CPU, 11.468s wall-clock]
+0 implied effects removed
+52092 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+2 propositions removed
+Detecting unreachable propositions: [1.990s CPU, 2.028s wall-clock]
+Translator variables: 461
+Translator derived variables: 0
+Translator facts: 925
+Translator mutex groups: 3
+Translator total mutex groups size: 9
+Translator operators: 44250
+Translator task size: 541939
+Translator peak memory: 535080 KB
+Writing output... [1.560s CPU, 1.669s wall-clock]
+Done! [33.640s CPU, 33.926s wall-clock]
+
+2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+461 variables of 461 necessary
+1 of 3 mutex groups necessary.
+44250 of 44250 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 925
+Preprocessor derived variables: 0
+Preprocessor task size: 541932
+Writing output...
+done
+
+
+3. Running search
+Dispatcher selected state size 1.
+This is a unit task.
+Simplifying transitions... done!
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 1.94695s
+Discovered 25 landmarks, of which 3 are disjunctive and 0 are conjunctive 
+42 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+12 initial landmarks, 4 goal landmarks
+Starting search: lazy_greedy(list(hff, hlm), preferred = list(hff, hlm))
+Conducting lazy best first search, (real) bound = 2147483647
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=8.52s]
+Best heuristic value: 13/29 [g=3, 8 evaluated, 7 expanded, t=8.8s]
+Best heuristic value: 13/27 [g=4, 9 evaluated, 8 expanded, t=8.84s]
+Best heuristic value: 13/25 [g=9, 448 evaluated, 447 expanded, t=26.09s]
+Best heuristic value: 13/22 [g=10, 451 evaluated, 450 expanded, t=26.21s]
+Best heuristic value: 13/21 [g=11, 453 evaluated, 452 expanded, t=26.29s]
+Best heuristic value: 13/19 [g=12, 473 evaluated, 472 expanded, t=27.07s]
+Best heuristic value: 13/18 [g=19, 523 evaluated, 522 expanded, t=28.75s]
+Best heuristic value: 12/18 [g=18, 592 evaluated, 591 expanded, t=31.03s]
+Best heuristic value: 10/18 [g=24, 637 evaluated, 636 expanded, t=32.33s]
+Best heuristic value: 10/16 [g=25, 638 evaluated, 637 expanded, t=32.35s]
+Best heuristic value: 9/15 [g=25, 640 evaluated, 639 expanded, t=32.41s]
+Best heuristic value: 9/14 [g=28, 643 evaluated, 642 expanded, t=32.49s]
+Best heuristic value: 7/13 [g=29, 647 evaluated, 646 expanded, t=32.62s]
+Best heuristic value: 6/12 [g=30, 650 evaluated, 649 expanded, t=32.71s]
+Best heuristic value: 4/12 [g=43, 685 evaluated, 684 expanded, t=33.88s]
+Best heuristic value: 3/12 [g=44, 686 evaluated, 685 expanded, t=33.91s]
+Best heuristic value: 3/10 [g=47, 692 evaluated, 691 expanded, t=34.13s]
+Best heuristic value: 3/9 [g=48, 694 evaluated, 693 expanded, t=34.2s]
+Best heuristic value: 2/9 [g=52, 709 evaluated, 708 expanded, t=34.66s]
+Best heuristic value: 2/8 [g=53, 710 evaluated, 709 expanded, t=34.68s]
+Best heuristic value: 2/6 [g=56, 714 evaluated, 713 expanded, t=34.81s]
+Best heuristic value: 2/5 [g=56, 737 evaluated, 736 expanded, t=35.5s]
+Best heuristic value: 2/4 [g=57, 738 evaluated, 737 expanded, t=35.53s]
+Best heuristic value: 2/3 [g=58, 740 evaluated, 739 expanded, t=35.58s]
+Best heuristic value: 2/2 [g=59, 742 evaluated, 741 expanded, t=35.64s]
+Best heuristic value: 1/1 [g=60, 743 evaluated, 742 expanded, t=35.66s]
+Solution found!
+Actual search time: 27.18s [t=35.67s]
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-up pr2 x3 y4 y3 (1)
+park pr2 (1)
+gripper-down pr2 x3 y3 xrel0 x3 yrel0 yrel1 y3 y4 (1)
+gripper-left pr2 x3 y3 xrel0 xrel-1 x3 x2 yrel1 y4 (1)
+get-up pr2 x3 y3 xrel-1 x2 yrel1 y4 object2 y3 (1)
+gripper-up pr2 x3 y3 xrel-1 x2 yrel1 yrel0 y4 y3 (1)
+put-right pr2 x3 y3 xrel-1 x2 yrel0 y3 object2 x3 (1)
+get-up pr2 x3 y3 xrel-1 x2 yrel0 y3 object1 y2 (1)
+gripper-down pr2 x3 y3 xrel-1 x2 yrel0 yrel1 y3 y4 (1)
+put-up pr2 x3 y3 xrel-1 x2 yrel1 y4 object1 y3 (1)
+finish-object object1 x2 y3 (1)
+gripper-right pr2 x3 y3 xrel-1 xrel0 x2 x3 yrel1 y4 (1)
+get-up pr2 x3 y3 xrel0 x3 yrel1 y4 object2 y3 (1)
+gripper-up pr2 x3 y3 xrel0 x3 yrel1 yrel0 y4 y3 (1)
+put-up pr2 x3 y3 xrel0 x3 yrel0 y3 object2 y2 (1)
+finish-object object2 x3 y2 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-down pr2 x3 y3 y4 (1)
+park pr2 (1)
+gripper-down pr2 x3 y4 xrel0 x3 yrel0 yrel1 y4 y5 (1)
+gripper-right pr2 x3 y4 xrel0 xrel1 x3 x4 yrel1 y5 (1)
+get-down pr2 x3 y4 xrel1 x4 yrel1 y5 object0 y6 (1)
+gripper-left pr2 x3 y4 xrel1 xrel0 x4 x3 yrel1 y5 (1)
+gripper-up pr2 x3 y4 xrel0 x3 yrel1 yrel0 y5 y4 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-up pr2 x3 y4 y3 (1)
+base-up pr2 x3 y3 y2 (1)
+park pr2 (1)
+put-left pr2 x3 y2 xrel0 x3 yrel0 y2 object0 x2 (1)
+finish-object object0 x2 y2 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-left pr2 x3 x2 y2 (1)
+base-down pr2 x2 y2 y3 (1)
+base-down pr2 x2 y3 y4 (1)
+base-down pr2 x2 y4 y5 (1)
+park pr2 (1)
+gripper-left pr2 x2 y5 xrel0 xrel-1 x2 x1 yrel0 y5 (1)
+get-down pr2 x2 y5 xrel-1 x1 yrel0 y5 object3 y6 (1)
+gripper-right pr2 x2 y5 xrel-1 xrel0 x1 x2 yrel0 y5 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x2 x3 y5 (1)
+base-down pr2 x3 y5 y6 (1)
+park pr2 (1)
+gripper-right pr2 x3 y6 xrel0 xrel1 x3 x4 yrel0 y6 (1)
+gripper-down pr2 x3 y6 xrel1 x4 yrel0 yrel1 y6 y7 (1)
+put-right pr2 x3 y6 xrel1 x4 yrel1 y7 object3 x5 (1)
+finish-object object3 x5 y7 (1)
+Plan length: 61 step(s).
+Plan cost: 61
+Initial state h value: 13/30.
+Expanded 743 state(s).
+Reopened 0 state(s).
+Evaluated 744 state(s).
+Evaluations: 1488
+Generated 2200 state(s).
+Dead ends: 0 state(s).
+Best solution cost so far: 61
+Solution found - keep searching
+Starting search: lazy_wastar(list(hff, hlm), preferred = list(hff, hlm), w = 5)
+Conducting lazy best first search, (real) bound = 61
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=35.71s]
+Best heuristic value: 13/29 [g=3, 7 evaluated, 6 expanded, t=35.96s]
+Best heuristic value: 13/27 [g=4, 8 evaluated, 7 expanded, t=36s]
+Best heuristic value: 13/25 [g=9, 190 evaluated, 189 expanded, t=43.18s]
+Best heuristic value: 13/22 [g=10, 193 evaluated, 192 expanded, t=43.3s]
+Best heuristic value: 13/21 [g=11, 195 evaluated, 194 expanded, t=43.37s]
+Best heuristic value: 13/19 [g=12, 209 evaluated, 208 expanded, t=43.92s]
+Best heuristic value: 13/18 [g=19, 275 evaluated, 274 expanded, t=46.3s]
+Best heuristic value: 12/18 [g=18, 296 evaluated, 295 expanded, t=46.99s]
+Best heuristic value: 11/16 [g=18, 344 evaluated, 343 expanded, 3 reopened, t=48.56s]
+Best heuristic value: 10/15 [g=19, 348 evaluated, 347 expanded, 3 reopened, t=48.68s]
+Best heuristic value: 9/15 [g=21, 352 evaluated, 351 expanded, 3 reopened, t=48.8s]
+Best heuristic value: 9/14 [g=22, 353 evaluated, 352 expanded, 3 reopened, t=48.83s]
+Best heuristic value: 7/13 [g=23, 359 evaluated, 358 expanded, 3 reopened, t=49s]
+Best heuristic value: 6/12 [g=24, 362 evaluated, 361 expanded, 3 reopened, t=49.1s]
+Best heuristic value: 6/11 [g=36, 504 evaluated, 502 expanded, 6 reopened, t=53.44s]
+Best heuristic value: 6/10 [g=37, 509 evaluated, 507 expanded, 6 reopened, t=53.6s]
+Best heuristic value: 4/10 [g=39, 514 evaluated, 512 expanded, 6 reopened, t=53.74s]
+Best heuristic value: 4/9 [g=41, 971 evaluated, 961 expanded, 26 reopened, t=68.04s]
+Best heuristic value: 3/9 [g=40, 972 evaluated, 962 expanded, 26 reopened, t=68.06s]
+Best heuristic value: 3/8 [g=42, 977 evaluated, 967 expanded, 26 reopened, t=68.22s]
+Best heuristic value: 2/8 [g=41, 978 evaluated, 968 expanded, 26 reopened, t=68.24s]
+Best heuristic value: 2/7 [g=43, 983 evaluated, 973 expanded, 26 reopened, t=68.39s]
+Best heuristic value: 2/6 [g=45, 987 evaluated, 977 expanded, 26 reopened, t=68.5s]
+Best heuristic value: 2/5 [g=46, 989 evaluated, 979 expanded, 26 reopened, t=68.56s]
+Best heuristic value: 2/4 [g=47, 991 evaluated, 981 expanded, 26 reopened, t=68.62s]
+Best heuristic value: 2/3 [g=48, 994 evaluated, 984 expanded, 26 reopened, t=68.7s]
+Best heuristic value: 2/2 [g=49, 995 evaluated, 985 expanded, 26 reopened, t=68.72s]
+Best heuristic value: 1/1 [g=50, 996 evaluated, 986 expanded, 26 reopened, t=68.75s]
+Solution found!
+Actual search time: 33.1s [t=68.77s]
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-up pr2 x3 y4 y3 (1)
+park pr2 (1)
+get-left pr2 x3 y3 xrel0 x3 yrel0 y3 object2 x2 (1)
+put-up pr2 x3 y3 xrel0 x3 yrel0 y3 object2 y2 (1)
+finish-object object2 x3 y2 (1)
+gripper-left pr2 x3 y3 xrel0 xrel-1 x3 x2 yrel0 y3 (1)
+get-up pr2 x3 y3 xrel-1 x2 yrel0 y3 object1 y2 (1)
+gripper-right pr2 x3 y3 xrel-1 xrel0 x2 x3 yrel0 y3 (1)
+put-left pr2 x3 y3 xrel0 x3 yrel0 y3 object1 x2 (1)
+finish-object object1 x2 y3 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-down pr2 x3 y3 y4 (1)
+base-down pr2 x3 y4 y5 (1)
+base-left pr2 x3 x2 y5 (1)
+park pr2 (1)
+gripper-left pr2 x2 y5 xrel0 xrel-1 x2 x1 yrel0 y5 (1)
+get-down pr2 x2 y5 xrel-1 x1 yrel0 y5 object3 y6 (1)
+gripper-right pr2 x2 y5 xrel-1 xrel0 x1 x2 yrel0 y5 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x2 x3 y5 (1)
+base-right pr2 x3 x4 y5 (1)
+park pr2 (1)
+gripper-right pr2 x4 y5 xrel0 xrel1 x4 x5 yrel0 y5 (1)
+gripper-down pr2 x4 y5 xrel1 x5 yrel0 yrel1 y5 y6 (1)
+put-down pr2 x4 y5 xrel1 x5 yrel1 y6 object3 y7 (1)
+gripper-up pr2 x4 y5 xrel1 x5 yrel1 yrel0 y6 y5 (1)
+gripper-left pr2 x4 y5 xrel1 xrel0 x5 x4 yrel0 y5 (1)
+get-down pr2 x4 y5 xrel0 x4 yrel0 y5 object0 y6 (1)
+finish-object object3 x5 y7 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-up pr2 x3 y4 y3 (1)
+base-up pr2 x3 y3 y2 (1)
+park pr2 (1)
+put-left pr2 x3 y2 xrel0 x3 yrel0 y2 object0 x2 (1)
+finish-object object0 x2 y2 (1)
+Plan length: 51 step(s).
+Plan cost: 51
+Initial state h value: 13/30.
+Expanded 987 state(s).
+Reopened 26 state(s).
+Evaluated 997 state(s).
+Evaluations: 1994
+Generated 3107 state(s).
+Dead ends: 9 state(s).
+Best solution cost so far: 51
+Solution found - keep searching
+Starting search: lazy_wastar(list(hff, hlm), preferred = list(hff, hlm), w = 3)
+Conducting lazy best first search, (real) bound = 51
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=68.81s]
+Best heuristic value: 13/29 [g=3, 7 evaluated, 6 expanded, t=69.06s]
+Best heuristic value: 13/27 [g=4, 8 evaluated, 7 expanded, t=69.1s]
+Best heuristic value: 13/25 [g=9, 130 evaluated, 129 expanded, t=73.87s]
+Best heuristic value: 13/22 [g=10, 133 evaluated, 132 expanded, t=73.98s]
+Best heuristic value: 13/21 [g=11, 135 evaluated, 134 expanded, t=74.06s]
+Best heuristic value: 13/19 [g=12, 143 evaluated, 142 expanded, t=74.36s]
+Best heuristic value: 13/18 [g=16, 190 evaluated, 189 expanded, t=76.03s]
+Best heuristic value: 12/18 [g=18, 198 evaluated, 197 expanded, t=76.31s]
+Best heuristic value: 11/16 [g=18, 235 evaluated, 234 expanded, 1 reopened, t=77.56s]
+Best heuristic value: 10/15 [g=19, 240 evaluated, 239 expanded, 1 reopened, t=77.73s]
+Best heuristic value: 9/15 [g=21, 244 evaluated, 243 expanded, 1 reopened, t=77.85s]
+Best heuristic value: 9/14 [g=22, 245 evaluated, 244 expanded, 1 reopened, t=77.88s]
+Best heuristic value: 7/13 [g=23, 251 evaluated, 250 expanded, 1 reopened, t=78.06s]
+Best heuristic value: 6/12 [g=24, 254 evaluated, 253 expanded, 1 reopened, t=78.15s]
+Best heuristic value: 6/11 [g=31, 480 evaluated, 478 expanded, 9 reopened, t=85.4s]
+Best heuristic value: 6/10 [g=33, 483 evaluated, 481 expanded, 9 reopened, t=85.48s]
+Best heuristic value: 4/9 [g=34, 488 evaluated, 486 expanded, 9 reopened, t=85.63s]
+Best heuristic value: 3/8 [g=35, 491 evaluated, 489 expanded, 9 reopened, t=85.73s]
+Best heuristic value: 2/7 [g=41, 526 evaluated, 524 expanded, 9 reopened, t=86.8s]
+Best heuristic value: 2/6 [g=42, 527 evaluated, 525 expanded, 9 reopened, t=86.82s]
+Best heuristic value: 2/5 [g=43, 528 evaluated, 526 expanded, 9 reopened, t=86.85s]
+Best heuristic value: 2/4 [g=45, 531 evaluated, 529 expanded, 9 reopened, t=86.93s]
+Best heuristic value: 2/3 [g=46, 534 evaluated, 532 expanded, 9 reopened, t=87.01s]
+Best heuristic value: 2/2 [g=47, 536 evaluated, 534 expanded, 9 reopened, t=87.06s]
+Best heuristic value: 1/1 [g=48, 538 evaluated, 536 expanded, 9 reopened, t=87.12s]
+Solution found!
+Actual search time: 18.4s [t=87.17s]
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-up pr2 x3 y4 y3 (1)
+park pr2 (1)
+get-left pr2 x3 y3 xrel0 x3 yrel0 y3 object2 x2 (1)
+put-up pr2 x3 y3 xrel0 x3 yrel0 y3 object2 y2 (1)
+finish-object object2 x3 y2 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-down pr2 x3 y3 y4 (1)
+base-left pr2 x3 x2 y4 (1)
+park pr2 (1)
+gripper-down pr2 x2 y4 xrel0 x2 yrel0 yrel1 y4 y5 (1)
+gripper-left pr2 x2 y4 xrel0 xrel-1 x2 x1 yrel1 y5 (1)
+get-down pr2 x2 y4 xrel-1 x1 yrel1 y5 object3 y6 (1)
+gripper-right pr2 x2 y4 xrel-1 xrel0 x1 x2 yrel1 y5 (1)
+gripper-up pr2 x2 y4 xrel0 x2 yrel1 yrel0 y5 y4 (1)
+gripper-up pr2 x2 y4 xrel0 x2 yrel0 yrel-1 y4 y3 (1)
+put-right pr2 x2 y4 xrel0 x2 yrel-1 y3 object3 x3 (1)
+finish-object object3 x3 y3 (1)
+get-up pr2 x2 y4 xrel0 x2 yrel-1 y3 object1 y2 (1)
+gripper-down pr2 x2 y4 xrel0 x2 yrel-1 yrel0 y3 y4 (1)
+put-up pr2 x2 y4 xrel0 x2 yrel0 y4 object1 y3 (1)
+finish-object object1 x2 y3 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x2 x3 y4 (1)
+park pr2 (1)
+gripper-down pr2 x3 y4 xrel0 x3 yrel0 yrel1 y4 y5 (1)
+gripper-right pr2 x3 y4 xrel0 xrel1 x3 x4 yrel1 y5 (1)
+get-down pr2 x3 y4 xrel1 x4 yrel1 y5 object0 y6 (1)
+gripper-left pr2 x3 y4 xrel1 xrel0 x4 x3 yrel1 y5 (1)
+gripper-up pr2 x3 y4 xrel0 x3 yrel1 yrel0 y5 y4 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-up pr2 x3 y4 y3 (1)
+base-up pr2 x3 y3 y2 (1)
+park pr2 (1)
+put-left pr2 x3 y2 xrel0 x3 yrel0 y2 object0 x2 (1)
+finish-object object0 x2 y2 (1)
+Plan length: 49 step(s).
+Plan cost: 49
+Initial state h value: 13/30.
+Expanded 538 state(s).
+Reopened 9 state(s).
+Evaluated 540 state(s).
+Evaluations: 1080
+Generated 1727 state(s).
+Dead ends: 1 state(s).
+Best solution cost so far: 49
+Solution found - keep searching
+Starting search: lazy_wastar(list(hff, hlm), preferred = list(hff, hlm), w = 2)
+Conducting lazy best first search, (real) bound = 49
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=87.2s]
+Best heuristic value: 13/29 [g=3, 7 evaluated, 6 expanded, t=87.45s]
+Best heuristic value: 13/27 [g=4, 8 evaluated, 7 expanded, t=87.49s]
+Best heuristic value: 13/25 [g=9, 105 evaluated, 104 expanded, t=91.31s]
+Best heuristic value: 13/22 [g=10, 108 evaluated, 107 expanded, t=91.43s]
+Best heuristic value: 13/21 [g=11, 109 evaluated, 108 expanded, t=91.47s]
+Best heuristic value: 13/19 [g=12, 115 evaluated, 114 expanded, t=91.7s]
+Best heuristic value: 13/18 [g=16, 164 evaluated, 163 expanded, t=93.47s]
+Best heuristic value: 12/18 [g=18, 172 evaluated, 171 expanded, t=93.74s]
+Best heuristic value: 11/16 [g=18, 227 evaluated, 226 expanded, t=95.71s]
+Best heuristic value: 10/15 [g=19, 234 evaluated, 233 expanded, t=95.95s]
+Best heuristic value: 9/15 [g=21, 240 evaluated, 239 expanded, t=96.17s]
+Best heuristic value: 9/14 [g=22, 271 evaluated, 270 expanded, t=97.33s]
+Best heuristic value: 7/13 [g=23, 274 evaluated, 273 expanded, t=97.42s]
+Best heuristic value: 6/12 [g=24, 277 evaluated, 276 expanded, t=97.52s]
+Best heuristic value: 6/11 [g=30, 638 evaluated, 636 expanded, 8 reopened, t=110.39s]
+Best heuristic value: 6/10 [g=32, 833 evaluated, 831 expanded, 10 reopened, t=117.75s]
+Best heuristic value: 4/8 [g=35, 849 evaluated, 847 expanded, 10 reopened, t=118.31s]
+Best heuristic value: 3/7 [g=36, 850 evaluated, 848 expanded, 10 reopened, t=118.34s]
+Best heuristic value: 2/6 [g=42, 1066 evaluated, 1064 expanded, 12 reopened, t=126.94s]
+Best heuristic value: 2/5 [g=43, 1068 evaluated, 1066 expanded, 12 reopened, t=127.01s]
+Best heuristic value: 2/4 [g=44, 1070 evaluated, 1068 expanded, 12 reopened, t=127.06s]
+Best heuristic value: 2/3 [g=46, 1073 evaluated, 1071 expanded, 12 reopened, t=127.14s]
+Best heuristic value: 2/2 [g=47, 1074 evaluated, 1072 expanded, 12 reopened, t=127.17s]
+Best heuristic value: 1/1 [g=48, 1075 evaluated, 1073 expanded, 12 reopened, t=127.2s]
+Solution found!
+Actual search time: 228.59s [t=315.76s]
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-left pr2 x3 x2 y4 (1)
+base-up pr2 x2 y4 y3 (1)
+park pr2 (1)
+get-up pr2 x2 y3 xrel0 x2 yrel0 y3 object1 y2 (1)
+gripper-right pr2 x2 y3 xrel0 xrel1 x2 x3 yrel0 y3 (1)
+put-left pr2 x2 y3 xrel1 x3 yrel0 y3 object1 x2 (1)
+finish-object object1 x2 y3 (1)
+get-left pr2 x2 y3 xrel1 x3 yrel0 y3 object2 x2 (1)
+put-up pr2 x2 y3 xrel1 x3 yrel0 y3 object2 y2 (1)
+finish-object object2 x3 y2 (1)
+gripper-left pr2 x2 y3 xrel1 xrel0 x3 x2 yrel0 y3 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-down pr2 x2 y3 y4 (1)
+base-down pr2 x2 y4 y5 (1)
+park pr2 (1)
+gripper-left pr2 x2 y5 xrel0 xrel-1 x2 x1 yrel0 y5 (1)
+get-down pr2 x2 y5 xrel-1 x1 yrel0 y5 object3 y6 (1)
+gripper-right pr2 x2 y5 xrel-1 xrel0 x1 x2 yrel0 y5 (1)
+gripper-up pr2 x2 y5 xrel0 x2 yrel0 yrel-1 y5 y4 (1)
+gripper-right pr2 x2 y5 xrel0 xrel1 x2 x3 yrel-1 y4 (1)
+put-up pr2 x2 y5 xrel1 x3 yrel-1 y4 object3 y3 (1)
+finish-object object3 x3 y3 (1)
+gripper-down pr2 x2 y5 xrel1 x3 yrel-1 yrel0 y4 y5 (1)
+gripper-down pr2 x2 y5 xrel1 x3 yrel0 yrel1 y5 y6 (1)
+get-right pr2 x2 y5 xrel1 x3 yrel1 y6 object0 x4 (1)
+gripper-up pr2 x2 y5 xrel1 x3 yrel1 yrel0 y6 y5 (1)
+gripper-left pr2 x2 y5 xrel1 xrel0 x3 x2 yrel0 y5 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-up pr2 x2 y5 y4 (1)
+base-up pr2 x2 y4 y3 (1)
+park pr2 (1)
+put-up pr2 x2 y3 xrel0 x2 yrel0 y3 object0 y2 (1)
+finish-object object0 x2 y2 (1)
+Plan length: 47 step(s).
+Plan cost: 47
+Initial state h value: 13/30.
+Expanded 6226 state(s).
+Reopened 129 state(s).
+Evaluated 6255 state(s).
+Evaluations: 12510
+Generated 22283 state(s).
+Dead ends: 28 state(s).
+Best solution cost so far: 47
+Solution found - keep searching
+Starting search: lazy_wastar(list(hff, hlm), preferred = list(hff, hlm), w = 1)
+Conducting lazy best first search, (real) bound = 47
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=315.79s]
+Best heuristic value: 13/29 [g=3, 7 evaluated, 6 expanded, t=316.04s]
+Best heuristic value: 13/27 [g=4, 8 evaluated, 7 expanded, t=316.08s]
+Best heuristic value: 13/25 [g=9, 79 evaluated, 78 expanded, t=318.97s]
+Best heuristic value: 13/22 [g=10, 82 evaluated, 81 expanded, t=319.1s]
+Best heuristic value: 13/21 [g=11, 83 evaluated, 82 expanded, t=319.14s]
+Best heuristic value: 13/19 [g=12, 90 evaluated, 89 expanded, t=319.42s]
+Best heuristic value: 13/18 [g=16, 158 evaluated, 157 expanded, t=321.97s]
+Best heuristic value: 12/18 [g=18, 217 evaluated, 216 expanded, t=324.18s]
+Best heuristic value: 11/16 [g=18, 264 evaluated, 263 expanded, t=325.86s]
+Best heuristic value: 10/15 [g=19, 269 evaluated, 268 expanded, t=326.03s]
+Best heuristic value: 9/15 [g=21, 284 evaluated, 283 expanded, t=326.58s]
+Best heuristic value: 8/14 [g=22, 631 evaluated, 630 expanded, t=339.46s]
+Best heuristic value: 7/13 [g=23, 637 evaluated, 636 expanded, t=339.7s]
+Best heuristic value: 6/12 [g=24, 646 evaluated, 645 expanded, t=340.07s]
+Best heuristic value: 6/11 [g=26, 2335 evaluated, 2332 expanded, 3 reopened, t=402s]
+Best heuristic value: 6/10 [g=29, 20383 evaluated, 20351 expanded, 1174 reopened, t=1058.12s]
+Best heuristic value: 5/9 [g=30, 20392 evaluated, 20360 expanded, 1174 reopened, t=1058.47s]
+Best heuristic value: 4/8 [g=31, 20394 evaluated, 20362 expanded, 1174 reopened, t=1058.56s]
+Best heuristic value: 3/7 [g=32, 20401 evaluated, 20369 expanded, 1174 reopened, t=1058.84s]
+Best heuristic value: 3/6 [g=35, 23557 evaluated, 23525 expanded, 1273 reopened, t=1175.21s]
+Best heuristic value: 2/5 [g=38, 75663 evaluated, 75548 expanded, 1634 reopened, t=3103.73s]
+Best heuristic value: 2/4 [g=39, 93251 evaluated, 93078 expanded, 1732 reopened, t=3728.19s]
+Best heuristic value: 2/3 [g=40, 99431 evaluated, 99256 expanded, 1778 reopened, t=3953.76s]
+Best heuristic value: 2/2 [g=41, 101819 evaluated, 101644 expanded, 1780 reopened, t=4034.78s]
+Best heuristic value: 1/1 [g=42, 102346 evaluated, 102171 expanded, 1780 reopened, t=4052.97s]
+Solution found!
+Actual search time: 3739.35s [t=4055.11s]
+unpark pr2 xrel0 yrel0 (1)
+base-right pr2 x0 x1 y0 (1)
+base-right pr2 x1 x2 y0 (1)
+base-right pr2 x2 x3 y0 (1)
+base-right pr2 x3 x4 y0 (1)
+base-right pr2 x4 x5 y0 (1)
+base-down pr2 x5 y0 y1 (1)
+base-down pr2 x5 y1 y2 (1)
+base-down pr2 x5 y2 y3 (1)
+base-down pr2 x5 y3 y4 (1)
+base-down pr2 x5 y4 y5 (1)
+base-left pr2 x5 x4 y5 (1)
+park pr2 (1)
+get-down pr2 x4 y5 xrel0 x4 yrel0 y5 object0 y6 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-left pr2 x4 x3 y5 (1)
+base-up pr2 x3 y5 y4 (1)
+base-left pr2 x3 x2 y4 (1)
+base-up pr2 x2 y4 y3 (1)
+park pr2 (1)
+put-right pr2 x2 y3 xrel0 x2 yrel0 y3 object0 x3 (1)
+get-up pr2 x2 y3 xrel0 x2 yrel0 y3 object1 y2 (1)
+gripper-up pr2 x2 y3 xrel0 x2 yrel0 yrel-1 y3 y2 (1)
+put-down pr2 x2 y3 xrel0 x2 yrel-1 y2 object1 y3 (1)
+finish-object object1 x2 y3 (1)
+get-down pr2 x2 y3 xrel0 x2 yrel-1 y2 object2 y3 (1)
+put-right pr2 x2 y3 xrel0 x2 yrel-1 y2 object2 x3 (1)
+gripper-down pr2 x2 y3 xrel0 x2 yrel-1 yrel0 y2 y3 (1)
+get-right pr2 x2 y3 xrel0 x2 yrel0 y3 object0 x3 (1)
+put-up pr2 x2 y3 xrel0 x2 yrel0 y3 object0 y2 (1)
+finish-object object0 x2 y2 (1)
+finish-object object2 x3 y2 (1)
+unpark pr2 xrel0 yrel0 (1)
+base-down pr2 x2 y3 y4 (1)
+park pr2 (1)
+gripper-down pr2 x2 y4 xrel0 x2 yrel0 yrel1 y4 y5 (1)
+gripper-left pr2 x2 y4 xrel0 xrel-1 x2 x1 yrel1 y5 (1)
+get-down pr2 x2 y4 xrel-1 x1 yrel1 y5 object3 y6 (1)
+gripper-right pr2 x2 y4 xrel-1 xrel0 x1 x2 yrel1 y5 (1)
+gripper-up pr2 x2 y4 xrel0 x2 yrel1 yrel0 y5 y4 (1)
+gripper-right pr2 x2 y4 xrel0 xrel1 x2 x3 yrel0 y4 (1)
+put-up pr2 x2 y4 xrel1 x3 yrel0 y4 object3 y3 (1)
+finish-object object3 x3 y3 (1)
+Plan length: 43 step(s).
+Plan cost: 43
+Initial state h value: 13/30.
+Expanded 102230 state(s).
+Reopened 1780 state(s).
+Evaluated 102405 state(s).
+Evaluations: 204810
+Generated 357447 state(s).
+Dead ends: 174 state(s).
+Best solution cost so far: 43
+Solution found - keep searching
+Starting search: lazy_wastar(list(hff, hlm), preferred = list(hff, hlm), w = 1)
+Conducting lazy best first search, (real) bound = 43
+Best heuristic value: 13/30 [g=0, 1 evaluated, 0 expanded, t=4055.14s]
+Best heuristic value: 13/29 [g=3, 7 evaluated, 6 expanded, t=4055.37s]
+Best heuristic value: 13/27 [g=4, 8 evaluated, 7 expanded, t=4055.4s]
+Best heuristic value: 13/25 [g=9, 79 evaluated, 78 expanded, t=4058s]
+Best heuristic value: 13/22 [g=10, 82 evaluated, 81 expanded, t=4058.11s]
+Best heuristic value: 13/21 [g=11, 83 evaluated, 82 expanded, t=4058.15s]
+Best heuristic value: 13/19 [g=12, 90 evaluated, 89 expanded, t=4058.39s]
+Best heuristic value: 13/18 [g=16, 158 evaluated, 157 expanded, t=4060.67s]
+Best heuristic value: 12/18 [g=18, 217 evaluated, 216 expanded, t=4062.68s]
+Best heuristic value: 11/16 [g=18, 264 evaluated, 263 expanded, t=4064.19s]
+Best heuristic value: 10/15 [g=19, 269 evaluated, 268 expanded, t=4064.34s]
+Best heuristic value: 9/15 [g=21, 284 evaluated, 283 expanded, t=4064.83s]
+Best heuristic value: 8/14 [g=22, 631 evaluated, 630 expanded, t=4076.45s]
+Best heuristic value: 7/13 [g=23, 637 evaluated, 636 expanded, t=4076.68s]
+Best heuristic value: 6/12 [g=24, 646 evaluated, 645 expanded, t=4077.01s]
+Best heuristic value: 6/11 [g=26, 2335 evaluated, 2332 expanded, 3 reopened, t=4133.12s]
+Best heuristic value: 6/10 [g=29, 20383 evaluated, 20351 expanded, 1174 reopened, t=4723.59s]
+Best heuristic value: 5/9 [g=30, 20392 evaluated, 20360 expanded, 1174 reopened, t=4723.91s]
+Best heuristic value: 4/8 [g=31, 20394 evaluated, 20362 expanded, 1174 reopened, t=4723.99s]
+Best heuristic value: 3/7 [g=32, 20401 evaluated, 20369 expanded, 1174 reopened, t=4724.26s]
+Best heuristic value: 3/6 [g=35, 23557 evaluated, 23525 expanded, 1273 reopened, t=4829.67s]
+Best heuristic value: 2/5 [g=38, 75663 evaluated, 75548 expanded, 1634 reopened, t=6605.13s]
+Best heuristic value: 2/4 [g=39, 93251 evaluated, 93078 expanded, 1732 reopened, t=7205.49s]
+Best heuristic value: 2/3 [g=40, 99431 evaluated, 99256 expanded, 1778 reopened, t=7399.59s]
+Best heuristic value: 2/2 [g=41, 101819 evaluated, 101644 expanded, 1780 reopened, t=7485.66s]
+Best heuristic value: 1/1 [g=42, 102346 evaluated, 102171 expanded, 1780 reopened, t=7504.96s]
+Switch from bucket-based to heap-based queue at key = 1298, num_pushes = 1297
+../../downward/src/search/downward: line 184: 14406 Killed                  "$PLANNER" --heuristic "hlm,hff=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=2,cost_type=2))" --search "iterated([
+                    lazy_greedy([hff,hlm],preferred=[hff,hlm]),
+                    lazy_wastar([hff,hlm],preferred=[hff,hlm],w=5),
+                    lazy_wastar([hff,hlm],preferred=[hff,hlm],w=3),
+                    lazy_wastar([hff,hlm],preferred=[hff,hlm],w=2),
+                    lazy_wastar([hff,hlm],preferred=[hff,hlm],w=1)],
+                    repeat_last=true,continue_on_fail=true)" "$@" < $TEMPFILE

@@ -1,0 +1,213 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82)
+01_overcome(v_83 v_84 v_85 v_86 v_87)
+02_overcome(v_88 v_89 v_90 v_91 v_92)
+03_feast(v_93 v_94 v_95 v_96 v_97)
+04_overcome(v_98 v_99 v_100 v_101 v_102)
+05_feast(v_103 v_104 v_105 v_106 v_107)
+06_feast(v_108 v_109 v_110 v_111 v_112)
+07_succumb(v_113 v_114 v_115 v_116 v_117)
+08_feast(v_118 v_119 v_120 v_121 v_122)
+09_feast(v_123 v_124 v_125 v_126 v_127)
+10_overcome(v_128 v_129 v_130 v_131 v_132)
+11_feast(v_133 v_134 v_135 v_136 v_137)
+12_drink(v_138 v_139 v_140 v_141 v_142 v_143 v_144)
+13_feast(v_145 v_146 v_147 v_148 v_149)
+14_feast(v_150 v_151 v_152 v_153 v_154)
+15_feast(v_155 v_156 v_157 v_158 v_159)
+16_feast(v_160 v_161 v_162 v_163 v_164)
+17_succumb(v_165 v_166 v_167 v_168 v_169)
+goal(v_170 v_171 v_172 v_173)
+** Ordering
+01_overcome < 08_feast
+02_overcome < 03_feast
+03_feast < 04_overcome
+04_overcome < 05_feast
+05_feast < 06_feast
+05_feast < 11_feast
+06_feast < 07_succumb
+08_feast < 09_feast
+09_feast < 10_overcome
+09_feast < 12_drink
+10_overcome < 11_feast
+11_feast < 13_feast
+12_drink < 13_feast
+13_feast < 14_feast
+14_feast < 15_feast
+15_feast < 16_feast
+16_feast < 17_succumb
+** Binding
+v_0=abrasion
+v_1=abrasion-12
+v_2=abrasion-26
+v_3=achievement
+v_4=aesthetics
+v_5=alsace
+v_6=anger
+v_7=anger-21
+v_8=anger-6
+v_9=angina
+v_10=angina-14
+v_11=angina-23
+v_12=anxiety
+v_13=anxiety-2
+v_14=anxiety-9
+v_15=baguette
+v_16=bavaria
+v_17=boils
+v_18=boils-27
+v_19=boils-3
+v_20=chocolate
+v_21=curiosity
+v_22=depression
+v_23=depression-19
+v_24=depression-28
+v_25=depression-5
+v_26=dread
+v_27=dread-24
+v_28=dread-4
+v_29=entertainment
+v_30=flounder
+v_31=grief
+v_32=grief-1
+v_33=grief-25
+v_34=ham
+v_35=hamburger
+v_36=hangover
+v_37=hangover-15
+v_38=hangover-31
+v_39=haroset
+v_40=intoxication
+v_41=jealousy
+v_42=jealousy-22
+v_43=jealousy-8
+v_44=laceration
+v_45=laceration-20
+v_46=laceration-30
+v_47=laceration-7
+v_48=lemon
+v_49=lettuce
+v_50=lobster
+v_51=loneliness
+v_52=loneliness-11
+v_53=loneliness-17
+v_54=loneliness-32
+v_55=love
+v_56=mars
+v_57=marzipan
+v_58=melon
+v_59=muffin
+v_60=mutton
+v_61=neptune
+v_62=onion
+v_63=oregon
+v_64=papaya
+v_65=potato
+v_66=prostatitis
+v_67=prostatitis-13
+v_68=prostatitis-18
+v_69=prostatitis-29
+v_70=quebec
+v_71=rice
+v_72=satisfaction
+v_73=scallion
+v_74=scallop
+v_75=sciatica
+v_76=sciatica-10
+v_77=sciatica-16
+v_78=turkey
+v_79=venus
+v_80=vulcan
+v_81=wurst
+v_82=yogurt
+v_83=anger-6
+v_84=achievement
+v_85=turkey
+v_86=vulcan
+v_87=venus
+v_88=hangover-31
+v_89=love
+v_90=baguette
+v_91=vulcan
+v_92=venus
+v_93=love
+v_94=baguette
+v_95=lemon
+v_96=alsace
+v_97=bavaria
+v_98=prostatitis-18
+v_99=love
+v_100=lemon
+v_101=neptune
+v_102=vulcan
+v_103=love
+v_104=lemon
+v_105=baguette
+v_106=bavaria
+v_107=quebec
+v_108=love
+v_109=baguette
+v_110=lobster
+v_111=oregon
+v_112=alsace
+v_113=prostatitis-18
+v_114=love
+v_115=lobster
+v_116=neptune
+v_117=vulcan
+v_118=achievement
+v_119=turkey
+v_120=onion
+v_121=alsace
+v_122=bavaria
+v_123=achievement
+v_124=onion
+v_125=lemon
+v_126=oregon
+v_127=alsace
+v_128=laceration-20
+v_129=achievement
+v_130=lemon
+v_131=neptune
+v_132=vulcan
+v_133=achievement
+v_134=lemon
+v_135=onion
+v_136=alsace
+v_137=bavaria
+v_138=papaya
+v_139=onion
+v_140=bavaria
+v_141=alsace
+v_142=oregon
+v_143=oregon
+v_144=alsace
+v_145=achievement
+v_146=onion
+v_147=turkey
+v_148=oregon
+v_149=alsace
+v_150=achievement
+v_151=turkey
+v_152=potato
+v_153=oregon
+v_154=alsace
+v_155=achievement
+v_156=potato
+v_157=muffin
+v_158=oregon
+v_159=alsace
+v_160=achievement
+v_161=muffin
+v_162=ham
+v_163=alsace
+v_164=bavaria
+v_165=laceration-20
+v_166=achievement
+v_167=ham
+v_168=neptune
+v_169=vulcan
+v_170=ham
+v_171=laceration-20
+v_172=lobster
+v_173=prostatitis-18

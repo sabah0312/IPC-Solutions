@@ -1,0 +1,78 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7)
+01_unstack(v_8 v_9)
+02_stack(v_10 v_11)
+03_pick-up(v_12)
+04_stack(v_13 v_14)
+05_unstack(v_15 v_16)
+06_put-down(v_17)
+07_unstack(v_18 v_19)
+08_stack(v_20 v_21)
+09_pick-up(v_22)
+10_stack(v_23 v_24)
+11_pick-up(v_25)
+12_stack(v_26 v_27)
+13_pick-up(v_28)
+14_stack(v_29 v_30)
+15_pick-up(v_31)
+16_stack(v_32 v_33)
+goal(v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41)
+** Ordering
+01_unstack < 02_stack
+02_stack < 05_unstack
+03_pick-up < 04_stack
+04_stack < 07_unstack
+05_unstack < 06_put-down
+06_put-down < 03_pick-up
+07_unstack < 08_stack
+08_stack < 09_pick-up
+09_pick-up < 10_stack
+10_stack < 11_pick-up
+11_pick-up < 12_stack
+12_stack < 13_pick-up
+13_pick-up < 14_stack
+14_stack < 15_pick-up
+15_pick-up < 16_stack
+** Binding
+v_0=a
+v_1=b
+v_2=c
+v_3=d
+v_4=e
+v_5=f
+v_6=g
+v_7=h
+v_8=d
+v_9=b
+v_10=d
+v_11=h
+v_12=a
+v_13=a
+v_14=d
+v_15=b
+v_16=f
+v_17=b
+v_18=f
+v_19=g
+v_20=f
+v_21=a
+v_22=g
+v_23=g
+v_24=f
+v_25=e
+v_26=e
+v_27=g
+v_28=b
+v_29=b
+v_30=e
+v_31=c
+v_32=c
+v_33=b
+v_34=a
+v_35=b
+v_36=c
+v_37=d
+v_38=e
+v_39=f
+v_40=g
+v_41=h

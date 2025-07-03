@@ -1,0 +1,283 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28)
+01_board(v_29 v_30 v_31 v_32 v_33)
+02_board(v_34 v_35 v_36 v_37 v_38)
+03_move-down-slow(v_39 v_40 v_41)
+04_move-up-slow(v_42 v_43 v_44)
+05_leave(v_45 v_46 v_47 v_48 v_49)
+06_board(v_50 v_51 v_52 v_53 v_54)
+07_move-down-slow(v_55 v_56 v_57)
+08_leave(v_58 v_59 v_60 v_61 v_62)
+09_board(v_63 v_64 v_65 v_66 v_67)
+10_move-up-slow(v_68 v_69 v_70)
+11_leave(v_71 v_72 v_73 v_74 v_75)
+12_move-down-slow(v_76 v_77 v_78)
+13_board(v_79 v_80 v_81 v_82 v_83)
+14_move-down-slow(v_84 v_85 v_86)
+15_move-up-slow(v_87 v_88 v_89)
+16_board(v_90 v_91 v_92 v_93 v_94)
+17_leave(v_95 v_96 v_97 v_98 v_99)
+18_move-down-slow(v_100 v_101 v_102)
+19_board(v_103 v_104 v_105 v_106 v_107)
+20_move-up-slow(v_108 v_109 v_110)
+21_leave(v_111 v_112 v_113 v_114 v_115)
+22_move-down-slow(v_116 v_117 v_118)
+23_move-up-slow(v_119 v_120 v_121)
+24_move-up-slow(v_122 v_123 v_124)
+25_board(v_125 v_126 v_127 v_128 v_129)
+26_move-down-slow(v_130 v_131 v_132)
+27_move-up-slow(v_133 v_134 v_135)
+28_board(v_136 v_137 v_138 v_139 v_140)
+29_move-down-slow(v_141 v_142 v_143)
+30_leave(v_144 v_145 v_146 v_147 v_148)
+31_move-down-slow(v_149 v_150 v_151)
+32_leave(v_152 v_153 v_154 v_155 v_156)
+33_move-up-slow(v_157 v_158 v_159)
+34_leave(v_160 v_161 v_162 v_163 v_164)
+35_board(v_165 v_166 v_167 v_168 v_169)
+36_move-down-slow(v_170 v_171 v_172)
+37_leave(v_173 v_174 v_175 v_176 v_177)
+38_move-up-slow(v_178 v_179 v_180)
+39_leave(v_181 v_182 v_183 v_184 v_185)
+goal(v_186 v_187 v_188 v_189 v_190 v_191 v_192 v_193 v_194 v_195 v_196 v_197 v_198 v_199)
+** Ordering
+01_board < 02_board
+02_board < 03_move-down-slow
+03_move-down-slow < 04_move-up-slow
+04_move-up-slow < 05_leave
+05_leave < 06_board
+06_board < 07_move-down-slow
+07_move-down-slow < 08_leave
+08_leave < 09_board
+09_board < 10_move-up-slow
+10_move-up-slow < 18_move-down-slow
+11_leave < 31_move-down-slow
+12_move-down-slow < 13_board
+13_board < 14_move-down-slow
+14_move-down-slow < 15_move-up-slow
+15_move-up-slow < 16_board
+16_board < 17_leave
+17_leave < 19_board
+17_leave < 35_board
+18_move-down-slow < 32_leave
+19_board < 20_move-up-slow
+20_move-up-slow < 21_leave
+21_leave < 22_move-down-slow
+22_move-down-slow < 33_move-up-slow
+23_move-up-slow < 24_move-up-slow
+24_move-up-slow < 25_board
+25_board < 26_move-down-slow
+26_move-down-slow < 27_move-up-slow
+27_move-up-slow < 28_board
+28_board < 29_move-down-slow
+29_move-down-slow < 30_leave
+30_leave < 11_leave
+31_move-down-slow < 19_board
+32_leave < 23_move-up-slow
+32_leave < 35_board
+33_move-up-slow < 34_leave
+35_board < 36_move-down-slow
+36_move-down-slow < 37_leave
+37_leave < 38_move-up-slow
+38_move-up-slow < 39_leave
+** Binding
+v_0=fast0
+v_1=fast1
+v_2=n0
+v_3=n1
+v_4=n10
+v_5=n11
+v_6=n12
+v_7=n13
+v_8=n14
+v_9=n15
+v_10=n16
+v_11=n2
+v_12=n3
+v_13=n4
+v_14=n5
+v_15=n6
+v_16=n7
+v_17=n8
+v_18=n9
+v_19=p0
+v_20=p1
+v_21=p2
+v_22=p3
+v_23=p4
+v_24=p5
+v_25=p6
+v_26=p7
+v_27=slow0-0
+v_28=slow1-0
+v_29=p2
+v_30=slow1-0
+v_31=n11
+v_32=n0
+v_33=n1
+v_34=p7
+v_35=slow1-0
+v_36=n11
+v_37=n1
+v_38=n2
+v_39=slow1-0
+v_40=n11
+v_41=n10
+v_42=slow1-0
+v_43=n10
+v_44=n12
+v_45=p2
+v_46=slow1-0
+v_47=n12
+v_48=n2
+v_49=n1
+v_50=p1
+v_51=slow1-0
+v_52=n12
+v_53=n1
+v_54=n2
+v_55=slow1-0
+v_56=n12
+v_57=n10
+v_58=p1
+v_59=slow1-0
+v_60=n10
+v_61=n2
+v_62=n1
+v_63=p3
+v_64=slow1-0
+v_65=n10
+v_66=n1
+v_67=n2
+v_68=slow1-0
+v_69=n10
+v_70=n13
+v_71=p7
+v_72=slow1-0
+v_73=n13
+v_74=n2
+v_75=n1
+v_76=slow0-0
+v_77=n7
+v_78=n3
+v_79=p0
+v_80=slow0-0
+v_81=n3
+v_82=n0
+v_83=n1
+v_84=slow0-0
+v_85=n3
+v_86=n1
+v_87=slow0-0
+v_88=n1
+v_89=n8
+v_90=p6
+v_91=slow0-0
+v_92=n8
+v_93=n1
+v_94=n2
+v_95=p0
+v_96=slow0-0
+v_97=n8
+v_98=n2
+v_99=n1
+v_100=slow1-0
+v_101=n13
+v_102=n8
+v_103=p0
+v_104=slow1-0
+v_105=n8
+v_106=n1
+v_107=n2
+v_108=slow1-0
+v_109=n8
+v_110=n10
+v_111=p0
+v_112=slow1-0
+v_113=n10
+v_114=n2
+v_115=n1
+v_116=slow1-0
+v_117=n10
+v_118=n8
+v_119=slow1-0
+v_120=n8
+v_121=n13
+v_122=slow1-0
+v_123=n13
+v_124=n14
+v_125=p5
+v_126=slow1-0
+v_127=n14
+v_128=n1
+v_129=n2
+v_130=slow1-0
+v_131=n14
+v_132=n13
+v_133=slow1-0
+v_134=n13
+v_135=n15
+v_136=p4
+v_137=slow1-0
+v_138=n15
+v_139=n2
+v_140=n3
+v_141=slow1-0
+v_142=n15
+v_143=n13
+v_144=p4
+v_145=slow1-0
+v_146=n13
+v_147=n3
+v_148=n2
+v_149=slow1-0
+v_150=n13
+v_151=n8
+v_152=p3
+v_153=slow1-0
+v_154=n8
+v_155=n2
+v_156=n1
+v_157=slow1-0
+v_158=n8
+v_159=n9
+v_160=p5
+v_161=slow1-0
+v_162=n9
+v_163=n1
+v_164=n0
+v_165=p3
+v_166=slow0-0
+v_167=n8
+v_168=n1
+v_169=n2
+v_170=slow0-0
+v_171=n8
+v_172=n1
+v_173=p6
+v_174=slow0-0
+v_175=n1
+v_176=n2
+v_177=n1
+v_178=slow0-0
+v_179=n1
+v_180=n7
+v_181=p3
+v_182=slow0-0
+v_183=n7
+v_184=n1
+v_185=n0
+v_186=n1
+v_187=n10
+v_188=n12
+v_189=n13
+v_190=n7
+v_191=n9
+v_192=p0
+v_193=p1
+v_194=p2
+v_195=p3
+v_196=p4
+v_197=p5
+v_198=p6
+v_199=p7

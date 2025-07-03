@@ -1,0 +1,292 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45)
+01_sendtohome(v_46 v_47 v_48 v_49 v_50 v_51)
+02_sendtohome(v_52 v_53 v_54 v_55 v_56 v_57)
+03_sendtofree(v_58 v_59 v_60 v_61)
+04_sendtohome-b(v_62 v_63 v_64 v_65 v_66 v_67 v_68)
+05_sendtofree(v_69 v_70 v_71 v_72)
+06_sendtohome(v_73 v_74 v_75 v_76 v_77 v_78)
+07_sendtohome(v_79 v_80 v_81 v_82 v_83 v_84)
+08_sendtofree(v_85 v_86 v_87 v_88)
+09_sendtohome-b(v_89 v_90 v_91 v_92 v_93 v_94 v_95)
+10_sendtohome(v_96 v_97 v_98 v_99 v_100 v_101)
+11_sendtohome(v_102 v_103 v_104 v_105 v_106 v_107)
+12_homefromfreecell(v_108 v_109 v_110 v_111 v_112 v_113 v_114)
+13_sendtohome-b(v_115 v_116 v_117 v_118 v_119 v_120 v_121)
+14_homefromfreecell(v_122 v_123 v_124 v_125 v_126 v_127 v_128)
+15_sendtohome(v_129 v_130 v_131 v_132 v_133 v_134)
+16_sendtohome(v_135 v_136 v_137 v_138 v_139 v_140)
+17_sendtohome(v_141 v_142 v_143 v_144 v_145 v_146)
+18_sendtohome(v_147 v_148 v_149 v_150 v_151 v_152)
+19_sendtohome(v_153 v_154 v_155 v_156 v_157 v_158)
+20_sendtohome-b(v_159 v_160 v_161 v_162 v_163 v_164 v_165)
+21_homefromfreecell(v_166 v_167 v_168 v_169 v_170 v_171 v_172)
+22_sendtohome(v_173 v_174 v_175 v_176 v_177 v_178)
+23_sendtofree(v_179 v_180 v_181 v_182)
+24_sendtohome(v_183 v_184 v_185 v_186 v_187 v_188)
+25_sendtohome-b(v_189 v_190 v_191 v_192 v_193 v_194 v_195)
+26_sendtohome-b(v_196 v_197 v_198 v_199 v_200 v_201 v_202)
+27_sendtohome-b(v_203 v_204 v_205 v_206 v_207 v_208 v_209)
+28_homefromfreecell(v_210 v_211 v_212 v_213 v_214 v_215 v_216)
+goal(v_217 v_218 v_219 v_220)
+** Ordering
+01_sendtohome < 05_sendtofree
+02_sendtohome < 07_sendtohome
+02_sendtohome < 08_sendtofree
+03_sendtofree < 04_sendtohome-b
+03_sendtofree < 05_sendtofree
+04_sendtohome-b < 09_sendtohome-b
+05_sendtofree < 08_sendtofree
+05_sendtofree < 09_sendtohome-b
+06_sendtohome < 07_sendtohome
+06_sendtohome < 13_sendtohome-b
+07_sendtohome < 17_sendtohome
+07_sendtohome < 23_sendtofree
+08_sendtofree < 10_sendtohome
+09_sendtohome-b < 06_sendtohome
+10_sendtohome < 11_sendtohome
+10_sendtohome < 13_sendtohome-b
+11_sendtohome < 12_homefromfreecell
+12_homefromfreecell < 14_homefromfreecell
+12_homefromfreecell < 15_sendtohome
+13_sendtohome-b < 14_homefromfreecell
+14_homefromfreecell < 22_sendtohome
+14_homefromfreecell < 23_sendtofree
+15_sendtohome < 16_sendtohome
+16_sendtohome < 17_sendtohome
+16_sendtohome < 24_sendtohome
+17_sendtohome < 18_sendtohome
+18_sendtohome < 21_homefromfreecell
+18_sendtohome < 22_sendtohome
+19_sendtohome < 26_sendtohome-b
+20_sendtohome-b < 25_sendtohome-b
+21_homefromfreecell < 19_sendtohome
+22_sendtohome < 20_sendtohome-b
+23_sendtofree < 21_homefromfreecell
+23_sendtofree < 24_sendtohome
+24_sendtohome < 25_sendtohome-b
+25_sendtohome-b < 26_sendtohome-b
+26_sendtohome-b < 27_sendtohome-b
+27_sendtohome-b < 28_homefromfreecell
+** Binding
+v_0=c
+v_1=c0
+v_2=c2
+v_3=c3
+v_4=c4
+v_5=c5
+v_6=c6
+v_7=ca
+v_8=d
+v_9=d0
+v_10=d2
+v_11=d3
+v_12=d4
+v_13=d5
+v_14=d6
+v_15=da
+v_16=h
+v_17=h0
+v_18=h2
+v_19=h3
+v_20=h4
+v_21=h5
+v_22=h6
+v_23=ha
+v_24=n0
+v_25=n1
+v_26=n10
+v_27=n11
+v_28=n12
+v_29=n13
+v_30=n2
+v_31=n3
+v_32=n4
+v_33=n5
+v_34=n6
+v_35=n7
+v_36=n8
+v_37=n9
+v_38=s
+v_39=s0
+v_40=s2
+v_41=s3
+v_42=s4
+v_43=s5
+v_44=s6
+v_45=sa
+v_46=ca
+v_47=d5
+v_48=c
+v_49=n1
+v_50=c0
+v_51=n0
+v_52=sa
+v_53=h3
+v_54=s
+v_55=n1
+v_56=s0
+v_57=n0
+v_58=s5
+v_59=da
+v_60=n4
+v_61=n3
+v_62=da
+v_63=d
+v_64=n1
+v_65=d0
+v_66=n0
+v_67=n1
+v_68=n2
+v_69=d5
+v_70=d2
+v_71=n3
+v_72=n2
+v_73=d3
+v_74=s2
+v_75=d
+v_76=n3
+v_77=d2
+v_78=n2
+v_79=s2
+v_80=c6
+v_81=s
+v_82=n2
+v_83=sa
+v_84=n1
+v_85=h3
+v_86=ha
+v_87=n2
+v_88=n1
+v_89=d2
+v_90=d
+v_91=n2
+v_92=da
+v_93=n1
+v_94=n2
+v_95=n3
+v_96=ha
+v_97=d4
+v_98=h
+v_99=n1
+v_100=h0
+v_101=n0
+v_102=h2
+v_103=c5
+v_104=h
+v_105=n2
+v_106=ha
+v_107=n1
+v_108=h3
+v_109=h
+v_110=n3
+v_111=h2
+v_112=n2
+v_113=n1
+v_114=n2
+v_115=d4
+v_116=d
+v_117=n4
+v_118=d3
+v_119=n3
+v_120=n3
+v_121=n4
+v_122=d5
+v_123=d
+v_124=n5
+v_125=d4
+v_126=n4
+v_127=n2
+v_128=n3
+v_129=h4
+v_130=s4
+v_131=h
+v_132=n4
+v_133=h3
+v_134=n3
+v_135=h5
+v_136=s3
+v_137=h
+v_138=n5
+v_139=h4
+v_140=n4
+v_141=s3
+v_142=s6
+v_143=s
+v_144=n3
+v_145=s2
+v_146=n2
+v_147=s4
+v_148=d6
+v_149=s
+v_150=n4
+v_151=s3
+v_152=n3
+v_153=s6
+v_154=c4
+v_155=s
+v_156=n6
+v_157=s5
+v_158=n5
+v_159=c2
+v_160=c
+v_161=n2
+v_162=ca
+v_163=n1
+v_164=n4
+v_165=n5
+v_166=s5
+v_167=s
+v_168=n5
+v_169=s4
+v_170=n4
+v_171=n2
+v_172=n3
+v_173=d6
+v_174=c2
+v_175=d
+v_176=n6
+v_177=d5
+v_178=n5
+v_179=c6
+v_180=h6
+v_181=n3
+v_182=n2
+v_183=h6
+v_184=c3
+v_185=h
+v_186=n6
+v_187=h5
+v_188=n5
+v_189=c3
+v_190=c
+v_191=n3
+v_192=c2
+v_193=n2
+v_194=n5
+v_195=n6
+v_196=c4
+v_197=c
+v_198=n4
+v_199=c3
+v_200=n3
+v_201=n6
+v_202=n7
+v_203=c5
+v_204=c
+v_205=n5
+v_206=c4
+v_207=n4
+v_208=n7
+v_209=n8
+v_210=c6
+v_211=c
+v_212=n6
+v_213=c5
+v_214=n5
+v_215=n3
+v_216=n4
+v_217=c6
+v_218=d6
+v_219=h6
+v_220=s6

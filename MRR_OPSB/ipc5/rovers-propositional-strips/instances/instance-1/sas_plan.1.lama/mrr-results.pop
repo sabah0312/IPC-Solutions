@@ -1,0 +1,25 @@
+** Operators
+init()
+01_calibrate-rover0-camera0-objective1-waypoint3()
+02_take_image-rover0-waypoint3-objective1-camera0-high_res()
+03_communicate_image_data-rover0-general-objective1-high_res-waypoint3-waypoint0()
+04_sample_rock-rover0-rover0store-waypoint3()
+05_navigate-rover0-waypoint3-waypoint1()
+06_navigate-rover0-waypoint1-waypoint2()
+07_communicate_rock_data-rover0-general-waypoint3-waypoint2-waypoint0()
+08_drop-rover0-rover0store()
+09_sample_soil-rover0-rover0store-waypoint2()
+10_communicate_soil_data-rover0-general-waypoint2-waypoint2-waypoint0()
+goal()
+** Ordering
+01_calibrate-rover0-camera0-objective1-waypoint3 < 02_take_image-rover0-waypoint3-objective1-camera0-high_res
+02_take_image-rover0-waypoint3-objective1-camera0-high_res < 03_communicate_image_data-rover0-general-objective1-high_res-waypoint3-waypoint0
+03_communicate_image_data-rover0-general-objective1-high_res-waypoint3-waypoint0 < 05_navigate-rover0-waypoint3-waypoint1
+04_sample_rock-rover0-rover0store-waypoint3 < 05_navigate-rover0-waypoint3-waypoint1
+04_sample_rock-rover0-rover0store-waypoint3 < 08_drop-rover0-rover0store
+05_navigate-rover0-waypoint3-waypoint1 < 06_navigate-rover0-waypoint1-waypoint2
+06_navigate-rover0-waypoint1-waypoint2 < 07_communicate_rock_data-rover0-general-waypoint3-waypoint2-waypoint0
+06_navigate-rover0-waypoint1-waypoint2 < 09_sample_soil-rover0-rover0store-waypoint2
+08_drop-rover0-rover0store < 09_sample_soil-rover0-rover0store-waypoint2
+09_sample_soil-rover0-rover0store-waypoint2 < 10_communicate_soil_data-rover0-general-waypoint2-waypoint2-waypoint0
+** Binding

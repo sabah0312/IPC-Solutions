@@ -1,0 +1,45 @@
+** Operators
+init()
+01_push-unitarypipe-s13-b0-a1-a3-b2-rat-a-rat-a-ta1-1-rat-a-ta3-1-rat-a()
+02_pop-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-rat-a-ta3-1-lco()
+03_pop-unitarypipe-s13-b2-a1-a3-b6-rat-a-lco-ta1-1-lco-ta3-1-rat-a()
+04_push-unitarypipe-s13-b0-a1-a3-b2-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a()
+05_push-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-lco-ta3-1-rat-a()
+06_pop-unitarypipe-s13-b1-a1-a3-b6-gasoleo-lco-ta1-1-lco-ta3-1-gasoleo()
+07_push-unitarypipe-s12-b6-a1-a2-b5-lco-gasoleo-ta1-1-lco-ta2-2-gasoleo()
+08_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-gasoleo-ta3-1-rat-a()
+09_push-unitarypipe-s12-b1-a1-a2-b6-gasoleo-lco-ta1-1-gasoleo-ta2-1-lco()
+10_pop-unitarypipe-s13-b2-a1-a3-b0-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a()
+11_pop-unitarypipe-s12-b4-a1-a2-b1-gasoleo-gasoleo-ta1-1-gasoleo-ta2-1-gasoleo()
+12_push-unitarypipe-s13-b1-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a()
+13_push-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-rat-a-ta3-1-gasoleo()
+14_pop-unitarypipe-s12-b5-a1-a2-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta2-2-gasoleo()
+15_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-2-rat-a()
+16_push-unitarypipe-s12-b3-a1-a2-b5-oca1-gasoleo-ta1-1-oca1-ta2-1-gasoleo()
+17_pop-unitarypipe-s13-b1-a1-a3-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta3-1-gasoleo()
+18_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-2-gasoleo-ta3-1-rat-a()
+19_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a()
+goal()
+** Ordering
+01_push-unitarypipe-s13-b0-a1-a3-b2-rat-a-rat-a-ta1-1-rat-a-ta3-1-rat-a < 02_pop-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-rat-a-ta3-1-lco
+02_pop-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-rat-a-ta3-1-lco < 03_pop-unitarypipe-s13-b2-a1-a3-b6-rat-a-lco-ta1-1-lco-ta3-1-rat-a
+03_pop-unitarypipe-s13-b2-a1-a3-b6-rat-a-lco-ta1-1-lco-ta3-1-rat-a < 04_push-unitarypipe-s13-b0-a1-a3-b2-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a
+04_push-unitarypipe-s13-b0-a1-a3-b2-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a < 05_push-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-lco-ta3-1-rat-a
+05_push-unitarypipe-s13-b6-a1-a3-b0-lco-rat-a-ta1-1-lco-ta3-1-rat-a < 06_pop-unitarypipe-s13-b1-a1-a3-b6-gasoleo-lco-ta1-1-lco-ta3-1-gasoleo
+06_pop-unitarypipe-s13-b1-a1-a3-b6-gasoleo-lco-ta1-1-lco-ta3-1-gasoleo < 07_push-unitarypipe-s12-b6-a1-a2-b5-lco-gasoleo-ta1-1-lco-ta2-2-gasoleo
+06_pop-unitarypipe-s13-b1-a1-a3-b6-gasoleo-lco-ta1-1-lco-ta3-1-gasoleo < 08_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-gasoleo-ta3-1-rat-a
+07_push-unitarypipe-s12-b6-a1-a2-b5-lco-gasoleo-ta1-1-lco-ta2-2-gasoleo < 09_push-unitarypipe-s12-b1-a1-a2-b6-gasoleo-lco-ta1-1-gasoleo-ta2-1-lco
+08_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-gasoleo-ta3-1-rat-a < 09_push-unitarypipe-s12-b1-a1-a2-b6-gasoleo-lco-ta1-1-gasoleo-ta2-1-lco
+08_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-gasoleo-ta3-1-rat-a < 10_pop-unitarypipe-s13-b2-a1-a3-b0-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a
+09_push-unitarypipe-s12-b1-a1-a2-b6-gasoleo-lco-ta1-1-gasoleo-ta2-1-lco < 11_pop-unitarypipe-s12-b4-a1-a2-b1-gasoleo-gasoleo-ta1-1-gasoleo-ta2-1-gasoleo
+10_pop-unitarypipe-s13-b2-a1-a3-b0-rat-a-rat-a-ta1-1-rat-a-ta3-2-rat-a < 12_push-unitarypipe-s13-b1-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a
+11_pop-unitarypipe-s12-b4-a1-a2-b1-gasoleo-gasoleo-ta1-1-gasoleo-ta2-1-gasoleo < 12_push-unitarypipe-s13-b1-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a
+12_push-unitarypipe-s13-b1-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a < 13_push-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-rat-a-ta3-1-gasoleo
+12_push-unitarypipe-s13-b1-a1-a3-b2-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a < 14_pop-unitarypipe-s12-b5-a1-a2-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta2-2-gasoleo
+13_push-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-1-rat-a-ta3-1-gasoleo < 15_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-2-rat-a
+14_pop-unitarypipe-s12-b5-a1-a2-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta2-2-gasoleo < 15_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-2-rat-a
+14_pop-unitarypipe-s12-b5-a1-a2-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta2-2-gasoleo < 16_push-unitarypipe-s12-b3-a1-a2-b5-oca1-gasoleo-ta1-1-oca1-ta2-1-gasoleo
+15_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-2-rat-a < 17_pop-unitarypipe-s13-b1-a1-a3-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta3-1-gasoleo
+17_pop-unitarypipe-s13-b1-a1-a3-b4-gasoleo-gasoleo-ta1-1-gasoleo-ta3-1-gasoleo < 18_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-2-gasoleo-ta3-1-rat-a
+18_pop-unitarypipe-s13-b0-a1-a3-b1-rat-a-gasoleo-ta1-2-gasoleo-ta3-1-rat-a < 19_push-unitarypipe-s13-b4-a1-a3-b0-gasoleo-rat-a-ta1-1-gasoleo-ta3-1-rat-a
+** Binding

@@ -1,0 +1,201 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11)
+01_unstack(v_12 v_13)
+02_put-down(v_14)
+03_unstack(v_15 v_16)
+04_put-down(v_17)
+05_unstack(v_18 v_19)
+06_put-down(v_20)
+07_unstack(v_21 v_22)
+08_stack(v_23 v_24)
+09_unstack(v_25 v_26)
+10_stack(v_27 v_28)
+11_unstack(v_29 v_30)
+12_put-down(v_31)
+13_unstack(v_32 v_33)
+14_stack(v_34 v_35)
+15_unstack(v_36 v_37)
+16_stack(v_38 v_39)
+17_pick-up(v_40)
+18_stack(v_41 v_42)
+19_unstack(v_43 v_44)
+20_put-down(v_45)
+21_unstack(v_46 v_47)
+22_put-down(v_48)
+23_unstack(v_49 v_50)
+24_stack(v_51 v_52)
+25_unstack(v_53 v_54)
+26_put-down(v_55)
+27_pick-up(v_56)
+28_stack(v_57 v_58)
+29_pick-up(v_59)
+30_stack(v_60 v_61)
+31_pick-up(v_62)
+32_stack(v_63 v_64)
+33_pick-up(v_65)
+34_stack(v_66 v_67)
+35_pick-up(v_68)
+36_stack(v_69 v_70)
+37_pick-up(v_71)
+38_stack(v_72 v_73)
+39_unstack(v_74 v_75)
+40_put-down(v_76)
+41_unstack(v_77 v_78)
+42_put-down(v_79)
+43_pick-up(v_80)
+44_stack(v_81 v_82)
+45_pick-up(v_83)
+46_stack(v_84 v_85)
+47_pick-up(v_86)
+48_stack(v_87 v_88)
+goal(v_89 v_90 v_91 v_92 v_93 v_94 v_95 v_96 v_97 v_98 v_99 v_100)
+** Ordering
+01_unstack < 02_put-down
+02_put-down < 03_unstack
+03_unstack < 08_stack
+04_put-down < 13_unstack
+05_unstack < 10_stack
+06_put-down < 21_unstack
+07_unstack < 14_stack
+08_stack < 05_unstack
+09_unstack < 16_stack
+10_stack < 07_unstack
+11_unstack < 04_put-down
+12_put-down < 25_unstack
+13_unstack < 18_stack
+14_stack < 09_unstack
+15_unstack < 24_stack
+16_stack < 11_unstack
+17_pick-up < 40_put-down
+18_stack < 15_unstack
+19_unstack < 06_put-down
+20_put-down < 39_unstack
+21_unstack < 28_stack
+22_put-down < 41_unstack
+23_unstack < 12_put-down
+24_stack < 19_unstack
+25_unstack < 20_put-down
+26_put-down < 17_pick-up
+27_pick-up < 42_put-down
+28_stack < 23_unstack
+29_pick-up < 30_stack
+30_stack < 31_pick-up
+31_pick-up < 32_stack
+32_stack < 33_pick-up
+33_pick-up < 34_stack
+34_stack < 35_pick-up
+35_pick-up < 36_stack
+36_stack < 37_pick-up
+37_pick-up < 38_stack
+38_stack < 43_pick-up
+39_unstack < 22_put-down
+40_put-down < 27_pick-up
+41_unstack < 26_put-down
+42_put-down < 29_pick-up
+43_pick-up < 44_stack
+44_stack < 45_pick-up
+45_pick-up < 46_stack
+46_stack < 47_pick-up
+47_pick-up < 48_stack
+** Binding
+v_0=a
+v_1=b
+v_2=c
+v_3=d
+v_4=e
+v_5=f
+v_6=g
+v_7=h
+v_8=i
+v_9=j
+v_10=k
+v_11=l
+v_12=k
+v_13=d
+v_14=k
+v_15=c
+v_16=g
+v_17=h
+v_18=g
+v_19=h
+v_20=a
+v_21=h
+v_22=i
+v_23=c
+v_24=k
+v_25=i
+v_26=f
+v_27=g
+v_28=c
+v_29=h
+v_30=g
+v_31=l
+v_32=f
+v_33=b
+v_34=h
+v_35=g
+v_36=b
+v_37=a
+v_38=i
+v_39=d
+v_40=h
+v_41=f
+v_42=h
+v_43=a
+v_44=l
+v_45=f
+v_46=g
+v_47=c
+v_48=e
+v_49=l
+v_50=e
+v_51=b
+v_52=i
+v_53=f
+v_54=h
+v_55=c
+v_56=f
+v_57=g
+v_58=b
+v_59=l
+v_60=l
+v_61=g
+v_62=f
+v_63=f
+v_64=l
+v_65=a
+v_66=a
+v_67=f
+v_68=h
+v_69=h
+v_70=a
+v_71=k
+v_72=k
+v_73=h
+v_74=e
+v_75=j
+v_76=h
+v_77=c
+v_78=k
+v_79=f
+v_80=e
+v_81=e
+v_82=k
+v_83=c
+v_84=c
+v_85=e
+v_86=j
+v_87=j
+v_88=c
+v_89=a
+v_90=b
+v_91=c
+v_92=d
+v_93=e
+v_94=f
+v_95=g
+v_96=h
+v_97=i
+v_98=j
+v_99=k
+v_100=l

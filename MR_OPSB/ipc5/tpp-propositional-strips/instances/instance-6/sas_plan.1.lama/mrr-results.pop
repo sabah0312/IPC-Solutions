@@ -1,0 +1,67 @@
+** Operators
+init()
+01_drive-truck1-depot1-market2()
+02_buy-truck1-goods3-market2-level0-level1-level0-level1()
+03_load-goods3-truck1-market2-level0-level1-level0-level1()
+04_drive-truck1-market2-market1()
+05_buy-truck1-goods6-market1-level1-level2-level0-level1()
+06_load-goods6-truck1-market1-level0-level1-level0-level1()
+07_buy-truck1-goods5-market1-level1-level2-level0-level1()
+08_load-goods5-truck1-market1-level0-level1-level0-level1()
+09_buy-truck1-goods4-market1-level1-level2-level0-level1()
+10_load-goods4-truck1-market1-level0-level1-level0-level1()
+11_buy-truck1-goods2-market1-level1-level2-level0-level1()
+12_load-goods2-truck1-market1-level0-level1-level0-level1()
+13_buy-truck1-goods1-market1-level0-level1-level0-level1()
+14_load-goods1-truck1-market1-level0-level1-level0-level1()
+15_drive-truck1-market1-market2()
+16_drive-truck1-market2-depot1()
+17_unload-goods6-truck1-depot1-level0-level1-level0-level1()
+18_unload-goods5-truck1-depot1-level0-level1-level0-level1()
+19_unload-goods4-truck1-depot1-level0-level1-level0-level1()
+20_unload-goods3-truck1-depot1-level0-level1-level0-level1()
+21_unload-goods1-truck1-depot1-level0-level1-level0-level1()
+22_unload-goods2-truck1-depot1-level0-level1-level0-level1()
+23_drive-truck2-depot1-market2()
+24_drive-truck2-market2-market1()
+25_buy-truck2-goods2-market1-level0-level1-level0-level1()
+26_load-goods2-truck2-market1-level0-level1-level0-level1()
+27_drive-truck2-market1-market2()
+28_drive-truck2-market2-depot1()
+29_unload-goods2-truck2-depot1-level0-level1-level1-level2()
+goal()
+** Ordering
+01_drive-truck1-depot1-market2 < 04_drive-truck1-market2-market1
+02_buy-truck1-goods3-market2-level0-level1-level0-level1 < 03_load-goods3-truck1-market2-level0-level1-level0-level1
+03_load-goods3-truck1-market2-level0-level1-level0-level1 < 16_drive-truck1-market2-depot1
+04_drive-truck1-market2-market1 < 05_buy-truck1-goods6-market1-level1-level2-level0-level1
+04_drive-truck1-market2-market1 < 07_buy-truck1-goods5-market1-level1-level2-level0-level1
+04_drive-truck1-market2-market1 < 09_buy-truck1-goods4-market1-level1-level2-level0-level1
+04_drive-truck1-market2-market1 < 11_buy-truck1-goods2-market1-level1-level2-level0-level1
+04_drive-truck1-market2-market1 < 13_buy-truck1-goods1-market1-level0-level1-level0-level1
+05_buy-truck1-goods6-market1-level1-level2-level0-level1 < 06_load-goods6-truck1-market1-level0-level1-level0-level1
+06_load-goods6-truck1-market1-level0-level1-level0-level1 < 15_drive-truck1-market1-market2
+07_buy-truck1-goods5-market1-level1-level2-level0-level1 < 08_load-goods5-truck1-market1-level0-level1-level0-level1
+08_load-goods5-truck1-market1-level0-level1-level0-level1 < 15_drive-truck1-market1-market2
+09_buy-truck1-goods4-market1-level1-level2-level0-level1 < 10_load-goods4-truck1-market1-level0-level1-level0-level1
+10_load-goods4-truck1-market1-level0-level1-level0-level1 < 15_drive-truck1-market1-market2
+11_buy-truck1-goods2-market1-level1-level2-level0-level1 < 12_load-goods2-truck1-market1-level0-level1-level0-level1
+12_load-goods2-truck1-market1-level0-level1-level0-level1 < 15_drive-truck1-market1-market2
+12_load-goods2-truck1-market1-level0-level1-level0-level1 < 25_buy-truck2-goods2-market1-level0-level1-level0-level1
+13_buy-truck1-goods1-market1-level0-level1-level0-level1 < 14_load-goods1-truck1-market1-level0-level1-level0-level1
+14_load-goods1-truck1-market1-level0-level1-level0-level1 < 15_drive-truck1-market1-market2
+15_drive-truck1-market1-market2 < 02_buy-truck1-goods3-market2-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 17_unload-goods6-truck1-depot1-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 18_unload-goods5-truck1-depot1-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 19_unload-goods4-truck1-depot1-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 20_unload-goods3-truck1-depot1-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 21_unload-goods1-truck1-depot1-level0-level1-level0-level1
+16_drive-truck1-market2-depot1 < 22_unload-goods2-truck1-depot1-level0-level1-level0-level1
+22_unload-goods2-truck1-depot1-level0-level1-level0-level1 < 29_unload-goods2-truck2-depot1-level0-level1-level1-level2
+23_drive-truck2-depot1-market2 < 24_drive-truck2-market2-market1
+24_drive-truck2-market2-market1 < 25_buy-truck2-goods2-market1-level0-level1-level0-level1
+25_buy-truck2-goods2-market1-level0-level1-level0-level1 < 26_load-goods2-truck2-market1-level0-level1-level0-level1
+26_load-goods2-truck2-market1-level0-level1-level0-level1 < 27_drive-truck2-market1-market2
+27_drive-truck2-market1-market2 < 28_drive-truck2-market2-depot1
+28_drive-truck2-market2-depot1 < 29_unload-goods2-truck2-depot1-level0-level1-level1-level2
+** Binding

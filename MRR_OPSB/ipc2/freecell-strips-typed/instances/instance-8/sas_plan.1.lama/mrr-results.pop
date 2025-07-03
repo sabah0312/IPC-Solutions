@@ -1,0 +1,155 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33)
+01_sendtohome(v_34 v_35 v_36 v_37 v_38 v_39)
+02_sendtohome-b(v_40 v_41 v_42 v_43 v_44 v_45 v_46)
+03_sendtofree(v_47 v_48 v_49 v_50)
+04_sendtohome-b(v_51 v_52 v_53 v_54 v_55 v_56 v_57)
+05_sendtohome(v_58 v_59 v_60 v_61 v_62 v_63)
+06_sendtohome(v_64 v_65 v_66 v_67 v_68 v_69)
+07_sendtohome-b(v_70 v_71 v_72 v_73 v_74 v_75 v_76)
+08_sendtohome-b(v_77 v_78 v_79 v_80 v_81 v_82 v_83)
+09_sendtohome-b(v_84 v_85 v_86 v_87 v_88 v_89 v_90)
+10_sendtohome-b(v_91 v_92 v_93 v_94 v_95 v_96 v_97)
+11_sendtohome(v_98 v_99 v_100 v_101 v_102 v_103)
+12_sendtohome-b(v_104 v_105 v_106 v_107 v_108 v_109 v_110)
+13_homefromfreecell(v_111 v_112 v_113 v_114 v_115 v_116 v_117)
+goal(v_118 v_119 v_120 v_121)
+** Ordering
+01_sendtohome < 02_sendtohome-b
+02_sendtohome-b < 04_sendtohome-b
+02_sendtohome-b < 06_sendtohome
+03_sendtofree < 08_sendtohome-b
+04_sendtohome-b < 05_sendtohome
+04_sendtohome-b < 07_sendtohome-b
+05_sendtohome < 09_sendtohome-b
+06_sendtohome < 07_sendtohome-b
+06_sendtohome < 11_sendtohome
+07_sendtohome-b < 08_sendtohome-b
+08_sendtohome-b < 09_sendtohome-b
+09_sendtohome-b < 10_sendtohome-b
+09_sendtohome-b < 13_homefromfreecell
+10_sendtohome-b < 12_sendtohome-b
+11_sendtohome < 09_sendtohome-b
+** Binding
+v_0=c
+v_1=c0
+v_2=c2
+v_3=c3
+v_4=ca
+v_5=d
+v_6=d0
+v_7=d2
+v_8=d3
+v_9=da
+v_10=h
+v_11=h0
+v_12=h2
+v_13=h3
+v_14=ha
+v_15=n0
+v_16=n1
+v_17=n10
+v_18=n11
+v_19=n12
+v_20=n13
+v_21=n2
+v_22=n3
+v_23=n4
+v_24=n5
+v_25=n6
+v_26=n7
+v_27=n8
+v_28=n9
+v_29=s
+v_30=s0
+v_31=s2
+v_32=s3
+v_33=sa
+v_34=ha
+v_35=ca
+v_36=h
+v_37=n1
+v_38=h0
+v_39=n0
+v_40=ca
+v_41=c
+v_42=n1
+v_43=c0
+v_44=n0
+v_45=n1
+v_46=n2
+v_47=s3
+v_48=da
+v_49=n4
+v_50=n3
+v_51=h2
+v_52=h
+v_53=n2
+v_54=ha
+v_55=n1
+v_56=n2
+v_57=n3
+v_58=h3
+v_59=s2
+v_60=h
+v_61=n3
+v_62=h2
+v_63=n2
+v_64=c2
+v_65=sa
+v_66=c
+v_67=n2
+v_68=ca
+v_69=n1
+v_70=c3
+v_71=c
+v_72=n3
+v_73=c2
+v_74=n2
+v_75=n3
+v_76=n4
+v_77=da
+v_78=d
+v_79=n1
+v_80=d0
+v_81=n0
+v_82=n4
+v_83=n5
+v_84=s2
+v_85=s
+v_86=n2
+v_87=sa
+v_88=n1
+v_89=n5
+v_90=n6
+v_91=d2
+v_92=d
+v_93=n2
+v_94=da
+v_95=n1
+v_96=n6
+v_97=n7
+v_98=sa
+v_99=d2
+v_100=s
+v_101=n1
+v_102=s0
+v_103=n0
+v_104=d3
+v_105=d
+v_106=n3
+v_107=d2
+v_108=n2
+v_109=n7
+v_110=n8
+v_111=s3
+v_112=s
+v_113=n3
+v_114=s2
+v_115=n2
+v_116=n3
+v_117=n4
+v_118=c3
+v_119=d3
+v_120=h3
+v_121=s3

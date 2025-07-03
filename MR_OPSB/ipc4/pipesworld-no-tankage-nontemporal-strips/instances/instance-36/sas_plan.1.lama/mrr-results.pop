@@ -1,0 +1,970 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30)
+001_pop-start(v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+002_pop-end(v_38 v_39 v_40 v_41 v_42)
+003_push-start(v_43 v_44 v_45 v_46 v_47 v_48 v_49)
+004_push-start(v_50 v_51 v_52 v_53 v_54 v_55 v_56)
+005_push-end(v_57 v_58 v_59 v_60 v_61)
+006_push-start(v_62 v_63 v_64 v_65 v_66 v_67 v_68)
+007_push-end(v_69 v_70 v_71 v_72 v_73)
+008_push-end(v_74 v_75 v_76 v_77 v_78)
+009_push-start(v_79 v_80 v_81 v_82 v_83 v_84 v_85)
+010_push-start(v_86 v_87 v_88 v_89 v_90 v_91 v_92)
+011_push-start(v_93 v_94 v_95 v_96 v_97 v_98 v_99)
+012_push-end(v_100 v_101 v_102 v_103 v_104)
+013_push-start(v_105 v_106 v_107 v_108 v_109 v_110 v_111)
+014_push-end(v_112 v_113 v_114 v_115 v_116)
+015_push-unitarypipe(v_117 v_118 v_119 v_120 v_121 v_122 v_123)
+016_push-unitarypipe(v_124 v_125 v_126 v_127 v_128 v_129 v_130)
+017_push-end(v_131 v_132 v_133 v_134 v_135)
+018_push-end(v_136 v_137 v_138 v_139 v_140)
+019_push-start(v_141 v_142 v_143 v_144 v_145 v_146 v_147)
+020_push-end(v_148 v_149 v_150 v_151 v_152)
+021_push-start(v_153 v_154 v_155 v_156 v_157 v_158 v_159)
+022_push-end(v_160 v_161 v_162 v_163 v_164)
+023_pop-start(v_165 v_166 v_167 v_168 v_169 v_170 v_171)
+024_pop-end(v_172 v_173 v_174 v_175 v_176)
+025_pop-start(v_177 v_178 v_179 v_180 v_181 v_182 v_183)
+026_pop-end(v_184 v_185 v_186 v_187 v_188)
+027_pop-start(v_189 v_190 v_191 v_192 v_193 v_194 v_195)
+028_pop-end(v_196 v_197 v_198 v_199 v_200)
+029_push-start(v_201 v_202 v_203 v_204 v_205 v_206 v_207)
+030_push-end(v_208 v_209 v_210 v_211 v_212)
+031_pop-start(v_213 v_214 v_215 v_216 v_217 v_218 v_219)
+032_pop-end(v_220 v_221 v_222 v_223 v_224)
+033_push-start(v_225 v_226 v_227 v_228 v_229 v_230 v_231)
+034_pop-start(v_232 v_233 v_234 v_235 v_236 v_237 v_238)
+035_pop-end(v_239 v_240 v_241 v_242 v_243)
+036_pop-start(v_244 v_245 v_246 v_247 v_248 v_249 v_250)
+037_push-end(v_251 v_252 v_253 v_254 v_255)
+038_pop-start(v_256 v_257 v_258 v_259 v_260 v_261 v_262)
+039_pop-end(v_263 v_264 v_265 v_266 v_267)
+040_pop-start(v_268 v_269 v_270 v_271 v_272 v_273 v_274)
+041_pop-end(v_275 v_276 v_277 v_278 v_279)
+042_pop-end(v_280 v_281 v_282 v_283 v_284)
+043_push-start(v_285 v_286 v_287 v_288 v_289 v_290 v_291)
+044_push-end(v_292 v_293 v_294 v_295 v_296)
+045_pop-start(v_297 v_298 v_299 v_300 v_301 v_302 v_303)
+046_pop-end(v_304 v_305 v_306 v_307 v_308)
+047_push-start(v_309 v_310 v_311 v_312 v_313 v_314 v_315)
+048_push-end(v_316 v_317 v_318 v_319 v_320)
+049_push-start(v_321 v_322 v_323 v_324 v_325 v_326 v_327)
+050_push-end(v_328 v_329 v_330 v_331 v_332)
+051_push-start(v_333 v_334 v_335 v_336 v_337 v_338 v_339)
+052_push-end(v_340 v_341 v_342 v_343 v_344)
+053_push-unitarypipe(v_345 v_346 v_347 v_348 v_349 v_350 v_351)
+054_push-unitarypipe(v_352 v_353 v_354 v_355 v_356 v_357 v_358)
+055_pop-start(v_359 v_360 v_361 v_362 v_363 v_364 v_365)
+056_pop-end(v_366 v_367 v_368 v_369 v_370)
+057_pop-start(v_371 v_372 v_373 v_374 v_375 v_376 v_377)
+058_pop-end(v_378 v_379 v_380 v_381 v_382)
+059_pop-unitarypipe(v_383 v_384 v_385 v_386 v_387 v_388 v_389)
+060_push-start(v_390 v_391 v_392 v_393 v_394 v_395 v_396)
+061_push-end(v_397 v_398 v_399 v_400 v_401)
+062_pop-start(v_402 v_403 v_404 v_405 v_406 v_407 v_408)
+063_pop-start(v_409 v_410 v_411 v_412 v_413 v_414 v_415)
+064_pop-end(v_416 v_417 v_418 v_419 v_420)
+065_push-start(v_421 v_422 v_423 v_424 v_425 v_426 v_427)
+066_push-end(v_428 v_429 v_430 v_431 v_432)
+067_pop-start(v_433 v_434 v_435 v_436 v_437 v_438 v_439)
+068_pop-end(v_440 v_441 v_442 v_443 v_444)
+069_push-start(v_445 v_446 v_447 v_448 v_449 v_450 v_451)
+070_pop-end(v_452 v_453 v_454 v_455 v_456)
+071_push-end(v_457 v_458 v_459 v_460 v_461)
+072_pop-start(v_462 v_463 v_464 v_465 v_466 v_467 v_468)
+073_pop-start(v_469 v_470 v_471 v_472 v_473 v_474 v_475)
+074_pop-end(v_476 v_477 v_478 v_479 v_480)
+075_push-start(v_481 v_482 v_483 v_484 v_485 v_486 v_487)
+076_push-end(v_488 v_489 v_490 v_491 v_492)
+077_pop-start(v_493 v_494 v_495 v_496 v_497 v_498 v_499)
+078_pop-end(v_500 v_501 v_502 v_503 v_504)
+079_push-start(v_505 v_506 v_507 v_508 v_509 v_510 v_511)
+080_push-end(v_512 v_513 v_514 v_515 v_516)
+081_push-start(v_517 v_518 v_519 v_520 v_521 v_522 v_523)
+082_pop-start(v_524 v_525 v_526 v_527 v_528 v_529 v_530)
+083_push-end(v_531 v_532 v_533 v_534 v_535)
+084_pop-end(v_536 v_537 v_538 v_539 v_540)
+085_pop-start(v_541 v_542 v_543 v_544 v_545 v_546 v_547)
+086_pop-end(v_548 v_549 v_550 v_551 v_552)
+087_push-start(v_553 v_554 v_555 v_556 v_557 v_558 v_559)
+088_pop-start(v_560 v_561 v_562 v_563 v_564 v_565 v_566)
+089_pop-end(v_567 v_568 v_569 v_570 v_571)
+090_push-start(v_572 v_573 v_574 v_575 v_576 v_577 v_578)
+091_push-end(v_579 v_580 v_581 v_582 v_583)
+092_push-end(v_584 v_585 v_586 v_587 v_588)
+093_push-start(v_589 v_590 v_591 v_592 v_593 v_594 v_595)
+094_pop-start(v_596 v_597 v_598 v_599 v_600 v_601 v_602)
+095_push-end(v_603 v_604 v_605 v_606 v_607)
+096_pop-end(v_608 v_609 v_610 v_611 v_612)
+097_pop-start(v_613 v_614 v_615 v_616 v_617 v_618 v_619)
+098_pop-end(v_620 v_621 v_622 v_623 v_624)
+099_push-start(v_625 v_626 v_627 v_628 v_629 v_630 v_631)
+100_push-end(v_632 v_633 v_634 v_635 v_636)
+101_push-start(v_637 v_638 v_639 v_640 v_641 v_642 v_643)
+102_push-end(v_644 v_645 v_646 v_647 v_648)
+103_pop-start(v_649 v_650 v_651 v_652 v_653 v_654 v_655)
+104_pop-end(v_656 v_657 v_658 v_659 v_660)
+105_push-start(v_661 v_662 v_663 v_664 v_665 v_666 v_667)
+106_push-end(v_668 v_669 v_670 v_671 v_672)
+107_pop-start(v_673 v_674 v_675 v_676 v_677 v_678 v_679)
+108_pop-end(v_680 v_681 v_682 v_683 v_684)
+109_push-start(v_685 v_686 v_687 v_688 v_689 v_690 v_691)
+110_pop-end(v_692 v_693 v_694 v_695 v_696)
+111_push-end(v_697 v_698 v_699 v_700 v_701)
+112_pop-start(v_702 v_703 v_704 v_705 v_706 v_707 v_708)
+113_pop-end(v_709 v_710 v_711 v_712 v_713)
+goal(v_714 v_715 v_716 v_717 v_718 v_719 v_720 v_721 v_722 v_723)
+** Ordering
+001_pop-start < 002_pop-end
+002_pop-end < 004_push-start
+002_pop-end < 010_push-start
+003_push-start < 007_push-end
+004_push-start < 005_push-end
+005_push-end < 011_push-start
+005_push-end < 031_pop-start
+006_push-start < 008_push-end
+007_push-end < 010_push-start
+007_push-end < 019_push-start
+008_push-end < 009_push-start
+009_push-start < 018_push-end
+010_push-start < 017_push-end
+011_push-start < 012_push-end
+012_push-end < 013_push-start
+013_push-start < 014_push-end
+014_push-end < 015_push-unitarypipe
+014_push-end < 033_push-start
+015_push-unitarypipe < 016_push-unitarypipe
+016_push-unitarypipe < 053_push-unitarypipe
+017_push-end < 021_push-start
+018_push-end < 019_push-start
+019_push-start < 020_push-end
+020_push-end < 021_push-start
+021_push-start < 022_push-end
+022_push-end < 023_pop-start
+023_pop-start < 024_pop-end
+024_pop-end < 025_pop-start
+024_pop-end < 027_pop-start
+025_pop-start < 026_pop-end
+026_pop-end < 029_push-start
+027_pop-start < 028_pop-end
+028_pop-end < 033_push-start
+028_pop-end < 036_pop-start
+029_push-start < 030_push-end
+030_push-end < 031_pop-start
+031_pop-start < 032_pop-end
+032_pop-end < 034_pop-start
+033_push-start < 037_push-end
+034_pop-start < 035_pop-end
+035_pop-end < 036_pop-start
+035_pop-end < 063_pop-start
+036_pop-start < 042_pop-end
+037_push-end < 038_pop-start
+037_push-end < 063_pop-start
+038_pop-start < 039_pop-end
+039_pop-end < 040_pop-start
+039_pop-end < 060_push-start
+040_pop-start < 041_pop-end
+041_pop-end < 043_push-start
+042_pop-end < 043_push-start
+042_pop-end < 045_pop-start
+043_push-start < 044_push-end
+044_push-end < 047_push-start
+045_pop-start < 046_pop-end
+046_pop-end < 047_push-start
+046_pop-end < 060_push-start
+047_push-start < 048_push-end
+048_push-end < 049_push-start
+049_push-start < 050_push-end
+050_push-end < 051_push-start
+051_push-start < 052_push-end
+052_push-end < 053_push-unitarypipe
+052_push-end < 055_pop-start
+053_push-unitarypipe < 054_push-unitarypipe
+054_push-unitarypipe < 059_pop-unitarypipe
+055_pop-start < 056_pop-end
+056_pop-end < 057_pop-start
+056_pop-end < 087_push-start
+057_pop-start < 058_pop-end
+058_pop-end < 062_pop-start
+058_pop-end < 099_push-start
+060_push-start < 061_push-end
+061_push-end < 067_pop-start
+062_pop-start < 064_pop-end
+063_pop-start < 070_pop-end
+064_pop-end < 065_push-start
+065_push-start < 066_push-end
+066_push-end < 072_pop-start
+067_pop-start < 068_pop-end
+068_pop-end < 069_push-start
+069_push-start < 071_push-end
+070_pop-end < 073_pop-start
+070_pop-end < 082_pop-start
+071_push-end < 077_pop-start
+072_pop-start < 074_pop-end
+073_pop-start < 110_pop-end
+074_pop-end < 075_push-start
+075_push-start < 076_push-end
+076_push-end < 079_push-start
+077_pop-start < 078_pop-end
+078_pop-end < 049_push-start
+078_pop-end < 082_pop-start
+079_push-start < 080_push-end
+080_push-end < 081_push-start
+081_push-start < 083_push-end
+082_pop-start < 084_pop-end
+083_push-end < 085_pop-start
+084_pop-end < 087_push-start
+085_pop-start < 086_pop-end
+086_pop-end < 088_pop-start
+087_push-start < 092_push-end
+088_pop-start < 089_pop-end
+089_pop-end < 090_push-start
+090_push-start < 091_push-end
+091_push-end < 093_push-start
+092_push-end < 094_pop-start
+093_push-start < 095_push-end
+094_pop-start < 096_pop-end
+095_push-end < 097_pop-start
+096_pop-end < 099_push-start
+097_pop-start < 098_pop-end
+098_pop-end < 105_push-start
+098_pop-end < 109_push-start
+099_push-start < 100_push-end
+100_push-end < 101_push-start
+101_push-start < 102_push-end
+102_push-end < 103_pop-start
+103_pop-start < 104_pop-end
+104_pop-end < 107_pop-start
+105_push-start < 106_push-end
+106_push-end < 054_push-unitarypipe
+107_pop-start < 108_pop-end
+108_pop-end < 079_push-start
+109_push-start < 111_push-end
+110_pop-end < 112_pop-start
+111_push-end < 112_pop-start
+112_pop-start < 113_pop-end
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=a4
+v_4=b0
+v_5=b1
+v_6=b10
+v_7=b11
+v_8=b12
+v_9=b13
+v_10=b14
+v_11=b15
+v_12=b16
+v_13=b17
+v_14=b2
+v_15=b3
+v_16=b4
+v_17=b5
+v_18=b6
+v_19=b7
+v_20=b8
+v_21=b9
+v_22=gasoleo
+v_23=lco
+v_24=oc1b
+v_25=oca1
+v_26=rat-a
+v_27=s12
+v_28=s13
+v_29=s23
+v_30=s34
+v_31=s13
+v_32=b4
+v_33=a1
+v_34=a3
+v_35=b12
+v_36=rat-a
+v_37=lco
+v_38=s13
+v_39=a1
+v_40=a3
+v_41=b7
+v_42=b12
+v_43=s12
+v_44=b1
+v_45=a1
+v_46=a2
+v_47=b17
+v_48=oc1b
+v_49=oc1b
+v_50=s13
+v_51=b2
+v_52=a1
+v_53=a3
+v_54=b12
+v_55=oc1b
+v_56=lco
+v_57=s13
+v_58=a1
+v_59=a3
+v_60=b4
+v_61=b12
+v_62=s23
+v_63=b16
+v_64=a2
+v_65=a3
+v_66=b5
+v_67=oc1b
+v_68=lco
+v_69=s12
+v_70=a1
+v_71=a2
+v_72=b8
+v_73=b17
+v_74=s23
+v_75=a2
+v_76=a3
+v_77=b14
+v_78=b10
+v_79=s23
+v_80=b15
+v_81=a2
+v_82=a3
+v_83=b16
+v_84=gasoleo
+v_85=oc1b
+v_86=s12
+v_87=b7
+v_88=a1
+v_89=a2
+v_90=b1
+v_91=lco
+v_92=oc1b
+v_93=s13
+v_94=b9
+v_95=a1
+v_96=a3
+v_97=b2
+v_98=gasoleo
+v_99=oc1b
+v_100=s13
+v_101=a1
+v_102=a3
+v_103=b12
+v_104=b2
+v_105=s13
+v_106=b0
+v_107=a1
+v_108=a3
+v_109=b9
+v_110=rat-a
+v_111=gasoleo
+v_112=s13
+v_113=a1
+v_114=a3
+v_115=b2
+v_116=b9
+v_117=s34
+v_118=b2
+v_119=a3
+v_120=a4
+v_121=b11
+v_122=oc1b
+v_123=oca1
+v_124=s34
+v_125=b12
+v_126=a3
+v_127=a4
+v_128=b2
+v_129=lco
+v_130=oc1b
+v_131=s12
+v_132=a1
+v_133=a2
+v_134=b17
+v_135=b1
+v_136=s23
+v_137=a2
+v_138=a3
+v_139=b10
+v_140=b5
+v_141=s23
+v_142=b8
+v_143=a2
+v_144=a3
+v_145=b15
+v_146=gasoleo
+v_147=gasoleo
+v_148=s23
+v_149=a2
+v_150=a3
+v_151=b5
+v_152=b16
+v_153=s23
+v_154=b17
+v_155=a2
+v_156=a3
+v_157=b8
+v_158=oc1b
+v_159=gasoleo
+v_160=s23
+v_161=a2
+v_162=a3
+v_163=b16
+v_164=b15
+v_165=s23
+v_166=b10
+v_167=a2
+v_168=a3
+v_169=b15
+v_170=rat-a
+v_171=gasoleo
+v_172=s23
+v_173=a2
+v_174=a3
+v_175=b17
+v_176=b8
+v_177=s23
+v_178=b14
+v_179=a2
+v_180=a3
+v_181=b10
+v_182=gasoleo
+v_183=rat-a
+v_184=s23
+v_185=a2
+v_186=a3
+v_187=b8
+v_188=b15
+v_189=s12
+v_190=b17
+v_191=a1
+v_192=a2
+v_193=b1
+v_194=oc1b
+v_195=oc1b
+v_196=s12
+v_197=a1
+v_198=a2
+v_199=b7
+v_200=b1
+v_201=s23
+v_202=b8
+v_203=a2
+v_204=a3
+v_205=b15
+v_206=gasoleo
+v_207=gasoleo
+v_208=s23
+v_209=a2
+v_210=a3
+v_211=b14
+v_212=b10
+v_213=s23
+v_214=b4
+v_215=a2
+v_216=a3
+v_217=b10
+v_218=rat-a
+v_219=rat-a
+v_220=s23
+v_221=a2
+v_222=a3
+v_223=b8
+v_224=b15
+v_225=s13
+v_226=b7
+v_227=a1
+v_228=a3
+v_229=b0
+v_230=lco
+v_231=rat-a
+v_232=s23
+v_233=b14
+v_234=a2
+v_235=a3
+v_236=b4
+v_237=gasoleo
+v_238=rat-a
+v_239=s23
+v_240=a2
+v_241=a3
+v_242=b15
+v_243=b10
+v_244=s12
+v_245=b15
+v_246=a1
+v_247=a2
+v_248=b17
+v_249=gasoleo
+v_250=oc1b
+v_251=s13
+v_252=a1
+v_253=a3
+v_254=b9
+v_255=b0
+v_256=s13
+v_257=b3
+v_258=a1
+v_259=a3
+v_260=b0
+v_261=lco
+v_262=rat-a
+v_263=s13
+v_264=a1
+v_265=a3
+v_266=b7
+v_267=b0
+v_268=s13
+v_269=b16
+v_270=a1
+v_271=a3
+v_272=b3
+v_273=oc1b
+v_274=lco
+v_275=s13
+v_276=a1
+v_277=a3
+v_278=b0
+v_279=b3
+v_280=s12
+v_281=a1
+v_282=a2
+v_283=b1
+v_284=b17
+v_285=s13
+v_286=b1
+v_287=a1
+v_288=a3
+v_289=b3
+v_290=oc1b
+v_291=lco
+v_292=s13
+v_293=a1
+v_294=a3
+v_295=b16
+v_296=b3
+v_297=s12
+v_298=b8
+v_299=a1
+v_300=a2
+v_301=b15
+v_302=gasoleo
+v_303=gasoleo
+v_304=s12
+v_305=a1
+v_306=a2
+v_307=b17
+v_308=b15
+v_309=s13
+v_310=b17
+v_311=a1
+v_312=a3
+v_313=b1
+v_314=oc1b
+v_315=oc1b
+v_316=s13
+v_317=a1
+v_318=a3
+v_319=b3
+v_320=b1
+v_321=s13
+v_322=b7
+v_323=a1
+v_324=a3
+v_325=b17
+v_326=lco
+v_327=oc1b
+v_328=s13
+v_329=a1
+v_330=a3
+v_331=b1
+v_332=b17
+v_333=s13
+v_334=b0
+v_335=a1
+v_336=a3
+v_337=b7
+v_338=rat-a
+v_339=lco
+v_340=s13
+v_341=a1
+v_342=a3
+v_343=b17
+v_344=b7
+v_345=s34
+v_346=b17
+v_347=a3
+v_348=a4
+v_349=b12
+v_350=oc1b
+v_351=lco
+v_352=s34
+v_353=b1
+v_354=a3
+v_355=a4
+v_356=b17
+v_357=oc1b
+v_358=oc1b
+v_359=s13
+v_360=b16
+v_361=a1
+v_362=a3
+v_363=b7
+v_364=oc1b
+v_365=lco
+v_366=s13
+v_367=a1
+v_368=a3
+v_369=b0
+v_370=b7
+v_371=s13
+v_372=b3
+v_373=a1
+v_374=a3
+v_375=b16
+v_376=lco
+v_377=oc1b
+v_378=s13
+v_379=a1
+v_380=a3
+v_381=b7
+v_382=b16
+v_383=s34
+v_384=b11
+v_385=a3
+v_386=a4
+v_387=b1
+v_388=oca1
+v_389=oc1b
+v_390=s12
+v_391=b7
+v_392=a1
+v_393=a2
+v_394=b15
+v_395=lco
+v_396=gasoleo
+v_397=s12
+v_398=a1
+v_399=a2
+v_400=b8
+v_401=b15
+v_402=s13
+v_403=b1
+v_404=a1
+v_405=a3
+v_406=b3
+v_407=oc1b
+v_408=lco
+v_409=s23
+v_410=b9
+v_411=a2
+v_412=a3
+v_413=b14
+v_414=gasoleo
+v_415=gasoleo
+v_416=s13
+v_417=a1
+v_418=a3
+v_419=b16
+v_420=b3
+v_421=s13
+v_422=b16
+v_423=a1
+v_424=a3
+v_425=b3
+v_426=oc1b
+v_427=lco
+v_428=s13
+v_429=a1
+v_430=a3
+v_431=b1
+v_432=b3
+v_433=s12
+v_434=b8
+v_435=a1
+v_436=a2
+v_437=b15
+v_438=gasoleo
+v_439=gasoleo
+v_440=s12
+v_441=a1
+v_442=a2
+v_443=b7
+v_444=b15
+v_445=s12
+v_446=b7
+v_447=a1
+v_448=a2
+v_449=b15
+v_450=lco
+v_451=gasoleo
+v_452=s23
+v_453=a2
+v_454=a3
+v_455=b10
+v_456=b4
+v_457=s12
+v_458=a1
+v_459=a2
+v_460=b8
+v_461=b15
+v_462=s13
+v_463=b1
+v_464=a1
+v_465=a3
+v_466=b3
+v_467=oc1b
+v_468=lco
+v_469=s23
+v_470=b6
+v_471=a2
+v_472=a3
+v_473=b9
+v_474=lco
+v_475=gasoleo
+v_476=s13
+v_477=a1
+v_478=a3
+v_479=b16
+v_480=b3
+v_481=s13
+v_482=b16
+v_483=a1
+v_484=a3
+v_485=b3
+v_486=oc1b
+v_487=lco
+v_488=s13
+v_489=a1
+v_490=a3
+v_491=b1
+v_492=b3
+v_493=s12
+v_494=b8
+v_495=a1
+v_496=a2
+v_497=b15
+v_498=gasoleo
+v_499=gasoleo
+v_500=s12
+v_501=a1
+v_502=a2
+v_503=b7
+v_504=b15
+v_505=s13
+v_506=b7
+v_507=a1
+v_508=a3
+v_509=b16
+v_510=lco
+v_511=oc1b
+v_512=s13
+v_513=a1
+v_514=a3
+v_515=b3
+v_516=b16
+v_517=s13
+v_518=b0
+v_519=a1
+v_520=a3
+v_521=b7
+v_522=rat-a
+v_523=lco
+v_524=s12
+v_525=b10
+v_526=a1
+v_527=a2
+v_528=b8
+v_529=rat-a
+v_530=gasoleo
+v_531=s13
+v_532=a1
+v_533=a3
+v_534=b16
+v_535=b7
+v_536=s12
+v_537=a1
+v_538=a2
+v_539=b15
+v_540=b8
+v_541=s13
+v_542=b1
+v_543=a1
+v_544=a3
+v_545=b7
+v_546=oc1b
+v_547=lco
+v_548=s13
+v_549=a1
+v_550=a3
+v_551=b0
+v_552=b7
+v_553=s12
+v_554=b0
+v_555=a1
+v_556=a2
+v_557=b8
+v_558=rat-a
+v_559=gasoleo
+v_560=s13
+v_561=b16
+v_562=a1
+v_563=a3
+v_564=b1
+v_565=oc1b
+v_566=oc1b
+v_567=s13
+v_568=a1
+v_569=a3
+v_570=b7
+v_571=b1
+v_572=s13
+v_573=b15
+v_574=a1
+v_575=a3
+v_576=b1
+v_577=gasoleo
+v_578=oc1b
+v_579=s13
+v_580=a1
+v_581=a3
+v_582=b16
+v_583=b1
+v_584=s12
+v_585=a1
+v_586=a2
+v_587=b10
+v_588=b8
+v_589=s13
+v_590=b7
+v_591=a1
+v_592=a3
+v_593=b15
+v_594=lco
+v_595=gasoleo
+v_596=s12
+v_597=b10
+v_598=a1
+v_599=a2
+v_600=b8
+v_601=rat-a
+v_602=gasoleo
+v_603=s13
+v_604=a1
+v_605=a3
+v_606=b1
+v_607=b15
+v_608=s12
+v_609=a1
+v_610=a2
+v_611=b0
+v_612=b8
+v_613=s13
+v_614=b1
+v_615=a1
+v_616=a3
+v_617=b15
+v_618=oc1b
+v_619=gasoleo
+v_620=s13
+v_621=a1
+v_622=a3
+v_623=b7
+v_624=b15
+v_625=s12
+v_626=b7
+v_627=a1
+v_628=a2
+v_629=b8
+v_630=lco
+v_631=gasoleo
+v_632=s12
+v_633=a1
+v_634=a2
+v_635=b10
+v_636=b8
+v_637=s12
+v_638=b0
+v_639=a1
+v_640=a2
+v_641=b7
+v_642=rat-a
+v_643=lco
+v_644=s12
+v_645=a1
+v_646=a2
+v_647=b8
+v_648=b7
+v_649=s12
+v_650=b10
+v_651=a1
+v_652=a2
+v_653=b7
+v_654=rat-a
+v_655=lco
+v_656=s12
+v_657=a1
+v_658=a2
+v_659=b0
+v_660=b7
+v_661=s13
+v_662=b0
+v_663=a1
+v_664=a3
+v_665=b15
+v_666=rat-a
+v_667=gasoleo
+v_668=s13
+v_669=a1
+v_670=a3
+v_671=b1
+v_672=b15
+v_673=s12
+v_674=b8
+v_675=a1
+v_676=a2
+v_677=b10
+v_678=gasoleo
+v_679=rat-a
+v_680=s12
+v_681=a1
+v_682=a2
+v_683=b7
+v_684=b10
+v_685=s12
+v_686=b7
+v_687=a1
+v_688=a2
+v_689=b10
+v_690=lco
+v_691=rat-a
+v_692=s23
+v_693=a2
+v_694=a3
+v_695=b4
+v_696=b14
+v_697=s12
+v_698=a1
+v_699=a2
+v_700=b8
+v_701=b10
+v_702=s12
+v_703=b4
+v_704=a1
+v_705=a2
+v_706=b10
+v_707=rat-a
+v_708=rat-a
+v_709=s12
+v_710=a1
+v_711=a2
+v_712=b7
+v_713=b10
+v_714=a1
+v_715=a2
+v_716=a3
+v_717=a4
+v_718=b1
+v_719=b16
+v_720=b17
+v_721=b2
+v_722=b7
+v_723=b8

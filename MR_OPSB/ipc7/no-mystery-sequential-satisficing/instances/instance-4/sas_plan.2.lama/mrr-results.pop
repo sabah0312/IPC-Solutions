@@ -1,0 +1,492 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60 v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68 v_69 v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77 v_78 v_79 v_80 v_81 v_82 v_83 v_84 v_85 v_86 v_87 v_88 v_89 v_90 v_91 v_92 v_93 v_94 v_95 v_96 v_97 v_98 v_99 v_100 v_101 v_102 v_103 v_104 v_105 v_106 v_107 v_108 v_109 v_110 v_111 v_112 v_113 v_114 v_115 v_116 v_117 v_118 v_119 v_120 v_121 v_122 v_123 v_124 v_125 v_126 v_127 v_128 v_129 v_130 v_131 v_132 v_133 v_134 v_135 v_136 v_137 v_138 v_139 v_140 v_141 v_142 v_143 v_144 v_145 v_146 v_147 v_148 v_149 v_150 v_151 v_152 v_153 v_154 v_155 v_156 v_157 v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165 v_166 v_167 v_168 v_169 v_170 v_171 v_172 v_173 v_174 v_175 v_176 v_177 v_178 v_179 v_180 v_181 v_182 v_183 v_184 v_185 v_186 v_187 v_188 v_189 v_190 v_191 v_192 v_193 v_194 v_195 v_196 v_197 v_198 v_199 v_200 v_201 v_202 v_203 v_204 v_205 v_206 v_207 v_208 v_209 v_210 v_211 v_212 v_213 v_214 v_215 v_216 v_217 v_218 v_219 v_220 v_221 v_222 v_223 v_224 v_225 v_226 v_227 v_228 v_229 v_230 v_231 v_232 v_233 v_234 v_235 v_236 v_237 v_238 v_239 v_240 v_241 v_242 v_243 v_244 v_245 v_246 v_247 v_248 v_249 v_250 v_251 v_252 v_253 v_254 v_255 v_256 v_257 v_258 v_259 v_260)
+01_drive(v_261 v_262 v_263 v_264 v_265 v_266)
+02_drive(v_267 v_268 v_269 v_270 v_271 v_272)
+03_load(v_273 v_274 v_275)
+04_drive(v_276 v_277 v_278 v_279 v_280 v_281)
+05_load(v_282 v_283 v_284)
+06_load(v_285 v_286 v_287)
+07_load(v_288 v_289 v_290)
+08_drive(v_291 v_292 v_293 v_294 v_295 v_296)
+09_drive(v_297 v_298 v_299 v_300 v_301 v_302)
+10_load(v_303 v_304 v_305)
+11_load(v_306 v_307 v_308)
+12_unload(v_309 v_310 v_311)
+13_load(v_312 v_313 v_314)
+14_drive(v_315 v_316 v_317 v_318 v_319 v_320)
+15_drive(v_321 v_322 v_323 v_324 v_325 v_326)
+16_unload(v_327 v_328 v_329)
+17_unload(v_330 v_331 v_332)
+18_unload(v_333 v_334 v_335)
+19_load(v_336 v_337 v_338)
+20_drive(v_339 v_340 v_341 v_342 v_343 v_344)
+21_unload(v_345 v_346 v_347)
+22_load(v_348 v_349 v_350)
+23_drive(v_351 v_352 v_353 v_354 v_355 v_356)
+24_drive(v_357 v_358 v_359 v_360 v_361 v_362)
+25_unload(v_363 v_364 v_365)
+26_drive(v_366 v_367 v_368 v_369 v_370 v_371)
+27_drive(v_372 v_373 v_374 v_375 v_376 v_377)
+28_unload(v_378 v_379 v_380)
+29_drive(v_381 v_382 v_383 v_384 v_385 v_386)
+30_unload(v_387 v_388 v_389)
+31_drive(v_390 v_391 v_392 v_393 v_394 v_395)
+32_unload(v_396 v_397 v_398)
+goal(v_399 v_400 v_401 v_402 v_403 v_404 v_405 v_406 v_407 v_408 v_409 v_410 v_411 v_412 v_413 v_414)
+** Ordering
+01_drive < 02_drive
+02_drive < 04_drive
+03_load < 09_drive
+04_drive < 05_load
+04_drive < 06_load
+04_drive < 07_load
+05_load < 08_drive
+06_load < 08_drive
+07_load < 08_drive
+08_drive < 03_load
+09_drive < 10_load
+09_drive < 11_load
+09_drive < 12_unload
+09_drive < 13_load
+10_load < 14_drive
+11_load < 14_drive
+12_unload < 14_drive
+13_load < 14_drive
+14_drive < 15_drive
+15_drive < 16_unload
+15_drive < 17_unload
+15_drive < 18_unload
+15_drive < 19_load
+16_unload < 20_drive
+17_unload < 20_drive
+18_unload < 20_drive
+19_load < 20_drive
+20_drive < 21_unload
+20_drive < 22_load
+21_unload < 23_drive
+22_load < 23_drive
+23_drive < 24_drive
+24_drive < 25_unload
+25_unload < 26_drive
+26_drive < 27_drive
+27_drive < 28_unload
+28_unload < 29_drive
+29_drive < 30_unload
+30_unload < 31_drive
+31_drive < 32_unload
+** Binding
+v_0=l0
+v_1=l1
+v_2=l2
+v_3=l3
+v_4=l4
+v_5=l5
+v_6=l6
+v_7=l7
+v_8=l8
+v_9=level0
+v_10=level1
+v_11=level10
+v_12=level100
+v_13=level101
+v_14=level102
+v_15=level103
+v_16=level104
+v_17=level105
+v_18=level106
+v_19=level107
+v_20=level108
+v_21=level109
+v_22=level11
+v_23=level110
+v_24=level111
+v_25=level112
+v_26=level113
+v_27=level114
+v_28=level115
+v_29=level116
+v_30=level117
+v_31=level118
+v_32=level119
+v_33=level12
+v_34=level120
+v_35=level121
+v_36=level122
+v_37=level123
+v_38=level124
+v_39=level125
+v_40=level126
+v_41=level127
+v_42=level128
+v_43=level129
+v_44=level13
+v_45=level130
+v_46=level131
+v_47=level132
+v_48=level133
+v_49=level134
+v_50=level135
+v_51=level136
+v_52=level137
+v_53=level138
+v_54=level139
+v_55=level14
+v_56=level140
+v_57=level141
+v_58=level142
+v_59=level143
+v_60=level144
+v_61=level145
+v_62=level146
+v_63=level147
+v_64=level148
+v_65=level149
+v_66=level15
+v_67=level150
+v_68=level151
+v_69=level152
+v_70=level153
+v_71=level154
+v_72=level155
+v_73=level156
+v_74=level157
+v_75=level158
+v_76=level159
+v_77=level16
+v_78=level160
+v_79=level161
+v_80=level162
+v_81=level163
+v_82=level164
+v_83=level165
+v_84=level166
+v_85=level167
+v_86=level168
+v_87=level169
+v_88=level17
+v_89=level170
+v_90=level171
+v_91=level172
+v_92=level173
+v_93=level174
+v_94=level175
+v_95=level176
+v_96=level177
+v_97=level178
+v_98=level179
+v_99=level18
+v_100=level180
+v_101=level181
+v_102=level182
+v_103=level183
+v_104=level184
+v_105=level185
+v_106=level186
+v_107=level187
+v_108=level188
+v_109=level189
+v_110=level19
+v_111=level190
+v_112=level191
+v_113=level192
+v_114=level193
+v_115=level194
+v_116=level195
+v_117=level196
+v_118=level197
+v_119=level198
+v_120=level199
+v_121=level2
+v_122=level20
+v_123=level200
+v_124=level201
+v_125=level202
+v_126=level203
+v_127=level204
+v_128=level205
+v_129=level206
+v_130=level207
+v_131=level208
+v_132=level209
+v_133=level21
+v_134=level210
+v_135=level211
+v_136=level212
+v_137=level213
+v_138=level214
+v_139=level215
+v_140=level216
+v_141=level217
+v_142=level218
+v_143=level219
+v_144=level22
+v_145=level220
+v_146=level221
+v_147=level222
+v_148=level223
+v_149=level224
+v_150=level225
+v_151=level226
+v_152=level227
+v_153=level228
+v_154=level229
+v_155=level23
+v_156=level230
+v_157=level231
+v_158=level232
+v_159=level233
+v_160=level234
+v_161=level235
+v_162=level236
+v_163=level237
+v_164=level238
+v_165=level239
+v_166=level24
+v_167=level240
+v_168=level241
+v_169=level25
+v_170=level26
+v_171=level27
+v_172=level28
+v_173=level29
+v_174=level3
+v_175=level30
+v_176=level31
+v_177=level32
+v_178=level33
+v_179=level34
+v_180=level35
+v_181=level36
+v_182=level37
+v_183=level38
+v_184=level39
+v_185=level4
+v_186=level40
+v_187=level41
+v_188=level42
+v_189=level43
+v_190=level44
+v_191=level45
+v_192=level46
+v_193=level47
+v_194=level48
+v_195=level49
+v_196=level5
+v_197=level50
+v_198=level51
+v_199=level52
+v_200=level53
+v_201=level54
+v_202=level55
+v_203=level56
+v_204=level57
+v_205=level58
+v_206=level59
+v_207=level6
+v_208=level60
+v_209=level61
+v_210=level62
+v_211=level63
+v_212=level64
+v_213=level65
+v_214=level66
+v_215=level67
+v_216=level68
+v_217=level69
+v_218=level7
+v_219=level70
+v_220=level71
+v_221=level72
+v_222=level73
+v_223=level74
+v_224=level75
+v_225=level76
+v_226=level77
+v_227=level78
+v_228=level79
+v_229=level8
+v_230=level80
+v_231=level81
+v_232=level82
+v_233=level83
+v_234=level84
+v_235=level85
+v_236=level86
+v_237=level87
+v_238=level88
+v_239=level89
+v_240=level9
+v_241=level90
+v_242=level91
+v_243=level92
+v_244=level93
+v_245=level94
+v_246=level95
+v_247=level96
+v_248=level97
+v_249=level98
+v_250=level99
+v_251=p0
+v_252=p1
+v_253=p2
+v_254=p3
+v_255=p4
+v_256=p5
+v_257=p6
+v_258=p7
+v_259=p8
+v_260=t0
+v_261=t0
+v_262=l7
+v_263=l5
+v_264=level227
+v_265=level14
+v_266=level241
+v_267=t0
+v_268=l5
+v_269=l0
+v_270=level206
+v_271=level21
+v_272=level227
+v_273=p2
+v_274=t0
+v_275=l0
+v_276=t0
+v_277=l0
+v_278=l5
+v_279=level185
+v_280=level21
+v_281=level206
+v_282=p7
+v_283=t0
+v_284=l5
+v_285=p5
+v_286=t0
+v_287=l5
+v_288=p4
+v_289=t0
+v_290=l5
+v_291=t0
+v_292=l5
+v_293=l0
+v_294=level164
+v_295=level21
+v_296=level185
+v_297=t0
+v_298=l0
+v_299=l6
+v_300=level154
+v_301=level10
+v_302=level164
+v_303=p8
+v_304=t0
+v_305=l6
+v_306=p6
+v_307=t0
+v_308=l6
+v_309=p4
+v_310=t0
+v_311=l6
+v_312=p3
+v_313=t0
+v_314=l6
+v_315=t0
+v_316=l6
+v_317=l0
+v_318=level144
+v_319=level10
+v_320=level154
+v_321=t0
+v_322=l0
+v_323=l2
+v_324=level134
+v_325=level10
+v_326=level144
+v_327=p8
+v_328=t0
+v_329=l2
+v_330=p3
+v_331=t0
+v_332=l2
+v_333=p2
+v_334=t0
+v_335=l2
+v_336=p1
+v_337=t0
+v_338=l2
+v_339=t0
+v_340=l2
+v_341=l3
+v_342=level120
+v_343=level14
+v_344=level134
+v_345=p7
+v_346=t0
+v_347=l3
+v_348=p0
+v_349=t0
+v_350=l3
+v_351=t0
+v_352=l3
+v_353=l1
+v_354=level95
+v_355=level25
+v_356=level120
+v_357=t0
+v_358=l1
+v_359=l0
+v_360=level72
+v_361=level23
+v_362=level95
+v_363=p1
+v_364=t0
+v_365=l0
+v_366=t0
+v_367=l0
+v_368=l5
+v_369=level51
+v_370=level21
+v_371=level72
+v_372=t0
+v_373=l5
+v_374=l7
+v_375=level37
+v_376=level14
+v_377=level51
+v_378=p5
+v_379=t0
+v_380=l7
+v_381=t0
+v_382=l7
+v_383=l8
+v_384=level18
+v_385=level19
+v_386=level37
+v_387=p6
+v_388=t0
+v_389=l8
+v_390=t0
+v_391=l8
+v_392=l4
+v_393=level0
+v_394=level18
+v_395=level18
+v_396=p0
+v_397=t0
+v_398=l4
+v_399=l0
+v_400=l2
+v_401=l3
+v_402=l4
+v_403=l6
+v_404=l7
+v_405=l8
+v_406=p0
+v_407=p1
+v_408=p2
+v_409=p3
+v_410=p4
+v_411=p5
+v_412=p6
+v_413=p7
+v_414=p8

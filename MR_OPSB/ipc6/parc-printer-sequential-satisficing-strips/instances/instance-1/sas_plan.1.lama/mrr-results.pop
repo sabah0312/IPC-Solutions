@@ -1,0 +1,122 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37 v_38 v_39 v_40)
+1_initialize(v_41 v_42 v_43 v_44 v_45 v_46 v_47 v_48 v_49 v_50 v_51 v_52 v_53)
+2_colorfeeder-feed-letter(v_54 v_55 v_56 v_57 v_58 v_59)
+3_down-movebottom-letter(v_60 v_61 v_62 v_63 v_64)
+4_colorcontainer-toime-letter(v_65 v_66 v_67 v_68 v_69)
+5_colorprinter-simplexmono-letter(v_70 v_71 v_72 v_73 v_74 v_75 v_76 v_77)
+6_colorcontainer-fromime-letter(v_78 v_79 v_80 v_81 v_82)
+7_up-moveup-letter(v_83 v_84 v_85 v_86 v_87)
+8_finisher1-stack-letter(v_88 v_89 v_90 v_91 v_92 v_93 v_94)
+goal(v_95 v_96 v_97 v_98 v_99 v_100 v_101)
+** Ordering
+1_initialize < 2_colorfeeder-feed-letter
+2_colorfeeder-feed-letter < 3_down-movebottom-letter
+3_down-movebottom-letter < 4_colorcontainer-toime-letter
+4_colorcontainer-toime-letter < 5_colorprinter-simplexmono-letter
+5_colorprinter-simplexmono-letter < 6_colorcontainer-fromime-letter
+6_colorcontainer-fromime-letter < 7_up-moveup-letter
+7_up-moveup-letter < 8_finisher1-stack-letter
+** Binding
+v_0=back
+v_1=black
+v_2=blackcontainer-rsrc
+v_3=blackcontainer_entry-blackfeeder_exit
+v_4=blackcontainer_exittoime-blackprinter_entry
+v_5=blackfeeder-rsrc
+v_6=blackprinter-rsrc
+v_7=blackprinter_exit-blackcontainer_entryfromime
+v_8=color
+v_9=colorcontainer-rsrc
+v_10=colorcontainer_entry-down_bottomexit
+v_11=colorcontainer_exit-up_bottomentry
+v_12=colorcontainer_exittoime-colorprinter_entry
+v_13=colorfeeder-rsrc
+v_14=colorprinter-rsrc
+v_15=colorprinter_exit-colorcontainer_entryfromime
+v_16=down-rsrc
+v_17=down_bottomentry-colorfeeder_exit
+v_18=down_topexit-htmovercolor_entry
+v_19=dummy-sheet
+v_20=endcap-rsrc
+v_21=endcap_entry-blackcontainer_exit
+v_22=finisher1-rsrc
+v_23=finisher1_entry-up_topexit
+v_24=finisher1_tray
+v_25=finisher2-rsrc
+v_26=finisher2_entry-finisher1_exit
+v_27=finisher2_exit
+v_28=finisher2_tray
+v_29=front
+v_30=htmoverblack-rsrc
+v_31=htmoverblack_entry-endcap_exit
+v_32=htmoverblack_exit-down_topentry
+v_33=htmovercolor-rsrc
+v_34=htmovercolor_exit-up_topentry
+v_35=image-1
+v_36=letter
+v_37=sheet1
+v_38=some_feeder_tray
+v_39=some_finisher_tray
+v_40=up-rsrc
+v_41=blackprinter-rsrc
+v_42=htmovercolor-rsrc
+v_43=finisher1-rsrc
+v_44=htmoverblack-rsrc
+v_45=endcap-rsrc
+v_46=colorfeeder-rsrc
+v_47=finisher2-rsrc
+v_48=colorprinter-rsrc
+v_49=up-rsrc
+v_50=colorcontainer-rsrc
+v_51=blackcontainer-rsrc
+v_52=down-rsrc
+v_53=blackfeeder-rsrc
+v_54=some_feeder_tray
+v_55=down_bottomentry-colorfeeder_exit
+v_56=front
+v_57=letter
+v_58=colorfeeder-rsrc
+v_59=sheet1
+v_60=down_bottomentry-colorfeeder_exit
+v_61=letter
+v_62=colorcontainer_entry-down_bottomexit
+v_63=down-rsrc
+v_64=sheet1
+v_65=colorcontainer-rsrc
+v_66=letter
+v_67=colorcontainer_entry-down_bottomexit
+v_68=colorcontainer_exittoime-colorprinter_entry
+v_69=sheet1
+v_70=colorprinter-rsrc
+v_71=black
+v_72=colorprinter_exit-colorcontainer_entryfromime
+v_73=letter
+v_74=colorcontainer_exittoime-colorprinter_entry
+v_75=sheet1
+v_76=front
+v_77=image-1
+v_78=colorcontainer_exit-up_bottomentry
+v_79=colorcontainer-rsrc
+v_80=colorprinter_exit-colorcontainer_entryfromime
+v_81=letter
+v_82=sheet1
+v_83=up-rsrc
+v_84=colorcontainer_exit-up_bottomentry
+v_85=finisher1_entry-up_topexit
+v_86=letter
+v_87=sheet1
+v_88=finisher1-rsrc
+v_89=finisher1_entry-up_topexit
+v_90=finisher1_tray
+v_91=letter
+v_92=some_finisher_tray
+v_93=sheet1
+v_94=dummy-sheet
+v_95=back
+v_96=black
+v_97=color
+v_98=finisher1_tray
+v_99=front
+v_100=image-1
+v_101=sheet1

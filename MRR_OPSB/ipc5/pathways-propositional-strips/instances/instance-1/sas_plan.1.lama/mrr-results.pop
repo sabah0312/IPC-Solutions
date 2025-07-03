@@ -1,0 +1,17 @@
+** Operators
+init()
+1_choose_p300_l1_l0()
+2_initialize_p300()
+3_choose_pcaf_l2_l1()
+4_initialize_pcaf()
+5_associate_pcaf_p300_pcaf-p300()
+6_dummy-action-1-2()
+goal()
+** Ordering
+1_choose_p300_l1_l0 < 2_initialize_p300
+1_choose_p300_l1_l0 < 3_choose_pcaf_l2_l1
+2_initialize_p300 < 5_associate_pcaf_p300_pcaf-p300
+3_choose_pcaf_l2_l1 < 4_initialize_pcaf
+4_initialize_pcaf < 5_associate_pcaf_p300_pcaf-p300
+5_associate_pcaf_p300_pcaf-p300 < 6_dummy-action-1-2
+** Binding

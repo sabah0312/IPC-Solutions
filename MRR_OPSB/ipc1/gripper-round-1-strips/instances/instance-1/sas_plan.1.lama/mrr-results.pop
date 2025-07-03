@@ -1,0 +1,71 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7)
+01_pick(v_8 v_9 v_10)
+02_pick(v_11 v_12 v_13)
+03_move(v_14 v_15)
+04_drop(v_16 v_17 v_18)
+05_drop(v_19 v_20 v_21)
+06_move(v_22 v_23)
+07_pick(v_24 v_25 v_26)
+08_pick(v_27 v_28 v_29)
+09_move(v_30 v_31)
+10_drop(v_32 v_33 v_34)
+11_drop(v_35 v_36 v_37)
+goal(v_38 v_39 v_40 v_41 v_42)
+** Ordering
+01_pick < 03_move
+02_pick < 03_move
+03_move < 04_drop
+03_move < 05_drop
+04_drop < 06_move
+05_drop < 06_move
+06_move < 07_pick
+06_move < 08_pick
+07_pick < 09_move
+08_pick < 09_move
+09_move < 10_drop
+09_move < 11_drop
+** Binding
+v_0=ball1
+v_1=ball2
+v_2=ball3
+v_3=ball4
+v_4=left
+v_5=right
+v_6=rooma
+v_7=roomb
+v_8=ball1
+v_9=rooma
+v_10=left
+v_11=ball4
+v_12=rooma
+v_13=right
+v_14=rooma
+v_15=roomb
+v_16=ball1
+v_17=roomb
+v_18=left
+v_19=ball4
+v_20=roomb
+v_21=right
+v_22=roomb
+v_23=rooma
+v_24=ball3
+v_25=rooma
+v_26=left
+v_27=ball2
+v_28=rooma
+v_29=right
+v_30=rooma
+v_31=roomb
+v_32=ball2
+v_33=roomb
+v_34=right
+v_35=ball3
+v_36=roomb
+v_37=left
+v_38=ball1
+v_39=ball2
+v_40=ball3
+v_41=ball4
+v_42=roomb

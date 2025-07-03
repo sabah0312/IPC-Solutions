@@ -1,0 +1,338 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19 v_20 v_21 v_22 v_23 v_24 v_25 v_26 v_27 v_28 v_29 v_30 v_31 v_32 v_33 v_34 v_35 v_36 v_37)
+01_pop-start(v_38 v_39 v_40 v_41 v_42 v_43 v_44 v_45)
+02_pop-end(v_46 v_47 v_48 v_49 v_50 v_51 v_52)
+03_pop-start(v_53 v_54 v_55 v_56 v_57 v_58 v_59 v_60)
+04_push-start(v_61 v_62 v_63 v_64 v_65 v_66 v_67 v_68)
+05_push-end(v_69 v_70 v_71 v_72 v_73 v_74 v_75)
+06_pop-end(v_76 v_77 v_78 v_79 v_80 v_81 v_82)
+07_push-start(v_83 v_84 v_85 v_86 v_87 v_88 v_89 v_90)
+08_push-end(v_91 v_92 v_93 v_94 v_95 v_96 v_97)
+09_push-start(v_98 v_99 v_100 v_101 v_102 v_103 v_104 v_105)
+10_pop-start(v_106 v_107 v_108 v_109 v_110 v_111 v_112 v_113)
+11_push-end(v_114 v_115 v_116 v_117 v_118 v_119 v_120)
+12_pop-end(v_121 v_122 v_123 v_124 v_125 v_126 v_127)
+13_push-start(v_128 v_129 v_130 v_131 v_132 v_133 v_134 v_135)
+14_push-end(v_136 v_137 v_138 v_139 v_140 v_141 v_142)
+15_pop-start(v_143 v_144 v_145 v_146 v_147 v_148 v_149 v_150)
+16_pop-end(v_151 v_152 v_153 v_154 v_155 v_156 v_157)
+17_pop-start(v_158 v_159 v_160 v_161 v_162 v_163 v_164 v_165)
+18_pop-end(v_166 v_167 v_168 v_169 v_170 v_171 v_172)
+19_pop-start(v_173 v_174 v_175 v_176 v_177 v_178 v_179 v_180)
+20_pop-end(v_181 v_182 v_183 v_184 v_185 v_186 v_187)
+21_push-start(v_188 v_189 v_190 v_191 v_192 v_193 v_194 v_195)
+22_push-end(v_196 v_197 v_198 v_199 v_200 v_201 v_202)
+23_push-start(v_203 v_204 v_205 v_206 v_207 v_208 v_209 v_210)
+24_push-end(v_211 v_212 v_213 v_214 v_215 v_216 v_217)
+25_push-start(v_218 v_219 v_220 v_221 v_222 v_223 v_224 v_225)
+26_push-end(v_226 v_227 v_228 v_229 v_230 v_231 v_232)
+27_pop-start(v_233 v_234 v_235 v_236 v_237 v_238 v_239 v_240)
+28_pop-end(v_241 v_242 v_243 v_244 v_245 v_246 v_247)
+29_push-start(v_248 v_249 v_250 v_251 v_252 v_253 v_254 v_255)
+30_push-end(v_256 v_257 v_258 v_259 v_260 v_261 v_262)
+goal(v_263 v_264 v_265 v_266 v_267 v_268 v_269 v_270)
+** Ordering
+01_pop-start < 12_pop-end
+02_pop-end < 10_pop-start
+03_pop-start < 02_pop-end
+04_push-start < 05_push-end
+05_push-end < 09_push-start
+06_pop-end < 15_pop-start
+06_pop-end < 21_push-start
+07_push-start < 08_push-end
+08_push-end < 27_pop-start
+09_push-start < 14_push-end
+10_pop-start < 06_pop-end
+11_push-end < 21_push-start
+12_pop-end < 04_push-start
+12_pop-end < 07_push-start
+13_push-start < 11_push-end
+14_push-end < 23_push-start
+15_pop-start < 16_pop-end
+16_pop-end < 04_push-start
+17_pop-start < 18_pop-end
+18_pop-end < 19_pop-start
+18_pop-end < 25_push-start
+19_pop-start < 20_pop-end
+20_pop-end < 29_push-start
+21_push-start < 22_push-end
+22_push-end < 25_push-start
+23_push-start < 24_push-end
+24_push-end < 17_pop-start
+25_push-start < 26_push-end
+26_push-end < 29_push-start
+27_pop-start < 28_pop-end
+28_pop-end < 13_push-start
+29_push-start < 30_push-end
+** Binding
+v_0=a1
+v_1=a2
+v_2=a3
+v_3=b0
+v_4=b1
+v_5=b2
+v_6=b3
+v_7=b4
+v_8=b5
+v_9=b6
+v_10=b7
+v_11=b8
+v_12=b9
+v_13=gasoleo
+v_14=lco
+v_15=oc1b
+v_16=oca1
+v_17=rat-a
+v_18=s12
+v_19=s13
+v_20=ta1-1-gasoleo
+v_21=ta1-1-lco
+v_22=ta1-1-rat-a
+v_23=ta1-2-gasoleo
+v_24=ta1-3-gasoleo
+v_25=ta1-4-gasoleo
+v_26=ta2-1-gasoleo
+v_27=ta2-1-lco
+v_28=ta2-1-rat-a
+v_29=ta2-2-gasoleo
+v_30=ta2-3-gasoleo
+v_31=ta2-4-gasoleo
+v_32=ta3-1-gasoleo
+v_33=ta3-1-lco
+v_34=ta3-1-rat-a
+v_35=ta3-2-gasoleo
+v_36=ta3-3-gasoleo
+v_37=ta3-4-gasoleo
+v_38=s12
+v_39=b4
+v_40=a1
+v_41=a2
+v_42=b1
+v_43=gasoleo
+v_44=rat-a
+v_45=ta2-1-gasoleo
+v_46=s13
+v_47=a1
+v_48=a3
+v_49=b7
+v_50=b6
+v_51=lco
+v_52=ta1-1-lco
+v_53=s13
+v_54=b3
+v_55=a1
+v_56=a3
+v_57=b6
+v_58=lco
+v_59=gasoleo
+v_60=ta3-1-lco
+v_61=s13
+v_62=b9
+v_63=a1
+v_64=a3
+v_65=b8
+v_66=lco
+v_67=gasoleo
+v_68=ta1-1-lco
+v_69=s13
+v_70=a1
+v_71=a3
+v_72=b2
+v_73=b8
+v_74=rat-a
+v_75=ta3-1-rat-a
+v_76=s13
+v_77=a1
+v_78=a3
+v_79=b6
+v_80=b3
+v_81=gasoleo
+v_82=ta1-4-gasoleo
+v_83=s12
+v_84=b0
+v_85=a1
+v_86=a2
+v_87=b1
+v_88=gasoleo
+v_89=rat-a
+v_90=ta1-2-gasoleo
+v_91=s12
+v_92=a1
+v_93=a2
+v_94=b4
+v_95=b1
+v_96=gasoleo
+v_97=ta2-3-gasoleo
+v_98=s13
+v_99=b7
+v_100=a1
+v_101=a3
+v_102=b9
+v_103=gasoleo
+v_104=lco
+v_105=ta1-3-gasoleo
+v_106=s13
+v_107=b8
+v_108=a1
+v_109=a3
+v_110=b3
+v_111=gasoleo
+v_112=lco
+v_113=ta3-1-gasoleo
+v_114=s12
+v_115=a1
+v_116=a2
+v_117=b4
+v_118=b1
+v_119=gasoleo
+v_120=ta2-1-gasoleo
+v_121=s12
+v_122=a1
+v_123=a2
+v_124=b9
+v_125=b1
+v_126=gasoleo
+v_127=ta1-3-gasoleo
+v_128=s12
+v_129=b0
+v_130=a1
+v_131=a2
+v_132=b1
+v_133=gasoleo
+v_134=rat-a
+v_135=ta1-2-gasoleo
+v_136=s13
+v_137=a1
+v_138=a3
+v_139=b8
+v_140=b9
+v_141=gasoleo
+v_142=ta3-3-gasoleo
+v_143=s13
+v_144=b2
+v_145=a1
+v_146=a3
+v_147=b8
+v_148=rat-a
+v_149=gasoleo
+v_150=ta3-1-rat-a
+v_151=s13
+v_152=a1
+v_153=a3
+v_154=b3
+v_155=b8
+v_156=rat-a
+v_157=ta1-1-rat-a
+v_158=s13
+v_159=b8
+v_160=a1
+v_161=a3
+v_162=b7
+v_163=gasoleo
+v_164=gasoleo
+v_165=ta3-3-gasoleo
+v_166=s13
+v_167=a1
+v_168=a3
+v_169=b5
+v_170=b7
+v_171=lco
+v_172=ta1-1-lco
+v_173=s13
+v_174=b2
+v_175=a1
+v_176=a3
+v_177=b8
+v_178=rat-a
+v_179=gasoleo
+v_180=ta3-1-rat-a
+v_181=s13
+v_182=a1
+v_183=a3
+v_184=b7
+v_185=b8
+v_186=gasoleo
+v_187=ta1-1-gasoleo
+v_188=s12
+v_189=b6
+v_190=a1
+v_191=a2
+v_192=b0
+v_193=gasoleo
+v_194=gasoleo
+v_195=ta1-4-gasoleo
+v_196=s12
+v_197=a1
+v_198=a2
+v_199=b1
+v_200=b0
+v_201=rat-a
+v_202=ta2-1-rat-a
+v_203=s13
+v_204=b5
+v_205=a1
+v_206=a3
+v_207=b7
+v_208=gasoleo
+v_209=gasoleo
+v_210=ta1-1-gasoleo
+v_211=s13
+v_212=a1
+v_213=a3
+v_214=b9
+v_215=b7
+v_216=lco
+v_217=ta3-1-lco
+v_218=s12
+v_219=b3
+v_220=a1
+v_221=a2
+v_222=b6
+v_223=lco
+v_224=gasoleo
+v_225=ta1-1-lco
+v_226=s12
+v_227=a1
+v_228=a2
+v_229=b0
+v_230=b6
+v_231=gasoleo
+v_232=ta2-3-gasoleo
+v_233=s12
+v_234=b4
+v_235=a1
+v_236=a2
+v_237=b1
+v_238=gasoleo
+v_239=rat-a
+v_240=ta2-3-gasoleo
+v_241=s12
+v_242=a1
+v_243=a2
+v_244=b0
+v_245=b1
+v_246=gasoleo
+v_247=ta1-2-gasoleo
+v_248=s12
+v_249=b5
+v_250=a1
+v_251=a2
+v_252=b3
+v_253=gasoleo
+v_254=lco
+v_255=ta1-1-gasoleo
+v_256=s12
+v_257=a1
+v_258=a2
+v_259=b6
+v_260=b3
+v_261=gasoleo
+v_262=ta2-4-gasoleo
+v_263=a2
+v_264=a3
+v_265=b0
+v_266=b1
+v_267=b6
+v_268=b9
+v_269=s12
+v_270=s13

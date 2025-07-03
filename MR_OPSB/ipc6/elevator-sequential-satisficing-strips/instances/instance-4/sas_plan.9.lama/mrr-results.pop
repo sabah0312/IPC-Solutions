@@ -1,0 +1,247 @@
+** Operators
+init(v_0 v_1 v_2 v_3 v_4 v_5 v_6 v_7 v_8 v_9 v_10 v_11 v_12 v_13 v_14 v_15 v_16 v_17 v_18 v_19)
+01_move-down-slow(v_20 v_21 v_22)
+02_board(v_23 v_24 v_25 v_26 v_27)
+03_board(v_28 v_29 v_30 v_31 v_32)
+04_board(v_33 v_34 v_35 v_36 v_37)
+05_move-up-fast(v_38 v_39 v_40)
+06_leave(v_41 v_42 v_43 v_44 v_45)
+07_board(v_46 v_47 v_48 v_49 v_50)
+08_move-down-slow(v_51 v_52 v_53)
+09_leave(v_54 v_55 v_56 v_57 v_58)
+10_move-up-slow(v_59 v_60 v_61)
+11_board(v_62 v_63 v_64 v_65 v_66)
+12_move-up-slow(v_67 v_68 v_69)
+13_leave(v_70 v_71 v_72 v_73 v_74)
+14_leave(v_75 v_76 v_77 v_78 v_79)
+15_board(v_80 v_81 v_82 v_83 v_84)
+16_leave(v_85 v_86 v_87 v_88 v_89)
+17_board(v_90 v_91 v_92 v_93 v_94)
+18_board(v_95 v_96 v_97 v_98 v_99)
+19_move-up-slow(v_100 v_101 v_102)
+20_leave(v_103 v_104 v_105 v_106 v_107)
+21_move-down-slow(v_108 v_109 v_110)
+22_board(v_111 v_112 v_113 v_114 v_115)
+23_move-down-slow(v_116 v_117 v_118)
+24_leave(v_119 v_120 v_121 v_122 v_123)
+25_leave(v_124 v_125 v_126 v_127 v_128)
+26_board(v_129 v_130 v_131 v_132 v_133)
+27_move-down-slow(v_134 v_135 v_136)
+28_leave(v_137 v_138 v_139 v_140 v_141)
+29_move-up-slow(v_142 v_143 v_144)
+30_board(v_145 v_146 v_147 v_148 v_149)
+31_move-down-slow(v_150 v_151 v_152)
+32_leave(v_153 v_154 v_155 v_156 v_157)
+33_leave(v_158 v_159 v_160 v_161 v_162)
+goal(v_163 v_164 v_165 v_166 v_167 v_168 v_169 v_170 v_171 v_172 v_173 v_174)
+** Ordering
+01_move-down-slow < 02_board
+02_board < 07_board
+03_board < 10_move-up-slow
+04_board < 05_move-up-fast
+05_move-up-fast < 06_leave
+07_board < 08_move-down-slow
+08_move-down-slow < 09_leave
+09_leave < 17_board
+09_leave < 18_board
+10_move-up-slow < 11_board
+11_board < 12_move-up-slow
+12_move-up-slow < 13_leave
+13_leave < 14_leave
+13_leave < 18_board
+14_leave < 15_board
+14_leave < 17_board
+15_board < 19_move-up-slow
+16_leave < 15_board
+16_leave < 26_board
+17_board < 26_board
+18_board < 16_leave
+19_move-up-slow < 20_leave
+20_leave < 21_move-down-slow
+21_move-down-slow < 22_board
+22_board < 23_move-down-slow
+23_move-down-slow < 24_leave
+24_leave < 25_leave
+26_board < 27_move-down-slow
+27_move-down-slow < 28_leave
+28_leave < 29_move-up-slow
+29_move-up-slow < 30_board
+30_board < 31_move-down-slow
+31_move-down-slow < 32_leave
+32_leave < 33_leave
+** Binding
+v_0=fast0
+v_1=fast1
+v_2=n0
+v_3=n1
+v_4=n2
+v_5=n3
+v_6=n4
+v_7=n5
+v_8=n6
+v_9=n7
+v_10=n8
+v_11=p0
+v_12=p1
+v_13=p2
+v_14=p3
+v_15=p4
+v_16=p5
+v_17=p6
+v_18=slow0-0
+v_19=slow1-0
+v_20=slow1-0
+v_21=n7
+v_22=n6
+v_23=p1
+v_24=slow1-0
+v_25=n6
+v_26=n0
+v_27=n1
+v_28=p6
+v_29=slow0-0
+v_30=n0
+v_31=n0
+v_32=n1
+v_33=p0
+v_34=fast1
+v_35=n2
+v_36=n0
+v_37=n1
+v_38=fast1
+v_39=n2
+v_40=n8
+v_41=p0
+v_42=fast1
+v_43=n8
+v_44=n1
+v_45=n0
+v_46=p4
+v_47=slow1-0
+v_48=n6
+v_49=n1
+v_50=n2
+v_51=slow1-0
+v_52=n6
+v_53=n4
+v_54=p1
+v_55=slow1-0
+v_56=n4
+v_57=n2
+v_58=n1
+v_59=slow0-0
+v_60=n0
+v_61=n1
+v_62=p2
+v_63=slow0-0
+v_64=n1
+v_65=n1
+v_66=n2
+v_67=slow0-0
+v_68=n1
+v_69=n4
+v_70=p2
+v_71=slow0-0
+v_72=n4
+v_73=n2
+v_74=n1
+v_75=p6
+v_76=slow0-0
+v_77=n4
+v_78=n1
+v_79=n0
+v_80=p6
+v_81=slow1-0
+v_82=n4
+v_83=n1
+v_84=n2
+v_85=p4
+v_86=slow1-0
+v_87=n4
+v_88=n2
+v_89=n1
+v_90=p1
+v_91=slow0-0
+v_92=n4
+v_93=n0
+v_94=n1
+v_95=p2
+v_96=slow1-0
+v_97=n4
+v_98=n1
+v_99=n2
+v_100=slow1-0
+v_101=n4
+v_102=n7
+v_103=p2
+v_104=slow1-0
+v_105=n7
+v_106=n2
+v_107=n1
+v_108=slow1-0
+v_109=n7
+v_110=n6
+v_111=p5
+v_112=slow1-0
+v_113=n6
+v_114=n1
+v_115=n2
+v_116=slow1-0
+v_117=n6
+v_118=n5
+v_119=p5
+v_120=slow1-0
+v_121=n5
+v_122=n2
+v_123=n1
+v_124=p6
+v_125=slow1-0
+v_126=n5
+v_127=n1
+v_128=n0
+v_129=p4
+v_130=slow0-0
+v_131=n4
+v_132=n1
+v_133=n2
+v_134=slow0-0
+v_135=n4
+v_136=n1
+v_137=p1
+v_138=slow0-0
+v_139=n1
+v_140=n2
+v_141=n1
+v_142=slow0-0
+v_143=n1
+v_144=n3
+v_145=p3
+v_146=slow0-0
+v_147=n3
+v_148=n1
+v_149=n2
+v_150=slow0-0
+v_151=n3
+v_152=n0
+v_153=p3
+v_154=slow0-0
+v_155=n0
+v_156=n2
+v_157=n1
+v_158=p4
+v_159=slow0-0
+v_160=n0
+v_161=n1
+v_162=n0
+v_163=n0
+v_164=n1
+v_165=n5
+v_166=n7
+v_167=n8
+v_168=p0
+v_169=p1
+v_170=p2
+v_171=p3
+v_172=p4
+v_173=p5
+v_174=p6
