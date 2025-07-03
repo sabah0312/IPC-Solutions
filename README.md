@@ -43,5 +43,5 @@ IPC-Solutions/
 
 ```mermaid
 graph TB
-    L[lama_solution/] -->|input| M[mr_opsb/]
-    L -->|input| M2[mrr_opsb/]
+    L[lama_solutions] -->|input| M[mr_opsb] --> P1[partial-order solutions]
+    L -->|input| M2[mrr_opsb] -->  p2[partial-order solutions]
