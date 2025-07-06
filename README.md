@@ -13,6 +13,7 @@ Repository containing solutions of IPC problems from classical domains, includin
 ## Repository Structure (Exact Layout)
 ```bash
 IPC-Solutions/
+├── IPC/ # IPC contests, domains, and problems
 ├── lama_solution/ # Satisfiable solutions
 │ ├── contest/ # IPC contest number
 │ │ ├── domain/ # Problem domain (e.g., blocksworld)
