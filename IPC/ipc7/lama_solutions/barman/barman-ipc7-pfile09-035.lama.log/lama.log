@@ -1,0 +1,445 @@
+1. Running translator
+Second argument is a file name: use two translator arguments.
+Parsing... [0.010s CPU, 0.049s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.020s CPU, 0.086s wall-clock]
+Preparing model... [0.010s CPU, 0.011s wall-clock]
+Generated 115 rules.
+Computing model... [0.220s CPU, 0.273s wall-clock]
+3094 relevant atoms
+3221 auxiliary atoms
+6315 final queue length
+10878 total queue pushes
+Completing instantiation... [0.420s CPU, 0.461s wall-clock]
+Instantiating: [0.670s CPU, 0.839s wall-clock]
+Computing fact groups...
+Finding invariants...
+24 initial candidates
+Finding invariants: [0.050s CPU, 0.050s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.010s CPU, 0.004s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+328 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.070s CPU, 0.066s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.020s CPU, 0.024s wall-clock]
+Translating task: [0.300s CPU, 0.394s wall-clock]
+22 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+3 propositions removed
+Detecting unreachable propositions: [0.070s CPU, 0.071s wall-clock]
+Translator variables: 331
+Translator derived variables: 0
+Translator facts: 691
+Translator mutex groups: 18
+Translator total mutex groups size: 80
+Translator operators: 2194
+Translator task size: 21053
+Translator peak memory: 154972 KB
+Writing output... [0.070s CPU, 0.090s wall-clock]
+Done! [1.220s CPU, 1.530s wall-clock]
+
+2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+331 variables of 331 necessary
+15 of 18 mutex groups necessary.
+2194 of 2194 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 691
+Preprocessor derived variables: 0
+Preprocessor task size: 21018
+Writing output...
+done
+
+
+3. Running search
+Dispatcher selected state size 1.
+This is a nonunit task.
+Simplifying transitions... done!
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 0.148539s
+Discovered 92 landmarks, of which 2 are disjunctive and 0 are conjunctive 
+210 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+60 initial landmarks, 13 goal landmarks
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 0.139587s
+Discovered 92 landmarks, of which 2 are disjunctive and 0 are conjunctive 
+198 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+60 initial landmarks, 13 goal landmarks
+Starting search: lazy_greedy(list(hff1, hlm1), preferred = list(hff1, hlm1), cost_type = 1, reopen_closed = false)
+Conducting lazy best first search, (real) bound = 2147483647
+Best heuristic value: 32/36 [g=0, 1 evaluated, 0 expanded, t=0.57s]
+Best heuristic value: 31/36 [g=1, 2 evaluated, 1 expanded, t=0.57s]
+Best heuristic value: 31/34 [g=1, 5 evaluated, 4 expanded, t=0.57s]
+Best heuristic value: 30/34 [g=3, 15 evaluated, 14 expanded, t=0.58s]
+Best heuristic value: 28/34 [g=4, 17 evaluated, 16 expanded, t=0.58s]
+Best heuristic value: 28/32 [g=3, 24 evaluated, 23 expanded, t=0.59s]
+Best heuristic value: 27/32 [g=7, 34 evaluated, 33 expanded, t=0.59s]
+Best heuristic value: 27/30 [g=9, 42 evaluated, 41 expanded, t=0.6s]
+Best heuristic value: 26/30 [g=12, 49 evaluated, 48 expanded, t=0.6s]
+Best heuristic value: 25/30 [g=15, 82 evaluated, 81 expanded, t=0.63s]
+Best heuristic value: 25/29 [g=16, 83 evaluated, 82 expanded, t=0.63s]
+Best heuristic value: 24/29 [g=26, 293 evaluated, 292 expanded, t=0.79s]
+Best heuristic value: 24/28 [g=27, 294 evaluated, 293 expanded, t=0.79s]
+Best heuristic value: 23/28 [g=33, 345 evaluated, 344 expanded, t=0.82s]
+Best heuristic value: 23/27 [g=34, 346 evaluated, 345 expanded, t=0.82s]
+Best heuristic value: 22/27 [g=44, 532 evaluated, 531 expanded, t=0.96s]
+Best heuristic value: 22/26 [g=45, 533 evaluated, 532 expanded, t=0.96s]
+Best heuristic value: 21/26 [g=51, 582 evaluated, 581 expanded, t=0.99s]
+Best heuristic value: 21/25 [g=52, 583 evaluated, 582 expanded, t=0.99s]
+Best heuristic value: 20/25 [g=61, 1051 evaluated, 1050 expanded, t=1.33s]
+Best heuristic value: 20/24 [g=62, 1052 evaluated, 1051 expanded, t=1.33s]
+Best heuristic value: 19/24 [g=68, 1090 evaluated, 1089 expanded, t=1.36s]
+Best heuristic value: 19/23 [g=69, 1091 evaluated, 1090 expanded, t=1.36s]
+Best heuristic value: 18/23 [g=78, 1545 evaluated, 1544 expanded, t=1.68s]
+Best heuristic value: 18/22 [g=79, 1546 evaluated, 1545 expanded, t=1.68s]
+Best heuristic value: 17/22 [g=84, 1569 evaluated, 1568 expanded, t=1.69s]
+Best heuristic value: 17/21 [g=86, 1593 evaluated, 1592 expanded, t=1.71s]
+Best heuristic value: 16/21 [g=88, 1606 evaluated, 1605 expanded, t=1.72s]
+Best heuristic value: 16/20 [g=91, 1964 evaluated, 1963 expanded, t=1.95s]
+Best heuristic value: 16/19 [g=94, 1986 evaluated, 1985 expanded, t=1.96s]
+Best heuristic value: 16/18 [g=95, 1991 evaluated, 1990 expanded, t=1.97s]
+Best heuristic value: 15/18 [g=96, 1992 evaluated, 1991 expanded, t=1.97s]
+Best heuristic value: 15/17 [g=98, 2020 evaluated, 2019 expanded, t=1.98s]
+Best heuristic value: 14/17 [g=99, 2022 evaluated, 2021 expanded, t=1.98s]
+Best heuristic value: 14/15 [g=100, 2023 evaluated, 2022 expanded, t=1.98s]
+Best heuristic value: 13/15 [g=110, 3663 evaluated, 3662 expanded, t=2.91s]
+Best heuristic value: 12/15 [g=113, 3693 evaluated, 3692 expanded, t=2.92s]
+Best heuristic value: 12/13 [g=114, 3694 evaluated, 3693 expanded, t=2.93s]
+Best heuristic value: 11/13 [g=128, 5302 evaluated, 5301 expanded, t=3.82s]
+Best heuristic value: 10/13 [g=131, 5331 evaluated, 5330 expanded, t=3.83s]
+Best heuristic value: 10/11 [g=132, 5332 evaluated, 5331 expanded, t=3.83s]
+Best heuristic value: 9/11 [g=145, 6264 evaluated, 6263 expanded, t=4.34s]
+Best heuristic value: 8/11 [g=152, 6293 evaluated, 6292 expanded, t=4.35s]
+Best heuristic value: 8/10 [g=149, 6396 evaluated, 6395 expanded, t=4.4s]
+Best heuristic value: 8/9 [g=154, 6432 evaluated, 6431 expanded, t=4.42s]
+Best heuristic value: 7/9 [g=166, 8103 evaluated, 8102 expanded, t=5.31s]
+Best heuristic value: 6/9 [g=172, 8120 evaluated, 8119 expanded, t=5.31s]
+Best heuristic value: 6/8 [g=170, 8177 evaluated, 8176 expanded, t=5.34s]
+Best heuristic value: 5/8 [g=176, 8194 evaluated, 8193 expanded, t=5.35s]
+Best heuristic value: 5/7 [g=175, 8240 evaluated, 8239 expanded, t=5.37s]
+Best heuristic value: 4/7 [g=181, 8295 evaluated, 8294 expanded, t=5.4s]
+Best heuristic value: 4/5 [g=182, 8296 evaluated, 8295 expanded, t=5.4s]
+Best heuristic value: 2/4 [g=186, 8301 evaluated, 8300 expanded, t=5.4s]
+Best heuristic value: 1/3 [g=187, 8302 evaluated, 8301 expanded, t=5.4s]
+Best heuristic value: 1/2 [g=188, 8303 evaluated, 8302 expanded, t=5.4s]
+Best heuristic value: 1/1 [g=189, 8304 evaluated, 8303 expanded, t=5.41s]
+Solution found!
+Actual search time: 4.84s [t=5.41s]
+grasp right shot12 (1)
+fill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+pour-shot-to-clean-shaker shot12 ingredient3 shaker1 right l0 l1 (1)
+leave left shaker1 (1)
+refill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+leave right shot12 (1)
+grasp right shot13 (1)
+leave left shaker1 (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+clean-shot shot13 ingredient2 right left (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail8 ingredient2 ingredient3 shaker1 left right (1)
+pour-shaker-to-shot cocktail8 shot10 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail8 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+leave left shaker1 (1)
+grasp right shot12 (1)
+pour-shot-to-clean-shaker shot12 ingredient3 shaker1 right l0 l1 (1)
+clean-shot shot12 ingredient3 right left (1)
+fill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+leave right shot12 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+leave left shaker1 (1)
+clean-shot shot13 ingredient2 right left (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail4 ingredient2 ingredient3 shaker1 left right (1)
+pour-shaker-to-shot cocktail4 shot4 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail4 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+leave left shaker1 (1)
+grasp right shot12 (1)
+pour-shot-to-clean-shaker shot12 ingredient3 shaker1 right l0 l1 (1)
+clean-shot shot12 ingredient3 right left (1)
+fill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+leave right shot12 (1)
+grasp right shot9 (1)
+leave left shaker1 (1)
+fill-shot shot9 ingredient1 right left dispenser1 (10)
+pour-shot-to-used-shaker shot9 ingredient1 shaker1 right l1 l2 (1)
+clean-shot shot9 ingredient1 right left (1)
+grasp left shaker1 (1)
+leave right shot9 (1)
+shake cocktail7 ingredient3 ingredient1 shaker1 left right (1)
+pour-shaker-to-shot cocktail7 shot5 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail7 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+leave left shaker1 (1)
+grasp right shot12 (1)
+pour-shot-to-clean-shaker shot12 ingredient3 shaker1 right l0 l1 (1)
+refill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+leave right shot12 (1)
+grasp right shot9 (1)
+leave left shaker1 (1)
+fill-shot shot9 ingredient4 right left dispenser4 (10)
+pour-shot-to-used-shaker shot9 ingredient4 shaker1 right l1 l2 (1)
+clean-shot shot9 ingredient4 right left (1)
+grasp left shaker1 (1)
+leave right shot9 (1)
+shake cocktail9 ingredient4 ingredient3 shaker1 left right (1)
+pour-shaker-to-shot cocktail9 shot6 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail9 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+leave left shaker1 (1)
+grasp right shot12 (1)
+pour-shot-to-clean-shaker shot12 ingredient3 shaker1 right l0 l1 (1)
+refill-shot shot12 ingredient3 right left dispenser3 (10)
+grasp left shaker1 (1)
+leave right shot12 (1)
+leave left shaker1 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+clean-shot shot13 ingredient2 right left (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail2 ingredient2 ingredient3 shaker1 left right (1)
+pour-shaker-to-shot cocktail2 shot9 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail2 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot8 (1)
+leave left shaker1 (1)
+fill-shot shot8 ingredient1 right left dispenser1 (10)
+pour-shot-to-clean-shaker shot8 ingredient1 shaker1 right l0 l1 (1)
+clean-shot shot8 ingredient1 right left (1)
+fill-shot shot8 ingredient4 right left dispenser4 (10)
+pour-shot-to-used-shaker shot8 ingredient4 shaker1 right l1 l2 (1)
+clean-shot shot8 ingredient4 right left (1)
+grasp left shaker1 (1)
+leave right shot8 (1)
+shake cocktail11 ingredient4 ingredient1 shaker1 left right (1)
+pour-shaker-to-shot cocktail11 shot2 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail11 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot8 (1)
+leave left shaker1 (1)
+fill-shot shot8 ingredient1 right left dispenser1 (10)
+pour-shot-to-clean-shaker shot8 ingredient1 shaker1 right l0 l1 (1)
+clean-shot shot8 ingredient1 right left (1)
+grasp left shaker1 (1)
+leave right shot8 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+leave left shaker1 (1)
+clean-shot shot13 ingredient2 right left (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail10 ingredient1 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail10 shot11 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail10 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot8 (1)
+leave left shaker1 (1)
+fill-shot shot8 ingredient4 right left dispenser4 (10)
+pour-shot-to-clean-shaker shot8 ingredient4 shaker1 right l0 l1 (1)
+clean-shot shot8 ingredient4 right left (1)
+fill-shot shot8 ingredient1 right left dispenser1 (10)
+pour-shot-to-used-shaker shot8 ingredient1 shaker1 right l1 l2 (1)
+clean-shot shot8 ingredient1 right left (1)
+grasp left shaker1 (1)
+leave right shot8 (1)
+shake cocktail1 ingredient1 ingredient4 shaker1 left right (1)
+pour-shaker-to-shot cocktail1 shot1 left shaker1 l2 l1 (1)
+leave left shaker1 (1)
+grasp left shot14 (1)
+fill-shot shot14 ingredient4 left right dispenser4 (10)
+grasp right shaker1 (1)
+leave left shot14 (1)
+empty-shaker right shaker1 cocktail1 l1 l0 (1)
+clean-shaker right left shaker1 (1)
+leave right shaker1 (1)
+grasp right shot14 (1)
+pour-shot-to-clean-shaker shot14 ingredient4 shaker1 right l0 l1 (1)
+grasp left shaker1 (1)
+leave right shot14 (1)
+leave left shaker1 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+clean-shot shot13 ingredient2 right left (1)
+fill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail6 ingredient4 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail6 shot7 left shaker1 l2 l1 (1)
+leave left shaker1 (1)
+grasp left shot14 (1)
+refill-shot shot14 ingredient4 left right dispenser4 (10)
+grasp right shaker1 (1)
+leave left shot14 (1)
+empty-shaker right shaker1 cocktail6 l1 l0 (1)
+clean-shaker right left shaker1 (1)
+leave right shaker1 (1)
+grasp right shot14 (1)
+pour-shot-to-clean-shaker shot14 ingredient4 shaker1 right l0 l1 (1)
+clean-shot shot14 ingredient4 right left (1)
+fill-shot shot14 ingredient1 right left dispenser1 (10)
+grasp left shaker1 (1)
+leave right shot14 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+leave left shaker1 (1)
+refill-shot shot13 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot13 (1)
+shake cocktail3 ingredient4 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail3 shot3 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail3 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot14 (1)
+pour-shot-to-clean-shaker shot14 ingredient1 shaker1 right l0 l1 (1)
+leave right shot14 (1)
+grasp right shot13 (1)
+pour-shot-to-used-shaker shot13 ingredient2 shaker1 right l1 l2 (1)
+leave right shot13 (1)
+shake cocktail5 ingredient1 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail5 shot8 left shaker1 l2 l1 (1)
+leave left shaker1 (1)
+grasp right shot13 (1)
+refill-shot shot13 ingredient2 right left dispenser2 (10)
+Plan length: 190 step(s).
+Plan cost: 406
+Initial state h value: 32/36.
+Expanded 8305 state(s).
+Reopened 0 state(s).
+Evaluated 8306 state(s).
+Evaluations: 16612
+Generated 102058 state(s).
+Dead ends: 0 state(s).
+Best solution cost so far: 406
+Solution found - keep searching
+Starting search: lazy_greedy(list(hff2, hlm2), preferred = list(hff2, hlm2), reopen_closed = false)
+Conducting lazy best first search, (real) bound = 406
+Best heuristic value: 64/126 [g=0, 1 evaluated, 0 expanded, t=5.41s]
+Best heuristic value: 62/126 [g=1, 2 evaluated, 1 expanded, t=5.41s]
+Best heuristic value: 62/113 [g=1, 5 evaluated, 4 expanded, t=5.41s]
+Best heuristic value: 62/104 [g=11, 12 evaluated, 11 expanded, t=5.41s]
+Best heuristic value: 60/104 [g=12, 13 evaluated, 12 expanded, t=5.41s]
+Best heuristic value: 56/104 [g=13, 17 evaluated, 16 expanded, t=5.42s]
+Best heuristic value: 56/91 [g=12, 20 evaluated, 19 expanded, t=5.42s]
+Best heuristic value: 56/84 [g=23, 32 evaluated, 31 expanded, t=5.42s]
+Best heuristic value: 56/82 [g=24, 36 evaluated, 35 expanded, t=5.43s]
+Best heuristic value: 54/82 [g=23, 37 evaluated, 36 expanded, t=5.43s]
+Best heuristic value: 54/78 [g=36, 70 evaluated, 69 expanded, t=5.45s]
+Best heuristic value: 52/78 [g=37, 71 evaluated, 70 expanded, t=5.45s]
+Best heuristic value: 52/73 [g=50, 85 evaluated, 84 expanded, t=5.46s]
+Best heuristic value: 52/69 [g=51, 89 evaluated, 88 expanded, t=5.46s]
+Best heuristic value: 51/69 [g=52, 91 evaluated, 90 expanded, t=5.46s]
+Best heuristic value: 51/67 [g=52, 94 evaluated, 93 expanded, t=5.46s]
+Best heuristic value: 50/67 [g=53, 96 evaluated, 95 expanded, t=5.46s]
+Best heuristic value: 50/60 [g=62, 99 evaluated, 98 expanded, t=5.47s]
+Best heuristic value: 48/60 [g=84, 2709 evaluated, 2708 expanded, t=7.13s]
+Best heuristic value: 48/58 [g=86, 2724 evaluated, 2723 expanded, t=7.13s]
+Best heuristic value: 47/58 [g=87, 2725 evaluated, 2724 expanded, t=7.14s]
+Best heuristic value: 47/56 [g=88, 2726 evaluated, 2725 expanded, t=7.14s]
+Best heuristic value: 47/54 [g=91, 2752 evaluated, 2751 expanded, t=7.15s]
+Best heuristic value: 46/54 [g=92, 2753 evaluated, 2752 expanded, t=7.15s]
+Best heuristic value: 46/50 [g=93, 2754 evaluated, 2753 expanded, t=7.15s]
+Best heuristic value: 45/50 [g=113, 16701 evaluated, 16700 expanded, t=16.45s]
+Best heuristic value: 44/50 [g=116, 16710 evaluated, 16709 expanded, t=16.46s]
+Best heuristic value: 43/50 [g=127, 16722 evaluated, 16721 expanded, t=16.47s]
+Best heuristic value: 42/50 [g=128, 16731 evaluated, 16730 expanded, t=16.47s]
+Best heuristic value: 42/48 [g=129, 16732 evaluated, 16731 expanded, t=16.47s]
+Best heuristic value: 42/46 [g=160, 23232 evaluated, 22769 expanded, t=20.55s]
+Best heuristic value: 41/46 [g=163, 900832 evaluated, 716443 expanded, t=559.1s]
+Best heuristic value: 39/46 [g=166, 900842 evaluated, 716453 expanded, t=559.1s]
+Best heuristic value: 38/46 [g=171, 900881 evaluated, 716492 expanded, t=559.13s]
+Best heuristic value: 38/44 [g=172, 900882 evaluated, 716493 expanded, t=559.13s]
+Best heuristic value: 38/42 [g=182, 901016 evaluated, 716627 expanded, t=559.21s]
+Best heuristic value: 37/42 [g=202, 901280 evaluated, 716891 expanded, t=559.36s]
+Best heuristic value: 35/42 [g=205, 901289 evaluated, 716900 expanded, t=559.37s]
+Best heuristic value: 34/42 [g=210, 901318 evaluated, 716929 expanded, t=559.38s]
+Best heuristic value: 34/40 [g=211, 901319 evaluated, 716930 expanded, t=559.38s]
+Best heuristic value: 34/38 [g=221, 901469 evaluated, 717080 expanded, t=559.47s]
+Best heuristic value: 31/38 [g=244, 901650 evaluated, 717261 expanded, t=559.57s]
+Best heuristic value: 30/38 [g=247, 901664 evaluated, 717275 expanded, t=559.58s]
+Best heuristic value: 30/36 [g=248, 901665 evaluated, 717276 expanded, t=559.58s]
+Best heuristic value: 28/36 [g=263, 901965 evaluated, 717576 expanded, t=559.75s]
+Best heuristic value: 28/34 [g=265, 901968 evaluated, 717579 expanded, t=559.75s]
+Best heuristic value: 28/32 [g=266, 901971 evaluated, 717582 expanded, t=559.75s]
+Best heuristic value: 26/30 [g=268, 901976 evaluated, 717587 expanded, t=559.76s]
+Best heuristic value: 26/28 [g=269, 901977 evaluated, 717588 expanded, t=559.76s]
+Best heuristic value: 24/28 [g=283, 902002 evaluated, 717613 expanded, t=559.77s]
+Best heuristic value: 24/26 [g=284, 902003 evaluated, 717614 expanded, t=559.77s]
+Best heuristic value: 22/26 [g=304, 902217 evaluated, 717828 expanded, t=559.88s]
+Best heuristic value: 22/24 [g=310, 902235 evaluated, 717846 expanded, t=559.89s]
+Best heuristic value: 20/24 [g=319, 902276 evaluated, 717887 expanded, t=559.91s]
+Best heuristic value: 20/22 [g=320, 902277 evaluated, 717888 expanded, t=559.91s]
+Best heuristic value: 18/22 [g=340, 902388 evaluated, 717999 expanded, t=559.97s]
+Best heuristic value: 16/22 [g=346, 902430 evaluated, 718041 expanded, t=559.99s]
+Best heuristic value: 14/20 [g=359, 902477 evaluated, 718088 expanded, t=560.01s]
+Best heuristic value: 14/18 [g=360, 902479 evaluated, 718090 expanded, t=560.02s]
+Best heuristic value: 14/16 [g=362, 902483 evaluated, 718094 expanded, t=560.02s]
+Best heuristic value: 12/16 [g=376, 902546 evaluated, 718157 expanded, t=560.05s]
+Best heuristic value: 12/12 [g=377, 902547 evaluated, 718158 expanded, t=560.05s]
+Best heuristic value: 10/10 [g=391, 902566 evaluated, 718177 expanded, t=560.06s]
+Best heuristic value: 10/8 [g=392, 902567 evaluated, 718178 expanded, t=560.06s]
+Best heuristic value: 6/8 [g=403, 902600 evaluated, 718211 expanded, t=560.07s]
+Best heuristic value: 4/8 [g=404, 902601 evaluated, 718212 expanded, t=560.07s]
+terminate called after throwing an instance of 'St9bad_alloc'
+  what():  std::bad_alloc
+warning: could not determine peak memory
+Peak memory: -1 KB
+caught signal 6 -- exiting
+../../downward/src/search/downward: line 184: 51528 Aborted                 "$PLANNER" --heuristic "hlm1,hff1=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=1,cost_type=1))" --heuristic "hlm2,hff2=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=2,cost_type=2))" --search "iterated([
+                    lazy_greedy([hff1,hlm1],preferred=[hff1,hlm1],
+                                cost_type=1,reopen_closed=false),
+                    lazy_greedy([hff2,hlm2],preferred=[hff2,hlm2],
+                                reopen_closed=false),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=5),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=3),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=2),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=1)],
+                    repeat_last=true,continue_on_fail=true)" "$@" < $TEMPFILE

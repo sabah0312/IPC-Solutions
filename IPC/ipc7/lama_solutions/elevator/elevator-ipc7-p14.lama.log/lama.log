@@ -1,0 +1,886 @@
+1. Running translator
+Second argument is a file name: use two translator arguments.
+Parsing... [0.010s CPU, 0.060s wall-clock]
+Instantiating...
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Generating Datalog program... [0.010s CPU, 0.004s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.065s wall-clock]
+Preparing model... [0.020s CPU, 0.014s wall-clock]
+Generated 46 rules.
+Computing model... [1.230s CPU, 1.304s wall-clock]
+35012 relevant atoms
+12873 auxiliary atoms
+47885 final queue length
+110965 total queue pushes
+Completing instantiation... [4.190s CPU, 4.197s wall-clock]
+Instantiating: [5.470s CPU, 5.601s wall-clock]
+Computing fact groups...
+Finding invariants...
+12 initial candidates
+Finding invariants: [0.040s CPU, 0.035s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.040s CPU, 0.034s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.003s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.010s CPU, 0.009s wall-clock]
+Building translation key... [0.000s CPU, 0.004s wall-clock]
+Computing fact groups: [0.110s CPU, 0.106s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.004s wall-clock]
+Building dictionary for full mutex groups... [0.010s CPU, 0.002s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.003s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.170s CPU, 0.172s wall-clock]
+Translating task: [2.730s CPU, 2.731s wall-clock]
+0 implied effects removed
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+65 propositions removed
+Detecting unreachable propositions: [0.390s CPU, 0.384s wall-clock]
+Translator variables: 65
+Translator derived variables: 0
+Translator facts: 1729
+Translator mutex groups: 65
+Translator total mutex groups size: 1729
+Translator operators: 32600
+Translator task size: 197804
+Translator peak memory: 325088 KB
+Writing output... [0.450s CPU, 0.510s wall-clock]
+Done! [9.300s CPU, 9.530s wall-clock]
+
+2. Running preprocessor
+Building causal graph...
+The causal graph is not acyclic.
+65 variables of 65 necessary
+0 of 65 mutex groups necessary.
+32600 of 32600 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 1729
+Preprocessor derived variables: 0
+Preprocessor task size: 196075
+Writing output...
+done
+
+
+3. Running search
+Dispatcher selected state size 1.
+This is a nonunit task.
+Simplifying transitions... done!
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 1.92893s
+Discovered 210 landmarks, of which 30 are disjunctive and 0 are conjunctive 
+478 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+57 initial landmarks, 49 goal landmarks
+Initializing Exploration...
+Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+approx. obedient reasonable orders
+Removed 0 reasonable or obedient reasonable orders
+Landmarks generation time: 1.96943s
+Discovered 210 landmarks, of which 30 are disjunctive and 0 are conjunctive 
+478 edges
+Initializing LAMA-FF Synergy Object
+Initializing landmarks count heuristic...
+57 initial landmarks, 49 goal landmarks
+Starting search: lazy_greedy(list(hff1, hlm1), preferred = list(hff1, hlm1), cost_type = 1, reopen_closed = false)
+Conducting lazy best first search, (real) bound = 2147483647
+Best heuristic value: 153/211 [g=0, 1 evaluated, 0 expanded, t=5s]
+Best heuristic value: 151/210 [g=1, 2 evaluated, 1 expanded, t=5s]
+Best heuristic value: 151/208 [g=2, 4 evaluated, 3 expanded, t=5.01s]
+Best heuristic value: 151/206 [g=3, 7 evaluated, 6 expanded, t=5.02s]
+Best heuristic value: 149/206 [g=2, 10 evaluated, 9 expanded, t=5.04s]
+Best heuristic value: 149/204 [g=4, 11 evaluated, 10 expanded, t=5.04s]
+Best heuristic value: 149/203 [g=5, 19 evaluated, 18 expanded, t=5.07s]
+Best heuristic value: 148/203 [g=3, 26 evaluated, 25 expanded, t=5.1s]
+Best heuristic value: 148/201 [g=6, 31 evaluated, 30 expanded, t=5.12s]
+Best heuristic value: 147/201 [g=4, 40 evaluated, 39 expanded, t=5.16s]
+Best heuristic value: 147/200 [g=7, 43 evaluated, 42 expanded, t=5.17s]
+Best heuristic value: 147/198 [g=8, 54 evaluated, 53 expanded, t=5.22s]
+Best heuristic value: 146/198 [g=5, 55 evaluated, 54 expanded, t=5.23s]
+Best heuristic value: 145/198 [g=6, 77 evaluated, 76 expanded, t=5.36s]
+Best heuristic value: 145/197 [g=9, 78 evaluated, 77 expanded, t=5.36s]
+Best heuristic value: 143/197 [g=7, 99 evaluated, 98 expanded, t=5.48s]
+Best heuristic value: 143/196 [g=10, 104 evaluated, 103 expanded, t=5.51s]
+Best heuristic value: 142/196 [g=8, 127 evaluated, 126 expanded, t=5.62s]
+Best heuristic value: 142/194 [g=11, 168 evaluated, 167 expanded, t=5.85s]
+Best heuristic value: 141/194 [g=9, 183 evaluated, 182 expanded, t=5.93s]
+Best heuristic value: 141/193 [g=12, 206 evaluated, 205 expanded, t=6.06s]
+Best heuristic value: 141/192 [g=13, 218 evaluated, 217 expanded, t=6.13s]
+Best heuristic value: 140/192 [g=10, 241 evaluated, 240 expanded, t=6.25s]
+Best heuristic value: 140/191 [g=14, 278 evaluated, 277 expanded, t=6.47s]
+Best heuristic value: 139/191 [g=11, 301 evaluated, 300 expanded, t=6.6s]
+Best heuristic value: 139/190 [g=15, 338 evaluated, 337 expanded, t=6.82s]
+Best heuristic value: 138/190 [g=12, 371 evaluated, 370 expanded, t=7.01s]
+Best heuristic value: 138/189 [g=17, 440 evaluated, 439 expanded, t=7.42s]
+Best heuristic value: 137/189 [g=13, 445 evaluated, 444 expanded, t=7.45s]
+Best heuristic value: 137/188 [g=18, 486 evaluated, 485 expanded, t=7.67s]
+Best heuristic value: 136/188 [g=14, 525 evaluated, 524 expanded, t=7.89s]
+Best heuristic value: 135/188 [g=15, 601 evaluated, 600 expanded, t=8.33s]
+Best heuristic value: 135/187 [g=20, 616 evaluated, 615 expanded, t=8.42s]
+Best heuristic value: 135/186 [g=21, 638 evaluated, 637 expanded, t=8.55s]
+Best heuristic value: 135/185 [g=22, 697 evaluated, 696 expanded, t=8.91s]
+Best heuristic value: 134/185 [g=17, 735 evaluated, 734 expanded, t=9.13s]
+Best heuristic value: 134/184 [g=24, 810 evaluated, 809 expanded, t=9.61s]
+Best heuristic value: 134/183 [g=25, 856 evaluated, 855 expanded, t=9.9s]
+Best heuristic value: 134/182 [g=27, 975 evaluated, 974 expanded, t=10.62s]
+Best heuristic value: 134/181 [g=28, 989 evaluated, 988 expanded, t=10.71s]
+Best heuristic value: 134/180 [g=29, 1013 evaluated, 1012 expanded, t=10.87s]
+Best heuristic value: 134/179 [g=30, 1065 evaluated, 1064 expanded, t=11.24s]
+Best heuristic value: 134/178 [g=31, 1085 evaluated, 1084 expanded, t=11.39s]
+Best heuristic value: 133/178 [g=19, 1098 evaluated, 1097 expanded, t=11.47s]
+Best heuristic value: 133/177 [g=32, 1103 evaluated, 1102 expanded, t=11.5s]
+Best heuristic value: 133/176 [g=33, 1158 evaluated, 1157 expanded, t=11.9s]
+Best heuristic value: 132/176 [g=34, 1166 evaluated, 1165 expanded, t=11.96s]
+Best heuristic value: 131/176 [g=35, 1174 evaluated, 1173 expanded, t=12.02s]
+Best heuristic value: 130/176 [g=36, 1188 evaluated, 1187 expanded, t=12.12s]
+Best heuristic value: 129/176 [g=37, 1202 evaluated, 1201 expanded, t=12.23s]
+Best heuristic value: 129/175 [g=38, 1208 evaluated, 1207 expanded, t=12.28s]
+Best heuristic value: 129/174 [g=38, 1238 evaluated, 1237 expanded, t=12.5s]
+Best heuristic value: 128/174 [g=38, 1244 evaluated, 1243 expanded, t=12.55s]
+Best heuristic value: 128/173 [g=39, 1245 evaluated, 1244 expanded, t=12.56s]
+Best heuristic value: 128/172 [g=40, 1253 evaluated, 1252 expanded, t=12.62s]
+Best heuristic value: 127/172 [g=39, 1290 evaluated, 1289 expanded, t=12.89s]
+Best heuristic value: 127/171 [g=41, 1291 evaluated, 1290 expanded, t=12.9s]
+Best heuristic value: 127/170 [g=42, 1333 evaluated, 1332 expanded, t=13.22s]
+Best heuristic value: 126/170 [g=40, 1336 evaluated, 1335 expanded, t=13.24s]
+Best heuristic value: 125/170 [g=41, 1388 evaluated, 1387 expanded, t=13.63s]
+Best heuristic value: 124/170 [g=42, 1439 evaluated, 1438 expanded, t=14.02s]
+Best heuristic value: 124/169 [g=44, 1459 evaluated, 1458 expanded, t=14.17s]
+Best heuristic value: 124/168 [g=45, 1479 evaluated, 1478 expanded, t=14.33s]
+Best heuristic value: 123/168 [g=43, 1498 evaluated, 1497 expanded, t=14.47s]
+Best heuristic value: 123/167 [g=46, 1521 evaluated, 1520 expanded, t=14.65s]
+Best heuristic value: 123/166 [g=48, 1638 evaluated, 1637 expanded, t=15.51s]
+Best heuristic value: 122/166 [g=45, 1692 evaluated, 1691 expanded, t=15.88s]
+Best heuristic value: 122/165 [g=50, 1765 evaluated, 1764 expanded, t=16.41s]
+Best heuristic value: 122/164 [g=51, 1778 evaluated, 1777 expanded, t=16.5s]
+Best heuristic value: 122/163 [g=53, 1895 evaluated, 1894 expanded, t=17.35s]
+Best heuristic value: 121/163 [g=54, 1915 evaluated, 1914 expanded, t=17.49s]
+Best heuristic value: 121/162 [g=54, 1923 evaluated, 1922 expanded, t=17.55s]
+Best heuristic value: 120/162 [g=55, 1934 evaluated, 1933 expanded, t=17.62s]
+Best heuristic value: 119/162 [g=56, 1966 evaluated, 1965 expanded, t=17.85s]
+Best heuristic value: 119/161 [g=57, 1991 evaluated, 1990 expanded, t=18.03s]
+Best heuristic value: 118/161 [g=57, 2015 evaluated, 2014 expanded, t=18.2s]
+Best heuristic value: 117/161 [g=58, 2070 evaluated, 2069 expanded, t=18.6s]
+Best heuristic value: 116/161 [g=59, 2126 evaluated, 2125 expanded, t=19.01s]
+Best heuristic value: 115/161 [g=60, 2142 evaluated, 2141 expanded, t=19.13s]
+Best heuristic value: 115/160 [g=61, 2153 evaluated, 2152 expanded, t=19.21s]
+Best heuristic value: 115/159 [g=61, 2164 evaluated, 2163 expanded, t=19.29s]
+Best heuristic value: 114/159 [g=61, 2166 evaluated, 2165 expanded, t=19.31s]
+Best heuristic value: 114/158 [g=62, 2181 evaluated, 2180 expanded, t=19.42s]
+Best heuristic value: 114/156 [g=63, 2198 evaluated, 2197 expanded, t=19.55s]
+Best heuristic value: 114/155 [g=64, 2249 evaluated, 2248 expanded, t=19.93s]
+Best heuristic value: 113/155 [g=65, 2265 evaluated, 2264 expanded, t=20.05s]
+Best heuristic value: 112/155 [g=66, 2287 evaluated, 2286 expanded, t=20.21s]
+Best heuristic value: 112/154 [g=65, 2298 evaluated, 2297 expanded, t=20.29s]
+Best heuristic value: 111/154 [g=67, 2343 evaluated, 2342 expanded, t=20.62s]
+Best heuristic value: 111/153 [g=68, 2370 evaluated, 2369 expanded, t=20.82s]
+Best heuristic value: 111/152 [g=69, 2388 evaluated, 2387 expanded, t=20.96s]
+Best heuristic value: 110/152 [g=68, 2405 evaluated, 2404 expanded, t=21.08s]
+Best heuristic value: 110/151 [g=70, 2408 evaluated, 2407 expanded, t=21.1s]
+Best heuristic value: 110/150 [g=72, 2540 evaluated, 2539 expanded, t=22.08s]
+Best heuristic value: 109/150 [g=70, 2583 evaluated, 2582 expanded, t=22.39s]
+Best heuristic value: 109/149 [g=74, 2615 evaluated, 2614 expanded, t=22.63s]
+Best heuristic value: 109/148 [g=75, 2637 evaluated, 2636 expanded, t=22.79s]
+Best heuristic value: 109/147 [g=76, 2689 evaluated, 2688 expanded, t=23.18s]
+Best heuristic value: 108/147 [g=77, 2703 evaluated, 2702 expanded, t=23.28s]
+Best heuristic value: 108/146 [g=77, 2711 evaluated, 2710 expanded, t=23.34s]
+Best heuristic value: 107/146 [g=78, 2726 evaluated, 2725 expanded, t=23.45s]
+Best heuristic value: 107/145 [g=78, 2734 evaluated, 2733 expanded, t=23.51s]
+Best heuristic value: 106/145 [g=79, 2749 evaluated, 2748 expanded, t=23.61s]
+Best heuristic value: 105/145 [g=80, 2776 evaluated, 2775 expanded, t=23.81s]
+Best heuristic value: 104/145 [g=81, 2818 evaluated, 2817 expanded, t=24.12s]
+Best heuristic value: 104/144 [g=82, 2843 evaluated, 2842 expanded, t=24.3s]
+Best heuristic value: 103/144 [g=82, 2871 evaluated, 2870 expanded, t=24.5s]
+Best heuristic value: 103/143 [g=83, 2890 evaluated, 2889 expanded, t=24.64s]
+Best heuristic value: 102/143 [g=83, 2928 evaluated, 2927 expanded, t=24.91s]
+Best heuristic value: 102/142 [g=84, 2955 evaluated, 2954 expanded, t=25.1s]
+Best heuristic value: 102/141 [g=85, 3005 evaluated, 3004 expanded, t=25.46s]
+Best heuristic value: 101/141 [g=85, 3095 evaluated, 3094 expanded, t=26.09s]
+Best heuristic value: 101/140 [g=87, 3142 evaluated, 3141 expanded, t=26.43s]
+Best heuristic value: 101/139 [g=88, 3192 evaluated, 3191 expanded, t=26.79s]
+Best heuristic value: 101/138 [g=89, 3242 evaluated, 3241 expanded, t=27.15s]
+Best heuristic value: 100/138 [g=87, 3346 evaluated, 3345 expanded, t=27.91s]
+Best heuristic value: 100/137 [g=91, 3369 evaluated, 3368 expanded, t=28.08s]
+Best heuristic value: 100/136 [g=92, 3420 evaluated, 3419 expanded, t=28.46s]
+Best heuristic value: 100/135 [g=93, 3461 evaluated, 3460 expanded, t=28.76s]
+Best heuristic value: 99/135 [g=94, 3475 evaluated, 3474 expanded, t=28.86s]
+Best heuristic value: 98/135 [g=95, 3502 evaluated, 3501 expanded, t=29.08s]
+Best heuristic value: 98/134 [g=95, 3550 evaluated, 3549 expanded, t=29.43s]
+Best heuristic value: 97/134 [g=96, 3553 evaluated, 3552 expanded, t=29.46s]
+Best heuristic value: 96/134 [g=97, 3612 evaluated, 3611 expanded, t=29.9s]
+Best heuristic value: 96/133 [g=97, 3629 evaluated, 3628 expanded, t=30.02s]
+Best heuristic value: 96/132 [g=98, 3653 evaluated, 3652 expanded, t=30.2s]
+Best heuristic value: 95/132 [g=99, 3728 evaluated, 3727 expanded, t=30.75s]
+Best heuristic value: 95/130 [g=100, 3782 evaluated, 3781 expanded, t=31.14s]
+Best heuristic value: 94/130 [g=100, 3783 evaluated, 3782 expanded, t=31.15s]
+Best heuristic value: 94/129 [g=101, 3808 evaluated, 3807 expanded, t=31.33s]
+Best heuristic value: 93/129 [g=102, 3879 evaluated, 3878 expanded, t=31.85s]
+Best heuristic value: 93/128 [g=103, 3931 evaluated, 3930 expanded, t=32.23s]
+Best heuristic value: 92/128 [g=104, 3954 evaluated, 3953 expanded, t=32.39s]
+Best heuristic value: 91/128 [g=105, 3979 evaluated, 3978 expanded, t=32.57s]
+Best heuristic value: 90/128 [g=106, 4016 evaluated, 4015 expanded, t=32.84s]
+Best heuristic value: 90/127 [g=107, 4026 evaluated, 4025 expanded, t=32.91s]
+Best heuristic value: 90/126 [g=108, 4039 evaluated, 4038 expanded, t=33s]
+Best heuristic value: 89/126 [g=107, 4063 evaluated, 4062 expanded, t=33.17s]
+Best heuristic value: 89/125 [g=110, 4096 evaluated, 4095 expanded, t=33.4s]
+Best heuristic value: 89/124 [g=111, 4104 evaluated, 4103 expanded, t=33.46s]
+Best heuristic value: 89/123 [g=113, 4173 evaluated, 4172 expanded, t=33.94s]
+Best heuristic value: 89/122 [g=114, 4199 evaluated, 4198 expanded, t=34.12s]
+Best heuristic value: 88/122 [g=109, 4224 evaluated, 4223 expanded, t=34.29s]
+Best heuristic value: 88/121 [g=115, 4231 evaluated, 4230 expanded, t=34.34s]
+Best heuristic value: 87/121 [g=116, 4267 evaluated, 4266 expanded, t=34.59s]
+Best heuristic value: 86/121 [g=117, 4312 evaluated, 4311 expanded, t=34.9s]
+Best heuristic value: 86/120 [g=117, 4365 evaluated, 4364 expanded, t=35.26s]
+Best heuristic value: 86/119 [g=118, 4416 evaluated, 4415 expanded, t=35.62s]
+Best heuristic value: 85/119 [g=119, 4445 evaluated, 4444 expanded, t=35.82s]
+Best heuristic value: 84/119 [g=120, 4491 evaluated, 4490 expanded, t=36.15s]
+Best heuristic value: 84/118 [g=120, 4496 evaluated, 4495 expanded, t=36.19s]
+Best heuristic value: 84/117 [g=121, 4530 evaluated, 4529 expanded, t=36.44s]
+Best heuristic value: 83/117 [g=122, 4636 evaluated, 4635 expanded, t=37.2s]
+Best heuristic value: 83/116 [g=123, 4720 evaluated, 4719 expanded, t=37.81s]
+Best heuristic value: 83/115 [g=124, 4746 evaluated, 4745 expanded, t=38s]
+Best heuristic value: 82/115 [g=125, 4779 evaluated, 4778 expanded, t=38.23s]
+Best heuristic value: 81/114 [g=126, 4811 evaluated, 4810 expanded, t=38.47s]
+Best heuristic value: 80/114 [g=127, 4835 evaluated, 4834 expanded, t=38.64s]
+Best heuristic value: 80/113 [g=128, 5001 evaluated, 5000 expanded, t=39.85s]
+Best heuristic value: 79/113 [g=129, 5038 evaluated, 5037 expanded, t=40.11s]
+Best heuristic value: 78/113 [g=131, 5249 evaluated, 5248 expanded, t=41.63s]
+Best heuristic value: 78/112 [g=130, 5252 evaluated, 5251 expanded, t=41.65s]
+Best heuristic value: 78/111 [g=131, 5304 evaluated, 5303 expanded, t=42.03s]
+Best heuristic value: 77/111 [g=132, 5351 evaluated, 5350 expanded, t=42.36s]
+Best heuristic value: 77/110 [g=133, 5402 evaluated, 5401 expanded, t=42.72s]
+Best heuristic value: 76/110 [g=134, 5447 evaluated, 5446 expanded, t=43.04s]
+Best heuristic value: 76/109 [g=134, 5451 evaluated, 5450 expanded, t=43.07s]
+Best heuristic value: 75/109 [g=135, 5498 evaluated, 5497 expanded, t=43.4s]
+Best heuristic value: 74/109 [g=137, 5669 evaluated, 5668 expanded, t=44.59s]
+Best heuristic value: 73/109 [g=139, 5831 evaluated, 5830 expanded, t=45.76s]
+Best heuristic value: 73/108 [g=140, 5838 evaluated, 5837 expanded, t=45.81s]
+Best heuristic value: 73/107 [g=141, 5848 evaluated, 5847 expanded, t=45.88s]
+Best heuristic value: 72/106 [g=142, 5863 evaluated, 5862 expanded, t=45.99s]
+Best heuristic value: 71/106 [g=143, 5871 evaluated, 5870 expanded, t=46.05s]
+Best heuristic value: 70/104 [g=144, 5884 evaluated, 5883 expanded, t=46.14s]
+Best heuristic value: 70/103 [g=145, 5891 evaluated, 5890 expanded, t=46.19s]
+Best heuristic value: 70/102 [g=146, 5924 evaluated, 5923 expanded, t=46.42s]
+Best heuristic value: 70/101 [g=147, 5960 evaluated, 5959 expanded, t=46.68s]
+Best heuristic value: 69/101 [g=146, 6070 evaluated, 6069 expanded, t=47.48s]
+Best heuristic value: 69/100 [g=149, 6091 evaluated, 6090 expanded, t=47.63s]
+Best heuristic value: 68/100 [g=147, 6096 evaluated, 6095 expanded, t=47.67s]
+Best heuristic value: 68/99 [g=150, 6113 evaluated, 6112 expanded, t=47.79s]
+Best heuristic value: 67/99 [g=148, 6158 evaluated, 6157 expanded, t=48.12s]
+Best heuristic value: 67/98 [g=152, 6313 evaluated, 6312 expanded, t=49.24s]
+Best heuristic value: 67/97 [g=154, 6461 evaluated, 6460 expanded, t=50.32s]
+Best heuristic value: 67/96 [g=155, 6495 evaluated, 6494 expanded, t=50.56s]
+Best heuristic value: 67/95 [g=156, 6507 evaluated, 6506 expanded, t=50.65s]
+Best heuristic value: 67/94 [g=157, 6552 evaluated, 6551 expanded, t=50.97s]
+Best heuristic value: 66/94 [g=158, 6586 evaluated, 6585 expanded, t=51.22s]
+Best heuristic value: 65/94 [g=159, 6615 evaluated, 6614 expanded, t=51.43s]
+Best heuristic value: 65/93 [g=160, 6625 evaluated, 6624 expanded, t=51.5s]
+Best heuristic value: 64/93 [g=160, 6649 evaluated, 6648 expanded, t=51.67s]
+Best heuristic value: 64/92 [g=161, 6658 evaluated, 6657 expanded, t=51.73s]
+Best heuristic value: 63/92 [g=162, 6716 evaluated, 6715 expanded, t=52.15s]
+Best heuristic value: 63/91 [g=162, 6731 evaluated, 6730 expanded, t=52.25s]
+Best heuristic value: 62/91 [g=163, 6750 evaluated, 6749 expanded, t=52.38s]
+Best heuristic value: 62/90 [g=164, 6770 evaluated, 6769 expanded, t=52.52s]
+Best heuristic value: 62/89 [g=165, 6789 evaluated, 6788 expanded, t=52.65s]
+Best heuristic value: 62/88 [g=166, 6821 evaluated, 6820 expanded, t=52.87s]
+Best heuristic value: 61/88 [g=165, 6951 evaluated, 6950 expanded, t=53.74s]
+Best heuristic value: 61/87 [g=168, 6958 evaluated, 6957 expanded, t=53.79s]
+Best heuristic value: 60/86 [g=170, 7104 evaluated, 7103 expanded, t=54.78s]
+Best heuristic value: 59/86 [g=172, 7216 evaluated, 7215 expanded, t=55.55s]
+Best heuristic value: 59/85 [g=173, 7221 evaluated, 7220 expanded, t=55.59s]
+Best heuristic value: 59/84 [g=175, 7390 evaluated, 7389 expanded, t=56.77s]
+Best heuristic value: 58/84 [g=174, 7424 evaluated, 7423 expanded, t=57.01s]
+Best heuristic value: 57/84 [g=175, 7446 evaluated, 7445 expanded, t=57.16s]
+Best heuristic value: 57/83 [g=177, 7453 evaluated, 7452 expanded, t=57.21s]
+Best heuristic value: 57/82 [g=178, 7465 evaluated, 7464 expanded, t=57.29s]
+Best heuristic value: 56/82 [g=176, 7500 evaluated, 7499 expanded, t=57.54s]
+Best heuristic value: 56/81 [g=180, 7561 evaluated, 7560 expanded, t=57.97s]
+Best heuristic value: 56/80 [g=182, 7616 evaluated, 7615 expanded, t=58.35s]
+Best heuristic value: 56/79 [g=183, 7639 evaluated, 7638 expanded, t=58.51s]
+Best heuristic value: 55/79 [g=184, 7650 evaluated, 7649 expanded, t=58.59s]
+Best heuristic value: 54/79 [g=185, 7681 evaluated, 7680 expanded, t=58.8s]
+Best heuristic value: 54/78 [g=184, 7682 evaluated, 7681 expanded, t=58.81s]
+Best heuristic value: 54/77 [g=185, 7727 evaluated, 7726 expanded, t=59.11s]
+Best heuristic value: 53/77 [g=186, 7728 evaluated, 7727 expanded, t=59.12s]
+Best heuristic value: 53/76 [g=186, 7761 evaluated, 7760 expanded, t=59.35s]
+Best heuristic value: 52/76 [g=187, 7773 evaluated, 7772 expanded, t=59.43s]
+Best heuristic value: 52/75 [g=187, 7801 evaluated, 7800 expanded, t=59.61s]
+Best heuristic value: 51/75 [g=188, 7812 evaluated, 7811 expanded, t=59.68s]
+Best heuristic value: 51/74 [g=189, 7845 evaluated, 7844 expanded, t=59.91s]
+Best heuristic value: 51/73 [g=191, 7916 evaluated, 7915 expanded, t=60.38s]
+Best heuristic value: 51/72 [g=192, 7922 evaluated, 7921 expanded, t=60.42s]
+Best heuristic value: 51/71 [g=193, 7928 evaluated, 7927 expanded, t=60.46s]
+Best heuristic value: 50/71 [g=194, 7938 evaluated, 7937 expanded, t=60.53s]
+Best heuristic value: 50/70 [g=194, 7940 evaluated, 7939 expanded, t=60.54s]
+Best heuristic value: 50/69 [g=195, 7951 evaluated, 7950 expanded, t=60.61s]
+Best heuristic value: 49/69 [g=195, 7952 evaluated, 7951 expanded, t=60.62s]
+Best heuristic value: 49/68 [g=196, 7959 evaluated, 7958 expanded, t=60.67s]
+Best heuristic value: 49/67 [g=197, 7965 evaluated, 7964 expanded, t=60.71s]
+Best heuristic value: 48/67 [g=198, 7973 evaluated, 7972 expanded, t=60.76s]
+Best heuristic value: 48/66 [g=198, 7975 evaluated, 7974 expanded, t=60.77s]
+Best heuristic value: 47/66 [g=199, 7981 evaluated, 7980 expanded, t=60.81s]
+Best heuristic value: 47/65 [g=199, 7983 evaluated, 7982 expanded, t=60.83s]
+Best heuristic value: 46/65 [g=200, 7990 evaluated, 7989 expanded, t=60.87s]
+Best heuristic value: 45/64 [g=201, 7997 evaluated, 7996 expanded, t=60.92s]
+Best heuristic value: 44/63 [g=203, 8017 evaluated, 8016 expanded, t=61.05s]
+Best heuristic value: 43/62 [g=205, 8132 evaluated, 8131 expanded, t=61.81s]
+Best heuristic value: 42/61 [g=206, 8133 evaluated, 8132 expanded, t=61.82s]
+Best heuristic value: 42/60 [g=208, 8259 evaluated, 8258 expanded, t=62.69s]
+Best heuristic value: 41/59 [g=209, 8275 evaluated, 8274 expanded, t=62.8s]
+Best heuristic value: 40/58 [g=210, 8288 evaluated, 8287 expanded, t=62.89s]
+Best heuristic value: 39/57 [g=211, 8304 evaluated, 8303 expanded, t=63.01s]
+Best heuristic value: 38/56 [g=212, 8320 evaluated, 8319 expanded, t=63.12s]
+Best heuristic value: 37/55 [g=214, 8426 evaluated, 8425 expanded, t=63.85s]
+Best heuristic value: 36/54 [g=215, 8432 evaluated, 8431 expanded, t=63.89s]
+Best heuristic value: 35/54 [g=217, 8549 evaluated, 8548 expanded, t=64.68s]
+Best heuristic value: 35/53 [g=218, 8557 evaluated, 8556 expanded, t=64.73s]
+Best heuristic value: 35/52 [g=221, 8922 evaluated, 8921 expanded, t=67.26s]
+Best heuristic value: 35/51 [g=223, 8950 evaluated, 8949 expanded, t=67.44s]
+Best heuristic value: 35/50 [g=224, 8959 evaluated, 8958 expanded, t=67.5s]
+Best heuristic value: 35/49 [g=225, 8961 evaluated, 8960 expanded, t=67.52s]
+Best heuristic value: 35/48 [g=226, 8964 evaluated, 8963 expanded, t=67.54s]
+Best heuristic value: 35/47 [g=227, 8966 evaluated, 8965 expanded, t=67.55s]
+Best heuristic value: 34/46 [g=228, 8969 evaluated, 8968 expanded, t=67.57s]
+Best heuristic value: 33/46 [g=229, 8971 evaluated, 8970 expanded, t=67.58s]
+Best heuristic value: 33/45 [g=229, 8974 evaluated, 8973 expanded, t=67.6s]
+Best heuristic value: 32/45 [g=230, 8977 evaluated, 8976 expanded, t=67.62s]
+Best heuristic value: 32/44 [g=230, 8980 evaluated, 8979 expanded, t=67.64s]
+Best heuristic value: 31/44 [g=231, 8983 evaluated, 8982 expanded, t=67.66s]
+Best heuristic value: 30/44 [g=232, 9005 evaluated, 9004 expanded, t=67.81s]
+Best heuristic value: 30/43 [g=232, 9006 evaluated, 9005 expanded, t=67.81s]
+Best heuristic value: 30/42 [g=233, 9011 evaluated, 9010 expanded, t=67.85s]
+Best heuristic value: 29/42 [g=234, 9013 evaluated, 9012 expanded, t=67.86s]
+Best heuristic value: 28/41 [g=235, 9026 evaluated, 9025 expanded, t=67.95s]
+Best heuristic value: 27/41 [g=236, 9038 evaluated, 9037 expanded, t=68.03s]
+Best heuristic value: 27/40 [g=238, 9195 evaluated, 9194 expanded, t=69.05s]
+Best heuristic value: 27/39 [g=239, 9199 evaluated, 9198 expanded, t=69.07s]
+Best heuristic value: 27/38 [g=240, 9203 evaluated, 9202 expanded, t=69.1s]
+Best heuristic value: 27/37 [g=241, 9205 evaluated, 9204 expanded, t=69.11s]
+Best heuristic value: 26/37 [g=242, 9206 evaluated, 9205 expanded, t=69.12s]
+Best heuristic value: 25/36 [g=243, 9207 evaluated, 9206 expanded, t=69.12s]
+Best heuristic value: 24/36 [g=244, 9218 evaluated, 9217 expanded, t=69.19s]
+Best heuristic value: 24/35 [g=246, 9429 evaluated, 9428 expanded, t=70.6s]
+Best heuristic value: 24/34 [g=247, 9437 evaluated, 9436 expanded, t=70.65s]
+Best heuristic value: 24/33 [g=248, 9455 evaluated, 9454 expanded, t=70.77s]
+Best heuristic value: 24/32 [g=250, 9492 evaluated, 9491 expanded, t=71.01s]
+Best heuristic value: 24/31 [g=251, 9502 evaluated, 9501 expanded, t=71.08s]
+Best heuristic value: 24/30 [g=252, 9507 evaluated, 9506 expanded, t=71.11s]
+Best heuristic value: 23/30 [g=253, 9513 evaluated, 9512 expanded, t=71.15s]
+Best heuristic value: 23/29 [g=253, 9515 evaluated, 9514 expanded, t=71.16s]
+Best heuristic value: 22/29 [g=254, 9522 evaluated, 9521 expanded, t=71.2s]
+Best heuristic value: 22/28 [g=254, 9536 evaluated, 9535 expanded, t=71.29s]
+Best heuristic value: 21/28 [g=255, 9542 evaluated, 9541 expanded, t=71.33s]
+Best heuristic value: 21/27 [g=255, 9556 evaluated, 9555 expanded, t=71.41s]
+Best heuristic value: 20/27 [g=256, 9562 evaluated, 9561 expanded, t=71.45s]
+Best heuristic value: 19/26 [g=257, 9569 evaluated, 9568 expanded, t=71.49s]
+Best heuristic value: 18/25 [g=258, 9578 evaluated, 9577 expanded, t=71.55s]
+Best heuristic value: 17/25 [g=259, 9590 evaluated, 9589 expanded, t=71.62s]
+Best heuristic value: 17/24 [g=260, 9595 evaluated, 9594 expanded, t=71.65s]
+Best heuristic value: 17/23 [g=261, 9616 evaluated, 9615 expanded, t=71.78s]
+Best heuristic value: 16/23 [g=263, 9637 evaluated, 9636 expanded, t=71.92s]
+Best heuristic value: 15/23 [g=264, 9639 evaluated, 9638 expanded, t=71.93s]
+Best heuristic value: 14/22 [g=265, 9640 evaluated, 9639 expanded, t=71.93s]
+Best heuristic value: 13/21 [g=266, 9641 evaluated, 9640 expanded, t=71.94s]
+Best heuristic value: 13/20 [g=267, 9642 evaluated, 9641 expanded, t=71.95s]
+Best heuristic value: 13/18 [g=268, 9652 evaluated, 9651 expanded, t=72.01s]
+Best heuristic value: 12/18 [g=267, 9657 evaluated, 9656 expanded, t=72.04s]
+Best heuristic value: 12/17 [g=269, 9660 evaluated, 9659 expanded, t=72.05s]
+Best heuristic value: 12/16 [g=270, 9668 evaluated, 9667 expanded, t=72.1s]
+Best heuristic value: 11/16 [g=268, 9675 evaluated, 9674 expanded, t=72.14s]
+Best heuristic value: 11/15 [g=271, 9678 evaluated, 9677 expanded, t=72.15s]
+Best heuristic value: 10/14 [g=272, 9688 evaluated, 9687 expanded, t=72.21s]
+Best heuristic value: 10/12 [g=274, 9698 evaluated, 9697 expanded, t=72.25s]
+Best heuristic value: 10/11 [g=275, 9699 evaluated, 9698 expanded, t=72.26s]
+Best heuristic value: 9/10 [g=276, 9701 evaluated, 9700 expanded, t=72.27s]
+Best heuristic value: 8/9 [g=278, 9707 evaluated, 9706 expanded, t=72.3s]
+Best heuristic value: 7/8 [g=279, 9708 evaluated, 9707 expanded, t=72.3s]
+Best heuristic value: 6/7 [g=280, 9709 evaluated, 9708 expanded, t=72.31s]
+Best heuristic value: 5/6 [g=281, 9710 evaluated, 9709 expanded, t=72.31s]
+Best heuristic value: 4/5 [g=282, 9711 evaluated, 9710 expanded, t=72.31s]
+Best heuristic value: 3/4 [g=284, 9715 evaluated, 9714 expanded, t=72.33s]
+Best heuristic value: 2/2 [g=286, 9721 evaluated, 9720 expanded, t=72.36s]
+Best heuristic value: 1/1 [g=287, 9722 evaluated, 9721 expanded, t=72.36s]
+Solution found!
+Actual search time: 67.36s [t=72.36s]
+board p29 slow2-0 n13 n0 n1 (0)
+move-up-fast fast2 n3 n18 (46)
+move-up-fast fast1 n6 n18 (37)
+board p2 fast2 n18 n0 n1 (0)
+board p12 slow0-0 n2 n0 n1 (0)
+board p26 fast3 n24 n0 n1 (0)
+move-down-slow slow3-0 n24 n23 (6)
+move-down-slow slow3-0 n23 n18 (10)
+board p13 slow1-0 n6 n0 n1 (0)
+board p14 slow0-0 n2 n1 n2 (0)
+board p48 fast2 n18 n1 n2 (0)
+leave p2 fast2 n18 n2 n1 (0)
+board p2 slow3-0 n18 n0 n1 (0)
+board p5 slow2-0 n13 n1 n2 (0)
+board p7 slow0-0 n2 n2 n3 (0)
+move-up-slow slow2-0 n13 n18 (10)
+leave p29 slow2-0 n18 n2 n1 (0)
+board p29 slow3-0 n18 n1 n2 (0)
+move-up-slow slow0-0 n2 n6 (9)
+leave p14 slow0-0 n6 n3 n2 (0)
+board p14 slow1-0 n6 n1 n2 (0)
+leave p7 slow0-0 n6 n2 n1 (0)
+move-down-slow slow0-0 n6 n4 (7)
+board p0 slow0-0 n4 n1 n2 (0)
+board p27 slow0-0 n4 n2 n3 (0)
+move-down-slow slow0-0 n4 n0 (9)
+leave p0 slow0-0 n0 n3 n2 (0)
+leave p12 slow0-0 n0 n2 n1 (0)
+board p16 slow0-0 n0 n1 n2 (0)
+board p43 slow0-0 n0 n2 n3 (0)
+move-up-slow slow0-0 n0 n6 (11)
+leave p16 slow0-0 n6 n3 n2 (0)
+leave p43 slow0-0 n6 n2 n1 (0)
+move-up-slow slow3-0 n18 n22 (9)
+board p1 slow3-0 n22 n2 n3 (0)
+move-up-slow slow1-0 n6 n10 (9)
+leave p13 slow1-0 n10 n2 n1 (0)
+move-down-slow slow3-0 n22 n18 (9)
+leave p1 slow3-0 n18 n3 n2 (0)
+board p1 fast2 n18 n1 n2 (0)
+board p24 slow1-0 n10 n1 n2 (0)
+board p28 slow1-0 n10 n2 n3 (0)
+move-up-slow slow1-0 n10 n11 (6)
+leave p14 slow1-0 n11 n3 n2 (0)
+board p17 slow1-0 n11 n2 n3 (0)
+leave p28 slow1-0 n11 n3 n2 (0)
+move-down-slow slow1-0 n11 n7 (9)
+board p19 slow1-0 n7 n2 n3 (0)
+move-up-slow slow1-0 n7 n9 (7)
+leave p17 slow1-0 n9 n3 n2 (0)
+board p15 slow1-0 n9 n2 n3 (0)
+move-down-slow slow1-0 n9 n7 (7)
+leave p15 slow1-0 n7 n3 n2 (0)
+move-up-slow slow3-0 n18 n23 (10)
+leave p2 slow3-0 n23 n2 n1 (0)
+board p23 slow1-0 n7 n2 n3 (0)
+board p32 slow1-0 n7 n3 n4 (0)
+board p34 slow3-0 n23 n1 n2 (0)
+board p41 slow3-0 n23 n2 n3 (0)
+move-down-slow slow3-0 n23 n20 (8)
+move-down-slow slow3-0 n20 n18 (7)
+move-up-slow slow1-0 n7 n8 (6)
+leave p19 slow1-0 n8 n4 n3 (0)
+leave p41 slow3-0 n18 n3 n2 (0)
+move-up-slow slow3-0 n18 n20 (7)
+board p21 slow3-0 n20 n2 n3 (0)
+board p41 slow2-0 n18 n1 n2 (0)
+move-down-slow slow3-0 n20 n18 (7)
+leave p21 slow3-0 n18 n3 n2 (0)
+board p21 fast2 n18 n2 n3 (0)
+move-up-slow slow1-0 n8 n12 (9)
+leave p32 slow1-0 n12 n3 n2 (0)
+move-down-slow slow1-0 n12 n6 (11)
+leave p23 slow1-0 n6 n2 n1 (0)
+board p23 slow0-0 n6 n1 n2 (0)
+board p43 slow1-0 n6 n1 n2 (0)
+leave p24 slow1-0 n6 n2 n1 (0)
+board p24 slow0-0 n6 n2 n3 (0)
+move-up-slow slow3-0 n18 n20 (7)
+move-up-slow slow1-0 n6 n10 (9)
+board p33 slow1-0 n10 n1 n2 (0)
+board p46 slow1-0 n10 n2 n3 (0)
+board p9 slow3-0 n20 n2 n3 (0)
+move-down-slow slow3-0 n20 n18 (7)
+leave p9 slow3-0 n18 n3 n2 (0)
+move-down-slow slow1-0 n10 n6 (9)
+leave p33 slow1-0 n6 n3 n2 (0)
+leave p46 slow1-0 n6 n2 n1 (0)
+board p9 fast2 n18 n3 n4 (0)
+move-down-slow slow2-0 n18 n14 (9)
+board p25 slow2-0 n14 n2 n3 (0)
+leave p41 slow2-0 n14 n3 n2 (0)
+board p36 slow2-0 n14 n2 n3 (0)
+move-down-slow slow2-0 n14 n13 (6)
+leave p36 slow2-0 n13 n3 n2 (0)
+move-up-slow slow2-0 n13 n18 (10)
+leave p25 slow2-0 n18 n2 n1 (0)
+board p25 slow3-0 n18 n2 n3 (0)
+move-down-fast fast3 n24 n6 (55)
+leave p26 fast3 n6 n1 n0 (0)
+board p26 slow1-0 n6 n1 n2 (0)
+move-up-slow slow3-0 n18 n20 (7)
+leave p25 slow3-0 n20 n3 n2 (0)
+move-up-slow slow1-0 n6 n10 (9)
+leave p26 slow1-0 n10 n2 n1 (0)
+move-up-slow slow1-0 n10 n11 (6)
+move-up-fast fast3 n6 n12 (19)
+move-down-slow slow1-0 n11 n6 (10)
+move-down-slow slow2-0 n18 n13 (10)
+move-up-fast fast2 n18 n21 (10)
+board p11 fast2 n21 n4 n5 (0)
+move-up-slow slow3-0 n20 n22 (7)
+leave p29 slow3-0 n22 n2 n1 (0)
+board p30 slow3-0 n22 n1 n2 (0)
+board p31 slow3-0 n22 n2 n3 (0)
+move-down-slow slow2-0 n13 n12 (6)
+board p32 slow2-0 n12 n1 n2 (0)
+leave p5 slow2-0 n12 n2 n1 (0)
+move-up-slow slow2-0 n12 n13 (6)
+move-up-slow slow1-0 n6 n9 (8)
+board p37 slow1-0 n9 n1 n2 (0)
+move-up-slow slow2-0 n13 n16 (8)
+board p47 slow2-0 n16 n1 n2 (0)
+leave p32 slow2-0 n16 n2 n1 (0)
+move-up-slow slow1-0 n9 n11 (7)
+leave p37 slow1-0 n11 n2 n1 (0)
+move-down-slow slow3-0 n22 n19 (8)
+leave p34 slow3-0 n19 n3 n2 (0)
+move-down-slow slow2-0 n16 n14 (7)
+board p44 slow2-0 n14 n1 n2 (0)
+board p8 slow2-0 n14 n2 n3 (0)
+move-down-slow slow2-0 n14 n13 (6)
+leave p44 slow2-0 n13 n3 n2 (0)
+board p46 slow0-0 n6 n3 n4 (0)
+leave p8 slow2-0 n13 n2 n1 (0)
+move-down-fast fast2 n21 n0 (64)
+leave p48 fast2 n0 n5 n4 (0)
+move-up-fast fast2 n0 n3 (10)
+leave p1 fast2 n3 n4 n3 (0)
+move-up-fast fast2 n3 n21 (55)
+move-down-slow slow0-0 n6 n5 (6)
+leave p23 slow0-0 n5 n4 n3 (0)
+board p18 slow0-0 n5 n3 n4 (0)
+move-up-slow slow0-0 n5 n6 (6)
+leave p18 slow0-0 n6 n4 n3 (0)
+board p39 fast2 n21 n3 n4 (0)
+board p42 fast2 n21 n4 n5 (0)
+move-down-slow slow0-0 n6 n2 (9)
+leave p24 slow0-0 n2 n3 n2 (0)
+leave p27 slow0-0 n2 n2 n1 (0)
+move-down-slow slow0-0 n2 n1 (6)
+board p3 slow0-0 n1 n1 n2 (0)
+move-down-slow slow0-0 n1 n0 (6)
+leave p3 slow0-0 n0 n2 n1 (0)
+move-down-slow slow1-0 n11 n6 (10)
+board p18 slow1-0 n6 n1 n2 (0)
+board p48 slow0-0 n0 n1 n2 (0)
+move-up-slow slow1-0 n6 n7 (6)
+leave p43 slow1-0 n7 n2 n1 (0)
+move-up-slow slow1-0 n7 n11 (9)
+move-up-slow slow0-0 n0 n4 (9)
+board p35 slow0-0 n4 n2 n3 (0)
+board p40 slow0-0 n4 n3 n4 (0)
+move-up-slow slow0-0 n4 n6 (7)
+leave p35 slow0-0 n6 n4 n3 (0)
+leave p40 slow0-0 n6 n3 n2 (0)
+move-down-slow slow0-0 n6 n4 (7)
+board p45 slow0-0 n4 n2 n3 (0)
+move-up-slow slow0-0 n4 n6 (7)
+leave p45 slow0-0 n6 n3 n2 (0)
+move-down-fast fast2 n21 n0 (64)
+leave p42 fast2 n0 n5 n4 (0)
+move-up-fast fast2 n0 n21 (64)
+board p38 fast2 n21 n4 n5 (0)
+move-down-slow slow2-0 n13 n12 (6)
+move-up-slow slow1-0 n11 n12 (6)
+board p5 slow1-0 n12 n1 n2 (0)
+leave p18 slow1-0 n12 n2 n1 (0)
+move-up-slow slow3-0 n19 n21 (7)
+leave p30 slow3-0 n21 n2 n1 (0)
+move-down-fast fast2 n21 n12 (28)
+leave p38 fast2 n12 n5 n4 (0)
+board p38 slow2-0 n12 n1 n2 (0)
+leave p9 fast2 n12 n4 n3 (0)
+board p9 slow1-0 n12 n1 n2 (0)
+move-down-slow slow1-0 n12 n11 (6)
+leave p5 slow1-0 n11 n2 n1 (0)
+move-up-slow slow2-0 n12 n13 (6)
+move-up-fast fast2 n12 n21 (28)
+move-down-fast fast2 n21 n9 (37)
+board p10 fast2 n9 n3 n4 (0)
+leave p11 fast2 n9 n4 n3 (0)
+board p17 fast2 n9 n3 n4 (0)
+board p20 fast2 n9 n4 n5 (0)
+leave p21 fast2 n9 n5 n4 (0)
+move-up-fast fast2 n9 n21 (37)
+leave p10 fast2 n21 n4 n3 (0)
+leave p20 fast2 n21 n3 n2 (0)
+board p20 slow3-0 n21 n1 n2 (0)
+move-down-slow slow3-0 n21 n20 (6)
+leave p20 slow3-0 n20 n2 n1 (0)
+move-down-fast fast2 n21 n18 (10)
+leave p17 fast2 n18 n2 n1 (0)
+move-up-slow slow2-0 n13 n14 (6)
+leave p38 slow2-0 n14 n2 n1 (0)
+move-down-slow slow2-0 n14 n13 (6)
+move-down-slow slow1-0 n11 n6 (10)
+board p45 slow1-0 n6 n1 n2 (0)
+move-up-slow slow1-0 n6 n11 (10)
+leave p45 slow1-0 n11 n2 n1 (0)
+move-down-slow slow1-0 n11 n8 (8)
+leave p9 slow1-0 n8 n1 n0 (0)
+move-down-slow slow0-0 n6 n2 (9)
+leave p46 slow0-0 n2 n2 n1 (0)
+move-up-slow slow0-0 n2 n4 (7)
+move-up-fast fast2 n18 n24 (19)
+leave p39 fast2 n24 n1 n0 (0)
+board p17 fast1 n18 n0 n1 (0)
+move-down-slow slow3-0 n20 n18 (7)
+move-down-fast fast1 n18 n0 (55)
+board p6 fast1 n0 n1 n2 (0)
+move-up-slow slow2-0 n13 n18 (10)
+board p0 fast1 n0 n2 n3 (0)
+board p3 fast1 n0 n3 n4 (0)
+move-up-fast fast1 n0 n18 (55)
+leave p0 fast1 n18 n4 n3 (0)
+board p0 slow2-0 n18 n1 n2 (0)
+leave p17 fast1 n18 n3 n2 (0)
+leave p3 fast1 n18 n2 n1 (0)
+board p3 slow2-0 n18 n2 n3 (0)
+move-down-slow slow2-0 n18 n13 (10)
+leave p0 slow2-0 n13 n3 n2 (0)
+leave p3 slow2-0 n13 n2 n1 (0)
+move-up-slow slow3-0 n18 n22 (9)
+move-up-slow slow2-0 n13 n16 (8)
+move-down-slow slow3-0 n22 n18 (9)
+move-down-fast fast1 n18 n15 (10)
+board p22 fast1 n15 n1 n2 (0)
+move-up-fast fast1 n15 n18 (10)
+leave p22 fast1 n18 n2 n1 (0)
+board p22 slow3-0 n18 n1 n2 (0)
+move-up-slow slow3-0 n18 n22 (9)
+leave p22 slow3-0 n22 n2 n1 (0)
+move-down-slow slow3-0 n22 n18 (9)
+move-down-fast fast1 n18 n6 (37)
+board p33 fast1 n6 n1 n2 (0)
+board p35 fast1 n6 n2 n3 (0)
+board p7 fast1 n6 n3 n4 (0)
+move-up-fast fast1 n6 n18 (37)
+leave p33 fast1 n18 n4 n3 (0)
+board p33 slow3-0 n18 n1 n2 (0)
+leave p31 slow3-0 n18 n2 n1 (0)
+leave p35 fast1 n18 n3 n2 (0)
+leave p6 fast1 n18 n2 n1 (0)
+board p6 slow3-0 n18 n1 n2 (0)
+move-up-slow slow3-0 n18 n19 (6)
+leave p33 slow3-0 n19 n2 n1 (0)
+move-up-slow slow3-0 n19 n20 (6)
+move-up-slow slow0-0 n4 n6 (7)
+board p31 fast1 n18 n1 n2 (0)
+leave p7 fast1 n18 n2 n1 (0)
+move-down-fast fast1 n18 n6 (37)
+leave p31 fast1 n6 n1 n0 (0)
+board p31 slow0-0 n6 n1 n2 (0)
+move-down-slow slow0-0 n6 n4 (7)
+leave p31 slow0-0 n4 n2 n1 (0)
+move-down-fast fast0 n24 n21 (10)
+board p40 fast1 n6 n0 n1 (0)
+move-up-fast fast1 n6 n12 (19)
+leave p40 fast1 n12 n1 n0 (0)
+move-down-slow slow0-0 n4 n1 (8)
+leave p48 slow0-0 n1 n1 n0 (0)
+move-down-fast fast0 n21 n3 (55)
+board p4 fast0 n3 n0 n1 (0)
+move-up-fast fast0 n3 n21 (55)
+leave p4 fast0 n21 n1 n0 (0)
+move-down-slow slow2-0 n16 n12 (9)
+board p40 slow2-0 n12 n1 n2 (0)
+move-up-slow slow2-0 n12 n16 (9)
+leave p40 slow2-0 n16 n2 n1 (0)
+move-up-slow slow2-0 n16 n17 (6)
+leave p47 slow2-0 n17 n1 n0 (0)
+leave p6 slow3-0 n20 n1 n0 (0)
+move-up-slow slow3-0 n20 n22 (7)
+move-down-slow slow3-0 n22 n18 (9)
+board p7 slow3-0 n18 n0 n1 (0)
+move-up-slow slow3-0 n18 n22 (9)
+leave p7 slow3-0 n22 n1 n0 (0)
+Plan length: 288 step(s).
+Plan cost: 1643
+Initial state h value: 153/211.
+Expanded 9722 state(s).
+Reopened 0 state(s).
+Evaluated 9723 state(s).
+Evaluations: 19446
+Generated 735421 state(s).
+Dead ends: 0 state(s).
+Best solution cost so far: 1643
+Solution found - keep searching
+Starting search: lazy_greedy(list(hff2, hlm2), preferred = list(hff2, hlm2), reopen_closed = false)
+Conducting lazy best first search, (real) bound = 1643
+Best heuristic value: 249/670 [g=0, 1 evaluated, 0 expanded, t=72.37s]
+Best heuristic value: 247/669 [g=0, 2 evaluated, 1 expanded, t=72.38s]
+Best heuristic value: 241/628 [g=6, 3 evaluated, 2 expanded, t=72.38s]
+Best heuristic value: 241/570 [g=17, 4 evaluated, 3 expanded, t=72.39s]
+Best heuristic value: 239/570 [g=6, 6 evaluated, 5 expanded, t=72.4s]
+Best heuristic value: 239/510 [g=17, 9 evaluated, 8 expanded, t=72.43s]
+Best heuristic value: 239/506 [g=23, 10 evaluated, 9 expanded, t=72.43s]
+Best heuristic value: 233/506 [g=15, 11 evaluated, 10 expanded, t=72.44s]
+Best heuristic value: 233/505 [g=23, 16 evaluated, 15 expanded, t=72.47s]
+Best heuristic value: 233/452 [g=26, 23 evaluated, 22 expanded, t=72.52s]
+Best heuristic value: 233/447 [g=32, 24 evaluated, 23 expanded, t=72.53s]
+Best heuristic value: 232/447 [g=15, 25 evaluated, 24 expanded, t=72.54s]
+Best heuristic value: 232/436 [g=40, 33 evaluated, 32 expanded, t=72.59s]
+Best heuristic value: 225/436 [g=22, 39 evaluated, 38 expanded, t=72.63s]
+Best heuristic value: 225/435 [g=40, 40 evaluated, 39 expanded, t=72.64s]
+Best heuristic value: 225/420 [g=30, 49 evaluated, 48 expanded, t=72.7s]
+Best heuristic value: 224/420 [g=22, 53 evaluated, 52 expanded, t=72.73s]
+Best heuristic value: 224/419 [g=30, 54 evaluated, 53 expanded, t=72.74s]
+Best heuristic value: 223/418 [g=30, 68 evaluated, 67 expanded, t=72.83s]
+Best heuristic value: 223/417 [g=36, 75 evaluated, 74 expanded, t=72.88s]
+Best heuristic value: 223/412 [g=42, 76 evaluated, 75 expanded, t=72.89s]
+Best heuristic value: 216/412 [g=39, 82 evaluated, 81 expanded, t=72.93s]
+Best heuristic value: 216/411 [g=42, 89 evaluated, 88 expanded, t=72.98s]
+Best heuristic value: 216/409 [g=45, 96 evaluated, 95 expanded, t=73.03s]
+Best heuristic value: 216/408 [g=51, 108 evaluated, 107 expanded, t=73.11s]
+Best heuristic value: 215/408 [g=39, 114 evaluated, 113 expanded, t=73.15s]
+Best heuristic value: 215/407 [g=51, 121 evaluated, 120 expanded, t=73.2s]
+Best heuristic value: 215/406 [g=51, 137 evaluated, 136 expanded, t=73.31s]
+Best heuristic value: 214/406 [g=39, 138 evaluated, 137 expanded, t=73.32s]
+Best heuristic value: 214/405 [g=51, 163 evaluated, 162 expanded, t=73.49s]
+Best heuristic value: 213/405 [g=39, 178 evaluated, 177 expanded, t=73.6s]
+Best heuristic value: 212/405 [g=39, 220 evaluated, 219 expanded, t=73.9s]
+Best heuristic value: 211/405 [g=39, 258 evaluated, 257 expanded, t=74.16s]
+Best heuristic value: 211/404 [g=62, 277 evaluated, 276 expanded, t=74.3s]
+Best heuristic value: 210/404 [g=39, 304 evaluated, 303 expanded, t=74.49s]
+Best heuristic value: 210/403 [g=62, 319 evaluated, 318 expanded, t=74.59s]
+Best heuristic value: 209/403 [g=39, 360 evaluated, 359 expanded, t=74.88s]
+Best heuristic value: 208/403 [g=45, 526 evaluated, 525 expanded, t=76.06s]
+Best heuristic value: 207/403 [g=45, 568 evaluated, 567 expanded, t=76.36s]
+Best heuristic value: 206/403 [g=45, 616 evaluated, 615 expanded, t=76.71s]
+Best heuristic value: 205/403 [g=45, 855 evaluated, 854 expanded, t=78.41s]
+Best heuristic value: 204/403 [g=51, 1222 evaluated, 1221 expanded, t=81.04s]
+Best heuristic value: 204/401 [g=58, 1242 evaluated, 1241 expanded, t=81.19s]
+Best heuristic value: 203/401 [g=51, 1248 evaluated, 1247 expanded, t=81.23s]
+Best heuristic value: 203/400 [g=64, 1256 evaluated, 1255 expanded, t=81.29s]
+Best heuristic value: 203/399 [g=70, 1268 evaluated, 1267 expanded, t=81.38s]
+Best heuristic value: 203/397 [g=70, 1314 evaluated, 1313 expanded, t=81.71s]
+Best heuristic value: 203/396 [g=81, 1483 evaluated, 1482 expanded, t=82.89s]
+Best heuristic value: 203/395 [g=81, 1526 evaluated, 1525 expanded, t=83.19s]
+Best heuristic value: 202/395 [g=58, 1829 evaluated, 1828 expanded, t=85.3s]
+Best heuristic value: 201/395 [g=58, 1881 evaluated, 1880 expanded, t=85.67s]
+Best heuristic value: 200/395 [g=58, 1935 evaluated, 1934 expanded, t=86.07s]
+Best heuristic value: 199/395 [g=58, 2093 evaluated, 2092 expanded, t=87.22s]
+Best heuristic value: 198/395 [g=67, 2543 evaluated, 2542 expanded, t=90.51s]
+Best heuristic value: 197/395 [g=74, 3262 evaluated, 3261 expanded, t=95.69s]
+Best heuristic value: 196/395 [g=80, 4334 evaluated, 4333 expanded, t=103.4s]
+Best heuristic value: 195/395 [g=89, 4336 evaluated, 4335 expanded, t=103.42s]
+Best heuristic value: 189/388 [g=95, 4338 evaluated, 4337 expanded, t=103.43s]
+Best heuristic value: 189/387 [g=101, 4347 evaluated, 4346 expanded, t=103.5s]
+Best heuristic value: 189/384 [g=102, 4351 evaluated, 4350 expanded, t=103.52s]
+Best heuristic value: 189/383 [g=108, 4368 evaluated, 4367 expanded, t=103.65s]
+Best heuristic value: 189/381 [g=108, 4411 evaluated, 4410 expanded, t=103.96s]
+Best heuristic value: 189/380 [g=114, 4473 evaluated, 4472 expanded, t=104.41s]
+Best heuristic value: 188/380 [g=104, 5337 evaluated, 5336 expanded, t=110.36s]
+Best heuristic value: 187/380 [g=110, 5712 evaluated, 5711 expanded, t=113.03s]
+Best heuristic value: 186/380 [g=116, 6060 evaluated, 6059 expanded, t=115.52s]
+Best heuristic value: 185/380 [g=122, 8760 evaluated, 8759 expanded, t=134.36s]
+Best heuristic value: 184/380 [g=122, 8849 evaluated, 8848 expanded, t=134.98s]
+Best heuristic value: 183/380 [g=122, 9188 evaluated, 9187 expanded, t=137.28s]
+Best heuristic value: 182/380 [g=131, 9907 evaluated, 9906 expanded, t=142.29s]
+Best heuristic value: 181/380 [g=137, 10348 evaluated, 10347 expanded, t=145.41s]
+Best heuristic value: 181/379 [g=152, 12125 evaluated, 12124 expanded, t=157.9s]
+Best heuristic value: 181/378 [g=152, 12155 evaluated, 12154 expanded, t=158.11s]
+Best heuristic value: 181/377 [g=152, 12175 evaluated, 12174 expanded, t=158.25s]
+Best heuristic value: 181/376 [g=158, 12233 evaluated, 12232 expanded, t=158.66s]
+Best heuristic value: 180/376 [g=145, 15178 evaluated, 15177 expanded, t=179.14s]
+Best heuristic value: 180/375 [g=153, 15820 evaluated, 15819 expanded, t=183.51s]
+Best heuristic value: 180/373 [g=159, 15837 evaluated, 15836 expanded, t=183.62s]
+Best heuristic value: 180/372 [g=159, 15854 evaluated, 15853 expanded, t=183.74s]
+Best heuristic value: 179/372 [g=165, 15872 evaluated, 15871 expanded, t=183.86s]
+Best heuristic value: 179/368 [g=166, 15874 evaluated, 15873 expanded, t=183.88s]
+Best heuristic value: 179/367 [g=172, 15990 evaluated, 15989 expanded, t=184.68s]
+Best heuristic value: 178/367 [g=176, 16115 evaluated, 16114 expanded, t=185.56s]
+Best heuristic value: 178/366 [g=200, 16782 evaluated, 16781 expanded, t=190.34s]
+Best heuristic value: 178/365 [g=206, 16830 evaluated, 16829 expanded, t=190.68s]
+Best heuristic value: 178/363 [g=206, 23556 evaluated, 23555 expanded, t=237.49s]
+Best heuristic value: 178/362 [g=212, 23590 evaluated, 23589 expanded, t=237.73s]
+Best heuristic value: 178/361 [g=212, 24212 evaluated, 24211 expanded, t=242.2s]
+Best heuristic value: 178/360 [g=212, 24246 evaluated, 24245 expanded, t=242.44s]
+Best heuristic value: 178/359 [g=224, 24912 evaluated, 24911 expanded, t=247.12s]
+Best heuristic value: 178/358 [g=224, 25605 evaluated, 25604 expanded, t=251.97s]
+Best heuristic value: 178/357 [g=224, 26312 evaluated, 26311 expanded, t=257.05s]
+Best heuristic value: 175/357 [g=237, 27038 evaluated, 27037 expanded, t=262.13s]
+Best heuristic value: 174/357 [g=237, 27067 evaluated, 27066 expanded, t=262.33s]
+Best heuristic value: 173/357 [g=244, 27145 evaluated, 27144 expanded, t=262.86s]
+Best heuristic value: 172/357 [g=255, 29146 evaluated, 29145 expanded, t=276.94s]
+Best heuristic value: 172/356 [g=282, 36962 evaluated, 36961 expanded, t=329.88s]
+Best heuristic value: 171/356 [g=269, 39442 evaluated, 39441 expanded, t=346.39s]
+Best heuristic value: 170/356 [g=276, 39611 evaluated, 39610 expanded, t=347.51s]
+Best heuristic value: 169/356 [g=282, 40070 evaluated, 40069 expanded, t=350.54s]
+Best heuristic value: 169/355 [g=314, 43703 evaluated, 43702 expanded, t=374.76s]
+Best heuristic value: 169/352 [g=320, 43756 evaluated, 43755 expanded, t=375.11s]
+Best heuristic value: 168/352 [g=301, 43875 evaluated, 43874 expanded, t=375.91s]
+Best heuristic value: 167/352 [g=312, 43987 evaluated, 43986 expanded, t=376.66s]
+Best heuristic value: 166/352 [g=321, 44749 evaluated, 44748 expanded, t=381.73s]
+Best heuristic value: 165/352 [g=330, 48492 evaluated, 48491 expanded, t=406.62s]
+Best heuristic value: 165/351 [g=386, 63552 evaluated, 63551 expanded, t=507.42s]
+Best heuristic value: 165/347 [g=393, 63572 evaluated, 63571 expanded, t=507.55s]
+Best heuristic value: 165/342 [g=399, 63591 evaluated, 63590 expanded, t=507.68s]
+Best heuristic value: 165/341 [g=405, 63622 evaluated, 63621 expanded, t=507.88s]
+Best heuristic value: 165/340 [g=405, 63652 evaluated, 63651 expanded, t=508.08s]
+Best heuristic value: 164/340 [g=412, 63668 evaluated, 63667 expanded, t=508.19s]
+Best heuristic value: 164/337 [g=411, 63700 evaluated, 63699 expanded, t=508.41s]
+Best heuristic value: 164/336 [g=431, 74492 evaluated, 74491 expanded, t=581.36s]
+Best heuristic value: 164/335 [g=437, 74508 evaluated, 74507 expanded, t=581.47s]
+Best heuristic value: 164/334 [g=431, 121882 evaluated, 121881 expanded, t=901.41s]
+Best heuristic value: 164/333 [g=437, 121897 evaluated, 121896 expanded, t=901.51s]
+Best heuristic value: 164/332 [g=480, 138168 evaluated, 138167 expanded, t=1011.53s]
+Best heuristic value: 163/332 [g=499, 139238 evaluated, 139237 expanded, t=1018.77s]
+Best heuristic value: 162/332 [g=499, 139286 evaluated, 139285 expanded, t=1019.1s]
+Best heuristic value: 162/330 [g=506, 139321 evaluated, 139320 expanded, t=1019.34s]
+Best heuristic value: 161/330 [g=513, 139573 evaluated, 139572 expanded, t=1021.06s]
+Best heuristic value: 160/330 [g=513, 139613 evaluated, 139612 expanded, t=1021.33s]
+Best heuristic value: 160/328 [g=520, 139644 evaluated, 139643 expanded, t=1021.54s]
+Best heuristic value: 160/327 [g=536, 153204 evaluated, 153203 expanded, t=1113.89s]
+Best heuristic value: 159/327 [g=569, 207211 evaluated, 207210 expanded, t=1482s]
+Best heuristic value: 159/326 [g=615, 208726 evaluated, 208725 expanded, t=1492.2s]
+Best heuristic value: 159/322 [g=622, 208743 evaluated, 208742 expanded, t=1492.31s]
+Best heuristic value: 158/322 [g=606, 212803 evaluated, 212802 expanded, t=1519.64s]
+Best heuristic value: 158/320 [g=625, 214338 evaluated, 214337 expanded, t=1530.06s]
+Best heuristic value: 158/316 [g=632, 214363 evaluated, 214362 expanded, t=1530.22s]
+Best heuristic value: 157/316 [g=616, 221229 evaluated, 221228 expanded, t=1576.93s]
+Best heuristic value: 156/316 [g=625, 221578 evaluated, 221577 expanded, t=1579.32s]
+Best heuristic value: 155/316 [g=634, 222191 evaluated, 222190 expanded, t=1583.43s]
+Best heuristic value: 155/314 [g=692, 224387 evaluated, 224386 expanded, t=1598.27s]
+Best heuristic value: 155/313 [g=698, 224402 evaluated, 224401 expanded, t=1598.37s]
+Best heuristic value: 155/312 [g=741, 227733 evaluated, 227732 expanded, t=1621.04s]
+Best heuristic value: 155/303 [g=735, 243964 evaluated, 243963 expanded, t=1731.49s]
+Best heuristic value: 155/299 [g=742, 243988 evaluated, 243987 expanded, t=1731.65s]
+Best heuristic value: 155/298 [g=742, 244015 evaluated, 244014 expanded, t=1731.83s]
+Best heuristic value: 154/298 [g=749, 244035 evaluated, 244034 expanded, t=1731.97s]
+Best heuristic value: 154/297 [g=772, 268931 evaluated, 268930 expanded, t=1901.42s]
+Best heuristic value: 153/297 [g=768, 310074 evaluated, 310073 expanded, t=2180.79s]
+Best heuristic value: 153/296 [g=783, 310223 evaluated, 310222 expanded, t=2181.81s]
+Best heuristic value: 153/295 [g=783, 311135 evaluated, 311134 expanded, t=2188s]
+Best heuristic value: 152/295 [g=790, 373688 evaluated, 373687 expanded, t=2612.65s]
+Best heuristic value: 152/294 [g=805, 373835 evaluated, 373834 expanded, t=2613.66s]
+Best heuristic value: 152/293 [g=805, 374740 evaluated, 374739 expanded, t=2619.78s]
+Best heuristic value: 152/292 [g=810, 679198 evaluated, 679197 expanded, t=4553.08s]
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+warning: could not determine peak memory
+Peak memory: -1 KB
+caught signal 6 -- exiting
+../../downward/src/search/downward: line 184: 52014 Aborted                 "$PLANNER" --heuristic "hlm1,hff1=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=1,cost_type=1))" --heuristic "hlm2,hff2=lm_ff_syn(lm_rhw(
+                    reasonable_orders=true,lm_cost_type=2,cost_type=2))" --search "iterated([
+                    lazy_greedy([hff1,hlm1],preferred=[hff1,hlm1],
+                                cost_type=1,reopen_closed=false),
+                    lazy_greedy([hff2,hlm2],preferred=[hff2,hlm2],
+                                reopen_closed=false),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=5),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=3),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=2),
+                    lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=1)],
+                    repeat_last=true,continue_on_fail=true)" "$@" < $TEMPFILE
